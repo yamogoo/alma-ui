@@ -1,0 +1,49 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    
+    "moduleResolution": "Bundler",
+
+    "baseUrl": ".",
+    "rootDir": "./",
+    "outDir": "./dist/client",
+
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./src/*"],
+      "@@/*": ["./proto-src/*"],
+      "components/*": ["./src/components/*"],
+      "composables/*": ["./src/composables/*"],
+      "layouts/*": ["./src/layouts/*"],
+      "pages/*": ["./src/pages/*"],
+      "stores/*": ["./src/stores/*"],
+      "types/*": ["./src/types/*"]
+    },
+    "types": ["gsap/types", "vitest/globals", "unplugin-vue-router/client"]
+  },
+
+  "include": [
+    "env.d.ts",
+    "typed-router.d.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "styles.d.ts",
+    "src/**/*.mdx",
+    "proto-src/**/*.ts",
+    "proto-src/**/*.d.ts",
+    "proto-src/**/*.tsx",
+    "proto-src/**/*.vue",
+    "proto-src/**/*.mdx",
+  ],
+  "exclude": ["src/**/__tests__/*"]
+}
