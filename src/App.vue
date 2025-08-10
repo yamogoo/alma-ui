@@ -8,3 +8,9 @@ useTheme("dark");
 <template>
   <div></div>
 </template>
+
+<style lang="scss">
+#app {
+  @debug get($breakpoints, md);
+}
+</style>

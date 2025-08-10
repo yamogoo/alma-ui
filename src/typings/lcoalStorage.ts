@@ -1,7 +1,4 @@
 export enum LocalStorageKeys {
-  "PROTO_DISPLAY_WIDTH",
-  "PROTO_DISPLAY_HEIGHT",
-
   "DISPLAY_SIZE",
 
   "APP_VERSION",
@@ -15,18 +12,6 @@ export enum LocalStorageKeys {
   "IS_SYSTEM_PROTO_THEME_ENABLED",
 
   "LOCALE",
-  "PROTO_LOCALE",
-
-  // UI
-  "IS_POWER_ON",
-
-  // Proto
-  "PROTO_VIEWPORT_SCALE",
-  "PROTO_CONTROL_PANEL_SIZE",
-  "PROTO_ROUTER_PANEL_SIZE",
-  "PROTO_IS_ACTION_PANEL_SHOWN",
-  "PROTO_IS_CONTROL_PANEL_SHOWN",
-  "PROTO_IS_ROUTER_PANEL_SHOWN",
 }
 
 export type LocalStorageKey = keyof typeof LocalStorageKeys;
