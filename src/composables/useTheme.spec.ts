@@ -1,7 +1,7 @@
 import { describe, test, expect } from "vitest";
 import { nextTick } from "vue";
 
-import type { Theme } from "@/shared/typings";
+import type { Theme } from "@/typings";
 
 import { useTheme, type UseThemeOptions } from "./useTheme";
 

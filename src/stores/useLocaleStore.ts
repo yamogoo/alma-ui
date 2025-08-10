@@ -1,17 +1,17 @@
 import { computed, ref, toValue } from "vue";
 import { defineStore } from "pinia";
 
-import locales from "@/locales/app";
+import locales from "@/locales";
 
 import { useAppStore } from "@/stores";
 
 import { useTypedLocalStorage } from "@/composables";
 
-import type { Locale } from "@/shared/typings";
+import type { Locale } from "@/typings";
 
 const DEFAULT_LOCALE = import.meta.env.VITE_APP_DEFAULT_LOCALE as Locale;
 
-export type LocaleVersion = keyof typeof locales.en.version;
+export type LocaleVersion = keyof typeof locales.app.en.version;
 
 export const useLocaleStore = defineStore("locale-store", () => {
   const { version: appVersion } = useAppStore();
@@ -28,7 +28,7 @@ export const useLocaleStore = defineStore("locale-store", () => {
   };
 
   const $t = computed(() => {
-    return locales[currentLocale.value].version[version.value];
+    return locales.app[currentLocale.value].version[version.value];
   });
 
   return {

@@ -1,0 +1,37 @@
+@use "sass:map";
+@use "sass:list";
+@use "sass:string";
+
+@function str-split($string, $delimiter: ".") {
+  $result: ();
+  $current: "";
+  $length: string.length($string);
+
+  @for $i from 1 through $length {
+    $char: string.slice($string, $i, $i);
+
+    @if $char == $delimiter {
+      $result: list.append($result, $current);
+      $current: "";
+    } @else {
+      $current: "#{$current}#{$char}";
+    }
+  }
+
+  @return list.append($result, $current);
+}
+
+@function get($map, $path) {
+  $keys: str-split($path, ".");
+  $value: $map;
+
+  @each $key in $keys {
+    $value: map.get($value, $key);
+
+    @if $value == null {
+      @error "Key `#{$key}` not found in the map.";
+    }
+  }
+
+  @return $value;
+}

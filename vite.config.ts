@@ -52,18 +52,6 @@ export default (opts: { mode: string }) => {
       vueRouter(),
       svgLoader(),
       ColorsGeneratorPlugin({
-        source: "./proto-src/tokens/baseColors.json",
-        outDir: "./proto-src/tokens/colors.json",
-        step: 40,
-      }),
-      TokensParserPlugin({
-        source: "./proto-src/tokens",
-        outDir: "./proto-src/assets/scss/abstracts",
-        build: "./proto-src/tokens/build",
-        entryFilePath: "./proto-src/tokens/index.ts",
-        mapOptions: { convertCase: true, includeFileName: false },
-      }),
-      ColorsGeneratorPlugin({
         source: "./src/tokens/baseColors.json",
         outDir: "./src/tokens/colors.json",
         step: 40,
@@ -99,7 +87,6 @@ export default (opts: { mode: string }) => {
       alias: {
         "~": fileURLToPath(new URL("./", import.meta.url)),
         "@": fileURLToPath(new URL("./src", import.meta.url)),
-        "@@": fileURLToPath(new URL("./proto-src", import.meta.url)),
       },
     },
     css: {
@@ -117,10 +104,6 @@ export default (opts: { mode: string }) => {
             @use "@/assets/scss/app.core" as *;
             @use "@/assets/scss/app.mixins" as *;
             @use "@/assets/scss/app.extends" as *;
-
-            @use "@@/assets/scss/app.colors" as proto-colors;
-            @use "@@/assets/scss/app.abstracts" as proto;
-            @use "@@/assets/scss/app.extends" as proto-extends;
           `,
         },
       },
