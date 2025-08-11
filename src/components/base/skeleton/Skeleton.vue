@@ -33,7 +33,7 @@ export interface Props {}
 
 <template>
   <div class="skeleton">
-    <div ref="refShape" class="skeleton--shape"></div>
+    <div ref="refShape" class="skeleton__shape"></div>
   </div>
 </template>
 
@@ -47,7 +47,7 @@ export interface Props {}
   z-index: 1;
   cursor: wait;
 
-  &--shape {
+  &__shape {
     position: absolute;
     inset: 0;
     z-index: 0;

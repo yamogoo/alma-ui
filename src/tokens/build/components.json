@@ -141,5 +141,18 @@
       ],
       "borderRadius": "9999px"
     }
+  },
+  "form": {
+    "md": {
+      "borderRadius": "16px",
+      "paddingV": "16px",
+      "paddingH": "24px"
+    }
+  },
+  "resizer": {
+    "activeAreaWidth": 20,
+    "knobWidth": 76,
+    "knobHeight": 6,
+    "knobRoundness": 3
   }
 }

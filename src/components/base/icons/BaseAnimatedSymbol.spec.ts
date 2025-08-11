@@ -15,7 +15,7 @@ describe("BaseAnimatedSymbol", () => {
     const wrapper = mount(BaseAnimatedSymbol, { props: REQUIRED_PROPS });
 
     test("should render lottie (svg) dom element", async () => {
-      const container = wrapper.find(`.icon`);
+      const container = wrapper.find(`.animated-icon`);
       const isContainerExists = container.exists();
 
       expect(isContainerExists).toBeTruthy();
@@ -24,7 +24,7 @@ describe("BaseAnimatedSymbol", () => {
       const isSVGExists = svg.exists();
 
       expect(isSVGExists).toBeTruthy();
-      expect(isSVGExists).toMatchInlineSnapshot();
+      expect(isSVGExists).toMatchInlineSnapshot(`true`);
     });
   });
 });
