@@ -1,3 +1,27 @@
 {
-  "version": "version"
+  "version": "version",
+  "auth": {
+    "login": {
+      "cover": {
+        "title": "оплата в кафе",
+        "description": "тестовое задание"
+      },
+      "form": {
+        "title": "Войдите",
+        "userName": "имя пользователя",
+        "password": "пароль",
+        "login": "Войти"
+      }
+    }
+  },
+  "locales": {
+    "en": {
+      "value": "en",
+      "word": "английский"
+    },
+    "ru": {
+      "value": "ру",
+      "word": "русский"
+    }
+  }
 }

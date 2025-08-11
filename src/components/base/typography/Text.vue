@@ -20,14 +20,7 @@ export type TextDecoration = "none" | "underline" | "line-through";
 
 export type TextColor = Extract<
   UIElementColor,
-  | "primary"
-  | "secondary"
-  | "inactive"
-  | "disabled"
-  | "accent"
-  | "warning"
-  | "error"
-  | "info"
+  "primary" | "secondary" | "disabled" | "accent" | "warning" | "error" | "info"
 >;
 
 export interface Props {
@@ -128,9 +121,7 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
   @extend %base-transition;
 
   @include defineVariants();
-  @include defineThemes(
-    primary secondary inactive disabled accent info warning error
-  );
+  @include defineThemes(primary secondary disabled accent info warning error);
 
   b {
     &.accent {
