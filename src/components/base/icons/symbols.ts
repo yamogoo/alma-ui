@@ -1,29 +1,10 @@
 import type { UIElementColor, UIElementSize } from "@/typings";
 
-export type SymbolName =
-  | "back"
-  | "check"
-  | "waterDrops"
-  | "coffeeBean"
-  | "coffeeBean2"
-  | "coffeeBeanLevel1"
-  | "coffeeBeanLevel2"
-  | "coffeeBeanLevel3"
-  | "cup"
-  | "cupOfCoffee"
-  | "grinding"
-  | "cog";
+export type SymbolName = "back" | "check" | "cog";
 
 export type SymbolStyle = "outline" | "fill" | "squared";
 
-export type SymbolWeight =
-  | "100"
-  | "200"
-  | "300"
-  | "400"
-  | "500"
-  | "600"
-  | "700";
+export type SymbolWeight = "100" | "200" | "300" | "400" | "500";
 
 export type SymbolColor = Extract<
   UIElementColor,

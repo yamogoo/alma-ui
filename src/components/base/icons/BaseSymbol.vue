@@ -34,7 +34,11 @@ export interface Props {
 </script>
 
 <template>
-  <div class="icon" data-testid="icon" :class="[size, color]">
+  <div
+    class="icon"
+    :class="[{ [`icon_${size}`]: !!size, [`icon_${color}`]: !!color }]"
+    data-testid="icon"
+  >
     <Suspense>
       <component v-if="symbol" :is="symbol" viewBox="0 0 24 24"></component>
       <template #fallback>
@@ -47,10 +51,20 @@ export interface Props {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineIconSizes($map: $icon) {
+@mixin defineSizes($map: $icon) {
   @each $size, $val in $map {
-    &.#{$size} {
+    &_#{$size} {
       @include box(px2rem(map.get($val, "size")));
+    }
+  }
+}
+
+@mixin defineThemes($names) {
+  @each $name in $names {
+    &_#{$name} {
+      @include themify($themes) {
+        fill: themed("label.#{$name}");
+      }
     }
   }
 }
@@ -58,60 +72,25 @@ export interface Props {
 .icon {
   @include box(auto, inherit);
   line-height: 0;
+  fill: inherit;
+  @extend %base-transition;
+
+  @include defineSizes();
+  @include defineThemes(primary primary-inversed secondary disabled accent);
 
   svg {
     @include box(auto, inherit);
     fill: inherit;
+    @extend %base-transition;
 
     path {
       fill: inherit;
+      @extend %base-transition;
     }
   }
 
   .skeleton {
     @include box(100%);
-  }
-
-  /* * * Sizes * * */
-
-  @include defineIconSizes();
-
-  /* * * Colors * * */
-
-  &.primary {
-    @include themify($themes) {
-      fill: themed("label", "primary");
-    }
-  }
-
-  &.primary-inversed {
-    @include themify($themes) {
-      fill: themed("label", "primary-inversed");
-    }
-  }
-
-  &.secondary {
-    @include themify($themes) {
-      fill: themed("label", "secondary");
-    }
-  }
-
-  &.secondary-inversed {
-    @include themify($themes) {
-      fill: themed("label", "secondary-inversed");
-    }
-  }
-
-  &.disabled {
-    @include themify($themes) {
-      fill: themed("label", "disabled");
-    }
-  }
-
-  &.accent {
-    @include themify($themes) {
-      fill: themed("label", "accent");
-    }
   }
 }
 </style>

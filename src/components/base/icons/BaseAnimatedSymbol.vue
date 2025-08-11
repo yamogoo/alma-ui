@@ -6,10 +6,11 @@ import type { SymbolColor, SymbolSize } from "./symbols";
 
 const props = withDefaults(defineProps<Props>(), {
   speed: 1,
+  loop: false,
 });
 
 const emit = defineEmits<{
-  (e: "complete"): void;
+  (e: "completed"): void;
 }>();
 
 const refAnim = ref<typeof LottieAnimation | null>(null);
@@ -42,18 +43,19 @@ watch(
   }
 );
 
-const onComplete = (): void => {
-  emit("complete");
+const onCompleted = (): void => {
+  emit("completed");
 };
 </script>
 
 <script lang="ts">
 export interface Props {
+  color?: SymbolColor;
+  size?: SymbolSize;
   animationData: typeof LottieAnimation.animationData;
   speed?: number;
   isActive: boolean;
-  color?: SymbolColor;
-  size?: SymbolSize;
+  loop?: boolean;
 }
 </script>
 
@@ -69,21 +71,21 @@ export interface Props {
     ]"
     :animation-data
     :auto-play="false"
-    :loop="false"
+    :loop
     :speed
     :renderer-settings
     @on-animation-loaded="onAnimReady"
-    @on-complete="onComplete"
+    @on-complete="onCompleted"
   />
 </template>
 
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineIconSizes($map: proto.$icon) {
+@mixin defineSizes($map: $icon) {
   @each $size, $val in $map {
     &_#{$size} {
-      @include box(px2rem(map.get($val, "size")) !important);
+      @include box(px2rem(map.get($val, "size")));
     }
   }
 }
@@ -91,8 +93,13 @@ export interface Props {
 @mixin defineThemes($names) {
   @each $name in $names {
     &_#{$name} {
-      @include themify(proto.$themes) {
-        fill: themed("label", $name);
+      svg {
+        path {
+          @include themify($themes) {
+            fill: themed("label.#{$name}");
+            stroke: themed("label.#{$name}");
+          }
+        }
       }
     }
   }
@@ -101,26 +108,25 @@ export interface Props {
 .animated-icon {
   @include box(auto, inherit);
   line-height: 0;
+  fill: inherit;
   @extend %base-transition;
 
-  @include defineIconSizes();
-  @include defineThemes(
-    primary primary-inversed secondary secondary-inversed disabled accent accept
-  );
+  @include defineSizes();
+  @include defineThemes(primary primary-inversed secondary disabled accent);
 
   svg {
     @include box(auto, inherit);
     fill: inherit;
     @extend %base-transition;
 
-    g {
+    path {
       fill: inherit;
-
-      path {
-        fill: inherit;
-        @extend %base-transition;
-      }
+      @extend %base-transition;
     }
+  }
+
+  .skeleton {
+    @include box(100%);
   }
 }
 </style>
