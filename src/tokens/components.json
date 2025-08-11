@@ -120,5 +120,18 @@
       "padding": ["{tokens.spacing.lg}", "{tokens.spacing.xxl}"],
       "borderRadius": "{tokens.roundness.infinity}"
     }
+  },
+  "form": {
+    "md": {
+      "borderRadius": "{tokens.roundness.md}",
+      "paddingV": "{tokens.spacing.md}",
+      "paddingH": "{tokens.spacing.lg}"
+    }
+  },
+  "resizer": {
+    "activeAreaWidth": 20,
+    "knobWidth": 76,
+    "knobHeight": 6,
+    "knobRoundness": 3
   }
 }
