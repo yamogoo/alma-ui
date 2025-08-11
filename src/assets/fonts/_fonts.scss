@@ -5,9 +5,9 @@
     @font-face {
       font-family: "Manrope";
       src:
-        url("@@/assets/fonts/manrope/manrope-cyrillic-#{$weight}-normal.woff2")
+        url("@/assets/fonts/manrope/manrope-cyrillic-#{$weight}-normal.woff2")
           format("woff2"),
-        url("@@/assets/fonts/manrope/manrope-cyrillic-#{$weight}-normal.woff")
+        url("@/assets/fonts/manrope/manrope-cyrillic-#{$weight}-normal.woff")
           format("woff");
       font-weight: $weight;
       font-style: normal;
@@ -17,9 +17,9 @@
     @font-face {
       font-family: "Manrope";
       src:
-        url("@@/assets/fonts/manrope/manrope-latin-#{$weight}-normal.woff2")
+        url("@/assets/fonts/manrope/manrope-latin-#{$weight}-normal.woff2")
           format("woff2"),
-        url("@@/assets/fonts/manrope/manrope-latin-#{$weight}-normal.woff")
+        url("@/assets/fonts/manrope/manrope-latin-#{$weight}-normal.woff")
           format("woff");
       font-weight: $weight;
       font-style: normal;

@@ -1,5 +1,8 @@
 {
   "icon": {
+    "xxs": {
+      "size": 12
+    },
     "xs": {
       "size": 16
     },
@@ -13,10 +16,10 @@
       "size": 32
     },
     "xl": {
-      "size": 44
+      "size": 48
     },
     "xxl": {
-      "size": 54
+      "size": 56
     }
   },
   "sheet": {
@@ -60,6 +63,36 @@
     },
     "lg": {
       "fontStyle": "title-3"
+    }
+  },
+  "input": {
+    "md": {
+      "value": {
+        "fontStyle": "label-3"
+      },
+      "placeholder": {
+        "fontStyle": "label-3"
+      },
+      "height": 44,
+      "padding": [
+        "8px",
+        "16px"
+      ],
+      "borderRadius": "8px"
+    },
+    "lg": {
+      "value": {
+        "fontStyle": "label-3"
+      },
+      "placeholder": {
+        "fontStyle": "label-3"
+      },
+      "height": 52,
+      "padding": [
+        "8px",
+        "16px"
+      ],
+      "borderRadius": "8px"
     }
   },
   "button": {
@@ -107,6 +140,28 @@
         "padding": [
           0,
           0
+        ],
+        "borderRadius": "9999px"
+      },
+      "sm": {
+        "fontStyle": "label-4",
+        "size": 32,
+        "iconSize": "16px",
+        "gap": "12px",
+        "padding": [
+          0,
+          "24px"
+        ],
+        "borderRadius": "9999px"
+      },
+      "xs": {
+        "fontStyle": "label-4",
+        "size": 24,
+        "iconSize": "12px",
+        "gap": "12px",
+        "padding": [
+          0,
+          "24px"
         ],
         "borderRadius": "9999px"
       }

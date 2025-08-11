@@ -1,6 +1,12 @@
 import type { UIElementColor, UIElementSize } from "@/typings";
 
-export type SymbolName = "back" | "check" | "cog";
+export type SymbolName =
+  | "back"
+  | "check"
+  | "cog"
+  | "cross"
+  | "login"
+  | "logout";
 
 export type SymbolStyle = "outline" | "fill" | "squared";
 

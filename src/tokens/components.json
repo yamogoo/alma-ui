@@ -1,5 +1,8 @@
 {
   "icon": {
+    "xxs": {
+      "size": 12
+    },
     "xs": {
       "size": 16
     },
@@ -13,10 +16,10 @@
       "size": 32
     },
     "xl": {
-      "size": 44
+      "size": 48
     },
     "xxl": {
-      "size": 54
+      "size": 56
     }
   },
   "sheet": {
@@ -59,6 +62,30 @@
       "fontStyle": "title-3"
     }
   },
+  "input": {
+    "md": {
+      "value": {
+        "fontStyle": "label-3"
+      },
+      "placeholder": {
+        "fontStyle": "label-3"
+      },
+      "height": 44,
+      "padding": ["{tokens.spacing.xs}", "{tokens.spacing.md}"],
+      "borderRadius": "{tokens.spacing.xs}"
+    },
+    "lg": {
+      "value": {
+        "fontStyle": "label-3"
+      },
+      "placeholder": {
+        "fontStyle": "label-3"
+      },
+      "height": 52,
+      "padding": ["{tokens.spacing.xs}", "{tokens.spacing.md}"],
+      "borderRadius": "{tokens.spacing.xs}"
+    }
+  },
   "button": {
     "default": {
       "lg": {
@@ -93,6 +120,22 @@
         "iconSize": "{components.icon.xs.size}",
         "gap": "{tokens.spacing.sm}",
         "padding": [0, 0],
+        "borderRadius": "{tokens.roundness.infinity}"
+      },
+      "sm": {
+        "fontStyle": "label-4",
+        "size": 32,
+        "iconSize": "{components.icon.xs.size}",
+        "gap": "{tokens.spacing.sm}",
+        "padding": [0, "{tokens.spacing.lg}"],
+        "borderRadius": "{tokens.roundness.infinity}"
+      },
+      "xs": {
+        "fontStyle": "label-4",
+        "size": 24,
+        "iconSize": "{components.icon.xxs.size}",
+        "gap": "{tokens.spacing.sm}",
+        "padding": [0, "{tokens.spacing.lg}"],
         "borderRadius": "{tokens.roundness.infinity}"
       }
     }

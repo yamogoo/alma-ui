@@ -1,19 +1,10 @@
 <script setup lang="ts">
-import { ref, toValue, watch } from "vue";
+import { onMounted, onUnmounted, ref, toValue, watch } from "vue";
 import g from "gsap";
 
 import tokens from "@/tokens";
 
-import type { UIElementDirection, UIElementColor } from "@/typings";
-
-import type {
-  SymbolName,
-  SymbolStyle,
-  SymbolWeight,
-} from "@/components/base/icons/symbols";
-import BaseSymbol from "@/components/base/icons/BaseSymbol.vue";
-
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<Props>(), {
   variant: "default",
   size: "md",
   color: "primary",
@@ -36,6 +27,7 @@ const emit = defineEmits<{
 
 const refRoot = ref<HTMLButtonElement | null>(null);
 
+const isHovered = ref(false);
 const localIsPressed = ref();
 
 const onDown = (e: PointerEvent): void => {
@@ -52,7 +44,7 @@ const onUp = (e: PointerEvent): void => {
 
 const onAnim = (el: HTMLButtonElement, isPressed: boolean): void => {
   g.to(el, {
-    scale: isPressed ? props.scalePressed : 1,
+    scale: isPressed ? 0.95 : 1,
     duration: 0.05,
     ease: isPressed ? "power4.out" : "power4.in",
   });
@@ -62,17 +54,66 @@ watch(localIsPressed, (isPressed) => {
   const el = toValue(refRoot);
   if (el) onAnim(el, isPressed);
 });
+
+/* * * Gestures * * */
+
+const onPointerEneter = (e: PointerEvent): void => {
+  e.preventDefault();
+
+  isHovered.value = true;
+};
+
+const onPointerLeave = (e: PointerEvent): void => {
+  e.preventDefault();
+
+  isHovered.value = false;
+};
+
+const addEventListeners = (): void => {
+  const el = refRoot.value;
+  if (!el) return;
+
+  el.addEventListener("pointerenter", onPointerEneter);
+  el.addEventListener("pointerleave", onPointerLeave);
+};
+
+const removeEventListeners = (): void => {
+  const el = refRoot.value;
+  if (!el) return;
+
+  el.removeEventListener("pointerenter", onPointerEneter);
+  el.removeEventListener("pointerleave", onPointerLeave);
+};
+
+onMounted(() => {
+  addEventListeners();
+});
+
+onUnmounted(() => {
+  removeEventListeners();
+});
 </script>
 
 <script lang="ts">
+import type { UIElementDirection, UIElementColor } from "@/typings";
+
+import type {
+  SymbolName,
+  SymbolStyle,
+  SymbolWeight,
+} from "@/components/base/icons/symbols";
+import BaseSymbol from "@/components/base/icons/BaseSymbol.vue";
+
 export type ButtonVariant = keyof typeof tokens.button;
 
-export type ButtonSize = keyof typeof tokens.button.default;
+export type ButtonSize = keyof typeof tokens.button.rounded;
 
 export type ButtonColor = Extract<
   UIElementColor,
-  "primary" | "secondary" | "accent" | "accept" | "error"
+  "primary" | "primary-inversed" | "secondary" | "accent" | "error"
 >;
+
+export type ButtonStretch = "fill" | "auto";
 
 export type ButtonContentDirection = UIElementDirection;
 
@@ -89,6 +130,8 @@ export interface Props {
   appendIconStyle?: SymbolStyle;
   appendIconWeight?: SymbolWeight;
   scalePressed?: number;
+  isDisabled?: boolean;
+  stretch?: ButtonStretch;
 }
 </script>
 
@@ -99,14 +142,17 @@ export interface Props {
     data-testid="button"
     :class="[
       {
-        [`button_variant-${variant}`]: !!variant,
-        [`button_size-${size}`]: !!size,
+        [`button_direction-${contentDirection}`]: !!contentDirection,
         [`button_color-${color}`]: !!color,
-        [`button_content-direction-${contentDirection}`]: !!contentDirection,
+        [`button_hovered`]: isHovered,
+        [`button_disabled`]: isDisabled,
+        [`button_size-${String(size)}`]: !!size,
+        [`button_variant-${variant}`]: !!variant,
+        [`button_stretch-${stretch}`]: !!stretch,
         button_pressed: localIsPressed,
       },
     ]"
-    :aria-label="label ?? prependIconName"
+    :aria-label="label ?? prependIconName ?? appendIconName"
     @pointerdown="onDown"
     @pointerup="onUp"
   >
@@ -141,8 +187,8 @@ export interface Props {
       $font-style: map.get($val, "font-style");
       $icon-size: px2rem(map.get($val, "icon-size"));
       $gap: px2rem(map.get($val, "gap"));
+      $border-radius: map.get($val, "border-radius");
       $padding: map.get($val, "padding");
-      $border-radius: px2rem(map.get($val, "border-radius"));
 
       &.button_variant-#{$variant} {
         &.button_size-#{$size} {
@@ -176,24 +222,52 @@ export interface Props {
   }
 }
 
-@mixin defineTheme($names) {
+@mixin defineThemes($names) {
   @each $name in $names {
-    &_#{$name} {
+    &_color-#{$name} {
       @include themify($themes) {
         color: themed("button.label-#{$name}-normal");
         fill: themed("button.label-#{$name}-normal");
         background-color: themed("button.background-#{$name}-normal");
       }
+      @extend %base-transition;
 
-      &:not(.button_pressed):hover {
+      &.button_hovered {
         @include themify($themes) {
           background-color: themed("button.background-#{$name}-hovered");
         }
+
+        .button__label {
+          @include themify($themes) {
+            color: themed("button.label-#{$name}-hovered");
+            fill: themed("button.label-#{$name}-hovered");
+          }
+        }
       }
 
-      &_pressed {
+      &.button_pressed {
         @include themify($themes) {
           background-color: themed("button.background-#{$name}-pressed");
+        }
+
+        .button__label {
+          @include themify($themes) {
+            color: themed("button.label-#{$name}-pressed");
+            fill: themed("button.label-#{$name}-pressed");
+          }
+        }
+      }
+
+      &.button_disabled {
+        @include themify($themes) {
+          background-color: themed("button.background-#{$name}-disabled");
+        }
+
+        .button__label {
+          @include themify($themes) {
+            color: themed("button.label-#{$name}-disabled");
+            fill: themed("button.label-#{$name}-disabled");
+          }
         }
       }
     }
@@ -205,39 +279,35 @@ export interface Props {
   align-items: center;
   justify-content: center;
   border: none;
-  @extend %base-transition;
   cursor: pointer;
-
-  @include themify($themes) {
-    box-shadow: 0px 0px 16px themed("background.base");
-  }
+  user-select: none;
+  @extend %base-transition;
 
   @include defineButtonSizes();
-  @include defineTheme(primary secondary accent error);
+  @include defineThemes(primary primary-inversed secondary accent error);
 
-  &__content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: px2rem(2px);
+  &__label {
+    @extend %base-transition;
   }
 
   /* * * Directions * * */
 
-  &_ltr {
+  &_direction-ltr {
     flex-direction: row;
   }
 
-  &_rtl {
+  &_direction-rtl {
     flex-direction: row-reverse;
   }
 
-  &_rounded {
+  /* * * Sizes * * */
+
+  &_variant-rounded {
     overflow: hidden;
   }
 
-  &:hover {
-    opacity: 0.8;
+  &_stretch-fill {
+    width: 100%;
   }
 }
 </style>

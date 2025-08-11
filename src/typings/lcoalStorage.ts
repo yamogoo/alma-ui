@@ -7,7 +7,6 @@ export enum LocalStorageKeys {
   "AUTH_USER",
 
   "THEME",
-  "PROTO_THEME",
   "IS_SYSTEM_THEME_ENABLED",
   "IS_SYSTEM_PROTO_THEME_ENABLED",
 

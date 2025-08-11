@@ -2,3 +2,5 @@ export * from "./useMeta";
 export * from "./useTheme";
 export * from "./useTypedLocalStorage";
 export * from "./useRouteHistory";
+export * from "./useMeta";
+export * from "./useTimeout";

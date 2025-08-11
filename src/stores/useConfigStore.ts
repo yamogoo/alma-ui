@@ -15,7 +15,7 @@ export const DEFAULT_PROTO_THEME = import.meta.env.VITE_UI_LOCAL_PROTO_THEME as
   | Theme
   | undefined;
 
-export const useConfigStore = defineStore("config", () => {
+export const useConfigStore = defineStore("config-store", () => {
   const settingsData = computed(() => {
     return {};
   });
