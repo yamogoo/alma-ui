@@ -1,41 +1,31 @@
-@font-face {
-  font-family: "Caros";
-  src: url("@/assets/fonts/caros/caros-thin.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+@mixin defineFont() {
+  @for $i from 2 through 8 {
+    $weight: $i * 100;
+
+    @font-face {
+      font-family: "Manrope";
+      src:
+        url("@@/assets/fonts/manrope/manrope-cyrillic-#{$weight}-normal.woff2")
+          format("woff2"),
+        url("@@/assets/fonts/manrope/manrope-cyrillic-#{$weight}-normal.woff")
+          format("woff");
+      font-weight: $weight;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Manrope";
+      src:
+        url("@@/assets/fonts/manrope/manrope-latin-#{$weight}-normal.woff2")
+          format("woff2"),
+        url("@@/assets/fonts/manrope/manrope-latin-#{$weight}-normal.woff")
+          format("woff");
+      font-weight: $weight;
+      font-style: normal;
+      font-display: swap;
+    }
+  }
 }
 
-@font-face {
-  font-family: "Caros";
-  src: url("@/assets/fonts/caros/caros-light.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Caros";
-  src: url("@/assets/fonts/caros/caros.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Caros";
-  src: url("@/assets/fonts/caros/caros-menium.woff2") format("woff2");
-
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Caros";
-  src: url("@/assets/fonts/caros/caros-bold.woff2") format("woff2");
-
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
+@include defineFont();

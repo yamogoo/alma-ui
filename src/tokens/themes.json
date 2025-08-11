@@ -1,6 +1,276 @@
 {
   "themes": {
-    "light": {},
-    "dark": {}
+    "light": {
+      "background": {
+        "base": "{colors.gray-50}",
+        "primary": "{colors.gray-0}",
+        "primaryTransparent": "rgba({colors.gray-0}, .75)",
+        "primaryInversed": "{colors.gray-950}",
+        "secondary": "#e5e9f1",
+        "secondaryTransparent": "rgba(#e5e9f1, .75)",
+        "tertiary": "{colors.gray-300}",
+        "accent": "{colors.blue-500}",
+        "accept": "{colors.orange-400}",
+        "accentYellow": "{colors.yellow-500}",
+        "accentGreen": "{colors.green-600}",
+        "accentBlue": "{colors.blue-550}"
+      },
+      "label": {
+        "primary": "{colors.gray-800}",
+        "primaryInversed": "{colors.gray-100}",
+        "secondary": "{colors.gray-600}",
+        "tertiary": "{colors.gray-500}",
+        "disabled": "{colors.gray-600}",
+        "accent": "{colors.green-700}",
+        "accentYellow": "{colors.yellow-500}",
+        "accentGreen": "{colors.green-600}",
+        "accentBlue": "{colors.blue-550}",
+        "info": "{colors.blue-400}",
+        "warning": "{colors.orange-400}",
+        "error": "{colors.red-325}"
+      },
+      "button": {
+        "labelPrimaryNormal": "{colors.gray-900}",
+        "labelPrimaryDisabled": "{colors.gray-400}",
+        "labelPrimaryHovered": "{colors.gray-950}",
+        "labelPrimaryPressed": "{colors.gray-950}",
+        "backgroundPrimaryNormal": "{colors.gray-75}",
+        "backgroundPrimaryDisabled": "{colors.gray-75}",
+        "backgroundPrimaryHovered": "{colors.gray-100}",
+        "backgroundPrimaryPressed": "{colors.gray-150}",
+
+        "labelPrimaryInversedNormal": "{colors.gray-75}",
+        "labelPrimaryInversedDisabled": "{colors.gray-500}",
+        "labelPrimaryInversedHovered": "{colors.gray-75}",
+        "labelPrimaryInversedPressed": "{colors.gray-75}",
+        "backgroundPrimaryInversedNormal": "{colors.gray-950}",
+        "backgroundPrimaryInversedDisabled": "{colors.gray-600}",
+        "backgroundPrimaryInversedHovered": "{colors.gray-900}",
+        "backgroundPrimaryInversedPressed": "{colors.gray-800}",
+
+        "labelSecondaryNormal": "{colors.gray-950}",
+        "labelSecondaryDisabled": "{colors.gray-400}",
+        "labelSecondaryHovered": "{colors.gray-950}",
+        "labelSecondaryPressed": "{colors.gray-950}",
+        "backgroundSecondaryNormal": "{colors.white-0}",
+        "backgroundSecondaryDisabled": "{colors.white-0}",
+        "backgroundSecondaryHovered": "{colors.gray-50}",
+        "backgroundSecondaryPressed": "{colors.gray-100}",
+
+        "labelAccentNormal": "{colors.gray-0}",
+        "labelAccentDisabled": "{colors.gray-0}",
+        "labelAccentHovered": "{colors.gray-0}",
+        "labelAccentPressed": "{colors.gray-0}",
+        "backgroundAccentNormal": "{colors.darkGreen-700}",
+        "backgroundAccentDisabled": "{colors.darkGreen-700}",
+        "backgroundAccentHovered": "{colors.darkGreen-750}",
+        "backgroundAccentPressed": "{colors.darkGreen-800}",
+
+        "labelErrorNormal": "{colors.gray-0}",
+        "labelErrorDisabled": "{colors.gray-0}",
+        "labelErrorHovered": "{colors.gray-0}",
+        "labelErrorPressed": "{colors.gray-0}",
+        "backgroundErrorNormal": "{colors.red-350}",
+        "backgroundErrorDisabled": "{colors.red-200}",
+        "backgroundErrorHovered": "{colors.red-400}",
+        "backgroundErrorPressed": "{colors.red-450}"
+      },
+      "input": {
+        "labelPrimaryNormal": "{colors.gray-800}",
+        "labelPrimaryDisabled": "{colors.gray-400}",
+        "labelPrimaryHovered": "{colors.gray-950}",
+        "labelPrimaryFocused": "{colors.gray-950}",
+        "labelPrimaryError": "{colors.red-900}",
+        "backgroundPrimaryNormal": "{colors.gray-75}",
+        "backgroundPrimaryDisabled": "{colors.gray-50}",
+        "backgroundPrimaryHovered": "{colors.gray-50}",
+        "backgroundPrimaryFocused": "{colors.gray-50}",
+        "backgroundPrimaryError": "{colors.red-50}",
+
+        "labelSecondaryNormal": "{colors.gray-800}",
+        "labelSecondaryDisabled": "{colors.gray-400}",
+        "labelSecondaryHovered": "{colors.gray-950}",
+        "labelSecondaryFocused": "{colors.gray-950}",
+        "labelSecondaryError": "{colors.red-950}",
+        "backgroundSecondaryNormal": "{colors.white-0}",
+        "backgroundSecondaryDisabled": "{colors.white-0}",
+        "backgroundSecondaryHovered": "{colors.gray-50}",
+        "backgroundSecondaryFocused": "{colors.gray-100}",
+        "backgroundSecondaryError": "{colors.red-50}"
+      },
+      "switch": {
+        "trackNormal": "{colors.gray-375}",
+        "trackActive": "{colors.gray-375}",
+        "knobNormal": "{colors.gray-0}",
+        "knobActive": "{colors.gray-0}"
+      },
+      "options": {
+        "labelPrimary": "{colors.gray-800}",
+        "labelPrimaryDisabled": "{colors.gray-400}",
+        "labelPrimaryHovered": "{colors.gray-950}",
+        "labelPrimaryFocused": "{colors.gray-950}",
+
+        "labelSecondary": "{colors.gray-800}",
+        "labelSecondaryDisabled": "{colors.gray-400}",
+        "labelSecondaryHovered": "{colors.gray-950}",
+        "labelSecondaryFocused": "{colors.gray-950}"
+      },
+      "dropDown": {
+        "valueLabelPrimary": "{colors.gray-900}",
+        "valueLabelPrimaryHovered": "{colors.gray-950}",
+        "valueLabelPrimaryExpanded": "{colors.gray-950}",
+        "valueLabelPrimaryExpanedHovered": "{colors.gray-950}",
+        "valueIconPrimary": "{colors.gray-900}",
+        "valueIconPrimaryHovered": "{colors.gray-950}",
+        "valueIconPrimaryExpanded": "{colors.gray-800}",
+        "valueIconPrimaryExpanedHovered": "{colors.gray-850}",
+        "valueBackgroundPrimary": "{colors.gray-75}",
+        "valueBackgroundPrimaryHovered": "{colors.gray-100}",
+        "valueBackgroundPrimaryExpanded": "{colors.gray-75}",
+        "valueBackgroundPrimaryExpandedHovered": "{colors.gray-100}",
+        "optionsBackgroundPrimary": "{colors.gray-125}",
+        "optionsBackgroundPrimaryHovered": "{colors.gray-125}"
+      }
+    },
+    "dark": {
+      "background": {
+        "base": "{colors.gray-900}",
+        "primary": "{colors.gray-950}",
+        "primaryTransparent": "rgba({colors.gray-950}, .75)",
+        "primaryInversed": "{colors.gray-950}",
+        "secondary": "{colors.gray-900}",
+        "secondaryTransparent": "rgba({colors.gray-900}, .75)",
+        "tertiary": "{colors.gray-800}",
+        "accent": "{colors.blue-500}",
+        "accept": "{colors.orange-400}",
+        "accentYellow": "{colors.yellow-500}",
+        "accentGreen": "{colors.green-500}",
+        "accentBlue": "{colors.blue-500}"
+      },
+      "label": {
+        "primary": "{colors.gray-100}",
+        "primaryInversed": "{colors.gray-800}",
+        "secondary": "{colors.gray-300}",
+        "tertiary": "{colors.gray-400}",
+        "disabled": "{colors.gray-500}",
+        "accent": "{colors.green-300}",
+        "accentYellow": "{colors.yellow-500}",
+        "accentGreen": "{colors.green-500}",
+        "accentBlue": "{colors.blue-500}",
+        "info": "{colors.blue-400}",
+        "warning": "{colors.orange-400}",
+        "error": "{colors.red-400}"
+      },
+      "border": {
+        "primary": "{colors.gray-900}",
+        "secondary": "{colors.gray-800}",
+        "strong": "{colors.gray-200}"
+      },
+      "shadow": {
+        "primary": "rgba({colors.gray-600}, .03)"
+      },
+      "button": {
+        "labelPrimaryNormal": "{colors.gray-350}",
+        "labelPrimaryDisabled": "{colors.gray-600}",
+        "labelPrimaryHovered": "{colors.gray-200}",
+        "labelPrimaryPressed": "{colors.gray-250}",
+        "backgroundPrimaryNormal": "{colors.gray-850}",
+        "backgroundPrimaryDisabled": "{colors.gray-850}",
+        "backgroundPrimaryHovered": "{colors.gray-800}",
+        "backgroundPrimaryPressed": "{colors.gray-750}",
+
+        "labelPrimaryInversedNormal": "{colors.gray-950}",
+        "labelPrimaryInversedDisabled": "{colors.gray-500}",
+        "labelPrimaryInversedHovered": "{colors.gray-950}",
+        "labelPrimaryInversedPressed": "{colors.gray-950}",
+        "backgroundPrimaryInversedNormal": "{colors.gray-50}",
+        "backgroundPrimaryInversedDisabled": "{colors.gray-50}",
+        "backgroundPrimaryInversedHovered": "{colors.gray-100}",
+        "backgroundPrimaryInversedPressed": "{colors.gray-150}",
+
+        "labelSecondaryNormal": "{colors.gray-50}",
+        "labelSecondaryDisabled": "{colors.gray-600}",
+        "labelSecondaryHovered": "{colors.gray-50}",
+        "labelSecondaryPressed": "{colors.gray-50}",
+        "backgroundSecondaryNormal": "{colors.black-1000}",
+        "backgroundSecondaryDisabled": "{colors.black-1000}",
+        "backgroundSecondaryHovered": "{colors.gray-950}",
+        "backgroundSecondaryPressed": "{colors.gray-900}",
+
+        "labelAccentNormal": "{colors.gray-0}",
+        "labelAccentDisabled": "{colors.gray-0}",
+        "labelAccentHovered": "{colors.gray-0}",
+        "labelAccentPressed": "{colors.gray-0}",
+        "backgroundAccentNormal": "{colors.darkGreen-700}",
+        "backgroundAccentDisabled": "{colors.darkGreen-700}",
+        "backgroundAccentHovered": "{colors.darkGreen-750}",
+        "backgroundAccentPressed": "{colors.darkGreen-800}",
+
+        "labelErrorNormal": "{colors.gray-0}",
+        "labelErrorDisabled": "{colors.gray-0}",
+        "labelErrorHovered": "{colors.gray-0}",
+        "labelErrorPressed": "{colors.gray-0}",
+        "backgroundErrorNormal": "{colors.red-350}",
+        "backgroundErrorDisabled": "{colors.red-200}",
+        "backgroundErrorHovered": "{colors.red-400}",
+        "backgroundErrorPressed": "{colors.red-450}"
+      },
+      "input": {
+        "labelPrimary": "{colors.gray-300}",
+        "labelPrimaryDisabled": "{colors.gray-600}",
+        "labelPrimaryHovered": "{colors.gray-50}",
+        "labelPrimaryFocused": "{colors.gray-50}",
+        "labelPrimaryError": "{colors.red-50}",
+        "backgroundPrimary": "{colors.gray-800}",
+        "backgroundPrimaryDisabled": "{colors.gray-950}",
+        "backgroundPrimaryHovered": "{colors.gray-900}",
+        "backgroundPrimaryFocused": "{colors.gray-850}",
+        "backgroundPrimaryError": "rgba({colors.red-400}, .2)",
+
+        "labelSecondary": "{colors.gray-300}",
+        "labelSecondaryDisabled": "{colors.gray-600}",
+        "labelSecondaryHovered": "{colors.gray-50}",
+        "labelSecondaryFocused": "{colors.gray-50}",
+        "labelSecondaryError": "{colors.red-50}",
+        "backgroundSecondary": "{colors.gray-900}",
+        "backgroundSecondaryDisabled": "{colors.gray-800}",
+        "backgroundSecondaryHovered": "{colors.gray-950}",
+        "backgroundSecondaryFocused": "{colors.gray-900}",
+        "backgroundSecondaryError": "{colors.red-900}"
+      },
+      "switch": {
+        "trackNormal": "{colors.gray-725}",
+        "trackActive": "{colors.gray-725}",
+        "knobNormal": "{colors.gray-0}",
+        "knobActive": "{colors.gray-0}"
+      },
+      "options": {
+        "labelPrimary": "{colors.gray-300}",
+        "labelPrimaryDisabled": "{colors.gray-600}",
+        "labelPrimaryHovered": "{colors.gray-50}",
+        "labelPrimaryFocused": "{colors.gray-50}",
+
+        "labelSecondary": "{colors.gray-300}",
+        "labelSecondaryDisabled": "{colors.gray-600}",
+        "labelSecondaryHovered": "{colors.gray-50}",
+        "labelSecondaryFocused": "{colors.gray-50}"
+      },
+      "dropDown": {
+        "valueLabelPrimary": "{colors.gray-50}",
+        "valueLabelPrimaryHovered": "{colors.gray-100}",
+        "valueLabelPrimaryExpanded": "{colors.gray-200}",
+        "valueLabelPrimaryExpanedHovered": "{colors.gray-250}",
+        "valueIconPrimary": "{colors.gray-50}",
+        "valueIconPrimaryHovered": "{colors.gray-100}",
+        "valueIconPrimaryExpanded": "{colors.gray-200}",
+        "valueIconPrimaryExpanedHovered": "{colors.gray-250}",
+        "valueBackgroundPrimary": "{colors.gray-850}",
+        "valueBackgroundPrimaryHovered": "{colors.gray-800}",
+        "valueBackgroundPrimaryExpanded": "{colors.gray-700}",
+        "valueBackgroundPrimaryExpandedHovered": "{colors.gray-750}",
+        "optionsBackgroundPrimary": "{colors.gray-800}",
+        "optionsBackgroundPrimaryHovered": "{colors.gray-800}"
+      }
+    }
   }
 }

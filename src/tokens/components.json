@@ -1,1 +1,124 @@
-{}
+{
+  "icon": {
+    "xs": {
+      "size": 16
+    },
+    "sm": {
+      "size": 20
+    },
+    "md": {
+      "size": 24
+    },
+    "lg": {
+      "size": 32
+    },
+    "xl": {
+      "size": 44
+    },
+    "xxl": {
+      "size": 54
+    }
+  },
+  "sheet": {
+    "lg": {
+      "gap": "{tokens.spacing.xl}",
+      "buttonOffset": "{tokens.spacing.lg}",
+      "padding": [
+        "{tokens.spacing.xxl}",
+        "{tokens.spacing.lg}",
+        "{tokens.spacing.lg}",
+        "{tokens.spacing.lg}"
+      ]
+    },
+    "md": {
+      "gap": "{tokens.spacing.md}",
+      "buttonOffset": "{tokens.spacing.lg}",
+      "padding": ["{tokens.spacing.lg}", "{tokens.spacing.lg}"]
+    }
+  },
+  "scrollbar": {
+    "width": 3,
+    "borderRadius": 1
+  },
+  "mainContainer": {
+    "respond": {
+      "mobile": {
+        "padding": "{tokens.spacing.xs}"
+      },
+      "desktop": {
+        "padding": "{tokens.spacing.xs}"
+      }
+    },
+    "roundness": "{tokens.roundness.md}"
+  },
+  "pageHeader": {
+    "md": {
+      "fontStyle": "title-4"
+    },
+    "lg": {
+      "fontStyle": "title-3"
+    }
+  },
+  "button": {
+    "default": {
+      "lg": {
+        "fontStyle": "label-1",
+        "size": 56,
+        "iconSize": "{components.icon.sm.size}",
+        "gap": "{tokens.spacing.sm}",
+        "padding": [0, "{tokens.spacing.xl}"],
+        "borderRadius": "{tokens.roundness.infinity}"
+      },
+      "md": {
+        "fontStyle": "label-3",
+        "size": 44,
+        "iconSize": "{components.icon.xs.size}",
+        "gap": "{tokens.spacing.sm}",
+        "padding": [0, "{tokens.spacing.lg}"],
+        "borderRadius": "{tokens.roundness.infinity}"
+      }
+    },
+    "rounded": {
+      "lg": {
+        "fontStyle": "label-1",
+        "size": 56,
+        "iconSize": "{components.icon.sm.size}",
+        "gap": "{tokens.spacing.sm}",
+        "padding": [0, 0],
+        "borderRadius": "{tokens.roundness.infinity}"
+      },
+      "md": {
+        "fontStyle": "label-3",
+        "size": 44,
+        "iconSize": "{components.icon.xs.size}",
+        "gap": "{tokens.spacing.sm}",
+        "padding": [0, 0],
+        "borderRadius": "{tokens.roundness.infinity}"
+      }
+    }
+  },
+  "progressbar": {
+    "lg": {
+      "height": 10,
+      "borderRadius": 5
+    },
+    "md": {
+      "height": 8,
+      "borderRadius": 4
+    }
+  },
+  "message": {
+    "lg": {
+      "fontStyle": "label-3",
+      "gap": "{tokens.spacing.lg}",
+      "padding": ["{tokens.spacing.xl}", "{tokens.spacing.xxl}"],
+      "borderRadius": "{tokens.roundness.infinity}"
+    },
+    "md": {
+      "fontStyle": "label-3",
+      "gap": "{tokens.spacing.lg}",
+      "padding": ["{tokens.spacing.lg}", "{tokens.spacing.xxl}"],
+      "borderRadius": "{tokens.roundness.infinity}"
+    }
+  }
+}

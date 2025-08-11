@@ -1,1 +1,145 @@
-{}
+{
+  "icon": {
+    "xs": {
+      "size": 16
+    },
+    "sm": {
+      "size": 20
+    },
+    "md": {
+      "size": 24
+    },
+    "lg": {
+      "size": 32
+    },
+    "xl": {
+      "size": 44
+    },
+    "xxl": {
+      "size": 54
+    }
+  },
+  "sheet": {
+    "lg": {
+      "gap": "32px",
+      "buttonOffset": "24px",
+      "padding": [
+        "48px",
+        "24px",
+        "24px",
+        "24px"
+      ]
+    },
+    "md": {
+      "gap": "16px",
+      "buttonOffset": "24px",
+      "padding": [
+        "24px",
+        "24px"
+      ]
+    }
+  },
+  "scrollbar": {
+    "width": 3,
+    "borderRadius": 1
+  },
+  "mainContainer": {
+    "respond": {
+      "mobile": {
+        "padding": "8px"
+      },
+      "desktop": {
+        "padding": "8px"
+      }
+    },
+    "roundness": "16px"
+  },
+  "pageHeader": {
+    "md": {
+      "fontStyle": "title-4"
+    },
+    "lg": {
+      "fontStyle": "title-3"
+    }
+  },
+  "button": {
+    "default": {
+      "lg": {
+        "fontStyle": "label-1",
+        "size": 56,
+        "iconSize": "20px",
+        "gap": "12px",
+        "padding": [
+          0,
+          "32px"
+        ],
+        "borderRadius": "9999px"
+      },
+      "md": {
+        "fontStyle": "label-3",
+        "size": 44,
+        "iconSize": "16px",
+        "gap": "12px",
+        "padding": [
+          0,
+          "24px"
+        ],
+        "borderRadius": "9999px"
+      }
+    },
+    "rounded": {
+      "lg": {
+        "fontStyle": "label-1",
+        "size": 56,
+        "iconSize": "20px",
+        "gap": "12px",
+        "padding": [
+          0,
+          0
+        ],
+        "borderRadius": "9999px"
+      },
+      "md": {
+        "fontStyle": "label-3",
+        "size": 44,
+        "iconSize": "16px",
+        "gap": "12px",
+        "padding": [
+          0,
+          0
+        ],
+        "borderRadius": "9999px"
+      }
+    }
+  },
+  "progressbar": {
+    "lg": {
+      "height": 10,
+      "borderRadius": 5
+    },
+    "md": {
+      "height": 8,
+      "borderRadius": 4
+    }
+  },
+  "message": {
+    "lg": {
+      "fontStyle": "label-3",
+      "gap": "24px",
+      "padding": [
+        "32px",
+        "48px"
+      ],
+      "borderRadius": "9999px"
+    },
+    "md": {
+      "fontStyle": "label-3",
+      "gap": "24px",
+      "padding": [
+        "24px",
+        "48px"
+      ],
+      "borderRadius": "9999px"
+    }
+  }
+}

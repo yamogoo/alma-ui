@@ -12,7 +12,7 @@
 /* Track */
 ::-webkit-scrollbar-track {
   @include themify($themes) {
-    background: rgba(themed("label", "disabled"), 0);
+    background: rgba(themed("label.disabled"), 0);
   }
 }
 
@@ -20,14 +20,14 @@
 ::-webkit-scrollbar-thumb {
   border-radius: calc(map.get($scrollbar, "width") / 2);
   @include themify($themes) {
-    background: themed("label", "primary");
+    background: themed("label.primary");
   }
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   @include themify($themes) {
-    background: themed("label", "accent");
+    background: themed("label.accent");
   }
 }
 

@@ -1,8 +1,6 @@
 import { ref, computed, type ComputedRef } from "vue";
 import { defineStore } from "pinia";
 
-// import { useLocaleStore } from "@/stores";
-
 import { useTheme } from "@/composables";
 
 import type { Theme, Themes } from "@/typings";
@@ -18,8 +16,6 @@ export const DEFAULT_PROTO_THEME = import.meta.env.VITE_UI_LOCAL_PROTO_THEME as
   | undefined;
 
 export const useConfigStore = defineStore("config", () => {
-  // const { $t } = storeToRefs(useLocaleStore());
-
   const settingsData = computed(() => {
     return {};
   });
@@ -39,27 +35,6 @@ export const useConfigStore = defineStore("config", () => {
 
   const isLightTheme = computed(() => {
     return currentTheme.value === "light";
-  });
-
-  const {
-    theme: currentProtoTheme,
-    isSystemThemeEnabled: isSystemProtoThemeEnabled,
-    setTheme: setProtoTheme,
-    toggleTheme: toggleProtoTheme,
-    setIsSystemThemeEnabled: setIsSystemProtoThemeEnabled,
-  } = useTheme(DEFAULT_PROTO_THEME ?? "dark", {
-    selector: "html",
-    prefix: "theme-proto-",
-    key: "PROTO_THEME",
-    systemKey: "IS_SYSTEM_PROTO_THEME_ENABLED",
-  });
-
-  const isLightProtoTheme = computed(() => {
-    return currentProtoTheme.value === "light";
-  });
-
-  const protoThemeKey = computed(() => {
-    return currentProtoTheme.value === "light" ? "protoLight" : "protoDark";
   });
 
   const getSid: ComputedRef<number> = computed(() => {
@@ -82,14 +57,6 @@ export const useConfigStore = defineStore("config", () => {
     toggleTheme,
     setIsSystemThemeEnabled,
     getSid,
-
-    currentProtoTheme,
-    protoThemeKey,
-    isLightProtoTheme,
-    isSystemProtoThemeEnabled,
-    setProtoTheme,
-    toggleProtoTheme,
-    setIsSystemProtoThemeEnabled,
 
     currentPackageVersion,
     setCurrentPackageVersion,

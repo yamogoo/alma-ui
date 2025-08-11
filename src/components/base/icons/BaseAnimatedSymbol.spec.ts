@@ -24,7 +24,7 @@ describe("BaseAnimatedSymbol", () => {
       const isSVGExists = svg.exists();
 
       expect(isSVGExists).toBeTruthy();
-      expect(isSVGExists).toMatchInlineSnapshot(`true`);
+      expect(isSVGExists).toMatchInlineSnapshot();
     });
   });
 });
