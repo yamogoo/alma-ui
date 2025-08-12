@@ -1,21 +1,21 @@
 import { describe, expect, test, vi } from "vitest";
 import { mount } from "@vue/test-utils";
 
-import type { SymbolName, SymbolStyle, SymbolWeight } from "./symbols";
+import type { IconName, IconStyle, IconWeight } from "./icons";
 
-import BaseSymbol from "./BaseSymbol.vue";
+import Icon from "./Icon.vue";
 
-const icons: Array<SymbolName> = ["back", "check"];
+const icons: Array<IconName> = ["back", "check"];
 
-const weightList: Array<SymbolWeight> = ["100", "200", "300", "400", "500"];
+const weightList: Array<IconWeight> = ["100", "200", "300", "400", "500"];
 
-describe("BaseSymbol", () => {
+describe("Icon", () => {
   test.each(icons)("should render %s icon from the Icons Set", async (name) => {
-    const _name = name as SymbolName;
-    const _style: SymbolStyle = "outline";
+    const _name = name as IconName;
+    const _style: IconStyle = "outline";
 
     for (const weight of weightList) {
-      const wrapper = mount(BaseSymbol, {
+      const wrapper = mount(Icon, {
         props: {
           name: _name,
           weight: weight,

@@ -98,11 +98,11 @@ onUnmounted(() => {
 import type { UIElementDirection, UIElementColor } from "@/typings";
 
 import type {
-  SymbolName,
-  SymbolStyle,
-  SymbolWeight,
-} from "@/components/base/icons/symbols";
-import BaseSymbol from "@/components/base/icons/BaseSymbol.vue";
+  IconName,
+  IconStyle,
+  IconWeight,
+} from "@/components/base/icons/icons";
+import Icon from "@/components/base/icons/Icon.vue";
 
 export type ButtonVariant = keyof typeof tokens.button;
 
@@ -123,12 +123,12 @@ export interface Props {
   color: ButtonColor;
   label?: string;
   contentDirection?: ButtonContentDirection;
-  prependIconName?: SymbolName;
-  prependIconStyle?: SymbolStyle;
-  prependIconWeight?: SymbolWeight;
-  appendIconName?: SymbolName;
-  appendIconStyle?: SymbolStyle;
-  appendIconWeight?: SymbolWeight;
+  prependIconName?: IconName;
+  prependIconStyle?: IconStyle;
+  prependIconWeight?: IconWeight;
+  appendIconName?: IconName;
+  appendIconStyle?: IconStyle;
+  appendIconWeight?: IconWeight;
   scalePressed?: number;
   isDisabled?: boolean;
   stretch?: ButtonStretch;
@@ -156,24 +156,24 @@ export interface Props {
     @pointerdown="onDown"
     @pointerup="onUp"
   >
-    <BaseSymbol
+    <Icon
       v-if="prependIconName"
       :name="prependIconName"
       :style="prependIconStyle"
       :weight="prependIconWeight"
-    ></BaseSymbol>
+    ></Icon>
     <div v-if="$slots.content" class="button__content">
       <slot name="content"></slot>
     </div>
     <span v-if="label" class="button__label" data-testid="button-label">{{
       label
     }}</span>
-    <BaseSymbol
+    <Icon
       v-if="appendIconName"
       :name="appendIconName"
       :style="appendIconStyle"
       :weight="appendIconWeight"
-    ></BaseSymbol>
+    ></Icon>
   </button>
 </template>
 

@@ -2,7 +2,7 @@
 import { ref, toValue, watch } from "vue";
 import { Vue3Lottie as LottieAnimation } from "vue3-lottie";
 
-import type { SymbolColor, SymbolSize } from "./symbols";
+import type { IconColor, IconSize } from "./icons";
 
 const props = withDefaults(defineProps<Props>(), {
   speed: 1,
@@ -50,8 +50,8 @@ const onCompleted = (): void => {
 
 <script lang="ts">
 export interface Props {
-  color?: SymbolColor;
-  size?: SymbolSize;
+  color?: IconColor;
+  size?: IconSize;
   animationData: typeof LottieAnimation.animationData;
   speed?: number;
   isActive: boolean;

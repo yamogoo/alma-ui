@@ -4,8 +4,6 @@ import { createTestingPinia } from "@pinia/testing";
 
 import AuthForm from "@/components/forms/AuthForm.vue";
 
-import { useLocaleStore } from "@/stores";
-
 describe("AuthForm.vue", () => {
   let wrapper: ReturnType<typeof mount>;
   const mountComponent = (props = {}) => {
@@ -31,20 +29,6 @@ describe("AuthForm.vue", () => {
 
   beforeEach(() => {
     wrapper = mountComponent();
-    const store = useLocaleStore();
-    store.$t = {
-      auth: {
-        login: {
-          form: {
-            title: "Login",
-            userName: "Username",
-            password: "Password",
-            login: "Log in",
-            skip: "Skip",
-          },
-        },
-      },
-    } as any;
   });
 
   test("renders with default values", () => {
@@ -107,10 +91,4 @@ describe("AuthForm.vue", () => {
 
     expect((wrapper.vm as any).isValid).toBe(false);
   });
-
-  // test("displays an error if passed", async () => {
-  //   await wrapper.setProps({ error: "Invalid credentials" });
-
-  //   expect(wrapper.find('[data-testid="auth-form-error"]').exists()).toBe(true);
-  // });
 });

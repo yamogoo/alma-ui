@@ -2,12 +2,12 @@
 import { defineAsyncComponent, computed } from "vue";
 
 import type {
-  SymbolName,
-  SymbolStyle,
-  SymbolWeight,
-  SymbolColor,
-  SymbolSize,
-} from "./symbols";
+  IconName,
+  IconStyle,
+  IconWeight,
+  IconColor,
+  IconSize,
+} from "./icons";
 import BaseSkeleton from "@/components/base/skeleton/Skeleton.vue";
 
 const props = defineProps<Props>();
@@ -25,11 +25,11 @@ const symbol = computed(() => {
 
 <script lang="ts">
 export interface Props {
-  name: SymbolName;
-  style: SymbolStyle;
-  weight: SymbolWeight;
-  color?: SymbolColor;
-  size?: SymbolSize;
+  name: IconName;
+  style: IconStyle;
+  weight: IconWeight;
+  color?: IconColor;
+  size?: IconSize;
 }
 </script>
 
