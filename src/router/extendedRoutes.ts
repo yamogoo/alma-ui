@@ -1,16 +1,15 @@
 export const routes = [
   {
-    path: "/auth/",
+    path: "/auth",
     alias: "/",
     component: () => import("@/layouts/AuthLayout.vue"),
-    redirect: "/auth/login",
     meta: {
-      rid: -1,
       requiresAuth: false,
     },
     children: [
       {
-        path: "/auth/login",
+        path: "login",
+        alias: "/",
         component: () => import("@/pages/auth/login.vue"),
         meta: {
           rid: -1,
@@ -23,12 +22,11 @@ export const routes = [
     path: "/editor",
     component: () => import("@/layouts/EditorLayout.vue"),
     meta: {
-      rid: 100,
       requiresAuth: false,
     },
     children: [
       {
-        path: "/editor",
+        path: "",
         component: () => import("@/pages/editor/index.vue"),
         meta: {
           rid: 100,

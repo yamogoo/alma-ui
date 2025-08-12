@@ -8,7 +8,7 @@ import type {
   IconColor,
   IconSize,
 } from "./icons";
-import BaseSkeleton from "@/components/base/skeleton/Skeleton.vue";
+import Skeleton from "@/components/base/skeleton/Skeleton.vue";
 
 const props = defineProps<Props>();
 
@@ -44,7 +44,7 @@ export interface Props {
     <Suspense>
       <component v-if="symbol" :is="symbol" viewBox="0 0 24 24"></component>
       <template #fallback>
-        <BaseSkeleton></BaseSkeleton>
+        <Skeleton></Skeleton>
       </template>
     </Suspense>
   </div>

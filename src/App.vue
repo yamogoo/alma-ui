@@ -44,6 +44,8 @@ onMounted(() => {
 <style lang="scss">
 #app {
   @include box(100vw, 100dvh);
+  overflow: hidden;
+
   @include themify($themes) {
     background-color: themed("background.primary");
   }
