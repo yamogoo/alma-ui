@@ -153,6 +153,10 @@
         "splitterActive": "#01259D",
         "knobNormal": "#6D8292",
         "knobActive": "#12ED6A"
+      },
+      "skeleton": {
+        "colorIn": "#58697640",
+        "colorOut": "#58697600"
       }
     },
     "dark": {
@@ -308,6 +312,10 @@
         "splitterActive": "#01259D",
         "knobNormal": "#39444C",
         "knobActive": "#097C37"
+      },
+      "skeleton": {
+        "colorIn": "#6d829240",
+        "colorOut": "#6d829200"
       }
     }
   }

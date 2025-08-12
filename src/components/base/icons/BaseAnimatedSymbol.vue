@@ -65,8 +65,8 @@ export interface Props {
     class="animated-icon"
     :class="[
       {
-        [`animated-icon_${size}`]: !!size,
-        [`animated-icon_${color}`]: !!color,
+        [`animated-icon_size-${size}`]: !!size,
+        [`animated-icon_color-${color}`]: !!color,
       },
     ]"
     :animation-data
@@ -84,7 +84,7 @@ export interface Props {
 
 @mixin defineSizes($map: $icon) {
   @each $size, $val in $map {
-    &_#{$size} {
+    &_size-#{$size} {
       @include box(px2rem(map.get($val, "size")));
     }
   }
@@ -92,7 +92,7 @@ export interface Props {
 
 @mixin defineThemes($names) {
   @each $name in $names {
-    &_#{$name} {
+    &_color-#{$name} {
       svg {
         path {
           @include themify($themes) {

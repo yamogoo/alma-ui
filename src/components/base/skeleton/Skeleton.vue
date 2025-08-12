@@ -52,8 +52,8 @@ export interface Props {}
     inset: 0;
     z-index: 0;
     @include themify($themes) {
-      $color-in: rgba(themed("label.disabled"), 0.25);
-      $color-out: rgba(themed("label.disabled"), 0);
+      $color-in: rgba(themed("skeleton.color-in"), 0.25);
+      $color-out: rgba(themed("skeleton.color-out"), 0);
       background: linear-gradient(90deg, $color-out, $color-in, $color-out);
     }
   }

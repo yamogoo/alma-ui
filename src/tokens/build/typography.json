@@ -139,6 +139,14 @@
       },
       "caption-2": {
         "fontFamily": "Manrope",
+        "fontSize": 10.5,
+        "fontStyle": "normal",
+        "fontWeight": "500",
+        "lineHeight": 13,
+        "letterSpacing": 0.3
+      },
+      "caption-3": {
+        "fontFamily": "Manrope",
         "fontSize": 9,
         "fontStyle": "normal",
         "fontWeight": "500",

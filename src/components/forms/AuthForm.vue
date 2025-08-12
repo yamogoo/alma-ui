@@ -93,6 +93,9 @@ export interface Props {
         :is-error="!!error"
         @update:value="onUpdatePasword"
       ></Input>
+      <Text :variant="'caption-2'" :text-color="'secondary'">{{
+        $t.auth.login.form.description
+      }}</Text>
       <Text
         v-if="!!error"
         :data-testid="'auth-form-error'"

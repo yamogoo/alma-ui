@@ -36,7 +36,9 @@ export interface Props {
 <template>
   <div
     class="icon"
-    :class="[{ [`icon_${size}`]: !!size, [`icon_${color}`]: !!color }]"
+    :class="[
+      { [`icon_size-${size}`]: !!size, [`icon_color-${color}`]: !!color },
+    ]"
     data-testid="icon"
   >
     <Suspense>
@@ -53,7 +55,7 @@ export interface Props {
 
 @mixin defineSizes($map: $icon) {
   @each $size, $val in $map {
-    &_#{$size} {
+    &_size-#{$size} {
       @include box(px2rem(map.get($val, "size")));
     }
   }
@@ -61,7 +63,7 @@ export interface Props {
 
 @mixin defineThemes($names) {
   @each $name in $names {
-    &_#{$name} {
+    &_color-#{$name} {
       @include themify($themes) {
         fill: themed("label.#{$name}");
       }
