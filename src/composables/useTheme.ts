@@ -6,6 +6,7 @@ import {
   type Ref,
   type MaybeRefOrGetter,
   toValue,
+  onUnmounted,
 } from "vue";
 
 import type { Theme, SystemTheme, LocalStorageKey } from "@/typings";
@@ -36,7 +37,7 @@ export const useTheme = (
   } as Required<UseThemeOptions>;
 
   const localTheme = useTypedLocalStorage(key, toValue(init));
-  const localSystemTheme: Ref<SystemTheme> = ref(localTheme);
+  const localSystemTheme: Ref<SystemTheme> = ref(localTheme.value);
   const isSystemThemeEnabled = useTypedLocalStorage(
     systemKey,
     DEFAULT_IS_SYSTEM_THEME_ENABLED
@@ -65,7 +66,7 @@ export const useTheme = (
   const setIsSystemThemeEnabled = (isEnabled: boolean) =>
     (isSystemThemeEnabled.value = isEnabled);
 
-  const setIntiSystemTheme = (): void => {
+  const setInitSystemTheme = (): void => {
     const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     setSystemTheme(isDark);
   };
@@ -74,17 +75,26 @@ export const useTheme = (
     localSystemTheme.value = isDark ? "dark" : "light";
   };
 
+  let mediaQuery: MediaQueryList;
+  let mediaHandler: ((e: MediaQueryListEvent) => void) | null = null;
+
   const onUpdateSystemTheme = (): void => {
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", ({ matches: isDark }) => {
-        console.log(isDark);
-        setSystemTheme(isDark);
-      });
+    mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    mediaHandler = ({ matches: isDark }) => setSystemTheme(isDark);
+    mediaQuery.addEventListener("change", mediaHandler);
   };
 
+  onUnmounted(() => {
+    if (mediaQuery && mediaHandler) {
+      mediaQuery.removeEventListener("change", mediaHandler);
+    }
+  });
+
   onMounted(() => {
-    setIntiSystemTheme();
+    setInitSystemTheme();
+    if (isSystemThemeEnabled.value) {
+      setSystemTheme(window.matchMedia("(prefers-color-scheme: dark)").matches);
+    }
     onUpdateSystemTheme();
   });
 
@@ -92,7 +102,8 @@ export const useTheme = (
     theme,
     (newTheme, prevTheme) => {
       const htmlEl = document.querySelector(selector);
-      if (htmlEl) {
+
+      if (htmlEl && !(prevTheme === newTheme)) {
         htmlEl.classList.remove(`${prefix}${prevTheme}`);
         htmlEl.classList.add(`${prefix}${newTheme}`);
       }

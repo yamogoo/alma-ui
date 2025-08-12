@@ -64,3 +64,15 @@
     }
   }
 }
+
+// * * * PROPS GENERATOR * * * //
+
+@mixin responsive-props($prop, $prefix, $container-name: default) {
+  @each $bp, $value in $breakpoints {
+    @include respond-above($bp, $container-name) {
+      &[class*="#{$prefix}-#{$bp}-"] {
+        $class-val: attr(class);
+      }
+    }
+  }
+}

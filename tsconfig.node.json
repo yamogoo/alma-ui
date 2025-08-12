@@ -19,19 +19,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-
     "skipLibCheck": true,
     "noEmitOnError": true
   },
-  "include": [
-    // "tokensParser.ts",
-    // "colorsGenerator.ts",
-    // "generateChangelog.ts",
-    "server/**/*.ts",
-    "server/**/*.db"
-  ],
-  "exclude": [
-    "dist",
-    "node_modules"
-  ]
+  "include": ["server/**/*.ts", "server/**/*.db"],
+  "exclude": ["dist", "node_modules"]
 }

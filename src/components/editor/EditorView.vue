@@ -23,6 +23,7 @@ const onUpdateWidth = (width: number) => {
     <ResizeBounding
       v-if="isNavigatorShown"
       class="editor-view__navigator"
+      data-test="editor-navigator"
       :directions="'r'"
       :width="navigatorWidth"
       :min-width="DEFAULT_NAVIGATOR_MIN_WIDTH"

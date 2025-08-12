@@ -30,7 +30,7 @@ const emits = defineEmits<{
       activeAreaWidth,
       position: 'internal',
       knob: {
-        show: true,
+        show: false,
       },
       touchActions: true,
     }"
