@@ -1,7 +1,7 @@
 import { mount } from "@vue/test-utils";
 import { describe, test, expect } from "vitest";
 
-import BaseAnimatedSymbol, { type Props } from "./BaseAnimatedSymbol.vue";
+import AnimatedIcon, { type Props } from "./AnimatedIcon.vue";
 
 import animationData from "@/assets/animations/spinner.json";
 
@@ -10,9 +10,9 @@ const REQUIRED_PROPS: Props = {
   isActive: false,
 };
 
-describe("BaseAnimatedSymbol", () => {
+describe("AnimatedIcon", () => {
   describe("elements", () => {
-    const wrapper = mount(BaseAnimatedSymbol, { props: REQUIRED_PROPS });
+    const wrapper = mount(AnimatedIcon, { props: REQUIRED_PROPS });
 
     test("should render lottie (svg) dom element", async () => {
       const container = wrapper.find(`.animated-icon`);

@@ -1,6 +1,6 @@
 import type { UIElementColor, UIElementSize } from "@/typings";
 
-export type SymbolName =
+export type IconName =
   | "back"
   | "check"
   | "down"
@@ -9,11 +9,11 @@ export type SymbolName =
   | "login"
   | "logout";
 
-export type SymbolStyle = "outline" | "fill" | "squared";
+export type IconStyle = "outline" | "fill" | "squared";
 
-export type SymbolWeight = "100" | "200" | "300" | "400" | "500";
+export type IconWeight = "100" | "200" | "300" | "400" | "500";
 
-export type SymbolColor = Extract<
+export type IconColor = Extract<
   UIElementColor,
   | "primary"
   | "primary-inversed"
@@ -24,13 +24,13 @@ export type SymbolColor = Extract<
   | "accept"
 >;
 
-export type SymbolSize = Extract<
+export type IconSize = Extract<
   UIElementSize,
   "xxxxs" | "xxxs" | "xxs" | "xs" | "sm" | "md" | "lg"
 >;
 
 export interface IconProps {
-  iconName: SymbolName;
-  iconStyle: SymbolStyle;
-  iconWidth: SymbolWeight;
+  iconName: IconName;
+  iconStyle: IconStyle;
+  iconWidth: IconWeight;
 }

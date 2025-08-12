@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { SymbolName, SymbolStyle, SymbolWeight } from "../icons/symbols";
+import type { IconName, IconStyle, IconWeight } from "../icons/icons";
 import ProtoButton, {
   type ButtonColor,
   type ButtonContentDirection,
@@ -39,9 +39,9 @@ export interface Props {
   color: ButtonColor;
   label?: string;
   contentDirection?: ButtonContentDirection;
-  iconName?: SymbolName;
-  iconStyle?: SymbolStyle;
-  iconWeight?: SymbolWeight;
+  iconName?: IconName;
+  iconStyle?: IconStyle;
+  iconWeight?: IconWeight;
   isDisabled?: boolean;
   stretch?: ButtonStretch;
 }

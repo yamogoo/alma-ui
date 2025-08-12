@@ -51,7 +51,7 @@ describe("Button.vue", () => {
         },
       });
 
-      const icons = wrapper.findAllComponents({ name: "BaseSymbol" });
+      const icons = wrapper.findAllComponents({ name: "Icon" });
 
       expect(icons.length).toBe(2);
       expect(icons[0].props("name")).toBe("back");
