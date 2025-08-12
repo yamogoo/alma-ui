@@ -10,7 +10,7 @@ const activeAreaWidth = tokens.resizer["activeAreaWidth"];
 
 const PREFIX = "resizer__";
 
-const props = withDefaults(defineProps<Props>(), {});
+const props = defineProps<Props>();
 
 const emits = defineEmits<{
   (e: "update:width", width: number): void;

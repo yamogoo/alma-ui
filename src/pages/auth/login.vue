@@ -8,6 +8,7 @@ import { useAuthStore } from "@/stores";
 
 import { useTimeout } from "@/composables";
 
+import Page from "@/components/base/page/Page.vue";
 import AuthForm from "@/components/forms/AuthForm.vue";
 
 const START_DELAY = 350;
@@ -130,9 +131,12 @@ const animInit = (): void => {
   messageAnimTimer.start();
 };
 
+const onPageAnimCompleted = (): void => {
+  animInit();
+};
+
 onMounted(() => {
   onRedirectIfLoggedIn();
-  animInit();
 });
 
 onUnmounted(() => {
@@ -141,7 +145,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="login">
+  <Page class="login" @anim-enter-completed="onPageAnimCompleted">
     <div ref="refContent" class="login__content">
       <Transition :css="false">
         <div class="login__form-wrapper" ref="refForm">
@@ -153,7 +157,7 @@ onUnmounted(() => {
         </div>
       </Transition>
     </div>
-  </div>
+  </Page>
 </template>
 
 <style lang="scss">

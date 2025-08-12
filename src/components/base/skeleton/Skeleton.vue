@@ -2,8 +2,6 @@
 import { onMounted, ref } from "vue";
 import g from "gsap";
 
-defineProps<Props>();
-
 const refShape = ref<HTMLDivElement | null>(null);
 
 onMounted(() => {
@@ -25,10 +23,6 @@ const onAnimate = (el: Element): void => {
     }
   );
 };
-</script>
-
-<script lang="ts">
-export interface Props {}
 </script>
 
 <template>

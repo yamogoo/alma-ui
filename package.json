@@ -58,6 +58,10 @@
   "devDependencies": {
     "@eslint/js": "^9.33.0",
     "@pinia/testing": "^1.0.2",
+    "@storybook/addon-docs": "^9.1.2",
+    "@storybook/client-api": "^7.6.17",
+    "@storybook/manager-api": "^8.6.14",
+    "@storybook/theming": "^8.6.14",
     "@storybook/vue3": "^9.1.2",
     "@storybook/vue3-vite": "^9.1.2",
     "@types/bcrypt": "^5.0.2",
