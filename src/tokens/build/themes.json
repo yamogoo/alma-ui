@@ -147,6 +147,12 @@
         "borderPrimary": "#D5DBE0",
         "backgroundSecondary": "#e5e9f1",
         "borderSecondary": "#D5DBE0"
+      },
+      "resizer": {
+        "splitterNormal": "#029C15",
+        "splitterActive": "#029C15",
+        "knobNormal": "#6D8292",
+        "knobActive": "#12ED6A"
       }
     },
     "dark": {
@@ -296,6 +302,12 @@
         "borderPrimary": "#1A1F23",
         "backgroundSecondary": "#1A1F23",
         "borderSecondary": "#1A1F23"
+      },
+      "resizer": {
+        "splitterNormal": "#029C15",
+        "splitterActive": "#029C15",
+        "knobNormal": "#39444C",
+        "knobActive": "#097C37"
       }
     }
   }

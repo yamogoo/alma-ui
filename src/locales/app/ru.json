@@ -2,15 +2,14 @@
   "version": "version",
   "auth": {
     "login": {
-      "cover": {
-        "title": "оплата в кафе",
-        "description": "тестовое задание"
-      },
       "form": {
         "title": "Войдите",
         "userName": "имя пользователя",
         "password": "пароль",
-        "login": "Войти"
+        "login": "Войти",
+        "skip": "Пропустить",
+        "forgotPassword": "зыбыли пароль?",
+        "register": "регистрация"
       }
     }
   },

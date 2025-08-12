@@ -24,15 +24,15 @@ export const routes = [
     component: () => import("@/layouts/EditorLayout.vue"),
     meta: {
       rid: 100,
-      requiresAuth: true,
+      requiresAuth: false,
     },
     children: [
       {
-        path: "/editor/notes",
+        path: "/editor",
         component: () => import("@/pages/editor/index.vue"),
         meta: {
           rid: 100,
-          requiresAuth: true,
+          requiresAuth: false,
         },
       },
     ],

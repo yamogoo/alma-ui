@@ -74,6 +74,7 @@ describe("useTheme", () => {
   describe("values", () => {
     test("should not change theme", async () => {
       const { setTheme, setIsSystemThemeEnabled } = useTheme("dark", opts);
+
       const { prefix } = opts;
 
       setIsSystemThemeEnabled(true);
@@ -82,7 +83,7 @@ describe("useTheme", () => {
       setTheme("light");
       await nextTick();
 
-      const body = document.querySelector("body");
+      const body = document.querySelector("html");
 
       if (body) {
         const classes = body.classList;
@@ -97,7 +98,7 @@ describe("useTheme", () => {
         expect(isClassExists).toBeFalsy();
         expect(classes).toMatchInlineSnapshot(`
           DOMTokenList {
-            "0": "theme--dark",
+            "0": "theme-light",
           }
         `);
       }

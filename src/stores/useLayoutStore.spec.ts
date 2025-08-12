@@ -1,10 +1,10 @@
-import { useProtoLayoutStore } from "./useProtoLayoutStore";
+import { useLayoutStore } from "./useLayoutStore";
 
 import tokens from "@/tokens";
 
-describe("useProtoLayoutStore", () => {
+describe("useLayoutStore", () => {
   test("should set the appSize", async () => {
-    const store = useProtoLayoutStore();
+    const store = useLayoutStore();
 
     const expectedAppSize1 = {
       width: 240,
@@ -24,7 +24,7 @@ describe("useProtoLayoutStore", () => {
   });
 
   test("should change layoutType", () => {
-    const store = useProtoLayoutStore();
+    const store = useLayoutStore();
 
     const expectedAppSize1 = {
       width: 240,
@@ -44,7 +44,7 @@ describe("useProtoLayoutStore", () => {
   });
 
   test("should detect isTabletLayout", () => {
-    const store = useProtoLayoutStore();
+    const store = useLayoutStore();
 
     const expectedAppSize1 = {
       width: tokens.breakpoints.md - 1,

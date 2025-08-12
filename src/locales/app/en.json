@@ -2,15 +2,14 @@
   "version": "version",
   "auth": {
     "login": {
-      "cover": {
-        "title": "payment in cafe",
-        "description": "assessment task"
-      },
       "form": {
         "title": "Log in",
         "userName": "user name",
         "password": "password",
-        "login": "login"
+        "login": "login",
+        "skip": "skip",
+        "forgotPassword": "forgot password?",
+        "register": "register"
       }
     }
   },
