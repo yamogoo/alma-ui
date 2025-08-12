@@ -153,6 +153,12 @@
         "borderPrimary": "{themes.themes.light.border.primary}",
         "backgroundSecondary": "{themes.themes.light.background.secondary}",
         "borderSecondary": "{themes.themes.light.border.primary}"
+      },
+      "resizer": {
+        "splitterNormal": "{themes.themes.light.label.accent}",
+        "splitterActive": "{themes.themes.light.label.accent}",
+        "knobNormal": "{colors.gray-500}",
+        "knobActive": "{colors.accent-500}"
       }
     },
     "dark": {
@@ -308,6 +314,12 @@
         "borderPrimary": "{themes.themes.dark.border.primary}",
         "backgroundSecondary": "{themes.themes.dark.background.secondary}",
         "borderSecondary": "{themes.themes.dark.border.primary}"
+      },
+      "resizer": {
+        "splitterNormal": "{themes.themes.light.label.accent}",
+        "splitterActive": "{themes.themes.light.label.accent}",
+        "knobNormal": "{colors.gray-750}",
+        "knobActive": "{colors.accent-750}"
       }
     }
   }

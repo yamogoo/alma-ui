@@ -39,6 +39,10 @@ const onLogin = async (email: string, password: string): Promise<void> => {
   onRedirectIfLoggedIn();
 };
 
+const onContinueAsGuest = (): void => {
+  router.push("/editor");
+};
+
 const containerToCenterOffset = (): number => {
   const height = refContent.value?.clientHeight ?? 0;
   const messageHeight = refMessage.value?.clientHeight ?? 0;
@@ -141,7 +145,11 @@ onUnmounted(() => {
     <div ref="refContent" class="login__content">
       <Transition :css="false">
         <div ref="refForm">
-          <AuthForm :error="loginError" @submit="onLogin"></AuthForm>
+          <AuthForm
+            :error="loginError"
+            @submit="onLogin"
+            @continue-as-guest="onContinueAsGuest"
+          ></AuthForm>
         </div>
       </Transition>
     </div>

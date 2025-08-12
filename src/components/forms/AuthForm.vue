@@ -18,6 +18,7 @@ const emit = defineEmits<{
   (e: "update:email", email: string): void;
   (e: "update:password", password: string): void;
   (e: "submit", email: string, password: string): void;
+  (e: "continue-as-guest"): void;
 }>();
 
 const MIN_PASSWORD_LENGTH =
@@ -56,6 +57,10 @@ const onUpdatePasword = (password: string): void => {
 
 const onSubmit = async (): Promise<void> => {
   emit("submit", localEmail.value, localPassword.value);
+};
+
+const onContinueAsGuest = (): void => {
+  emit("continue-as-guest");
 };
 </script>
 
@@ -100,6 +105,14 @@ export interface Props {
           :is-disabled="!isValid"
           @press="onSubmit"
           @key.enter="onSubmit"
+        ></ActionButton>
+        <ActionButton
+          :color="'accent'"
+          :size="'md'"
+          :stretch="'fill'"
+          :label="$t.auth.login.form.skip"
+          :is-disabled="!isValid"
+          @press="onContinueAsGuest"
         ></ActionButton>
       </template>
     </Form>
