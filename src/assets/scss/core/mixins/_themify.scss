@@ -1,13 +1,33 @@
 @use "sass:map";
+@use "sass:meta";
 @use "../../abstracts/themes" as *;
 @use "../mixins/map-get" as utils;
 
 $theme-map: null;
+$use-css-variables: false !default;
 
-@mixin themify($themes: $themes) {
+@mixin export-css-vars($map, $prefix: "") {
+  @each $key, $value in $map {
+    $var-name: if($prefix != "", "#{$prefix}-#{$key}", "#{$key}");
+
+    @if meta.type-of($value) == "map" {
+      @include export-css-vars($value, $var-name);
+    } @else {
+      --#{$var-name}: #{$value};
+    }
+  }
+}
+
+@mixin themify($themes: $themes, $useCSSVariables: false) {
+  $flag: if($useCSSVariables == null, $use-css-variables, $useCSSVariables);
+
   @each $theme, $map in $themes {
     .theme-#{$theme} & {
       $theme-map: $map !global;
+
+      @if $flag {
+        @include export-css-vars($map);
+      }
 
       @content;
 
@@ -16,9 +36,29 @@ $theme-map: null;
   }
 }
 
-@function themed($path) {
+@function themed($path, $useCSSVariables: null) {
+  $flag: if($useCSSVariables == null, $use-css-variables, $useCSSVariables);
+
+  @if $flag {
+    $keys: str-replace($path, ".", "-");
+    @return unquote("var(--#{$keys})");
+  }
+
   @if $theme-map == null {
     @error "themed(): No active theme map. Use inside themify().";
   }
   @return utils.get($theme-map, $path);
+}
+
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace +
+      str-replace(
+        str-slice($string, $index + str-length($search)),
+        $search,
+        $replace
+      );
+  }
+  @return $string;
 }
