@@ -125,9 +125,8 @@ export const generateColorsFromFile = (opts: ColorsGeneratorOptions): void => {
 
   try {
     fs.writeFileSync(outputPath, JSON.stringify(resultMap, null, 2), "utf-8");
-    fs.writeFileSync(markdownPath, comment, "utf-8");
+    if (writeMarkdownFiles) fs.writeFileSync(markdownPath, comment, "utf-8");
 
-    if (!writeMarkdownFiles) return;
     console.log(`✅ Colors written to: ${outputPath}`);
   } catch (err) {
     console.error("❌ Failed to write output:", err);

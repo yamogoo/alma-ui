@@ -22,7 +22,7 @@ const emit = defineEmits<{
 }>();
 
 const MIN_PASSWORD_LENGTH =
-  +import.meta.env.VITE__FORM_PASSWORD_MIN_LENGTH || 0;
+  +import.meta.env.VITE__FORM_PASSWORD_MIN_LENGTH || 6;
 
 const localEmail = ref<string>("");
 const localPassword = ref<string>("");
@@ -93,9 +93,13 @@ export interface Props {
         :is-error="!!error"
         @update:value="onUpdatePasword"
       ></Input>
-      <Text v-if="!!error" :variant="'caption-1'" :text-color="'error'">{{
-        error
-      }}</Text>
+      <Text
+        v-if="!!error"
+        :data-testid="'auth-form-error'"
+        :variant="'caption-1'"
+        :text-color="'error'"
+        >{{ error }}</Text
+      >
       <template #footer>
         <ActionButton
           :color="'accent'"
@@ -111,7 +115,6 @@ export interface Props {
           :size="'md'"
           :stretch="'fill'"
           :label="$t.auth.login.form.skip"
-          :is-disabled="!isValid"
           @press="onContinueAsGuest"
         ></ActionButton>
       </template>

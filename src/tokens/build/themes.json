@@ -1,6 +1,20 @@
 {
   "themes": {
     "light": {
+      "label": {
+        "primary": "#2F383F",
+        "primaryInversed": "#DCE1E5",
+        "secondary": "#586976",
+        "tertiary": "#6D8292",
+        "disabled": "#586976",
+        "accent": "#01259D",
+        "accentYellow": "#FFF700",
+        "accentGreen": "#03CC1C",
+        "accentBlue": "#0136E6",
+        "info": "#3161FE",
+        "warning": "#FFB531",
+        "error": "#E96B6B"
+      },
       "background": {
         "base": "#EAEDEF",
         "primary": "#F8F9FA",
@@ -9,25 +23,11 @@
         "secondary": "#e5e9f1",
         "secondaryTransparent": "#e5e9f1bf",
         "tertiary": "#A5B1BC",
-        "accent": "#01B2FE",
+        "accent": "#013CFE",
         "accept": "#FFB531",
         "accentYellow": "#FFF700",
         "accentGreen": "#03CC1C",
-        "accentBlue": "#01A1E6"
-      },
-      "label": {
-        "primary": "#2F383F",
-        "primaryInversed": "#DCE1E5",
-        "secondary": "#586976",
-        "tertiary": "#6D8292",
-        "disabled": "#586976",
-        "accent": "#029C15",
-        "accentYellow": "#FFF700",
-        "accentGreen": "#03CC1C",
-        "accentBlue": "#01A1E6",
-        "info": "#31C0FE",
-        "warning": "#FFB531",
-        "error": "#E96B6B"
+        "accentBlue": "#0136E6"
       },
       "border": {
         "primary": "#D5DBE0",
@@ -66,10 +66,10 @@
         "labelAccentDisabled": "#F8F9FA",
         "labelAccentHovered": "#F8F9FA",
         "labelAccentPressed": "#F8F9FA",
-        "backgroundAccentNormal": "#083F96",
-        "backgroundAccentDisabled": "#083F96",
-        "backgroundAccentHovered": "#07357F",
-        "backgroundAccentPressed": "#062C68",
+        "backgroundAccentNormal": "#01259D",
+        "backgroundAccentDisabled": "#01259D",
+        "backgroundAccentHovered": "#011F85",
+        "backgroundAccentPressed": "#001A6D",
         "labelErrorNormal": "#F8F9FA",
         "labelErrorDisabled": "#F8F9FA",
         "labelErrorHovered": "#F8F9FA",
@@ -149,13 +149,27 @@
         "borderSecondary": "#D5DBE0"
       },
       "resizer": {
-        "splitterNormal": "#029C15",
-        "splitterActive": "#029C15",
+        "splitterNormal": "#01259D",
+        "splitterActive": "#01259D",
         "knobNormal": "#6D8292",
         "knobActive": "#12ED6A"
       }
     },
     "dark": {
+      "label": {
+        "primary": "#DCE1E5",
+        "primaryInversed": "#2F383F",
+        "secondary": "#A5B1BC",
+        "tertiary": "#8999A7",
+        "disabled": "#6D8292",
+        "accent": "#6286FE",
+        "accentYellow": "#FFF700",
+        "accentGreen": "#04FB23",
+        "accentBlue": "#013CFE",
+        "info": "#3161FE",
+        "warning": "#FFB531",
+        "error": "#E54B4B"
+      },
       "background": {
         "base": "#1A1F23",
         "primary": "#101315",
@@ -164,25 +178,11 @@
         "secondary": "#1A1F23",
         "secondaryTransparent": "#1a1f23bf",
         "tertiary": "#2F383F",
-        "accent": "#01B2FE",
+        "accent": "#013CFE",
         "accept": "#FFB531",
         "accentYellow": "#FFF700",
         "accentGreen": "#04FB23",
-        "accentBlue": "#01B2FE"
-      },
-      "label": {
-        "primary": "#DCE1E5",
-        "primaryInversed": "#2F383F",
-        "secondary": "#A5B1BC",
-        "tertiary": "#8999A7",
-        "disabled": "#6D8292",
-        "accent": "#63FD77",
-        "accentYellow": "#FFF700",
-        "accentGreen": "#04FB23",
-        "accentBlue": "#01B2FE",
-        "info": "#31C0FE",
-        "warning": "#FFB531",
-        "error": "#E54B4B"
+        "accentBlue": "#013CFE"
       },
       "border": {
         "primary": "#1A1F23",
@@ -221,10 +221,10 @@
         "labelAccentDisabled": "#F8F9FA",
         "labelAccentHovered": "#F8F9FA",
         "labelAccentPressed": "#F8F9FA",
-        "backgroundAccentNormal": "#083F96",
-        "backgroundAccentDisabled": "#083F96",
-        "backgroundAccentHovered": "#07357F",
-        "backgroundAccentPressed": "#062C68",
+        "backgroundAccentNormal": "#01259D",
+        "backgroundAccentDisabled": "#01259D",
+        "backgroundAccentHovered": "#011F85",
+        "backgroundAccentPressed": "#001A6D",
         "labelErrorNormal": "#F8F9FA",
         "labelErrorDisabled": "#F8F9FA",
         "labelErrorHovered": "#F8F9FA",
@@ -304,8 +304,8 @@
         "borderSecondary": "#1A1F23"
       },
       "resizer": {
-        "splitterNormal": "#029C15",
-        "splitterActive": "#029C15",
+        "splitterNormal": "#01259D",
+        "splitterActive": "#01259D",
         "knobNormal": "#39444C",
         "knobActive": "#097C37"
       }

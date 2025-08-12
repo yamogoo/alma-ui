@@ -9,7 +9,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    
+
     "moduleResolution": "Bundler",
 
     "baseUrl": ".",
@@ -19,7 +19,7 @@
     "paths": {
       "~/*": ["./*"],
       "@/*": ["./src/*"],
-      "@@/*": ["./proto-src/*"],
+      "@@/*": ["./src/server/*"],
       "components/*": ["./src/components/*"],
       "composables/*": ["./src/composables/*"],
       "layouts/*": ["./src/layouts/*"],
@@ -38,12 +38,7 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "styles.d.ts",
-    "src/**/*.mdx",
-    "proto-src/**/*.ts",
-    "proto-src/**/*.d.ts",
-    "proto-src/**/*.tsx",
-    "proto-src/**/*.vue",
-    "proto-src/**/*.mdx",
+    "src/**/*.mdx"
   ],
   "exclude": ["src/**/__tests__/*"]
 }

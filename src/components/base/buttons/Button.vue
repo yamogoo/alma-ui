@@ -261,6 +261,7 @@ export interface Props {
       &.button_disabled {
         @include themify($themes) {
           background-color: themed("button.background-#{$name}-disabled");
+          opacity: 0.5;
         }
 
         .button__label {

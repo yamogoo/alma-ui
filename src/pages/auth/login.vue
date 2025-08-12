@@ -26,12 +26,12 @@ const refContent = ref<HTMLDivElement | null>();
 const refMessage = ref<HTMLDivElement | null>();
 const refForm = ref<HTMLDivElement | null>();
 
-const onRedirectToProto = (): void => {
+const onRedirectToEditor = (): void => {
   router.push("/editor");
 };
 
 const onRedirectIfLoggedIn = (): void => {
-  if (isLoggedIn.value) onRedirectToProto();
+  if (isLoggedIn.value) onRedirectToEditor();
 };
 
 const onLogin = async (email: string, password: string): Promise<void> => {
@@ -40,7 +40,7 @@ const onLogin = async (email: string, password: string): Promise<void> => {
 };
 
 const onContinueAsGuest = (): void => {
-  router.push("/editor");
+  onRedirectToEditor();
 };
 
 const containerToCenterOffset = (): number => {
@@ -144,7 +144,7 @@ onUnmounted(() => {
   <div class="login">
     <div ref="refContent" class="login__content">
       <Transition :css="false">
-        <div ref="refForm">
+        <div class="login__form-wrapper" ref="refForm">
           <AuthForm
             :error="loginError"
             @submit="onLogin"

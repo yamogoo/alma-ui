@@ -1,6 +1,20 @@
 {
   "themes": {
     "light": {
+      "label": {
+        "primary": "{colors.gray-800}",
+        "primaryInversed": "{colors.gray-100}",
+        "secondary": "{colors.gray-600}",
+        "tertiary": "{colors.gray-500}",
+        "disabled": "{colors.gray-600}",
+        "accent": "{colors.blue-700}",
+        "accentYellow": "{colors.yellow-500}",
+        "accentGreen": "{colors.green-600}",
+        "accentBlue": "{colors.blue-550}",
+        "info": "{colors.blue-400}",
+        "warning": "{colors.orange-400}",
+        "error": "{colors.red-325}"
+      },
       "background": {
         "base": "{colors.gray-50}",
         "primary": "{colors.gray-0}",
@@ -14,20 +28,6 @@
         "accentYellow": "{colors.yellow-500}",
         "accentGreen": "{colors.green-600}",
         "accentBlue": "{colors.blue-550}"
-      },
-      "label": {
-        "primary": "{colors.gray-800}",
-        "primaryInversed": "{colors.gray-100}",
-        "secondary": "{colors.gray-600}",
-        "tertiary": "{colors.gray-500}",
-        "disabled": "{colors.gray-600}",
-        "accent": "{colors.green-700}",
-        "accentYellow": "{colors.yellow-500}",
-        "accentGreen": "{colors.green-600}",
-        "accentBlue": "{colors.blue-550}",
-        "info": "{colors.blue-400}",
-        "warning": "{colors.orange-400}",
-        "error": "{colors.red-325}"
       },
       "border": {
         "primary": "{colors.gray-125}",
@@ -162,6 +162,20 @@
       }
     },
     "dark": {
+      "label": {
+        "primary": "{colors.gray-100}",
+        "primaryInversed": "{colors.gray-800}",
+        "secondary": "{colors.gray-300}",
+        "tertiary": "{colors.gray-400}",
+        "disabled": "{colors.gray-500}",
+        "accent": "{colors.blue-300}",
+        "accentYellow": "{colors.yellow-500}",
+        "accentGreen": "{colors.green-500}",
+        "accentBlue": "{colors.blue-500}",
+        "info": "{colors.blue-400}",
+        "warning": "{colors.orange-400}",
+        "error": "{colors.red-400}"
+      },
       "background": {
         "base": "{colors.gray-900}",
         "primary": "{colors.gray-950}",
@@ -175,20 +189,6 @@
         "accentYellow": "{colors.yellow-500}",
         "accentGreen": "{colors.green-500}",
         "accentBlue": "{colors.blue-500}"
-      },
-      "label": {
-        "primary": "{colors.gray-100}",
-        "primaryInversed": "{colors.gray-800}",
-        "secondary": "{colors.gray-300}",
-        "tertiary": "{colors.gray-400}",
-        "disabled": "{colors.gray-500}",
-        "accent": "{colors.green-300}",
-        "accentYellow": "{colors.yellow-500}",
-        "accentGreen": "{colors.green-500}",
-        "accentBlue": "{colors.blue-500}",
-        "info": "{colors.blue-400}",
-        "warning": "{colors.orange-400}",
-        "error": "{colors.red-400}"
       },
       "border": {
         "primary": "{colors.gray-900}",

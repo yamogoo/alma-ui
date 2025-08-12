@@ -2,7 +2,6 @@ import { computed } from "vue";
 import { defineStore } from "pinia";
 
 import locales from "@/locales";
-
 import { useTypedLocalStorage } from "@/composables";
 
 import type { Locale } from "@/typings";
@@ -12,16 +11,24 @@ const DEFAULT_LOCALE = import.meta.env.VITE_APP_DEFAULT_LOCALE as Locale;
 export type LocaleVersion = keyof typeof locales.app.en.version;
 
 export const useLocaleStore = defineStore("locale-store", () => {
-  const currentLocale = useTypedLocalStorage<Locale>("LOCALE", DEFAULT_LOCALE);
+  const availableLocales = Object.keys(locales.app) as Locale[];
+
+  const currentLocale = useTypedLocalStorage<Locale>(
+    "LOCALE",
+    availableLocales.includes(DEFAULT_LOCALE)
+      ? DEFAULT_LOCALE
+      : availableLocales[0]
+  );
 
   const setLocale = (locale: Locale) => {
-    currentLocale.value = locale;
+    if (availableLocales.includes(locale)) {
+      currentLocale.value = locale;
+    } else {
+      console.warn(`[locale-store] Unknown locale: ${locale}`);
+    }
   };
 
-  const $t = computed(() => {
-    const app = locales.app;
-    return app[currentLocale.value];
-  });
+  const $t = computed(() => locales.app[currentLocale.value]);
 
   return {
     currentLocale,
