@@ -108,6 +108,38 @@
       }
     }
   },
+  "dropDown": {
+    "lg": {
+      "fontStyle": "label-2",
+      "minWidth": 76,
+      "height": 56,
+      "gap": "{tokens.spacing.xs}",
+      "paddingV": "{tokens.spacing.xs}",
+      "paddingH": "{tokens.spacing.sm}",
+      "borderRadius": "{tokens.roundness.xs}",
+      "iconSize": "{components.icon.xxs.size}"
+    },
+    "md": {
+      "fontStyle": "label-3",
+      "minWidth": 76,
+      "height": 44,
+      "gap": "{tokens.spacing.xs}",
+      "paddingV": "{tokens.spacing.xs}",
+      "paddingH": "{tokens.spacing.sm}",
+      "borderRadius": "{tokens.roundness.xs}",
+      "iconSize": "{components.icon.xxs.size}"
+    }
+  },
+  "options": {
+    "lg": {
+      "optionFontStyle": "label-2",
+      "optionMinHeight": 24
+    },
+    "md": {
+      "optionFontStyle": "label-3",
+      "optionMinHeight": 24
+    }
+  },
   "form": {
     "md": {
       "paddingV": "{tokens.spacing.md}",

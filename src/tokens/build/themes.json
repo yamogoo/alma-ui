@@ -112,11 +112,11 @@
         "knobActive": "#F8F9FA"
       },
       "options": {
-        "labelPrimary": "#2F383F",
+        "labelPrimaryNormal": "#2F383F",
         "labelPrimaryDisabled": "#8999A7",
         "labelPrimaryHovered": "#101315",
         "labelPrimaryFocused": "#101315",
-        "labelSecondary": "#2F383F",
+        "labelSecondaryNormal": "#2F383F",
         "labelSecondaryDisabled": "#8999A7",
         "labelSecondaryHovered": "#101315",
         "labelSecondaryFocused": "#101315"
@@ -271,11 +271,11 @@
         "knobActive": "#F8F9FA"
       },
       "options": {
-        "labelPrimary": "#A5B1BC",
+        "labelPrimaryNormal": "#A5B1BC",
         "labelPrimaryDisabled": "#586976",
         "labelPrimaryHovered": "#EAEDEF",
         "labelPrimaryFocused": "#EAEDEF",
-        "labelSecondary": "#A5B1BC",
+        "labelSecondaryNormal": "#A5B1BC",
         "labelSecondaryDisabled": "#586976",
         "labelSecondaryHovered": "#EAEDEF",
         "labelSecondaryFocused": "#EAEDEF"
