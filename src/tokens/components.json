@@ -97,11 +97,19 @@
         "borderRadius": "{tokens.roundness.infinity}"
       },
       "md": {
-        "fontStyle": "label-3",
+        "fontStyle": "label-2",
         "size": 44,
         "iconSize": "{components.icon.xs.size}",
         "gap": "{tokens.spacing.sm}",
         "padding": [0, "{tokens.spacing.lg}"],
+        "borderRadius": "{tokens.roundness.infinity}"
+      },
+      "sm": {
+        "fontStyle": "label-3",
+        "size": 40,
+        "iconSize": "{components.icon.xs.size}",
+        "gap": "{tokens.spacing.sm}",
+        "padding": [0, "{tokens.spacing.md}"],
         "borderRadius": "{tokens.roundness.infinity}"
       }
     },
@@ -166,9 +174,17 @@
   },
   "form": {
     "md": {
-      "borderRadius": "{tokens.roundness.md}",
       "paddingV": "{tokens.spacing.md}",
-      "paddingH": "{tokens.spacing.lg}"
+      "paddingH": "{tokens.spacing.lg}",
+      "borderRadius": "{tokens.roundness.md}"
+    }
+  },
+  "formWrapper": {
+    "md": {
+      "paddingV": "{tokens.spacing.md}",
+      "paddingH": "{tokens.spacing.lg}",
+      "borderRadius": "{tokens.roundness.md}",
+      "borderWidth": "{tokens.stroke.sm}"
     }
   },
   "resizer": {

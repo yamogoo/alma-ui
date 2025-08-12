@@ -47,7 +47,9 @@ export interface Props {
   textOverflow?: "clip" | "ellipsis";
 }
 
-const props = defineProps<Props>();
+const props = withDefaults(defineProps<Props>(), {
+  textColor: "primary",
+});
 
 const computedStyle: ComputedRef<CSSProperties> = computed(() => {
   return {
@@ -105,7 +107,7 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
 
 @mixin defineThemes($names) {
   @each $name in $names {
-    &_#{$name} {
+    &_color-#{$name} {
       @include themify($themes) {
         color: themed("label.#{$name}");
       }

@@ -4,24 +4,30 @@ import { storeToRefs } from "pinia";
 import { useRouter } from "vue-router";
 import g from "gsap";
 
-import { useAppStore, useAuthStore } from "@/stores";
+import { useAuthStore } from "@/stores";
 
 import { useTimeout } from "@/composables";
 
 import AuthForm from "@/components/forms/AuthForm.vue";
 
+const START_DELAY = 350;
+const MESSAGE_DURATION_IN = 0.65;
+const CONTAINER_DELAY = 0.45;
+const CONTAINER_DURATION_IN = 0.45;
+const FORM_DELAY = 0.5;
+const FORM_DURATION_IN = 0.55;
+
 const router = useRouter();
 
 const { isLoggedIn, error: loginError } = storeToRefs(useAuthStore());
 const { login } = useAuthStore();
-const { version } = storeToRefs(useAppStore());
 
 const refContent = ref<HTMLDivElement | null>();
 const refMessage = ref<HTMLDivElement | null>();
 const refForm = ref<HTMLDivElement | null>();
 
 const onRedirectToProto = (): void => {
-  router.push(`/app/version/${version.value}/splashscreen`);
+  router.push("/editor");
 };
 
 const onRedirectIfLoggedIn = (): void => {
@@ -42,13 +48,6 @@ const containerToCenterOffset = (): number => {
 };
 
 /* * * Animations * * */
-
-const START_DELAY = 350;
-const MESSAGE_DURATION_IN = 0.65;
-const CONTAINER_DELAY = 0.45;
-const CONTAINER_DURATION_IN = 0.45;
-const FORM_DELAY = 0.5;
-const FORM_DURATION_IN = 0.55;
 
 const messageAnimTimer = useTimeout(() => {
   const el = refMessage.value;
