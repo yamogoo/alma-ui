@@ -3,6 +3,7 @@ import type { UIElementColor, UIElementSize } from "@/typings";
 export type SymbolName =
   | "back"
   | "check"
+  | "down"
   | "cog"
   | "cross"
   | "login"

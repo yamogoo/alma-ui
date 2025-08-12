@@ -29,13 +29,13 @@ describe("FSNavigator", () => {
       const slotContent = "Footer content";
 
       const wrapper = mount(FSNavigator, {
-        slots: { default: `<p>${slotContent}</p>` },
+        slots: { footer: `<p>${slotContent}</p>` },
       });
 
-      const body = wrapper.find(".fs-navigator__footer");
+      const footer = wrapper.find(".fs-navigator__footer");
 
-      expect(body.exists()).toBe(true);
-      expect(body.text()).toContain(slotContent);
+      expect(footer.exists()).toBe(true);
+      expect(footer.text()).toContain(slotContent);
     });
   });
 });

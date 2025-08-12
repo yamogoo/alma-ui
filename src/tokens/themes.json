@@ -117,12 +117,12 @@
         "knobActive": "{colors.gray-0}"
       },
       "options": {
-        "labelPrimary": "{colors.gray-800}",
+        "labelPrimaryNormal": "{colors.gray-800}",
         "labelPrimaryDisabled": "{colors.gray-400}",
         "labelPrimaryHovered": "{colors.gray-950}",
         "labelPrimaryFocused": "{colors.gray-950}",
 
-        "labelSecondary": "{colors.gray-800}",
+        "labelSecondaryNormal": "{colors.gray-800}",
         "labelSecondaryDisabled": "{colors.gray-400}",
         "labelSecondaryHovered": "{colors.gray-950}",
         "labelSecondaryFocused": "{colors.gray-950}"
@@ -282,12 +282,12 @@
         "knobActive": "{colors.gray-0}"
       },
       "options": {
-        "labelPrimary": "{colors.gray-300}",
+        "labelPrimaryNormal": "{colors.gray-300}",
         "labelPrimaryDisabled": "{colors.gray-600}",
         "labelPrimaryHovered": "{colors.gray-50}",
         "labelPrimaryFocused": "{colors.gray-50}",
 
-        "labelSecondary": "{colors.gray-300}",
+        "labelSecondaryNormal": "{colors.gray-300}",
         "labelSecondaryDisabled": "{colors.gray-600}",
         "labelSecondaryHovered": "{colors.gray-50}",
         "labelSecondaryFocused": "{colors.gray-50}"
