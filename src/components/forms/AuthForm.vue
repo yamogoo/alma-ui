@@ -4,9 +4,10 @@ import { storeToRefs } from "pinia";
 
 import { useLocaleStore } from "@/stores";
 
+import FormWrapper from "@/components/base/forms/FormWrapper.vue";
 import Form from "@/components/base/forms/Form.vue";
-import Input from "@/components/base/inputs/Input.vue";
 import ActionButton from "@/components/base/buttons/ActionButton.vue";
+import Input from "@/components/base/inputs/Input.vue";
 import Text from "@/components/base/typography/Text.vue";
 
 const { $t } = storeToRefs(useLocaleStore());
@@ -67,41 +68,42 @@ export interface Props {
 </script>
 
 <template>
-  <Form
-    class="auth-form"
-    :title="$t.auth.login.form.title"
-    :color="'primary'"
-    :aria-label="'Login'"
-  >
-    <Input
-      v-model:value="localEmail"
-      :placeholder="$t.auth.login.form.userName"
-      :type="'text'"
-      :is-error="!!error"
-      @update:value="onUpdateEmail"
-    ></Input>
-    <Input
-      v-model:value="localPassword"
-      :type="'password'"
-      :placeholder="$t.auth.login.form.password"
-      :is-error="!!error"
-      @update:value="onUpdatePasword"
-    ></Input>
-    <Text v-if="!!error" :variant="'caption-1'" :text-color="'error'">{{
-      error
-    }}</Text>
-    <template #footer>
-      <ActionButton
-        :color="'accent'"
-        :size="'md'"
-        :stretch="'fill'"
-        :label="$t.auth.login.form.login"
-        :is-disabled="!isValid"
-        @press="onSubmit"
-        @key.enter="onSubmit"
-      ></ActionButton>
-    </template>
-  </Form>
+  <FormWrapper class="auth-form" :color="'primary'" bordered>
+    <Form
+      :title="$t.auth.login.form.title"
+      :color="'primary'"
+      :aria-label="'Login'"
+    >
+      <Input
+        v-model:value="localEmail"
+        :placeholder="$t.auth.login.form.userName"
+        :type="'text'"
+        :is-error="!!error"
+        @update:value="onUpdateEmail"
+      ></Input>
+      <Input
+        v-model:value="localPassword"
+        :type="'password'"
+        :placeholder="$t.auth.login.form.password"
+        :is-error="!!error"
+        @update:value="onUpdatePasword"
+      ></Input>
+      <Text v-if="!!error" :variant="'caption-1'" :text-color="'error'">{{
+        error
+      }}</Text>
+      <template #footer>
+        <ActionButton
+          :color="'accent'"
+          :size="'md'"
+          :stretch="'fill'"
+          :label="$t.auth.login.form.login"
+          :is-disabled="!isValid"
+          @press="onSubmit"
+          @key.enter="onSubmit"
+        ></ActionButton>
+      </template>
+    </Form>
+  </FormWrapper>
 </template>
 
 <style lang="scss">

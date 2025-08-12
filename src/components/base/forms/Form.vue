@@ -66,6 +66,7 @@ export interface Props {
     &_#{$size} {
       padding: $padding;
       border-radius: $border-radius;
+
       @include themify($themes) {
         box-shadow: 0px 4px 32px themed("form.shadow");
       }

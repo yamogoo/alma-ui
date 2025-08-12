@@ -30,8 +30,8 @@
         "error": "#E96B6B"
       },
       "border": {
-        "primary": "#EAEDEF",
-        "secondary": "#DCE1E5",
+        "primary": "#D5DBE0",
+        "secondary": "#C7CFD5",
         "strong": "#2F383F"
       },
       "shadow": {
@@ -66,10 +66,10 @@
         "labelAccentDisabled": "#F8F9FA",
         "labelAccentHovered": "#F8F9FA",
         "labelAccentPressed": "#F8F9FA",
-        "backgroundAccentNormal": "#138B2A",
-        "backgroundAccentDisabled": "#138B2A",
-        "backgroundAccentHovered": "#107624",
-        "backgroundAccentPressed": "#0D601D",
+        "backgroundAccentNormal": "#083F96",
+        "backgroundAccentDisabled": "#083F96",
+        "backgroundAccentHovered": "#07357F",
+        "backgroundAccentPressed": "#062C68",
         "labelErrorNormal": "#F8F9FA",
         "labelErrorDisabled": "#F8F9FA",
         "labelErrorHovered": "#F8F9FA",
@@ -141,6 +141,12 @@
         "backgroundPrimary": "#f8f9fabf",
         "backgroundSecondary": "#e5e9f1bf",
         "shadow": "#06060608"
+      },
+      "formWrapper": {
+        "backgroundPrimary": "#F8F9FA",
+        "borderPrimary": "#D5DBE0",
+        "backgroundSecondary": "#e5e9f1",
+        "borderSecondary": "#D5DBE0"
       }
     },
     "dark": {
@@ -209,10 +215,10 @@
         "labelAccentDisabled": "#F8F9FA",
         "labelAccentHovered": "#F8F9FA",
         "labelAccentPressed": "#F8F9FA",
-        "backgroundAccentNormal": "#138B2A",
-        "backgroundAccentDisabled": "#138B2A",
-        "backgroundAccentHovered": "#107624",
-        "backgroundAccentPressed": "#0D601D",
+        "backgroundAccentNormal": "#083F96",
+        "backgroundAccentDisabled": "#083F96",
+        "backgroundAccentHovered": "#07357F",
+        "backgroundAccentPressed": "#062C68",
         "labelErrorNormal": "#F8F9FA",
         "labelErrorDisabled": "#F8F9FA",
         "labelErrorHovered": "#F8F9FA",
@@ -284,6 +290,12 @@
         "backgroundPrimary": "#101315bf",
         "backgroundSecondary": "#1a1f23bf",
         "shadow": "#58697608"
+      },
+      "formWrapper": {
+        "backgroundPrimary": "#101315",
+        "borderPrimary": "#1A1F23",
+        "backgroundSecondary": "#1A1F23",
+        "borderSecondary": "#1A1F23"
       }
     }
   }

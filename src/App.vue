@@ -12,7 +12,9 @@ import {
 import { useMeta, useTheme } from "@/composables";
 
 useMeta("author", import.meta.env.APP_AUTHOR_NAME);
-useTheme("light");
+useTheme("light", {
+  selector: "html",
+});
 
 const { setAppSize } = useLayoutStore();
 const { setLocale } = useLocaleStore();
@@ -36,11 +38,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
-    <router-view></router-view>
-  </div>
+  <router-view></router-view>
 </template>
 
 <style lang="scss">
-/* #app {} */
+#app {
+  @include box(100vw, 100dvh);
+  @include themify($themes) {
+    background-color: themed("background.primary");
+  }
+}
 </style>

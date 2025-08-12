@@ -24,8 +24,6 @@
     "preview": "vite preview",
     "test:unit": "vitest",
     "test:ui": "vitest --ui",
-    "deploy:dev": "netlify build && netlify deploy",
-    "deploy:prod": "netlify build && netlify deploy --prod",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "clean": "rm -rf dist"

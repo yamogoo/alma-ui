@@ -30,8 +30,8 @@
         "error": "{colors.red-325}"
       },
       "border": {
-        "primary": "{colors.gray-50}",
-        "secondary": "{colors.gray-100}",
+        "primary": "{colors.gray-125}",
+        "secondary": "{colors.gray-175}",
         "strong": "{colors.gray-800}"
       },
       "shadow": {
@@ -69,10 +69,10 @@
         "labelAccentDisabled": "{colors.gray-0}",
         "labelAccentHovered": "{colors.gray-0}",
         "labelAccentPressed": "{colors.gray-0}",
-        "backgroundAccentNormal": "{colors.darkGreen-700}",
-        "backgroundAccentDisabled": "{colors.darkGreen-700}",
-        "backgroundAccentHovered": "{colors.darkGreen-750}",
-        "backgroundAccentPressed": "{colors.darkGreen-800}",
+        "backgroundAccentNormal": "{colors.darkBlue-700}",
+        "backgroundAccentDisabled": "{colors.darkBlue-700}",
+        "backgroundAccentHovered": "{colors.darkBlue-750}",
+        "backgroundAccentPressed": "{colors.darkBlue-800}",
 
         "labelErrorNormal": "{colors.gray-0}",
         "labelErrorDisabled": "{colors.gray-0}",
@@ -147,6 +147,12 @@
         "backgroundPrimary": "{themes.themes.light.background.primaryTransparent}",
         "backgroundSecondary": "{themes.themes.light.background.secondaryTransparent}",
         "shadow": "{themes.themes.light.shadow.primary}"
+      },
+      "formWrapper": {
+        "backgroundPrimary": "{themes.themes.light.background.primary}",
+        "borderPrimary": "{themes.themes.light.border.primary}",
+        "backgroundSecondary": "{themes.themes.light.background.secondary}",
+        "borderSecondary": "{themes.themes.light.border.primary}"
       }
     },
     "dark": {
@@ -218,10 +224,10 @@
         "labelAccentDisabled": "{colors.gray-0}",
         "labelAccentHovered": "{colors.gray-0}",
         "labelAccentPressed": "{colors.gray-0}",
-        "backgroundAccentNormal": "{colors.darkGreen-700}",
-        "backgroundAccentDisabled": "{colors.darkGreen-700}",
-        "backgroundAccentHovered": "{colors.darkGreen-750}",
-        "backgroundAccentPressed": "{colors.darkGreen-800}",
+        "backgroundAccentNormal": "{colors.darkBlue-700}",
+        "backgroundAccentDisabled": "{colors.darkBlue-700}",
+        "backgroundAccentHovered": "{colors.darkBlue-750}",
+        "backgroundAccentPressed": "{colors.darkBlue-800}",
 
         "labelErrorNormal": "{colors.gray-0}",
         "labelErrorDisabled": "{colors.gray-0}",
@@ -296,6 +302,12 @@
         "backgroundPrimary": "{themes.themes.dark.background.primaryTransparent}",
         "backgroundSecondary": "{themes.themes.dark.background.secondaryTransparent}",
         "shadow": "{themes.themes.dark.shadow.primary}"
+      },
+      "formWrapper": {
+        "backgroundPrimary": "{themes.themes.dark.background.primary}",
+        "borderPrimary": "{themes.themes.dark.border.primary}",
+        "backgroundSecondary": "{themes.themes.dark.background.secondary}",
+        "borderSecondary": "{themes.themes.dark.border.primary}"
       }
     }
   }

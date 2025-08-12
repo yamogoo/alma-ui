@@ -109,13 +109,24 @@
         "borderRadius": "9999px"
       },
       "md": {
-        "fontStyle": "label-3",
+        "fontStyle": "label-2",
         "size": 44,
         "iconSize": "16px",
         "gap": "12px",
         "padding": [
           0,
           "24px"
+        ],
+        "borderRadius": "9999px"
+      },
+      "sm": {
+        "fontStyle": "label-3",
+        "size": 40,
+        "iconSize": "16px",
+        "gap": "12px",
+        "padding": [
+          0,
+          "16px"
         ],
         "borderRadius": "9999px"
       }
@@ -199,9 +210,17 @@
   },
   "form": {
     "md": {
-      "borderRadius": "16px",
       "paddingV": "16px",
-      "paddingH": "24px"
+      "paddingH": "24px",
+      "borderRadius": "16px"
+    }
+  },
+  "formWrapper": {
+    "md": {
+      "paddingV": "16px",
+      "paddingH": "24px",
+      "borderRadius": "16px",
+      "borderWidth": "1px"
     }
   },
   "resizer": {
