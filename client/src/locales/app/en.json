@@ -12,6 +12,17 @@
         "forgotPassword": "forgot password?",
         "register": "register"
       }
+    },
+    "signin": {
+      "form": {
+        "title": "Sign in",
+        "description": "Enter your credentials to access your account",
+        "email": "email",
+        "password": "password",
+        "signIn": "sign in",
+        "forgotPassword": "forgot password?",
+        "register": "register"
+      }
     }
   },
   "locales": {

@@ -179,7 +179,9 @@
       "paddingV": "16px",
       "paddingH": "24px",
       "borderRadius": "16px",
-      "borderWidth": "1px"
+      "borderWidth": "1px",
+      "headerPaddingV": "12px",
+      "headerPaddingH": 0
     }
   },
   "progressbar": {
@@ -255,6 +257,16 @@
       "gap": "12px",
       "padding": "8px",
       "borderRadius": 5
+    }
+  },
+  "stepPagination": {
+    "lg": {
+      "fontStyle": "title-3",
+      "padding": "8px"
+    },
+    "md": {
+      "fontStyle": "title-4",
+      "padding": "8px"
     }
   },
   "pageHeader": {

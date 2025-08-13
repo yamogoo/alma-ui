@@ -12,6 +12,17 @@
         "forgotPassword": "зыбыли пароль?",
         "register": "регистрация"
       }
+    },
+    "signin": {
+      "form": {
+        "title": "Регистрация",
+        "description": "Введите свои учетные данные для доступа к вашей учетной записи",
+        "email": "email",
+        "password": "пароль",
+        "signIn": "регистрация",
+        "forgotPassword": "забыли пароль?",
+        "register": "регистриация"
+      }
     }
   },
   "locales": {

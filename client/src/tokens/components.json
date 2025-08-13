@@ -152,7 +152,9 @@
       "paddingV": "{tokens.spacing.md}",
       "paddingH": "{tokens.spacing.lg}",
       "borderRadius": "{tokens.roundness.md}",
-      "borderWidth": "{tokens.stroke.sm}"
+      "borderWidth": "{tokens.stroke.sm}",
+      "headerPaddingV": "{tokens.spacing.sm}",
+      "headerPaddingH": 0
     }
   },
   "progressbar": {
@@ -219,6 +221,16 @@
       "gap": "{tokens.spacing.sm}",
       "padding": "{tokens.spacing.xs}",
       "borderRadius": 5
+    }
+  },
+  "stepPagination": {
+    "lg": {
+      "fontStyle": "title-3",
+      "padding": "{tokens.spacing.xs}"
+    },
+    "md": {
+      "fontStyle": "title-4",
+      "padding": "{tokens.spacing.xs}"
     }
   },
   "pageHeader": {

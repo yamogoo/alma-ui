@@ -303,7 +303,10 @@ export interface Props {
             class="carousel-view__screen"
             :style="{ flex: `0 0 ${screenSize}px` }"
           >
-            <slot :name="`screen-${idx}`" v-bind="{ idx: idx + 1 }"></slot>
+            <slot
+              :name="`screen-${idx}`"
+              v-bind="{ idx: idx + 1, isActive: idx - 1 === sid }"
+            ></slot>
           </div>
         </Transition>
       </template>
@@ -353,12 +356,12 @@ export interface Props {
     cursor: grabbing;
   }
 
-  &_orientation{
+  &_orientation {
     &-vertical {
-    .carousel-view__container {
-      flex-direction: column;
+      .carousel-view__container {
+        flex-direction: column;
+      }
     }
-  }
 
     &-horizontal {
       .carousel-view__container {
