@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import type { IconName, IconStyle, IconWeight } from "../icons/icons";
 import ProtoButton, {
-  type ButtonColor,
+  type Color,
   type ButtonContentDirection,
-  type ButtonSize,
+  type Size,
   type ButtonVariant,
   type ButtonStretch,
 } from "./Button.vue";
@@ -35,8 +35,8 @@ const onPointerDown = (e: PointerEvent): void => {
 <script lang="ts">
 export interface Props {
   variant?: ButtonVariant;
-  size: ButtonSize;
-  color: ButtonColor;
+  size: Size;
+  color: Color;
   label?: string;
   contentDirection?: ButtonContentDirection;
   iconName?: IconName;

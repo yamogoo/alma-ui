@@ -2,16 +2,18 @@ import type { Meta, StoryObj } from "@storybook/vue3-vite";
 
 import { fn } from "storybook/test";
 
-import Button, { type ButtonColor } from "./Button.vue";
+import Button, { type Size, type Color } from "./Button.vue";
 import type { IconName, IconStyle, IconWeight } from "../icons/icons";
 
-const colors: Array<ButtonColor> = [
+const colors: Array<Color> = [
   "primary",
   "primary-inversed",
   "secondary",
   "accent",
   "error",
 ];
+
+const sizes: Array<Size> = ["xs", "sm", "md", "lg"];
 
 const icons: Array<IconName | "none"> = [
   "none",
@@ -24,11 +26,11 @@ const iconWeigths: Array<IconWeight> = ["100", "200", "300", "400", "500"];
 const iconStyles: Array<IconStyle> = ["outline", "fill"];
 
 const meta = {
-  title: "Example/Button",
+  title: "Atoms/Button",
   component: Button,
   tags: ["autodocs"],
   argTypes: {
-    size: { control: "select", options: ["xs", "sm", "md", "lg"] },
+    size: { control: "select", options: sizes },
     color: {
       control: "select",
       options: colors,

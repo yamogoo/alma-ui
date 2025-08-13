@@ -106,9 +106,9 @@ import Icon from "@/components/base/icons/Icon.vue";
 
 export type ButtonVariant = keyof typeof tokens.button;
 
-export type ButtonSize = keyof typeof tokens.button.rounded;
+export type Size = keyof typeof tokens.button.rounded;
 
-export type ButtonColor = Extract<
+export type Color = Extract<
   UIElementColor,
   "primary" | "primary-inversed" | "secondary" | "accent" | "error"
 >;
@@ -119,8 +119,8 @@ export type ButtonContentDirection = UIElementDirection;
 
 export interface Props {
   variant?: ButtonVariant;
-  size: ButtonSize;
-  color: ButtonColor;
+  size: Size;
+  color: Color;
   label?: string;
   contentDirection?: ButtonContentDirection;
   prependIconName?: IconName;
