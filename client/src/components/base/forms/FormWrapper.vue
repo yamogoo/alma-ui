@@ -32,6 +32,9 @@ export interface Props {
     ]"
     data-testid="form-wrapper"
   >
+    <div v-if="$slots.header" class="form-wrapper__header">
+      <slot name="header"></slot>
+    </div>
     <slot></slot>
   </div>
 </template>
@@ -43,6 +46,8 @@ export interface Props {
   @each $size, $val in $map {
     $padding-h: px2rem(map.get($val, "padding-h"));
     $padding-v: px2rem(map.get($val, "padding-v"));
+    $header-padding-h: px2rem(map.get($val, "header-padding-h"));
+    $header-padding-v: px2rem(map.get($val, "header-padding-v"));
     $border-radius: px2rem(map.get($val, "border-radius"));
     $border-width: px2rem(map.get($val, "border-width"));
 
@@ -53,6 +58,10 @@ export interface Props {
       &.form-wrapper_bordered {
         border-style: solid;
         border-width: $border-width;
+      }
+
+      .form-wrapper__header {
+        padding: $header-padding-v $header-padding-h;
       }
     }
   }
@@ -70,6 +79,8 @@ export interface Props {
 }
 
 .form-wrapper {
+  overflow: hidden;
+
   @include defineSize();
   @include defineThemes(primary secondary);
 }

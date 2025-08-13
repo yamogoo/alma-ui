@@ -1,127 +1,54 @@
 <script setup lang="ts">
-import { ref, computed, watch } from "vue";
+import { ref } from "vue";
 import { storeToRefs } from "pinia";
 
 import { useLocaleStore } from "@/stores";
 
 import FormWrapper from "@/components/base/forms/FormWrapper.vue";
-import Form from "@/components/base/forms/Form.vue";
-import ActionButton from "@/components/base/buttons/ActionButton.vue";
-import Input from "@/components/base/inputs/Input.vue";
-import Text from "@/components/base/typography/Text.vue";
+import StepPagination from "@/components/base/indicators/StepPagination.vue";
+import CarouselView from "../base/containers/CarouselView.vue";
+import LoginForm from "./LoginForm.vue";
+import SigninForm from "./SigninForm.vue";
 
 const { $t } = storeToRefs(useLocaleStore());
+const formSid = ref(0);
 
-const props = defineProps<Props>();
+const onUpdateSid = (sid: number): void => {
+  formSid.value = sid;
 
-const emit = defineEmits<{
-  (e: "update:email", email: string): void;
-  (e: "update:password", password: string): void;
-  (e: "submit", email: string, password: string): void;
-  (e: "continue-as-guest"): void;
-}>();
-
-const MIN_PASSWORD_LENGTH =
-  +import.meta.env.VITE__FORM_PASSWORD_MIN_LENGTH || 6;
-
-const localEmail = ref<string>("");
-const localPassword = ref<string>("");
-
-const isPasswordValid = computed(
-  () => localPassword.value.length >= MIN_PASSWORD_LENGTH
-);
-
-const isValid = computed(() => isPasswordValid.value);
-
-watch(
-  () => props.email,
-  (email) => {
-    localEmail.value = email ?? "";
-  }
-);
-
-watch(
-  () => props.password,
-  (password) => {
-    localPassword.value = password ?? "";
-  }
-);
-
-const onUpdateEmail = (email: string): void => {
-  emit("update:email", email);
+  // if (sid === 1) {
+  //   emit("update:email", localEmail.value);
+  //   emit("update:password", localPassword.value);
+  // }
 };
-
-const onUpdatePasword = (password: string): void => {
-  emit("update:password", password);
-};
-
-const onSubmit = async (): Promise<void> => {
-  emit("submit", localEmail.value, localPassword.value);
-};
-
-const onContinueAsGuest = (): void => {
-  emit("continue-as-guest");
-};
-</script>
-
-<script lang="ts">
-export interface Props {
-  email?: string;
-  password?: string;
-  error?: string | null;
-}
 </script>
 
 <template>
   <FormWrapper class="auth-form" :color="'primary'" bordered>
-    <Form
-      :title="$t.auth.login.form.title"
-      :color="'primary'"
-      :aria-label="'Login'"
-    >
-      <Input
-        v-model:value="localEmail"
-        :placeholder="$t.auth.login.form.userName"
-        :type="'text'"
-        :is-error="!!error"
-        @update:value="onUpdateEmail"
-      ></Input>
-      <Input
-        v-model:value="localPassword"
-        :type="'password'"
-        :placeholder="$t.auth.login.form.password"
-        :is-error="!!error"
-        @update:value="onUpdatePasword"
-      ></Input>
-      <Text :variant="'caption-2'" :text-color="'secondary'">{{
-        $t.auth.login.form.description
-      }}</Text>
-      <Text
-        v-if="!!error"
-        :data-testid="'auth-form-error'"
-        :variant="'caption-1'"
-        :text-color="'error'"
-        >{{ error }}</Text
+    <template #header>
+      <StepPagination
+        :sid="formSid"
+        :items="[
+          { id: 0, label: $t.auth.login.form.title },
+          { id: 1, label: $t.auth.signin.form.title },
+        ]"
+        @update:sid="onUpdateSid"
       >
-      <template #footer>
-        <ActionButton
-          :color="'accent'"
-          :size="'md'"
-          :stretch="'fill'"
-          :label="$t.auth.login.form.login"
-          :is-disabled="!isValid"
-          @press="onSubmit"
-          @key.enter="onSubmit"
-        ></ActionButton>
-        <ActionButton
-          :color="'accent'"
-          :size="'md'"
-          :stretch="'fill'"
-          :label="$t.auth.login.form.skip"
-          @press="onContinueAsGuest"
-        ></ActionButton>
+      </StepPagination>
+    </template>
+    <CarouselView
+      :sid="formSid"
+      :screen-count="2"
+      :orientation="'horizontal'"
+      :direction="'forward'"
+    >
+      <template #screen-1="{ isActive }">
+        <LoginForm v-show="isActive"></LoginForm>
       </template>
-    </Form>
+      <template #screen-2="{ isActive }">
+        <SigninForm v-show="isActive"></SigninForm>
+      </template>
+    </CarouselView>
   </FormWrapper>
 </template>
 

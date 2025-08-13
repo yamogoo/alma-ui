@@ -157,6 +157,10 @@
       "skeleton": {
         "colorIn": "#58697640",
         "colorOut": "#58697600"
+      },
+      "stepPagination": {
+        "labelPrimaryNormal": "#2F383F",
+        "labelPrimaryActive": "#2F383F"
       }
     },
     "dark": {
@@ -316,6 +320,10 @@
       "skeleton": {
         "colorIn": "#6d829240",
         "colorOut": "#6d829200"
+      },
+      "stepPagination": {
+        "labelPrimaryNormal": "#DCE1E5",
+        "labelPrimaryActive": "#DCE1E5"
       }
     }
   }

@@ -1,10 +1,6 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from "vue";
-import { storeToRefs } from "pinia";
-import { useRouter } from "vue-router";
+import { onUnmounted, ref } from "vue";
 import g from "gsap";
-
-import { useAuthStore } from "@/stores";
 
 import { useTimeout } from "@/composables";
 
@@ -18,31 +14,9 @@ const CONTAINER_DURATION_IN = 0.45;
 const FORM_DELAY = 0.5;
 const FORM_DURATION_IN = 0.55;
 
-const router = useRouter();
-
-const { isLoggedIn, error: loginError } = storeToRefs(useAuthStore());
-const { login } = useAuthStore();
-
 const refContent = ref<HTMLDivElement | null>();
 const refMessage = ref<HTMLDivElement | null>();
 const refForm = ref<HTMLDivElement | null>();
-
-const onRedirectToEditor = (): void => {
-  router.push("/editor");
-};
-
-const onRedirectIfLoggedIn = (): void => {
-  if (isLoggedIn.value) onRedirectToEditor();
-};
-
-const onLogin = async (email: string, password: string): Promise<void> => {
-  await login(email, password);
-  onRedirectIfLoggedIn();
-};
-
-const onContinueAsGuest = (): void => {
-  onRedirectToEditor();
-};
 
 const containerToCenterOffset = (): number => {
   const height = refContent.value?.clientHeight ?? 0;
@@ -135,10 +109,6 @@ const onPageAnimCompleted = (): void => {
   animInit();
 };
 
-onMounted(() => {
-  onRedirectIfLoggedIn();
-});
-
 onUnmounted(() => {
   messageAnimTimer.stop();
 });
@@ -149,11 +119,7 @@ onUnmounted(() => {
     <div ref="refContent" class="login__content">
       <Transition :css="false">
         <div class="login__form-wrapper" ref="refForm">
-          <AuthForm
-            :error="loginError"
-            @submit="onLogin"
-            @continue-as-guest="onContinueAsGuest"
-          ></AuthForm>
+          <AuthForm></AuthForm>
         </div>
       </Transition>
     </div>
