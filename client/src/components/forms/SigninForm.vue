@@ -92,9 +92,6 @@ onMounted(() => {
       :is-error="isError"
       @update:value="onUpdatePassword"
     ></Input>
-    <Text :variant="'caption-2'" :text-color="'secondary'">{{
-      $t.auth.login.form.description
-    }}</Text>
     <Text
       v-if="isError"
       :data-testid="'auth-form-error'"

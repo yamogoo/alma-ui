@@ -89,6 +89,8 @@ const onChange = (e: Event): void => {
 };
 
 const onReset = (e: MouseEvent | PointerEvent): void => {
+  e.preventDefault();
+
   emit("reset:value");
   emit("update:value", localModelValue.value);
   localModelValue.value = "";
@@ -125,7 +127,7 @@ const onAnimPlaceholder = (
   const isEmpty = (value || "").length === 0;
 
   const SCALE_IN = 1,
-    SCALE_OUT = 0.65;
+    SCALE_OUT = 0.75;
 
   const OFFSET_IN = "50%",
     OFFSET_IN_INVERSED = "-50%",
