@@ -7,6 +7,8 @@ import type { UIElementColor } from "@/typings";
 
 import Text, { type Variant } from "@/components/base/typography/Text.vue";
 
+// TODO: finish carousel view
+
 const props = withDefaults(defineProps<Props>(), {
   sid: 0,
   color: "primary",

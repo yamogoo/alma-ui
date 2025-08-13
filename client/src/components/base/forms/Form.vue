@@ -85,6 +85,7 @@ export interface Props {
 }
 
 .form {
+  width: 100%;
   @extend %base-transition;
 
   @include defineSizes();

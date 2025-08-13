@@ -1,4 +1,6 @@
-import type { UIElementColor, UIElementSize } from "@/typings";
+import tokens from "@/tokens";
+
+import type { UIElementColor } from "@/typings";
 
 export type IconName =
   | "back"
@@ -9,7 +11,7 @@ export type IconName =
   | "login"
   | "logout";
 
-export type IconStyle = "outline" | "fill" | "squared";
+export type IconStyle = "outline" | "fill";
 
 export type IconWeight = "100" | "200" | "300" | "400" | "500";
 
@@ -24,10 +26,7 @@ export type IconColor = Extract<
   | "accept"
 >;
 
-export type IconSize = Extract<
-  UIElementSize,
-  "xxxxs" | "xxxs" | "xxs" | "xs" | "sm" | "md" | "lg"
->;
+export type IconSize = keyof typeof tokens.icon;
 
 export interface IconProps {
   iconName: IconName;

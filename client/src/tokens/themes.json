@@ -164,7 +164,7 @@
         "colorIn": "rgba({themes.themes.light.label.disabled}, 0.25)",
         "colorOut": "rgba({themes.themes.light.label.disabled}, 0)"
       },
-      "stepPagination": {
+      "stepPaginationTabs": {
         "labelPrimaryNormal": "{themes.themes.light.label.primary}",
         "labelPrimaryActive": "{themes.themes.light.label.primary}"
       }
@@ -333,7 +333,7 @@
         "colorIn": "rgba({themes.themes.dark.label.disabled}, 0.25)",
         "colorOut": "rgba({themes.themes.dark.label.disabled}, 0)"
       },
-      "stepPagination": {
+      "stepPaginationTabs": {
         "labelPrimaryNormal": "{themes.themes.dark.label.primary}",
         "labelPrimaryActive": "{themes.themes.dark.label.primary}"
       }

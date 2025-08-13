@@ -1,17 +1,26 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { computed, ref } from "vue";
 import { storeToRefs } from "pinia";
 
 import { useLocaleStore } from "@/stores";
 
 import FormWrapper from "@/components/base/forms/FormWrapper.vue";
-import StepPagination from "@/components/base/indicators/StepPagination.vue";
-import CarouselView from "../base/containers/CarouselView.vue";
+import CarouselView from "@/components/base/containers/CarouselView.vue";
+import StepPaginationTabs from "@/components/base/tabs/StepPaginationTabs.vue";
+
 import LoginForm from "./LoginForm.vue";
 import SigninForm from "./SigninForm.vue";
 
 const { $t } = storeToRefs(useLocaleStore());
+
 const formSid = ref(0);
+
+const formPaginationItems = computed(() => {
+  return [
+    { id: 0, label: $t.value.auth.login.form.title },
+    { id: 1, label: $t.value.auth.signin.form.title },
+  ];
+});
 
 const onUpdateSid = (sid: number): void => {
   formSid.value = sid;
@@ -26,15 +35,12 @@ const onUpdateSid = (sid: number): void => {
 <template>
   <FormWrapper class="auth-form" :color="'primary'" bordered>
     <template #header>
-      <StepPagination
+      <StepPaginationTabs
         :sid="formSid"
-        :items="[
-          { id: 0, label: $t.auth.login.form.title },
-          { id: 1, label: $t.auth.signin.form.title },
-        ]"
+        :items="formPaginationItems"
         @update:sid="onUpdateSid"
       >
-      </StepPagination>
+      </StepPaginationTabs>
     </template>
     <CarouselView
       :sid="formSid"
@@ -53,9 +59,11 @@ const onUpdateSid = (sid: number): void => {
 </template>
 
 <style lang="scss">
+$max-width: 378px;
+
 .auth-form {
   box-sizing: border-box;
   width: 100%;
-  max-width: px2rem(378px);
+  max-width: px2rem($max-width);
 }
 </style>
