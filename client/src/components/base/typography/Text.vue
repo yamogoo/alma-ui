@@ -5,27 +5,28 @@ import tokens from "@/tokens";
 
 import type { UIElementColor } from "@/typings";
 
-export type TypographyVariant = keyof typeof tokens.typography.styles;
+export type Variant = keyof typeof tokens.typography.styles;
 
-export type FontStyle = "normal" | "italic" | "oblique";
+export type Style = "normal" | "italic" | "oblique";
 
-export type TextTransform =
+export type Transform =
   | "none"
   | "capitalize"
   | "uppercase"
   | "lowercase"
   | "full-width";
 
-export type TextDecoration = "none" | "underline" | "line-through";
+export type Decoration = "none" | "underline" | "line-through";
 
-export type TextColor = Extract<
+export type Color = Extract<
   UIElementColor,
   "primary" | "secondary" | "disabled" | "accent" | "warning" | "error" | "info"
 >;
 
 export interface Props {
-  variant?: TypographyVariant;
-  textColor?: TextColor;
+  value?: string;
+  variant?: Variant;
+  textColor?: Color;
   display?: "inline-block" | "block";
   color?: string;
   weight?: string;
@@ -33,10 +34,10 @@ export interface Props {
   size?: string;
   lineHeight?: string;
   letterSpacing?: string;
-  textTransform?: TextTransform;
-  textDecoration?: TextDecoration;
+  textTransform?: Transform;
+  textDecoration?: Decoration;
   fontFamily?: string;
-  fontStyle?: FontStyle;
+  fontStyle?: Style;
   fontSize?: string;
   fontWeight?: string;
   fontStretch?: string;
@@ -84,6 +85,7 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
     ]"
     :style="computedStyle"
   >
+    {{ value }}
     <slot></slot>
   </span>
 </template>
