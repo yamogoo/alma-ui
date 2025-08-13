@@ -4,7 +4,7 @@ import g from "gsap";
 
 import tokens from "@/tokens";
 
-withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Props>(), {
   variant: "default",
   size: "md",
   color: "primary",
@@ -44,7 +44,7 @@ const onUp = (e: PointerEvent): void => {
 
 const onAnim = (el: HTMLButtonElement, isPressed: boolean): void => {
   g.to(el, {
-    scale: isPressed ? 0.95 : 1,
+    scale: isPressed ? props.scalePressed : 1,
     duration: 0.05,
     ease: isPressed ? "power4.out" : "power4.in",
   });
