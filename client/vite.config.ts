@@ -33,9 +33,9 @@ export default (opts: { mode: string }) => {
     },
     define: {
       "import.meta.env.VITE_API_URL": JSON.stringify(process.env.VITE_API_URL),
-      "import.meta.env.APP_NAME": JSON.stringify(packageJson.name),
-      "import.meta.env.APP_VERSION": JSON.stringify(packageJson.version),
-      "import.meta.env.APP_AUTHOR_NAME": JSON.stringify(
+      "import.meta.env.VITE_APP_NAME": JSON.stringify(packageJson.name),
+      "import.meta.env.VITE_APP_VERSION": JSON.stringify(packageJson.version),
+      "import.meta.env.VITE_APP_AUTHOR_NAME": JSON.stringify(
         packageJson.author.name
       ),
       "import.meta.env.APP_AUTHOR_FULL_NAME": JSON.stringify(

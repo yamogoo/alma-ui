@@ -90,23 +90,23 @@ describe("Button.vue", () => {
       );
     });
 
-    // test("custom scale is usedPressed", async () => {
-    //   const wrapper = mount(Button, {
-    //     props: { size: "md", color: "primary", scalePressed: 0.8 },
-    //   });
+    test("custom scale is usedPressed", async () => {
+      const wrapper = mount(Button, {
+        props: { size: "md", color: "primary", scalePressed: 0.8 },
+      });
 
-    //   const btnEl = wrapper.get("[data-testid='button']")
-    //     .element as HTMLButtonElement;
+      const btnEl = wrapper.get("[data-testid='button']")
+        .element as HTMLButtonElement;
 
-    //   await wrapper.get("[data-testid='button']").trigger("pointerdown");
+      await wrapper.get("[data-testid='button']").trigger("pointerdown");
 
-    //   expect(g.to).toHaveBeenCalledWith(
-    //     btnEl,
-    //     expect.objectContaining({
-    //       scale: 0.8,
-    //     })
-    //   );
-    // });
+      expect(g.to).toHaveBeenCalledWith(
+        btnEl,
+        expect.objectContaining({
+          scale: 0.8,
+        })
+      );
+    });
   });
 
   // describe("events", () => {

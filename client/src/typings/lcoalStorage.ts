@@ -1,7 +1,7 @@
 export enum LocalStorageKeys {
   "DISPLAY_SIZE",
 
-  "APP_VERSION",
+  "VITE_APP_VERSION",
 
   "AUTH_TOKEN",
   "AUTH_USER",

@@ -11,7 +11,7 @@ import {
 
 import { useMeta, useTheme } from "@/composables";
 
-useMeta("author", import.meta.env.APP_AUTHOR_NAME);
+useMeta("author", import.meta.env.VITE_APP_AUTHOR_NAME);
 useTheme("light", {
   selector: "html",
 });

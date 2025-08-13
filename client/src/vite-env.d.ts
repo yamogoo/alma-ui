@@ -4,8 +4,8 @@
 interface ImportMetaEnv {
   /* * * Package.json * * */
 
-  readonly APP_VERSION: string;
-  readonly APP_AUTHOR_NAME: string;
+  readonly VITE_APP_VERSION: string;
+  readonly VITE_APP_AUTHOR_NAME: string;
   readonly APP_AUTHOR_FULL_NAME: string;
   readonly APP_AUTHOR_EMAIL: string;
   readonly APP_AUTHOR_URL: string;

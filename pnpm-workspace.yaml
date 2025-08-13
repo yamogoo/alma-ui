@@ -1,0 +1,4 @@
+packages:
+  - "client/**"
+  - "log-server/**"
+  - "server/**"
