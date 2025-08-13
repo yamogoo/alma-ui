@@ -227,6 +227,36 @@
     },
     "roundness": "16px"
   },
+  "carouselView": {
+    "lg": {
+      "header-padding": [
+        "24px",
+        "24px"
+      ]
+    },
+    "md": {
+      "header-padding": [
+        "16px",
+        "16px"
+      ]
+    }
+  },
+  "pagination": {
+    "lg": {
+      "size": 16,
+      "widthActive": 24,
+      "gap": "16px",
+      "padding": "8px",
+      "borderRadius": 8
+    },
+    "md": {
+      "size": 10,
+      "widthActive": 24,
+      "gap": "12px",
+      "padding": "8px",
+      "borderRadius": 5
+    }
+  },
   "pageHeader": {
     "md": {
       "fontStyle": "title-4"

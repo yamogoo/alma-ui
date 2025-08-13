@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineAsyncComponent, computed } from "vue";
+import { defineAsyncComponent, computed, markRaw } from "vue";
 
 import type {
   IconName,
@@ -13,13 +13,11 @@ import Skeleton from "@/components/base/skeleton/Skeleton.vue";
 const props = defineProps<Props>();
 
 const symbol = computed(() => {
-  const name = props.name;
-  const style = props.style;
-  const weight = props.weight;
+  const {name, style, weight} = props;
 
-  return defineAsyncComponent(async () => {
+  return markRaw(defineAsyncComponent(async () => {
     return import(`../../../assets/icons/${name}_${style}_${weight}.svg`);
-  });
+  }));
 });
 </script>
 

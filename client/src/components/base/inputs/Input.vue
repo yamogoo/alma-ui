@@ -64,7 +64,14 @@ watch(
   }
 );
 
-watchEffect(() => (localModelValue.value = props.value));
+watch(
+  () => props.value,
+  (v) => {
+    if (localModelValue.value !== v) {
+      localModelValue.value = v;
+    }
+  }
+);
 
 watch(localModelValue, (newValue) => {
   emit("update:value", newValue);
@@ -82,13 +89,9 @@ const onChange = (e: Event): void => {
 };
 
 const onReset = (e: MouseEvent | PointerEvent): void => {
-  e.stopImmediatePropagation();
-  e.preventDefault();
-
-  localModelValue.value = "";
-
   emit("reset:value");
   emit("update:value", localModelValue.value);
+  localModelValue.value = "";
 };
 
 /* * * Animations * * */

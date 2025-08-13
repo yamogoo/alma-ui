@@ -33,6 +33,8 @@ export type UIElementCircularDirection = "cw" | "ccw";
 
 export type UIElementDirection = "ltr" | "rtl";
 
+export type UIElementAxisDirection = "forward" | "backward";
+
 export type UIElementPosition = "left" | "top" | "bottom" | "right";
 
 export type UIElementOrientation = "horizontal" | "vertical";
