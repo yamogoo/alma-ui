@@ -197,6 +197,30 @@
     },
     "roundness": "{tokens.roundness.md}"
   },
+  "carouselView": {
+    "lg": {
+      "header-padding": ["{tokens.spacing.lg}", "{tokens.spacing.lg}"]
+    },
+    "md": {
+      "header-padding": ["{tokens.spacing.md}", "{tokens.spacing.md}"]
+    }
+  },
+  "pagination": {
+    "lg": {
+      "size": 16,
+      "widthActive": 24,
+      "gap": "{tokens.spacing.md}",
+      "padding": "{tokens.spacing.xs}",
+      "borderRadius": 8
+    },
+    "md": {
+      "size": 10,
+      "widthActive": 24,
+      "gap": "{tokens.spacing.sm}",
+      "padding": "{tokens.spacing.xs}",
+      "borderRadius": 5
+    }
+  },
   "pageHeader": {
     "md": {
       "fontStyle": "title-4"
