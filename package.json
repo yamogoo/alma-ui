@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "client:dev": "pnpm --filter client dev:client",
-    "client:build": "pnpm --filter client build:client",
+    "client:dev": "pnpm --filter client dev",
+    "client:build": "pnpm --filter client build",
+     "client:test:unit": "pnpm --filter client test:unit",
     "server:dev": "pnpm --filter server dev",
     "server:build": "pnpm --filter server build",
     "log-server:dev": "pnpm --filter log-server dev",
-    "log-server:build": "pnpm --filter log-server build"
+    "log-server:build": "pnpm --filter log-server build",
+    "storybook:dev": "pnpm --filter client storybook:dev",
+    "storybook:build": "pnpm --filter client storybook:build"
   },
   "keywords": [],
   "author": "",
