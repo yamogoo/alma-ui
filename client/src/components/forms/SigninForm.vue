@@ -21,9 +21,9 @@ const { login } = useAuthStore();
 const MIN_PASSWORD_LENGTH =
   +import.meta.env.VITE__FORM_PASSWORD_MIN_LENGTH || 6;
 
-const localEmail = ref<string>("");
-const localPassword = ref<string>("");
-const localRepeatedPassword = ref<string>("");
+const localEmail = ref("");
+const localPassword = ref("");
+const localRepeatedPassword = ref("");
 const localIsPasswordMasked = ref(false);
 const localIsRepeatedPasswordMasked = ref(false);
 
