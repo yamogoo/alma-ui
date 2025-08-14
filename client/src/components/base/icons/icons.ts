@@ -9,7 +9,9 @@ export type IconName =
   | "cog"
   | "cross"
   | "login"
-  | "logout";
+  | "logout"
+  | "eye"
+  | "eyeDisabled";
 
 export type IconStyle = "outline" | "fill";
 

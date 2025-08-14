@@ -137,12 +137,7 @@ onUnmounted(() => {
   padding: map.get($spacing, "lg");
   overflow: hidden;
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    gap: px2rem(64px);
-  }
+  /* &__content {} */
 
   .auth-form {
     margin: auto;

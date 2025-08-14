@@ -207,8 +207,8 @@
         "accentBlue": "{colors.blue-500}"
       },
       "border": {
-        "primary": "{colors.gray-900}",
-        "secondary": "{colors.gray-800}",
+        "primary": "{colors.gray-850}",
+        "secondary": "{colors.gray-750}",
         "strong": "{colors.gray-200}"
       },
       "shadow": {

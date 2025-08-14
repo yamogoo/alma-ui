@@ -8,6 +8,7 @@ import { useAuthStore, useLocaleStore } from "@/stores";
 import Form from "@/components/base/forms/Form.vue";
 import ActionButton from "@/components/base/buttons/ActionButton.vue";
 import Input from "@/components/base/inputs/Input.vue";
+import PasswordInput from "@/components/base/inputs/PasswordInput.vue";
 import Text from "@/components/base/typography/Text.vue";
 
 const { $t } = storeToRefs(useLocaleStore());
@@ -23,6 +24,8 @@ const MIN_PASSWORD_LENGTH =
 const localEmail = ref<string>("");
 const localPassword = ref<string>("");
 const localRepeatedPassword = ref<string>("");
+const localIsPasswordMasked = ref(false);
+const localIsRepeatedPasswordMasked = ref(false);
 
 const validatePassword = (password: string) => {
   return password.length >= MIN_PASSWORD_LENGTH;
@@ -38,14 +41,6 @@ const isValid = computed(
   () => isPasswordValid.value && isRepeatedPasswordValid.value
 );
 const isError = computed(() => !!loginError.value);
-
-const onUpdateEmail = (email: string): void => {
-  localEmail.value = email;
-};
-
-const onUpdatePassword = (password: string): void => {
-  localPassword.value = password;
-};
 
 const onSubmit = async (): Promise<void> => {
   onLogin(localEmail.value, localPassword.value);
@@ -76,22 +71,21 @@ onMounted(() => {
       :placeholder="$t.auth.login.form.userName"
       :type="'text'"
       :is-error="isError"
-      @update:value="onUpdateEmail"
     ></Input>
-    <Input
+    <PasswordInput
       v-model:value="localPassword"
+      v-model:masked="localIsPasswordMasked"
       :type="'password'"
       :placeholder="$t.auth.login.form.password"
       :is-error="isError"
-      @update:value="onUpdatePassword"
-    ></Input>
-    <Input
+    ></PasswordInput>
+    <PasswordInput
       v-model:value="localRepeatedPassword"
+      v-model:masked="localIsRepeatedPasswordMasked"
       :type="'password'"
       :placeholder="$t.auth.login.form.password"
       :is-error="isError"
-      @update:value="onUpdatePassword"
-    ></Input>
+    ></PasswordInput>
     <Text :variant="'caption-2'" :text-color="'secondary'">{{
       $t.auth.login.form.description
     }}</Text>

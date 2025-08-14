@@ -108,6 +108,7 @@ export interface Props {
   <div
     ref="refRoot"
     class="dropdown"
+    role="menu"
     data-testid="dropdown"
     :class="[
       `dropdown_${isExpanded ? 'expanded' : 'normal'}`,
@@ -116,8 +117,14 @@ export interface Props {
         [`dropdown_${size}`]: !!size,
       },
     ]"
+    :aria-expanded="isExpanded"
   >
-    <div class="dropdown__value" data-testid="dropdown-value" @click="onExpand">
+    <div
+      class="dropdown__value"
+      data-testid="dropdown-value"
+      aria-haspopup="listbox"
+      @click="onExpand"
+    >
       <div class="dropdown__value-container">
         <div class="dropdown__value-content">
           <span class="dropdown__value-label">{{ value }}</span
