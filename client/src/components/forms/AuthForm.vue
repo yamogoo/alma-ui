@@ -11,6 +11,9 @@ import StepPaginationTabs from "@/components/base/tabs/StepPaginationTabs.vue";
 import LoginForm from "./LoginForm.vue";
 import SigninForm from "./SigninForm.vue";
 
+const FORM_ANIMATION_DURATION = 0.35,
+  FORM_VIEW_ANIMATION_DURATION = 0.5;
+
 const { $t } = storeToRefs(useLocaleStore());
 
 const formSid = ref(0);
@@ -33,7 +36,13 @@ const onUpdateSid = (sid: number): void => {
 </script>
 
 <template>
-  <FormWrapper class="auth-form" :color="'primary'" bordered>
+  <FormWrapper
+    class="auth-form"
+    :color="'primary'"
+    bordered
+    :content-key="formSid"
+    :duration="FORM_ANIMATION_DURATION"
+  >
     <template #header>
       <StepPaginationTabs
         :sid="formSid"
@@ -47,6 +56,8 @@ const onUpdateSid = (sid: number): void => {
       :screen-count="2"
       :orientation="'horizontal'"
       :direction="'forward'"
+      :stretch="'auto'"
+      :duration="FORM_VIEW_ANIMATION_DURATION"
     >
       <template #screen-1="{ isActive }">
         <LoginForm v-show="isActive"></LoginForm>

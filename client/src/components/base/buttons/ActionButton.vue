@@ -59,5 +59,12 @@ export interface Props {
     :prepend-icon-weight="iconWeight"
     @pointerup="onPointerUp"
     @pointerdown="onPointerDown"
-  ></ProtoButton>
+  >
+    <template #prepend-icon>
+      <slot name="prepend-icon"></slot>
+    </template>
+    <template #append-icon>
+      <slot name="append-icon"></slot>
+    </template>
+  </ProtoButton>
 </template>

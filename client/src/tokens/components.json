@@ -22,6 +22,24 @@
       "size": 56
     }
   },
+  "divider": {
+    "lg": {
+      "borderWidth": "{tokens.stroke.sm}",
+      "padding": "{tokens.spacing.md}"
+    },
+    "md": {
+      "borderWidth": "{tokens.stroke.sm}",
+      "padding": "{tokens.spacing.sm}"
+    },
+    "sm": {
+      "borderWidth": "{tokens.stroke.sm}",
+      "padding": "{tokens.spacing.xs}"
+    },
+    "xs": {
+      "borderWidth": "{tokens.stroke.sm}",
+      "padding": 0
+    }
+  },
   "input": {
     "md": {
       "value": {
@@ -140,6 +158,20 @@
       "optionMinHeight": 24
     }
   },
+  "group": {
+    "lg": {
+      "gap": "{tokens.spacing.lg}",
+      "divider": "{components.divider.md.borderWidth}"
+    },
+    "md": {
+      "gap": "{tokens.spacing.md}",
+      "divider": "{components.divider.md.borderWidth}"
+    },
+    "sm": {
+      "gap": "{tokens.spacing.sm}",
+      "divider": "{components.divider.md.borderWidth}"
+    }
+  },
   "form": {
     "md": {
       "paddingV": "{tokens.spacing.md}",
@@ -223,7 +255,7 @@
       "borderRadius": 5
     }
   },
-  "stepPagination": {
+  "stepPaginationTabs": {
     "lg": {
       "fontStyle": "title-3",
       "padding": "{tokens.spacing.xs}"

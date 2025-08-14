@@ -2,10 +2,11 @@
   "name": "sparkpad",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
     "client:dev": "pnpm --filter client dev",
     "client:build": "pnpm --filter client build",
-     "client:test:unit": "pnpm --filter client test:unit",
+    "client:test:unit": "pnpm --filter client test:unit",
     "server:dev": "pnpm --filter server dev",
     "server:build": "pnpm --filter server build",
     "log-server:dev": "pnpm --filter log-server dev",

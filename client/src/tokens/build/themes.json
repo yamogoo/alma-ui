@@ -37,6 +37,14 @@
       "shadow": {
         "primary": "#06060608"
       },
+      "divider": {
+        "borderPrimary": "#D5DBE0",
+        "borderSecondary": "#C7CFD5"
+      },
+      "group": {
+        "dividerPrimary": "#D5DBE0",
+        "dividerSecondary": "#C7CFD5"
+      },
       "button": {
         "labelPrimaryNormal": "#1A1F23",
         "labelPrimaryDisabled": "#8999A7",
@@ -122,19 +130,19 @@
         "labelSecondaryFocused": "#101315"
       },
       "dropDown": {
-        "valueLabelPrimary": "#1A1F23",
+        "valueLabelPrimaryNormal": "#1A1F23",
         "valueLabelPrimaryHovered": "#101315",
         "valueLabelPrimaryExpanded": "#101315",
         "valueLabelPrimaryExpanedHovered": "#101315",
-        "valueIconPrimary": "#1A1F23",
+        "valueIconPrimaryNormal": "#1A1F23",
         "valueIconPrimaryHovered": "#101315",
         "valueIconPrimaryExpanded": "#2F383F",
         "valueIconPrimaryExpanedHovered": "#242B31",
-        "valueBackgroundPrimary": "#E3E7EA",
+        "valueBackgroundPrimaryNormal": "#E3E7EA",
         "valueBackgroundPrimaryHovered": "#DCE1E5",
         "valueBackgroundPrimaryExpanded": "#E3E7EA",
         "valueBackgroundPrimaryExpandedHovered": "#DCE1E5",
-        "optionsBackgroundPrimary": "#D5DBE0",
+        "optionsBackgroundPrimaryNormal": "#D5DBE0",
         "optionsBackgroundPrimaryHovered": "#D5DBE0"
       },
       "form": {
@@ -199,6 +207,14 @@
       },
       "shadow": {
         "primary": "#58697608"
+      },
+      "divider": {
+        "borderPrimary": "#1A1F23",
+        "borderSecondary": "#2F383F"
+      },
+      "group": {
+        "dividerPrimary": "#1A1F23",
+        "dividerSecondary": "#2F383F"
       },
       "button": {
         "labelPrimaryNormal": "#97A5B1",
@@ -285,19 +301,19 @@
         "labelSecondaryFocused": "#EAEDEF"
       },
       "dropDown": {
-        "valueLabelPrimary": "#EAEDEF",
+        "valueLabelPrimaryNormal": "#EAEDEF",
         "valueLabelPrimaryHovered": "#DCE1E5",
         "valueLabelPrimaryExpanded": "#C0C9D0",
         "valueLabelPrimaryExpanedHovered": "#B3BDC6",
-        "valueIconPrimary": "#EAEDEF",
+        "valueIconPrimaryNormal": "#EAEDEF",
         "valueIconPrimaryHovered": "#DCE1E5",
         "valueIconPrimaryExpanded": "#C0C9D0",
         "valueIconPrimaryExpanedHovered": "#B3BDC6",
-        "valueBackgroundPrimary": "#242B31",
+        "valueBackgroundPrimaryNormal": "#242B31",
         "valueBackgroundPrimaryHovered": "#2F383F",
         "valueBackgroundPrimaryExpanded": "#43505A",
         "valueBackgroundPrimaryExpandedHovered": "#39444C",
-        "optionsBackgroundPrimary": "#2F383F",
+        "optionsBackgroundPrimaryNormal": "#2F383F",
         "optionsBackgroundPrimaryHovered": "#2F383F"
       },
       "form": {

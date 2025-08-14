@@ -202,18 +202,20 @@ export interface Props {
       &.dropdown_normal {
         .dropdown__value {
           @include themify($themes) {
-            background-color: themed("drop-down.value-background-#{$name}");
+            background-color: themed(
+              "drop-down.value-background-#{$name}-normal"
+            );
           }
 
           &-label {
             @include themify($themes) {
-              color: themed("drop-down.value-label-#{$name}");
+              color: themed("drop-down.value-label-#{$name}-normal");
             }
           }
 
           &-icon {
             @include themify($themes) {
-              fill: themed("drop-down.value-icon-#{$name}");
+              fill: themed("drop-down.value-icon-#{$name}-normal");
             }
           }
 
@@ -284,7 +286,9 @@ export interface Props {
 
         .dropdown__options {
           @include themify($themes) {
-            background-color: themed("drop-down.options-background-#{$name}");
+            background-color: themed(
+              "drop-down.options-background-#{$name}-normal"
+            );
           }
 
           &:hover {
