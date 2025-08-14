@@ -5,7 +5,7 @@ import tokens from "@/tokens";
 
 import type { UIElementColor } from "@/typings";
 
-import Text from "@/components/base/typography/Text.vue";
+import Text from "@/components/atoms/typography/Text.vue";
 
 withDefaults(defineProps<Props>(), {
   size: "md",

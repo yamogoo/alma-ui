@@ -4,9 +4,9 @@ import { storeToRefs } from "pinia";
 
 import { useLocaleStore } from "@/stores";
 
-import FormWrapper from "@/components/base/forms/FormWrapper.vue";
-import CarouselView from "@/components/base/containers/CarouselView.vue";
-import StepPaginationTabs from "@/components/base/tabs/StepPaginationTabs.vue";
+import FormWrapper from "@/components/molecules/forms/FormWrapper.vue";
+import CarouselView from "@/components/atoms/containers/CarouselView.vue";
+import StepPaginationTabs from "@/components/atoms/tabs/StepPaginationTabs.vue";
 
 import LoginForm from "./LoginForm.vue";
 import SigninForm from "./SigninForm.vue";

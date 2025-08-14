@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Page from "@/components/base/page/Page.vue";
-import Text from "@/components/base/typography/Text.vue";
+import Page from "@/components/atoms/containers/Page.vue";
+import Text from "@/components/atoms/typography/Text.vue";
 
-import LandingHeader from "@@/components/LandingHeader.vue";
-import LandingCover from "@@/components/LandingCover.vue";
-import LandingFooter from "@@/components/LandingFooter.vue";
+import LandingHeader from "@@/components/molecules/LandingHeader.vue";
+import LandingCover from "@@/components/molecules/LandingCover.vue";
+import LandingFooter from "@@/components/molecules/LandingFooter.vue";
 </script>
 
 <template>

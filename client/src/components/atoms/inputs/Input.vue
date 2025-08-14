@@ -15,7 +15,7 @@ import { sanitizeInput } from "@/utils";
 
 import type { Props } from "./input";
 
-import ControlButton from "@/components/base/buttons/ControlButton.vue";
+import ControlButton from "@/components/atoms/buttons/ControlButton.vue";
 
 const props = withDefaults(defineProps<Props>(), {
   color: "primary",

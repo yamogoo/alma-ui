@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { Props as InputProps } from "./input";
 
-import Input from "@/components/base/inputs/Input.vue";
-import ControlButton from "@/components/base/buttons/ControlButton.vue";
+import Input from "@/components/atoms/inputs/Input.vue";
+import ControlButton from "@/components/atoms/buttons/ControlButton.vue";
 
 const props = withDefaults(defineProps<Props>(), {
   isMaskIconShown: true,

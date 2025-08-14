@@ -5,13 +5,13 @@ import { useRouter } from "vue-router";
 
 import { useAuthStore, useLocaleStore } from "@/stores";
 
-import Form from "@/components/base/forms/Form.vue";
-import ActionButton from "@/components/base/buttons/ActionButton.vue";
-import Input from "@/components/base/inputs/Input.vue";
-import Text from "@/components/base/typography/Text.vue";
-import Group from "@/components/base/containers/Group.vue";
-import Divider from "@/components/base/dividers/Divider.vue";
-import PasswordInput from "@/components/base/inputs/PasswordInput.vue";
+import Form from "@/components/molecules/forms/Form.vue";
+import ActionButton from "@/components/atoms/buttons/ActionButton.vue";
+import Input from "@/components/atoms/inputs/Input.vue";
+import Text from "@/components/atoms/typography/Text.vue";
+import Group from "@/components/atoms/containers/Group.vue";
+import Divider from "@/components/atoms/dividers/Divider.vue";
+import PasswordInput from "@/components/atoms/inputs/PasswordInput.vue";
 
 const { $t } = storeToRefs(useLocaleStore());
 

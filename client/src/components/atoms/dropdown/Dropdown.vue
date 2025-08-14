@@ -8,7 +8,7 @@ import { useClickOutside } from "@/composables/useClickOutside";
 
 import type { UIElementColor } from "@/typings";
 
-import Icon from "@/components/base/icons/Icon.vue";
+import Icon from "@/components/atoms/icons/Icon.vue";
 
 const props = withDefaults(defineProps<Props>(), {
   size: "md",
