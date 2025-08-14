@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref, toValue, watch } from "vue";
+import { onMounted, onUnmounted, toValue, ref, watch } from "vue";
 import g from "gsap";
 
 import tokens from "@/tokens";
@@ -95,7 +95,11 @@ onUnmounted(() => {
 </script>
 
 <script lang="ts">
-import type { UIElementDirection, UIElementColor } from "@/typings";
+import type {
+  UIElementDirection,
+  UIElementColor,
+  UIElementStretch,
+} from "@/typings";
 
 import type {
   IconName,
@@ -113,8 +117,6 @@ export type Color = Extract<
   "primary" | "primary-inversed" | "secondary" | "accent" | "error"
 >;
 
-export type ButtonStretch = "fill" | "auto";
-
 export type ButtonContentDirection = UIElementDirection;
 
 export interface Props {
@@ -131,7 +133,7 @@ export interface Props {
   appendIconWeight?: IconWeight;
   scalePressed?: number;
   isDisabled?: boolean;
-  stretch?: ButtonStretch;
+  stretch?: UIElementStretch;
 }
 </script>
 
@@ -162,12 +164,14 @@ export interface Props {
       :style="prependIconStyle"
       :weight="prependIconWeight"
     ></Icon>
+    <slot name="prepend-icon"></slot>
     <div v-if="$slots.content" class="button__content">
       <slot name="content"></slot>
     </div>
     <span v-if="label" class="button__label" data-testid="button-label">{{
       label
     }}</span>
+    <slot name="append-icon"></slot>
     <Icon
       v-if="appendIconName"
       :name="appendIconName"

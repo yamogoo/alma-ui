@@ -37,6 +37,14 @@
       "shadow": {
         "primary": "rgba({colors.black-1000}, .03)"
       },
+      "divider": {
+        "borderPrimary": "{themes.themes.light.border.primary}",
+        "borderSecondary": "{themes.themes.light.border.secondary}"
+      },
+      "group": {
+        "dividerPrimary": "{themes.themes.light.divider.borderPrimary}",
+        "dividerSecondary": "{themes.themes.light.divider.borderSecondary}"
+      },
       "button": {
         "labelPrimaryNormal": "{colors.gray-900}",
         "labelPrimaryDisabled": "{colors.gray-400}",
@@ -128,19 +136,19 @@
         "labelSecondaryFocused": "{colors.gray-950}"
       },
       "dropDown": {
-        "valueLabelPrimary": "{colors.gray-900}",
+        "valueLabelPrimaryNormal": "{colors.gray-900}",
         "valueLabelPrimaryHovered": "{colors.gray-950}",
         "valueLabelPrimaryExpanded": "{colors.gray-950}",
         "valueLabelPrimaryExpanedHovered": "{colors.gray-950}",
-        "valueIconPrimary": "{colors.gray-900}",
+        "valueIconPrimaryNormal": "{colors.gray-900}",
         "valueIconPrimaryHovered": "{colors.gray-950}",
         "valueIconPrimaryExpanded": "{colors.gray-800}",
         "valueIconPrimaryExpanedHovered": "{colors.gray-850}",
-        "valueBackgroundPrimary": "{colors.gray-75}",
+        "valueBackgroundPrimaryNormal": "{colors.gray-75}",
         "valueBackgroundPrimaryHovered": "{colors.gray-100}",
         "valueBackgroundPrimaryExpanded": "{colors.gray-75}",
         "valueBackgroundPrimaryExpandedHovered": "{colors.gray-100}",
-        "optionsBackgroundPrimary": "{colors.gray-125}",
+        "optionsBackgroundPrimaryNormal": "{colors.gray-125}",
         "optionsBackgroundPrimaryHovered": "{colors.gray-125}"
       },
       "form": {
@@ -205,6 +213,14 @@
       },
       "shadow": {
         "primary": "rgba({colors.gray-600}, .03)"
+      },
+      "divider": {
+        "borderPrimary": "{themes.themes.dark.border.primary}",
+        "borderSecondary": "{themes.themes.dark.border.secondary}"
+      },
+      "group": {
+        "dividerPrimary": "{themes.themes.dark.divider.borderPrimary}",
+        "dividerSecondary": "{themes.themes.dark.divider.borderSecondary}"
       },
       "button": {
         "labelPrimaryNormal": "{colors.gray-350}",
@@ -297,19 +313,19 @@
         "labelSecondaryFocused": "{colors.gray-50}"
       },
       "dropDown": {
-        "valueLabelPrimary": "{colors.gray-50}",
+        "valueLabelPrimaryNormal": "{colors.gray-50}",
         "valueLabelPrimaryHovered": "{colors.gray-100}",
         "valueLabelPrimaryExpanded": "{colors.gray-200}",
         "valueLabelPrimaryExpanedHovered": "{colors.gray-250}",
-        "valueIconPrimary": "{colors.gray-50}",
+        "valueIconPrimaryNormal": "{colors.gray-50}",
         "valueIconPrimaryHovered": "{colors.gray-100}",
         "valueIconPrimaryExpanded": "{colors.gray-200}",
         "valueIconPrimaryExpanedHovered": "{colors.gray-250}",
-        "valueBackgroundPrimary": "{colors.gray-850}",
+        "valueBackgroundPrimaryNormal": "{colors.gray-850}",
         "valueBackgroundPrimaryHovered": "{colors.gray-800}",
         "valueBackgroundPrimaryExpanded": "{colors.gray-700}",
         "valueBackgroundPrimaryExpandedHovered": "{colors.gray-750}",
-        "optionsBackgroundPrimary": "{colors.gray-800}",
+        "optionsBackgroundPrimaryNormal": "{colors.gray-800}",
         "optionsBackgroundPrimaryHovered": "{colors.gray-800}"
       },
       "form": {

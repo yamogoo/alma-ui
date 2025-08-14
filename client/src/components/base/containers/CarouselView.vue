@@ -4,11 +4,16 @@ import g from "gsap";
 
 import tokens from "@/tokens";
 
-import type { UIElementAxisDirection, UIElementOrientation } from "@/typings";
+import type {
+  UIElementAxisDirection,
+  UIElementOrientation,
+  UIElementStretch,
+} from "@/typings";
 
 const props = withDefaults(defineProps<Props>(), {
   orientation: "vertical",
   direction: "forward",
+  stretch: "fill",
   duration: 0.55,
   screenCount: 1,
   autoPlay: false,
@@ -267,6 +272,7 @@ export interface Props {
   size?: Size;
   screenCount?: number;
   orientation?: UIElementOrientation;
+  stretch?: UIElementStretch;
   autoPlay?: boolean;
   duration?: number;
   interval?: number;
@@ -288,6 +294,7 @@ export interface Props {
       {
         [`carousel-view_size-${size}`]: size,
         [`carousel-view_orientation-${orientation}`]: orientation,
+        [`carousel-view_stretch-${stretch}`]: stretch,
         'carousel-view_grabbing': isCursorGrabbing,
       },
     ]"
@@ -331,14 +338,30 @@ export interface Props {
 
 .carousel-view {
   position: relative;
-  @include box(100%);
-
   @include defineSize();
 
   &__container {
     position: relative;
     display: flex;
     @include box(100%);
+  }
+
+  &_stretch {
+    &-fill {
+      @include box(100%);
+    }
+
+    &-auto {
+      &.carousel-view_orientation {
+        &-vertical {
+          @include box(auto, 100%);
+        }
+
+        &-horizontal {
+          @include box(100%, auto);
+        }
+      }
+    }
   }
 
   &_clickable {

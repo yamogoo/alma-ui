@@ -22,6 +22,24 @@
       "size": 56
     }
   },
+  "divider": {
+    "lg": {
+      "borderWidth": "1px",
+      "padding": "16px"
+    },
+    "md": {
+      "borderWidth": "1px",
+      "padding": "12px"
+    },
+    "sm": {
+      "borderWidth": "1px",
+      "padding": "8px"
+    },
+    "xs": {
+      "borderWidth": "1px",
+      "padding": 0
+    }
+  },
   "input": {
     "md": {
       "value": {
@@ -167,6 +185,20 @@
       "optionMinHeight": 24
     }
   },
+  "group": {
+    "lg": {
+      "gap": "24px",
+      "divider": "1px"
+    },
+    "md": {
+      "gap": "16px",
+      "divider": "1px"
+    },
+    "sm": {
+      "gap": "12px",
+      "divider": "1px"
+    }
+  },
   "form": {
     "md": {
       "paddingV": "16px",
@@ -259,7 +291,7 @@
       "borderRadius": 5
     }
   },
-  "stepPagination": {
+  "stepPaginationTabs": {
     "lg": {
       "fontStyle": "title-3",
       "padding": "8px"

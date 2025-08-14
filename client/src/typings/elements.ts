@@ -41,8 +41,12 @@ export type UIElementOrientation = "horizontal" | "vertical";
 
 export type UIElementAlignment = "start" | "center" | "end";
 
+export type UIElementStretch = "fill" | "auto";
+
 export type IUIElementItemID<T = string> = {
   id: T;
 };
 
 export type UIElementSID<T = string | null | undefined> = T;
+
+export type UIElementContentKey = string | number | Symbol;

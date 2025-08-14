@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import tokens from "@/tokens";
 
-import type { UIElementColor } from "@/typings";
+import type { UIElementColor, UIElementContentKey } from "@/typings";
+
+import AnimatedWrapper from "@/components/base/containers/AnimatedWrapper.vue";
 
 withDefaults(defineProps<Props>(), {
   size: "md",
@@ -19,6 +21,8 @@ export interface Props {
   size?: Size;
   color?: Color;
   bordered?: boolean;
+  duration?: number;
+  contentKey?: UIElementContentKey;
 }
 </script>
 
@@ -32,10 +36,12 @@ export interface Props {
     ]"
     data-testid="form-wrapper"
   >
-    <div v-if="$slots.header" class="form-wrapper__header">
-      <slot name="header"></slot>
-    </div>
-    <slot></slot>
+    <AnimatedWrapper :duration="duration" :content-key="contentKey ?? ''">
+      <div v-if="$slots.header" class="form-wrapper__header">
+        <slot name="header"></slot>
+      </div>
+      <slot></slot>
+    </AnimatedWrapper>
   </div>
 </template>
 

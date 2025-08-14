@@ -50,7 +50,7 @@ const itemPosition = (_item: StepItem, idx: number) => {
 };
 
 const textVariant = computed(() => {
-  return tokens.stepPagination[props.size].fontStyle as Variant;
+  return tokens.stepPaginationTabs[props.size].fontStyle as Variant;
 });
 
 const onItemClick = (item: StepItem): void => {
@@ -61,7 +61,7 @@ const onItemClick = (item: StepItem): void => {
 </script>
 
 <script lang="ts">
-export type Size = keyof typeof tokens.stepPagination;
+export type Size = keyof typeof tokens.stepPaginationTabs;
 
 export type Color = Extract<UIElementColor, "primary">;
 
@@ -80,21 +80,21 @@ export interface Props {
 
 <template>
   <div
-    class="step-pagination"
+    class="step-pagination-tabs"
     :class="[
       {
-        [`step-pagination_size-${props.size}`]: !!size,
-        [`step-pagination_color-${props.color}`]: !!color,
+        [`step-pagination-tabs_size-${props.size}`]: !!size,
+        [`step-pagination-tabs_color-${props.color}`]: !!color,
       },
     ]"
   >
-    <div class="step-pagination__track">
+    <div class="step-pagination-tabs__track">
       <Text
         v-for="(item, idx) in visibleItems"
         :key="item.id"
         :class="[
-          'step-pagination__item',
-          { 'step-pagination__item_active': idx === sid },
+          'step-pagination-tabs__item',
+          { 'step-pagination-tabs__item_active': idx === sid },
           itemPosition(item, idx),
         ]"
         :variant="textVariant"
@@ -109,7 +109,7 @@ export interface Props {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSizes($map: $step-pagination) {
+@mixin defineSizes($map: $step-pagination-tabs) {
   @each $size, $val in $map {
     &_size-#{$size} {
       $font-style: map.get($val, "font-style");
@@ -126,12 +126,12 @@ export interface Props {
     &_color-#{$name} {
       .step-pagination__item {
         @include themify($themes) {
-          color: themed("step-pagination.label-#{$name}-normal");
+          color: themed("step-pagination-tabs.label-#{$name}-normal");
         }
 
         &_active {
           @include themify($themes) {
-            color: themed("step-pagination.label-#{$name}-active");
+            color: themed("step-pagination-tabs.label-#{$name}-active");
           }
         }
       }
@@ -139,7 +139,7 @@ export interface Props {
   }
 }
 
-.step-pagination {
+.step-pagination-tabs {
   display: flex;
   justify-content: center;
   align-items: center;
