@@ -13,6 +13,8 @@ import vueRouter from "unplugin-vue-router/vite";
 import ColorsGeneratorPlugin from "./plugins/vite-plugin-colors-generator";
 import { TokensParserPlugin } from "./plugins/vite-plugin-tokens-parser";
 
+import VueRouterPlugin from "unplugin-vue-router/vite";
+
 export default (opts: { mode: string }) => {
   const { mode } = opts;
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
@@ -50,6 +52,9 @@ export default (opts: { mode: string }) => {
       babel(),
       vue(),
       vueRouter(),
+      VueRouterPlugin({
+        dts: true,
+      }),
       svgLoader(),
       ColorsGeneratorPlugin({
         source: "./src/tokens/baseColors.json",

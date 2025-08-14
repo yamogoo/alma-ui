@@ -3,7 +3,7 @@ import { computed, type ComputedRef, type CSSProperties } from "vue";
 
 import tokens from "@/tokens";
 
-import type { UIElementColor } from "@/typings";
+import type { UIElementColor, UIElementTypographyTag } from "@/typings";
 
 export type Variant = keyof typeof tokens.typography.styles;
 
@@ -24,7 +24,7 @@ export type Color = Extract<
 >;
 
 export interface Props {
-  as?: string;
+  as?: UIElementTypographyTag;
   value?: string;
   variant?: Variant;
   textColor?: Color;

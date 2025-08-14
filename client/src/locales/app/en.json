@@ -8,7 +8,7 @@
         "userName": "user name",
         "password": "password",
         "login": "login",
-        "skip": "skip",
+        "skip": "Continue without login",
         "forgotPassword": "forgot password?",
         "register": "register"
       }
@@ -17,8 +17,10 @@
       "form": {
         "title": "Sign in",
         "description": "Enter your credentials to access your account",
+        "userName": "user name",
         "email": "email",
         "password": "password",
+        "repeatPassword": "repeat password",
         "signIn": "sign in",
         "forgotPassword": "forgot password?",
         "register": "register"

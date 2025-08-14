@@ -76,6 +76,7 @@
         "fontStyle": "label-1",
         "size": 56,
         "iconSize": "20px",
+        "iconSizeLiteral": "sm",
         "gap": "12px",
         "padding": [
           0,
@@ -87,6 +88,7 @@
         "fontStyle": "label-2",
         "size": 44,
         "iconSize": "16px",
+        "iconSizeLiteral": "xs",
         "gap": "12px",
         "padding": [
           0,
@@ -98,10 +100,23 @@
         "fontStyle": "label-3",
         "size": 40,
         "iconSize": "16px",
+        "iconSizeLiteral": "xs",
         "gap": "12px",
         "padding": [
           0,
           "16px"
+        ],
+        "borderRadius": "9999px"
+      },
+      "xs": {
+        "fontStyle": "label-3",
+        "size": 36,
+        "iconSize": "12px",
+        "iconSizeLiteral": "xs",
+        "gap": "12px",
+        "padding": [
+          0,
+          "12px"
         ],
         "borderRadius": "9999px"
       }
@@ -111,6 +126,7 @@
         "fontStyle": "label-1",
         "size": 56,
         "iconSize": "20px",
+        "iconSizeLiteral": "sm",
         "gap": "12px",
         "padding": [
           0,
@@ -122,6 +138,7 @@
         "fontStyle": "label-3",
         "size": 44,
         "iconSize": "16px",
+        "iconSizeLiteral": "xs",
         "gap": "12px",
         "padding": [
           0,
@@ -133,6 +150,7 @@
         "fontStyle": "label-4",
         "size": 32,
         "iconSize": "16px",
+        "iconSizeLiteral": "xs",
         "gap": "12px",
         "padding": [
           0,
@@ -144,6 +162,7 @@
         "fontStyle": "label-4",
         "size": 24,
         "iconSize": "12px",
+        "iconSizeLiteral": "xxs",
         "gap": "12px",
         "padding": [
           0,

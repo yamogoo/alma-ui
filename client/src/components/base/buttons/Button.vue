@@ -1,5 +1,13 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, toValue, ref, watch } from "vue";
+import {
+  onMounted,
+  onUnmounted,
+  toValue,
+  ref,
+  watch,
+  computed,
+  type ComputedRef,
+} from "vue";
 import g from "gsap";
 
 import tokens from "@/tokens";
@@ -31,7 +39,11 @@ const refRoot = ref<HTMLButtonElement | null>(null);
 const componentTag = props.as;
 
 const isHovered = ref(false);
-const localIsPressed = ref();
+const localIsPressed = ref(false);
+
+const computedButtonSize: ComputedRef<IconSize> = computed(
+  () => tokens.button[props.variant][props.size].iconSizeLiteral as IconSize
+);
 
 const onDown = (e: PointerEvent): void => {
   localIsPressed.value = true;
@@ -108,6 +120,7 @@ import type {
 
 import type {
   IconName,
+  IconSize,
   IconStyle,
   IconWeight,
 } from "@/components/base/icons/icons";
@@ -119,7 +132,12 @@ export type Size = keyof typeof tokens.button.rounded;
 
 export type Color = Extract<
   UIElementColor,
-  "primary" | "primary-inversed" | "secondary" | "accent" | "error"
+  | "primary"
+  | "primary-inversed"
+  | "secondary"
+  | "accent"
+  | "error"
+  | "transparent"
 >;
 
 export type Stretch = UIElementStretch;
@@ -133,6 +151,7 @@ export interface Props {
   color: Color;
   label?: string;
   contentDirection?: ContentDirection;
+  iconSize?: IconSize;
   prependIconName?: IconName;
   prependIconStyle?: IconStyle;
   prependIconWeight?: IconWeight;
@@ -174,6 +193,7 @@ export interface Props {
       :name="prependIconName"
       :style="prependIconStyle"
       :weight="prependIconWeight"
+      :size="iconSize ?? computedButtonSize"
     ></Icon>
     <slot name="prepend-icon"></slot>
     <div v-if="$slots.content" class="button__content">
@@ -188,6 +208,7 @@ export interface Props {
       :name="appendIconName"
       :style="appendIconStyle"
       :weight="appendIconWeight"
+      :size="iconSize ?? computedButtonSize"
     ></Icon>
   </component>
 </template>
@@ -226,11 +247,11 @@ export interface Props {
             line-height: 1;
           }
 
-          .icon {
+          /* .icon {
             @include box($icon-size);
             fill: inherit;
             @extend %base-transition;
-          }
+          } */
         }
       }
     }
@@ -276,7 +297,6 @@ export interface Props {
       &.button_disabled {
         @include themify($themes) {
           background-color: themed("button.background-#{$name}-disabled");
-          opacity: 0.5;
         }
 
         .button__label {
@@ -301,7 +321,9 @@ export interface Props {
   @extend %base-transition;
 
   @include defineButtonSizes();
-  @include defineThemes(primary primary-inversed secondary accent error);
+  @include defineThemes(
+    primary primary-inversed secondary accent error "transparent"
+  );
 
   &__label {
     @extend %base-transition;

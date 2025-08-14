@@ -24,8 +24,8 @@ const MIN_PASSWORD_LENGTH =
 const localEmail = ref("");
 const localPassword = ref("");
 const localRepeatedPassword = ref("");
-const localIsPasswordMasked = ref(false);
-const localIsRepeatedPasswordMasked = ref(false);
+const localIsPasswordMasked = ref(true);
+const localIsRepeatedPasswordMasked = ref(true);
 
 const validatePassword = (password: string) => {
   return password.length >= MIN_PASSWORD_LENGTH;
@@ -68,7 +68,7 @@ onMounted(() => {
   <Form :color="'primary'" :aria-label="'Login'">
     <Input
       v-model:value="localEmail"
-      :placeholder="$t.auth.login.form.userName"
+      :placeholder="$t.auth.signin.form.userName"
       :type="'text'"
       :is-error="isError"
     ></Input>
@@ -76,14 +76,14 @@ onMounted(() => {
       v-model:value="localPassword"
       v-model:masked="localIsPasswordMasked"
       :type="'password'"
-      :placeholder="$t.auth.login.form.password"
+      :placeholder="$t.auth.signin.form.password"
       :is-error="isError"
     ></PasswordInput>
     <PasswordInput
       v-model:value="localRepeatedPassword"
       v-model:masked="localIsRepeatedPasswordMasked"
       :type="'password'"
-      :placeholder="$t.auth.login.form.password"
+      :placeholder="$t.auth.signin.form.repeatPassword"
       :is-error="isError"
     ></PasswordInput>
     <Text :variant="'caption-2'" :text-color="'secondary'">{{

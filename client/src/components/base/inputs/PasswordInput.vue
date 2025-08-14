@@ -54,10 +54,11 @@ export interface Props extends InputProps {
         role="button"
         :aria-label="'mask button'"
         :size="'xs'"
-        :color="!isError ? 'primary' : 'error'"
+        :icon-size="'xs'"
+        :color="'transparent'"
         :icon-name="!masked ? 'eye' : 'eyeDisabled'"
         :icon-style="'outline'"
-        :icon-weight="'500'"
+        :icon-weight="'400'"
         @click="onMaskValue"
       />
     </template>
