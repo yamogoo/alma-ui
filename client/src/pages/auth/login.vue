@@ -4,8 +4,8 @@ import g from "gsap";
 
 import { useTimeout } from "@/composables";
 
-import Page from "@/components/base/page/Page.vue";
-import AuthForm from "@/components/forms/AuthForm.vue";
+import Page from "@/components/atoms/containers/Page.vue";
+import AuthForm from "@/components/organisms/forms/AuthForm.vue";
 
 const START_DELAY = 350;
 const MESSAGE_DURATION_IN = 0.65;

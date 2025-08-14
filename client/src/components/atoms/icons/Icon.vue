@@ -8,7 +8,7 @@ import type {
   IconColor,
   IconSize,
 } from "./icons";
-import Skeleton from "@/components/base/skeleton/Skeleton.vue";
+import Skeleton from "@/components/atoms/skeleton/Skeleton.vue";
 
 const props = defineProps<Props>();
 

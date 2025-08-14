@@ -1,6 +1,6 @@
 import { mount, VueWrapper } from "@vue/test-utils";
 
-import Input from "@/components/base/inputs/Input.vue";
+import Input from "@/components/atoms/inputs/Input.vue";
 
 const getResetButton = <T>(wrapper: VueWrapper<T>) => {
   return wrapper.find('[data-testid="input__reset-button"]');

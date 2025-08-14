@@ -3,7 +3,7 @@ import type {
   IconName,
   IconStyle,
   IconWeight,
-} from "@/components/base/icons/icons";
+} from "@/components/atoms/icons/icons";
 import ProtoButton, {
   type Color,
   type ContentDirection,

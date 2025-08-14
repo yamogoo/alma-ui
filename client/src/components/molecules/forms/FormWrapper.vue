@@ -3,7 +3,7 @@ import tokens from "@/tokens";
 
 import type { UIElementColor, UIElementContentKey } from "@/typings";
 
-import AnimatedWrapper from "@/components/base/containers/AnimatedWrapper.vue";
+import AnimatedWrapper from "@/components/atoms/containers/AnimatedWrapper.vue";
 
 withDefaults(defineProps<Props>(), {
   size: "md",

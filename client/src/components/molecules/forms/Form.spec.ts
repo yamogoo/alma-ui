@@ -1,7 +1,7 @@
 import { mount } from "@vue/test-utils";
 
-import Form from "@/components/base/forms/Form.vue";
-import Text from "@/components/base/typography/Text.vue";
+import Form from "@/components/molecules/forms/Form.vue";
+import Text from "@/components/atoms/typography/Text.vue";
 
 vi.mock("vue", async (orig) => {
   const actual = await orig();

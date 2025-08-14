@@ -123,8 +123,8 @@ import type {
   IconSize,
   IconStyle,
   IconWeight,
-} from "@/components/base/icons/icons";
-import Icon from "@/components/base/icons/Icon.vue";
+} from "@/components/atoms/icons/icons";
+import Icon from "@/components/atoms/icons/Icon.vue";
 
 export type Variant = keyof typeof tokens.button;
 

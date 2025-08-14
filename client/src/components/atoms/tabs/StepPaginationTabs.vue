@@ -5,7 +5,7 @@ import tokens from "@/tokens";
 
 import type { UIElementColor } from "@/typings";
 
-import Text, { type Variant } from "@/components/base/typography/Text.vue";
+import Text, { type Variant } from "@/components/atoms/typography/Text.vue";
 
 // TODO: finish carousel view
 

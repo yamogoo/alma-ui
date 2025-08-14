@@ -1,7 +1,7 @@
 import { mount, shallowMount } from "@vue/test-utils";
 import g from "gsap";
 
-import Button from "@/components/base/buttons/Button.vue";
+import Button from "@/components/atoms/buttons/Button.vue";
 
 vi.mock("gsap", () => ({
   default: {
