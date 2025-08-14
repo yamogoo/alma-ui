@@ -118,6 +118,7 @@ export interface Props {
 
 .group {
   display: flex;
+  @extend %base-transition;
 
   @include defineSize();
   @include defineThemes(primary secondary);

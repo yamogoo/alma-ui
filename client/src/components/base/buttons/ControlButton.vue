@@ -2,10 +2,10 @@
 import type { IconName, IconStyle, IconWeight } from "../icons/icons";
 import ProtoButton, {
   type Color,
-  type ButtonContentDirection,
+  type ContentDirection,
   type Size,
-  type ButtonVariant,
-  type ButtonStretch,
+  type Variant,
+  type Stretch,
 } from "./Button.vue";
 
 const props = withDefaults(defineProps<Props>(), {
@@ -34,16 +34,16 @@ const onPointerDown = (e: PointerEvent): void => {
 
 <script lang="ts">
 export interface Props {
-  variant?: ButtonVariant;
+  variant?: Variant;
   size: Size;
   color: Color;
   label?: string;
-  contentDirection?: ButtonContentDirection;
+  contentDirection?: ContentDirection;
   iconName?: IconName;
   iconStyle?: IconStyle;
   iconWeight?: IconWeight;
   isDisabled?: boolean;
-  stretch?: ButtonStretch;
+  stretch?: Stretch;
 }
 </script>
 

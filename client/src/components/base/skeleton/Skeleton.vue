@@ -50,6 +50,7 @@ const onAnimate = (el: Element): void => {
       $color-out: rgba(themed("skeleton.color-out"), 0);
       background: linear-gradient(90deg, $color-out, $color-in, $color-out);
     }
+    @extend %base-transition;
   }
 }
 </style>

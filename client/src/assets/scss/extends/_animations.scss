@@ -2,7 +2,8 @@
 
 %base-transition {
   @include transition(
-    color background background-color fill stroke border border-color opacity,
+    color background background-color linear-gradient fill stroke border
+      border-color opacity,
     150ms,
     ease-out
   );
