@@ -24,6 +24,7 @@ export type Color = Extract<
 >;
 
 export interface Props {
+  as?: string;
   value?: string;
   variant?: Variant;
   textColor?: Color;
@@ -49,8 +50,11 @@ export interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
+  as: "span",
   textColor: "primary",
 });
+
+const componentTag = props.as;
 
 const computedStyle: ComputedRef<CSSProperties> = computed(() => {
   return {
@@ -75,7 +79,8 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
 </script>
 
 <template>
-  <span
+  <component
+    :is="componentTag"
     class="text"
     :class="[
       {
@@ -87,7 +92,7 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
   >
     {{ value }}
     <slot></slot>
-  </span>
+  </component>
 </template>
 
 <style lang="scss">
