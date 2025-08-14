@@ -1,5 +1,13 @@
 export const routes = [
   {
+    path: "/promo",
+    component: () => import("@@/pages/index.vue"),
+    meta: {
+      rid: -1,
+      requiresAuth: false,
+    },
+  },
+  {
     path: "/auth",
     alias: "/",
     component: () => import("@/layouts/AuthLayout.vue"),

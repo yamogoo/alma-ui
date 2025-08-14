@@ -80,6 +80,8 @@ export interface Props {
 }
 
 .divider {
+  @extend %base-transition;
+
   @include defineSize();
   @include defineThemes(primary secondary);
 }

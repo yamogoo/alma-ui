@@ -19,7 +19,7 @@
     "paths": {
       "~/*": ["./*"],
       "@/*": ["./src/*"],
-      "@@/*": ["./src/server/*"],
+      "@@/*": ["./landing-src/*"],
       "components/*": ["./src/components/*"],
       "composables/*": ["./src/composables/*"],
       "layouts/*": ["./src/layouts/*"],
