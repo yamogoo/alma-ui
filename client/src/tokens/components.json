@@ -70,6 +70,7 @@
         "fontStyle": "label-1",
         "size": 56,
         "iconSize": "{components.icon.sm.size}",
+        "iconSizeLiteral": "sm",
         "gap": "{tokens.spacing.sm}",
         "padding": [0, "{tokens.spacing.xl}"],
         "borderRadius": "{tokens.roundness.infinity}"
@@ -78,6 +79,7 @@
         "fontStyle": "label-2",
         "size": 44,
         "iconSize": "{components.icon.xs.size}",
+        "iconSizeLiteral": "xs",
         "gap": "{tokens.spacing.sm}",
         "padding": [0, "{tokens.spacing.lg}"],
         "borderRadius": "{tokens.roundness.infinity}"
@@ -86,8 +88,18 @@
         "fontStyle": "label-3",
         "size": 40,
         "iconSize": "{components.icon.xs.size}",
+        "iconSizeLiteral": "xs",
         "gap": "{tokens.spacing.sm}",
         "padding": [0, "{tokens.spacing.md}"],
+        "borderRadius": "{tokens.roundness.infinity}"
+      },
+      "xs": {
+        "fontStyle": "label-3",
+        "size": 36,
+        "iconSize": "{components.icon.xxs.size}",
+        "iconSizeLiteral": "xs",
+        "gap": "{tokens.spacing.sm}",
+        "padding": [0, "{tokens.spacing.sm}"],
         "borderRadius": "{tokens.roundness.infinity}"
       }
     },
@@ -96,6 +108,7 @@
         "fontStyle": "label-1",
         "size": 56,
         "iconSize": "{components.icon.sm.size}",
+        "iconSizeLiteral": "sm",
         "gap": "{tokens.spacing.sm}",
         "padding": [0, 0],
         "borderRadius": "{tokens.roundness.infinity}"
@@ -104,6 +117,7 @@
         "fontStyle": "label-3",
         "size": 44,
         "iconSize": "{components.icon.xs.size}",
+        "iconSizeLiteral": "xs",
         "gap": "{tokens.spacing.sm}",
         "padding": [0, 0],
         "borderRadius": "{tokens.roundness.infinity}"
@@ -112,6 +126,7 @@
         "fontStyle": "label-4",
         "size": 32,
         "iconSize": "{components.icon.xs.size}",
+        "iconSizeLiteral": "xs",
         "gap": "{tokens.spacing.sm}",
         "padding": [0, "{tokens.spacing.lg}"],
         "borderRadius": "{tokens.roundness.infinity}"
@@ -120,6 +135,7 @@
         "fontStyle": "label-4",
         "size": 24,
         "iconSize": "{components.icon.xxs.size}",
+        "iconSizeLiteral": "xxs",
         "gap": "{tokens.spacing.sm}",
         "padding": [0, "{tokens.spacing.lg}"],
         "borderRadius": "{tokens.roundness.infinity}"

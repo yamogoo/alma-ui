@@ -29,7 +29,7 @@ const MIN_PASSWORD_LENGTH =
 
 const localEmail = ref("");
 const localPassword = ref("");
-const localIsPasswordMasked = ref(false);
+const localIsPasswordMasked = ref(true);
 
 const isPasswordValid = computed(
   () => localPassword.value.length >= MIN_PASSWORD_LENGTH
@@ -86,7 +86,7 @@ onMounted(() => {
       :text-color="'error'"
       >{{ loginError }}</Text
     >
-    <Divider :orientation="'horizontal'" :size="'sm'"></Divider>
+    <!-- <Divider :orientation="'horizontal'" :size="'sm'"></Divider> -->
     <Text :variant="'caption-2'" :text-color="'secondary'">{{
       $t.auth.login.form.description
     }}</Text>
@@ -103,8 +103,9 @@ onMounted(() => {
           @key.enter="onSubmit"
         >
         </ActionButton>
+        <Divider :orientation="'horizontal'" :size="'md'"></Divider>
         <ActionButton
-          :color="'accent'"
+          :color="'transparent'"
           :size="'md'"
           :stretch="'fill'"
           :label="$t.auth.login.form.skip"

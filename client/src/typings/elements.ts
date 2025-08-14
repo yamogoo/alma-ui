@@ -1,14 +1,8 @@
 export type UIElementColor =
-  | "primary"
-  | "primary-inversed"
-  | "primary-transparent"
-  | "secondary"
-  | "secondary-inversed"
-  | "secondary-transparent"
+  | `${"primary" | "secondary"}${"" | "-inversed" | "-transparent"}`
+  | `${"transclucent"}${"" | "-inversed"}`
   | "tertiary"
   | "transparent"
-  | "transclucent"
-  | "transclucent-inversed"
   | "accent"
   | "accent-secondary"
   | "accept"
@@ -50,3 +44,14 @@ export type IUIElementItemID<T = string> = {
 export type UIElementSID<T = string | null | undefined> = T;
 
 export type UIElementContentKey = string | number | Symbol;
+
+export type UIElementTypographyTitleTag = `h${1 | 2 | 3 | 4 | 5 | 6}`;
+
+export type UIElementTypographyParagraphTag = "p" | "span";
+
+export type UIElementTypographyLinkTag = "a";
+
+export type UIElementTypographyTag =
+  | UIElementTypographyTitleTag
+  | UIElementTypographyParagraphTag
+  | UIElementTypographyLinkTag;
