@@ -62,12 +62,14 @@ watch(localIsPressed, (isPressed) => {
 
 const onPointerEneter = (e: PointerEvent): void => {
   e.preventDefault();
+  e.stopImmediatePropagation();
 
   isHovered.value = true;
 };
 
 const onPointerLeave = (e: PointerEvent): void => {
   e.preventDefault();
+  e.stopImmediatePropagation();
 
   isHovered.value = false;
 };
@@ -147,6 +149,7 @@ export interface Props {
   <component
     :is="componentTag"
     ref="refRoot"
+    role="button"
     class="button"
     data-testid="button"
     :class="[
@@ -288,6 +291,7 @@ export interface Props {
 }
 
 .button {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;

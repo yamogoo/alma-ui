@@ -201,20 +201,20 @@
         "accentBlue": "#013CFE"
       },
       "border": {
-        "primary": "#1A1F23",
-        "secondary": "#2F383F",
+        "primary": "#242B31",
+        "secondary": "#39444C",
         "strong": "#C0C9D0"
       },
       "shadow": {
         "primary": "#58697608"
       },
       "divider": {
-        "borderPrimary": "#1A1F23",
-        "borderSecondary": "#2F383F"
+        "borderPrimary": "#242B31",
+        "borderSecondary": "#39444C"
       },
       "group": {
-        "dividerPrimary": "#1A1F23",
-        "dividerSecondary": "#2F383F"
+        "dividerPrimary": "#242B31",
+        "dividerSecondary": "#39444C"
       },
       "button": {
         "labelPrimaryNormal": "#97A5B1",
@@ -323,9 +323,9 @@
       },
       "formWrapper": {
         "backgroundPrimary": "#101315",
-        "borderPrimary": "#1A1F23",
+        "borderPrimary": "#242B31",
         "backgroundSecondary": "#1A1F23",
-        "borderSecondary": "#1A1F23"
+        "borderSecondary": "#242B31"
       },
       "resizer": {
         "splitterNormal": "#01259D",

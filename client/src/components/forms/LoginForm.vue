@@ -11,6 +11,7 @@ import Input from "@/components/base/inputs/Input.vue";
 import Text from "@/components/base/typography/Text.vue";
 import Group from "@/components/base/containers/Group.vue";
 import Divider from "@/components/base/dividers/Divider.vue";
+import PasswordInput from "@/components/base/inputs/PasswordInput.vue";
 
 const { $t } = storeToRefs(useLocaleStore());
 
@@ -28,6 +29,7 @@ const MIN_PASSWORD_LENGTH =
 
 const localEmail = ref<string>("");
 const localPassword = ref<string>("");
+const localIsPasswordMasked = ref(false);
 
 const isPasswordValid = computed(
   () => localPassword.value.length >= MIN_PASSWORD_LENGTH
@@ -70,12 +72,13 @@ onMounted(() => {
       :type="'text'"
       :is-error="isError"
     ></Input>
-    <Input
+    <PasswordInput
       v-model:value="localPassword"
+      v-model:masked="localIsPasswordMasked"
       :type="'password'"
       :placeholder="$t.auth.login.form.password"
       :is-error="isError"
-    ></Input>
+    ></PasswordInput>
     <Text
       v-if="isError"
       :data-testid="'auth-form-error'"

@@ -5,7 +5,6 @@ import {
   watchEffect,
   useId,
   computed,
-  type InputTypeHTMLAttribute,
   toValue,
   onMounted,
 } from "vue";
@@ -14,9 +13,7 @@ import g from "gsap";
 
 import { sanitizeInput } from "@/utils";
 
-import type { UIElementColor } from "@/typings";
-
-import type tokens from "@/tokens";
+import type { Props } from "./input";
 
 import ControlButton from "@/components/base/buttons/ControlButton.vue";
 
@@ -166,29 +163,6 @@ onMounted(() => {
 });
 </script>
 
-<script lang="ts">
-export type InputSize = keyof typeof tokens.input;
-
-export type InputColor = Extract<UIElementColor, "primary" | "secondary">;
-
-export type InputState = "focused";
-
-export interface Props {
-  value: string;
-  placeholder?: string;
-  color?: InputColor;
-  isError?: boolean;
-  isFocused?: boolean;
-  isDisabled?: boolean;
-  isRestButtonEnabled?: boolean;
-  dataCy?: string;
-  areaplaceholder?: string;
-  autocomplete?: string;
-  size?: InputSize;
-  type?: InputTypeHTMLAttribute;
-}
-</script>
-
 <template>
   <div
     class="input"
@@ -229,6 +203,7 @@ export interface Props {
         :spellcheck="'false'"
         @change="onChange"
       />
+      <slot name="controls"></slot>
       <ControlButton
         v-if="isResetButtonShown"
         type="reset"

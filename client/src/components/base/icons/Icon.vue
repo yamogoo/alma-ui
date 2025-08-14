@@ -13,11 +13,13 @@ import Skeleton from "@/components/base/skeleton/Skeleton.vue";
 const props = defineProps<Props>();
 
 const symbol = computed(() => {
-  const {name, style, weight} = props;
+  const { name, style, weight } = props;
 
-  return markRaw(defineAsyncComponent(async () => {
-    return import(`../../../assets/icons/${name}_${style}_${weight}.svg`);
-  }));
+  return markRaw(
+    defineAsyncComponent(async () => {
+      return import(`../../../assets/icons/${name}_${style}_${weight}.svg`);
+    })
+  );
 });
 </script>
 

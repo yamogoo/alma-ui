@@ -299,7 +299,7 @@ export interface Props {
       },
     ]"
   >
-    <div class="carousel-view__header">
+    <div v-if="$slots.pagination" class="carousel-view__header">
       <slot name="pagination" :sid="sid" :screenCount="screenCount"></slot>
     </div>
     <div ref="refTrack" class="carousel-view__container">
