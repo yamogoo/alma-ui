@@ -5,6 +5,7 @@ import g from "gsap";
 import tokens from "@/tokens";
 
 const props = withDefaults(defineProps<Props>(), {
+  as: "button",
   variant: "default",
   size: "md",
   color: "primary",
@@ -26,6 +27,8 @@ const emit = defineEmits<{
 }>();
 
 const refRoot = ref<HTMLButtonElement | null>(null);
+
+const componentTag = props.as;
 
 const isHovered = ref(false);
 const localIsPressed = ref();
@@ -122,6 +125,7 @@ export type Stretch = UIElementStretch;
 export type ContentDirection = UIElementDirection;
 
 export interface Props {
+  as?: string;
   variant?: Variant;
   size: Size;
   color: Color;
@@ -140,7 +144,8 @@ export interface Props {
 </script>
 
 <template>
-  <button
+  <component
+    :is="componentTag"
     ref="refRoot"
     class="button"
     data-testid="button"
@@ -157,6 +162,7 @@ export interface Props {
       },
     ]"
     :aria-label="label ?? prependIconName ?? appendIconName"
+    :aria-disabled="isDisabled"
     @pointerdown="onDown"
     @pointerup="onUp"
   >
@@ -180,7 +186,7 @@ export interface Props {
       :style="appendIconStyle"
       :weight="appendIconWeight"
     ></Icon>
-  </button>
+  </component>
 </template>
 
 <style lang="scss">
