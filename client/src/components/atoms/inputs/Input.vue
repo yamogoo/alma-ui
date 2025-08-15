@@ -254,6 +254,12 @@ onMounted(() => {
 @mixin defineThemes($names) {
   @each $name in $names {
     &_color-#{$name} {
+      &:focus {
+        @include themify($themes) {
+          outline: $outline solid themed("input.border-#{$name}-outline");
+        }
+      }
+
       &:not(.input_disabled) {
         @include themify($themes) {
           color: themed("input.label-#{$name}-normal");

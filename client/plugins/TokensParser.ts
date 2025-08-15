@@ -445,7 +445,7 @@ export class TokensParser {
           const rounded = parseFloat(computed.toFixed(2));
           const unitMatch = fullMatch.match(/px|rem/);
           const unit = unitMatch ? unitMatch[0] : "";
-          result = result.replace(fullMatch, rounded + unit + "px");
+          result = result.replace(fullMatch, `${rounded}${unit}`); // + "px"
         }
       } catch (e) {
         console.warn(`⚠️ Failed to evaluate math expression: ${fullMatch}`, e);

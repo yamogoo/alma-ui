@@ -23,30 +23,25 @@ const visibleItems = computed(() => {
   const len = props.items.length;
   if (len === 0) return [];
 
-  if (len <= 3) {
-    if (len === 2 && props.sid === 1) return props.items;
-    return props.items;
-  }
+  // Если меньше или равно 3 — просто отдаем как есть
+  if (len <= 3) return props.items;
 
-  const activeIndex = props.items.findIndex((i) => i.id === props.sid) ?? 0;
-  const start = Math.max(0, activeIndex - 1);
-  const end = Math.min(len, activeIndex + 2);
+  const activeIndex = props.items.findIndex((i) => i.id === props.sid);
+  const prevIndex = (activeIndex - 1 + len) % len;
+  const nextIndex = (activeIndex + 1) % len;
 
-  return props.items.slice(start, end);
+  return [
+    props.items[prevIndex], // left
+    props.items[activeIndex], // center
+    props.items[nextIndex], // right
+  ];
 });
 
 const itemPosition = (_item: StepItem, idx: number) => {
-  const len = visibleItems.value.length;
-  if (len === 1) return "center";
-  if (len === 2)
-    return props.sid === 1
-      ? idx === 0
-        ? "left"
-        : "center"
-      : idx === 0
-        ? "center"
-        : "right";
-  if (len === 3) return idx === 0 ? "left" : idx === 1 ? "center" : "right";
+  if (idx === 0) return "left";
+  if (idx === 1) return "center";
+  if (idx === 2) return "right";
+  return "";
 };
 
 const textVariant = computed(() => {

@@ -2,6 +2,8 @@
 import { onMounted, onUnmounted, nextTick, ref, computed, watch } from "vue";
 import g from "gsap";
 
+import { px2rem } from "@/utils";
+
 import tokens from "@/tokens";
 
 import type {
@@ -84,6 +86,7 @@ const delta = ref(0);
 const clickStartTime = ref(0);
 
 const itemGap = computed(() => props.gap ?? 0);
+const containerGap = computed(() => `${px2rem(props.gap)}rem`);
 const itemFullSize = computed(() => (screenSize.value ?? 0) + itemGap.value);
 const trackOffset = (sid: number) =>
   -sid * itemFullSize.value +
@@ -186,7 +189,7 @@ watch(
 const onAnimate = (idx: number, duration = props.duration): void => {
   const el = refTrack.value;
 
-  const offset = -(screenSize.value ?? 0) * idx;
+  const offset = -(screenSize.value ?? 0) * idx - props.gap * idx;
 
   if (el) {
     g.to(el, {
@@ -265,7 +268,7 @@ const onLeave = (el: Element, done: () => void): void => {
 </script>
 
 <script lang="ts">
-export type Size = keyof typeof tokens.carouselView;
+export type Size = keyof typeof tokens.carouselStack;
 
 export interface Props {
   sid?: number;
@@ -288,26 +291,30 @@ export interface Props {
 <template>
   <div
     ref="refRoot"
-    class="carousel-view"
+    class="carousel-stack"
     :class="[
-      `carousel-view_${isItemsClickable ? 'carousel-view_clickable' : 'carousel-view_static'}`,
+      `carousel-stack_${isItemsClickable ? 'carousel-stack_clickable' : 'carousel-stack_static'}`,
       {
-        [`carousel-view_size-${size}`]: size,
-        [`carousel-view_orientation-${orientation}`]: orientation,
-        [`carousel-view_stretch-${stretch}`]: stretch,
-        'carousel-view_grabbing': isCursorGrabbing,
+        [`carousel-stack_size-${size}`]: size,
+        [`carousel-stack_orientation-${orientation}`]: orientation,
+        [`carousel-stack_stretch-${stretch}`]: stretch,
+        'carousel-stack_grabbing': isCursorGrabbing,
       },
     ]"
   >
-    <div v-if="$slots.pagination" class="carousel-view__header">
+    <div v-if="$slots.pagination" class="carousel-stack__header">
       <slot name="pagination" :sid="sid" :screenCount="screenCount"></slot>
     </div>
-    <div ref="refTrack" class="carousel-view__container">
+    <div
+      ref="refTrack"
+      class="carousel-stack__container"
+      :style="{ gap: containerGap }"
+    >
       <template v-for="idx in screenCount" :key="idx">
         <Transition :css="false" @enter="onEnter" @leave="onLeave">
           <div
             v-if="isInactiveItemUnmounted ? idx - 1 === sid : true"
-            class="carousel-view__screen"
+            class="carousel-stack__screen"
             :style="{ flex: `0 0 ${screenSize}px` }"
           >
             <slot
@@ -324,19 +331,19 @@ export interface Props {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSize($map: $carousel-view) {
+@mixin defineSize($map: $carousel-stack) {
   @each $size, $val in $map {
     $header-padding: map.get($val, "header-padding");
 
     &_size-#{$size} {
-      .carousel-view__header {
+      .carousel-stack__header {
         padding: $header-padding;
       }
     }
   }
 }
 
-.carousel-view {
+.carousel-stack {
   position: relative;
   @include defineSize();
 
@@ -352,7 +359,7 @@ export interface Props {
     }
 
     &-auto {
-      &.carousel-view_orientation {
+      &.carousel-stack_orientation {
         &-vertical {
           @include box(auto, 100%);
         }
@@ -369,7 +376,7 @@ export interface Props {
   }
 
   &_static {
-    .carousel-view__screen {
+    .carousel-stack__screen {
       user-select: none;
       pointer-events: none;
     }
@@ -381,13 +388,13 @@ export interface Props {
 
   &_orientation {
     &-vertical {
-      .carousel-view__container {
+      .carousel-stack__container {
         flex-direction: column;
       }
     }
 
     &-horizontal {
-      .carousel-view__container {
+      .carousel-stack__container {
         flex-direction: row;
       }
     }
@@ -406,7 +413,7 @@ export interface Props {
     align-items: center;
     justify-content: center;
     @include box(100%);
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 }
 </style>

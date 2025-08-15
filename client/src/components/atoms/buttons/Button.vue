@@ -268,6 +268,12 @@ export interface Props {
       }
       @extend %base-transition;
 
+      &:focus {
+        @include themify($themes) {
+          outline: $outline solid themed("button.border-#{$name}-outline");
+        }
+      }
+
       &.button_hovered {
         @include themify($themes) {
           background-color: themed("button.background-#{$name}-hovered");
