@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { ref, computed } from "vue";
 import { storeToRefs } from "pinia";
 
 import { useLocaleStore } from "@/stores";
 
+import tokens from "@/tokens";
+
 import FormWrapper from "@/components/molecules/forms/FormWrapper.vue";
-import CarouselView from "@/components/atoms/containers/CarouselView.vue";
+import CarouselStack from "@/components/atoms/containers/CarouselStack.vue";
 import StepPaginationTabs from "@/components/atoms/tabs/StepPaginationTabs.vue";
 
 import LoginForm from "./LoginForm.vue";
@@ -17,6 +19,8 @@ const FORM_ANIMATION_DURATION = 0.35,
 const { $t } = storeToRefs(useLocaleStore());
 
 const formSid = ref(0);
+const isLoginError = ref(false);
+const isSigninError = ref(false);
 
 const formPaginationItems = computed(() => {
   return [
@@ -33,6 +37,10 @@ const onUpdateSid = (sid: number): void => {
   //   emit("update:password", localPassword.value);
   // }
 };
+
+const contentKey = computed(
+  () => `${formSid.value}${+isLoginError.value}${+isSigninError.value}`
+);
 </script>
 
 <template>
@@ -40,7 +48,7 @@ const onUpdateSid = (sid: number): void => {
     class="auth-form"
     :color="'primary'"
     bordered
-    :content-key="formSid"
+    :content-key="contentKey"
     :duration="FORM_ANIMATION_DURATION"
   >
     <template #header>
@@ -51,21 +59,28 @@ const onUpdateSid = (sid: number): void => {
       >
       </StepPaginationTabs>
     </template>
-    <CarouselView
+    <CarouselStack
       :sid="formSid"
       :screen-count="2"
       :orientation="'horizontal'"
       :direction="'forward'"
       :stretch="'auto'"
       :duration="FORM_VIEW_ANIMATION_DURATION"
+      :gap="tokens.spacing.md"
     >
       <template #screen-1="{ isActive }">
-        <LoginForm v-show="isActive"></LoginForm>
+        <LoginForm
+          v-show="isActive"
+          v-model:is-error="isLoginError"
+        ></LoginForm>
       </template>
       <template #screen-2="{ isActive }">
-        <SigninForm v-show="isActive"></SigninForm>
+        <SigninForm
+          v-show="isActive"
+          v-model:is-error="isSigninError"
+        ></SigninForm>
       </template>
-    </CarouselView>
+    </CarouselStack>
   </FormWrapper>
 </template>
 

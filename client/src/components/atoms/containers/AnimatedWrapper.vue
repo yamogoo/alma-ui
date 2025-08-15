@@ -55,6 +55,6 @@ watch(
 <style lang="scss">
 .animated-wrapper {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 </style>

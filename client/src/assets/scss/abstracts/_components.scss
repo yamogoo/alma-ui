@@ -14,7 +14,7 @@ $progressbar:(lg: (height: 10px, border-radius: 5px), md: (height: 8px, border-r
 $sheet:(lg: (gap: 32px, button-offset: 24px, padding: 48px 24px 24px 24px), md: (gap: 16px, button-offset: 24px, padding: 24px 24px));
 $scrollbar:(width: 3px, border-radius: 1px);
 $main-container:(respond: (mobile: (padding: 8px), desktop: (padding: 8px)), roundness: 16px);
-$carousel-view:(lg: (header-padding: 24px 24px), md: (header-padding: 16px 16px));
+$carousel-stack:(lg: (header-padding: 24px 24px), md: (header-padding: 16px 16px));
 $pagination:(lg: (size: 16px, width-active: 24px, gap: 16px, padding: 8px, border-radius: 8px), md: (size: 10px, width-active: 24px, gap: 12px, padding: 8px, border-radius: 5px));
 $step-pagination-tabs:(lg: (font-style: title-3, padding: 8px), md: (font-style: title-4, padding: 8px));
 $page-header:(md: (font-style: title-4), lg: (font-style: title-3));

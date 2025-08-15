@@ -32,7 +32,8 @@
       "border": {
         "primary": "{colors.gray-125}",
         "secondary": "{colors.gray-175}",
-        "strong": "{colors.gray-800}"
+        "strong": "{colors.gray-800}",
+        "outline": "{colors.blue-500}"
       },
       "shadow": {
         "primary": "rgba({colors.black-1000}, .03)"
@@ -54,6 +55,7 @@
         "backgroundTransparentDisabled": "rgba({colors.gray-75}, 0)",
         "backgroundTransparentHovered": "rgba({colors.gray-100}, 0)",
         "backgroundTransparentPressed": "rgba({colors.gray-150}, 0)",
+        "borderTransparentOutline": "{themes.themes.light.border.outline}",
 
         "labelPrimaryNormal": "{colors.gray-900}",
         "labelPrimaryDisabled": "{colors.gray-400}",
@@ -63,6 +65,7 @@
         "backgroundPrimaryDisabled": "rgba({colors.gray-75}, .5)",
         "backgroundPrimaryHovered": "{colors.gray-100}",
         "backgroundPrimaryPressed": "{colors.gray-150}",
+        "borderPrimaryOutline": "{themes.themes.light.border.outline}",
 
         "labelPrimaryInversedNormal": "{colors.gray-75}",
         "labelPrimaryInversedDisabled": "{colors.gray-500}",
@@ -72,6 +75,7 @@
         "backgroundPrimaryInversedDisabled": "rgba({colors.gray-600}, .5)",
         "backgroundPrimaryInversedHovered": "{colors.gray-900}",
         "backgroundPrimaryInversedPressed": "{colors.gray-800}",
+        "borderPrimaryInversedOutline": "{themes.themes.light.border.outline}",
 
         "labelSecondaryNormal": "{colors.gray-950}",
         "labelSecondaryDisabled": "{colors.gray-400}",
@@ -81,6 +85,7 @@
         "backgroundSecondaryDisabled": "rgba({colors.white-0}, .5)",
         "backgroundSecondaryHovered": "{colors.gray-50}",
         "backgroundSecondaryPressed": "{colors.gray-100}",
+        "borderSecondaryOutline": "{themes.themes.light.border.outline}",
 
         "labelAccentNormal": "{colors.gray-0}",
         "labelAccentDisabled": "rgba({colors.gray-0}, .75)",
@@ -90,6 +95,7 @@
         "backgroundAccentDisabled": "rgba({colors.darkBlue-700}, .75)",
         "backgroundAccentHovered": "{colors.darkBlue-750}",
         "backgroundAccentPressed": "{colors.darkBlue-800}",
+        "borderAccentOutline": "{themes.themes.light.border.outline}",
 
         "labelErrorNormal": "{colors.gray-0}",
         "labelErrorDisabled": "{colors.gray-0}",
@@ -98,7 +104,8 @@
         "backgroundErrorNormal": "{colors.red-350}",
         "backgroundErrorDisabled": "rgba({colors.red-200}, .5)",
         "backgroundErrorHovered": "{colors.red-400}",
-        "backgroundErrorPressed": "{colors.red-450}"
+        "backgroundErrorPressed": "{colors.red-450}",
+        "borderErrorOutline": "{themes.themes.light.border.outline}"
       },
       "input": {
         "labelPrimaryNormal": "{colors.gray-800}",
@@ -111,6 +118,7 @@
         "backgroundPrimaryHovered": "{colors.gray-50}",
         "backgroundPrimaryFocused": "{colors.gray-50}",
         "backgroundPrimaryError": "{colors.red-50}",
+        "borderPrimaryOutline": "{themes.themes.light.border.outline}",
 
         "labelSecondaryNormal": "{colors.gray-800}",
         "labelSecondaryDisabled": "{colors.gray-400}",
@@ -121,7 +129,8 @@
         "backgroundSecondaryDisabled": "{colors.white-0}",
         "backgroundSecondaryHovered": "{colors.gray-50}",
         "backgroundSecondaryFocused": "{colors.gray-100}",
-        "backgroundSecondaryError": "{colors.red-50}"
+        "backgroundSecondaryError": "{colors.red-50}",
+        "borderSecondaryOutline": "{themes.themes.light.border.outline}"
       },
       "selection": {
         "label": "{colors.gray-950}",
@@ -218,7 +227,8 @@
       "border": {
         "primary": "{colors.gray-850}",
         "secondary": "{colors.gray-750}",
-        "strong": "{colors.gray-200}"
+        "strong": "{colors.gray-200}",
+        "outline": "{colors.blue-500}"
       },
       "shadow": {
         "primary": "rgba({colors.gray-600}, .03)"
@@ -240,6 +250,7 @@
         "backgroundTransparentDisabled": "rgba({colors.gray-850}, 0)",
         "backgroundTransparentHovered": "rgba({colors.gray-800}, 0)",
         "backgroundTransparentPressed": "rgba({colors.gray-750}, 0)",
+        "borderTransparentOutline": "{themes.themes.dark.border.outline}",
 
         "labelPrimaryNormal": "{colors.gray-350}",
         "labelPrimaryDisabled": "{colors.gray-600}",
@@ -249,6 +260,7 @@
         "backgroundPrimaryDisabled": "rgba({colors.gray-850}, .5)",
         "backgroundPrimaryHovered": "{colors.gray-800}",
         "backgroundPrimaryPressed": "{colors.gray-750}",
+        "borderPrimaryOutline": "{themes.themes.dark.border.outline}",
 
         "labelPrimaryInversedNormal": "{colors.gray-950}",
         "labelPrimaryInversedDisabled": "{colors.gray-500}",
@@ -258,6 +270,7 @@
         "backgroundPrimaryInversedDisabled": "rgba({colors.gray-50}, .5)",
         "backgroundPrimaryInversedHovered": "{colors.gray-100}",
         "backgroundPrimaryInversedPressed": "{colors.gray-150}",
+        "borderPrimaryInversedOutline": "{themes.themes.dark.border.outline}",
 
         "labelSecondaryNormal": "{colors.gray-50}",
         "labelSecondaryDisabled": "{colors.gray-600}",
@@ -267,6 +280,7 @@
         "backgroundSecondaryDisabled": "rgba({colors.black-1000}, .5)",
         "backgroundSecondaryHovered": "{colors.gray-950}",
         "backgroundSecondaryPressed": "{colors.gray-900}",
+        "borderSecondaryOutline": "{themes.themes.dark.border.outline}",
 
         "labelAccentNormal": "{colors.gray-0}",
         "labelAccentDisabled": "rgba({colors.gray-0}, .75)",
@@ -276,6 +290,7 @@
         "backgroundAccentDisabled": "rgba({colors.darkBlue-700}, .5)",
         "backgroundAccentHovered": "{colors.darkBlue-750}",
         "backgroundAccentPressed": "{colors.darkBlue-800}",
+        "borderAccentOutline": "{themes.themes.dark.border.outline}",
 
         "labelErrorNormal": "{colors.gray-0}",
         "labelErrorDisabled": "{colors.gray-0}",
@@ -284,7 +299,8 @@
         "backgroundErrorNormal": "{colors.red-350}",
         "backgroundErrorDisabled": "rgba({colors.red-200}, .5)",
         "backgroundErrorHovered": "{colors.red-400}",
-        "backgroundErrorPressed": "{colors.red-450}"
+        "backgroundErrorPressed": "{colors.red-450}",
+        "borderErrorOutline": "{themes.themes.dark.border.outline}"
       },
       "input": {
         "labelPrimaryNormal": "{colors.gray-300}",
@@ -297,6 +313,7 @@
         "backgroundPrimaryHovered": "{colors.gray-900}",
         "backgroundPrimaryFocused": "{colors.gray-850}",
         "backgroundPrimaryError": "rgba({colors.red-400}, .2)",
+        "borderPrimaryOutline": "{themes.themes.dark.border.outline}",
 
         "labelSecondaryNormal": "{colors.gray-300}",
         "labelSecondaryDisabled": "{colors.gray-600}",
@@ -307,7 +324,8 @@
         "backgroundSecondaryDisabled": "{colors.gray-800}",
         "backgroundSecondaryHovered": "{colors.gray-950}",
         "backgroundSecondaryFocused": "{colors.gray-900}",
-        "backgroundSecondaryError": "{colors.red-900}"
+        "backgroundSecondaryError": "{colors.red-900}",
+        "borderSecondaryOutline": "{themes.themes.dark.border.outline}"
       },
       "selection": {
         "label": "{colors.gray-50}",

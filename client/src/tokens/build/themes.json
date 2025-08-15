@@ -32,7 +32,8 @@
       "border": {
         "primary": "#D5DBE0",
         "secondary": "#C7CFD5",
-        "strong": "#2F383F"
+        "strong": "#2F383F",
+        "outline": "#013CFE"
       },
       "shadow": {
         "primary": "#06060608"
@@ -54,6 +55,7 @@
         "backgroundTransparentDisabled": "#e3e7ea00",
         "backgroundTransparentHovered": "#dce1e500",
         "backgroundTransparentPressed": "#ced5db00",
+        "borderTransparentOutline": "#013CFE",
         "labelPrimaryNormal": "#1A1F23",
         "labelPrimaryDisabled": "#8999A7",
         "labelPrimaryHovered": "#101315",
@@ -62,6 +64,7 @@
         "backgroundPrimaryDisabled": "#e3e7ea80",
         "backgroundPrimaryHovered": "#DCE1E5",
         "backgroundPrimaryPressed": "#CED5DB",
+        "borderPrimaryOutline": "#013CFE",
         "labelPrimaryInversedNormal": "#E3E7EA",
         "labelPrimaryInversedDisabled": "#6D8292",
         "labelPrimaryInversedHovered": "#E3E7EA",
@@ -70,6 +73,7 @@
         "backgroundPrimaryInversedDisabled": "#58697680",
         "backgroundPrimaryInversedHovered": "#1A1F23",
         "backgroundPrimaryInversedPressed": "#2F383F",
+        "borderPrimaryInversedOutline": "#013CFE",
         "labelSecondaryNormal": "#101315",
         "labelSecondaryDisabled": "#8999A7",
         "labelSecondaryHovered": "#101315",
@@ -78,6 +82,7 @@
         "backgroundSecondaryDisabled": "#f9f9f980",
         "backgroundSecondaryHovered": "#EAEDEF",
         "backgroundSecondaryPressed": "#DCE1E5",
+        "borderSecondaryOutline": "#013CFE",
         "labelAccentNormal": "#F8F9FA",
         "labelAccentDisabled": "#f8f9fabf",
         "labelAccentHovered": "#F8F9FA",
@@ -86,6 +91,7 @@
         "backgroundAccentDisabled": "#01259dbf",
         "backgroundAccentHovered": "#011F85",
         "backgroundAccentPressed": "#001A6D",
+        "borderAccentOutline": "#013CFE",
         "labelErrorNormal": "#F8F9FA",
         "labelErrorDisabled": "#F8F9FA",
         "labelErrorHovered": "#F8F9FA",
@@ -93,7 +99,8 @@
         "backgroundErrorNormal": "#E86060",
         "backgroundErrorDisabled": "#f1a0a080",
         "backgroundErrorHovered": "#E54B4B",
-        "backgroundErrorPressed": "#E23636"
+        "backgroundErrorPressed": "#E23636",
+        "borderErrorOutline": "#013CFE"
       },
       "input": {
         "labelPrimaryNormal": "#2F383F",
@@ -106,6 +113,7 @@
         "backgroundPrimaryHovered": "#EAEDEF",
         "backgroundPrimaryFocused": "#EAEDEF",
         "backgroundPrimaryError": "#FADFDF",
+        "borderPrimaryOutline": "#013CFE",
         "labelSecondaryNormal": "#2F383F",
         "labelSecondaryDisabled": "#8999A7",
         "labelSecondaryHovered": "#101315",
@@ -115,7 +123,8 @@
         "backgroundSecondaryDisabled": "#F9F9F9",
         "backgroundSecondaryHovered": "#EAEDEF",
         "backgroundSecondaryFocused": "#DCE1E5",
-        "backgroundSecondaryError": "#FADFDF"
+        "backgroundSecondaryError": "#FADFDF",
+        "borderSecondaryOutline": "#013CFE"
       },
       "selection": {
         "label": "#101315",
@@ -211,7 +220,8 @@
       "border": {
         "primary": "#242B31",
         "secondary": "#39444C",
-        "strong": "#C0C9D0"
+        "strong": "#C0C9D0",
+        "outline": "#013CFE"
       },
       "shadow": {
         "primary": "#58697608"
@@ -233,6 +243,7 @@
         "backgroundTransparentDisabled": "#242b3100",
         "backgroundTransparentHovered": "#2f383f00",
         "backgroundTransparentPressed": "#39444c00",
+        "borderTransparentOutline": "#013CFE",
         "labelPrimaryNormal": "#97A5B1",
         "labelPrimaryDisabled": "#586976",
         "labelPrimaryHovered": "#C0C9D0",
@@ -241,6 +252,7 @@
         "backgroundPrimaryDisabled": "#242b3180",
         "backgroundPrimaryHovered": "#2F383F",
         "backgroundPrimaryPressed": "#39444C",
+        "borderPrimaryOutline": "#013CFE",
         "labelPrimaryInversedNormal": "#101315",
         "labelPrimaryInversedDisabled": "#6D8292",
         "labelPrimaryInversedHovered": "#101315",
@@ -249,6 +261,7 @@
         "backgroundPrimaryInversedDisabled": "#eaedef80",
         "backgroundPrimaryInversedHovered": "#DCE1E5",
         "backgroundPrimaryInversedPressed": "#CED5DB",
+        "borderPrimaryInversedOutline": "#013CFE",
         "labelSecondaryNormal": "#EAEDEF",
         "labelSecondaryDisabled": "#586976",
         "labelSecondaryHovered": "#EAEDEF",
@@ -257,6 +270,7 @@
         "backgroundSecondaryDisabled": "#06060680",
         "backgroundSecondaryHovered": "#101315",
         "backgroundSecondaryPressed": "#1A1F23",
+        "borderSecondaryOutline": "#013CFE",
         "labelAccentNormal": "#F8F9FA",
         "labelAccentDisabled": "#f8f9fabf",
         "labelAccentHovered": "#F8F9FA",
@@ -265,6 +279,7 @@
         "backgroundAccentDisabled": "#01259d80",
         "backgroundAccentHovered": "#011F85",
         "backgroundAccentPressed": "#001A6D",
+        "borderAccentOutline": "#013CFE",
         "labelErrorNormal": "#F8F9FA",
         "labelErrorDisabled": "#F8F9FA",
         "labelErrorHovered": "#F8F9FA",
@@ -272,7 +287,8 @@
         "backgroundErrorNormal": "#E86060",
         "backgroundErrorDisabled": "#f1a0a080",
         "backgroundErrorHovered": "#E54B4B",
-        "backgroundErrorPressed": "#E23636"
+        "backgroundErrorPressed": "#E23636",
+        "borderErrorOutline": "#013CFE"
       },
       "input": {
         "labelPrimaryNormal": "#A5B1BC",
@@ -285,6 +301,7 @@
         "backgroundPrimaryHovered": "#1A1F23",
         "backgroundPrimaryFocused": "#242B31",
         "backgroundPrimaryError": "#e54b4b33",
+        "borderPrimaryOutline": "#013CFE",
         "labelSecondaryNormal": "#A5B1BC",
         "labelSecondaryDisabled": "#586976",
         "labelSecondaryHovered": "#EAEDEF",
@@ -294,7 +311,8 @@
         "backgroundSecondaryDisabled": "#2F383F",
         "backgroundSecondaryHovered": "#101315",
         "backgroundSecondaryFocused": "#1A1F23",
-        "backgroundSecondaryError": "#350808"
+        "backgroundSecondaryError": "#350808",
+        "borderSecondaryOutline": "#013CFE"
       },
       "selection": {
         "label": "#EAEDEF",

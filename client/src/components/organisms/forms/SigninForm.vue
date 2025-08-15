@@ -11,6 +11,14 @@ import Input from "@/components/atoms/inputs/Input.vue";
 import PasswordInput from "@/components/atoms/inputs/PasswordInput.vue";
 import Text from "@/components/atoms/typography/Text.vue";
 
+withDefaults(defineProps<Props>(), {
+  isError: false,
+});
+
+const emit = defineEmits<{
+  (e: "update:is-error", isError: boolean): void;
+}>();
+
 const { $t } = storeToRefs(useLocaleStore());
 
 const router = useRouter();
@@ -40,7 +48,12 @@ const isRepeatedPasswordValid = computed(() =>
 const isValid = computed(
   () => isPasswordValid.value && isRepeatedPasswordValid.value
 );
-const isError = computed(() => !!loginError.value);
+
+const isError = computed(() => {
+  const value = !!loginError.value;
+  emit("update:is-error", value);
+  return value;
+});
 
 const onSubmit = async (): Promise<void> => {
   onLogin(localEmail.value, localPassword.value);
@@ -62,6 +75,12 @@ const onLogin = async (email: string, password: string): Promise<void> => {
 onMounted(() => {
   onRedirectIfLoggedIn();
 });
+</script>
+
+<script lang="ts">
+export interface Props {
+  isError?: boolean; // ContentKeyTrigger
+}
 </script>
 
 <template>

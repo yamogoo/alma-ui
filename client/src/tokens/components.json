@@ -1,25 +1,25 @@
 {
   "icon": {
     "xxs": {
-      "size": "12 * {config.scaleFactor}"
+      "size": 12
     },
     "xs": {
-      "size": "16 * {config.scaleFactor}"
+      "size": 16
     },
     "sm": {
-      "size": "20 * {config.scaleFactor}"
+      "size": 20
     },
     "md": {
-      "size": "24 * {config.scaleFactor}"
+      "size": 24
     },
     "lg": {
-      "size": "32 * {config.scaleFactor}"
+      "size": 32
     },
     "xl": {
-      "size": "48 * {config.scaleFactor}"
+      "size": 48
     },
     "xxl": {
-      "size": "56 * {config.scaleFactor}"
+      "size": 56
     }
   },
   "divider": {
@@ -48,7 +48,7 @@
       "placeholder": {
         "fontStyle": "label-3"
       },
-      "height": "44 * {config.scaleFactor}",
+      "height": 44,
       "padding": ["{tokens.spacing.xs}", "{tokens.spacing.md}"],
       "borderRadius": "{tokens.spacing.xs}"
     },
@@ -59,7 +59,7 @@
       "placeholder": {
         "fontStyle": "label-3"
       },
-      "height": "52 * {config.scaleFactor}",
+      "height": 52,
       "padding": ["{tokens.spacing.xs}", "{tokens.spacing.md}"],
       "borderRadius": "{tokens.spacing.xs}"
     }
@@ -68,7 +68,7 @@
     "default": {
       "lg": {
         "fontStyle": "label-1",
-        "size": "56 * {config.scaleFactor}",
+        "size": 56,
         "iconSize": "{components.icon.sm.size}",
         "iconSizeLiteral": "sm",
         "gap": "{tokens.spacing.sm}",
@@ -77,7 +77,7 @@
       },
       "md": {
         "fontStyle": "label-2",
-        "size": "44 * {config.scaleFactor}",
+        "size": 44,
         "iconSize": "{components.icon.xs.size}",
         "iconSizeLiteral": "xs",
         "gap": "{tokens.spacing.sm}",
@@ -86,7 +86,7 @@
       },
       "sm": {
         "fontStyle": "label-3",
-        "size": "40 * {config.scaleFactor}",
+        "size": 40,
         "iconSize": "{components.icon.xs.size}",
         "iconSizeLiteral": "xs",
         "gap": "{tokens.spacing.sm}",
@@ -95,7 +95,7 @@
       },
       "xs": {
         "fontStyle": "label-3",
-        "size": "36 * {config.scaleFactor}",
+        "size": 36,
         "iconSize": "{components.icon.xxs.size}",
         "iconSizeLiteral": "xs",
         "gap": "{tokens.spacing.sm}",
@@ -106,7 +106,7 @@
     "rounded": {
       "lg": {
         "fontStyle": "label-1",
-        "size": "56 * {config.scaleFactor}",
+        "size": 56,
         "iconSize": "{components.icon.sm.size}",
         "iconSizeLiteral": "sm",
         "gap": "{tokens.spacing.sm}",
@@ -115,7 +115,7 @@
       },
       "md": {
         "fontStyle": "label-3",
-        "size": "44 * {config.scaleFactor}",
+        "size": 44,
         "iconSize": "{components.icon.xs.size}",
         "iconSizeLiteral": "xs",
         "gap": "{tokens.spacing.sm}",
@@ -124,7 +124,7 @@
       },
       "sm": {
         "fontStyle": "label-4",
-        "size": "32 * {config.scaleFactor}",
+        "size": 32,
         "iconSize": "{components.icon.xs.size}",
         "iconSizeLiteral": "xs",
         "gap": "{tokens.spacing.sm}",
@@ -133,7 +133,7 @@
       },
       "xs": {
         "fontStyle": "label-4",
-        "size": "24 * {config.scaleFactor}",
+        "size": 24,
         "iconSize": "{components.icon.xxs.size}",
         "iconSizeLiteral": "xxs",
         "gap": "{tokens.spacing.sm}",
@@ -145,8 +145,8 @@
   "dropDown": {
     "lg": {
       "fontStyle": "label-2",
-      "minWidth": "76 * {config.scaleFactor}",
-      "height": "56 * {config.scaleFactor}",
+      "minWidth": 76,
+      "height": 56,
       "gap": "{tokens.spacing.xs}",
       "paddingV": "{tokens.spacing.xs}",
       "paddingH": "{tokens.spacing.sm}",
@@ -155,8 +155,8 @@
     },
     "md": {
       "fontStyle": "label-3",
-      "minWidth": "76 * {config.scaleFactor}",
-      "height": "44 * {config.scaleFactor}",
+      "minWidth": 76,
+      "height": 44,
       "gap": "{tokens.spacing.xs}",
       "paddingV": "{tokens.spacing.xs}",
       "paddingH": "{tokens.spacing.sm}",
@@ -167,11 +167,11 @@
   "options": {
     "lg": {
       "optionFontStyle": "label-2",
-      "optionMinHeight": "24 * {config.scaleFactor}"
+      "optionMinHeight": 24
     },
     "md": {
       "optionFontStyle": "label-3",
-      "optionMinHeight": "24 * {config.scaleFactor}"
+      "optionMinHeight": 24
     }
   },
   "group": {
@@ -207,12 +207,12 @@
   },
   "progressbar": {
     "lg": {
-      "height": "10 * {config.scaleFactor}",
-      "borderRadius": "5 * {config.scaleFactor}"
+      "height": 10,
+      "borderRadius": 5
     },
     "md": {
-      "height": "8 * {config.scaleFactor}",
-      "borderRadius": "4 * {config.scaleFactor}"
+      "height": 8,
+      "borderRadius": 4
     }
   },
   "sheet": {
@@ -247,7 +247,7 @@
     },
     "roundness": "{tokens.roundness.md}"
   },
-  "carouselView": {
+  "carouselStack": {
     "lg": {
       "header-padding": ["{tokens.spacing.lg}", "{tokens.spacing.lg}"]
     },
@@ -257,18 +257,18 @@
   },
   "pagination": {
     "lg": {
-      "size": "16 * {config.scaleFactor}",
-      "widthActive": "24 * {config.scaleFactor}",
+      "size": 16,
+      "widthActive": 24,
       "gap": "{tokens.spacing.md}",
       "padding": "{tokens.spacing.xs}",
-      "borderRadius": "8 * {config.scaleFactor}"
+      "borderRadius": 8
     },
     "md": {
-      "size": "10 * {config.scaleFactor}",
-      "widthActive": "24 * {config.scaleFactor}",
+      "size": 10,
+      "widthActive": 24,
       "gap": "{tokens.spacing.sm}",
       "padding": "{tokens.spacing.xs}",
-      "borderRadius": "5 * {config.scaleFactor}"
+      "borderRadius": 5
     }
   },
   "stepPaginationTabs": {
@@ -304,9 +304,9 @@
     }
   },
   "resizer": {
-    "activeAreaWidth": "20 * {config.scaleFactor}",
-    "knobWidth": "76 * {config.scaleFactor}",
-    "knobHeight": "6 * {config.scaleFactor}",
-    "knobRoundness": "3 * {config.scaleFactor}"
+    "activeAreaWidth": 20,
+    "knobWidth": 76,
+    "knobHeight": 6,
+    "knobRoundness": 3
   }
 }

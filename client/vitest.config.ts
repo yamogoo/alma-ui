@@ -11,7 +11,7 @@ export default mergeConfig(
       exclude: [...configDefaults.exclude, "e2e/**"],
       root: fileURLToPath(new URL("./", import.meta.url)),
       reporters: ["html", "verbose"],
-      outputFile: "./src/tests-report/index.html",
+      outputFile: "./tests-report/index.html",
       globals: true,
       setupFiles: "./vitest.setup.ts",
       server: {
@@ -30,5 +30,5 @@ export default mergeConfig(
         },
       },
     },
-  }),
+  })
 );
