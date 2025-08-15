@@ -15,7 +15,7 @@
     "styles": {
       "display-1": {
         "fontFamily": "{typography.typography.common.fontFamily.secondary}",
-        "fontSize": 164,
+        "fontSize": "164 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.bold}",
         "lineHeight": "100%",
@@ -23,135 +23,135 @@
       },
       "display-2": {
         "fontFamily": "{typography.typography.common.fontFamily.secondary}",
-        "fontSize": 96,
+        "fontSize": "96 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.bold}",
         "lineHeight": "100%",
-        "letterSpacing": -2
+        "letterSpacing": "-2 * {config.scaleFactor}"
       },
       "display-3": {
         "fontFamily": "{typography.typography.common.fontFamily.secondary}",
-        "fontSize": 80,
+        "fontSize": "80 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.bold}",
         "lineHeight": "100%",
-        "letterSpacing": -1
+        "letterSpacing": "-1 * {config.scaleFactor}"
       },
       "display-4": {
         "fontFamily": "{typography.typography.common.fontFamily.secondary}",
-        "fontSize": 64,
+        "fontSize": "64 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.bold}",
         "lineHeight": "100%",
-        "letterSpacing": -0.3
+        "letterSpacing": "-0.3 * {config.scaleFactor}"
       },
       "title-1": {
         "fontFamily": "{typography.typography.common.fontFamily.primary}",
-        "fontSize": 36,
+        "fontSize": "36 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.semibold}",
-        "lineHeight": 44,
-        "letterSpacing": -0.3,
+        "lineHeight": "44 * {config.scaleFactor}",
+        "letterSpacing": "-0.3 * {config.scaleFactor}",
         "marginBottom": "{tokens.spacing.xs}"
       },
       "title-2": {
         "fontFamily": "{typography.typography.common.fontFamily.primary}",
-        "fontSize": 28,
+        "fontSize": "28 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.semibold}",
-        "lineHeight": 28,
-        "letterSpacing": -0.3,
+        "lineHeight": "28 * {config.scaleFactor}",
+        "letterSpacing": "-0.3 * {config.scaleFactor}",
         "marginBottom": "{tokens.spacing.xs}"
       },
       "title-3": {
         "fontFamily": "{typography.typography.common.fontFamily.primary}",
-        "fontSize": 22,
+        "fontSize": "22 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.semibold}",
-        "lineHeight": 24,
-        "letterSpacing": -0.3,
+        "lineHeight": "24 * {config.scaleFactor}",
+        "letterSpacing": "-0.3 * {config.scaleFactor}",
         "marginBottom": "{tokens.spacing.xs}"
       },
       "title-4": {
         "fontFamily": "{typography.typography.common.fontFamily.primary}",
-        "fontSize": 18,
+        "fontSize": "18 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.semibold}",
-        "lineHeight": 20,
-        "letterSpacing": -0.3,
+        "lineHeight": "20 * {config.scaleFactor}",
+        "letterSpacing": "-0.3 * {config.scaleFactor}",
         "marginBottom": "{tokens.spacing.xs}"
       },
       "body-1": {
         "fontFamily": "{typography.typography.common.fontFamily.primary}",
-        "fontSize": 40,
+        "fontSize": "40 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.semibold}",
         "lineHeight": "150%",
-        "letterSpacing": 0.48
+        "letterSpacing": "0.48 * {config.scaleFactor}"
       },
       "body-2": {
         "fontFamily": "{typography.typography.common.fontFamily.primary}",
-        "fontSize": 19,
+        "fontSize": "19 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.regular}",
         "lineHeight": "150%",
-        "letterSpacing": 0.39
+        "letterSpacing": "0.39 * {config.scaleFactor}"
       },
       "label-1": {
         "fontFamily": "{typography.typography.common.fontFamily.primary}",
-        "fontSize": 22,
+        "fontSize": "22 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.regular}",
-        "lineHeight": 32,
-        "letterSpacing": 0.1
+        "lineHeight": "32 * {config.scaleFactor}",
+        "letterSpacing": "0.1 * {config.scaleFactor}"
       },
       "label-2": {
         "fontFamily": "{typography.typography.common.fontFamily.primary}",
-        "fontSize": 18,
+        "fontSize": "18 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.regular}",
-        "lineHeight": 28,
-        "letterSpacing": 0.1
+        "lineHeight": "28 * {config.scaleFactor}",
+        "letterSpacing": "0.1 * {config.scaleFactor}"
       },
       "label-3": {
         "fontFamily": "{typography.typography.common.fontFamily.primary}",
-        "fontSize": 14,
+        "fontSize": "14 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.regular}",
-        "lineHeight": 22,
-        "letterSpacing": 0.1
+        "lineHeight": "22 * {config.scaleFactor}",
+        "letterSpacing": "0.1 * {config.scaleFactor}"
       },
       "label-4": {
         "fontFamily": "{typography.typography.common.fontFamily.primary}",
-        "fontSize": 12,
+        "fontSize": "12 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.regular}",
-        "lineHeight": 18,
-        "letterSpacing": 0.1
+        "lineHeight": "18 * {config.scaleFactor}",
+        "letterSpacing": "0.1 * {config.scaleFactor}"
       },
       "caption-1": {
         "fontFamily": "{typography.typography.common.fontFamily.primary}",
-        "fontSize": 12,
+        "fontSize": "12 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.regular}",
-        "lineHeight": 14,
-        "letterSpacing": 0.3
+        "lineHeight": "14 * {config.scaleFactor}",
+        "letterSpacing": "0.3 * {config.scaleFactor}"
       },
       "caption-2": {
         "fontFamily": "{typography.typography.common.fontFamily.primary}",
-        "fontSize": 10.5,
+        "fontSize": "10.5 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.regular}",
-        "lineHeight": 13,
-        "letterSpacing": 0.3
+        "lineHeight": "13 * {config.scaleFactor}",
+        "letterSpacing": "0.3 * {config.scaleFactor}"
       },
       "caption-3": {
         "fontFamily": "{typography.typography.common.fontFamily.primary}",
-        "fontSize": 9,
+        "fontSize": "9 * {config.scaleFactor}",
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.regular}",
-        "lineHeight": 11,
-        "letterSpacing": 0.3
+        "lineHeight": "11 * {config.scaleFactor}",
+        "letterSpacing": "0.3 * {config.scaleFactor}"
       }
     }
   }

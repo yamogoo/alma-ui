@@ -1,25 +1,25 @@
 {
   "icon": {
     "xxs": {
-      "size": 12
+      "size": "12px"
     },
     "xs": {
-      "size": 16
+      "size": "16px"
     },
     "sm": {
-      "size": 20
+      "size": "20px"
     },
     "md": {
-      "size": 24
+      "size": "24px"
     },
     "lg": {
-      "size": 32
+      "size": "32px"
     },
     "xl": {
-      "size": 48
+      "size": "48px"
     },
     "xxl": {
-      "size": 56
+      "size": "56px"
     }
   },
   "divider": {
@@ -48,7 +48,7 @@
       "placeholder": {
         "fontStyle": "label-3"
       },
-      "height": 44,
+      "height": "44px",
       "padding": [
         "8px",
         "16px"
@@ -62,7 +62,7 @@
       "placeholder": {
         "fontStyle": "label-3"
       },
-      "height": 52,
+      "height": "52px",
       "padding": [
         "8px",
         "16px"
@@ -74,7 +74,7 @@
     "default": {
       "lg": {
         "fontStyle": "label-1",
-        "size": 56,
+        "size": "56px",
         "iconSize": "20px",
         "iconSizeLiteral": "sm",
         "gap": "12px",
@@ -86,7 +86,7 @@
       },
       "md": {
         "fontStyle": "label-2",
-        "size": 44,
+        "size": "44px",
         "iconSize": "16px",
         "iconSizeLiteral": "xs",
         "gap": "12px",
@@ -98,7 +98,7 @@
       },
       "sm": {
         "fontStyle": "label-3",
-        "size": 40,
+        "size": "40px",
         "iconSize": "16px",
         "iconSizeLiteral": "xs",
         "gap": "12px",
@@ -110,7 +110,7 @@
       },
       "xs": {
         "fontStyle": "label-3",
-        "size": 36,
+        "size": "36px",
         "iconSize": "12px",
         "iconSizeLiteral": "xs",
         "gap": "12px",
@@ -124,7 +124,7 @@
     "rounded": {
       "lg": {
         "fontStyle": "label-1",
-        "size": 56,
+        "size": "56px",
         "iconSize": "20px",
         "iconSizeLiteral": "sm",
         "gap": "12px",
@@ -136,7 +136,7 @@
       },
       "md": {
         "fontStyle": "label-3",
-        "size": 44,
+        "size": "44px",
         "iconSize": "16px",
         "iconSizeLiteral": "xs",
         "gap": "12px",
@@ -148,7 +148,7 @@
       },
       "sm": {
         "fontStyle": "label-4",
-        "size": 32,
+        "size": "32px",
         "iconSize": "16px",
         "iconSizeLiteral": "xs",
         "gap": "12px",
@@ -160,7 +160,7 @@
       },
       "xs": {
         "fontStyle": "label-4",
-        "size": 24,
+        "size": "24px",
         "iconSize": "12px",
         "iconSizeLiteral": "xxs",
         "gap": "12px",
@@ -175,8 +175,8 @@
   "dropDown": {
     "lg": {
       "fontStyle": "label-2",
-      "minWidth": 76,
-      "height": 56,
+      "minWidth": "76px",
+      "height": "56px",
       "gap": "8px",
       "paddingV": "8px",
       "paddingH": "12px",
@@ -185,8 +185,8 @@
     },
     "md": {
       "fontStyle": "label-3",
-      "minWidth": 76,
-      "height": 44,
+      "minWidth": "76px",
+      "height": "44px",
       "gap": "8px",
       "paddingV": "8px",
       "paddingH": "12px",
@@ -197,11 +197,11 @@
   "options": {
     "lg": {
       "optionFontStyle": "label-2",
-      "optionMinHeight": 24
+      "optionMinHeight": "24px"
     },
     "md": {
       "optionFontStyle": "label-3",
-      "optionMinHeight": 24
+      "optionMinHeight": "24px"
     }
   },
   "group": {
@@ -237,12 +237,12 @@
   },
   "progressbar": {
     "lg": {
-      "height": 10,
-      "borderRadius": 5
+      "height": "10px",
+      "borderRadius": "5px"
     },
     "md": {
-      "height": 8,
-      "borderRadius": 4
+      "height": "8px",
+      "borderRadius": "4px"
     }
   },
   "sheet": {
@@ -296,18 +296,18 @@
   },
   "pagination": {
     "lg": {
-      "size": 16,
-      "widthActive": 24,
+      "size": "16px",
+      "widthActive": "24px",
       "gap": "16px",
       "padding": "8px",
-      "borderRadius": 8
+      "borderRadius": "8px"
     },
     "md": {
-      "size": 10,
-      "widthActive": 24,
+      "size": "10px",
+      "widthActive": "24px",
       "gap": "12px",
       "padding": "8px",
-      "borderRadius": 5
+      "borderRadius": "5px"
     }
   },
   "stepPaginationTabs": {
@@ -349,9 +349,9 @@
     }
   },
   "resizer": {
-    "activeAreaWidth": 20,
-    "knobWidth": 76,
-    "knobHeight": 6,
-    "knobRoundness": 3
+    "activeAreaWidth": "20px",
+    "knobWidth": "76px",
+    "knobHeight": "6px",
+    "knobRoundness": "3px"
   }
 }

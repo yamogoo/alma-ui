@@ -206,6 +206,7 @@ export class TokensParser {
     }
 
     result = this.evaluateColorFunctions(result);
+    result = this.evaluateMathExpressions(result);
 
     return result;
   }
@@ -428,6 +429,31 @@ export class TokensParser {
     return result;
   }
 
+  private evaluateMathExpressions(value: string): string {
+    const mathRegex =
+      /(-?\d+(?:\.\d+)?(?:px|rem)?)(\s*[*\/+\-]\s*-?\d+(?:\.\d+)?(?:px|rem)?)+/g;
+    let result = value;
+    let match: RegExpExecArray | null;
+
+    while ((match = mathRegex.exec(result)) !== null) {
+      const fullMatch = match[0];
+      try {
+        const numericExpr = fullMatch.replace(/(px|rem)/g, "");
+        const computed = Function(`"use strict"; return (${numericExpr})`)();
+
+        if (typeof computed === "number" && !isNaN(computed)) {
+          const rounded = parseFloat(computed.toFixed(2));
+          const unitMatch = fullMatch.match(/px|rem/);
+          const unit = unitMatch ? unitMatch[0] : "";
+          result = result.replace(fullMatch, rounded + unit + "px");
+        }
+      } catch (e) {
+        console.warn(`⚠️ Failed to evaluate math expression: ${fullMatch}`, e);
+      }
+    }
+    return result;
+  }
+
   private async resolveAndSaveJson(
     inputPath: string,
     fileName: string
@@ -495,6 +521,7 @@ export class TokensParser {
           }
 
           result = this.evaluateColorFunctions(result);
+          result = this.evaluateMathExpressions(result);
           return result;
         }
 
