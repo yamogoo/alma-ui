@@ -2,20 +2,27 @@ import tokens from "@/tokens";
 
 import type { UIElementColor } from "@/typings";
 
-export type IconName =
-  | "back"
-  | "check"
-  | "down"
-  | "cog"
-  | "cross"
-  | "login"
-  | "logout"
-  | "eye"
-  | "eyeDisabled";
+export const iconNames = [
+  "cross",
+  "back",
+  "check",
+  "down",
+  "cog",
+  "login",
+  "logout",
+  "eye",
+  "eyeDisabled",
+];
 
-export type IconStyle = "outline" | "fill";
+export type IconName = (typeof iconNames)[number];
 
-export type IconWeight = "100" | "200" | "300" | "400" | "500";
+export const iconStyles = ["outline", "fill"];
+
+export type IconStyle = (typeof iconStyles)[number];
+
+export const iconWeigths = ["100", "200", "300", "400", "500"];
+
+export type IconWeight = (typeof iconWeigths)[number];
 
 export type IconColor = Extract<
   UIElementColor,
@@ -28,7 +35,21 @@ export type IconColor = Extract<
   | "accept"
 >;
 
-export type IconSize = keyof typeof tokens.icon;
+export const iconColors: Array<IconColor> = [
+  "primary",
+  "primary-inversed",
+  "secondary",
+  "secondary-inversed",
+  "disabled",
+  "accent",
+  "accent",
+];
+
+export const iconSizes = Object.keys(tokens.icon) as Array<
+  keyof typeof tokens.icon
+>;
+
+export type IconSize = (typeof iconSizes)[number];
 
 export interface IconProps {
   iconName: IconName;
