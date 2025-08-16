@@ -77,7 +77,6 @@ import type {
 import Icon from "@/components/atoms/icons/Icon.vue";
 
 import type { Variant, Size, Color } from "./Button";
-export type { Variant, Size, Color } from "./Button";
 
 export type Stretch = UIElementStretch;
 
