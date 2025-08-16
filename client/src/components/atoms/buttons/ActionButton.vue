@@ -4,13 +4,9 @@ import type {
   IconStyle,
   IconWeight,
 } from "@/components/atoms/icons/icons";
-import ProtoButton, {
-  type Color,
-  type ContentDirection,
-  type Size,
-  type Variant,
-  type Stretch,
-} from "./Button.vue";
+
+import type { Variant, Size, Color } from "./Button";
+import ProtoButton, { type ContentDirection, type Stretch } from "./Button.vue";
 
 const props = withDefaults(defineProps<Props>(), {
   variant: "default",
