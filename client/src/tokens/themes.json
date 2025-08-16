@@ -36,7 +36,7 @@
         "outline": "{colors.blue-500}"
       },
       "shadow": {
-        "primary": "rgba({colors.black-1000}, .03)"
+        "primary": "rgba({colors.black-1000}, .075)"
       },
       "divider": {
         "borderPrimary": "{themes.themes.light.border.primary}",
@@ -193,6 +193,26 @@
       "stepPaginationTabs": {
         "labelPrimaryNormal": "{themes.themes.light.label.primary}",
         "labelPrimaryActive": "{themes.themes.light.label.primary}"
+      },
+      "overlay": {
+        "backgroundPrimary": "{themes.themes.light.background.primary}",
+        "backgroundPrimaryInversed": "{themes.themes.light.background.primaryInversed}"
+      },
+      "sheet": {
+        "backgroundPrimaryNormal": "{themes.themes.light.background.primary}",
+        "backgroundSecondaryNormal": "{themes.themes.light.background.secondary}",
+        "backgroundAccentNormal": "{themes.themes.light.background.accent}",
+        "backgroundTransparentNormal": "rgba({themes.themes.light.background.primary}, 0)"
+      },
+      "actionSheet": {
+        "backgroundPrimaryNormal": "{themes.themes.light.background.primary}",
+        "shadowPrimaryNormal": "{themes.themes.light.shadow.primary}",
+        "backgroundSecondaryNormal": "{themes.themes.light.background.secondary}",
+        "shadowSecondaryNormal": "{themes.themes.light.shadow.primary}",
+        "backgroundAccentNormal": "{themes.themes.light.background.accent}",
+        "shadowAccentNormal": "{themes.themes.light.shadow.primary}",
+        "backgroundTransparentNormal": "rgba({themes.themes.light.background.primary}, 0)",
+        "shadowTransparentNormal": "rgab({themes.themes.light.shadow.primary}, 0)"
       }
     },
     "dark": {
@@ -231,7 +251,7 @@
         "outline": "{colors.blue-500}"
       },
       "shadow": {
-        "primary": "rgba({colors.gray-600}, .03)"
+        "primary": "rgba({colors.gray-600}, .035)"
       },
       "divider": {
         "borderPrimary": "{themes.themes.dark.border.primary}",
@@ -388,6 +408,26 @@
       "stepPaginationTabs": {
         "labelPrimaryNormal": "{themes.themes.dark.label.primary}",
         "labelPrimaryActive": "{themes.themes.dark.label.primary}"
+      },
+      "overlay": {
+        "backgroundPrimary": "{themes.themes.dark.background.primary}",
+        "backgroundPrimaryInversed": "{themes.themes.dark.background.primaryInversed}"
+      },
+      "sheet": {
+        "backgroundPrimaryNormal": "{themes.themes.dark.background.primary}",
+        "backgroundSecondaryNormal": "{themes.themes.dark.background.secondary}",
+        "backgroundAccentNormal": "{themes.themes.dark.background.accent}",
+        "backgroundTransparentNormal": "rgba({themes.themes.dark.background.primary}, 0)"
+      },
+      "actionSheet": {
+        "backgroundPrimaryNormal": "{themes.themes.dark.background.primary}",
+        "shadowPrimaryNormal": "{themes.themes.dark.shadow.primary}",
+        "backgroundSecondaryNormal": "{themes.themes.dark.background.secondary}",
+        "shadowSecondaryNormal": "{themes.themes.dark.shadow.primary}",
+        "backgroundAccentNormal": "{themes.themes.dark.background.accent}",
+        "shadowAccentNormal": "{themes.themes.dark.shadow.primary}",
+        "backgroundTransparentNormal": "rgba({themes.themes.dark.background.primary}, 0)",
+        "shadowTransparentNormal": "rgab({themes.themes.dark.shadow.primary}, 0)"
       }
     }
   }

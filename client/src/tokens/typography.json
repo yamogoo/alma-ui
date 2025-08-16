@@ -131,18 +131,18 @@
       },
       "caption-1": {
         "fontFamily": "{typography.typography.common.fontFamily.primary}",
-        "fontSize": 13,
+        "fontSize": 12,
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.regular}",
-        "lineHeight": 16,
+        "lineHeight": 15,
         "letterSpacing": 0.48
       },
       "caption-2": {
         "fontFamily": "{typography.typography.common.fontFamily.primary}",
-        "fontSize": 12,
+        "fontSize": 11,
         "fontStyle": "normal",
         "fontWeight": "{typography.typography.common.fontWeight.light}",
-        "lineHeight": 15,
+        "lineHeight": 14,
         "letterSpacing": 0.48
       },
       "caption-3": {

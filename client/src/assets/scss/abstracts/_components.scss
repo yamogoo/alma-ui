@@ -12,6 +12,7 @@ $form:(md: (padding-v: 16px, padding-h: 24px, border-radius: 16px));
 $form-wrapper:(md: (padding-v: 16px, padding-h: 24px, border-radius: 16px, border-width: 1px, header-padding-v: 12px, header-padding-h: 0px));
 $progressbar:(lg: (height: 10px, border-radius: 5px), md: (height: 8px, border-radius: 4px));
 $sheet:(lg: (gap: 32px, button-offset: 24px, padding: 48px 24px 24px 24px), md: (gap: 16px, button-offset: 24px, padding: 24px 24px));
+$action-sheet:(lg: (min-height: 32px, border-radius: 16px, padding: 48px 24px 24px 24px), md: (min-height: 32px, border-radius: 12px, padding: 24px 24px));
 $scrollbar:(width: 3px, border-radius: 1px);
 $main-container:(respond: (mobile: (padding: 8px), desktop: (padding: 8px)), roundness: 16px);
 $carousel-stack:(lg: (header-padding: 24px 24px), md: (header-padding: 16px 16px));

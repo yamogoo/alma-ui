@@ -28,7 +28,7 @@ const variants: Array<Variant> = [
 ];
 
 const meta = {
-  title: "Atoms/Text",
+  title: "Atoms/typography/Text",
   component: Text,
   tags: ["autodocs"],
   argTypes: {

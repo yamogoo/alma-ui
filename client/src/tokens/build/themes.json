@@ -36,7 +36,7 @@
         "outline": "#013CFE"
       },
       "shadow": {
-        "primary": "#06060608"
+        "primary": "#06060613"
       },
       "divider": {
         "borderPrimary": "#D5DBE0",
@@ -165,7 +165,7 @@
       "form": {
         "backgroundPrimary": "#f8f9fabf",
         "backgroundSecondary": "#e5e9f1bf",
-        "shadow": "#06060608"
+        "shadow": "#06060613"
       },
       "formWrapper": {
         "backgroundPrimary": "#F8F9FA",
@@ -186,6 +186,26 @@
       "stepPaginationTabs": {
         "labelPrimaryNormal": "#2F383F",
         "labelPrimaryActive": "#2F383F"
+      },
+      "overlay": {
+        "backgroundPrimary": "#F8F9FA",
+        "backgroundPrimaryInversed": "#101315"
+      },
+      "sheet": {
+        "backgroundPrimaryNormal": "#F8F9FA",
+        "backgroundSecondaryNormal": "#e5e9f1",
+        "backgroundAccentNormal": "#013CFE",
+        "backgroundTransparentNormal": "#f8f9fa00"
+      },
+      "actionSheet": {
+        "backgroundPrimaryNormal": "#F8F9FA",
+        "shadowPrimaryNormal": "#06060613",
+        "backgroundSecondaryNormal": "#e5e9f1",
+        "shadowSecondaryNormal": "#06060613",
+        "backgroundAccentNormal": "#013CFE",
+        "shadowAccentNormal": "#06060613",
+        "backgroundTransparentNormal": "#f8f9fa00",
+        "shadowTransparentNormal": "rgab(#06060613, 0)"
       }
     },
     "dark": {
@@ -224,7 +244,7 @@
         "outline": "#013CFE"
       },
       "shadow": {
-        "primary": "#58697608"
+        "primary": "#58697609"
       },
       "divider": {
         "borderPrimary": "#242B31",
@@ -353,7 +373,7 @@
       "form": {
         "backgroundPrimary": "#101315bf",
         "backgroundSecondary": "#1a1f23bf",
-        "shadow": "#58697608"
+        "shadow": "#58697609"
       },
       "formWrapper": {
         "backgroundPrimary": "#101315",
@@ -374,6 +394,26 @@
       "stepPaginationTabs": {
         "labelPrimaryNormal": "#DCE1E5",
         "labelPrimaryActive": "#DCE1E5"
+      },
+      "overlay": {
+        "backgroundPrimary": "#101315",
+        "backgroundPrimaryInversed": "#101315"
+      },
+      "sheet": {
+        "backgroundPrimaryNormal": "#101315",
+        "backgroundSecondaryNormal": "#1A1F23",
+        "backgroundAccentNormal": "#013CFE",
+        "backgroundTransparentNormal": "#10131500"
+      },
+      "actionSheet": {
+        "backgroundPrimaryNormal": "#101315",
+        "shadowPrimaryNormal": "#58697609",
+        "backgroundSecondaryNormal": "#1A1F23",
+        "shadowSecondaryNormal": "#58697609",
+        "backgroundAccentNormal": "#013CFE",
+        "shadowAccentNormal": "#58697609",
+        "backgroundTransparentNormal": "#10131500",
+        "shadowTransparentNormal": "rgab(#58697609, 0)"
       }
     }
   }
