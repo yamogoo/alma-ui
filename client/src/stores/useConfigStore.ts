@@ -1,7 +1,7 @@
 import { ref, computed, type ComputedRef } from "vue";
 import { defineStore } from "pinia";
 
-import { useTheme } from "@/composables";
+import { useTheme } from "@/composables/global";
 
 import type { Theme, Themes } from "@/typings";
 

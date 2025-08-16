@@ -21,7 +21,7 @@ export interface Props {
   isDisabled?: boolean;
   isRestButtonEnabled?: boolean;
   dataCy?: string;
-  areaplaceholder?: string;
+  areaPlaceholder?: string;
   autocomplete?: string;
   size?: InputSize;
   type?: InputTypeHTMLAttribute;

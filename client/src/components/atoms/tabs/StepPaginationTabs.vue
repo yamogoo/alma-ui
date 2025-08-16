@@ -10,13 +10,13 @@ import Text, { type Variant } from "@/components/atoms/typography/Text.vue";
 // TODO: finish carousel view
 
 const props = withDefaults(defineProps<Props>(), {
-  sid: 0,
+  selectedItemId: 0,
   color: "primary",
   size: "md",
 });
 
 const emit = defineEmits<{
-  (e: "update:sid", sid: number): void;
+  (e: "update:selected-item-id", selectedItemId: number): void;
 }>();
 
 const visibleItems = computed(() => {
@@ -25,7 +25,9 @@ const visibleItems = computed(() => {
 
   if (len <= 3) return props.items;
 
-  const activeIndex = props.items.findIndex((i) => i.id === props.sid);
+  const activeIndex = props.items.findIndex(
+    (i) => i.id === props.selectedItemId
+  );
   const prevIndex = (activeIndex - 1 + len) % len;
   const nextIndex = (activeIndex + 1) % len;
 
@@ -48,8 +50,8 @@ const textVariant = computed(() => {
 });
 
 const onItemClick = (item: StepItem): void => {
-  if (item.id !== props.sid) {
-    emit("update:sid", item.id);
+  if (item.id !== props.selectedItemId) {
+    emit("update:selected-item-id", item.id);
   }
 };
 </script>
@@ -66,7 +68,7 @@ export interface StepItem {
 
 export interface Props {
   items: StepItem[];
-  sid?: number;
+  selectedItemId?: number;
   size?: Size;
   color?: Color;
 }
@@ -88,7 +90,7 @@ export interface Props {
         :key="item.id"
         :class="[
           'step-pagination-tabs__item',
-          { 'step-pagination-tabs__item_active': idx === sid },
+          { 'step-pagination-tabs__item_active': idx === selectedItemId },
           itemPosition(item, idx),
         ]"
         :variant="textVariant"

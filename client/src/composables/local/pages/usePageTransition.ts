@@ -3,7 +3,7 @@ import type { RouteMeta } from "@/router";
 
 import { getPathSegment } from "@/utils";
 
-import { useRouteHistory } from "@/composables";
+import { useRouteHistory } from "@/composables/local";
 
 import type { TransitionType } from "@/typings";
 

@@ -4,7 +4,7 @@ import g from "gsap";
 
 import tokens from "@/tokens";
 
-import { useClickOutside } from "@/composables/useClickOutside";
+import { useClickOutside } from "@/composables/local";
 
 import type { UIElementColor } from "@/typings";
 

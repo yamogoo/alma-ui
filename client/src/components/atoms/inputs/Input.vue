@@ -197,7 +197,7 @@ onMounted(() => {
         class="input__value"
         data-testid="input-value"
         :dataCy
-        :areaplaceholder
+        :areaPlaceholder="areaPlaceholder ?? placeholder"
         :disabled="isDisabled"
         :autocomplete
         :spellcheck="'false'"
