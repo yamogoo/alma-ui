@@ -24,18 +24,7 @@ export const iconWeigths = ["100", "200", "300", "400", "500"];
 
 export type IconWeight = (typeof iconWeigths)[number];
 
-export type IconColor = Extract<
-  UIElementColor,
-  | "primary"
-  | "primary-inversed"
-  | "secondary"
-  | "secondary-inversed"
-  | "disabled"
-  | "accent"
-  | "accept"
->;
-
-export const iconColors: Array<IconColor> = [
+export const iconColors: Array<UIElementColor> = [
   "primary",
   "primary-inversed",
   "secondary",
@@ -44,6 +33,8 @@ export const iconColors: Array<IconColor> = [
   "accent",
   "accent",
 ];
+
+export type IconColor = (typeof iconColors)[number];
 
 export const iconSizes = Object.keys(tokens.icon) as Array<
   keyof typeof tokens.icon
