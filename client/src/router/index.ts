@@ -5,7 +5,7 @@ import { routes as extendedRoutes } from "./extendedRoutes";
 
 import { useAuthStore } from "@/stores";
 
-import { trackRouteHistory } from "@/composables";
+import { trackRouteHistory } from "@/composables/local";
 
 import type { TransitionType } from "@/typings";
 

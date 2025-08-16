@@ -2,7 +2,7 @@
 import { onUnmounted, ref } from "vue";
 import g from "gsap";
 
-import { useTimeout } from "@/composables";
+import { useTimeout } from "@/composables/local";
 
 import Page from "@/components/atoms/containers/Page.vue";
 import AuthForm from "@/components/organisms/forms/AuthForm.vue";

@@ -4,7 +4,7 @@ import g from "gsap";
 
 import tokens from "@/tokens";
 
-import { useHover } from "@/composables";
+import { useHover } from "@/composables/local";
 
 const props = withDefaults(defineProps<Props>(), {
   as: "button",

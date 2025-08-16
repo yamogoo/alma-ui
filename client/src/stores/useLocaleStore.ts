@@ -2,7 +2,7 @@ import { computed } from "vue";
 import { defineStore } from "pinia";
 
 import locales from "@/locales";
-import { useTypedLocalStorage } from "@/composables";
+import { useTypedLocalStorage } from "@/composables/local";
 
 import type { Locale } from "@/typings";
 

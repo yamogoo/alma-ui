@@ -11,7 +11,7 @@ import {
 
 import type { Theme, SystemTheme, LocalStorageKey } from "@/typings";
 
-import { useTypedLocalStorage } from "@/composables";
+import { useTypedLocalStorage } from "@/composables/local";
 
 export interface UseThemeOptions {
   prefix?: string;

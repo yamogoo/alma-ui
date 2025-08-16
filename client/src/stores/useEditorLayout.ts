@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 
-import { useTypedLocalStorage } from "@/composables";
+import { useTypedLocalStorage } from "@/composables/local";
 
 const DEFAULT_IS_NAVIGATOR_SHOWN =
   Boolean(import.meta.env.VITE_DEFAULT_IS_NAVIGATOR_SHOWN) ?? true;

@@ -4,7 +4,7 @@ import g from "gsap";
 
 import { createCustomEvent } from "@/utils";
 
-import { usePageTransition } from "@/composables";
+import { usePageTransition } from "@/composables/local";
 
 import type { TransitionType, UIElementColor } from "@/typings";
 

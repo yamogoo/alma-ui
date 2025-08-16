@@ -9,7 +9,7 @@ import {
   useLocaleStore,
 } from "@/stores";
 
-import { useMeta, useTheme, useConnection } from "@/composables";
+import { useMeta, useTheme, useConnection } from "@/composables/global";
 
 useMeta("author", import.meta.env.VITE_APP_AUTHOR_NAME);
 useTheme("light", {

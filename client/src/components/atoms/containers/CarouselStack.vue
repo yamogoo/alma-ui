@@ -20,7 +20,7 @@ const props = withDefaults(defineProps<Props>(), {
   screenCount: 1,
   autoPlay: false,
   interval: 3,
-  sid: 0,
+  selectedScreenId: 0,
   size: "md",
   isInactiveItemUnmounted: false,
   isDruggable: false,
@@ -30,8 +30,13 @@ const props = withDefaults(defineProps<Props>(), {
 });
 
 const emit = defineEmits<{
-  (e: "update:sid", sid: number): void;
+  (e: "update:selected-screen-id", selectedScreenId: number): void;
 }>();
+
+const AUTOPLAY_DELAY_CORRECTION = 200,
+  SWIPE_THRESHOLD_RATIO = 0.1;
+
+const ANIMATION_FADE_DURATION = 0.15;
 
 const refRoot = ref<HTMLDivElement | null>(null);
 const refTrack = ref<HTMLDivElement | null>(null);
@@ -44,7 +49,7 @@ const screenSize = computed(() => {
   return orientation === "vertical" ? height : width;
 });
 
-const currentSid = ref(props.sid);
+const currentSid = ref(props.selectedScreenId);
 const autoplayTimer = ref<ReturnType<typeof setInterval> | null>(null);
 
 const startAutoPlay = () => {
@@ -62,7 +67,7 @@ const startAutoPlay = () => {
 
       currentSid.value = next;
     },
-    (props.interval || 1) * 1000 + 200
+    (props.interval || 1) * 1000 + AUTOPLAY_DELAY_CORRECTION
   );
 };
 
@@ -75,7 +80,7 @@ const stopAutoPlay = () => {
 
 watch(currentSid, (idx) => {
   onAnimate(idx);
-  emit("update:sid", idx);
+  emit("update:selected-screen-id", idx);
 });
 
 /* * * Touch Actions * * */
@@ -88,8 +93,8 @@ const clickStartTime = ref(0);
 const itemGap = computed(() => props.gap ?? 0);
 const containerGap = computed(() => `${px2rem(props.gap)}rem`);
 const itemFullSize = computed(() => (screenSize.value ?? 0) + itemGap.value);
-const trackOffset = (sid: number) =>
-  -sid * itemFullSize.value +
+const trackOffset = (selectedScreenId: number) =>
+  -selectedScreenId * itemFullSize.value +
   (screenSize.value ?? 0) / 2 -
   (screenSize.value ?? 0) / 2;
 
@@ -137,7 +142,7 @@ const onPointerUp = () => {
   isDragging.value = false;
 
   const distance = Math.abs(delta.value);
-  const threshold = (screenSize.value ?? 0) * 0.1;
+  const threshold = (screenSize.value ?? 0) * SWIPE_THRESHOLD_RATIO;
 
   if (distance > threshold) {
     const direction = delta.value > 0 ? -1 : 1;
@@ -201,14 +206,14 @@ const onAnimate = (idx: number, duration = props.duration): void => {
 };
 
 watch(
-  () => props.sid,
+  () => props.selectedScreenId,
   (idx) => {
     onAnimate(idx);
   }
 );
 
 watch(
-  () => props.sid,
+  () => props.selectedScreenId,
   (idx) => {
     if (!props.autoPlay) {
       currentSid.value = idx;
@@ -249,7 +254,7 @@ const onEnter = (el: Element, done: () => void): void => {
     {
       opacity: 1,
       ease: "power4.out",
-      duration: 0.15,
+      duration: ANIMATION_FADE_DURATION,
       onComplete: done,
     }
   );
@@ -259,7 +264,7 @@ const onLeave = (el: Element, done: () => void): void => {
   g.to(el, {
     opacity: 0,
     ease: "power4.out",
-    duration: 0.15,
+    duration: ANIMATION_FADE_DURATION,
     onComplete: () => {
       done;
     },
@@ -271,7 +276,7 @@ const onLeave = (el: Element, done: () => void): void => {
 export type Size = keyof typeof tokens.carouselStack;
 
 export interface Props {
-  sid?: number;
+  selectedScreenId?: number;
   size?: Size;
   screenCount?: number;
   orientation?: UIElementOrientation;
@@ -303,7 +308,11 @@ export interface Props {
     ]"
   >
     <div v-if="$slots.pagination" class="carousel-stack__header">
-      <slot name="pagination" :sid="sid" :screenCount="screenCount"></slot>
+      <slot
+        name="pagination"
+        :selectedScreenId="selectedScreenId"
+        :screenCount="screenCount"
+      ></slot>
     </div>
     <div
       ref="refTrack"
@@ -313,13 +322,13 @@ export interface Props {
       <template v-for="idx in screenCount" :key="idx">
         <Transition :css="false" @enter="onEnter" @leave="onLeave">
           <div
-            v-if="isInactiveItemUnmounted ? idx - 1 === sid : true"
+            v-if="isInactiveItemUnmounted ? idx - 1 === selectedScreenId : true"
             class="carousel-stack__screen"
             :style="{ flex: `0 0 ${screenSize}px` }"
           >
             <slot
               :name="`screen-${idx}`"
-              v-bind="{ idx: idx + 1, isActive: idx - 1 === sid }"
+              v-bind="{ idx: idx + 1, isActive: idx - 1 === selectedScreenId }"
             ></slot>
           </div>
         </Transition>
