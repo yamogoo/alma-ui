@@ -9,12 +9,13 @@ import {
   useLocaleStore,
 } from "@/stores";
 
-import { useMeta, useTheme } from "@/composables";
+import { useMeta, useTheme, useConnection } from "@/composables";
 
 useMeta("author", import.meta.env.VITE_APP_AUTHOR_NAME);
 useTheme("light", {
   selector: "html",
 });
+useConnection();
 
 const { setAppSize } = useLayoutStore();
 const { setLocale } = useLocaleStore();
@@ -43,6 +44,7 @@ onMounted(() => {
 
 <style lang="scss">
 #app {
+  position: relative;
   @include box(100vw, 100dvh);
   overflow: hidden;
 

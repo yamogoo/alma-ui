@@ -1,16 +1,10 @@
 <script setup lang="ts">
-import {
-  onMounted,
-  onUnmounted,
-  toValue,
-  ref,
-  watch,
-  computed,
-  type ComputedRef,
-} from "vue";
+import { toValue, ref, watch, computed, type ComputedRef } from "vue";
 import g from "gsap";
 
 import tokens from "@/tokens";
+
+import { useHover } from "@/composables";
 
 const props = withDefaults(defineProps<Props>(), {
   as: "button",
@@ -38,7 +32,7 @@ const refRoot = ref<HTMLButtonElement | null>(null);
 
 const componentTag = props.as;
 
-const isHovered = ref(false);
+const { isHovered } = useHover(refRoot);
 const localIsPressed = ref(false);
 
 const computedButtonSize: ComputedRef<IconSize> = computed(
@@ -69,46 +63,6 @@ watch(localIsPressed, (isPressed) => {
   const el = toValue(refRoot);
   if (el) onAnim(el, isPressed);
 });
-
-/* * * Gestures * * */
-
-const onPointerEneter = (e: PointerEvent): void => {
-  e.preventDefault();
-  e.stopImmediatePropagation();
-
-  isHovered.value = true;
-};
-
-const onPointerLeave = (e: PointerEvent): void => {
-  e.preventDefault();
-  e.stopImmediatePropagation();
-
-  isHovered.value = false;
-};
-
-const addEventListeners = (): void => {
-  const el = refRoot.value;
-  if (!el) return;
-
-  el.addEventListener("pointerenter", onPointerEneter);
-  el.addEventListener("pointerleave", onPointerLeave);
-};
-
-const removeEventListeners = (): void => {
-  const el = refRoot.value;
-  if (!el) return;
-
-  el.removeEventListener("pointerenter", onPointerEneter);
-  el.removeEventListener("pointerleave", onPointerLeave);
-};
-
-onMounted(() => {
-  addEventListeners();
-});
-
-onUnmounted(() => {
-  removeEventListeners();
-});
 </script>
 
 <script lang="ts">
@@ -121,16 +75,16 @@ import type {
   IconWeight,
 } from "@/components/atoms/icons/icons";
 import Icon from "@/components/atoms/icons/Icon.vue";
-import type { Variant, Size, Color } from "./button";
 
-export type { Variant, Size, Color } from "./button";
+import type { Variant, Size, Color } from "./Button";
+export type { Variant, Size, Color } from "./Button";
 
 export type Stretch = UIElementStretch;
 
 export type ContentDirection = UIElementDirection;
 
 export interface Props {
-  as?: string;
+  as?: keyof HTMLElementTagNameMap;
   variant?: Variant;
   size: Size;
   color: Color;
@@ -231,12 +185,6 @@ export interface Props {
             @extend %t__#{$font-style};
             line-height: 1;
           }
-
-          /* .icon {
-            @include box($icon-size);
-            fill: inherit;
-            @extend %base-transition;
-          } */
         }
       }
     }

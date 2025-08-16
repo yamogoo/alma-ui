@@ -232,6 +232,23 @@
       "padding": ["{tokens.spacing.lg}", "{tokens.spacing.lg}"]
     }
   },
+  "actionSheet": {
+    "lg": {
+      "min-height": 32,
+      "borderRadius": "{tokens.roundness.md}",
+      "padding": [
+        "{tokens.spacing.xxl}",
+        "{tokens.spacing.lg}",
+        "{tokens.spacing.lg}",
+        "{tokens.spacing.lg}"
+      ]
+    },
+    "md": {
+      "min-height": 32,
+      "borderRadius": "{tokens.roundness.sm}",
+      "padding": ["{tokens.spacing.lg}", "{tokens.spacing.lg}"]
+    }
+  },
   "scrollbar": {
     "width": 3,
     "borderRadius": 1
