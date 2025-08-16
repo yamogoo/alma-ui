@@ -1,10 +1,7 @@
 <script setup lang="ts">
-import tokens from "@/tokens";
-
 import type {
   UIElementAlignment,
   UIElementAxisDirection,
-  UIElementColor,
   UIElementOrientation,
   UIElementStretch,
 } from "@/typings";
@@ -22,12 +19,10 @@ const componentTag = props.as;
 </script>
 
 <script lang="ts">
-export type Size = keyof typeof tokens.group;
-
-export type Color = Extract<UIElementColor, "primary" | "secondary">;
+import type { Size, Color } from "./group";
 
 export interface Props {
-  size?: keyof typeof tokens.group;
+  size?: Size;
   color?: Color;
   orientation?: UIElementOrientation;
   direction?: UIElementAxisDirection;

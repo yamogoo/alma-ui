@@ -112,11 +112,7 @@ onUnmounted(() => {
 </script>
 
 <script lang="ts">
-import type {
-  UIElementDirection,
-  UIElementColor,
-  UIElementStretch,
-} from "@/typings";
+import type { UIElementDirection, UIElementStretch } from "@/typings";
 
 import type {
   IconName,
@@ -125,20 +121,9 @@ import type {
   IconWeight,
 } from "@/components/atoms/icons/icons";
 import Icon from "@/components/atoms/icons/Icon.vue";
+import type { Variant, Size, Color } from "./button";
 
-export type Variant = keyof typeof tokens.button;
-
-export type Size = keyof typeof tokens.button.rounded;
-
-export type Color = Extract<
-  UIElementColor,
-  | "primary"
-  | "primary-inversed"
-  | "secondary"
-  | "accent"
-  | "error"
-  | "transparent"
->;
+export type { Variant, Size, Color } from "./button";
 
 export type Stretch = UIElementStretch;
 
