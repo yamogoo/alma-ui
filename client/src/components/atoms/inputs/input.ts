@@ -2,11 +2,13 @@ import type { InputTypeHTMLAttribute } from "vue";
 
 import type { UIElementColor } from "@/typings";
 
-import type tokens from "@/tokens";
+import tokens from "@/tokens";
 
-export type InputSize = keyof typeof tokens.input;
+export const inputSizes = Object.keys(tokens.input);
+export type InputSize = (typeof inputSizes)[number];
 
 export type InputColor = Extract<UIElementColor, "primary" | "secondary">;
+export const inputColors: Array<InputColor> = ["primary", "secondary"];
 
 export type InputState = "focused";
 

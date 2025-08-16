@@ -2,14 +2,14 @@ import type { Meta, StoryObj } from "@storybook/vue3-vite";
 
 import { fn } from "storybook/test";
 
-import Button from "./Button.vue";
+import ControlButton from "./ControlButton.vue";
 import { colors, sizes } from "./button";
 
 import { iconNames, iconStyles, iconWeigths } from "../icons/icons";
 
 const meta = {
-  title: "Atoms/buttons/Button",
-  component: Button,
+  title: "Atoms/buttons/ControlButton",
+  component: ControlButton,
   tags: ["autodocs"],
   argTypes: {
     size: { control: "select", options: sizes },
@@ -22,42 +22,23 @@ const meta = {
       control: "select",
       options: ["ltr", "rtl"],
     },
-    prependIconName: {
+    iconName: {
       control: "select",
       options: iconNames,
     },
-    prependIconStyle: {
+    iconStyle: {
       control: "select",
       options: iconStyles,
     },
-    prependIconWeight: {
+    iconWeight: {
       control: "select",
       options: iconWeigths,
-    },
-    appendIconName: {
-      control: "select",
-      options: iconNames,
-    },
-    appendIconStyle: {
-      control: "select",
-      options: iconStyles,
-    },
-    appendIconWeight: {
-      control: "select",
-      options: iconWeigths,
-    },
-    scalePressed: {
-      control: "number",
-    },
-    stretch: {
-      control: "select",
-      options: ["fill", "auto"],
     },
   },
   args: {
-    onPointerdown: fn(),
+    onPress: fn(),
   },
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof ControlButton>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -66,7 +47,7 @@ export const Primary: Story = {
   args: {
     size: "md",
     color: "primary",
-    label: "Button",
+    iconName: "check",
   },
 };
 
@@ -74,7 +55,7 @@ export const PrimaryInversed: Story = {
   args: {
     size: "md",
     color: "primary-inversed",
-    label: "Button",
+    iconName: "check",
   },
 };
 
@@ -82,7 +63,7 @@ export const Secondary: Story = {
   args: {
     size: "md",
     color: "secondary",
-    label: "Button",
+    iconName: "check",
   },
 };
 
@@ -90,7 +71,7 @@ export const Accent: Story = {
   args: {
     size: "md",
     color: "accent",
-    label: "Button",
+    iconName: "check",
   },
 };
 
@@ -98,7 +79,7 @@ export const Error: Story = {
   args: {
     size: "md",
     color: "error",
-    label: "Button",
+    iconName: "check",
   },
 };
 
@@ -106,7 +87,7 @@ export const Large: Story = {
   args: {
     size: "lg",
     color: "primary",
-    label: "Button",
+    iconName: "check",
   },
 };
 
@@ -114,7 +95,7 @@ export const Medium: Story = {
   args: {
     size: "md",
     color: "primary",
-    label: "Button",
+    iconName: "check",
   },
 };
 
@@ -122,6 +103,6 @@ export const Small: Story = {
   args: {
     size: "sm",
     color: "primary",
-    label: "Button",
+    iconName: "check",
   },
 };
