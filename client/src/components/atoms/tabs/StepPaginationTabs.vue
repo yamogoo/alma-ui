@@ -23,7 +23,6 @@ const visibleItems = computed(() => {
   const len = props.items.length;
   if (len === 0) return [];
 
-  // Если меньше или равно 3 — просто отдаем как есть
   if (len <= 3) return props.items;
 
   const activeIndex = props.items.findIndex((i) => i.id === props.sid);
@@ -31,9 +30,9 @@ const visibleItems = computed(() => {
   const nextIndex = (activeIndex + 1) % len;
 
   return [
-    props.items[prevIndex], // left
-    props.items[activeIndex], // center
-    props.items[nextIndex], // right
+    props.items[prevIndex],
+    props.items[activeIndex],
+    props.items[nextIndex],
   ];
 });
 

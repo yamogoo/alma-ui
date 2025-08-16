@@ -12,7 +12,8 @@
     "log-server:dev": "pnpm --filter log-server dev",
     "log-server:build": "pnpm --filter log-server build",
     "storybook:dev": "pnpm --filter client storybook:dev",
-    "storybook:build": "pnpm --filter client storybook:build"
+    "storybook:build": "pnpm --filter client storybook:build",
+    "install:all": "pnpm install"
   },
   "keywords": [],
   "author": "",
