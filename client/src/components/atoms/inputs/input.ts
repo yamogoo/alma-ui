@@ -25,4 +25,5 @@ export interface Props {
   autocomplete?: string;
   size?: InputSize;
   type?: InputTypeHTMLAttribute;
+  errorMessage?: string | null;
 }

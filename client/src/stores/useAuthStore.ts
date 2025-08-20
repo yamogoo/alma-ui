@@ -2,7 +2,7 @@ import { ref, computed } from "vue";
 import { defineStore } from "pinia";
 import axios from "axios";
 
-import type { ServerResponseError } from "@/typings";
+import type { AuthErrors } from "@/typings";
 
 const API_URL = import.meta.env.VITE_API_URL;
 const API_BASE_URL = `${API_URL}/api`;
@@ -10,7 +10,7 @@ const API_BASE_URL = `${API_URL}/api`;
 export const useAuthStore = defineStore("auth-store", () => {
   const user = ref<{ email: string } | null>(null);
   const isLoading = ref(false);
-  const error = ref<ServerResponseError>(null);
+  const errors = ref<AuthErrors>({});
 
   const isInitialized = ref(false);
 
@@ -22,7 +22,7 @@ export const useAuthStore = defineStore("auth-store", () => {
 
   const login = async (email: string, password: string) => {
     isLoading.value = true;
-    error.value = null;
+    errors.value = {};
 
     try {
       await axios.post(
@@ -34,13 +34,21 @@ export const useAuthStore = defineStore("auth-store", () => {
       const meResponse = await axios.get(`${API_BASE_URL}/auth/me`, {
         withCredentials: true,
       });
-
       setUser({ email: meResponse.data.email });
       isInitialized.value = true;
     } catch (err: any) {
       console.error(err);
-      error.value =
+      const message =
         err.response?.data?.message || "Authorization error. Try again.";
+
+      if (message.includes("email")) {
+        errors.value.email = "Invalid email address";
+      } else if (message.includes("password")) {
+        errors.value.password = "Incorrect password";
+      } else {
+        errors.value.general = message;
+      }
+
       setUser(null);
       isInitialized.value = true;
     } finally {
@@ -78,7 +86,7 @@ export const useAuthStore = defineStore("auth-store", () => {
     user,
     isLoggedIn,
     isLoading,
-    error,
+    errors,
     login,
     logout,
     initializeAuth,

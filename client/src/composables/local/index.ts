@@ -6,5 +6,3 @@ export * from "./useClickOutside";
 export * from "./pages";
 
 export * from "./actions";
-
-export * from "./forms";

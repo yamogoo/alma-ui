@@ -16,6 +16,8 @@ import { sanitizeInput } from "@/utils";
 import type { Props } from "./input";
 
 import ControlButton from "@/components/atoms/buttons/ControlButton.vue";
+import Text from "@/components/atoms/typography/Text.vue";
+import AnimatedWrapper from "../containers/AnimatedWrapper.vue";
 
 const props = withDefaults(defineProps<Props>(), {
   color: "primary",
@@ -25,6 +27,7 @@ const props = withDefaults(defineProps<Props>(), {
   isDisabled: false,
   isRestButtonEnabled: true,
   autocomplete: "off",
+  errorMessage: null,
 });
 
 const emit = defineEmits<{
@@ -37,6 +40,7 @@ defineOptions({ inheritAttrs: false });
 
 const refInput = ref<HTMLInputElement | null>(null);
 const refPlaceholder = ref<HTMLLabelElement | null>(null);
+const refMessage = ref<HTMLDivElement | null>(null);
 
 const id = useId();
 const localModelValue = ref(props.value);
@@ -144,14 +148,38 @@ const onAnimPlaceholder = (
     });
 };
 
+const onAnimErrorMessage = (
+  message: HTMLSpanElement | null,
+  durationFactor = 1
+) => {
+  const messageHeight = message?.clientHeight || 0;
+  const isError = !!props.errorMessage || props.isError;
+
+  const OPACITY_IN = 1,
+    OPACITY_OUT = 0,
+    POS_Y_IN = 0,
+    POS_Y_OUT = messageHeight;
+
+  if (message) {
+    g.to(message, {
+      opacity: isError ? OPACITY_IN : OPACITY_OUT,
+      y: isError ? POS_Y_IN : POS_Y_OUT,
+      duration: 0.1 * durationFactor,
+      ease: "power4.out",
+    });
+  }
+};
+
 const animate = (durationFactor = 1): void => {
   const placeholder = refPlaceholder.value;
   const input = refInput.value;
+  const message = refMessage.value;
   const value = toValue(localModelValue);
   const isFocused = toValue(isLocalFocused);
 
   onAnimPlaceholder(placeholder, durationFactor, isFocused, value);
   onAnimInputValue(input, durationFactor, isFocused, value);
+  onAnimErrorMessage(message, durationFactor);
 };
 
 watch([isLocalFocused, localModelValue], () => {
@@ -164,7 +192,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <div
+  <AnimatedWrapper
+    :content-key="String(errorMessage)"
+    :duration="0.3"
     class="input"
     data-testid="input"
     :class="[
@@ -176,48 +206,57 @@ onMounted(() => {
         [`input_size-${String(size)}`]: size,
       },
     ]"
-    @pointerdown="onFocus"
   >
-    <label
-      v-if="placeholder || placeholder === ''"
-      ref="refPlaceholder"
-      :for="id"
-      class="input__placeholder"
-      >{{ placeholder }}
-    </label>
-    <div class="input__field">
-      <div v-if="$slots.icon" class="input__field-icon">
-        <slot name="icon"></slot>
+    <div class="input__field" @pointerdown="onFocus">
+      <label
+        v-if="placeholder || placeholder === ''"
+        ref="refPlaceholder"
+        :for="id"
+        class="input__field-placeholder"
+        >{{ placeholder }}
+      </label>
+      <div class="input__field-content">
+        <div v-if="$slots.icon" class="input__field-content-icon">
+          <slot name="icon"></slot>
+        </div>
+        <input
+          :id
+          ref="refInput"
+          v-model="localModelValue"
+          :type
+          class="input__field-value"
+          data-testid="input-value"
+          :dataCy
+          :areaPlaceholder="areaPlaceholder ?? placeholder"
+          :disabled="isDisabled"
+          :autocomplete
+          :spellcheck="'false'"
+          @change="onChange"
+        />
+        <slot name="controls"></slot>
+        <ControlButton
+          v-if="isResetButtonShown"
+          type="reset"
+          data-testid="input__field-reset-button"
+          :size="'xs'"
+          :color="!isError ? 'primary' : 'error'"
+          :icon-name="'cross'"
+          :icon-style="'outline'"
+          :icon-weight="'500'"
+          @input="sanitize"
+          @click="onReset"
+        />
       </div>
-      <input
-        :id
-        ref="refInput"
-        v-model="localModelValue"
-        :type
-        class="input__value"
-        data-testid="input-value"
-        :dataCy
-        :areaPlaceholder="areaPlaceholder ?? placeholder"
-        :disabled="isDisabled"
-        :autocomplete
-        :spellcheck="'false'"
-        @change="onChange"
-      />
-      <slot name="controls"></slot>
-      <ControlButton
-        v-if="isResetButtonShown"
-        type="reset"
-        data-testid="input__reset-button"
-        :size="'xs'"
-        :color="!isError ? 'primary' : 'error'"
-        :icon-name="'cross'"
-        :icon-style="'outline'"
-        :icon-weight="'500'"
-        @input="sanitize"
-        @click="onReset"
-      />
     </div>
-  </div>
+    <div ref="refMessage" class="input__error">
+      <Text
+        v-if="!!errorMessage"
+        class="input__error-message"
+        :variant="'caption-2'"
+        >{{ errorMessage.toLowerCase() }}</Text
+      >
+    </div>
+  </AnimatedWrapper>
 </template>
 
 <style lang="scss">
@@ -230,22 +269,37 @@ onMounted(() => {
       map.get($val, "placeholder"),
       "font-style"
     );
+    $error-font-style: map.get(map.get($val, "error"), "font-style");
 
     $height: map.get($val, "height");
+    $whole-height: map.get($val, "whole-height");
     $padding: map.get($val, "padding");
+    $error-padding: map.get(map.get($val, "error"), "padding");
     $border-radius: map.get($val, "border-radius");
 
     &_size-#{$size} {
-      height: $height;
-      padding: $padding;
-      border-radius: $border-radius;
+      /* height: $whole-height; */
 
-      .input__value {
+      .input__field {
+        height: $height;
+        padding: $padding;
+        border-radius: $border-radius;
+      }
+
+      .input__field-value {
         @extend %t__#{$value-font-style};
       }
 
-      .input__placeholder {
+      .input__field-placeholder {
         @extend %t__#{$placeholder-font-style};
+      }
+
+      .input__error {
+        padding: $error-padding;
+
+        &-message {
+          @extend %t__#{$error-font-style};
+        }
       }
     }
   }
@@ -255,47 +309,66 @@ onMounted(() => {
   @each $name in $names {
     &_color-#{$name} {
       &:focus {
-        @include themify($themes) {
-          outline: $outline solid themed("input.border-#{$name}-outline");
+        .input__field {
+          @include themify($themes) {
+            outline: $outline solid themed("input.border-#{$name}-outline");
+          }
         }
       }
 
       &:not(.input_disabled) {
-        @include themify($themes) {
-          color: themed("input.label-#{$name}-normal");
-          background-color: themed("input.background-#{$name}-normal");
-          @extend %base-transition;
+        .input__field {
+          @include themify($themes) {
+            color: themed("input.label-#{$name}-normal");
+            background-color: themed("input.background-#{$name}-normal");
+            @extend %base-transition;
+          }
         }
       }
 
       &.input_focused {
-        @include themify($themes) {
-          color: themed("input.label-#{$name}-focused");
-          background-color: themed("input.background-#{$name}-focused");
-          @extend %base-transition;
+        .input__field {
+          @include themify($themes) {
+            color: themed("input.label-#{$name}-focused");
+            background-color: themed("input.background-#{$name}-focused");
+            @extend %base-transition;
+          }
         }
       }
 
       &.input_disabled {
-        @include themify($themes) {
-          color: themed("input.label-#{$name}-disabled");
-          background-color: themed("input.background-#{$name}-disabled");
-          @extend %base-transition;
+        .input__field {
+          @include themify($themes) {
+            color: themed("input.label-#{$name}-disabled");
+            background-color: themed("input.background-#{$name}-disabled");
+            @extend %base-transition;
+          }
         }
       }
 
       &.input_error {
-        @include themify($themes) {
-          color: themed("input.label-#{$name}-error");
-          background-color: themed("input.background-#{$name}-error");
-          @extend %base-transition;
+        .input__field {
+          @include themify($themes) {
+            color: themed("input.label-#{$name}-error");
+            background-color: themed("input.background-#{$name}-error");
+            @extend %base-transition;
+          }
         }
       }
 
-      .input__value,
-      .input__placeholder {
+      .input__field-value,
+      .input__field-placeholder {
         color: inherit;
         @extend %base-transition;
+      }
+
+      .input__error {
+        &-message {
+          @include themify($themes) {
+            color: themed("input.label-error-#{$name}");
+            @extend %base-transition;
+          }
+        }
       }
     }
   }
@@ -308,47 +381,52 @@ onMounted(() => {
   @include defineInputSizes();
   @include defineThemes(primary secondary);
 
-  &__placeholder {
-    position: absolute;
-    display: block;
-    transform-origin: left top;
-    pointer-events: none;
-    z-index: 0;
-  }
-
   &__field {
-    display: flex;
-    align-items: center;
-    gap: px2rem(map.get($gap, "xs"));
-    height: 100%;
+    box-sizing: border-box;
+    position: relative;
 
-    &-icon {
-      height: max-content;
+    &-placeholder {
+      position: absolute;
+      display: block;
+      transform-origin: left top;
+      pointer-events: none;
+      z-index: 0;
     }
-  }
 
-  &__value {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    line-clamp: 1;
-    flex: 1 0 0;
-    @include box(100%);
-    padding-top: px2rem(map.get($spacing, "sm"));
-    outline: none;
-    border: none;
-    background: none;
-    @extend %base-transition;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    user-select: auto;
-    pointer-events: all;
-    z-index: 1;
+    &-content {
+      display: flex;
+      align-items: center;
+      gap: px2rem(map.get($gap, "xs"));
+      height: 100%;
 
-    &::selection {
-      @include themify($themes) {
-        color: themed("selection.label") !important;
-        background: themed("selection.background") !important;
+      &-icon {
+        height: max-content;
+      }
+    }
+
+    &-value {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      line-clamp: 1;
+      flex: 1 0 0;
+      @include box(100%);
+      padding-top: px2rem(map.get($spacing, "sm"));
+      outline: none;
+      border: none;
+      background: none;
+      @extend %base-transition;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      user-select: auto;
+      pointer-events: all;
+      z-index: 1;
+
+      &::selection {
+        @include themify($themes) {
+          color: themed("selection.label") !important;
+          background: themed("selection.background") !important;
+        }
       }
     }
   }

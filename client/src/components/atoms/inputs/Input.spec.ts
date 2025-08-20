@@ -1,13 +1,18 @@
 import { mount, VueWrapper } from "@vue/test-utils";
 
 import Input from "@/components/atoms/inputs/Input.vue";
+import { nextTick } from "vue";
 
 const getResetButton = <T>(wrapper: VueWrapper<T>) => {
-  return wrapper.find('[data-testid="input__reset-button"]');
+  return wrapper.find('[data-testid="input__field-reset-button"]');
 };
 
 const getPlaceholder = <T>(wrapper: VueWrapper<T>) => {
-  return wrapper.find(".input__placeholder");
+  return wrapper.find(".input__field-placeholder");
+};
+
+const getErrorMessage = <T>(wrapper: VueWrapper<T>) => {
+  return wrapper.find(".input__error-message");
 };
 
 vi.mock("gsap", () => ({
@@ -89,5 +94,22 @@ describe("input", () => {
 
     await wrapper.trigger("pointerdown");
     expect(wrapper.classes()).toContain("input_focused");
+  });
+
+  test("should shows error message", async () => {
+    const wrapper = mount(Input, {
+      props: {
+        value: "",
+        errorMessage: "Error",
+        isError: true,
+      },
+    });
+
+    await nextTick();
+
+    const errorMessage = getErrorMessage(wrapper);
+    const errorMessageText = errorMessage.text();
+
+    expect(errorMessageText).toMatchInlineSnapshot(`"error"`);
   });
 });

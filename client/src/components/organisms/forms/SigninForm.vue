@@ -23,7 +23,7 @@ const { $t } = storeToRefs(useLocaleStore());
 
 const router = useRouter();
 
-const { isLoggedIn, error: loginError } = storeToRefs(useAuthStore());
+const { isLoggedIn, errors: loginError } = storeToRefs(useAuthStore());
 const { login } = useAuthStore();
 
 const MIN_PASSWORD_LENGTH =
@@ -50,7 +50,7 @@ const isValid = computed(
 );
 
 const isError = computed(() => {
-  const value = !!loginError.value;
+  const value = !!loginError.value.general;
   emit("update:is-error", value);
   return value;
 });

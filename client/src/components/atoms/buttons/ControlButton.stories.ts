@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/vue3-vite";
 import { fn } from "storybook/test";
 
 import ControlButton from "./ControlButton.vue";
-import { colors, sizes } from "./Button";
+import { colors, sizes } from "./button";
 
 import { iconNames, iconStyles, iconWeigths } from "../icons/icons";
 

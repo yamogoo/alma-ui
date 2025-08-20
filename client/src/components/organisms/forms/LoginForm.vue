@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { onMounted, ref, computed } from "vue";
+import { onMounted, ref, watch, computed } from "vue";
 import { storeToRefs } from "pinia";
 import { useRouter } from "vue-router";
 
 import { useAuthStore, useLocaleStore } from "@/stores";
-import { useLoginValidate } from "@/composables/local";
 
 import Form from "@/components/molecules/forms/Form.vue";
 import ActionButton from "@/components/atoms/buttons/ActionButton.vue";
@@ -26,11 +25,7 @@ const { $t } = storeToRefs(useLocaleStore());
 
 const router = useRouter();
 
-const {
-  isLoggedIn,
-  error: loginError,
-  isLoading,
-} = storeToRefs(useAuthStore());
+const { isLoggedIn, errors, isLoading } = storeToRefs(useAuthStore());
 const { login } = useAuthStore();
 
 const MIN_PASSWORD_LENGTH =
@@ -40,28 +35,33 @@ const localEmail = ref("");
 const localPassword = ref("");
 const localIsPasswordMasked = ref(true);
 
-const isPasswordValid = computed(
-  () => localPassword.value.length >= MIN_PASSWORD_LENGTH
-);
+const emailError = computed(() => {
+  if (localEmail.value.length === 0) return null;
+  if (!localEmail.value) return "Email is required";
+  return null;
+});
 
-const isValid = computed(() => isPasswordValid.value);
+const passwordError = computed(() => {
+  if (localPassword.value.length === 0) return null;
+  if (!localPassword.value) return "Password is required";
+  if (localPassword.value.length < MIN_PASSWORD_LENGTH)
+    return "Password too short";
+  return null;
+});
 
-const { isError: isLoginError, reset: onResetLogin } = useLoginValidate(
-  loginError,
-  () => {
-    emit("update:is-error", isLoginError.value);
-  }
-);
+const errorMessage = computed(() => {
+  return passwordError.value || emailError.value || errors.value.general;
+});
 
-const { isError: isPasswordError, reset: onResetPassword } = useLoginValidate(
-  loginError,
-  () => {
-    emit("update:is-error", isPasswordError.value);
-  }
-);
+watch(errorMessage, (val) => {
+  emit("update:is-error", !!val);
+});
 
-const onSubmit = async (): Promise<void> => {
-  onLogin(localEmail.value, localPassword.value);
+const isValid = computed(() => !emailError.value && !passwordError.value);
+
+const onSubmit = async () => {
+  if (!isValid.value) return;
+  await onLogin(localEmail.value, localPassword.value);
 };
 
 const onContinueAsGuest = (): void => {
@@ -98,24 +98,24 @@ export interface Props {
       v-model:value="localEmail"
       :placeholder="$t.auth.login.form.userName"
       :type="'text'"
-      :is-error="isLoginError"
-      @reset:value="onResetLogin"
+      :is-error="!!emailError"
+      :error-message="emailError"
     ></Input>
     <PasswordInput
       v-model:value="localPassword"
       v-model:masked="localIsPasswordMasked"
       :type="'password'"
       :placeholder="$t.auth.login.form.password"
-      :is-error="isPasswordError"
-      @reset:value="onResetPassword"
+      :is-error="!!passwordError"
+      :error-message="passwordError"
     ></PasswordInput>
-    <Text
-      v-if="isLoginError || isPasswordError"
+    <!-- <Text
+      v-if="errorMessage"
       :data-testid="'auth-form-error'"
       :variant="'caption-1'"
       :text-color="'error'"
-      >{{ loginError }}</Text
-    >
+      >{{ errorMessage }}</Text
+    > -->
     <!-- <Divider :orientation="'horizontal'" :size="'sm'"></Divider> -->
     <Text :variant="'caption-2'" :text-color="'secondary'">{{
       $t.auth.login.form.description

@@ -114,6 +114,7 @@
         "backgroundPrimaryFocused": "#EAEDEF",
         "backgroundPrimaryError": "#FADFDF",
         "borderPrimaryOutline": "#013CFE",
+        "labelErrorPrimary": "#E96B6B",
         "labelSecondaryNormal": "#2F383F",
         "labelSecondaryDisabled": "#8999A7",
         "labelSecondaryHovered": "#101315",
@@ -124,7 +125,8 @@
         "backgroundSecondaryHovered": "#EAEDEF",
         "backgroundSecondaryFocused": "#DCE1E5",
         "backgroundSecondaryError": "#FADFDF",
-        "borderSecondaryOutline": "#013CFE"
+        "borderSecondaryOutline": "#013CFE",
+        "labelErrorSecondary": "#E96B6B"
       },
       "selection": {
         "label": "#101315",
@@ -322,6 +324,7 @@
         "backgroundPrimaryFocused": "#242B31",
         "backgroundPrimaryError": "#e54b4b33",
         "borderPrimaryOutline": "#013CFE",
+        "labelErrorPrimary": "#E54B4B",
         "labelSecondaryNormal": "#A5B1BC",
         "labelSecondaryDisabled": "#586976",
         "labelSecondaryHovered": "#EAEDEF",
@@ -332,7 +335,8 @@
         "backgroundSecondaryHovered": "#101315",
         "backgroundSecondaryFocused": "#1A1F23",
         "backgroundSecondaryError": "#350808",
-        "borderSecondaryOutline": "#013CFE"
+        "borderSecondaryOutline": "#013CFE",
+        "labelErrorSecondary": "#E54B4B"
       },
       "selection": {
         "label": "#EAEDEF",
