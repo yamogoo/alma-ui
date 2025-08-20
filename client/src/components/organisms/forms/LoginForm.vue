@@ -4,6 +4,7 @@ import { storeToRefs } from "pinia";
 import { useRouter } from "vue-router";
 
 import { useAuthStore, useLocaleStore } from "@/stores";
+import { useLoginValidate } from "@/composables/local";
 
 import Form from "@/components/molecules/forms/Form.vue";
 import ActionButton from "@/components/atoms/buttons/ActionButton.vue";
@@ -14,11 +15,11 @@ import Divider from "@/components/atoms/dividers/Divider.vue";
 import PasswordInput from "@/components/atoms/inputs/PasswordInput.vue";
 
 withDefaults(defineProps<Props>(), {
-  isError: false,
+  isLoginError: false,
 });
 
 const emit = defineEmits<{
-  (e: "update:is-error", isError: boolean): void;
+  (e: "update:is-error", isLoginError: boolean): void;
 }>();
 
 const { $t } = storeToRefs(useLocaleStore());
@@ -45,11 +46,19 @@ const isPasswordValid = computed(
 
 const isValid = computed(() => isPasswordValid.value);
 
-const isError = computed(() => {
-  const value = !!loginError.value;
-  emit("update:is-error", value);
-  return value;
-});
+const { isError: isLoginError, reset: onResetLogin } = useLoginValidate(
+  loginError,
+  () => {
+    emit("update:is-error", isLoginError.value);
+  }
+);
+
+const { isError: isPasswordError, reset: onResetPassword } = useLoginValidate(
+  loginError,
+  () => {
+    emit("update:is-error", isPasswordError.value);
+  }
+);
 
 const onSubmit = async (): Promise<void> => {
   onLogin(localEmail.value, localPassword.value);
@@ -79,7 +88,7 @@ onMounted(() => {
 
 <script lang="ts">
 export interface Props {
-  isError?: boolean; // ContentKeyTrigger
+  isLoginError?: boolean; // ContentKeyTrigger
 }
 </script>
 
@@ -89,17 +98,19 @@ export interface Props {
       v-model:value="localEmail"
       :placeholder="$t.auth.login.form.userName"
       :type="'text'"
-      :is-error="isError"
+      :is-error="isLoginError"
+      @reset:value="onResetLogin"
     ></Input>
     <PasswordInput
       v-model:value="localPassword"
       v-model:masked="localIsPasswordMasked"
       :type="'password'"
       :placeholder="$t.auth.login.form.password"
-      :is-error="isError"
+      :is-error="isPasswordError"
+      @reset:value="onResetPassword"
     ></PasswordInput>
     <Text
-      v-if="isError"
+      v-if="isLoginError || isPasswordError"
       :data-testid="'auth-form-error'"
       :variant="'caption-1'"
       :text-color="'error'"
