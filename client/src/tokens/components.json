@@ -176,12 +176,20 @@
   },
   "options": {
     "lg": {
-      "optionFontStyle": "label-2",
-      "optionMinHeight": 24
+      "optionFontStyle": {
+        "value": "label-2"
+      },
+      "optionMinHeight": {
+        "value": 24
+      }
     },
     "md": {
-      "optionFontStyle": "label-3",
-      "optionMinHeight": 24
+      "optionFontStyle": {
+        "value": "label-3"
+      },
+      "optionMinHeight": {
+        "value": 24
+      }
     }
   },
   "group": {

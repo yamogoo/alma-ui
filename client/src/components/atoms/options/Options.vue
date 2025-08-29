@@ -69,8 +69,8 @@ export interface Props<T> {
 
 @mixin defineSize($map: proto.$options) {
   @each $size, $val in $map {
-    $option-font-style: map.get($val, "option-font-style");
-    $option-min-height: px2rem(map.get($val, "option-min-height"));
+    $option-font-style: get($val, "option-font-style.value");
+    $option-min-height: px2rem(get($val, "option-min-height.value"));
 
     &_#{$size} {
       .options__option {
