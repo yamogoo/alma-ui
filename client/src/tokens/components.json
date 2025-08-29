@@ -593,14 +593,20 @@
     }
   },
   "carouselStack": {
-    "lg": {
-      "header-padding": {
-        "value": ["{tokens.spacing.lg.value}", "{tokens.spacing.lg.value}"]
-      }
-    },
-    "md": {
-      "header-padding": {
-        "value": ["{tokens.spacing.md.value}", "{tokens.spacing.md.value}"]
+    "default": {
+      "lg": {
+        "header": {
+          "padding": {
+            "value": ["{tokens.spacing.lg.value}", "{tokens.spacing.lg.value}"]
+          }
+        }
+      },
+      "md": {
+        "header": {
+          "padding": {
+            "value": ["{tokens.spacing.md.value}", "{tokens.spacing.md.value}"]
+          }
+        }
       }
     }
   },

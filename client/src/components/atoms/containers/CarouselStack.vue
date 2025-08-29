@@ -10,9 +10,11 @@ import type {
   UIElementAxisDirection,
   UIElementOrientation,
   UIElementStretch,
+  UIElementUnionProps,
 } from "@/typings";
 
 const props = withDefaults(defineProps<Props>(), {
+  variant: "default",
   orientation: "vertical",
   direction: "forward",
   stretch: "fill",
@@ -273,9 +275,9 @@ const onLeave = (el: Element, done: () => void): void => {
 </script>
 
 <script lang="ts">
-export type Size = keyof typeof tokens.carouselStack;
+export type Size = keyof typeof tokens.carouselStack.default;
 
-export interface Props {
+export interface Props extends Partial<UIElementUnionProps> {
   selectedScreenId?: number;
   size?: Size;
   screenCount?: number;
@@ -298,13 +300,14 @@ export interface Props {
     ref="refRoot"
     class="carousel-stack"
     :class="[
-      `carousel-stack_${isItemsClickable ? 'carousel-stack_clickable' : 'carousel-stack_static'}`,
+      `carousel-stack_variant-${variant}`,
       {
-        [`carousel-stack_size-${size}`]: size,
+        [`carousel-stack_size-${size}`]: size!!,
         [`carousel-stack_orientation-${orientation}`]: orientation,
         [`carousel-stack_stretch-${stretch}`]: stretch,
         'carousel-stack_grabbing': isCursorGrabbing,
       },
+      `carousel-stack_${isItemsClickable ? 'carousel-stack_clickable' : 'carousel-stack_static'}`,
     ]"
   >
     <div v-if="$slots.pagination" class="carousel-stack__header">
@@ -341,12 +344,16 @@ export interface Props {
 @use "sass:map";
 
 @mixin defineSize($map: $carousel-stack) {
-  @each $size, $val in $map {
-    $header-padding: get($val, "header-padding.value");
+  @each $variant, $sizes in $map {
+    @each $size, $val in $sizes {
+      $header-padding: get($val, "header.padding.value");
 
-    &_size-#{$size} {
-      .carousel-stack__header {
-        padding: $header-padding;
+      &_variant-#{$variant} {
+        &.carousel-stack_size-#{$size} {
+          .carousel-stack__header {
+            padding: $header-padding;
+          }
+        }
       }
     }
   }

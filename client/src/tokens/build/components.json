@@ -635,20 +635,26 @@
     }
   },
   "carouselStack": {
-    "lg": {
-      "header-padding": {
-        "value": [
-          "24px",
-          "24px"
-        ]
-      }
-    },
-    "md": {
-      "header-padding": {
-        "value": [
-          "16px",
-          "16px"
-        ]
+    "default": {
+      "lg": {
+        "header": {
+          "padding": {
+            "value": [
+              "24px",
+              "24px"
+            ]
+          }
+        }
+      },
+      "md": {
+        "header": {
+          "padding": {
+            "value": [
+              "16px",
+              "16px"
+            ]
+          }
+        }
       }
     }
   },

@@ -15,7 +15,7 @@ $sheet:(default: (lg: (gap: (value: 32px), button-offset: (value: 24px), padding
 $action-sheet:(default: (lg: (min-height: (value: 32px), border-radius: (value: 16px), padding: (value: 48px 24px 24px 24px)), md: (min-height: (value: 32px), border-radius: (value: 12px), padding: (value: 24px 24px))));
 $scrollbar:(width: (value: 3px), border-radius: (value: 1px));
 $main-container:(default: (roundness: (value: 16px), media: (lg: (padding: (value: 8px)), md: (padding: (value: 8px)))));
-$carousel-stack:(lg: (header-padding: (value: 24px 24px)), md: (header-padding: (value: 16px 16px)));
+$carousel-stack:(default: (lg: (header: (padding: (value: 24px 24px))), md: (header: (padding: (value: 16px 16px)))));
 $pagination:(default: (lg: (size: (value: 16px), width-active: (value: 24px), gap: (value: 16px), padding: (value: 8px), border-radius: (value: 8px)), md: (size: (value: 10px), width-active: (value: 24px), gap: (value: 12px), padding: (value: 8px), border-radius: (value: 5px))));
 $step-pagination-tabs:(default: (lg: (font-style: (value: title-3), padding: (value: 8px)), md: (font-style: (value: title-4), padding: (value: 8px))));
 $message:(default: (lg: (font-style: (value: label-3), gap: (value: 24px), padding: (value: 32px 48px), border-radius: (value: 9999px)), md: (font-style: (value: label-3), gap: (value: 24px), padding: (value: 24px 48px), border-radius: (value: 9999px))));
