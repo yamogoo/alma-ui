@@ -36,7 +36,8 @@ const { isHovered } = useHover(refRoot);
 const localIsPressed = ref(false);
 
 const computedButtonSize: ComputedRef<IconSize> = computed(
-  () => tokens.button[props.variant][props.size].iconSizeLiteral as IconSize
+  () =>
+    tokens.button[props.variant][props.size].iconSizeLiteral.value as IconSize
 );
 
 const onDown = (e: PointerEvent): void => {
@@ -157,12 +158,12 @@ export interface Props {
 @mixin defineButtonSizes($map: $button) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $button-size: px2rem(map.get($val, "size"));
-      $font-style: map.get($val, "font-style");
-      $icon-size: px2rem(map.get($val, "icon-size"));
-      $gap: px2rem(map.get($val, "gap"));
-      $border-radius: map.get($val, "border-radius");
-      $padding: map.get($val, "padding");
+      $button-size: px2rem(get($val, "size.value"));
+      $font-style: get($val, "font-style.value");
+      $icon-size: px2rem(get($val, "icon-size.value"));
+      $gap: px2rem(get($val, "gap.value"));
+      $border-radius: get($val, "border-radius.value");
+      $padding: get($val, "padding.value");
 
       &.button_variant-#{$variant} {
         &.button_size-#{$size} {
