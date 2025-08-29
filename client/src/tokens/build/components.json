@@ -494,13 +494,29 @@
     }
   },
   "formWrapper": {
-    "md": {
-      "paddingV": "16px",
-      "paddingH": "24px",
-      "borderRadius": "16px",
-      "borderWidth": "1px",
-      "headerPaddingV": "12px",
-      "headerPaddingH": 0
+    "default": {
+      "md": {
+        "paddingV": {
+          "value": "16px"
+        },
+        "paddingH": {
+          "value": "24px"
+        },
+        "borderRadius": {
+          "value": "16px"
+        },
+        "borderWidth": {
+          "value": "1px"
+        },
+        "header": {
+          "paddingV": {
+            "value": "12px"
+          },
+          "paddingH": {
+            "value": 0
+          }
+        }
+      }
     }
   },
   "progressbar": {

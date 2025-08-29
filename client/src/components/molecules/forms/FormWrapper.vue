@@ -1,11 +1,16 @@
 <script setup lang="ts">
 import tokens from "@/tokens";
 
-import type { UIElementColor, UIElementContentKey } from "@/typings";
+import type {
+  UIElementColor,
+  UIElementContentKey,
+  UIElementUnionProps,
+} from "@/typings";
 
 import AnimatedWrapper from "@/components/atoms/containers/AnimatedWrapper.vue";
 
 withDefaults(defineProps<Props>(), {
+  variant: "default",
   size: "md",
   color: "primary",
   bordered: false,
@@ -13,11 +18,11 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <script lang="ts">
-export type Size = keyof typeof tokens.formWrapper;
+export type Size = keyof typeof tokens.formWrapper.default;
 
 export type Color = Extract<UIElementColor, "primary" | "secondary">;
 
-export interface Props {
+export interface Props extends Partial<UIElementUnionProps> {
   size?: Size;
   color?: Color;
   bordered?: boolean;
@@ -30,8 +35,10 @@ export interface Props {
   <div
     class="form-wrapper"
     :class="[
-      `form-wrapper_color-${color}`,
+      `form-wrapper_variant-${variant}`,
       `form-wrapper_size-${size}`,
+      `form-wrapper_color-${color}`,
+
       { 'form-wrapper_bordered': bordered },
     ]"
     data-testid="form-wrapper"
@@ -49,25 +56,29 @@ export interface Props {
 @use "sass:map";
 
 @mixin defineSize($map: $form-wrapper) {
-  @each $size, $val in $map {
-    $padding-h: px2rem(map.get($val, "padding-h"));
-    $padding-v: px2rem(map.get($val, "padding-v"));
-    $header-padding-h: px2rem(map.get($val, "header-padding-h"));
-    $header-padding-v: px2rem(map.get($val, "header-padding-v"));
-    $border-radius: px2rem(map.get($val, "border-radius"));
-    $border-width: px2rem(map.get($val, "border-width"));
+  @each $variant, $sizes in $map {
+    @each $size, $val in $sizes {
+      $padding-h: px2rem(get($val, "padding-h.value"));
+      $padding-v: px2rem(get($val, "padding-v.value"));
+      $header-padding-h: px2rem(get($val, "header.padding-h.value"));
+      $header-padding-v: px2rem(get($val, "header.padding-v.value"));
+      $border-radius: px2rem(get($val, "border-radius.value"));
+      $border-width: px2rem(get($val, "border-width.value"));
 
-    &_size-#{$size} {
-      padding: $padding-v $padding-h;
-      border-radius: $border-radius;
+      &_variant-#{$variant} {
+        &.form-wrapper_size-#{$size} {
+          padding: $padding-v $padding-h;
+          border-radius: $border-radius;
 
-      &.form-wrapper_bordered {
-        border-style: solid;
-        border-width: $border-width;
-      }
+          &.form-wrapper_bordered {
+            border-style: solid;
+            border-width: $border-width;
+          }
 
-      .form-wrapper__header {
-        padding: $header-padding-v $header-padding-h;
+          .form-wrapper__header {
+            padding: $header-padding-v $header-padding-h;
+          }
+        }
       }
     }
   }

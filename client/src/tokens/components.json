@@ -458,13 +458,29 @@
     }
   },
   "formWrapper": {
-    "md": {
-      "paddingV": "{tokens.spacing.md.value}",
-      "paddingH": "{tokens.spacing.lg.value}",
-      "borderRadius": "{tokens.roundness.md.value}",
-      "borderWidth": "{tokens.stroke.sm.value}",
-      "headerPaddingV": "{tokens.spacing.sm.value}",
-      "headerPaddingH": 0
+    "default": {
+      "md": {
+        "paddingV": {
+          "value": "{tokens.spacing.md.value}"
+        },
+        "paddingH": {
+          "value": "{tokens.spacing.lg.value}"
+        },
+        "borderRadius": {
+          "value": "{tokens.roundness.md.value}"
+        },
+        "borderWidth": {
+          "value": "{tokens.stroke.sm.value}"
+        },
+        "header": {
+          "paddingV": {
+            "value": "{tokens.spacing.sm.value}"
+          },
+          "paddingH": {
+            "value": 0
+          }
+        }
+      }
     }
   },
   "progressbar": {
