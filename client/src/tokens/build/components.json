@@ -323,46 +323,50 @@
     }
   },
   "options": {
-    "lg": {
-      "optionFontStyle": {
-        "value": "label-2"
+    "default": {
+      "lg": {
+        "optionFontStyle": {
+          "value": "label-2"
+        },
+        "optionMinHeight": {
+          "value": 24
+        }
       },
-      "optionMinHeight": {
-        "value": 24
-      }
-    },
-    "md": {
-      "optionFontStyle": {
-        "value": "label-3"
-      },
-      "optionMinHeight": {
-        "value": 24
+      "md": {
+        "optionFontStyle": {
+          "value": "label-3"
+        },
+        "optionMinHeight": {
+          "value": 24
+        }
       }
     }
   },
   "group": {
-    "lg": {
-      "gap": {
-        "value": "24px"
+    "default": {
+      "lg": {
+        "gap": {
+          "value": "24px"
+        },
+        "divider": {
+          "value": "1px"
+        }
       },
-      "divider": {
-        "value": "1px"
-      }
-    },
-    "md": {
-      "gap": {
-        "value": "16px"
+      "md": {
+        "gap": {
+          "value": "16px"
+        },
+        "divider": {
+          "value": "1px"
+        }
       },
-      "divider": {
-        "value": "1px"
-      }
-    },
-    "sm": {
-      "gap": {
-        "value": "12px"
-      },
-      "divider": {
-        "value": "1px"
+      "sm": {
+        "gap": {
+          "value": "12px"
+        },
+        "divider": {
+          "value": "1px"
+        }
       }
     }
   },

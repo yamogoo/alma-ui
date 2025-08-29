@@ -287,46 +287,50 @@
     }
   },
   "options": {
-    "lg": {
-      "optionFontStyle": {
-        "value": "label-2"
+    "default": {
+      "lg": {
+        "optionFontStyle": {
+          "value": "label-2"
+        },
+        "optionMinHeight": {
+          "value": 24
+        }
       },
-      "optionMinHeight": {
-        "value": 24
-      }
-    },
-    "md": {
-      "optionFontStyle": {
-        "value": "label-3"
-      },
-      "optionMinHeight": {
-        "value": 24
+      "md": {
+        "optionFontStyle": {
+          "value": "label-3"
+        },
+        "optionMinHeight": {
+          "value": 24
+        }
       }
     }
   },
   "group": {
-    "lg": {
-      "gap": {
-        "value": "{tokens.spacing.lg}"
+    "default": {
+      "lg": {
+        "gap": {
+          "value": "{tokens.spacing.lg}"
+        },
+        "divider": {
+          "value": "{components.divider.md.borderWidth}"
+        }
       },
-      "divider": {
-        "value": "{components.divider.md.borderWidth}"
-      }
-    },
-    "md": {
-      "gap": {
-        "value": "{tokens.spacing.md}"
+      "md": {
+        "gap": {
+          "value": "{tokens.spacing.md}"
+        },
+        "divider": {
+          "value": "{components.divider.md.borderWidth}"
+        }
       },
-      "divider": {
-        "value": "{components.divider.md.borderWidth}"
-      }
-    },
-    "sm": {
-      "gap": {
-        "value": "{tokens.spacing.sm}"
-      },
-      "divider": {
-        "value": "{components.divider.md.borderWidth}"
+      "sm": {
+        "gap": {
+          "value": "{tokens.spacing.sm}"
+        },
+        "divider": {
+          "value": "{components.divider.md.borderWidth}"
+        }
       }
     }
   },

@@ -4,9 +4,11 @@ import type {
   UIElementAxisDirection,
   UIElementOrientation,
   UIElementStretch,
+  UIElementVariant,
 } from "@/typings";
 
 const props = withDefaults(defineProps<Props>(), {
+  variant: "default",
   as: "div",
   role: "group",
   size: "md",
@@ -22,6 +24,7 @@ const componentTag = props.as;
 import type { Size, Color } from "./group";
 
 export interface Props {
+  variant?: UIElementVariant;
   size?: Size;
   color?: Color;
   orientation?: UIElementOrientation;
@@ -46,6 +49,7 @@ export interface Props {
     :class="[
       `group_size-${size}`,
       `group_color-${color}`,
+      `group_variant-${variant}`,
       {
         [`group_direction-${direction}`]: !!direction,
         [`group_orientation-${orientation}`]: !!orientation,
@@ -69,22 +73,26 @@ export interface Props {
 @use "sass:map";
 
 @mixin defineSize($map: $group) {
-  @each $size, $val in $map {
-    $gap: px2rem(get($val, "gap.value"));
-    $border-width: px2rem(get($val, "divider.value"));
+  @each $variant, $sizes in $map {
+    @each $size, $val in $sizes {
+      $gap: px2rem(get($val, "gap.value"));
+      $border-width: px2rem(get($val, "divider.value"));
 
-    &_size-#{$size} {
-      gap: $gap;
+      &_variant-#{$variant} {
+        &.group_size-#{$size} {
+          gap: $gap;
 
-      &.group_divider {
-        &.group_orientation-horizontal {
-          border-right-width: $border-width;
-          padding-right: $gap;
-        }
+          &.group_divider {
+            &.group_orientation-horizontal {
+              border-right-width: $border-width;
+              padding-right: $gap;
+            }
 
-        &.group_orientation-vertical {
-          border-bottom-width: $border-width;
-          padding-bottom: $gap;
+            &.group_orientation-vertical {
+              border-bottom-width: $border-width;
+              padding-bottom: $gap;
+            }
+          }
         }
       }
     }
@@ -230,9 +238,13 @@ export interface Props {
     }
   }
 
-  @each $size, $val in $group {
-    &_size-#{$size} {
-      gap: get($val, "gap.value");
+  @each $variant, $sizes in $group {
+    @each $size, $val in $sizes {
+      &_variant-#{$variant} {
+        &.group_size-#{$size} {
+          gap: get($val, "gap.value");
+        }
+      }
     }
   }
 }

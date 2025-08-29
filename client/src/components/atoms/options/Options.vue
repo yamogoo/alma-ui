@@ -25,7 +25,7 @@ const showCurrentOption = (key: T) => {
 </script>
 
 <script lang="ts">
-export type Size = keyof typeof tokens.options;
+export type Size = keyof typeof tokens.options.default;
 
 export type Color = Extract<UIElementColor, "primary" | "secondary">;
 
@@ -45,8 +45,8 @@ export interface Props<T> {
     class="options"
     :class="[
       {
-        [`options_${size}`]: !!size,
-        [`options_${color}`]: !!color,
+        [`options_size-${size}`]: !!size,
+        [`options_color-${color}`]: !!color,
       },
     ]"
   >
@@ -68,14 +68,18 @@ export interface Props<T> {
 @use "sass:map";
 
 @mixin defineSize($map: proto.$options) {
-  @each $size, $val in $map {
-    $option-font-style: get($val, "option-font-style.value");
-    $option-min-height: px2rem(get($val, "option-min-height.value"));
+  @each $variant, $sizes in $map {
+    @each $size, $val in $sizes {
+      $option-font-style: get($val, "option-font-style.value");
+      $option-min-height: px2rem(get($val, "option-min-height.value"));
 
-    &_#{$size} {
-      .options__option {
-        min-height: $option-min-height;
-        @extend %t__#{$option-font-style};
+      &_variant-#{$variant} {
+        &.options_size-#{$size} {
+          .options__option {
+            min-height: $option-min-height;
+            @extend %t__#{$option-font-style};
+          }
+        }
       }
     }
   }
@@ -83,7 +87,7 @@ export interface Props<T> {
 
 @mixin defineThemes($names) {
   @each $name in $names {
-    &_#{$name} {
+    &_color-#{$name} {
       .options__option {
         @include themify($themes) {
           color: themed("options.label-#{$name}-normal");

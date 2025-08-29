@@ -37,9 +37,11 @@ export type UIElementAlignment = "start" | "center" | "end";
 
 export type UIElementStretch = "fill" | "auto";
 
-export type IUIElementItemID<T = string> = {
+export type UIElementItemID<T = string> = {
   id: T;
 };
+
+export type UIElementVariant = "default";
 
 export type UIElementSID<T = string | null | undefined> = T;
 
