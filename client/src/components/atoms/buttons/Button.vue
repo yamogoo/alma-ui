@@ -206,7 +206,8 @@ export interface Props extends Partial<UIElementUnionProps<Variant>> {
 
       &:focus {
         @include themify($themes) {
-          outline: $outline solid themed("button.border-#{$name}-outline");
+          outline: get($outline, "value") solid
+            themed("button.border-#{$name}-outline");
         }
       }
 

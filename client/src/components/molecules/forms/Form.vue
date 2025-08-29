@@ -3,11 +3,12 @@ import { useId } from "vue";
 
 import tokens from "@/tokens";
 
-import type { UIElementColor } from "@/typings";
+import type { UIElementColor, UIElementUnionProps } from "@/typings";
 
 import Text from "@/components/atoms/typography/Text.vue";
 
 withDefaults(defineProps<Props>(), {
+  variant: "default",
   size: "md",
 });
 
@@ -15,11 +16,11 @@ const id = useId();
 </script>
 
 <script lang="ts">
-export type Size = keyof typeof tokens.form;
+export type Size = keyof typeof tokens.form.default;
 
 export type Color = Extract<UIElementColor, "primary" | "secondary">;
 
-export interface Props {
+export interface Props extends UIElementUnionProps {
   title?: string;
   color?: Color;
   size?: Size;
@@ -31,8 +32,9 @@ export interface Props {
     :id
     class="form"
     :class="[
-      { [`form_color-${color}`]: !!color },
+      { [`form_variant-${variant}`]: !!variant },
       { [`form_size-${size}`]: !!size },
+      { [`form_color-${color}`]: !!color },
     ]"
     @submit.prevent
   >
@@ -59,16 +61,18 @@ export interface Props {
 @use "sass:map";
 
 @mixin defineSizes($map: $form) {
-  @each $size, $val in $map {
-    $border-radius: map.get($val, "border-radius");
-    $padding: map.get($val, "padding-v") map.get($val, "padding-h");
+  @each $variant, $sizes in $map {
+    @each $size, $val in $sizes {
+      $border-radius: get($val, "border-radius.value");
+      $padding: get($val, "padding-v.value") get($val, "padding-h.value");
 
-    &_#{$size} {
-      padding: $padding;
-      border-radius: $border-radius;
+      &_#{$size} {
+        padding: $padding;
+        border-radius: $border-radius;
 
-      @include themify($themes) {
-        box-shadow: 0px 4px 32px themed("form.shadow");
+        @include themify($themes) {
+          box-shadow: 0px 4px 32px themed("form.shadow");
+        }
       }
     }
   }
@@ -104,13 +108,13 @@ export interface Props {
   &__header,
   &__body,
   &__footer {
-    padding: map.get($spacing, "sm") 0;
+    padding: get($spacing, "sm.value") 0;
   }
 
   &__body {
     display: flex;
     flex-direction: column;
-    gap: px2rem(map.get($spacing, "md"));
+    gap: px2rem(get($spacing, "md.value"));
   }
 }
 </style>

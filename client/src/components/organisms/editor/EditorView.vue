@@ -9,7 +9,6 @@ import {
 
 import ResizeBounding from "@/components/atoms/resizer/ResizeBounding.vue";
 import Text from "@/components/atoms/typography/Text.vue";
-import CarouselStack from "../../atoms/containers/CarouselStack.vue";
 
 const { navigatorWidth, isNavigatorShown } = storeToRefs(useEditorLayout());
 const { setNavigatorWidth } = useEditorLayout();
@@ -31,11 +30,10 @@ const onUpdateWidth = (width: number) => {
       :max-width="DEFAULT_NAVIGATOR_MAX_WIDTH"
       @update:width="onUpdateWidth"
     >
-      <Text>FS Navigator (Sidebar)</Text>
+      <Text :variant="'body-2'">FS Navigator (Sidebar)</Text>
     </ResizeBounding>
-    <CarouselStack></CarouselStack>
     <div class="editor-view__content">
-      <Text>Notes</Text>
+      <Text :variant="'body-2'">Notes</Text>
     </div>
   </div>
 </template>

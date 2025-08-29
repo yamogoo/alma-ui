@@ -6,7 +6,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: map.get($scrollbar, "width");
+  width: get($scrollbar, "width.value");
 }
 
 /* Track */
@@ -18,7 +18,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  border-radius: calc(map.get($scrollbar, "width") / 2);
+  border-radius: calc(get($scrollbar, "width.value") / 2);
   @include themify($themes) {
     background: themed("label.primary");
   }

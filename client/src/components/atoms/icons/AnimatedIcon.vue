@@ -3,6 +3,7 @@ import { ref, toValue, watch } from "vue";
 import { Vue3Lottie as LottieAnimation } from "vue3-lottie";
 
 import type { IconColor, IconSize } from "./icons";
+import type { UIElementUnionProps } from "~/src/typings";
 
 const props = withDefaults(defineProps<Props>(), {
   speed: 1,
@@ -49,7 +50,7 @@ const onCompleted = (): void => {
 </script>
 
 <script lang="ts">
-export interface Props {
+export interface Props extends Partial<UIElementUnionProps> {
   color?: IconColor;
   size?: IconSize;
   animationData: typeof LottieAnimation.animationData;
@@ -65,6 +66,7 @@ export interface Props {
     class="animated-icon"
     :class="[
       {
+        [`animated-icon_size-${variant}`]: !!variant,
         [`animated-icon_size-${size}`]: !!size,
         [`animated-icon_color-${color}`]: !!color,
       },
@@ -83,9 +85,11 @@ export interface Props {
 @use "sass:map";
 
 @mixin defineSizes($map: $icon) {
-  @each $size, $val in $map {
-    &_size-#{$size} {
-      @include box(px2rem(map.get($val, "size")));
+  @each $variant, $sizes in $map {
+    @each $size, $val in $sizes {
+      &_size-#{$size} {
+        @include box(px2rem(get($val, "size.value")));
+      }
     }
   }
 }

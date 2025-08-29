@@ -271,6 +271,8 @@ onMounted(() => {
       $placeholder-font-style: get($val, "placeholder.font-style.value");
       $error-font-style: get($val, "error.font-style.value");
 
+      $value-padding-top: px2rem(get($val, "value.padding-top.value"));
+
       $height: get($val, "height.value");
       $whole-height: get($val, "whole-height.value");
       $padding: get($val, "padding.value");
@@ -286,6 +288,7 @@ onMounted(() => {
           }
 
           .input__field-value {
+            padding-top: $value-padding-top;
             @extend %t__#{$value-font-style};
           }
 
@@ -312,7 +315,8 @@ onMounted(() => {
       &:focus {
         .input__field {
           @include themify($themes) {
-            outline: $outline solid themed("input.border-#{$name}-outline");
+            outline: get($outline, "value") solid
+              themed("input.border-#{$name}-outline");
           }
         }
       }
@@ -397,7 +401,7 @@ onMounted(() => {
     &-content {
       display: flex;
       align-items: center;
-      gap: px2rem(get($gap, "xs"));
+      gap: px2rem(get($gap, "xs.value"));
       height: 100%;
 
       &-icon {
@@ -412,7 +416,6 @@ onMounted(() => {
       line-clamp: 1;
       flex: 1 0 0;
       @include box(100%);
-      padding-top: px2rem(get($spacing, "sm"));
       outline: none;
       border: none;
       background: none;

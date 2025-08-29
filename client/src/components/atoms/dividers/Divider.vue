@@ -1,9 +1,14 @@
 <script setup lang="ts">
 import tokens from "@/tokens";
 
-import type { UIElementColor, UIElementOrientation } from "@/typings";
+import type {
+  UIElementColor,
+  UIElementOrientation,
+  UIElementVariant,
+} from "@/typings";
 
 withDefaults(defineProps<Props>(), {
+  variant: "default",
   size: "md",
   color: "primary",
   orientation: "horizontal",
@@ -11,11 +16,14 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <script lang="ts">
-export type Size = keyof typeof tokens.divider;
+export type Variant = UIElementVariant;
+
+export type Size = keyof typeof tokens.divider.default;
 
 export type Color = Extract<UIElementColor, "primary" | "secondary">;
 
 export interface Props {
+  variant?: Variant;
   size?: Size;
   color?: Color;
   orientation?: UIElementOrientation;
@@ -26,6 +34,7 @@ export interface Props {
   <div
     class="divider"
     :class="[
+      `divider_variant-${variant}`,
       `divider_size-${size}`,
       `divider_color-${color}`,
       `divider_orientation-${orientation}`,
@@ -34,25 +43,27 @@ export interface Props {
 </template>
 
 <style lang="scss">
-@use "sass:map";
-
 @mixin defineSize($map: $divider) {
-  @each $size, $val in $map {
-    $border-width: px2rem(map.get($val, "border-width"));
-    $padding: px2rem(map.get($val, "padding"));
+  @each $variant, $sizes in $map {
+    @each $size, $val in $sizes {
+      $border-width: px2rem(get($val, "border-width.value"));
+      $padding: px2rem(get($val, "padding.value"));
 
-    &_size-#{$size} {
-      &.divider_orientation {
-        &-horizontal {
-          border-bottom-style: solid;
-          border-bottom-width: $border-width;
-          margin: $padding 0;
-        }
+      &_variant-#{$variant} {
+        &.divider_size-#{$size} {
+          &.divider_orientation {
+            &-horizontal {
+              border-bottom-style: solid;
+              border-bottom-width: $border-width;
+              margin: $padding 0;
+            }
 
-        &-vertical {
-          border-right-style: solid;
-          border-right-width: $border-width;
-          margin: 0, $padding;
+            &-vertical {
+              border-right-style: solid;
+              border-right-width: $border-width;
+              margin: 0, $padding;
+            }
+          }
         }
       }
     }

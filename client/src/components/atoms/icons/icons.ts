@@ -36,8 +36,8 @@ export const iconColors: Array<UIElementColor> = [
 
 export type IconColor = (typeof iconColors)[number];
 
-export const iconSizes = Object.keys(tokens.icon) as Array<
-  keyof typeof tokens.icon
+export const iconSizes = Object.keys(tokens.icon.default) as Array<
+  keyof typeof tokens.icon.default
 >;
 
 export type IconSize = (typeof iconSizes)[number];

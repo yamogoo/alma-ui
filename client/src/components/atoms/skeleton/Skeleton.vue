@@ -32,11 +32,9 @@ const onAnimate = (el: Element): void => {
 </template>
 
 <style lang="scss">
-@use "sass:map";
-
 .skeleton {
   position: relative;
-  border-radius: px2rem(map.get($roundness, "xs"));
+  border-radius: px2rem(get($roundness, "xs.value"));
   overflow: hidden;
   z-index: 1;
   cursor: wait;

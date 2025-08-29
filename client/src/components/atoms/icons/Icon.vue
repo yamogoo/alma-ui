@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { defineAsyncComponent, computed, markRaw } from "vue";
 
+import type { UIElementVariant } from "@/typings";
+
 import type {
   IconName,
   IconStyle,
@@ -10,7 +12,9 @@ import type {
 } from "./icons";
 import Skeleton from "@/components/atoms/skeleton/Skeleton.vue";
 
-const props = defineProps<Props>();
+const props = withDefaults(defineProps<Props>(), {
+  variant: "default",
+});
 
 const symbol = computed(() => {
   const { name, style, weight } = props;
@@ -25,6 +29,7 @@ const symbol = computed(() => {
 
 <script lang="ts">
 export interface Props {
+  variant?: UIElementVariant;
   name: IconName;
   style: IconStyle;
   weight: IconWeight;
@@ -37,7 +42,11 @@ export interface Props {
   <div
     class="icon"
     :class="[
-      { [`icon_size-${size}`]: !!size, [`icon_color-${color}`]: !!color },
+      {
+        [`icon_variant-${variant}`]: !!variant,
+        [`icon_size-${size}`]: !!size,
+        [`icon_color-${color}`]: !!color,
+      },
     ]"
     data-testid="icon"
   >
@@ -54,9 +63,15 @@ export interface Props {
 @use "sass:map";
 
 @mixin defineSizes($map: $icon) {
-  @each $size, $val in $map {
-    &_size-#{$size} {
-      @include box(px2rem(map.get($val, "size")));
+  @each $variant, $sizes in $map {
+    @each $size, $val in $sizes {
+      $box-size: px2rem(get($val, "size.value"));
+
+      &_variant-#{$variant} {
+        &.icon_size-#{$size} {
+          @include box($box-size);
+        }
+      }
     }
   }
 }

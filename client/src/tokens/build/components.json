@@ -1,43 +1,77 @@
 {
   "icon": {
-    "xxs": {
-      "size": 12
-    },
-    "xs": {
-      "size": 16
-    },
-    "sm": {
-      "size": 20
-    },
-    "md": {
-      "size": 24
-    },
-    "lg": {
-      "size": 32
-    },
-    "xl": {
-      "size": 48
-    },
-    "xxl": {
-      "size": 56
+    "default": {
+      "xxs": {
+        "size": {
+          "value": 12
+        }
+      },
+      "xs": {
+        "size": {
+          "value": 16
+        }
+      },
+      "sm": {
+        "size": {
+          "value": 20
+        }
+      },
+      "md": {
+        "size": {
+          "value": 24
+        }
+      },
+      "lg": {
+        "size": {
+          "value": 32
+        }
+      },
+      "xl": {
+        "size": {
+          "value": 48
+        }
+      },
+      "xxl": {
+        "size": {
+          "value": 56
+        }
+      }
     }
   },
   "divider": {
-    "lg": {
-      "borderWidth": "1px",
-      "padding": "16px"
-    },
-    "md": {
-      "borderWidth": "1px",
-      "padding": "12px"
-    },
-    "sm": {
-      "borderWidth": "1px",
-      "padding": "8px"
-    },
-    "xs": {
-      "borderWidth": "1px",
-      "padding": 0
+    "default": {
+      "lg": {
+        "borderWidth": {
+          "value": "1px"
+        },
+        "padding": {
+          "value": "16px"
+        }
+      },
+      "md": {
+        "borderWidth": {
+          "value": "1px"
+        },
+        "padding": {
+          "value": "12px"
+        }
+      },
+      "sm": {
+        "borderWidth": {
+          "value": "1px"
+        },
+        "padding": {
+          "value": "8px"
+        }
+      },
+      "xs": {
+        "borderWidth": {
+          "value": "1px"
+        },
+        "padding": {
+          "value": 0
+        }
+      }
     }
   },
   "input": {
@@ -46,6 +80,9 @@
         "value": {
           "fontStyle": {
             "value": "label-3"
+          },
+          "padding-top": {
+            "value": "12px"
           }
         },
         "placeholder": {
@@ -84,6 +121,9 @@
         "value": {
           "fontStyle": {
             "value": "label-3"
+          },
+          "padding-top": {
+            "value": "12px"
           }
         },
         "placeholder": {
@@ -405,10 +445,18 @@
     }
   },
   "form": {
-    "md": {
-      "paddingV": "16px",
-      "paddingH": "24px",
-      "borderRadius": "16px"
+    "default": {
+      "md": {
+        "paddingV": {
+          "value": "16px"
+        },
+        "paddingH": {
+          "value": "24px"
+        },
+        "borderRadius": {
+          "value": "16px"
+        }
+      }
     }
   },
   "formWrapper": {
@@ -472,8 +520,12 @@
     }
   },
   "scrollbar": {
-    "width": 3,
-    "borderRadius": 1
+    "width": {
+      "value": 3
+    },
+    "borderRadius": {
+      "value": 1
+    }
   },
   "mainContainer": {
     "respond": {

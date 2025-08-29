@@ -102,10 +102,12 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
   @each $variant, $val in $map {
     &_variant-#{$variant} {
       @each $key, $value in $val {
+        $result: map.get($value, "value");
+
         @if $key == "font-size" {
-          #{$key}: px2em($value);
+          #{$key}: px2em($result);
         } @else {
-          #{$key}: $value;
+          #{$key}: $result;
         }
       }
     }
