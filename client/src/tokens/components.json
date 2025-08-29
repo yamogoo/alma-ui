@@ -603,21 +603,23 @@
     }
   },
   "stepPaginationTabs": {
-    "lg": {
-      "fontStyle": "title-3",
-      "padding": "{tokens.spacing.xs.value}"
-    },
-    "md": {
-      "fontStyle": "title-4",
-      "padding": "{tokens.spacing.xs.value}"
-    }
-  },
-  "pageHeader": {
-    "md": {
-      "fontStyle": "title-4"
-    },
-    "lg": {
-      "fontStyle": "title-3"
+    "default": {
+      "lg": {
+        "fontStyle": {
+          "value": "title-3"
+        },
+        "padding": {
+          "value": "{tokens.spacing.xs.value}"
+        }
+      },
+      "md": {
+        "fontStyle": {
+          "value": "title-4"
+        },
+        "padding": {
+          "value": "{tokens.spacing.xs.value}"
+        }
+      }
     }
   },
   "message": {

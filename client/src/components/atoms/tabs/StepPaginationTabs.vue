@@ -3,13 +3,14 @@ import { computed } from "vue";
 
 import tokens from "@/tokens";
 
-import type { UIElementColor } from "@/typings";
+import type { UIElementColor, UIElementUnionProps } from "@/typings";
 
 import Text, { type Variant } from "@/components/atoms/typography/Text.vue";
 
 // TODO: finish carousel view
 
 const props = withDefaults(defineProps<Props>(), {
+  variant: "default",
   selectedItemId: 0,
   color: "primary",
   size: "md",
@@ -46,7 +47,8 @@ const itemPosition = (_item: StepItem, idx: number) => {
 };
 
 const textVariant = computed(() => {
-  return tokens.stepPaginationTabs[props.size].fontStyle as Variant;
+  return tokens.stepPaginationTabs.default[props.size].fontStyle
+    .value as Variant;
 });
 
 const onItemClick = (item: StepItem): void => {
@@ -57,7 +59,7 @@ const onItemClick = (item: StepItem): void => {
 </script>
 
 <script lang="ts">
-export type Size = keyof typeof tokens.stepPaginationTabs;
+export type Size = keyof typeof tokens.stepPaginationTabs.default;
 
 export type Color = Extract<UIElementColor, "primary">;
 
@@ -66,7 +68,7 @@ export interface StepItem {
   label: string;
 }
 
-export interface Props {
+export interface Props extends Partial<UIElementUnionProps> {
   items: StepItem[];
   selectedItemId?: number;
   size?: Size;
@@ -78,6 +80,7 @@ export interface Props {
   <div
     class="step-pagination-tabs"
     :class="[
+      `step-pagination-tabs_variant-${props.variant}`,
       {
         [`step-pagination-tabs_size-${props.size}`]: !!size,
         [`step-pagination-tabs_color-${props.color}`]: !!color,
@@ -106,12 +109,16 @@ export interface Props {
 @use "sass:map";
 
 @mixin defineSizes($map: $step-pagination-tabs) {
-  @each $size, $val in $map {
-    &_size-#{$size} {
-      $font-style: map.get($val, "font-style");
+  @each $variant, $sizes in $map {
+    @each $size, $val in $sizes {
+      &_variant-#{$variant} {
+        &.step-pagination_size-#{$size} {
+          $font-style: get($val, "font-style.value");
 
-      .step-pagination__item {
-        @extend %t__#{$font-style};
+          .step-pagination__item {
+            @extend %t__#{$font-style};
+          }
+        }
       }
     }
   }

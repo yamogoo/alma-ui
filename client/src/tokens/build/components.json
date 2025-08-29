@@ -651,21 +651,23 @@
     }
   },
   "stepPaginationTabs": {
-    "lg": {
-      "fontStyle": "title-3",
-      "padding": "8px"
-    },
-    "md": {
-      "fontStyle": "title-4",
-      "padding": "8px"
-    }
-  },
-  "pageHeader": {
-    "md": {
-      "fontStyle": "title-4"
-    },
-    "lg": {
-      "fontStyle": "title-3"
+    "default": {
+      "lg": {
+        "fontStyle": {
+          "value": "title-3"
+        },
+        "padding": {
+          "value": "8px"
+        }
+      },
+      "md": {
+        "fontStyle": {
+          "value": "title-4"
+        },
+        "padding": {
+          "value": "8px"
+        }
+      }
     }
   },
   "message": {
