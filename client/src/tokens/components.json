@@ -339,25 +339,59 @@
     }
   },
   "dropDown": {
-    "lg": {
-      "fontStyle": "label-2",
-      "minWidth": 76,
-      "height": 56,
-      "gap": "{tokens.spacing.xs.value}",
-      "paddingV": "{tokens.spacing.xs.value}",
-      "paddingH": "{tokens.spacing.sm.value}",
-      "borderRadius": "{tokens.roundness.xs.value}",
-      "iconSize": "{components.icon.default.xxs.size.value}"
-    },
-    "md": {
-      "fontStyle": "label-3",
-      "minWidth": 76,
-      "height": 44,
-      "gap": "{tokens.spacing.xs.value}",
-      "paddingV": "{tokens.spacing.xs.value}",
-      "paddingH": "{tokens.spacing.sm.value}",
-      "borderRadius": "{tokens.roundness.xs.value}",
-      "iconSize": "{components.icon.default.xxs.size.value}"
+    "default": {
+      "lg": {
+        "fontStyle": {
+          "value": "label-2"
+        },
+        "minWidth": {
+          "value": 76
+        },
+        "height": {
+          "value": 56
+        },
+        "gap": {
+          "value": "{tokens.spacing.xs.value}"
+        },
+        "paddingV": {
+          "value": "{tokens.spacing.xs.value}"
+        },
+        "paddingH": {
+          "value": "{tokens.spacing.sm.value}"
+        },
+        "borderRadius": {
+          "value": "{tokens.roundness.xs.value}"
+        },
+        "iconSize": {
+          "value": "{components.icon.default.xxs.size.value}"
+        }
+      },
+      "md": {
+        "fontStyle": {
+          "value": "label-3"
+        },
+        "minWidth": {
+          "value": 76
+        },
+        "height": {
+          "value": 44
+        },
+        "gap": {
+          "value": "{tokens.spacing.xs.value}"
+        },
+        "paddingV": {
+          "value": "{tokens.spacing.xs.value}"
+        },
+        "paddingH": {
+          "value": "{tokens.spacing.sm.value}"
+        },
+        "borderRadius": {
+          "value": "{tokens.roundness.xs.value}"
+        },
+        "iconSize": {
+          "value": "{components.icon.default.xxs.size.value}"
+        }
+      }
     }
   },
   "options": {

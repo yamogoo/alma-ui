@@ -168,7 +168,7 @@ export interface Props extends Partial<UIElementUnionProps<Variant>> {
       $border-radius: get($val, "border-radius.value");
       $padding: get($val, "padding.value");
 
-      &.button_variant-#{$variant} {
+      &_variant-#{$variant} {
         &.button_size-#{$size} {
           gap: $gap;
           height: $button-size;

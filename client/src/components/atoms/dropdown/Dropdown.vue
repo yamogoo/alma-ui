@@ -6,11 +6,12 @@ import tokens from "@/tokens";
 
 import { useClickOutside } from "@/composables/local";
 
-import type { UIElementColor } from "@/typings";
+import type { UIElementColor, UIElementUnionProps } from "@/typings";
 
 import Icon from "@/components/atoms/icons/Icon.vue";
 
 const props = withDefaults(defineProps<Props>(), {
+  variant: "default",
   size: "md",
   color: "primary",
   isResetButtonShown: false,
@@ -92,9 +93,9 @@ const onOptionClick = (): void => {
 <script lang="ts">
 export type Color = Extract<UIElementColor, "primary" | "secondary">;
 
-export type Size = keyof typeof tokens.dropDown;
+export type Size = keyof typeof tokens.dropDown.default;
 
-export interface Props {
+export interface Props extends Partial<UIElementUnionProps> {
   size?: Size;
   color?: Color;
   value: string;
@@ -111,11 +112,12 @@ export interface Props {
     role="menu"
     data-testid="dropdown"
     :class="[
-      `dropdown_${isExpanded ? 'expanded' : 'normal'}`,
       {
-        [`dropdown_${color}`]: !!color,
+        [`dropdown_${variant}`]: !!variant,
         [`dropdown_${size}`]: !!size,
+        [`dropdown_${color}`]: !!color,
       },
+      `dropdown_${isExpanded ? 'expanded' : 'normal'}`,
     ]"
     :aria-expanded="isExpanded"
   >
@@ -155,49 +157,53 @@ export interface Props {
 @use "sass:map";
 
 @mixin defineSizes($map: proto.$drop-down) {
-  @each $size, $val in $map {
-    $font-style: map.get($val, "font-style");
-    $gap: px2rem(map.get($val, "gap"));
-    $min-width: px2rem(map.get($val, "min-width"));
-    $height: px2rem(map.get($val, "height"));
-    $padding-v: px2rem(map.get($val, "padding-v"));
-    $padding-h: px2rem(map.get($val, "padding-h"));
-    $border-radius: px2rem(map.get($val, "border-radius"));
+  @each $variant, $sizes in $map {
+    @each $size, $val in $sizes {
+      $font-style: get($val, "font-style.value");
+      $gap: px2rem(get($val, "gap.value"));
+      $min-width: px2rem(get($val, "min-width.value"));
+      $height: px2rem(get($val, "height.value"));
+      $padding-v: px2rem(get($val, "padding-v.value"));
+      $padding-h: px2rem(get($val, "padding-h.value"));
+      $border-radius: px2rem(get($val, "border-radius.value"));
 
-    $icon-size: px2rem(map.get($val, "icon-size"));
+      $icon-size: px2rem(get($val, "icon-size.value"));
 
-    &_#{$size} {
-      min-width: $min-width;
+      &_variant-#{$variant} {
+        &.dropdown_size-#{$size} {
+          min-width: $min-width;
 
-      &.dropdown_normal {
-        .dropdown__value {
-          border-radius: $border-radius;
+          &.dropdown_normal {
+            .dropdown__value {
+              border-radius: $border-radius;
+            }
+          }
+
+          &.dropdown_expanded {
+            .dropdown__value {
+              border-radius: $border-radius $border-radius 0 0;
+            }
+          }
+
+          .dropdown__value {
+            height: $height;
+            gap: $gap;
+            padding: $padding-v $padding-h;
+
+            &-label {
+              @extend %t__#{$font-style};
+            }
+
+            &-icon {
+              @include box($icon-size);
+            }
+          }
+
+          .dropdown__options {
+            padding: $padding-v $padding-h;
+            border-radius: 0 0 $border-radius $border-radius;
+          }
         }
-      }
-
-      &.dropdown_expanded {
-        .dropdown__value {
-          border-radius: $border-radius $border-radius 0 0;
-        }
-      }
-
-      .dropdown__value {
-        height: $height;
-        gap: $gap;
-        padding: $padding-v $padding-h;
-
-        &-label {
-          @extend %t__#{$font-style};
-        }
-
-        &-icon {
-          @include box($icon-size);
-        }
-      }
-
-      .dropdown__options {
-        padding: $padding-v $padding-h;
-        border-radius: 0 0 $border-radius $border-radius;
       }
     }
   }
@@ -347,7 +353,7 @@ export interface Props {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: px2rem(map.get($spacing, "xs"));
+    gap: px2rem(get($spacing, "xs.value"));
     width: 100%;
     overflow: hidden;
   }
@@ -356,14 +362,14 @@ export interface Props {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: px2rem(map.get($spacing, "xs"));
+    gap: px2rem(get($spacing, "xs.value"));
   }
 
   &__controlbar {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding-bottom: px2rem(map.get($spacing, "xs"));
+    padding-bottom: px2rem(get($spacing, "xs.value"));
   }
 
   &__options {
