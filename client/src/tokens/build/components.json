@@ -520,13 +520,23 @@
     }
   },
   "progressbar": {
-    "lg": {
-      "height": 10,
-      "borderRadius": 5
-    },
-    "md": {
-      "height": 8,
-      "borderRadius": 4
+    "default": {
+      "lg": {
+        "height": {
+          "value": 10
+        },
+        "borderRadius": {
+          "value": 5
+        }
+      },
+      "md": {
+        "height": {
+          "value": 8
+        },
+        "borderRadius": {
+          "value": 4
+        }
+      }
     }
   },
   "sheet": {
@@ -606,15 +616,23 @@
     }
   },
   "mainContainer": {
-    "respond": {
-      "mobile": {
-        "padding": "8px"
+    "default": {
+      "roundness": {
+        "value": "16px"
       },
-      "desktop": {
-        "padding": "8px"
+      "media": {
+        "lg": {
+          "padding": {
+            "value": "8px"
+          }
+        },
+        "md": {
+          "padding": {
+            "value": "8px"
+          }
+        }
       }
-    },
-    "roundness": "16px"
+    }
   },
   "carouselStack": {
     "lg": {
@@ -635,19 +653,41 @@
     }
   },
   "pagination": {
-    "lg": {
-      "size": 16,
-      "widthActive": 24,
-      "gap": "16px",
-      "padding": "8px",
-      "borderRadius": 8
-    },
-    "md": {
-      "size": 10,
-      "widthActive": 24,
-      "gap": "12px",
-      "padding": "8px",
-      "borderRadius": 5
+    "default": {
+      "lg": {
+        "size": {
+          "value": 16
+        },
+        "widthActive": {
+          "value": 24
+        },
+        "gap": {
+          "value": "16px"
+        },
+        "padding": {
+          "value": "8px"
+        },
+        "borderRadius": {
+          "value": 8
+        }
+      },
+      "md": {
+        "size": {
+          "value": 10
+        },
+        "widthActive": {
+          "value": 24
+        },
+        "gap": {
+          "value": "12px"
+        },
+        "padding": {
+          "value": "8px"
+        },
+        "borderRadius": {
+          "value": 5
+        }
+      }
     }
   },
   "stepPaginationTabs": {
@@ -671,23 +711,41 @@
     }
   },
   "message": {
-    "lg": {
-      "fontStyle": "label-3",
-      "gap": "24px",
-      "padding": [
-        "32px",
-        "48px"
-      ],
-      "borderRadius": "9999px"
-    },
-    "md": {
-      "fontStyle": "label-3",
-      "gap": "24px",
-      "padding": [
-        "24px",
-        "48px"
-      ],
-      "borderRadius": "9999px"
+    "default": {
+      "lg": {
+        "fontStyle": {
+          "value": "label-3"
+        },
+        "gap": {
+          "value": "24px"
+        },
+        "padding": {
+          "value": [
+            "32px",
+            "48px"
+          ]
+        },
+        "borderRadius": {
+          "value": "9999px"
+        }
+      },
+      "md": {
+        "fontStyle": {
+          "value": "label-3"
+        },
+        "gap": {
+          "value": "24px"
+        },
+        "padding": {
+          "value": [
+            "24px",
+            "48px"
+          ]
+        },
+        "borderRadius": {
+          "value": "9999px"
+        }
+      }
     }
   },
   "resizer": {
