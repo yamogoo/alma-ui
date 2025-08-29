@@ -222,16 +222,28 @@
   },
   "group": {
     "lg": {
-      "gap": "24px",
-      "divider": "1px"
+      "gap": {
+        "value": "24px"
+      },
+      "divider": {
+        "value": "1px"
+      }
     },
     "md": {
-      "gap": "16px",
-      "divider": "1px"
+      "gap": {
+        "value": "16px"
+      },
+      "divider": {
+        "value": "1px"
+      }
     },
     "sm": {
-      "gap": "12px",
-      "divider": "1px"
+      "gap": {
+        "value": "12px"
+      },
+      "divider": {
+        "value": "1px"
+      }
     }
   },
   "form": {
@@ -318,16 +330,20 @@
   },
   "carouselStack": {
     "lg": {
-      "header-padding": [
-        "24px",
-        "24px"
-      ]
+      "header-padding": {
+        "value": [
+          "24px",
+          "24px"
+        ]
+      }
     },
     "md": {
-      "header-padding": [
-        "16px",
-        "16px"
-      ]
+      "header-padding": {
+        "value": [
+          "16px",
+          "16px"
+        ]
+      }
     }
   },
   "pagination": {

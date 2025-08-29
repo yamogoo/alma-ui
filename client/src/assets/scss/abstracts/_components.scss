@@ -7,7 +7,7 @@ $input:(md: (value: (font-style: label-3), placeholder: (font-style: label-3), e
 $button:(default: (lg: (font-style: label-1, size: 56px, icon-size: 20px, icon-size-literal: sm, gap: 12px, padding: 0px 32px, border-radius: 9999px), md: (font-style: label-2, size: 44px, icon-size: 16px, icon-size-literal: xs, gap: 12px, padding: 0px 24px, border-radius: 9999px), sm: (font-style: label-3, size: 40px, icon-size: 16px, icon-size-literal: xs, gap: 12px, padding: 0px 16px, border-radius: 9999px), xs: (font-style: label-3, size: 36px, icon-size: 12px, icon-size-literal: xs, gap: 12px, padding: 0px 12px, border-radius: 9999px)), rounded: (lg: (font-style: label-1, size: 56px, icon-size: 20px, icon-size-literal: sm, gap: 12px, padding: 0px 0px, border-radius: 9999px), md: (font-style: label-3, size: 44px, icon-size: 16px, icon-size-literal: xs, gap: 12px, padding: 0px 0px, border-radius: 9999px), sm: (font-style: label-4, size: 32px, icon-size: 16px, icon-size-literal: xs, gap: 12px, padding: 0px 24px, border-radius: 9999px), xs: (font-style: label-4, size: 24px, icon-size: 12px, icon-size-literal: xxs, gap: 12px, padding: 0px 24px, border-radius: 9999px)));
 $drop-down:(lg: (font-style: label-2, min-width: 76px, height: 56px, gap: 8px, padding-v: 8px, padding-h: 12px, border-radius: 8px, icon-size: 12px), md: (font-style: label-3, min-width: 76px, height: 44px, gap: 8px, padding-v: 8px, padding-h: 12px, border-radius: 8px, icon-size: 12px));
 $options:(lg: (option-font-style: label-2, option-min-height: 24px), md: (option-font-style: label-3, option-min-height: 24px));
-$group:(lg: (gap: 24px, divider: 1px), md: (gap: 16px, divider: 1px), sm: (gap: 12px, divider: 1px));
+$group:(lg: (gap: (value: 24px), divider: (value: 1px)), md: (gap: (value: 16px), divider: (value: 1px)), sm: (gap: (value: 12px), divider: (value: 1px)));
 $form:(md: (padding-v: 16px, padding-h: 24px, border-radius: 16px));
 $form-wrapper:(md: (padding-v: 16px, padding-h: 24px, border-radius: 16px, border-width: 1px, header-padding-v: 12px, header-padding-h: 0px));
 $progressbar:(lg: (height: 10px, border-radius: 5px), md: (height: 8px, border-radius: 4px));
@@ -15,7 +15,7 @@ $sheet:(lg: (gap: 32px, button-offset: 24px, padding: 48px 24px 24px 24px), md: 
 $action-sheet:(lg: (min-height: 32px, border-radius: 16px, padding: 48px 24px 24px 24px), md: (min-height: 32px, border-radius: 12px, padding: 24px 24px));
 $scrollbar:(width: 3px, border-radius: 1px);
 $main-container:(respond: (mobile: (padding: 8px), desktop: (padding: 8px)), roundness: 16px);
-$carousel-stack:(lg: (header-padding: 24px 24px), md: (header-padding: 16px 16px));
+$carousel-stack:(lg: (header-padding: (value: 24px 24px)), md: (header-padding: (value: 16px 16px)));
 $pagination:(lg: (size: 16px, width-active: 24px, gap: 16px, padding: 8px, border-radius: 8px), md: (size: 10px, width-active: 24px, gap: 12px, padding: 8px, border-radius: 5px));
 $step-pagination-tabs:(lg: (font-style: title-3, padding: 8px), md: (font-style: title-4, padding: 8px));
 $page-header:(md: (font-style: title-4), lg: (font-style: title-3));

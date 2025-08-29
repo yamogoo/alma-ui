@@ -70,8 +70,8 @@ export interface Props {
 
 @mixin defineSize($map: $group) {
   @each $size, $val in $map {
-    $gap: px2rem(map.get($val, "gap"));
-    $border-width: px2rem(map.get($val, "divider"));
+    $gap: px2rem(get($val, "gap.value"));
+    $border-width: px2rem(get($val, "divider.value"));
 
     &_size-#{$size} {
       gap: $gap;
@@ -232,7 +232,7 @@ export interface Props {
 
   @each $size, $val in $group {
     &_size-#{$size} {
-      gap: map.get($val, "gap");
+      gap: get($val, "gap.value");
     }
   }
 }

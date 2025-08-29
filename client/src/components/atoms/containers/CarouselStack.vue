@@ -342,7 +342,7 @@ export interface Props {
 
 @mixin defineSize($map: $carousel-stack) {
   @each $size, $val in $map {
-    $header-padding: map.get($val, "header-padding");
+    $header-padding: get($val, "header-padding.value");
 
     &_size-#{$size} {
       .carousel-stack__header {
