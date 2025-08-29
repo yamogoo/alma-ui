@@ -530,43 +530,71 @@
     }
   },
   "sheet": {
-    "lg": {
-      "gap": "32px",
-      "buttonOffset": "24px",
-      "padding": [
-        "48px",
-        "24px",
-        "24px",
-        "24px"
-      ]
-    },
-    "md": {
-      "gap": "16px",
-      "buttonOffset": "24px",
-      "padding": [
-        "24px",
-        "24px"
-      ]
+    "default": {
+      "lg": {
+        "gap": {
+          "value": "32px"
+        },
+        "buttonOffset": {
+          "value": "24px"
+        },
+        "padding": {
+          "value": [
+            "48px",
+            "24px",
+            "24px",
+            "24px"
+          ]
+        }
+      },
+      "md": {
+        "gap": {
+          "value": "16px"
+        },
+        "buttonOffset": {
+          "value": "24px"
+        },
+        "padding": {
+          "value": [
+            "24px",
+            "24px"
+          ]
+        }
+      }
     }
   },
   "actionSheet": {
-    "lg": {
-      "min-height": 32,
-      "borderRadius": "16px",
-      "padding": [
-        "48px",
-        "24px",
-        "24px",
-        "24px"
-      ]
-    },
-    "md": {
-      "min-height": 32,
-      "borderRadius": "12px",
-      "padding": [
-        "24px",
-        "24px"
-      ]
+    "default": {
+      "lg": {
+        "min-height": {
+          "value": 32
+        },
+        "borderRadius": {
+          "value": "16px"
+        },
+        "padding": {
+          "value": [
+            "48px",
+            "24px",
+            "24px",
+            "24px"
+          ]
+        }
+      },
+      "md": {
+        "min-height": {
+          "value": 32
+        },
+        "borderRadius": {
+          "value": "12px"
+        },
+        "padding": {
+          "value": [
+            "24px",
+            "24px"
+          ]
+        }
+      }
     }
   },
   "scrollbar": {

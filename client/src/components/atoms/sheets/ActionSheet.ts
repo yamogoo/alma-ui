@@ -1,10 +1,10 @@
 import tokens from "@/tokens";
 
-import type { UIElementColor, OverlayId } from "@/typings";
+import type { UIElementColor, OverlayId, UIElementUnionProps } from "@/typings";
 
 export const sizes = Object.keys(tokens.actionSheet);
 
-export type Size = keyof typeof tokens.actionSheet;
+export type Size = keyof typeof tokens.actionSheet.default;
 
 export const colors = [
   "primary",
@@ -15,7 +15,7 @@ export const colors = [
 
 export type Color = Extract<(typeof colors)[number], UIElementColor>;
 
-export interface Props {
+export interface Props extends Partial<UIElementUnionProps> {
   containerId?: OverlayId;
   color?: Color;
   size?: Size;

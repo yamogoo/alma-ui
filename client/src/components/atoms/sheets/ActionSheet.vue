@@ -7,6 +7,7 @@ import { OVERLAY_IDS } from "@/constants";
 import type { Props } from "./ActionSheet";
 
 const props = withDefaults(defineProps<Props>(), {
+  variant: "default",
   containerId: OVERLAY_IDS.MAIN,
   size: "md",
 });
@@ -58,6 +59,7 @@ watch(
       ref="refRoot"
       class="action-sheet"
       :class="[
+        `action-sheet_variant-${variant}`,
         `action-sheet_size-${size}`,
         { [`action-sheet_color-${color}`]: !!color },
       ]"
@@ -68,16 +70,18 @@ watch(
 </template>
 
 <style lang="scss">
-@use "sass:map";
-
 @mixin defineSizes($map: $action-sheet) {
-  @each $size, $val in $map {
-    $min-height: px2rem(map.get($val, "min-height"));
-    $border-radius: px2rem(map.get($val, "border-radius"));
+  @each $variant, $sizes in $map {
+    @each $size, $val in $sizes {
+      $min-height: px2rem(get($val, "min-height.value"));
+      $border-radius: px2rem(get($val, "border-radius.value"));
 
-    &_size-#{$size} {
-      min-height: $min-height;
-      border-radius: $border-radius $border-radius 0 0;
+      &_variant-#{$variant} {
+        &.action-sheet_size-#{$size} {
+          min-height: $min-height;
+          border-radius: $border-radius $border-radius 0 0;
+        }
+      }
     }
   }
 }

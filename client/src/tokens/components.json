@@ -494,37 +494,65 @@
     }
   },
   "sheet": {
-    "lg": {
-      "gap": "{tokens.spacing.xl.value}",
-      "buttonOffset": "{tokens.spacing.lg.value}",
-      "padding": [
-        "{tokens.spacing.xxl.value}",
-        "{tokens.spacing.lg.value}",
-        "{tokens.spacing.lg.value}",
-        "{tokens.spacing.lg.value}"
-      ]
-    },
-    "md": {
-      "gap": "{tokens.spacing.md.value}",
-      "buttonOffset": "{tokens.spacing.lg.value}",
-      "padding": ["{tokens.spacing.lg.value}", "{tokens.spacing.lg.value}"]
+    "default": {
+      "lg": {
+        "gap": {
+          "value": "{tokens.spacing.xl.value}"
+        },
+        "buttonOffset": {
+          "value": "{tokens.spacing.lg.value}"
+        },
+        "padding": {
+          "value": [
+            "{tokens.spacing.xxl.value}",
+            "{tokens.spacing.lg.value}",
+            "{tokens.spacing.lg.value}",
+            "{tokens.spacing.lg.value}"
+          ]
+        }
+      },
+      "md": {
+        "gap": {
+          "value": "{tokens.spacing.md.value}"
+        },
+        "buttonOffset": {
+          "value": "{tokens.spacing.lg.value}"
+        },
+        "padding": {
+          "value": ["{tokens.spacing.lg.value}", "{tokens.spacing.lg.value}"]
+        }
+      }
     }
   },
   "actionSheet": {
-    "lg": {
-      "min-height": 32,
-      "borderRadius": "{tokens.roundness.md.value}",
-      "padding": [
-        "{tokens.spacing.xxl.value}",
-        "{tokens.spacing.lg.value}",
-        "{tokens.spacing.lg.value}",
-        "{tokens.spacing.lg.value}"
-      ]
-    },
-    "md": {
-      "min-height": 32,
-      "borderRadius": "{tokens.roundness.sm.value}",
-      "padding": ["{tokens.spacing.lg.value}", "{tokens.spacing.lg.value}"]
+    "default": {
+      "lg": {
+        "min-height": {
+          "value": 32
+        },
+        "borderRadius": {
+          "value": "{tokens.roundness.md.value}"
+        },
+        "padding": {
+          "value": [
+            "{tokens.spacing.xxl.value}",
+            "{tokens.spacing.lg.value}",
+            "{tokens.spacing.lg.value}",
+            "{tokens.spacing.lg.value}"
+          ]
+        }
+      },
+      "md": {
+        "min-height": {
+          "value": 32
+        },
+        "borderRadius": {
+          "value": "{tokens.roundness.sm.value}"
+        },
+        "padding": {
+          "value": ["{tokens.spacing.lg.value}", "{tokens.spacing.lg.value}"]
+        }
+      }
     }
   },
   "scrollbar": {
