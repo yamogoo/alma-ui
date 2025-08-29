@@ -41,49 +41,83 @@
     }
   },
   "input": {
-    "md": {
-      "value": {
-        "fontStyle": "label-3"
+    "default": {
+      "md": {
+        "value": {
+          "fontStyle": {
+            "value": "label-3"
+          }
+        },
+        "placeholder": {
+          "fontStyle": {
+            "value": "label-3"
+          }
+        },
+        "error": {
+          "fontStyle": {
+            "value": "caption-1"
+          },
+          "padding": {
+            "value": [
+              0,
+              "16px"
+            ]
+          }
+        },
+        "height": {
+          "value": 44
+        },
+        "wholeHeight": {
+          "value": 60
+        },
+        "padding": {
+          "value": [
+            "8px",
+            "16px"
+          ]
+        },
+        "borderRadius": {
+          "value": "8px"
+        }
       },
-      "placeholder": {
-        "fontStyle": "label-3"
-      },
-      "error": {
-        "fontStyle": "caption-1",
-        "padding": [
-          0,
-          "16px"
-        ]
-      },
-      "height": 44,
-      "wholeHeight": 60,
-      "padding": [
-        "8px",
-        "16px"
-      ],
-      "borderRadius": "8px"
-    },
-    "lg": {
-      "value": {
-        "fontStyle": "label-3"
-      },
-      "placeholder": {
-        "fontStyle": "label-3"
-      },
-      "error": {
-        "fontStyle": "caption-1",
-        "padding": [
-          0,
-          "16px"
-        ]
-      },
-      "height": 52,
-      "wholeHeight": 68,
-      "padding": [
-        "8px",
-        "16px"
-      ],
-      "borderRadius": "8px"
+      "lg": {
+        "value": {
+          "fontStyle": {
+            "value": "label-3"
+          }
+        },
+        "placeholder": {
+          "fontStyle": {
+            "value": "label-3"
+          }
+        },
+        "error": {
+          "fontStyle": {
+            "value": "caption-1"
+          },
+          "padding": {
+            "value": [
+              0,
+              "16px"
+            ]
+          }
+        },
+        "height": {
+          "value": 52
+        },
+        "wholeHeight": {
+          "value": 68
+        },
+        "padding": {
+          "value": [
+            "8px",
+            "16px"
+          ]
+        },
+        "borderRadius": {
+          "value": "8px"
+        }
+      }
     }
   },
   "button": {

@@ -41,37 +41,71 @@
     }
   },
   "input": {
-    "md": {
-      "value": {
-        "fontStyle": "label-3"
+    "default": {
+      "md": {
+        "value": {
+          "fontStyle": {
+            "value": "label-3"
+          }
+        },
+        "placeholder": {
+          "fontStyle": {
+            "value": "label-3"
+          }
+        },
+        "error": {
+          "fontStyle": {
+            "value": "caption-1"
+          },
+          "padding": {
+            "value": [0, "{tokens.spacing.md}"]
+          }
+        },
+        "height": {
+          "value": 44
+        },
+        "wholeHeight": {
+          "value": 60
+        },
+        "padding": {
+          "value": ["{tokens.spacing.xs}", "{tokens.spacing.md}"]
+        },
+        "borderRadius": {
+          "value": "{tokens.spacing.xs}"
+        }
       },
-      "placeholder": {
-        "fontStyle": "label-3"
-      },
-      "error": {
-        "fontStyle": "caption-1",
-        "padding": [0, "{tokens.spacing.md}"]
-      },
-      "height": 44,
-      "wholeHeight": 60,
-      "padding": ["{tokens.spacing.xs}", "{tokens.spacing.md}"],
-      "borderRadius": "{tokens.spacing.xs}"
-    },
-    "lg": {
-      "value": {
-        "fontStyle": "label-3"
-      },
-      "placeholder": {
-        "fontStyle": "label-3"
-      },
-      "error": {
-        "fontStyle": "caption-1",
-        "padding": [0, "{tokens.spacing.md}"]
-      },
-      "height": 52,
-      "wholeHeight": 68,
-      "padding": ["{tokens.spacing.xs}", "{tokens.spacing.md}"],
-      "borderRadius": "{tokens.spacing.xs}"
+      "lg": {
+        "value": {
+          "fontStyle": {
+            "value": "label-3"
+          }
+        },
+        "placeholder": {
+          "fontStyle": {
+            "value": "label-3"
+          }
+        },
+        "error": {
+          "fontStyle": {
+            "value": "caption-1"
+          },
+          "padding": {
+            "value": [0, "{tokens.spacing.md}"]
+          }
+        },
+        "height": {
+          "value": 52
+        },
+        "wholeHeight": {
+          "value": 68
+        },
+        "padding": {
+          "value": ["{tokens.spacing.xs}", "{tokens.spacing.md}"]
+        },
+        "borderRadius": {
+          "value": "{tokens.spacing.xs}"
+        }
+      }
     }
   },
   "button": {

@@ -57,3 +57,7 @@ export type UIElementTypographyTag =
   | UIElementTypographyTitleTag
   | UIElementTypographyParagraphTag
   | UIElementTypographyLinkTag;
+
+export interface UIElementUnionProps<V = UIElementVariant> {
+  variant?: V;
+}

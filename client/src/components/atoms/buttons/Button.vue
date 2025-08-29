@@ -7,8 +7,8 @@ import tokens from "@/tokens";
 import { useHover } from "@/composables/local";
 
 const props = withDefaults(defineProps<Props>(), {
-  as: "button",
   variant: "default",
+  as: "button",
   size: "md",
   color: "primary",
   contentDirection: "ltr",
@@ -67,7 +67,11 @@ watch(localIsPressed, (isPressed) => {
 </script>
 
 <script lang="ts">
-import type { UIElementDirection, UIElementStretch } from "@/typings";
+import type {
+  UIElementDirection,
+  UIElementStretch,
+  UIElementUnionProps,
+} from "@/typings";
 
 import type {
   IconName,
@@ -77,15 +81,14 @@ import type {
 } from "@/components/atoms/icons/icons";
 import Icon from "@/components/atoms/icons/Icon.vue";
 
-import type { Variant, Size, Color } from "./button";
+import type { Size, Color, Variant } from "./button";
 
 export type Stretch = UIElementStretch;
 
 export type ContentDirection = UIElementDirection;
 
-export interface Props {
+export interface Props extends Partial<UIElementUnionProps<Variant>> {
   as?: keyof HTMLElementTagNameMap;
-  variant?: Variant;
   size: Size;
   color: Color;
   label?: string;
@@ -112,13 +115,13 @@ export interface Props {
     data-testid="button"
     :class="[
       {
-        [`button_direction-${contentDirection}`]: !!contentDirection,
+        [`button_variant-${variant}`]: !!variant,
+        [`button_size-${String(size)}`]: !!size,
         [`button_color-${color}`]: !!color,
+        [`button_direction-${contentDirection}`]: !!contentDirection,
+        [`button_stretch-${stretch}`]: !!stretch,
         [`button_hovered`]: isHovered,
         [`button_disabled`]: isDisabled,
-        [`button_size-${String(size)}`]: !!size,
-        [`button_variant-${variant}`]: !!variant,
-        [`button_stretch-${stretch}`]: !!stretch,
         button_pressed: localIsPressed,
       },
     ]"

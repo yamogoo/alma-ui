@@ -17,9 +17,10 @@ import type { Props } from "./input";
 
 import ControlButton from "@/components/atoms/buttons/ControlButton.vue";
 import Text from "@/components/atoms/typography/Text.vue";
-import AnimatedWrapper from "../containers/AnimatedWrapper.vue";
+import AnimatedWrapper from "@/components/atoms/containers/AnimatedWrapper.vue";
 
 const props = withDefaults(defineProps<Props>(), {
+  variant: "default",
   color: "primary",
   size: "lg",
   type: "text",
@@ -198,12 +199,13 @@ onMounted(() => {
     class="input"
     data-testid="input"
     :class="[
+      `input_variant-${variant}`,
       `input_color-${color}`,
       {
+        [`input_size-${String(size)}`]: size,
         [`input_error`]: isError,
         [`input_disabled`]: isDisabled,
         [`input_focused`]: isLocalFocused,
-        [`input_size-${String(size)}`]: size,
       },
     ]"
   >
@@ -263,42 +265,41 @@ onMounted(() => {
 @use "sass:map";
 
 @mixin defineInputSizes($map: $input) {
-  @each $size, $val in $map {
-    $value-font-style: map.get(map.get($val, "value"), "font-style");
-    $placeholder-font-style: map.get(
-      map.get($val, "placeholder"),
-      "font-style"
-    );
-    $error-font-style: map.get(map.get($val, "error"), "font-style");
+  @each $variant, $sizes in $map {
+    @each $size, $val in $sizes {
+      $value-font-style: get($val, "value.font-style.value");
+      $placeholder-font-style: get($val, "placeholder.font-style.value");
+      $error-font-style: get($val, "error.font-style.value");
 
-    $height: map.get($val, "height");
-    $whole-height: map.get($val, "whole-height");
-    $padding: map.get($val, "padding");
-    $error-padding: map.get(map.get($val, "error"), "padding");
-    $border-radius: map.get($val, "border-radius");
+      $height: get($val, "height.value");
+      $whole-height: get($val, "whole-height.value");
+      $padding: get($val, "padding.value");
+      $error-padding: get($val, "error.padding.value");
+      $border-radius: get($val, "border-radius.value");
 
-    &_size-#{$size} {
-      /* height: $whole-height; */
+      &_variant-#{$variant} {
+        &.input_size-#{$size} {
+          .input__field {
+            height: $height;
+            padding: $padding;
+            border-radius: $border-radius;
+          }
 
-      .input__field {
-        height: $height;
-        padding: $padding;
-        border-radius: $border-radius;
-      }
+          .input__field-value {
+            @extend %t__#{$value-font-style};
+          }
 
-      .input__field-value {
-        @extend %t__#{$value-font-style};
-      }
+          .input__field-placeholder {
+            @extend %t__#{$placeholder-font-style};
+          }
 
-      .input__field-placeholder {
-        @extend %t__#{$placeholder-font-style};
-      }
+          .input__error {
+            padding: $error-padding;
 
-      .input__error {
-        padding: $error-padding;
-
-        &-message {
-          @extend %t__#{$error-font-style};
+            &-message {
+              @extend %t__#{$error-font-style};
+            }
+          }
         }
       }
     }
@@ -396,7 +397,7 @@ onMounted(() => {
     &-content {
       display: flex;
       align-items: center;
-      gap: px2rem(map.get($gap, "xs"));
+      gap: px2rem(get($gap, "xs"));
       height: 100%;
 
       &-icon {
@@ -411,7 +412,7 @@ onMounted(() => {
       line-clamp: 1;
       flex: 1 0 0;
       @include box(100%);
-      padding-top: px2rem(map.get($spacing, "sm"));
+      padding-top: px2rem(get($spacing, "sm"));
       outline: none;
       border: none;
       background: none;

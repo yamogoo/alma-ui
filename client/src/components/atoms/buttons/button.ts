@@ -15,7 +15,7 @@ export type Variant = keyof typeof tokens.button;
 
 export const variants = Object.keys(tokens.button) as Array<Variant>;
 
-export type Size = keyof typeof tokens.button.rounded;
+export type Size = keyof typeof tokens.button.default;
 
 export type Color = Extract<(typeof colors)[number], UIElementColor>;
 

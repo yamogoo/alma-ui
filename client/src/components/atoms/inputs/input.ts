@@ -1,10 +1,10 @@
 import type { InputTypeHTMLAttribute } from "vue";
 
-import type { UIElementColor } from "@/typings";
+import type { UIElementColor, UIElementUnionProps } from "@/typings";
 
 import tokens from "@/tokens";
 
-export const inputSizes = Object.keys(tokens.input);
+export const inputSizes = Object.keys(tokens.input.default);
 export type InputSize = (typeof inputSizes)[number];
 
 export type InputColor = Extract<UIElementColor, "primary" | "secondary">;
@@ -12,7 +12,7 @@ export const inputColors: Array<InputColor> = ["primary", "secondary"];
 
 export type InputState = "focused";
 
-export interface Props {
+export interface Props extends Partial<UIElementUnionProps> {
   value: string;
   placeholder?: string;
   color?: InputColor;
