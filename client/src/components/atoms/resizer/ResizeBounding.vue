@@ -1,29 +1,42 @@
 <script setup lang="ts">
-import Resizer, { globalClassNames, type Props } from "vue3-resize-bounding";
+import Resizer, {
+  globalClassNames,
+  type Props as ResizeBoundingProps,
+} from "vue3-resize-bounding";
 
 import tokens from "@/tokens";
 
-const knobWidth = tokens.resizer["knobWidth"];
-const knobHeight = tokens.resizer["knobHeight"];
-const knobRoundness = tokens.resizer["knobRoundness"];
-const activeAreaWidth = tokens.resizer["activeAreaWidth"];
+import type { UIElementUnionProps } from "@/typings";
 
-const PREFIX = "resizer__";
+interface Props extends ResizeBoundingProps, UIElementUnionProps {}
 
-const props = defineProps<Props>();
+const PREFIX = "resizer",
+  PREFIX_WITH_DIVIDER = `${PREFIX}__`;
+
+const props = withDefaults(defineProps<Props>(), {
+  variant: "default",
+});
 
 const emits = defineEmits<{
   (e: "update:width", width: number): void;
   (e: "update:height", height: number): void;
 }>();
+
+const variant = props.variant;
+
+const knobWidth = tokens.resizer[variant]["knobWidth"].value;
+const knobHeight = tokens.resizer[variant]["knobHeight"].value;
+const knobRoundness = tokens.resizer[variant]["knobRoundness"].value;
+const activeAreaWidth = tokens.resizer[variant]["activeAreaWidth"].value;
 </script>
 
 <template>
   <Resizer
     v-bind="props"
     data-testid="resizer"
+    :class="`${PREFIX}_variant-${variant}`"
     :options="{
-      prefix: PREFIX,
+      prefix: PREFIX_WITH_DIVIDER,
       width: 4,
       splitterWidthNormal: 4,
       splitterWidthActive: 4,
@@ -36,7 +49,7 @@ const emits = defineEmits<{
     }"
     :styles="{
       knob: [
-        globalClassNames(PREFIX).knob,
+        globalClassNames(PREFIX_WITH_DIVIDER).knob,
         {
           width: knobWidth,
           height: knobHeight,

@@ -1,8 +1,8 @@
 @use "sass:map";
 @use "sass:math";
 
-@use "./app.abstracts.scss" as *;
 @use "./app.core.scss" as *;
+@use "./app.abstracts.scss" as *;
 
 /* width */
 ::-webkit-scrollbar {

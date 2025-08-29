@@ -691,9 +691,19 @@
     }
   },
   "resizer": {
-    "activeAreaWidth": 20,
-    "knobWidth": 76,
-    "knobHeight": 6,
-    "knobRoundness": 3
+    "default": {
+      "activeAreaWidth": {
+        "value": 20
+      },
+      "knobWidth": {
+        "value": 76
+      },
+      "knobHeight": {
+        "value": 6
+      },
+      "knobRoundness": {
+        "value": 3
+      }
+    }
   }
 }
