@@ -92,28 +92,23 @@ export const generateColorsFromFile = (opts: ColorsGeneratorOptions): void => {
 
   const resultMap: Record<string, string> = {};
 
-  const traverse = (
-    obj: Record<string, any>,
-    pathSegments: string[] = []
-  ): void => {
+  const traverse = (obj: Record<string, any>, parentName?: string): void => {
     for (const [key, value] of Object.entries(obj)) {
-      const currentPath = [...pathSegments, key];
-      if (typeof value === "string") {
+      if (key === "value" && typeof value === "string") {
         const colorDef: MainColor = {
-          id: currentPath.join("-"),
-          name: key,
+          id: parentName || key,
+          name: parentName || key,
           value,
           step,
-          prefix: currentPath.slice(0, -1).join("-"),
+          prefix: "",
           separator: "-",
         };
-
         const generated = generateDerivativeColors(colorDef);
         for (const c of generated) {
           resultMap[c.fullName] = c.value;
         }
       } else if (typeof value === "object" && value !== null) {
-        traverse(value, currentPath);
+        traverse(value, key);
       }
     }
   };

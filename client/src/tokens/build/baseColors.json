@@ -1,15 +1,54 @@
 {
-  "gray": "#353F47",
-  "black": "#000000",
-  "white": "#FFFFFF",
-  "red": "#E23939",
-  "orange": "#FFC968",
-  "yellow": "#f2ea00",
-  "darkGreen": "#16a131",
-  "green": "#03d31d",
-  "blue": "#1A4FFE",
-  "darkBlue": "#1A4FFE",
-  "accent": "#0FC558",
-  "cream": "#FFC68E",
-  "caramel": "#8d4709"
+  "gray": {
+    "value": "#353F47",
+    "description": "base color"
+  },
+  "black": {
+    "value": "#000000",
+    "description": "base color"
+  },
+  "white": {
+    "value": "#FFFFFF",
+    "description": "base color"
+  },
+  "red": {
+    "value": "#E23939",
+    "description": "additional color"
+  },
+  "orange": {
+    "value": "#FFC968",
+    "description": "additional color"
+  },
+  "yellow": {
+    "value": "#f2ea00",
+    "description": "additional color"
+  },
+  "darkGreen": {
+    "value": "#16a131",
+    "description": "additional color"
+  },
+  "green": {
+    "value": "#03d31d",
+    "description": "additional color"
+  },
+  "blue": {
+    "value": "#1A4FFE",
+    "description": "additional color"
+  },
+  "darkBlue": {
+    "value": "#1A4FFE",
+    "description": "additional color"
+  },
+  "accent": {
+    "value": "#0FC558",
+    "description": "accent color"
+  },
+  "cream": {
+    "value": "#FFC68E",
+    "description": "additional color"
+  },
+  "caramel": {
+    "value": "#8d4709",
+    "description": "additional color"
+  }
 }
