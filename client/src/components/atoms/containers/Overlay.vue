@@ -25,7 +25,7 @@ export interface Props {
   @each $name in $names {
     &_color-#{$name} {
       @include themify($themes) {
-        background-color: themed("overlay.background-#{$name}");
+        background-color: themed("overlay.#{$name}.background.value");
       }
     }
   }
@@ -37,6 +37,6 @@ export interface Props {
   z-index: 1000;
   pointer-events: none;
 
-  @include defineTheme(primary primary-inversed);
+  @include defineTheme(map.keys(get($themes, "light.overlay")));
 }
 </style>

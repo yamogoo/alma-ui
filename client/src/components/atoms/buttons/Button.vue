@@ -37,7 +37,8 @@ const localIsPressed = ref(false);
 
 const computedButtonSize: ComputedRef<IconSize> = computed(
   () =>
-    tokens.button[props.variant][props.size].iconSizeLiteral.value as IconSize
+    tokens.button[props.variant][props.size].elements.icon.alias.size
+      .value as IconSize
 );
 
 const onDown = (e: PointerEvent): void => {
@@ -161,12 +162,13 @@ export interface Props extends Partial<UIElementUnionProps<Variant>> {
 @mixin defineButtonSizes($map: $button) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $button-size: px2rem(get($val, "size.value"));
-      $font-style: get($val, "font-style.value");
-      $icon-size: px2rem(get($val, "icon-size.value"));
-      $gap: px2rem(get($val, "gap.value"));
-      $border-radius: get($val, "border-radius.value");
-      $padding: get($val, "padding.value");
+      $button-size: px2rem(get($val, "self.size.value"));
+      $gap: px2rem(get($val, "self.gap.value"));
+      $border-radius: get($val, "self.border-radius.value");
+      $padding: get($val, "self.padding.value");
+
+      $font-style: get($val, "elements.label.font-style.value");
+      $icon-size: px2rem(get($val, "elements.icon.size.value"));
 
       &_variant-#{$variant} {
         &.button_size-#{$size} {
@@ -198,54 +200,54 @@ export interface Props extends Partial<UIElementUnionProps<Variant>> {
   @each $name in $names {
     &_color-#{$name} {
       @include themify($themes) {
-        color: themed("button.label-#{$name}-normal");
-        fill: themed("button.label-#{$name}-normal");
-        background-color: themed("button.background-#{$name}-normal");
+        color: themed("button.#{$name}.label.normal.value");
+        fill: themed("button.#{$name}.label.normal.value");
+        background-color: themed("button.#{$name}.background.normal.value");
       }
       @extend %base-transition;
 
       &:focus {
         @include themify($themes) {
           outline: get($outline, "value") solid
-            themed("button.border-#{$name}-outline");
+            themed("button.#{$name}.border.outline.value");
         }
       }
 
       &.button_hovered {
         @include themify($themes) {
-          background-color: themed("button.background-#{$name}-hovered");
+          background-color: themed("button.#{$name}.background.hovered.value");
         }
 
         .button__label {
           @include themify($themes) {
-            color: themed("button.label-#{$name}-hovered");
-            fill: themed("button.label-#{$name}-hovered");
+            color: themed("button.#{$name}.label.hovered.value");
+            fill: themed("button.#{$name}.label.hovered.value");
           }
         }
       }
 
       &.button_pressed {
         @include themify($themes) {
-          background-color: themed("button.background-#{$name}-pressed");
+          background-color: themed("button.#{$name}.background.pressed.value");
         }
 
         .button__label {
           @include themify($themes) {
-            color: themed("button.label-#{$name}-pressed");
-            fill: themed("button.label-#{$name}-pressed");
+            color: themed("button.#{$name}.label.pressed.value");
+            fill: themed("button.#{$name}.label.pressed.value");
           }
         }
       }
 
       &.button_disabled {
         @include themify($themes) {
-          background-color: themed("button.background-#{$name}-disabled");
+          background-color: themed("button.#{$name}.background.disabled.value");
         }
 
         .button__label {
           @include themify($themes) {
-            color: themed("button.label-#{$name}-disabled");
-            fill: themed("button.label-#{$name}-disabled");
+            color: themed("button.#{$name}.label.disabled.value");
+            fill: themed("button.#{$name}.label.disabled.value");
           }
         }
       }
@@ -264,9 +266,7 @@ export interface Props extends Partial<UIElementUnionProps<Variant>> {
   @extend %base-transition;
 
   @include defineButtonSizes();
-  @include defineThemes(
-    primary primary-inversed secondary accent error "transparent"
-  );
+  @include defineThemes(get-theme-keys(get($themes, "light.button")));
 
   &__label {
     @extend %base-transition;

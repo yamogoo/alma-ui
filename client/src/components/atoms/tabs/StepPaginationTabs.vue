@@ -3,7 +3,7 @@ import { computed } from "vue";
 
 import tokens from "@/tokens";
 
-import type { UIElementColor, UIElementUnionProps } from "@/typings";
+import type { UIElementUnionProps } from "@/typings";
 
 import Text, { type Variant } from "@/components/atoms/typography/Text.vue";
 
@@ -47,7 +47,7 @@ const itemPosition = (_item: StepItem, idx: number) => {
 };
 
 const textVariant = computed(() => {
-  return tokens.stepPaginationTabs.default[props.size].fontStyle
+  return tokens.stepPaginationTabs.default[props.size].elements.item.fontStyle
     .value as Variant;
 });
 
@@ -61,7 +61,7 @@ const onItemClick = (item: StepItem): void => {
 <script lang="ts">
 export type Size = keyof typeof tokens.stepPaginationTabs.default;
 
-export type Color = Extract<UIElementColor, "primary">;
+export type Color = keyof typeof tokens.themes.light.stepPaginationTabs;
 
 export interface StepItem {
   id: number;
@@ -113,7 +113,7 @@ export interface Props extends Partial<UIElementUnionProps> {
     @each $size, $val in $sizes {
       &_variant-#{$variant} {
         &.step-pagination_size-#{$size} {
-          $font-style: get($val, "font-style.value");
+          $font-style: get($val, "elements.item.font-style.value");
 
           .step-pagination__item {
             @extend %t__#{$font-style};
@@ -129,12 +129,16 @@ export interface Props extends Partial<UIElementUnionProps> {
     &_color-#{$name} {
       .step-pagination__item {
         @include themify($themes) {
-          color: themed("step-pagination-tabs.label-#{$name}-normal");
+          color: themed(
+            "step-pagination-tabs.#{$name}.elements.item.label.normal.value"
+          );
         }
 
         &_active {
           @include themify($themes) {
-            color: themed("step-pagination-tabs.label-#{$name}-active");
+            color: themed(
+              "step-pagination-tabs.#{$name}.elements.item.label.active.value"
+            );
           }
         }
       }
@@ -149,7 +153,7 @@ export interface Props extends Partial<UIElementUnionProps> {
   width: 100%;
 
   @include defineSizes();
-  @include defineThemes(primary);
+  @include defineThemes(map.keys(get($themes, "light.step-pagination-tabs")));
 
   &__track {
     position: relative;

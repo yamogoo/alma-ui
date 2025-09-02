@@ -1,0 +1,9 @@
+@use "sass:list";
+
+@function map-keys-to-strings($keys) {
+  $result: ();
+  @each $key in $keys {
+    $result: list.append($result, "#{$key}");
+  }
+  @return $result;
+}

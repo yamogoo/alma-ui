@@ -1,54 +1,119 @@
 {
   "gray": {
     "value": "#353F47",
-    "description": "base color"
+    "type": "color",
+    "format": "hex",
+    "meta": {
+      "description": "base color",
+      "category": "base color"
+    }
   },
   "black": {
     "value": "#000000",
-    "description": "base color"
+    "type": "color",
+    "format": "hex",
+    "meta": {
+      "description": "base color",
+      "category": "base color"
+    }
   },
   "white": {
     "value": "#FFFFFF",
-    "description": "base color"
+    "type": "color",
+    "format": "hex",
+    "meta": {
+      "description": "base color",
+      "category": "base color"
+    }
   },
   "red": {
     "value": "#E23939",
-    "description": "additional color"
+    "type": "color",
+    "format": "hex",
+    "meta": {
+      "description": "additional color",
+      "category": "base color"
+    }
   },
   "orange": {
     "value": "#FFC968",
-    "description": "additional color"
+    "type": "color",
+    "format": "hex",
+    "meta": {
+      "description": "additional color",
+      "category": "base color"
+    }
   },
   "yellow": {
     "value": "#f2ea00",
-    "description": "additional color"
+    "type": "color",
+    "format": "hex",
+    "meta": {
+      "description": "additional color",
+      "category": "base color"
+    }
   },
   "darkGreen": {
     "value": "#16a131",
-    "description": "additional color"
+    "type": "color",
+    "format": "hex",
+    "meta": {
+      "description": "additional color",
+      "category": "base color"
+    }
   },
   "green": {
     "value": "#03d31d",
-    "description": "additional color"
+    "type": "color",
+    "format": "hex",
+    "meta": {
+      "description": "additional color",
+      "category": "base color"
+    }
   },
   "blue": {
     "value": "#1A4FFE",
-    "description": "additional color"
+    "type": "color",
+    "format": "hex",
+    "meta": {
+      "description": "additional color",
+      "category": "base color"
+    }
   },
   "darkBlue": {
     "value": "#1A4FFE",
-    "description": "additional color"
+    "type": "color",
+    "format": "hex",
+    "meta": {
+      "description": "additional color",
+      "category": "base color"
+    }
   },
   "accent": {
     "value": "#0FC558",
-    "description": "accent color"
+    "type": "color",
+    "format": "hex",
+    "meta": {
+      "description": "accent color",
+      "category": "base color"
+    }
   },
   "cream": {
     "value": "#FFC68E",
-    "description": "additional color"
+    "type": "color",
+    "format": "hex",
+    "meta": {
+      "description": "additional color",
+      "category": "base color"
+    }
   },
   "caramel": {
     "value": "#8d4709",
-    "description": "additional color"
+    "type": "color",
+    "format": "hex",
+    "meta": {
+      "description": "additional color",
+      "category": "base color"
+    }
   }
 }

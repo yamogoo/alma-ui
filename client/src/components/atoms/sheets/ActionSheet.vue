@@ -70,11 +70,13 @@ watch(
 </template>
 
 <style lang="scss">
+@use "sass:map";
+
 @mixin defineSizes($map: $action-sheet) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $min-height: px2rem(get($val, "min-height.value"));
-      $border-radius: px2rem(get($val, "border-radius.value"));
+      $min-height: px2rem(get($val, "self.min-height.value"));
+      $border-radius: px2rem(get($val, "self.border-radius.value"));
 
       &_variant-#{$variant} {
         &.action-sheet_size-#{$size} {
@@ -90,8 +92,11 @@ watch(
   @each $name in $names {
     &_color-#{$name} {
       @include themify($themes) {
-        background-color: themed("action-sheet.background-#{$name}-normal");
-        box-shadow: 0 -2px 12px themed("action-sheet.shadow-#{$name}-normal");
+        background-color: themed(
+          "action-sheet.#{$name}.background.normal.value"
+        );
+        box-shadow: 0 -2px 12px
+          themed("action-sheet.#{$name}.shadow.normal.value");
       }
     }
   }
@@ -106,6 +111,6 @@ watch(
   overflow: auto;
 
   @include defineSizes();
-  @include defineTheme(primary secondary "transparent" accent);
+  @include defineTheme(map.keys(get($themes, "light.action-sheet")));
 }
 </style>

@@ -49,7 +49,7 @@ onMounted(() => {
   overflow: hidden;
 
   @include themify($themes) {
-    background-color: themed("background.primary");
+    background-color: themed("background.primary.value");
   }
 }
 </style>

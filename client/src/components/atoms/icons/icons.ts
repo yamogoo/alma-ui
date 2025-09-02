@@ -1,7 +1,5 @@
 import tokens from "@/tokens";
 
-import type { UIElementColor } from "@/typings";
-
 export const iconNames = [
   "cross",
   "back",
@@ -24,17 +22,9 @@ export const iconWeigths = ["100", "200", "300", "400", "500"];
 
 export type IconWeight = (typeof iconWeigths)[number];
 
-export const iconColors: Array<UIElementColor> = [
-  "primary",
-  "primary-inversed",
-  "secondary",
-  "secondary-inversed",
-  "disabled",
-  "accent",
-  "accent",
-];
+export const iconColors = Object.keys(tokens.themes.light.label);
 
-export type IconColor = (typeof iconColors)[number];
+export type IconColor = keyof typeof tokens.themes.light.label;
 
 export const iconSizes = Object.keys(tokens.icon.default) as Array<
   keyof typeof tokens.icon.default

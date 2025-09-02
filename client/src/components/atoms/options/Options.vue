@@ -1,8 +1,6 @@
 <script setup lang="ts" generic="T">
 import tokens from "@/tokens";
 
-import type { UIElementColor } from "@/typings";
-
 const props = withDefaults(defineProps<Props<T>>(), {
   isCurrentOptionShown: false,
 });
@@ -27,7 +25,7 @@ const showCurrentOption = (key: T) => {
 <script lang="ts">
 export type Size = keyof typeof tokens.options.default;
 
-export type Color = Extract<UIElementColor, "primary" | "secondary">;
+export type Color = keyof typeof tokens.themes.dark.options;
 
 export type Items<T> = Array<T>;
 
@@ -67,11 +65,11 @@ export interface Props<T> {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSize($map: proto.$options) {
+@mixin defineSize($map: $options) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $option-font-style: get($val, "option-font-style.value");
-      $option-min-height: px2rem(get($val, "option-min-height.value"));
+      $option-font-style: get($val, "elements.option.font-style.value");
+      $option-min-height: px2rem(get($val, "elements.option.min-height.value"));
 
       &_variant-#{$variant} {
         &.options_size-#{$size} {
@@ -90,12 +88,12 @@ export interface Props<T> {
     &_color-#{$name} {
       .options__option {
         @include themify($themes) {
-          color: themed("options.label-#{$name}-normal");
+          color: themed("options.#{$name}.label.normal");
         }
 
         &:hover {
           @include themify($themes) {
-            color: themed("options.label-#{$name}-hovered");
+            color: themed("options.#{$name}.label.hovered");
           }
         }
       }
@@ -108,7 +106,7 @@ export interface Props<T> {
   padding: 0;
 
   @include defineSize();
-  @include defineThemes(primary secondary);
+  @include defineThemes(map.keys(get($themes, "light.options")));
 
   &__option {
     list-style: none;

@@ -47,9 +47,9 @@ export interface Props {
     :is="componentTag"
     class="group"
     :class="[
+      `group_variant-${variant}`,
       `group_size-${size}`,
       `group_color-${color}`,
-      `group_variant-${variant}`,
       {
         [`group_direction-${direction}`]: !!direction,
         [`group_orientation-${orientation}`]: !!orientation,
@@ -75,8 +75,8 @@ export interface Props {
 @mixin defineSize($map: $group) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $gap: px2rem(get($val, "gap.value"));
-      $border-width: px2rem(get($val, "divider.value"));
+      $gap: px2rem(get($val, "self.gap.value"));
+      $divider-border-width: px2rem(get($val, "self.border-width.value"));
 
       &_variant-#{$variant} {
         &.group_size-#{$size} {
@@ -84,12 +84,12 @@ export interface Props {
 
           &.group_divider {
             &.group_orientation-horizontal {
-              border-right-width: $border-width;
+              border-right-width: $divider-border-width;
               padding-right: $gap;
             }
 
             &.group_orientation-vertical {
-              border-bottom-width: $border-width;
+              border-bottom-width: $divider-border-width;
               padding-bottom: $gap;
             }
           }
@@ -105,13 +105,13 @@ export interface Props {
       &.group_divider {
         &.group_orientation-horizontal {
           @include themify($themes) {
-            border-right-color: themed("group.divider-#{$name}");
+            border-right-color: themed("group.#{$name}.self.divider.value");
           }
         }
 
         &.group_orientation-vertical {
           @include themify($themes) {
-            border-bottom-color: themed("group.divider-#{$name}");
+            border-bottom-color: themed("group.#{$name}.self.divider.value");
           }
         }
       }
@@ -124,7 +124,7 @@ export interface Props {
   @extend %base-transition;
 
   @include defineSize();
-  @include defineThemes(primary secondary);
+  @include defineThemes(map.keys(get($themes, "light.group")));
 
   &_orientation {
     &-horizontal {
@@ -242,7 +242,7 @@ export interface Props {
     @each $size, $val in $sizes {
       &_variant-#{$variant} {
         &.group_size-#{$size} {
-          gap: get($val, "gap.value");
+          gap: px2rem(get($val, "self.gap.value"));
         }
       }
     }

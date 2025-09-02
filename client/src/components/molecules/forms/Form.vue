@@ -3,7 +3,7 @@ import { useId } from "vue";
 
 import tokens from "@/tokens";
 
-import type { UIElementColor, UIElementUnionProps } from "@/typings";
+import type { UIElementUnionProps } from "@/typings";
 
 import Text from "@/components/atoms/typography/Text.vue";
 
@@ -18,7 +18,7 @@ const id = useId();
 <script lang="ts">
 export type Size = keyof typeof tokens.form.default;
 
-export type Color = Extract<UIElementColor, "primary" | "secondary">;
+export type Color = keyof typeof tokens.themes.light.form;
 
 export interface Props extends UIElementUnionProps {
   title?: string;
@@ -63,16 +63,12 @@ export interface Props extends UIElementUnionProps {
 @mixin defineSizes($map: $form) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $border-radius: get($val, "border-radius.value");
-      $padding: get($val, "padding-v.value") get($val, "padding-h.value");
+      $border-radius: get($val, "self.border-radius.value");
+      $padding: get($val, "self.padding.value");
 
       &_#{$size} {
         padding: $padding;
         border-radius: $border-radius;
-
-        @include themify($themes) {
-          box-shadow: 0px 4px 32px themed("form.shadow");
-        }
       }
     }
   }
@@ -82,7 +78,10 @@ export interface Props extends UIElementUnionProps {
   @each $name in $names {
     &_#{$name} {
       @include themify($themes) {
-        background-color: themed("form.background-#{$name}");
+        background-color: themed("form.#{$name}.background.value");
+        @include themify($themes) {
+          box-shadow: 0px 4px 32px themed("form.#{$name}.shadow.value");
+        }
       }
     }
   }
@@ -93,7 +92,7 @@ export interface Props extends UIElementUnionProps {
   @extend %base-transition;
 
   @include defineSizes();
-  @include defineThemes(primary secondary);
+  @include defineThemes(map.keys(get($themes, "light.form")));
 
   &__container {
     @include transition(height, 250ms, ease-in-out);

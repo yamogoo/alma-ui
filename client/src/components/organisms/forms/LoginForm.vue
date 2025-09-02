@@ -135,7 +135,7 @@ export interface Props {
         </ActionButton>
         <Divider :orientation="'horizontal'" :size="'md'"></Divider>
         <ActionButton
-          :color="'transparent'"
+          :color="'transparental'"
           :size="'md'"
           :stretch="'fill'"
           :label="$t.auth.login.form.skip"

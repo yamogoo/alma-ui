@@ -73,7 +73,7 @@ export const Primary: Story = {
 export const PrimaryInversed: Story = {
   args: {
     size: "md",
-    color: "primary-inversed",
+    color: "primaryInversed",
     label: "Button",
   },
 };

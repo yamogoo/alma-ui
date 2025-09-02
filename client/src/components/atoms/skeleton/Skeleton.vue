@@ -2,6 +2,12 @@
 import { onMounted, ref } from "vue";
 import g from "gsap";
 
+import tokens from "@/tokens";
+
+withDefaults(defineProps<Props>(), {
+  color: "default",
+});
+
 const refShape = ref<HTMLDivElement | null>(null);
 
 onMounted(() => {
@@ -25,6 +31,14 @@ const onAnimate = (el: Element): void => {
 };
 </script>
 
+<script lang="ts">
+export type Color = keyof typeof tokens.themes.light.skeleton;
+
+export interface Props {
+  color?: Color;
+}
+</script>
+
 <template>
   <div class="skeleton">
     <div ref="refShape" class="skeleton__shape"></div>
@@ -32,6 +46,22 @@ const onAnimate = (el: Element): void => {
 </template>
 
 <style lang="scss">
+@use "sass:map";
+
+@mixin defineTheme($names) {
+  @each $name in $names {
+    &_variant-#{$name} {
+      &.skeleton__shape {
+        @include themify($themes) {
+          $color-in: themed("skeleton.#{$name}.color-in.value");
+          $color-out: themed("skeleton.#{$name}.color-out.value");
+          background: linear-gradient(90deg, $color-out, $color-in, $color-out);
+        }
+      }
+    }
+  }
+}
+
 .skeleton {
   position: relative;
   border-radius: px2rem(get($roundness, "xs.value"));
@@ -39,15 +69,12 @@ const onAnimate = (el: Element): void => {
   z-index: 1;
   cursor: wait;
 
+  @include defineTheme(map.keys(get($themes, "light.skeleton")));
+
   &__shape {
     position: absolute;
     inset: 0;
     z-index: 0;
-    @include themify($themes) {
-      $color-in: rgba(themed("skeleton.color-in"), 0.25);
-      $color-out: rgba(themed("skeleton.color-out"), 0);
-      background: linear-gradient(90deg, $color-out, $color-in, $color-out);
-    }
     @extend %base-transition;
   }
 }

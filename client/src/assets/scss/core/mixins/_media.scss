@@ -1,9 +1,10 @@
 @use "sass:map";
+@use "./map-get" as *;
 @use "../../abstracts/breakpoints" as *;
 
 @mixin respond-above($breakpoint, $container-name: default) {
   @if map.has-key($breakpoints, $breakpoint) {
-    $breakpoint-value: map.get($breakpoints, $breakpoint);
+    $breakpoint-value: get($breakpoints, "#{$breakpoint}.value");
 
     @if $container-name == default {
       @media (min-width: $breakpoint-value) {
@@ -23,7 +24,7 @@
 
 @mixin respond-below($breakpoint, $container-name: default) {
   @if map.has-key($breakpoints, $breakpoint) {
-    $breakpoint-value: map.get($breakpoints, $breakpoint);
+    $breakpoint-value: get($breakpoints, "#{$breakpoint}.value");
 
     @if $container-name == default {
       @media (max-width: ($breakpoint-value - 1)) {
@@ -43,8 +44,8 @@
 
 @mixin respond-between($lower, $upper, $container-name: default) {
   @if map.has-key($breakpoints, $lower) and map.has-key($breakpoints, $upper) {
-    $lower-breakpoint: map.get($breakpoints, $lower);
-    $upper-breakpoint: map.get($breakpoints, $upper);
+    $lower-breakpoint: get($breakpoints, "#{$lower}.value");
+    $upper-breakpoint: get($breakpoints, "#{$upper}.value");
 
     @if $container-name == default {
       @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {

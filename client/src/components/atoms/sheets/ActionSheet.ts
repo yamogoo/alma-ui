@@ -1,19 +1,14 @@
 import tokens from "@/tokens";
 
-import type { UIElementColor, OverlayId, UIElementUnionProps } from "@/typings";
+import type { OverlayId, UIElementUnionProps } from "@/typings";
 
 export const sizes = Object.keys(tokens.actionSheet);
 
 export type Size = keyof typeof tokens.actionSheet.default;
 
-export const colors = [
-  "primary",
-  "secondary",
-  "accent",
-  "transparent",
-] as const;
+export const colors = Object.keys(tokens.themes.light.actionSheet);
 
-export type Color = Extract<(typeof colors)[number], UIElementColor>;
+export type Color = keyof typeof tokens.themes.light.actionSheet;
 
 export interface Props extends Partial<UIElementUnionProps> {
   containerId?: OverlayId;

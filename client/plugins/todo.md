@@ -1,0 +1,30 @@
+- обработка цветовых правил (rgba, lighten, darken)
+- конвертация значений переменных scss в соответствии с правилами ключа unit
+- разработать полноценный ColorsGenerator (AlmaColors)
+- разработать TokensEditor (AlmaDS UI + AlmaColors)
+- добавить модуль AlmaIcons
+- вынести ядро AlmaDS (src/core) и отделить проект (src/project)
+- добавить модульность в токены (сборка/парсинг)
+- добавить генерацию токенов в проекте (src/project)
+- добавить миксины проекта
+- расширить набор базовых компонентов (src/core/components/atoms):
+  - расширить возможности анимации AnimatedWrapper/Page
+  - ColorPicker
+  - расширить Input
+  - доделать StepPaginationTabs
+  - Tabs
+  - Card
+  - Tooltip (плавающий)
+  - Switch
+  - Checkbox
+  - List/ListItem
+  - доделать Sheet/ActionSheet
+  - Overlay
+  - Message
+- расширить набор базовых молекул (src/core/components/moleculas)
+  - BrowseTabs (draggble)
+  - SearchInput (Based on Input)
+  - FileNavigatorMenu
+  - Panels
+    - TextEditorPanel
+  - Keyboard

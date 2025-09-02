@@ -58,16 +58,16 @@ export interface Props extends Partial<UIElementUnionProps> {
 @mixin defineSize($map: $form-wrapper) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $padding-h: px2rem(get($val, "padding-h.value"));
-      $padding-v: px2rem(get($val, "padding-v.value"));
-      $header-padding-h: px2rem(get($val, "header.padding-h.value"));
-      $header-padding-v: px2rem(get($val, "header.padding-v.value"));
-      $border-radius: px2rem(get($val, "border-radius.value"));
-      $border-width: px2rem(get($val, "border-width.value"));
+      $padding: get($val, "self.padding.value");
+
+      $border-radius: px2rem(get($val, "self.border-radius.value"));
+      $border-width: px2rem(get($val, "self.border-width.value"));
+
+      $header-padding: get($val, "elements.header.padding.value");
 
       &_variant-#{$variant} {
         &.form-wrapper_size-#{$size} {
-          padding: $padding-v $padding-h;
+          padding: $padding;
           border-radius: $border-radius;
 
           &.form-wrapper_bordered {
@@ -76,7 +76,7 @@ export interface Props extends Partial<UIElementUnionProps> {
           }
 
           .form-wrapper__header {
-            padding: $header-padding-v $header-padding-h;
+            padding: $header-padding;
           }
         }
       }
@@ -88,8 +88,8 @@ export interface Props extends Partial<UIElementUnionProps> {
   @each $name in $names {
     &_color-#{$name} {
       @include themify($themes) {
-        background-color: themed("form-wrapper.background-#{$name}");
-        border-color: themed("form-wrapper.border-#{$name}");
+        background-color: themed("form-wrapper.#{$name}.background.value");
+        border-color: themed("form-wrapper.#{$name}.border.value");
       }
     }
   }
@@ -99,6 +99,6 @@ export interface Props extends Partial<UIElementUnionProps> {
   overflow: hidden;
 
   @include defineSize();
-  @include defineThemes(primary secondary);
+  @include defineThemes(map.keys(get($themes, "light.form-wrapper")));
 }
 </style>

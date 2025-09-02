@@ -1,9 +1,66 @@
 {
   "breakpoints": {
-    "xs": 240,
-    "sm": 480,
-    "md": 820,
-    "lg": 1280,
-    "xl": 1440
+    "xs": {
+      "value": 240,
+      "unit": "px",
+      "type": "breakpoint",
+      "meta": {
+        "description": "Extra small screens, phones",
+        "category": "breakpoints",
+        "tags": [
+          "mobile",
+          "small"
+        ]
+      }
+    },
+    "sm": {
+      "value": 480,
+      "unit": "px",
+      "type": "breakpoint",
+      "meta": {
+        "description": "Small screens, phones",
+        "category": "breakpoints",
+        "tags": [
+          "mobile"
+        ]
+      }
+    },
+    "md": {
+      "value": 820,
+      "unit": "px",
+      "type": "breakpoint",
+      "meta": {
+        "description": "Medium screens, tablets",
+        "category": "breakpoints",
+        "tags": [
+          "tablet"
+        ]
+      }
+    },
+    "lg": {
+      "value": 1280,
+      "unit": "px",
+      "type": "breakpoint",
+      "meta": {
+        "description": "Large screens, desktops",
+        "category": "breakpoints",
+        "tags": [
+          "desktop"
+        ]
+      }
+    },
+    "xl": {
+      "value": 1440,
+      "unit": "px",
+      "type": "breakpoint",
+      "meta": {
+        "description": "Extra large screens, wide desktops",
+        "category": "breakpoints",
+        "tags": [
+          "desktop",
+          "wide"
+        ]
+      }
+    }
   }
 }

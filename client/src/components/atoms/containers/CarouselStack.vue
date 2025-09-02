@@ -346,7 +346,7 @@ export interface Props extends Partial<UIElementUnionProps> {
 @mixin defineSize($map: $carousel-stack) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $header-padding: get($val, "header.padding.value");
+      $header-padding: get($val, "elements.header.padding.value");
 
       &_variant-#{$variant} {
         &.carousel-stack_size-#{$size} {
@@ -429,7 +429,6 @@ export interface Props extends Partial<UIElementUnionProps> {
     align-items: center;
     justify-content: center;
     @include box(100%);
-    /* overflow: hidden; */
   }
 }
 </style>

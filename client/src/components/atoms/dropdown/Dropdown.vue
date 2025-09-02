@@ -159,13 +159,20 @@ export interface Props extends Partial<UIElementUnionProps> {
 @mixin defineSizes($map: proto.$drop-down) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $font-style: get($val, "font-style.value");
-      $gap: px2rem(get($val, "gap.value"));
-      $min-width: px2rem(get($val, "min-width.value"));
-      $height: px2rem(get($val, "height.value"));
-      $padding-v: px2rem(get($val, "padding-v.value"));
-      $padding-h: px2rem(get($val, "padding-h.value"));
-      $border-radius: px2rem(get($val, "border-radius.value"));
+      $min-width: px2rem(get($val, "self.min-width.value"));
+      $height: px2rem(get($val, "self.height.value"));
+
+      $font-style: get($val, "elements.value.label.font-style.value");
+      $gap: px2rem(get($val, "elements.value.gap.value"));
+      $value-padding: px2rem(get($val, "elements.value.padding.value"));
+      $value-border-radius: px2rem(
+        get($val, "elements.value.border-radius.value")
+      );
+
+      $options-border-radius: px2rem(
+        get($val, "elements.options.border-radius.value")
+      );
+      $options-padding: px2rem(get($val, "elements.options.padding.value"));
 
       $icon-size: px2rem(get($val, "icon-size.value"));
 
@@ -175,20 +182,20 @@ export interface Props extends Partial<UIElementUnionProps> {
 
           &.dropdown_normal {
             .dropdown__value {
-              border-radius: $border-radius;
+              border-radius: $value-border-radius;
             }
           }
 
           &.dropdown_expanded {
             .dropdown__value {
-              border-radius: $border-radius $border-radius 0 0;
+              border-radius: $value-border-radius $value-border-radius 0 0;
             }
           }
 
           .dropdown__value {
             height: $height;
             gap: $gap;
-            padding: $padding-v $padding-h;
+            padding: $value-padding;
 
             &-label {
               @extend %t__#{$font-style};
@@ -200,8 +207,8 @@ export interface Props extends Partial<UIElementUnionProps> {
           }
 
           .dropdown__options {
-            padding: $padding-v $padding-h;
-            border-radius: 0 0 $border-radius $border-radius;
+            padding: $options-padding;
+            border-radius: 0 0 $options-border-radius $options-border-radius;
           }
         }
       }
@@ -216,38 +223,38 @@ export interface Props extends Partial<UIElementUnionProps> {
         .dropdown__value {
           @include themify($themes) {
             background-color: themed(
-              "drop-down.value-background-#{$name}-normal"
+              "drop-down.#{$name}.value.background.normal.value"
             );
           }
 
           &-label {
             @include themify($themes) {
-              color: themed("drop-down.value-label-#{$name}-normal");
+              color: themed("drop-down.#{$name}.value.label.normal.value");
             }
           }
 
           &-icon {
             @include themify($themes) {
-              fill: themed("drop-down.value-icon-#{$name}-normal");
+              fill: themed("drop-down.#{$name}.value.icon.normal.value");
             }
           }
 
           &:hover {
             @include themify($themes) {
               background-color: themed(
-                "drop-down.value-background-#{$name}-hovered"
+                "drop-down.#{$name}.value.background.hovered"
               );
             }
 
             &-label {
               @include themify($themes) {
-                color: themed("drop-down.value-label-#{$name}-hovered");
+                color: themed("drop-down.#{$name}.value.label.hovered");
               }
             }
 
             &-icon {
               @include themify($themes) {
-                fill: themed("drop-down.value-icon-#{$name}-hovered");
+                fill: themed("drop-down.#{$name}.value.icon.hovered.value");
               }
             }
           }
@@ -258,40 +265,42 @@ export interface Props extends Partial<UIElementUnionProps> {
         .dropdown__value {
           @include themify($themes) {
             background-color: themed(
-              "drop-down.value-background-#{$name}-expanded"
+              "drop-down.#{$name}.value.background.expanded.value"
             );
           }
 
           &-label {
             @include themify($themes) {
-              color: themed("drop-down.value-label-#{$name}-expanded");
+              color: themed("drop-down.#{$name}.value.label.expanded.value");
             }
           }
 
           &-icon {
             @include themify($themes) {
-              fill: themed("drop-down.value-icon-#{$name}-expanded");
+              fill: themed("drop-down.#{$name}.value.icon.expanded.value");
             }
           }
 
           &:hover {
             @include themify($themes) {
               background-color: themed(
-                "drop-down.value-background-#{$name}-expanded-hovered"
+                "drop-down.#{$name}.value.background.expanded-hovered.value"
               );
             }
 
             &-label {
               @include themify($themes) {
                 color: themed(
-                  "drop-down.value-label-#{$name}-expanded-hovered"
+                  "drop-down.#{$name}.value.label.expanded-hovered.value"
                 );
               }
             }
 
             &-icon {
               @include themify($themes) {
-                fill: themed("drop-down.value-icon-#{$name}-expanded-hovered");
+                fill: themed(
+                  "drop-down.#{$name}.value.icon.expanded-hovered.value"
+                );
               }
             }
           }
@@ -300,14 +309,14 @@ export interface Props extends Partial<UIElementUnionProps> {
         .dropdown__options {
           @include themify($themes) {
             background-color: themed(
-              "drop-down.options-background-#{$name}-normal"
+              "drop-down.#{$name}.options.background.normal.value"
             );
           }
 
           &:hover {
             @include themify($themes) {
               background-color: themed(
-                "drop-down.options-background-#{$name}-hovered"
+                "drop-down.#{$name}.options.background.hovered.value"
               );
             }
           }
@@ -323,7 +332,7 @@ export interface Props extends Partial<UIElementUnionProps> {
   user-select: none;
 
   @include defineSizes();
-  @include defineThemes(primary secondary);
+  @include defineThemes(map.keys(get($themes, "light.dropdown")));
 
   &__value {
     box-sizing: border-box;

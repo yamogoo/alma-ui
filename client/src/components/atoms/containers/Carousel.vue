@@ -11,6 +11,5 @@ interface Props {}
 </template>
 
 <style lang="scss">
-.carousel {
-}
+/* .carousel { } */
 </style>

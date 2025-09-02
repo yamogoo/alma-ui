@@ -3,7 +3,7 @@ import { computed, type ComputedRef, type CSSProperties } from "vue";
 
 import tokens from "@/tokens";
 
-import type { UIElementColor, UIElementTypographyTag } from "@/typings";
+import type { UIElementTypographyTag } from "@/typings";
 
 export type Variant = keyof typeof tokens.typography.styles;
 
@@ -18,10 +18,7 @@ export type Transform =
 
 export type Decoration = "none" | "underline" | "line-through";
 
-export type Color = Extract<
-  UIElementColor,
-  "primary" | "secondary" | "disabled" | "accent" | "warning" | "error" | "info"
->;
+export type Color = keyof typeof tokens.themes.light.label;
 
 export interface Props {
   as?: UIElementTypographyTag;
@@ -118,7 +115,7 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
   @each $name in $names {
     &_color-#{$name} {
       @include themify($themes) {
-        color: themed("label.#{$name}");
+        color: themed("label.#{$name}.value");
       }
     }
   }
@@ -132,12 +129,12 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
   @extend %base-transition;
 
   @include defineVariants();
-  @include defineThemes(primary secondary disabled accent info warning error);
+  @include defineThemes(map.keys(get($themes, "light.label")));
 
   b {
     &.accent {
       @include themify($themes) {
-        color: themed("label.accent");
+        color: themed("label.accent.value");
       }
     }
   }

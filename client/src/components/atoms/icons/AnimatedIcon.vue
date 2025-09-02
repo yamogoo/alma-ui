@@ -2,8 +2,9 @@
 import { ref, toValue, watch } from "vue";
 import { Vue3Lottie as LottieAnimation } from "vue3-lottie";
 
+import type { UIElementUnionProps } from "@/typings";
+
 import type { IconColor, IconSize } from "./icons";
-import type { UIElementUnionProps } from "~/src/typings";
 
 const props = withDefaults(defineProps<Props>(), {
   speed: 1,
@@ -100,8 +101,8 @@ export interface Props extends Partial<UIElementUnionProps> {
       svg {
         path {
           @include themify($themes) {
-            fill: themed("label.#{$name}");
-            stroke: themed("label.#{$name}");
+            fill: themed("label.#{$name}.value");
+            stroke: themed("label.#{$name}.value");
           }
         }
       }
@@ -116,7 +117,7 @@ export interface Props extends Partial<UIElementUnionProps> {
   @extend %base-transition;
 
   @include defineSizes();
-  @include defineThemes(primary primary-inversed secondary disabled accent);
+  @include defineThemes(map.keys(get($themes, "light.label")));
 
   svg {
     @include box(auto, inherit);

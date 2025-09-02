@@ -267,17 +267,20 @@ onMounted(() => {
 @mixin defineInputSizes($map: $input) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $value-font-style: get($val, "value.font-style.value");
-      $placeholder-font-style: get($val, "placeholder.font-style.value");
-      $error-font-style: get($val, "error.font-style.value");
+      $value-font-style: get($val, "elements.value.font-style.value");
+      $placeholder-font-style: get(
+        $val,
+        "elements.placeholder.font-style.value"
+      );
+      $error-font-style: get($val, "elements.error.font-style.value");
 
-      $value-padding-top: px2rem(get($val, "value.padding-top.value"));
+      $value-padding-top: px2rem(get($val, "elements.value.padding-top.value"));
 
-      $height: get($val, "height.value");
-      $whole-height: get($val, "whole-height.value");
-      $padding: get($val, "padding.value");
-      $error-padding: get($val, "error.padding.value");
-      $border-radius: get($val, "border-radius.value");
+      $height: get($val, "self.height.value");
+      $whole-height: get($val, "self.whole-height.value");
+      $padding: get($val, "self.padding.value");
+      $border-radius: get($val, "self.border-radius.value");
+      $error-padding: get($val, "elements.error.padding.value");
 
       &_variant-#{$variant} {
         &.input_size-#{$size} {
@@ -316,7 +319,7 @@ onMounted(() => {
         .input__field {
           @include themify($themes) {
             outline: get($outline, "value") solid
-              themed("input.border-#{$name}-outline");
+              themed("input.#{$name}.border.outline.value");
           }
         }
       }
@@ -324,8 +327,8 @@ onMounted(() => {
       &:not(.input_disabled) {
         .input__field {
           @include themify($themes) {
-            color: themed("input.label-#{$name}-normal");
-            background-color: themed("input.background-#{$name}-normal");
+            color: themed("input.#{$name}.label.normal.value");
+            background-color: themed("input.#{$name}.background.normal.value");
             @extend %base-transition;
           }
         }
@@ -334,8 +337,8 @@ onMounted(() => {
       &.input_focused {
         .input__field {
           @include themify($themes) {
-            color: themed("input.label-#{$name}-focused");
-            background-color: themed("input.background-#{$name}-focused");
+            color: themed("input.#{$name}.label.focused.value");
+            background-color: themed("input.#{$name}.background.focused.value");
             @extend %base-transition;
           }
         }
@@ -344,8 +347,10 @@ onMounted(() => {
       &.input_disabled {
         .input__field {
           @include themify($themes) {
-            color: themed("input.label-#{$name}-disabled");
-            background-color: themed("input.background-#{$name}-disabled");
+            color: themed("input.#{$name}.label.disabled.value");
+            background-color: themed(
+              "input.#{$name}.background.disabled.value"
+            );
             @extend %base-transition;
           }
         }
@@ -354,8 +359,8 @@ onMounted(() => {
       &.input_error {
         .input__field {
           @include themify($themes) {
-            color: themed("input.label-#{$name}-error");
-            background-color: themed("input.background-#{$name}-error");
+            color: themed("input.#{$name}.label.error.value");
+            background-color: themed("input.#{$name}.background.error.value");
             @extend %base-transition;
           }
         }
@@ -370,7 +375,7 @@ onMounted(() => {
       .input__error {
         &-message {
           @include themify($themes) {
-            color: themed("input.label-error-#{$name}");
+            color: themed("input.#{$name}.label.error.value");
             @extend %base-transition;
           }
         }
@@ -384,7 +389,7 @@ onMounted(() => {
   position: relative;
 
   @include defineInputSizes();
-  @include defineThemes(primary secondary);
+  @include defineThemes(map.keys(get($themes, "light.input")));
 
   &__field {
     box-sizing: border-box;
@@ -428,8 +433,8 @@ onMounted(() => {
 
       &::selection {
         @include themify($themes) {
-          color: themed("selection.label") !important;
-          background: themed("selection.background") !important;
+          color: themed("selection.default.label.value") !important;
+          background: themed("selection.default.background.value") !important;
         }
       }
     }

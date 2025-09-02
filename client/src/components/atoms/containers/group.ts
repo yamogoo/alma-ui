@@ -1,12 +1,7 @@
-import type tokens from "@/tokens";
-
-import type { UIElementColor } from "@/typings";
+import tokens from "@/tokens";
 
 export type Size = keyof typeof tokens.group.default;
 
-export const colors: Array<Extract<UIElementColor, "primary" | "secondary">> = [
-  "primary",
-  "secondary",
-];
+export const colors = Object.keys(tokens.themes.light.group);
 
-export type Color = (typeof colors)[number];
+export type Color = keyof typeof tokens.themes.light.group;

@@ -1,0 +1,15 @@
+@function mapTransform($key, $value) {
+  @if type-of($value) == "number" and unit($value) == "" {
+    @return $value * 1px;
+  }
+
+  @if type-of($value) == "number" and unit($value) != "" {
+    @return $value;
+  }
+
+  @if type-of($value) == "string" {
+    @return unquote($value);
+  }
+
+  @return $value;
+}
