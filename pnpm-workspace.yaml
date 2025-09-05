@@ -1,4 +1,8 @@
 packages:
-  - "client/**"
-  - "log-server/**"
-  - "server/**"
+  - "almads-core/**"
+  - "almads-tokens/**"
+  - "almads-tokens-ui/**"
+  - "almads-vue/**"
+  - "apps/sparkpad/client/**"
+  - "apps/sparkpad/log-server/**"
+  - "apps/sparkpad/server/**"
