@@ -1,10 +1,7 @@
 <script setup lang="ts">
-import type { IconName, IconStyle, IconWeight } from "../icons/icons";
+import type { ControlButtonProps } from "./controlButton";
 
-import type { Variant, Size, Color } from "./button";
-import ProtoButton, { type ContentDirection, type Stretch } from "./Button.vue";
-
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<ControlButtonProps>(), {
   variant: "rounded",
   color: "primary",
   size: "md",
@@ -28,28 +25,13 @@ const onPointerDown = (e: PointerEvent): void => {
 };
 </script>
 
-<script lang="ts">
-export interface Props {
-  variant?: Variant;
-  size: Size;
-  color: Color;
-  label?: string;
-  contentDirection?: ContentDirection;
-  iconName?: IconName;
-  iconStyle?: IconStyle;
-  iconWeight?: IconWeight;
-  isDisabled?: boolean;
-  stretch?: Stretch;
-}
-</script>
-
 <template>
-  <ProtoButton
+  <Button
     v-bind="props"
     :prepend-icon-name="iconName"
     :prepend-icon-style="iconStyle"
     :prepend-icon-weight="iconWeight"
     @pointerup="onPointerUp"
     @pointerdown="onPointerDown"
-  ></ProtoButton>
+  ></Button>
 </template>

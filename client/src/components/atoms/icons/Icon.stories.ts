@@ -7,7 +7,7 @@ import {
   iconSizes,
   iconStyles,
   iconWeigths,
-} from "../icons/icons";
+} from "../icons/icon";
 
 const meta = {
   title: "Atoms/icons/Icon",

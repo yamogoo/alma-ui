@@ -4,7 +4,7 @@ import { Vue3Lottie as LottieAnimation } from "vue3-lottie";
 
 import type { UIElementUnionProps } from "@/typings";
 
-import type { IconColor, IconSize } from "./icons";
+import type { IconColor, IconSize } from "./icon";
 
 const props = withDefaults(defineProps<Props>(), {
   speed: 1,

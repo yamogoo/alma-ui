@@ -1,7 +1,7 @@
 import { describe, expect, test, vi } from "vitest";
 import { mount } from "@vue/test-utils";
 
-import type { IconName, IconStyle, IconWeight } from "./icons";
+import type { IconName, IconStyle, IconWeight } from "./icon";
 
 import Icon from "./Icon.vue";
 

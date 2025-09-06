@@ -9,7 +9,7 @@ import type {
   IconWeight,
   IconColor,
   IconSize,
-} from "./icons";
+} from "./icon";
 import Skeleton from "@/components/atoms/skeleton/Skeleton.vue";
 
 const props = withDefaults(defineProps<Props>(), {

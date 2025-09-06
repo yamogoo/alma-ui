@@ -4,7 +4,7 @@ import AnimatedIcon from "./AnimatedIcon.vue";
 
 import spinnerAnimatedIcon from "@/assets/animations/spinner.json";
 
-import { iconSizes, iconColors } from "../icons/icons";
+import { iconSizes, iconColors } from "../icons/icon";
 
 const meta = {
   title: "Atoms/icons/AnimatedIcon",

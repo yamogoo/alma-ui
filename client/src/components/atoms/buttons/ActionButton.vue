@@ -1,14 +1,8 @@
 <script setup lang="ts">
-import type {
-  IconName,
-  IconStyle,
-  IconWeight,
-} from "@/components/atoms/icons/icons";
+import Button from "./Button.vue";
+import type { ActionButtonProps } from "./actionButton";
 
-import type { Variant, Size, Color } from "./button";
-import ProtoButton, { type ContentDirection, type Stretch } from "./Button.vue";
-
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<ActionButtonProps>(), {
   variant: "default",
   color: "primary",
   size: "md",
@@ -32,23 +26,8 @@ const onPointerDown = (e: PointerEvent): void => {
 };
 </script>
 
-<script lang="ts">
-export interface Props {
-  variant?: Variant;
-  size: Size;
-  color: Color;
-  label?: string;
-  contentDirection?: ContentDirection;
-  iconName?: IconName;
-  iconStyle?: IconStyle;
-  iconWeight?: IconWeight;
-  isDisabled?: boolean;
-  stretch?: Stretch;
-}
-</script>
-
 <template>
-  <ProtoButton
+  <Button
     v-bind="props"
     :prepend-icon-name="iconName"
     :prepend-icon-style="iconStyle"
@@ -62,5 +41,5 @@ export interface Props {
     <template #append-icon>
       <slot name="append-icon"></slot>
     </template>
-  </ProtoButton>
+  </Button>
 </template>

@@ -3,19 +3,23 @@ import type { Meta, StoryObj } from "@storybook/vue3-vite";
 import { fn } from "storybook/test";
 
 import ControlButton from "./ControlButton.vue";
-import { colors, sizes } from "./button";
+import { buttonColors, buttonSizes } from "./button";
 
-import { iconNames, iconStyles, iconWeigths } from "../icons/icons";
+import {
+  iconNames,
+  iconStyles,
+  iconWeigths,
+} from "@/components/atoms/icons/icon";
 
 const meta = {
   title: "Atoms/buttons/ControlButton",
   component: ControlButton,
   tags: ["autodocs"],
   argTypes: {
-    size: { control: "select", options: sizes },
+    size: { control: "select", options: buttonSizes },
     color: {
       control: "select",
-      options: colors,
+      options: buttonColors,
     },
     variant: { control: "select", options: ["default", "rounded"] },
     contentDirection: {

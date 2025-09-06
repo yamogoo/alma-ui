@@ -6,7 +6,11 @@ import tokens from "@/tokens";
 
 import { useHover } from "@/composables/local";
 
-const props = withDefaults(defineProps<Props>(), {
+import type { ButtonProps } from "./button";
+import Icon from "@/components/atoms/icons/Icon.vue";
+import type { IconSize } from "@/components/atoms/icons/icon";
+
+const props = withDefaults(defineProps<ButtonProps>(), {
   variant: "default",
   as: "button",
   size: "md",
@@ -65,46 +69,6 @@ watch(localIsPressed, (isPressed) => {
   const el = toValue(refRoot);
   if (el) onAnim(el, isPressed);
 });
-</script>
-
-<script lang="ts">
-import type {
-  UIElementDirection,
-  UIElementStretch,
-  UIElementUnionProps,
-} from "@/typings";
-
-import type {
-  IconName,
-  IconSize,
-  IconStyle,
-  IconWeight,
-} from "@/components/atoms/icons/icons";
-import Icon from "@/components/atoms/icons/Icon.vue";
-
-import type { Size, Color, Variant } from "./button";
-
-export type Stretch = UIElementStretch;
-
-export type ContentDirection = UIElementDirection;
-
-export interface Props extends Partial<UIElementUnionProps<Variant>> {
-  as?: keyof HTMLElementTagNameMap;
-  size: Size;
-  color: Color;
-  label?: string;
-  contentDirection?: ContentDirection;
-  iconSize?: IconSize;
-  prependIconName?: IconName;
-  prependIconStyle?: IconStyle;
-  prependIconWeight?: IconWeight;
-  appendIconName?: IconName;
-  appendIconStyle?: IconStyle;
-  appendIconWeight?: IconWeight;
-  scalePressed?: number;
-  isDisabled?: boolean;
-  stretch?: Stretch;
-}
 </script>
 
 <template>
