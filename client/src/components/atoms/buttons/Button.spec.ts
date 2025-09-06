@@ -1,7 +1,11 @@
-import { mount, shallowMount } from "@vue/test-utils";
+import { mount, shallowMount, VueWrapper } from "@vue/test-utils";
 import g from "gsap";
 
 import Button from "@/components/atoms/buttons/Button.vue";
+
+const getIcon = <T>(wrapper: VueWrapper<T>) => {
+  return wrapper.find('[data-testid="button__icon"]');
+};
 
 vi.mock("gsap", () => ({
   default: {
@@ -109,21 +113,47 @@ describe("Button.vue", () => {
     });
   });
 
-  // describe("events", () => {
-  //   test("emits pointerdown and pointerup", async () => {
-  //     const wrapper = mount(Button, {
-  //       props: { size: "md", color: "primary" },
-  //     });
+  describe("slots", () => {
+    test("renders custom prepend icon in slots", () => {
+      const expectedSlotContent = "Icon";
+      const expectedSlot = `<span data-testid="button__icon">${expectedSlotContent}</span>`;
 
-  //     const btn = wrapper.get("[data-testid='button']");
-  //     const downEvent = new PointerEvent("pointerdown");
-  //     const upEvent = new PointerEvent("pointerup");
+      const wrapper = shallowMount(Button, {
+        props: {
+          size: "md",
+          color: "primary",
+        },
+        slots: {
+          "prepend-icon": expectedSlot,
+        },
+      });
 
-  //     await btn.trigger("pointerdown", downEvent);
-  //     expect(wrapper.emitted("pointerdown")?.[0][0]).toBe(downEvent);
+      const iconEl = getIcon(wrapper);
+      const isIconExists = iconEl.exists();
 
-  //     await btn.trigger("pointerup", upEvent);
-  //     expect(wrapper.emitted("pointerup")?.[0][0]).toBe(upEvent);
-  //   });
-  // });
+      expect(isIconExists).toBeTruthy();
+      expect(isIconExists).toMatchInlineSnapshot(`true`);
+    });
+
+    test("renders custom append icon in slots", () => {
+      const expectedSlotContent = "Icon";
+      const expectedSlot = `<span data-testid="button__icon">${expectedSlotContent}</span>`;
+
+      const wrapper = shallowMount(Button, {
+        props: {
+          size: "md",
+          color: "primary",
+        },
+        slots: {
+          "append-icon": expectedSlot,
+        },
+      });
+
+      const iconEl = getIcon(wrapper);
+      const isIconExists = iconEl.exists();
+
+      expect(isIconExists).toBeTruthy();
+      expect(isIconExists).toMatchInlineSnapshot(`true`);
+    });
+  });
 });

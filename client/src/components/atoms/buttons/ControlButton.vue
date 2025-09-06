@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { ControlButtonProps } from "./controlButton";
+import Button from "./Button.vue";
 
 const props = withDefaults(defineProps<ControlButtonProps>(), {
   variant: "rounded",

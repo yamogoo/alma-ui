@@ -77,7 +77,6 @@ watch(localIsPressed, (isPressed) => {
     ref="refRoot"
     role="button"
     class="button"
-    data-testid="button"
     :class="[
       {
         [`button_variant-${variant}`]: !!variant,
@@ -90,6 +89,7 @@ watch(localIsPressed, (isPressed) => {
         button_pressed: localIsPressed,
       },
     ]"
+    data-testid="button"
     :aria-label="label ?? prependIconName ?? appendIconName"
     :aria-disabled="isDisabled"
     @pointerdown="onDown"
@@ -97,6 +97,7 @@ watch(localIsPressed, (isPressed) => {
   >
     <Icon
       v-if="prependIconName"
+      :data-testid="'button__icon'"
       :name="prependIconName"
       :style="prependIconStyle"
       :weight="prependIconWeight"
