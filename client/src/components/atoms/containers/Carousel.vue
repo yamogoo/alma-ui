@@ -1,9 +1,7 @@
 <script setup lang="ts">
-withDefaults(defineProps<Props>(), {});
-</script>
+import type { CarouselProps } from "./carousel";
 
-<script lang="ts">
-interface Props {}
+withDefaults(defineProps<CarouselProps>(), {});
 </script>
 
 <template>

@@ -9,7 +9,7 @@ import Form from "@/components/molecules/forms/Form.vue";
 import ActionButton from "@/components/atoms/buttons/ActionButton.vue";
 import Input from "@/components/atoms/inputs/Input.vue";
 import Text from "@/components/atoms/typography/Text.vue";
-import Group from "@/components/atoms/containers/Group.vue";
+import Group from "~/src/components/atoms/containers.temp/Group.vue";
 import Divider from "@/components/atoms/dividers/Divider.vue";
 import PasswordInput from "@/components/atoms/inputs/PasswordInput.vue";
 

@@ -17,7 +17,7 @@ import type { Props } from "./input";
 
 import ControlButton from "@/components/atoms/buttons/ControlButton.vue";
 import Text from "@/components/atoms/typography/Text.vue";
-import AnimatedWrapper from "@/components/atoms/containers/AnimatedWrapper.vue";
+import AnimatedWrapper from "~/src/components/atoms/containers.temp/AnimatedWrapper.vue";
 
 const props = withDefaults(defineProps<Props>(), {
   variant: "default",

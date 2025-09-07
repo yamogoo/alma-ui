@@ -4,7 +4,7 @@ import g from "gsap";
 
 import { useTimeout } from "@/composables/local";
 
-import Page from "@/components/atoms/containers/Page.vue";
+import Page from "~/src/components/atoms/containers.temp/Page.vue";
 import AuthForm from "@/components/organisms/forms/AuthForm.vue";
 
 const START_DELAY = 350;

@@ -4,16 +4,9 @@ import g from "gsap";
 
 import { px2rem } from "@/utils";
 
-import tokens from "@/tokens";
+import type { CarousleStackProps } from "./carouselStack";
 
-import type {
-  UIElementAxisDirection,
-  UIElementOrientation,
-  UIElementStretch,
-  UIElementUnionProps,
-} from "@/typings";
-
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<CarousleStackProps>(), {
   variant: "default",
   orientation: "vertical",
   direction: "forward",
@@ -274,27 +267,6 @@ const onLeave = (el: Element, done: () => void): void => {
 };
 </script>
 
-<script lang="ts">
-export type Size = keyof typeof tokens.carouselStack.default;
-
-export interface Props extends Partial<UIElementUnionProps> {
-  selectedScreenId?: number;
-  size?: Size;
-  screenCount?: number;
-  orientation?: UIElementOrientation;
-  stretch?: UIElementStretch;
-  autoPlay?: boolean;
-  duration?: number;
-  interval?: number;
-  direction?: UIElementAxisDirection;
-  isInactiveItemUnmounted?: boolean;
-  isDruggable?: boolean;
-  editScale?: number;
-  gap?: number;
-  isItemsClickable?: boolean;
-}
-</script>
-
 <template>
   <div
     ref="refRoot"
@@ -302,7 +274,7 @@ export interface Props extends Partial<UIElementUnionProps> {
     :class="[
       `carousel-stack_variant-${variant}`,
       {
-        [`carousel-stack_size-${size}`]: size!!,
+        [`carousel-stack_size-${String(size)}`]: size!!,
         [`carousel-stack_orientation-${orientation}`]: orientation,
         [`carousel-stack_stretch-${stretch}`]: stretch,
         'carousel-stack_grabbing': isCursorGrabbing,

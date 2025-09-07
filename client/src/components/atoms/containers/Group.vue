@@ -7,7 +7,7 @@ import type {
   UIElementVariant,
 } from "@/typings";
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<GroupProps>(), {
   variant: "default",
   as: "div",
   role: "group",
@@ -21,12 +21,12 @@ const componentTag = props.as;
 </script>
 
 <script lang="ts">
-import type { Size, Color } from "./group";
+import type { GroupSize, GroupColor } from "./group";
 
-export interface Props {
+export interface GroupProps {
   variant?: UIElementVariant;
-  size?: Size;
-  color?: Color;
+  size?: GroupSize;
+  color?: GroupColor;
   orientation?: UIElementOrientation;
   direction?: UIElementAxisDirection;
   verticalAlignment?: UIElementAlignment;
@@ -48,8 +48,8 @@ export interface Props {
     class="group"
     :class="[
       `group_variant-${variant}`,
-      `group_size-${size}`,
-      `group_color-${color}`,
+      `group_size-${String(size)}`,
+      `group_color-${String(color)}`,
       {
         [`group_direction-${direction}`]: !!direction,
         [`group_orientation-${orientation}`]: !!orientation,

@@ -6,9 +6,9 @@ import { createCustomEvent } from "@/utils";
 
 import { usePageTransition } from "@/composables/local";
 
-import type { TransitionType, UIElementColor } from "@/typings";
+import type { PageProps } from "./page";
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<PageProps>(), {
   isFooterShown: true,
   isDragging: false,
   useGlobalTransition: true,
@@ -446,19 +446,6 @@ onUnmounted(() => {
   refRoot.value?.removeEventListener("pointermove", defineControlAction);
   refRoot.value?.removeEventListener("pointerup", defineControlAction);
 });
-</script>
-
-<script lang="ts">
-export type PageColor = Extract<UIElementColor, "primary" | "accent">;
-
-export interface Props {
-  isFooterShown?: boolean;
-  isDragging?: boolean;
-  useGlobalTransition?: boolean;
-  transitionInType?: TransitionType;
-  transitionOutType?: TransitionType;
-  color?: PageColor;
-}
 </script>
 
 <template>

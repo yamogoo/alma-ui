@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Page from "@/components/atoms/containers/Page.vue";
+import Page from "~/src/components/atoms/containers.temp/Page.vue";
 import Text from "@/components/atoms/typography/Text.vue";
 
 import LandingHeader from "@@/components/molecules/LandingHeader.vue";

@@ -1,18 +1,10 @@
 <!-- is the base for components that float over the rest of the page -->
 <script setup lang="ts">
-import type { UIElementColor } from "@/typings";
+import type { OverlayProps } from "./overlay";
 
-defineProps<Props>();
+defineProps<OverlayProps>();
 </script>
 
-<script lang="ts">
-export type Color = Extract<UIElementColor, "primary" | "primary-inversed">;
-
-export interface Props {
-  id?: string;
-  color?: Color;
-}
-</script>
 
 <template>
   <div class="overlay" :class="[{ [`overlay_color-${color}`]: !!color }]"></div>

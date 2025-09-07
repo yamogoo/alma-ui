@@ -7,7 +7,7 @@ import type {
   UIElementUnionProps,
 } from "@/typings";
 
-import AnimatedWrapper from "@/components/atoms/containers/AnimatedWrapper.vue";
+import AnimatedWrapper from "~/src/components/atoms/containers.temp/AnimatedWrapper.vue";
 
 withDefaults(defineProps<Props>(), {
   variant: "default",

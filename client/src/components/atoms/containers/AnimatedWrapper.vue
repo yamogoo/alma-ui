@@ -2,14 +2,9 @@
 import { nextTick, ref, watch } from "vue";
 import gsap from "gsap";
 
-import type { UIElementContentKey } from "@/typings";
+import type { AnimatedWrapperProps } from "./animatedWrapper";
 
-interface Props {
-  contentKey: UIElementContentKey;
-  duration?: number;
-}
-
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<AnimatedWrapperProps>(), {
   duration: 0.4,
 });
 
