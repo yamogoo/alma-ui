@@ -26,3 +26,6 @@ export * from "./resizer";
 
 // Sheets: ActionSheet, Sheet, and their variations
 export * from "./sheets";
+
+// Skeletons: Skeleton and other fallback components
+export * from "./skeletons";

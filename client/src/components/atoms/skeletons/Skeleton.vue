@@ -2,9 +2,9 @@
 import { onMounted, ref } from "vue";
 import g from "gsap";
 
-import tokens from "@/tokens";
+import type { SkeletonProps } from "./skeleton";
 
-withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<SkeletonProps>(), {
   color: "default",
 });
 
@@ -29,14 +29,6 @@ const onAnimate = (el: Element): void => {
     }
   );
 };
-</script>
-
-<script lang="ts">
-export type Color = keyof typeof tokens.themes.light.skeleton;
-
-export interface Props {
-  color?: Color;
-}
 </script>
 
 <template>
