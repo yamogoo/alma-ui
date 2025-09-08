@@ -3,13 +3,16 @@ import { computed } from "vue";
 
 import tokens from "@/tokens";
 
-import type { UIElementUnionProps } from "@/typings";
-
 import Text, { type Variant } from "@/components/atoms/typography/Text.vue";
+
+import type {
+  StepPaginationTabItem,
+  StepPaginationTabsProps,
+} from "./stepPaginationTabs";
 
 // TODO: finish carousel view
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<StepPaginationTabsProps>(), {
   variant: "default",
   selectedItemId: 0,
   color: "primary",
@@ -39,7 +42,7 @@ const visibleItems = computed(() => {
   ];
 });
 
-const itemPosition = (_item: StepItem, idx: number) => {
+const itemPosition = (_item: StepPaginationTabItem, idx: number) => {
   if (idx === 0) return "left";
   if (idx === 1) return "center";
   if (idx === 2) return "right";
@@ -51,39 +54,21 @@ const textVariant = computed(() => {
     .value as Variant;
 });
 
-const onItemClick = (item: StepItem): void => {
+const onItemClick = (item: StepPaginationTabItem): void => {
   if (item.id !== props.selectedItemId) {
     emit("update:selected-item-id", item.id);
   }
 };
 </script>
 
-<script lang="ts">
-export type Size = keyof typeof tokens.stepPaginationTabs.default;
-
-export type Color = keyof typeof tokens.themes.light.stepPaginationTabs;
-
-export interface StepItem {
-  id: number;
-  label: string;
-}
-
-export interface Props extends Partial<UIElementUnionProps> {
-  items: StepItem[];
-  selectedItemId?: number;
-  size?: Size;
-  color?: Color;
-}
-</script>
-
 <template>
   <div
     class="step-pagination-tabs"
     :class="[
-      `step-pagination-tabs_variant-${props.variant}`,
+      `step-pagination-tabs_variant-${variant}`,
       {
-        [`step-pagination-tabs_size-${props.size}`]: !!size,
-        [`step-pagination-tabs_color-${props.color}`]: !!color,
+        [`step-pagination-tabs_size-${String(size)}`]: !!size,
+        [`step-pagination-tabs_color-${String(color)}`]: !!color,
       },
     ]"
   >

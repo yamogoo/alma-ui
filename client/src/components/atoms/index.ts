@@ -32,3 +32,6 @@ export * from "./skeletons";
 
 // Switches: ToggleSwitch, Checkbox, Radio button and other controls
 export * from "./switches";
+
+// Tabs/Navigation: StepPaginationTabs and other tab controls
+export * from "./tabs";
