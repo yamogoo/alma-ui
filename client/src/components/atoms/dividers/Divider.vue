@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import tokens from "@/tokens";
+import type { DividerProps } from "./divider";
 
-import type { UIElementOrientation, UIElementVariant } from "@/typings";
-
-withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<DividerProps>(), {
   variant: "default",
   size: "md",
   color: "primary",
@@ -11,28 +9,13 @@ withDefaults(defineProps<Props>(), {
 });
 </script>
 
-<script lang="ts">
-export type Variant = UIElementVariant;
-
-export type Size = keyof typeof tokens.divider.default;
-
-export type Color = keyof typeof tokens.themes.light.divider;
-
-export interface Props {
-  variant?: Variant;
-  size?: Size;
-  color?: Color;
-  orientation?: UIElementOrientation;
-}
-</script>
-
 <template>
   <div
     class="divider"
     :class="[
       `divider_variant-${variant}`,
-      `divider_size-${size}`,
-      `divider_color-${color}`,
+      `divider_size-${String(size)}`,
+      `divider_color-${String(color)}`,
       `divider_orientation-${orientation}`,
     ]"
   ></div>
