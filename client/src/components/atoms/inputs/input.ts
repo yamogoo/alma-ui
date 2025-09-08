@@ -12,7 +12,7 @@ export const inputColors = Object.keys(tokens.themes.light.input);
 
 export type InputState = "focused";
 
-export interface Props extends Partial<UIElementUnionProps> {
+export interface InputProps extends Partial<UIElementUnionProps> {
   value: string;
   placeholder?: string;
   color?: InputColor;

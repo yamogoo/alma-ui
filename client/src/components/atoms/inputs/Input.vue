@@ -13,13 +13,13 @@ import g from "gsap";
 
 import { sanitizeInput } from "@/utils";
 
-import type { Props } from "./input";
+import type { InputProps } from "./input";
 
 import ControlButton from "@/components/atoms/buttons/ControlButton.vue";
 import Text from "@/components/atoms/typography/Text.vue";
-import AnimatedWrapper from "~/src/components/atoms/containers.temp/AnimatedWrapper.vue";
+import AnimatedWrapper from "@/components/atoms/containers/AnimatedWrapper.vue";
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<InputProps>(), {
   variant: "default",
   color: "primary",
   size: "lg",
@@ -200,7 +200,7 @@ onMounted(() => {
     data-testid="input"
     :class="[
       `input_variant-${variant}`,
-      `input_color-${color}`,
+      `input_color-${String(color)}`,
       {
         [`input_size-${String(size)}`]: size,
         [`input_error`]: isError,

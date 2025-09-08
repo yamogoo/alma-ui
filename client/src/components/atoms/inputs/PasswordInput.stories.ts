@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/vue3-vite";
 
-import PasswordInput from "./PasswordInput.vue";
 import { inputColors, inputSizes } from "./input";
+
+import PasswordInput from "./PasswordInput.vue";
 
 const meta = {
   title: "Atoms/inputs/PasswordInput",

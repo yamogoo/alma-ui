@@ -14,3 +14,6 @@ export * from "./dropdown";
 
 // Icons: Icon, AnimatedIcon, and related helpers
 export * from "./icons";
+
+// Inputs: Input, PasswordInput, and other text fields
+export * from "./inputs";

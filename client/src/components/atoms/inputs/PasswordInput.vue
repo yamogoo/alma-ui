@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Props as InputProps } from "./input";
+import type { InputProps } from "./input";
 
 import Input from "@/components/atoms/inputs/Input.vue";
 import ControlButton from "@/components/atoms/buttons/ControlButton.vue";
