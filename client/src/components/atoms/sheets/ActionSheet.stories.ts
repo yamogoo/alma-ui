@@ -3,17 +3,17 @@ import type { Meta, StoryObj } from "@storybook/vue3-vite";
 import { storyDecorator } from "@/stories/decorators";
 
 import ActionSheet from "./ActionSheet.vue";
-import { colors, sizes } from "./ActionSheet";
+import { actionSheetColors, actionSheetSizes } from "./actionSheet";
 
 const meta = {
   title: "Atoms/sheets/ActionSheet",
   component: ActionSheet,
   tags: ["autodocs"],
   argTypes: {
-    size: { control: "select", options: sizes },
+    size: { control: "select", options: actionSheetSizes },
     color: {
       control: "select",
-      options: colors,
+      options: actionSheetColors,
     },
     isActive: {
       control: "boolean",

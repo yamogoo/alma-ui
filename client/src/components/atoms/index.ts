@@ -23,3 +23,6 @@ export * from "./options";
 
 // Resizer: ResizeBounding and drag/resize utilities
 export * from "./resizer";
+
+// Sheets: ActionSheet, Sheet, and their variations
+export * from "./sheets";

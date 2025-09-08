@@ -1,9 +1,9 @@
 import { mount } from "@vue/test-utils";
+import { mountWithTeleport } from "@/utils";
 import { nextTick } from "vue";
 import gsap from "gsap";
 
 import ActionSheet from "./ActionSheet.vue";
-import { mountWithTeleport } from "@/utils";
 
 vi.mock("gsap", () => ({
   default: {

@@ -1,22 +1,10 @@
 <script setup lang="ts">
-import tokens from "@/tokens";
+import type { SheetProps } from "./sheet";
 
-import type { UIElementUnionProps } from "@/typings";
-
-withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<SheetProps>(), {
   isOpen: false,
   isDialog: false,
 });
-</script>
-
-<script lang="ts">
-export type Color = keyof typeof tokens.themes.light.sheet;
-
-export interface Props extends Partial<UIElementUnionProps> {
-  color?: Color;
-  isOpen: boolean;
-  isDialog?: boolean;
-}
 </script>
 
 <template>

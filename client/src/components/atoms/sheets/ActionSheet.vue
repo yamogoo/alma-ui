@@ -4,9 +4,9 @@ import gsap from "gsap";
 
 import { OVERLAY_IDS } from "@/constants";
 
-import type { Props } from "./ActionSheet";
+import type { ActionSheetProps } from "./actionSheet";
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<ActionSheetProps>(), {
   variant: "default",
   containerId: OVERLAY_IDS.MAIN,
   size: "md",
@@ -60,8 +60,8 @@ watch(
       class="action-sheet"
       :class="[
         `action-sheet_variant-${variant}`,
-        `action-sheet_size-${size}`,
-        { [`action-sheet_color-${color}`]: !!color },
+        `action-sheet_size-${String(size)}`,
+        { [`action-sheet_color-${String(color)}`]: !!color },
       ]"
     >
       <slot></slot>
