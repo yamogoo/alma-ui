@@ -20,3 +20,6 @@ export * from "./inputs";
 
 // Options/Selectors: Options component and selection logic
 export * from "./options";
+
+// Resizer: ResizeBounding and drag/resize utilities
+export * from "./resizer";

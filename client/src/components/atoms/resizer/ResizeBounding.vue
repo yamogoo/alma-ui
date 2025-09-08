@@ -1,19 +1,13 @@
 <script setup lang="ts">
-import Resizer, {
-  globalClassNames,
-  type Props as ResizeBoundingProps,
-} from "vue3-resize-bounding";
+import Resizer, { globalClassNames } from "vue3-resize-bounding";
+import type { ResizeBoundingProps } from "./resizeBounding";
 
 import tokens from "@/tokens";
-
-import type { UIElementUnionProps } from "@/typings";
-
-interface Props extends ResizeBoundingProps, UIElementUnionProps {}
 
 const PREFIX = "resizer",
   PREFIX_WITH_DIVIDER = `${PREFIX}__`;
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<ResizeBoundingProps>(), {
   variant: "default",
 });
 
