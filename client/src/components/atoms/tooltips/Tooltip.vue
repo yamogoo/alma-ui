@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { onUnmounted, ref, watch } from "vue";
+import { onUnmounted, ref, useId, watch } from "vue";
+import { useFocus } from "@vueuse/core";
 import g from "gsap";
 
 import { useHover, useTimeout } from "@/composables/local";
@@ -21,13 +22,17 @@ const TOOLTIP_DURATION_IN = 0.2,
 
 withDefaults(defineProps<TooltipProps>(), {
   align: "center",
+  tooltipId: useId(),
 });
 
 const refContent = ref<HTMLDivElement | null>(null);
 
 const isTooltipShown = ref(false);
 
-const { isHovered: isContentFocused } = useHover(refContent);
+const { isHovered: isContentHovered } = useHover(refContent);
+const { focused: isContentFocused } = useFocus(refContent, {
+  initialValue: false,
+});
 
 const focusTimer = useTimeout(() => {
   isTooltipShown.value = true;
@@ -42,10 +47,10 @@ const stopTimers = (): void => {
   unfocusTimer.stop();
 };
 
-watch(isContentFocused, (isFocused) => {
+watch([isContentHovered, isContentFocused], ([isHovered, isFocused]) => {
   stopTimers();
 
-  isFocused ? focusTimer.start() : unfocusTimer.start();
+  isHovered || isFocused ? focusTimer.start() : unfocusTimer.start();
 });
 
 onUnmounted(() => {
@@ -84,7 +89,11 @@ const onTooltipLeave = (el: Element, done: () => void): void => {
 
 <template>
   <div class="tooltip" :class="[`tooltip_align-${align}`]">
-    <div ref="refContent" class="tooltip__content">
+    <div
+      ref="refContent"
+      class="tooltip__content"
+      :aria-describedby="tooltipId"
+    >
       <slot></slot>
     </div>
     <Transition :css="false" @enter="onTooltipEnter" @leave="onTooltipLeave">
@@ -92,6 +101,7 @@ const onTooltipLeave = (el: Element, done: () => void): void => {
         v-if="isTooltipShown"
         class="tooltip__label"
         :label="label"
+        role="tooltip"
       ></CharTooltipLabel>
     </Transition>
   </div>
@@ -101,6 +111,7 @@ const onTooltipLeave = (el: Element, done: () => void): void => {
 .tooltip {
   box-sizing: border-box;
   position: relative;
+  pointer-events: none;
 
   &__label {
     position: absolute;
