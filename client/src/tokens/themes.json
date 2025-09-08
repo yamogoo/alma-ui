@@ -583,7 +583,7 @@
               "expanded": {
                 "value": "{colors.gray-950}"
               },
-              "expanedHovered": {
+              "expandedHovered": {
                 "value": "{colors.gray-950}"
               }
             },
@@ -597,7 +597,7 @@
               "expanded": {
                 "value": "{colors.gray-800}"
               },
-              "expanedHovered": {
+              "expandedHovered": {
                 "value": "{colors.gray-850}"
               }
             },
@@ -1458,7 +1458,7 @@
               "expanded": {
                 "value": "{colors.gray-200}"
               },
-              "expanedHovered": {
+              "expandedHovered": {
                 "value": "{colors.gray-250}"
               }
             },
@@ -1472,7 +1472,7 @@
               "expanded": {
                 "value": "{colors.gray-200}"
               },
-              "expanedHovered": {
+              "expandedHovered": {
                 "value": "{colors.gray-250}"
               }
             },

@@ -231,13 +231,13 @@ const onOptionClick = (): void => {
           &:hover {
             @include themify($themes) {
               background-color: themed(
-                "drop-down.#{$name}.value.background.hovered"
+                "drop-down.#{$name}.value.background.hovered.value"
               );
             }
 
             &-label {
               @include themify($themes) {
-                color: themed("drop-down.#{$name}.value.label.hovered");
+                color: themed("drop-down.#{$name}.value.label.hovered.value");
               }
             }
 
@@ -321,7 +321,7 @@ const onOptionClick = (): void => {
   user-select: none;
 
   @include defineSizes();
-  @include defineThemes(map.keys(get($themes, "light.dropdown")));
+  @include defineThemes(map.keys(get($themes, "light.drop-down")));
 
   &__value {
     box-sizing: border-box;

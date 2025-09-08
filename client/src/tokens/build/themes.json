@@ -583,7 +583,7 @@
               "expanded": {
                 "value": "#101315"
               },
-              "expanedHovered": {
+              "expandedHovered": {
                 "value": "#101315"
               }
             },
@@ -597,7 +597,7 @@
               "expanded": {
                 "value": "#2F383F"
               },
-              "expanedHovered": {
+              "expandedHovered": {
                 "value": "#242B31"
               }
             },
@@ -1458,7 +1458,7 @@
               "expanded": {
                 "value": "#C0C9D0"
               },
-              "expanedHovered": {
+              "expandedHovered": {
                 "value": "#B3BDC6"
               }
             },
@@ -1472,7 +1472,7 @@
               "expanded": {
                 "value": "#C0C9D0"
               },
-              "expanedHovered": {
+              "expandedHovered": {
                 "value": "#B3BDC6"
               }
             },
