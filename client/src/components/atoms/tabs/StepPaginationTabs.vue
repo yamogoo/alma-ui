@@ -3,7 +3,8 @@ import { computed } from "vue";
 
 import tokens from "@/tokens";
 
-import Text, { type Variant } from "@/components/atoms/typography/Text.vue";
+import Text from "@/components/atoms/typography/Text.vue";
+import type { TextVariant } from "@/components/atoms/typography/text";
 
 import type {
   StepPaginationTabItem,
@@ -51,7 +52,7 @@ const itemPosition = (_item: StepPaginationTabItem, idx: number) => {
 
 const textVariant = computed(() => {
   return tokens.stepPaginationTabs.default[props.size].elements.item.fontStyle
-    .value as Variant;
+    .value as TextVariant;
 });
 
 const onItemClick = (item: StepPaginationTabItem): void => {

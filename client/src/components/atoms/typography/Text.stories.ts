@@ -1,8 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/vue3-vite";
 
-import Text, { type Color, type Variant } from "./Text.vue";
+import type { TextColor, TextVariant } from "./text";
+import Text from "./Text.vue";
 
-const colors: Array<Color> = [
+const colors: Array<TextColor> = [
   "primary",
   "secondary",
   "accent",
@@ -12,7 +13,7 @@ const colors: Array<Color> = [
   "error",
 ];
 
-const variants: Array<Variant> = [
+const variants: Array<TextVariant> = [
   "body-1",
   "body-2",
   "caption-1",

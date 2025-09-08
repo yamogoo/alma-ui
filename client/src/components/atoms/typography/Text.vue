@@ -1,52 +1,9 @@
 <script lang="ts" setup>
 import { computed, type ComputedRef, type CSSProperties } from "vue";
 
-import tokens from "@/tokens";
+import type { TextProps } from "./text";
 
-import type { UIElementTypographyTag } from "@/typings";
-
-export type Variant = keyof typeof tokens.typography.styles;
-
-export type Style = "normal" | "italic" | "oblique";
-
-export type Transform =
-  | "none"
-  | "capitalize"
-  | "uppercase"
-  | "lowercase"
-  | "full-width";
-
-export type Decoration = "none" | "underline" | "line-through";
-
-export type Color = keyof typeof tokens.themes.light.label;
-
-export interface Props {
-  as?: UIElementTypographyTag;
-  value?: string;
-  variant?: Variant;
-  textColor?: Color;
-  display?: "inline-block" | "block";
-  color?: string;
-  weight?: string;
-  align?: "left" | "center" | "right" | "justify";
-  size?: string;
-  lineHeight?: string;
-  letterSpacing?: string;
-  textTransform?: Transform;
-  textDecoration?: Decoration;
-  fontFamily?: string;
-  fontStyle?: Style;
-  fontSize?: string;
-  fontWeight?: string;
-  fontStretch?: string;
-  fontVariant?: string;
-  fontFeatureSettings?: string;
-  fontSynthesis?: string;
-  textIndent?: string;
-  textOverflow?: "clip" | "ellipsis";
-}
-
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<TextProps>(), {
   as: "span",
   textColor: "primary",
 });
@@ -81,8 +38,8 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
     class="text"
     :class="[
       {
-        [`text_variant-${variant}`]: !!variant,
-        [`text_color-${textColor}`]: !!textColor,
+        [`text_variant-${String(variant)}`]: !!variant,
+        [`text_color-${String(textColor)}`]: !!textColor,
       },
     ]"
     :style="computedStyle"
