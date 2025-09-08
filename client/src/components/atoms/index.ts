@@ -11,3 +11,6 @@ export * from "./dividers";
 
 // Dropdowns: Dropdown component and related utilities
 export * from "./dropdown";
+
+// Icons: Icon, AnimatedIcon, and related helpers
+export * from "./icons";

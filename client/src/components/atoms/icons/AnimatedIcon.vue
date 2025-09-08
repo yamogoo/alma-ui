@@ -2,11 +2,9 @@
 import { ref, toValue, watch } from "vue";
 import { Vue3Lottie as LottieAnimation } from "vue3-lottie";
 
-import type { UIElementUnionProps } from "@/typings";
+import type { AnimatedIconProps } from "./animatedIcon";
 
-import type { IconColor, IconSize } from "./icon";
-
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<AnimatedIconProps>(), {
   speed: 1,
   loop: false,
 });
@@ -50,17 +48,6 @@ const onCompleted = (): void => {
 };
 </script>
 
-<script lang="ts">
-export interface Props extends Partial<UIElementUnionProps> {
-  color?: IconColor;
-  size?: IconSize;
-  animationData: typeof LottieAnimation.animationData;
-  speed?: number;
-  isActive: boolean;
-  loop?: boolean;
-}
-</script>
-
 <template>
   <LottieAnimation
     ref="refAnim"
@@ -68,8 +55,8 @@ export interface Props extends Partial<UIElementUnionProps> {
     :class="[
       {
         [`animated-icon_size-${variant}`]: !!variant,
-        [`animated-icon_size-${size}`]: !!size,
-        [`animated-icon_color-${color}`]: !!color,
+        [`animated-icon_size-${String(size)}`]: !!size,
+        [`animated-icon_color-${String(color)}`]: !!color,
       },
     ]"
     :animation-data

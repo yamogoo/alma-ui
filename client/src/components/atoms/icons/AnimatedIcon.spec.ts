@@ -1,11 +1,12 @@
 import { mount } from "@vue/test-utils";
 import { describe, test, expect } from "vitest";
 
-import AnimatedIcon, { type Props } from "./AnimatedIcon.vue";
+import { type AnimatedIconProps } from "./animatedIcon";
+import AnimatedIcon from "./AnimatedIcon.vue";
 
 import animationData from "@/assets/animations/spinner.json";
 
-const REQUIRED_PROPS: Props = {
+const REQUIRED_PROPS: AnimatedIconProps = {
   animationData,
   isActive: false,
 };

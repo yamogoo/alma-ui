@@ -44,8 +44,8 @@ export interface Props {
     :class="[
       {
         [`icon_variant-${variant}`]: !!variant,
-        [`icon_size-${size}`]: !!size,
-        [`icon_color-${color}`]: !!color,
+        [`icon_size-${String(size)}`]: !!size,
+        [`icon_color-${String(color)}`]: !!color,
       },
     ]"
     data-testid="icon"
