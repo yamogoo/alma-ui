@@ -17,3 +17,6 @@ export * from "./icons";
 
 // Inputs: Input, PasswordInput, and other text fields
 export * from "./inputs";
+
+// Options/Selectors: Options component and selection logic
+export * from "./options";

@@ -1,9 +1,10 @@
 import { mount, VueWrapper } from "@vue/test-utils";
 import { getTypedEmittedEvent } from "@/utils/vitest";
 
-import Options, { type Items } from "./Options.vue";
+import Options from "./Options.vue";
+import type { OptionsItems } from "./options";
 
-const items: Items<string> = ["First", "Second", "Third"];
+const items: OptionsItems<string> = ["First", "Second", "Third"];
 
 const getOptions = <T>(wrapper: VueWrapper<T>) => {
   return wrapper.findAll('[data-testid="options__option"]');

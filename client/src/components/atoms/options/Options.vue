@@ -1,7 +1,7 @@
 <script setup lang="ts" generic="T">
-import tokens from "@/tokens";
+import type { OptionsProps } from "./options";
 
-const props = withDefaults(defineProps<Props<T>>(), {
+const props = withDefaults(defineProps<OptionsProps<T>>(), {
   isCurrentOptionShown: false,
 });
 
@@ -20,22 +20,6 @@ const showCurrentOption = (key: T) => {
 
   return true;
 };
-</script>
-
-<script lang="ts">
-export type Size = keyof typeof tokens.options.default;
-
-export type Color = keyof typeof tokens.themes.dark.options;
-
-export type Items<T> = Array<T>;
-
-export interface Props<T> {
-  size?: Size;
-  color?: Color;
-  value: T;
-  items: Items<T>;
-  isCurrentOptionShown?: boolean;
-}
 </script>
 
 <template>
