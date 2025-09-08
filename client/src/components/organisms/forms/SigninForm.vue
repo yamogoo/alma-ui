@@ -5,11 +5,8 @@ import { useRouter } from "vue-router";
 
 import { useAuthStore, useLocaleStore } from "@/stores";
 
-import Form from "@/components/molecules/forms/Form.vue";
-import ActionButton from "@/components/atoms/buttons/ActionButton.vue";
-import Input from "@/components/atoms/inputs/Input.vue";
-import PasswordInput from "@/components/atoms/inputs/PasswordInput.vue";
-import Text from "@/components/atoms/typography/Text.vue";
+import { Form } from "@/components/molecules";
+import { ActionButton, Input, PasswordInput, Text } from "@/components/atoms";
 
 withDefaults(defineProps<Props>(), {
   isError: false,

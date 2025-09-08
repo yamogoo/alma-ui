@@ -5,13 +5,15 @@ import { useRouter } from "vue-router";
 
 import { useAuthStore, useLocaleStore } from "@/stores";
 
-import Form from "@/components/molecules/forms/Form.vue";
-import ActionButton from "@/components/atoms/buttons/ActionButton.vue";
-import Input from "@/components/atoms/inputs/Input.vue";
-import Text from "@/components/atoms/typography/Text.vue";
-import Group from "~/src/components/atoms/containers.temp/Group.vue";
-import Divider from "@/components/atoms/dividers/Divider.vue";
-import PasswordInput from "@/components/atoms/inputs/PasswordInput.vue";
+import { Form } from "@/components/molecules";
+import {
+  Group,
+  Divider,
+  ActionButton,
+  Input,
+  PasswordInput,
+  Text,
+} from "@/components/atoms";
 
 withDefaults(defineProps<Props>(), {
   isLoginError: false,

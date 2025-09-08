@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Page from "~/src/components/atoms/containers.temp/Page.vue";
-import EditorView from "@/components/organisms/editor/EditorView.vue";
+import { Page } from "@/components/atoms";
+import { EditorView } from "@/components/organisms";
 </script>
 
 <template>

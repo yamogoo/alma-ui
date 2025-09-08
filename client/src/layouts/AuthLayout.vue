@@ -3,8 +3,7 @@ import { storeToRefs } from "pinia";
 
 import { useConnectionStore } from "@/stores";
 
-import ActionSheet from "@/components/atoms/sheets/ActionSheet.vue";
-import Text from "@/components/atoms/typography/Text.vue";
+import { ActionSheet, Text } from "@/components/atoms";
 
 const { isConnected } = storeToRefs(useConnectionStore());
 </script>
