@@ -8,3 +8,6 @@ export * from "./containers";
 
 // Dividers: simple decorative elements like Divider
 export * from "./dividers";
+
+// Dropdowns: Dropdown component and related utilities
+export * from "./dropdown";

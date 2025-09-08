@@ -1,8 +1,9 @@
 import { mount, VueWrapper } from "@vue/test-utils";
 
-import Dropdown, { type Props } from "./Dropdown.vue";
+import type { DropdownProps } from "./dropdown";
+import Dropdown from "./Dropdown.vue";
 
-const REQUIRED_PROPS: Props = {
+const REQUIRED_PROPS: DropdownProps = {
   value: "some value",
 };
 

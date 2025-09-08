@@ -2,15 +2,13 @@
 import { onMounted, ref, watch, toValue } from "vue";
 import g from "gsap";
 
-import tokens from "@/tokens";
-
 import { useClickOutside } from "@/composables/local";
 
-import type { UIElementColor, UIElementUnionProps } from "@/typings";
+import type { DropdownProps } from "./dropdown";
 
 import Icon from "@/components/atoms/icons/Icon.vue";
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<DropdownProps>(), {
   variant: "default",
   size: "md",
   color: "primary",
@@ -90,20 +88,7 @@ const onOptionClick = (): void => {
 };
 </script>
 
-<script lang="ts">
-export type Color = Extract<UIElementColor, "primary" | "secondary">;
-
-export type Size = keyof typeof tokens.dropDown.default;
-
-export interface Props extends Partial<UIElementUnionProps> {
-  size?: Size;
-  color?: Color;
-  value: string;
-  valuePostfix?: string;
-  isResetButtonShown?: boolean;
-  closeOnOptionClick?: boolean;
-}
-</script>
+<script lang="ts"></script>
 
 <template>
   <div
@@ -114,7 +99,7 @@ export interface Props extends Partial<UIElementUnionProps> {
     :class="[
       {
         [`dropdown_${variant}`]: !!variant,
-        [`dropdown_${size}`]: !!size,
+        [`dropdown_${String(size)}`]: !!size,
         [`dropdown_${color}`]: !!color,
       },
       `dropdown_${isExpanded ? 'expanded' : 'normal'}`,
