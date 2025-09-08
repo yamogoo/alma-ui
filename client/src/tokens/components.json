@@ -122,12 +122,7 @@
             }
           },
           "padding": {
-            "value": [
-              "{tokens.spacing.md.value}",
-              "{tokens.spacing.md.value}",
-              "{tokens.spacing.md.value}",
-              "{tokens.spacing.md.value}"
-            ],
+            "value": "{tokens.spacing.md.value}",
             "type": "spacing",
             "unit": "px",
             "meta": {
@@ -150,12 +145,7 @@
             }
           },
           "padding": {
-            "value": [
-              "{tokens.spacing.sm.value}",
-              "{tokens.spacing.sm.value}",
-              "{tokens.spacing.sm.value}",
-              "{tokens.spacing.sm.value}"
-            ],
+            "value": "{tokens.spacing.sm.value}",
             "type": "spacing",
             "unit": "px",
             "meta": {
@@ -178,12 +168,7 @@
             }
           },
           "padding": {
-            "value": [
-              "{tokens.spacing.xs.value}",
-              "{tokens.spacing.xs.value}",
-              "{tokens.spacing.xs.value}",
-              "{tokens.spacing.xs.value}"
-            ],
+            "value": "{tokens.spacing.xs.value}",
             "type": "spacing",
             "unit": "px",
             "meta": {
@@ -206,7 +191,7 @@
             }
           },
           "padding": {
-            "value": [0, 0, 0, 0],
+            "value": 0,
             "type": "spacing",
             "unit": "px",
             "meta": {

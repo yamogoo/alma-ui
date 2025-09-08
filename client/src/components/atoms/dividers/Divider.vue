@@ -6,6 +6,7 @@ withDefaults(defineProps<DividerProps>(), {
   size: "md",
   color: "primary",
   orientation: "horizontal",
+  align: "center",
 });
 </script>
 
@@ -17,6 +18,7 @@ withDefaults(defineProps<DividerProps>(), {
       `divider_size-${String(size)}`,
       `divider_color-${String(color)}`,
       `divider_orientation-${orientation}`,
+      `divider_align-${align}`,
     ]"
   ></div>
 </template>
@@ -36,13 +38,39 @@ withDefaults(defineProps<DividerProps>(), {
             &-horizontal {
               border-bottom-style: solid;
               border-bottom-width: $border-width;
-              margin: $padding 0;
+
+              &.divider_align {
+                &-start {
+                  margin: 0 0 $padding * 2 0;
+                }
+
+                &-center {
+                  margin: $padding 0;
+                }
+
+                &-end {
+                  margin: $padding * 2 0 0 0;
+                }
+              }
             }
 
             &-vertical {
               border-right-style: solid;
               border-right-width: $border-width;
-              margin: 0, $padding;
+
+              &.divider_align {
+                &-start {
+                  margin: 0 $padding * 2 0 0;
+                }
+
+                &-center {
+                  margin: 0 $padding;
+                }
+
+                &-end {
+                  margin: 0 0 0 $padding * 2;
+                }
+              }
             }
           }
         }

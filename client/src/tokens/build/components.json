@@ -143,12 +143,7 @@
             }
           },
           "padding": {
-            "value": [
-              16,
-              16,
-              16,
-              16
-            ],
+            "value": 16,
             "type": "spacing",
             "unit": "px",
             "meta": {
@@ -171,12 +166,7 @@
             }
           },
           "padding": {
-            "value": [
-              12,
-              12,
-              12,
-              12
-            ],
+            "value": 12,
             "type": "spacing",
             "unit": "px",
             "meta": {
@@ -199,12 +189,7 @@
             }
           },
           "padding": {
-            "value": [
-              8,
-              8,
-              8,
-              8
-            ],
+            "value": 8,
             "type": "spacing",
             "unit": "px",
             "meta": {
@@ -227,12 +212,7 @@
             }
           },
           "padding": {
-            "value": [
-              0,
-              0,
-              0,
-              0
-            ],
+            "value": 0,
             "type": "spacing",
             "unit": "px",
             "meta": {
