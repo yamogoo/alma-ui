@@ -120,7 +120,7 @@ export interface Props {
       >{{ errorMessage }}</Text
     > -->
     <!-- <Divider :orientation="'horizontal'" :size="'sm'"></Divider> -->
-    <Text :variant="'caption-2'" :text-color="'secondary'">{{
+    <Text :variant="'caption-2'" :text-color="'disabled'">{{
       $t.auth.login.form.description
     }}</Text>
 

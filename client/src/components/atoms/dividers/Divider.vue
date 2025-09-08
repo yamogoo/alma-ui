@@ -2,6 +2,7 @@
 import type { DividerProps } from "./divider";
 
 withDefaults(defineProps<DividerProps>(), {
+  as: "span",
   variant: "default",
   size: "md",
   color: "primary",
@@ -11,16 +12,19 @@ withDefaults(defineProps<DividerProps>(), {
 </script>
 
 <template>
-  <div
+  <component
+    :is="as"
     class="divider"
     :class="[
       `divider_variant-${variant}`,
-      `divider_size-${String(size)}`,
-      `divider_color-${String(color)}`,
+      `divider_size-${size}`,
+      `divider_color-${color}`,
       `divider_orientation-${orientation}`,
       `divider_align-${align}`,
     ]"
-  ></div>
+    role="separator"
+    :aria-orientation="orientation === 'vertical' ? 'vertical' : undefined"
+  ></component>
 </template>
 
 <style lang="scss">
