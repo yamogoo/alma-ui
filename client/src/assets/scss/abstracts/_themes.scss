@@ -211,41 +211,6 @@ $themes:(
 )
 ),
   button: (
-  transparental: (
-  label: (
-  normal: (
-  value: #1A1F23
-),
-  disabled: (
-  value: #8999A7
-),
-  hovered: (
-  value: #101315
-),
-  pressed: (
-  value: #101315
-)
-),
-  background: (
-  normal: (
-  value: rgba(#E3E7EA, 0)
-),
-  disabled: (
-  value: rgba(#E3E7EA, 0)
-),
-  hovered: (
-  value: rgba(#DCE1E5, 0)
-),
-  pressed: (
-  value: rgba(#CED5DB, 0)
-)
-),
-  border: (
-  outline: (
-  value: #013CFE
-)
-)
-),
   primary: (
   label: (
   normal: (
@@ -343,6 +308,41 @@ $themes:(
 ),
   pressed: (
   value: #DCE1E5
+)
+),
+  border: (
+  outline: (
+  value: #013CFE
+)
+)
+),
+  tertiary: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+),
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
 )
 ),
   border: (
@@ -752,6 +752,72 @@ $themes:(
 )
 )
 ),
+  char-tooltip-label: (
+  primary: (
+  label: (
+  normal: (
+  value: #A5B1BC,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+),
+  icon: (
+  normal: (
+  value: #A5B1BC,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+),
+  background: (
+  normal: (
+  value: #101315,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+)
+),
+  primary-inversed: (
+  label: (
+  normal: (
+  value: #6D8292,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+),
+  icon: (
+  normal: (
+  value: #7B8E9C,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+),
+  background: (
+  normal: (
+  value: #CED5DB,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+)
+)
+),
   overlay: (
   primary: (
   background: (
@@ -1086,41 +1152,6 @@ $themes:(
 )
 ),
   button: (
-  transparental: (
-  label: (
-  normal: (
-  value: #97A5B1
-),
-  disabled: (
-  value: #586976
-),
-  hovered: (
-  value: #C0C9D0
-),
-  pressed: (
-  value: #B3BDC6
-)
-),
-  background: (
-  normal: (
-  value: rgba(#242B31, 0)
-),
-  disabled: (
-  value: rgba(#242B31, 0)
-),
-  hovered: (
-  value: rgba(#2F383F, 0)
-),
-  pressed: (
-  value: rgba(#39444C, 0)
-)
-),
-  border: (
-  outline: (
-  value: #013CFE
-)
-)
-),
   primary: (
   label: (
   normal: (
@@ -1218,6 +1249,41 @@ $themes:(
 ),
   pressed: (
   value: #1A1F23
+)
+),
+  border: (
+  outline: (
+  value: #013CFE
+)
+)
+),
+  tertiary: (
+  label: (
+  normal: (
+  value: #97A5B1
+),
+  disabled: (
+  value: #586976
+),
+  hovered: (
+  value: #C0C9D0
+),
+  pressed: (
+  value: #B3BDC6
+)
+),
+  background: (
+  normal: (
+  value: rgba(#242B31, 0)
+),
+  disabled: (
+  value: rgba(#242B31, 0)
+),
+  hovered: (
+  value: rgba(#2F383F, 0)
+),
+  pressed: (
+  value: rgba(#39444C, 0)
 )
 ),
   border: (
@@ -1622,6 +1688,72 @@ $themes:(
 ),
   format: hex
 )
+)
+)
+)
+)
+),
+  char-tooltip-label: (
+  primary: (
+  label: (
+  normal: (
+  value: #2F383F,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+),
+  icon: (
+  normal: (
+  value: #2F383F,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+),
+  background: (
+  normal: (
+  value: #101315,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+)
+),
+  primary-inversed: (
+  label: (
+  normal: (
+  value: #6D8292,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+),
+  icon: (
+  normal: (
+  value: #637584,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+),
+  background: (
+  normal: (
+  value: #242B31,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
 )
 )
 )

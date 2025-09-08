@@ -1,7 +1,7 @@
 export type UIElementColor =
   | `${"primary" | "secondary"}${"" | "-inversed" | "-transparental"}`
   | `${"transclucent"}${"" | "-inversed"}`
-  | "tertiary"
+  | `${"tertiary"}${"" | "-inversed"}`
   | "transparental"
   | "accent"
   | "accent-secondary"

@@ -13,6 +13,7 @@ import {
   Input,
   PasswordInput,
   Text,
+  Tooltip,
 } from "@/components/atoms";
 
 withDefaults(defineProps<Props>(), {
@@ -136,13 +137,15 @@ export interface Props {
         >
         </ActionButton>
         <Divider :orientation="'horizontal'" :size="'md'"></Divider>
-        <ActionButton
-          :color="'transparental'"
-          :size="'md'"
-          :stretch="'fill'"
-          :label="$t.auth.login.form.skip"
-          @press="onContinueAsGuest"
-        ></ActionButton>
+        <Tooltip :label="'Button'"
+          ><ActionButton
+            :color="'tertiary'"
+            :size="'md'"
+            :stretch="'fill'"
+            :label="$t.auth.login.form.skip"
+            @press="onContinueAsGuest"
+          ></ActionButton>
+        </Tooltip>
       </Group>
     </template>
   </Form>

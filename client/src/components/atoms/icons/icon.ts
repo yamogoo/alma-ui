@@ -10,15 +10,15 @@ export const iconNames = [
   "logout",
   "eye",
   "eyeDisabled",
-];
+] as const;
 
 export type IconName = (typeof iconNames)[number];
 
-export const iconStyles = ["outline", "fill"];
+export const iconStyles = ["outline", "fill"] as const;
 
 export type IconStyle = (typeof iconStyles)[number];
 
-export const iconWeigths = ["100", "200", "300", "400", "500"];
+export const iconWeigths = ["100", "200", "300", "400", "500"] as const;
 
 export type IconWeight = (typeof iconWeigths)[number];
 

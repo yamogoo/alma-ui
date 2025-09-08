@@ -55,7 +55,7 @@ export interface Props extends InputProps {
         :aria-label="'mask button'"
         :size="'xs'"
         :icon-size="'xs'"
-        :color="'transparental'"
+        :color="'tertiary'"
         :icon-name="!masked ? 'eye' : 'eyeDisabled'"
         :icon-style="'outline'"
         :icon-weight="'400'"

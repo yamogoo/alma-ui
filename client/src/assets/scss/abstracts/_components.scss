@@ -1828,6 +1828,37 @@ $resizer:(
 )
 )
 );
+$char-tooltip-label:(
+  default: (
+  lg: (
+  self: (
+  gap: (
+  value: 12px,
+  type: "spacing",
+  unit: "px"
+),
+  padding: (
+  value: 8px 12px,
+  type: "spacing",
+  unit: "px"
+),
+  border-radius: (
+  value: 8px,
+  type: "radius",
+  unit: "px"
+)
+),
+  elements: (
+  label: (
+  font-style: (
+  value: caption-1,
+  type: "alias"
+)
+)
+)
+)
+)
+);
 $form:(
   default: (
   md: (

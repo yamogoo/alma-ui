@@ -209,41 +209,6 @@
         }
       },
       "button": {
-        "transparental": {
-          "label": {
-            "normal": {
-              "value": "{colors.gray-900}"
-            },
-            "disabled": {
-              "value": "{colors.gray-400}"
-            },
-            "hovered": {
-              "value": "{colors.gray-950}"
-            },
-            "pressed": {
-              "value": "{colors.gray-950}"
-            }
-          },
-          "background": {
-            "normal": {
-              "value": "rgba({colors.gray-75}, 0)"
-            },
-            "disabled": {
-              "value": "rgba({colors.gray-75}, 0)"
-            },
-            "hovered": {
-              "value": "rgba({colors.gray-100}, 0)"
-            },
-            "pressed": {
-              "value": "rgba({colors.gray-150}, 0)"
-            }
-          },
-          "border": {
-            "outline": {
-              "value": "{themes.themes.light.border.outline.value}"
-            }
-          }
-        },
         "primary": {
           "label": {
             "normal": {
@@ -341,6 +306,41 @@
             },
             "pressed": {
               "value": "{colors.gray-100}"
+            }
+          },
+          "border": {
+            "outline": {
+              "value": "{themes.themes.light.border.outline.value}"
+            }
+          }
+        },
+        "tertiary": {
+          "label": {
+            "normal": {
+              "value": "{colors.gray-900}"
+            },
+            "disabled": {
+              "value": "{colors.gray-400}"
+            },
+            "hovered": {
+              "value": "{colors.gray-950}"
+            },
+            "pressed": {
+              "value": "{colors.gray-950}"
+            }
+          },
+          "background": {
+            "normal": {
+              "value": "rgba({colors.gray-75}, 0)"
+            },
+            "disabled": {
+              "value": "rgba({colors.gray-75}, 0)"
+            },
+            "hovered": {
+              "value": "rgba({colors.gray-100}, 0)"
+            },
+            "pressed": {
+              "value": "rgba({colors.gray-150}, 0)"
             }
           },
           "border": {
@@ -750,6 +750,72 @@
           }
         }
       },
+      "charTooltipLabel": {
+        "primary": {
+          "label": {
+            "normal": {
+              "value": "{colors.gray-300}",
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "tooltip"
+              }
+            }
+          },
+          "icon": {
+            "normal": {
+              "value": "{colors.gray-300}",
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "tooltip"
+              }
+            }
+          },
+          "background": {
+            "normal": {
+              "value": "{themes.themes.light.background.primaryInversed.value}",
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "tooltip"
+              }
+            }
+          }
+        },
+        "primaryInversed": {
+          "label": {
+            "normal": {
+              "value": "{colors.gray-500}",
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "tooltip"
+              }
+            }
+          },
+          "icon": {
+            "normal": {
+              "value": "{colors.gray-450}",
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "tooltip"
+              }
+            }
+          },
+          "background": {
+            "normal": {
+              "value": "{colors.gray-150}",
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "tooltip"
+              }
+            }
+          }
+        }
+      },
       "overlay": {
         "primary": {
           "background": {
@@ -1084,41 +1150,6 @@
         }
       },
       "button": {
-        "transparental": {
-          "label": {
-            "normal": {
-              "value": "{colors.gray-350}"
-            },
-            "disabled": {
-              "value": "{colors.gray-600}"
-            },
-            "hovered": {
-              "value": "{colors.gray-200}"
-            },
-            "pressed": {
-              "value": "{colors.gray-250}"
-            }
-          },
-          "background": {
-            "normal": {
-              "value": "rgba({colors.gray-850}, 0)"
-            },
-            "disabled": {
-              "value": "rgba({colors.gray-850}, 0)"
-            },
-            "hovered": {
-              "value": "rgba({colors.gray-800}, 0)"
-            },
-            "pressed": {
-              "value": "rgba({colors.gray-750}, 0)"
-            }
-          },
-          "border": {
-            "outline": {
-              "value": "{themes.themes.dark.border.outline.value}"
-            }
-          }
-        },
         "primary": {
           "label": {
             "normal": {
@@ -1216,6 +1247,41 @@
             },
             "pressed": {
               "value": "{colors.gray-900}"
+            }
+          },
+          "border": {
+            "outline": {
+              "value": "{themes.themes.dark.border.outline.value}"
+            }
+          }
+        },
+        "tertiary": {
+          "label": {
+            "normal": {
+              "value": "{colors.gray-350}"
+            },
+            "disabled": {
+              "value": "{colors.gray-600}"
+            },
+            "hovered": {
+              "value": "{colors.gray-200}"
+            },
+            "pressed": {
+              "value": "{colors.gray-250}"
+            }
+          },
+          "background": {
+            "normal": {
+              "value": "rgba({colors.gray-850}, 0)"
+            },
+            "disabled": {
+              "value": "rgba({colors.gray-850}, 0)"
+            },
+            "hovered": {
+              "value": "rgba({colors.gray-800}, 0)"
+            },
+            "pressed": {
+              "value": "rgba({colors.gray-750}, 0)"
             }
           },
           "border": {
@@ -1620,6 +1686,72 @@
                     "description": "Active label color for step pagination tab"
                   }
                 }
+              }
+            }
+          }
+        }
+      },
+      "charTooltipLabel": {
+        "primary": {
+          "label": {
+            "normal": {
+              "value": "{themes.themes.dark.label.primaryInversed.value}",
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "tooltip"
+              }
+            }
+          },
+          "icon": {
+            "normal": {
+              "value": "{themes.themes.dark.label.primaryInversed.value}",
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "tooltip"
+              }
+            }
+          },
+          "background": {
+            "normal": {
+              "value": "{themes.themes.dark.background.primaryInversed.value}",
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "tooltip"
+              }
+            }
+          }
+        },
+        "primaryInversed": {
+          "label": {
+            "normal": {
+              "value": "{colors.gray-500}",
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "tooltip"
+              }
+            }
+          },
+          "icon": {
+            "normal": {
+              "value": "{colors.gray-550}",
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "tooltip"
+              }
+            }
+          },
+          "background": {
+            "normal": {
+              "value": "{colors.gray-850}",
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "tooltip"
               }
             }
           }

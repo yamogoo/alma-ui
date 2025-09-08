@@ -36,5 +36,8 @@ export * from "./switches";
 // Tabs/Navigation: StepPaginationTabs and other tab controls
 export * from "./tabs";
 
+// Tooltips: CharTooltipLabel, Tooltip, etc.
+export * from "./tooltips";
+
 // Typography: Text, Link, and other text-based primitives
 export * from "./typography";
