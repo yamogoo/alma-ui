@@ -1,2 +1,2 @@
 export * from "./stepPaginationTabs";
-export * from "./StepPaginationTabs.vue";
+export { default as StepPaginationTabs } from "./StepPaginationTabs.vue";

@@ -1,5 +1,5 @@
 export * from "./text";
-export * from "./Text.vue";
+export { default as Text } from "./Text.vue";
 
 export * from "./link";
-export * from "./Link.vue";
+export { default as Link } from "./Link.vue";

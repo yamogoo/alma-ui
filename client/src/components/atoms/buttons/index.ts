@@ -1,8 +1,8 @@
 export * from "./button";
-export * from "./Button.vue";
+export { default as Button } from "./Button.vue";
 
 export * from "./actionButton";
-export * from "./ActionButton.vue";
+export { default as ActionButton } from "./ActionButton.vue";
 
 export * from "./controlButton";
-export * from "./ControlButton.vue";
+export { default as ControlButton } from "./ControlButton.vue";

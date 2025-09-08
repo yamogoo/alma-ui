@@ -1,15 +1,9 @@
 <script setup lang="ts">
-import tokens from "@/tokens";
+import type { FormWrapperProps } from "./formWrapper";
 
-import type {
-  UIElementColor,
-  UIElementContentKey,
-  UIElementUnionProps,
-} from "@/typings";
+import AnimatedWrapper from "@/components/atoms/containers/AnimatedWrapper.vue";
 
-import AnimatedWrapper from "~/src/components/atoms/containers.temp/AnimatedWrapper.vue";
-
-withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<FormWrapperProps>(), {
   variant: "default",
   size: "md",
   color: "primary",
@@ -17,26 +11,12 @@ withDefaults(defineProps<Props>(), {
 });
 </script>
 
-<script lang="ts">
-export type Size = keyof typeof tokens.formWrapper.default;
-
-export type Color = Extract<UIElementColor, "primary" | "secondary">;
-
-export interface Props extends Partial<UIElementUnionProps> {
-  size?: Size;
-  color?: Color;
-  bordered?: boolean;
-  duration?: number;
-  contentKey?: UIElementContentKey;
-}
-</script>
-
 <template>
   <div
     class="form-wrapper"
     :class="[
       `form-wrapper_variant-${variant}`,
-      `form-wrapper_size-${size}`,
+      `form-wrapper_size-${String(size)}`,
       `form-wrapper_color-${color}`,
 
       { 'form-wrapper_bordered': bordered },

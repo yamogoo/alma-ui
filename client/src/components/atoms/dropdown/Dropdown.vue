@@ -141,25 +141,29 @@ const onOptionClick = (): void => {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSizes($map: proto.$drop-down) {
+@mixin defineSizes($map: $drop-down) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       $min-width: px2rem(get($val, "self.min-width.value"));
       $height: px2rem(get($val, "self.height.value"));
 
-      $font-style: get($val, "elements.value.label.font-style.value");
-      $gap: px2rem(get($val, "elements.value.gap.value"));
-      $value-padding: px2rem(get($val, "elements.value.padding.value"));
+      $value-gap: px2rem(get($val, "elements.value.self.gap.value"));
+      $value-padding: get($val, "elements.value.self.padding.value");
       $value-border-radius: px2rem(
-        get($val, "elements.value.border-radius.value")
+        get($val, "elements.value.self.border-radius.value")
+      );
+      $value-font-style: get(
+        $val,
+        "elements.value.elements.label.font-style.value"
+      );
+      $value-icon-size: px2rem(
+        get($val, "elements.value.elements.icon.size.value")
       );
 
       $options-border-radius: px2rem(
         get($val, "elements.options.border-radius.value")
       );
-      $options-padding: px2rem(get($val, "elements.options.padding.value"));
-
-      $icon-size: px2rem(get($val, "icon-size.value"));
+      $options-padding: get($val, "elements.options.padding.value");
 
       &_variant-#{$variant} {
         &.dropdown_size-#{$size} {
@@ -179,15 +183,15 @@ const onOptionClick = (): void => {
 
           .dropdown__value {
             height: $height;
-            gap: $gap;
+            gap: $value-gap;
             padding: $value-padding;
 
             &-label {
-              @extend %t__#{$font-style};
+              @extend %t__#{$value-font-style};
             }
 
             &-icon {
-              @include box($icon-size);
+              @include box($value-icon-size);
             }
           }
 

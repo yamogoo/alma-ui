@@ -76,7 +76,7 @@ const onCompleted = (): void => {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       &_size-#{$size} {
-        @include box(px2rem(get($val, "size.value")));
+        @include box(px2rem(get($val, "self.size.value")));
       }
     }
   }

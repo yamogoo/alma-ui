@@ -1,5 +1,5 @@
 export * from "./icon";
-export * from "./Icon.vue";
+export { default as Icon } from "./Icon.vue";
 
 export * from "./animatedIcon";
-export * from "./AnimatedIcon.vue";
+export { default as AnimatedIcon } from "./AnimatedIcon.vue";

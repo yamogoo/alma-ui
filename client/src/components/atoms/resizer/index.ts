@@ -1,2 +1,2 @@
 export * from "./resizeBounding";
-export * from "./ResizeBounding.vue";
+export { default as ResizeBounding } from "./ResizeBounding.vue";

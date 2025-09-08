@@ -9,8 +9,8 @@ export * from "./containers";
 // Dividers: simple decorative elements like Divider
 export * from "./dividers";
 
-// Dropdowns: Dropdown component and related utilities
-export * from "./dropdown";
+// Dropdowns: Dropdown component and related utilities !FIX
+// export * from "./dropdown";
 
 // Icons: Icon, AnimatedIcon, and related helpers
 export * from "./icons";

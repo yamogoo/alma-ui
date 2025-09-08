@@ -539,30 +539,34 @@
       "options": {
         "primary": {
           "label": {
-            "value": "#2F383F"
-          },
-          "disabled": {
-            "value": "#8999A7"
-          },
-          "hovered": {
-            "value": "#101315"
-          },
-          "focused": {
-            "value": "#101315"
+            "normal": {
+              "value": "#2F383F"
+            },
+            "disabled": {
+              "value": "#8999A7"
+            },
+            "hovered": {
+              "value": "#101315"
+            },
+            "focused": {
+              "value": "#101315"
+            }
           }
         },
         "secondary": {
-          "normal": {
-            "value": "#2F383F"
-          },
-          "disabled": {
-            "value": "#8999A7"
-          },
-          "hovered": {
-            "value": "#101315"
-          },
-          "focused": {
-            "value": "#101315"
+          "label": {
+            "normal": {
+              "value": "#2F383F"
+            },
+            "disabled": {
+              "value": "#8999A7"
+            },
+            "hovered": {
+              "value": "#101315"
+            },
+            "focused": {
+              "value": "#101315"
+            }
           }
         }
       },
@@ -764,12 +768,24 @@
             "normal": {
               "value": "#F8F9FA"
             }
+          },
+          "shadow": {
+            "normal": {
+              "value": "rgba(#060606, 0.075)",
+              "type": "color"
+            }
           }
         },
         "secondary": {
           "background": {
             "normal": {
               "value": "#e5e9f1"
+            }
+          },
+          "shadow": {
+            "normal": {
+              "value": "rgba(#060606, 0.075)",
+              "type": "color"
             }
           }
         },
@@ -778,12 +794,24 @@
             "normal": {
               "value": "#013CFE"
             }
+          },
+          "shadow": {
+            "normal": {
+              "value": "rgba(#060606, 0.075)",
+              "type": "color"
+            }
           }
         },
         "transparental": {
           "background": {
             "normal": {
               "value": "rgba(#F8F9FA, 0)"
+            }
+          },
+          "shadow": {
+            "normal": {
+              "value": "rgba(#060606, 0.075)",
+              "type": "color"
             }
           }
         }
@@ -1386,30 +1414,34 @@
       "options": {
         "primary": {
           "label": {
-            "value": "#A5B1BC"
-          },
-          "disabled": {
-            "value": "#586976"
-          },
-          "hovered": {
-            "value": "#EAEDEF"
-          },
-          "focused": {
-            "value": "#EAEDEF"
+            "normal": {
+              "value": "#A5B1BC"
+            },
+            "disabled": {
+              "value": "#586976"
+            },
+            "hovered": {
+              "value": "#EAEDEF"
+            },
+            "focused": {
+              "value": "#EAEDEF"
+            }
           }
         },
         "secondary": {
-          "normal": {
-            "value": "#A5B1BC"
-          },
-          "disabled": {
-            "value": "#586976"
-          },
-          "hovered": {
-            "value": "#EAEDEF"
-          },
-          "focused": {
-            "value": "#EAEDEF"
+          "label": {
+            "normal": {
+              "value": "#A5B1BC"
+            },
+            "disabled": {
+              "value": "#586976"
+            },
+            "hovered": {
+              "value": "#EAEDEF"
+            },
+            "focused": {
+              "value": "#EAEDEF"
+            }
           }
         }
       },
@@ -1611,12 +1643,24 @@
             "normal": {
               "value": "#101315"
             }
+          },
+          "shadow": {
+            "normal": {
+              "value": "rgba(#586976, .035)",
+              "type": "color"
+            }
           }
         },
         "secondary": {
           "background": {
             "normal": {
               "value": "#1A1F23"
+            }
+          },
+          "shadow": {
+            "normal": {
+              "value": "rgba(#586976, .035)",
+              "type": "color"
             }
           }
         },
@@ -1625,12 +1669,24 @@
             "normal": {
               "value": "#013CFE"
             }
+          },
+          "shadow": {
+            "normal": {
+              "value": "rgba(#586976, .035)",
+              "type": "color"
+            }
           }
         },
         "transparental": {
           "background": {
             "normal": {
               "value": "rgba(#101315, 0)"
+            }
+          },
+          "shadow": {
+            "normal": {
+              "value": "rgba(#586976, .035)",
+              "type": "color"
             }
           }
         }

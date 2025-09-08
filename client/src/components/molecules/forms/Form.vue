@@ -1,30 +1,15 @@
 <script setup lang="ts">
 import { useId } from "vue";
 
-import tokens from "@/tokens";
-
-import type { UIElementUnionProps } from "@/typings";
-
 import Text from "@/components/atoms/typography/Text.vue";
+import type { FormProps } from "./form";
 
-withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<FormProps>(), {
   variant: "default",
   size: "md",
 });
 
 const id = useId();
-</script>
-
-<script lang="ts">
-export type Size = keyof typeof tokens.form.default;
-
-export type Color = keyof typeof tokens.themes.light.form;
-
-export interface Props extends UIElementUnionProps {
-  title?: string;
-  color?: Color;
-  size?: Size;
-}
 </script>
 
 <template>
@@ -33,8 +18,8 @@ export interface Props extends UIElementUnionProps {
     class="form"
     :class="[
       { [`form_variant-${variant}`]: !!variant },
-      { [`form_size-${size}`]: !!size },
-      { [`form_color-${color}`]: !!color },
+      { [`form_size-${String(size)}`]: !!size },
+      { [`form_color-${String(color)}`]: !!color },
     ]"
     @submit.prevent
   >

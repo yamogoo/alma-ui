@@ -1,5 +1,5 @@
 export * from "./sheet";
-export * from "./Sheet.vue";
+export { default as Sheet } from "./Sheet.vue";
 
 export * from "./actionSheet";
-export * from "./ActionSheet.vue";
+export { default as ActionSheet } from "./ActionSheet.vue";

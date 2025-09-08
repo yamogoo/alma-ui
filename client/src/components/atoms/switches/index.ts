@@ -1,2 +1,2 @@
 export * from "./toggleSwitch";
-export * from "./ToggleSwitch.vue";
+export { default as ToggleSwitch } from "./ToggleSwitch.vue";

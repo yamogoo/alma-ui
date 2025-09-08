@@ -72,12 +72,12 @@ const showCurrentOption = (key: T) => {
     &_color-#{$name} {
       .options__option {
         @include themify($themes) {
-          color: themed("options.#{$name}.label.normal");
+          color: themed("options.#{$name}.label.normal.value");
         }
 
         &:hover {
           @include themify($themes) {
-            color: themed("options.#{$name}.label.hovered");
+            color: themed("options.#{$name}.label.hovered.value");
           }
         }
       }

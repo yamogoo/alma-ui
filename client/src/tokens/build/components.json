@@ -1561,7 +1561,16 @@
             "unit": "px",
             "meta": {
               "description": "Minimum height of large action sheet",
-              "category": "actionSheet"
+              "category": "sheet"
+            }
+          },
+          "borderRadius": {
+            "value": 16,
+            "type": "radius",
+            "unit": "px",
+            "meta": {
+              "description": "Border radius for large action sheet",
+              "category": "sheet"
             }
           },
           "gap": {
@@ -1611,7 +1620,16 @@
             "unit": "px",
             "meta": {
               "description": "Minimum height of large action sheet",
-              "category": "actionSheet"
+              "category": "sheet"
+            }
+          },
+          "borderRadius": {
+            "value": 16,
+            "type": "radius",
+            "unit": "px",
+            "meta": {
+              "description": "Border radius for large action sheet",
+              "category": "sheet"
             }
           },
           "gap": {

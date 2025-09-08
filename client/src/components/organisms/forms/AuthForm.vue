@@ -6,9 +6,8 @@ import { useLocaleStore } from "@/stores";
 
 import tokens from "@/tokens";
 
-import FormWrapper from "@/components/molecules/forms/FormWrapper.vue";
-import CarouselStack from "~/src/components/atoms/containers.temp/CarouselStack.vue";
-import StepPaginationTabs from "@/components/atoms/tabs/StepPaginationTabs.vue";
+import { CarouselStack, StepPaginationTabs } from "@/components/atoms";
+import { FormWrapper } from "@/components/molecules";
 
 import LoginForm from "./LoginForm.vue";
 import SigninForm from "./SigninForm.vue";
