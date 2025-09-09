@@ -12,8 +12,8 @@ const props = withDefaults(defineProps<ButtonProps>(), {
   variant: "default",
   as: "button",
   size: "md",
-  mode: "primary",
   tone: "neutral",
+  mode: "primary",
   contentDirection: "ltr",
   prependIconStyle: "outline",
   prependIconWeight: "500",
@@ -165,7 +165,7 @@ watch(localIsPressed, (isPressed) => {
   @each $tone, $modes in $map {
     @each $mode, $val in $modes {
       &_tone-#{$tone} {
-        &_mode-#{$mode} {
+        &.button_mode-#{$mode} {
           @include themify($themes) {
             color: themed(
               "button.#{$tone}.#{$mode}.elements.label.normal.value"
