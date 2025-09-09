@@ -260,7 +260,7 @@
             }
           },
           "borderRadius": {
-            "value": 8,
+            "value": 16,
             "type": "radius",
             "unit": "px",
             "meta": {
@@ -279,7 +279,7 @@
                 "category": "typography"
               }
             },
-            "padding-top": {
+            "paddingTop": {
               "value": 12,
               "type": "spacing",
               "unit": "px",

@@ -37,7 +37,7 @@ $themes:(
 )
 ),
   disabled: (
-  value: #586976,
+  value: #8999A7,
   type: "color",
   description: "Disabled or inactive text color",
   meta: (
@@ -108,16 +108,16 @@ $themes:(
   primary: (
   value: #F8F9FA
 ),
-  primarytransparental: (
+  primary-transparental: (
   value: rgba(#F8F9FA, 0.75)
 ),
   primary-inversed: (
   value: #101315
 ),
   secondary: (
-  value: #e5e9f1
+  value: #DCE1E5
 ),
-  secondarytransparental: (
+  secondary-transparental: (
   value: rgba(#e5e9f1, 0.75)
 ),
   tertiary: (
@@ -212,20 +212,7 @@ $themes:(
 ),
   button: (
   primary: (
-  label: (
-  normal: (
-  value: #1A1F23
-),
-  disabled: (
-  value: #8999A7
-),
-  hovered: (
-  value: #101315
-),
-  pressed: (
-  value: #101315
-)
-),
+  self: (
   background: (
   normal: (
   value: #E3E7EA
@@ -246,21 +233,25 @@ $themes:(
 )
 )
 ),
-  primary-inversed: (
+  elements: (
   label: (
   normal: (
-  value: #E3E7EA
+  value: #1A1F23
 ),
   disabled: (
-  value: #6D8292
+  value: #8999A7
 ),
   hovered: (
-  value: #E3E7EA
+  value: #101315
 ),
   pressed: (
-  value: #E3E7EA
+  value: #101315
+)
+)
 )
 ),
+  primary-inversed: (
+  self: (
   background: (
   normal: (
   value: #101315
@@ -281,21 +272,25 @@ $themes:(
 )
 )
 ),
-  secondary: (
+  elements: (
   label: (
   normal: (
-  value: #101315
+  value: #E3E7EA
 ),
   disabled: (
-  value: #8999A7
+  value: #6D8292
 ),
   hovered: (
-  value: #101315
+  value: #E3E7EA
 ),
   pressed: (
-  value: #101315
+  value: #E3E7EA
+)
+)
 )
 ),
+  secondary: (
+  self: (
   background: (
   normal: (
   value: #F9F9F9
@@ -316,10 +311,10 @@ $themes:(
 )
 )
 ),
-  tertiary: (
+  elements: (
   label: (
   normal: (
-  value: #1A1F23
+  value: #101315
 ),
   disabled: (
   value: #8999A7
@@ -330,7 +325,11 @@ $themes:(
   pressed: (
   value: #101315
 )
+)
+)
 ),
+  tertiary: (
+  self: (
   background: (
   normal: (
   value: rgba(#E3E7EA, 0)
@@ -351,21 +350,25 @@ $themes:(
 )
 )
 ),
-  accent: (
+  elements: (
   label: (
   normal: (
-  value: #F8F9FA
+  value: #1A1F23
 ),
   disabled: (
-  value: rgba(#F8F9FA, 0.75)
+  value: #8999A7
 ),
   hovered: (
-  value: #F8F9FA
+  value: #101315
 ),
   pressed: (
-  value: #F8F9FA
+  value: #101315
+)
+)
 )
 ),
+  accent: (
+  self: (
   background: (
   normal: (
   value: #01259D
@@ -386,13 +389,13 @@ $themes:(
 )
 )
 ),
-  error: (
+  elements: (
   label: (
   normal: (
   value: #F8F9FA
 ),
   disabled: (
-  value: #F8F9FA
+  value: rgba(#F8F9FA, 0.75)
 ),
   hovered: (
   value: #F8F9FA
@@ -400,7 +403,11 @@ $themes:(
   pressed: (
   value: #F8F9FA
 )
+)
+)
 ),
+  error: (
+  self: (
   background: (
   normal: (
   value: #E86060
@@ -418,6 +425,23 @@ $themes:(
   border: (
   outline: (
   value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #F8F9FA
+),
+  disabled: (
+  value: #F8F9FA
+),
+  hovered: (
+  value: #F8F9FA
+),
+  pressed: (
+  value: #F8F9FA
+)
 )
 )
 )
@@ -659,7 +683,7 @@ $themes:(
 ),
   secondary: (
   background: (
-  value: #e5e9f1
+  value: #DCE1E5
 ),
   border: (
   value: #D5DBE0
@@ -715,11 +739,11 @@ $themes:(
   skeleton: (
   default: (
   color-in: (
-  value: rgba(#586976, 0.25),
+  value: rgba(#8999A7, 0.25),
   type: "color"
 ),
   color-out: (
-  value: rgba(#586976, 0),
+  value: rgba(#8999A7, 0),
   type: "color"
 )
 )
@@ -847,7 +871,7 @@ $themes:(
   secondary: (
   background: (
   normal: (
-  value: #e5e9f1
+  value: #DCE1E5
 )
 ),
   shadow: (
@@ -902,7 +926,7 @@ $themes:(
   secondary: (
   background: (
   normal: (
-  value: #e5e9f1,
+  value: #DCE1E5,
   type: "color"
 )
 ),
@@ -1049,16 +1073,16 @@ $themes:(
   primary: (
   value: #101315
 ),
-  primarytransparental: (
+  primary-transparental: (
   value: rgba(#101315, .75)
 ),
   primary-inversed: (
-  value: #101315
+  value: #EAEDEF
 ),
   secondary: (
   value: #1A1F23
 ),
-  secondarytransparental: (
+  secondary-transparental: (
   value: rgba(#1A1F23, .75)
 ),
   tertiary: (
@@ -1153,20 +1177,7 @@ $themes:(
 ),
   button: (
   primary: (
-  label: (
-  normal: (
-  value: #97A5B1
-),
-  disabled: (
-  value: #586976
-),
-  hovered: (
-  value: #C0C9D0
-),
-  pressed: (
-  value: #B3BDC6
-)
-),
+  self: (
   background: (
   normal: (
   value: #97A5B1
@@ -1187,21 +1198,25 @@ $themes:(
 )
 )
 ),
-  primary-inversed: (
+  elements: (
   label: (
   normal: (
-  value: #101315
+  value: #97A5B1
 ),
   disabled: (
-  value: #6D8292
+  value: #586976
 ),
   hovered: (
-  value: #101315
+  value: #C0C9D0
 ),
   pressed: (
-  value: #101315
+  value: #B3BDC6
+)
+)
 )
 ),
+  primary-inversed: (
+  self: (
   background: (
   normal: (
   value: #EAEDEF
@@ -1222,21 +1237,25 @@ $themes:(
 )
 )
 ),
-  secondary: (
+  elements: (
   label: (
   normal: (
-  value: #EAEDEF
+  value: #101315
 ),
   disabled: (
-  value: #586976
+  value: #6D8292
 ),
   hovered: (
-  value: #EAEDEF
+  value: #101315
 ),
   pressed: (
-  value: #EAEDEF
+  value: #101315
+)
+)
 )
 ),
+  secondary: (
+  self: (
   background: (
   normal: (
   value: #060606
@@ -1257,21 +1276,25 @@ $themes:(
 )
 )
 ),
-  tertiary: (
+  elements: (
   label: (
   normal: (
-  value: #97A5B1
+  value: #EAEDEF
 ),
   disabled: (
   value: #586976
 ),
   hovered: (
-  value: #C0C9D0
+  value: #EAEDEF
 ),
   pressed: (
-  value: #B3BDC6
+  value: #EAEDEF
+)
+)
 )
 ),
+  tertiary: (
+  self: (
   background: (
   normal: (
   value: rgba(#242B31, 0)
@@ -1292,21 +1315,25 @@ $themes:(
 )
 )
 ),
-  accent: (
+  elements: (
   label: (
   normal: (
-  value: #F8F9FA
+  value: #97A5B1
 ),
   disabled: (
-  value: rgba(#F8F9FA, 0.75)
+  value: #586976
 ),
   hovered: (
-  value: #F8F9FA
+  value: #C0C9D0
 ),
   pressed: (
-  value: #F8F9FA
+  value: #B3BDC6
+)
+)
 )
 ),
+  accent: (
+  self: (
   background: (
   normal: (
   value: #01259D
@@ -1327,13 +1354,13 @@ $themes:(
 )
 )
 ),
-  error: (
+  elements: (
   label: (
   normal: (
   value: #F8F9FA
 ),
   disabled: (
-  value: #F8F9FA
+  value: rgba(#F8F9FA, 0.75)
 ),
   hovered: (
   value: #F8F9FA
@@ -1341,7 +1368,11 @@ $themes:(
   pressed: (
   value: #F8F9FA
 )
+)
+)
 ),
+  error: (
+  self: (
   background: (
   normal: (
   value: #E86060
@@ -1359,6 +1390,23 @@ $themes:(
   border: (
   outline: (
   value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #F8F9FA
+),
+  disabled: (
+  value: #F8F9FA
+),
+  hovered: (
+  value: #F8F9FA
+),
+  pressed: (
+  value: #F8F9FA
+)
 )
 )
 )
@@ -1717,7 +1765,7 @@ $themes:(
 ),
   background: (
   normal: (
-  value: #101315,
+  value: #EAEDEF,
   type: "color",
   unit: "hex",
   meta: (
@@ -1767,7 +1815,7 @@ $themes:(
 ),
   primary-inversed: (
   background: (
-  value: #101315
+  value: #EAEDEF
 )
 )
 ),

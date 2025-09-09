@@ -236,7 +236,7 @@
             }
           },
           "borderRadius": {
-            "value": "{tokens.spacing.xs.value}",
+            "value": "{tokens.roundness.md.value}",
             "type": "radius",
             "unit": "px",
             "meta": {
@@ -255,7 +255,7 @@
                 "category": "typography"
               }
             },
-            "padding-top": {
+            "paddingTop": {
               "value": "{tokens.spacing.sm.value}",
               "type": "spacing",
               "unit": "px",

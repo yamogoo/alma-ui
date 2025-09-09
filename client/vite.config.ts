@@ -128,7 +128,7 @@ export default (opts: { mode: string }) => {
             @use "@/assets/scss/app.extends" as *;
 
             /* * * App * * */
-            @use "@@/assets/scss/app.abstracts" as *;
+            @use "@@/assets/scss/app.abstracts" as app;
           `,
         },
       },

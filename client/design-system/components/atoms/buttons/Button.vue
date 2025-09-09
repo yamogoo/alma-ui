@@ -163,54 +163,62 @@ watch(localIsPressed, (isPressed) => {
   @each $name in $names {
     &_color-#{$name} {
       @include themify($themes) {
-        color: themed("button.#{$name}.label.normal.value");
-        fill: themed("button.#{$name}.label.normal.value");
-        background-color: themed("button.#{$name}.background.normal.value");
+        color: themed("button.#{$name}.elements.label.normal.value");
+        fill: themed("button.#{$name}.elements.label.normal.value");
+        background-color: themed(
+          "button.#{$name}.self.background.normal.value"
+        );
       }
       @extend %base-transition;
 
       &:focus {
         @include themify($themes) {
           outline: get($outline, "value") solid
-            themed("button.#{$name}.border.outline.value");
+            themed("button.#{$name}.self.border.outline.value");
         }
       }
 
       &.button_hovered {
         @include themify($themes) {
-          background-color: themed("button.#{$name}.background.hovered.value");
+          background-color: themed(
+            "button.#{$name}.self.background.hovered.value"
+          );
         }
 
         .button__label {
           @include themify($themes) {
-            color: themed("button.#{$name}.label.hovered.value");
-            fill: themed("button.#{$name}.label.hovered.value");
+            color: themed("button.#{$name}.elements.label.hovered.value");
+            fill: themed("button.#{$name}.elements.label.hovered.value");
           }
         }
       }
 
       &.button_pressed {
         @include themify($themes) {
-          background-color: themed("button.#{$name}.background.pressed.value");
+          background-color: themed(
+            "button.#{$name}.self.background.pressed.value"
+          );
         }
 
         .button__label {
           @include themify($themes) {
-            color: themed("button.#{$name}.label.pressed.value");
-            fill: themed("button.#{$name}.label.pressed.value");
+            color: themed("button.#{$name}.elements.label.pressed.value");
+            fill: themed("button.#{$name}.elements.label.pressed.value");
           }
         }
       }
 
       &.button_disabled {
         @include themify($themes) {
-          background-color: themed("button.#{$name}.background.disabled.value");
+          background-color: themed(
+            "button.#{$name}.self.background.disabled.value"
+          );
         }
 
         .button__label {
           @include themify($themes) {
-            color: themed("button.#{$name}.label.disabled.value");
-            fill: themed("button.#{$name}.label.disabled.value");
+            color: themed("button.#{$name}.elements.label.disabled.value");
+            fill: themed("button.#{$name}.elements.label.disabled.value");
           }
         }
       }
