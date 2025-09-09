@@ -3,7 +3,7 @@ import { onMounted, ref, watch, computed } from "vue";
 import { storeToRefs } from "pinia";
 import { useRouter } from "vue-router";
 
-import { useAuthStore, useLocaleStore } from "@/stores";
+import { useAuthStore, useLocaleStore } from "@@/stores";
 
 import { Form } from "@/components/molecules";
 import {

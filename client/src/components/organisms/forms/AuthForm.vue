@@ -2,7 +2,7 @@
 import { ref, computed } from "vue";
 import { storeToRefs } from "pinia";
 
-import { useLocaleStore } from "@/stores";
+import { useLocaleStore } from "@@/stores";
 
 import tokens from "@/tokens";
 

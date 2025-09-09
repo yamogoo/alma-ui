@@ -5,7 +5,7 @@ import g from "gsap";
 import { useTimeout } from "@/composables/local";
 
 import { Page } from "@/components/atoms";
-import { AuthForm } from "@/components/organisms";
+import { AuthForm } from "@@/components/organisms";
 
 const START_DELAY = 350;
 const MESSAGE_DURATION_IN = 0.65;

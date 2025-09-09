@@ -57,15 +57,15 @@ export default (opts: { mode: string }) => {
       }),
       svgLoader(),
       ColorsGeneratorPlugin({
-        source: "./src/tokens/baseColors.json",
-        outDir: "./src/tokens/colors.json",
+        source: "./design-system/tokens/baseColors.json",
+        outDir: "./design-system/tokens/colors.json",
         step: 40,
       }),
       TokensParserPlugin({
-        source: "./src/tokens",
-        outDir: "./src/assets/scss/abstracts",
-        build: "./src/tokens/build",
-        entryFilePath: "./src/tokens/index.ts",
+        source: "./design-system/tokens",
+        outDir: "./design-system/assets/scss/abstracts",
+        build: "./design-system/tokens/build",
+        entryFilePath: "./design-system/tokens/index.ts",
         mapOptions: { convertCase: true, includeFileName: false },
       }),
     ],
@@ -91,8 +91,9 @@ export default (opts: { mode: string }) => {
     resolve: {
       alias: {
         "~": fileURLToPath(new URL("./", import.meta.url)),
-        "@": fileURLToPath(new URL("./src", import.meta.url)),
-        "@@": fileURLToPath(new URL("./landing-src", import.meta.url)),
+        "@": fileURLToPath(new URL("./design-system", import.meta.url)),
+        "@@": fileURLToPath(new URL("./src", import.meta.url)),
+        "@lp": fileURLToPath(new URL("./landing-src", import.meta.url)),
       },
     },
     css: {

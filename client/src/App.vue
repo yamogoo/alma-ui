@@ -7,7 +7,7 @@ import {
   useConfigStore,
   useLayoutStore,
   useLocaleStore,
-} from "@/stores";
+} from "@@/stores";
 
 import { useMeta, useTheme, useConnection } from "@/composables/global";
 

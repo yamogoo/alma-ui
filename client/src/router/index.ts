@@ -3,18 +3,9 @@ import { routes } from "vue-router/auto-routes";
 
 import { routes as extendedRoutes } from "./extendedRoutes";
 
-import { useAuthStore } from "@/stores";
+import { useAuthStore } from "@@/stores";
 
 import { trackRouteHistory } from "@/composables/local";
-
-import type { TransitionType } from "@/typings";
-
-export interface RouteMeta {
-  rid: number;
-  transitionType?: "vertical" | "horizontal";
-  transitionIn?: TransitionType;
-  transitionOut?: TransitionType;
-}
 
 export const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

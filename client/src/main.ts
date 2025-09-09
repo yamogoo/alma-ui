@@ -4,7 +4,7 @@ import App from "./App.vue";
 import { createPinia } from "pinia";
 import { router } from "./router";
 
-import { initErrorLogger, logError } from "@/utils/errorLogger";
+import { initErrorLogger, logError } from "@@/utils";
 
 import "@/assets/scss/app.fonts.scss";
 
