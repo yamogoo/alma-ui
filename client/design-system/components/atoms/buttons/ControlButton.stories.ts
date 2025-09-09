@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/vue3-vite";
 import { fn } from "storybook/test";
 
 import ControlButton from "./ControlButton.vue";
-import { buttonColors, buttonSizes } from "./button";
+import { buttonModes, buttonSizes, buttonTones } from "./button";
 
 import {
   iconNames,
@@ -17,9 +17,13 @@ const meta = {
   tags: ["autodocs"],
   argTypes: {
     size: { control: "select", options: buttonSizes },
-    color: {
+    mode: {
       control: "select",
-      options: buttonColors,
+      options: buttonModes,
+    },
+    tone: {
+      control: "select",
+      options: buttonTones,
     },
     variant: { control: "select", options: ["default", "rounded"] },
     contentDirection: {
@@ -50,15 +54,17 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     size: "md",
-    color: "primary",
+    tone: "neutral",
+    mode: "primary",
     iconName: "check",
   },
 };
 
-export const PrimaryInversed: Story = {
+export const Inversed: Story = {
   args: {
     size: "md",
-    color: "primaryInversed",
+    tone: "neutral",
+    mode: "inversed",
     iconName: "check",
   },
 };
@@ -66,31 +72,34 @@ export const PrimaryInversed: Story = {
 export const Secondary: Story = {
   args: {
     size: "md",
-    color: "secondary",
+    tone: "neutral",
+    mode: "secondary",
     iconName: "check",
   },
 };
 
-export const Accent: Story = {
+export const Tertiary: Story = {
   args: {
     size: "md",
-    color: "accent",
+    tone: "neutral",
+    mode: "tertiary",
     iconName: "check",
   },
 };
 
-export const Error: Story = {
-  args: {
-    size: "md",
-    color: "error",
-    iconName: "check",
-  },
-};
+// export const Error: Story = {
+//   args: {
+//     size: "md",
+//     color: "error",
+//     iconName: "check",
+//   },
+// };
 
 export const Large: Story = {
   args: {
     size: "lg",
-    color: "primary",
+    tone: "neutral",
+    mode: "primary",
     iconName: "check",
   },
 };
@@ -98,7 +107,8 @@ export const Large: Story = {
 export const Medium: Story = {
   args: {
     size: "md",
-    color: "primary",
+    tone: "neutral",
+    mode: "primary",
     iconName: "check",
   },
 };
@@ -106,7 +116,8 @@ export const Medium: Story = {
 export const Small: Story = {
   args: {
     size: "sm",
-    color: "primary",
+    tone: "neutral",
+    mode: "primary",
     iconName: "check",
   },
 };

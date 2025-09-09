@@ -1,7 +1,4 @@
 packages:
-  - packages/design-system
-  - packages/**
-  - apps/**
-
-overrides:
-  design-system: link:../../../../Library/pnpm/global/5/node_modules/design-system
+  - client
+  - log-server
+  - server

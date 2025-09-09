@@ -127,7 +127,8 @@ export interface Props {
     <template #footer>
       <Group :orientation="'vertical'" :size="'sm'" :stretch="'fill'">
         <ActionButton
-          :color="'accent'"
+          :tone="'accent'"
+          :mode="'primary'"
           :size="'md'"
           :stretch="'fill'"
           :label="$t.auth.login.form.login"
@@ -139,7 +140,8 @@ export interface Props {
         <Divider :orientation="'horizontal'" :size="'md'"></Divider>
         <Tooltip :label="'Button'"
           ><ActionButton
-            :color="'tertiary'"
+            :tone="'neutral'"
+            :mode="'tertiary'"
             :size="'md'"
             :stretch="'fill'"
             :label="$t.auth.login.form.skip"

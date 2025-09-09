@@ -8,15 +8,21 @@ export const buttonVariants = Object.keys(
 
 export type ButtonSize = keyof typeof tokens.button.default;
 
-export const buttonColors = Object.keys(
-  tokens.themes.light.button
-) as Array<ButtonVariant>;
-
-export type ButtonColor = keyof typeof tokens.themes.light.button;
-
 export const buttonSizes = Object.keys(
   tokens.button.default
 ) as Array<ButtonSize>;
+
+export const buttonTones = Object.keys(
+  tokens.themes.light.button
+) as Array<ButtonTone>;
+
+export type ButtonTone = keyof typeof tokens.themes.light.button;
+
+export const buttonModes = Object.keys(
+  tokens.themes.light.button.neutral
+) as Array<ButtonMode>;
+
+export type ButtonMode = keyof typeof tokens.themes.light.button.neutral;
 
 import type {
   UIElementDirection,
@@ -39,7 +45,8 @@ export interface ButtonProps
   extends Partial<UIElementUnionProps<ButtonVariant>> {
   as?: keyof HTMLElementTagNameMap;
   size: ButtonSize;
-  color: ButtonColor;
+  mode: ButtonMode;
+  tone: ButtonTone;
   label?: string;
   contentDirection?: ButtonContentDirection;
   iconSize?: IconSize;

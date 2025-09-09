@@ -1,7 +1,13 @@
 import { mount, shallowMount, VueWrapper } from "@vue/test-utils";
 import g from "gsap";
 
+import type { ButtonProps } from "./button";
 import Button from "@/components/atoms/buttons/Button.vue";
+
+const REQUIRED_PROPS: Pick<ButtonProps, "tone" | "mode"> = {
+  tone: "neutral",
+  mode: "primary",
+};
 
 const getIcon = <T>(wrapper: VueWrapper<T>) => {
   return wrapper.find('[data-testid="button__icon"]');
@@ -21,7 +27,7 @@ describe("Button.vue", () => {
   describe("classes", () => {
     test("renders with base classes and attributes", () => {
       const wrapper = mount(Button, {
-        props: { size: "md", color: "primary" },
+        props: { size: "md", ...REQUIRED_PROPS },
       });
 
       const btn = wrapper.get("[data-testid='button']");
@@ -35,7 +41,7 @@ describe("Button.vue", () => {
   describe("attributes", () => {
     test("sets aria-label by label props", () => {
       const wrapper = mount(Button, {
-        props: { size: "md", color: "primary", label: "Click me" },
+        props: { size: "md", ...REQUIRED_PROPS, label: "Click me" },
       });
 
       const btn = wrapper.get("[data-testid='button']");
@@ -49,7 +55,7 @@ describe("Button.vue", () => {
       const wrapper = shallowMount(Button, {
         props: {
           size: "md",
-          color: "primary",
+          ...REQUIRED_PROPS,
           prependIconName: "back",
           appendIconName: "check",
         },
@@ -66,7 +72,7 @@ describe("Button.vue", () => {
   describe("animations", () => {
     test("runs gsap.to on pointerdown and pointerup", async () => {
       const wrapper = mount(Button, {
-        props: { size: "md", color: "primary" },
+        props: { size: "md", ...REQUIRED_PROPS },
         attachTo: document.body,
       });
 
@@ -96,7 +102,11 @@ describe("Button.vue", () => {
 
     test("custom scale is usedPressed", async () => {
       const wrapper = mount(Button, {
-        props: { size: "md", color: "primary", scalePressed: 0.8 },
+        props: {
+          size: "md",
+          ...REQUIRED_PROPS,
+          scalePressed: 0.8,
+        },
       });
 
       const btnEl = wrapper.get("[data-testid='button']")
@@ -121,7 +131,7 @@ describe("Button.vue", () => {
       const wrapper = shallowMount(Button, {
         props: {
           size: "md",
-          color: "primary",
+          ...REQUIRED_PROPS,
         },
         slots: {
           "prepend-icon": expectedSlot,
@@ -142,7 +152,7 @@ describe("Button.vue", () => {
       const wrapper = shallowMount(Button, {
         props: {
           size: "md",
-          color: "primary",
+          ...REQUIRED_PROPS,
         },
         slots: {
           "append-icon": expectedSlot,

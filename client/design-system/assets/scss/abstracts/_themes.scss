@@ -211,6 +211,7 @@ $themes:(
 )
 ),
   button: (
+  neutral: (
   primary: (
   self: (
   background: (
@@ -228,6 +229,18 @@ $themes:(
 )
 ),
   border: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: rgba(#E3E7EA, .5)
+),
+  hovered: (
+  value: #DCE1E5
+),
+  pressed: (
+  value: #CED5DB
+),
   outline: (
   value: #013CFE
 )
@@ -250,7 +263,7 @@ $themes:(
 )
 )
 ),
-  primary-inversed: (
+  inversed: (
   self: (
   background: (
   normal: (
@@ -267,6 +280,18 @@ $themes:(
 )
 ),
   border: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: rgba(#586976, .5)
+),
+  hovered: (
+  value: #1A1F23
+),
+  pressed: (
+  value: #2F383F
+),
   outline: (
   value: #013CFE
 )
@@ -306,6 +331,18 @@ $themes:(
 )
 ),
   border: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+),
   outline: (
   value: #013CFE
 )
@@ -345,6 +382,18 @@ $themes:(
 )
 ),
   border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
   outline: (
   value: #013CFE
 )
@@ -367,23 +416,88 @@ $themes:(
 )
 )
 ),
+  outline: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+)
+),
   accent: (
+  primary: (
   self: (
   background: (
   normal: (
-  value: #01259D
+  value: #E3E7EA
 ),
   disabled: (
-  value: rgba(#01259D, .75)
+  value: rgba(#E3E7EA, .5)
 ),
   hovered: (
-  value: #011F85
+  value: #DCE1E5
 ),
   pressed: (
-  value: #001A6D
+  value: #CED5DB
 )
 ),
   border: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: rgba(#E3E7EA, .5)
+),
+  hovered: (
+  value: #DCE1E5
+),
+  pressed: (
+  value: #CED5DB
+),
   outline: (
   value: #013CFE
 )
@@ -392,37 +506,49 @@ $themes:(
   elements: (
   label: (
   normal: (
-  value: #F8F9FA
+  value: #1A1F23
 ),
   disabled: (
-  value: rgba(#F8F9FA, 0.75)
+  value: #8999A7
 ),
   hovered: (
-  value: #F8F9FA
+  value: #101315
 ),
   pressed: (
-  value: #F8F9FA
+  value: #101315
 )
 )
 )
 ),
-  error: (
+  inversed: (
   self: (
   background: (
   normal: (
-  value: #E86060
+  value: #101315
 ),
   disabled: (
-  value: rgba(#F1A0A0, .5)
+  value: rgba(#586976, .5)
 ),
   hovered: (
-  value: #E54B4B
+  value: #1A1F23
 ),
   pressed: (
-  value: #E23636
+  value: #2F383F
 )
 ),
   border: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: rgba(#586976, .5)
+),
+  hovered: (
+  value: #1A1F23
+),
+  pressed: (
+  value: #2F383F
+),
   outline: (
   value: #013CFE
 )
@@ -431,16 +557,684 @@ $themes:(
   elements: (
   label: (
   normal: (
-  value: #F8F9FA
+  value: #E3E7EA
 ),
   disabled: (
-  value: #F8F9FA
+  value: #6D8292
 ),
   hovered: (
-  value: #F8F9FA
+  value: #E3E7EA
 ),
   pressed: (
-  value: #F8F9FA
+  value: #E3E7EA
+)
+)
+)
+),
+  secondary: (
+  self: (
+  background: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+)
+),
+  border: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  tertiary: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  outline: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+)
+),
+  positive: (
+  primary: (
+  self: (
+  background: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: rgba(#E3E7EA, .5)
+),
+  hovered: (
+  value: #DCE1E5
+),
+  pressed: (
+  value: #CED5DB
+)
+),
+  border: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: rgba(#E3E7EA, .5)
+),
+  hovered: (
+  value: #DCE1E5
+),
+  pressed: (
+  value: #CED5DB
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  inversed: (
+  self: (
+  background: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: rgba(#586976, .5)
+),
+  hovered: (
+  value: #1A1F23
+),
+  pressed: (
+  value: #2F383F
+)
+),
+  border: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: rgba(#586976, .5)
+),
+  hovered: (
+  value: #1A1F23
+),
+  pressed: (
+  value: #2F383F
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: #6D8292
+),
+  hovered: (
+  value: #E3E7EA
+),
+  pressed: (
+  value: #E3E7EA
+)
+)
+)
+),
+  secondary: (
+  self: (
+  background: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+)
+),
+  border: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  tertiary: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  outline: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+)
+),
+  negative: (
+  primary: (
+  self: (
+  background: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: rgba(#E3E7EA, .5)
+),
+  hovered: (
+  value: #DCE1E5
+),
+  pressed: (
+  value: #CED5DB
+)
+),
+  border: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: rgba(#E3E7EA, .5)
+),
+  hovered: (
+  value: #DCE1E5
+),
+  pressed: (
+  value: #CED5DB
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  inversed: (
+  self: (
+  background: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: rgba(#586976, .5)
+),
+  hovered: (
+  value: #1A1F23
+),
+  pressed: (
+  value: #2F383F
+)
+),
+  border: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: rgba(#586976, .5)
+),
+  hovered: (
+  value: #1A1F23
+),
+  pressed: (
+  value: #2F383F
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: #6D8292
+),
+  hovered: (
+  value: #E3E7EA
+),
+  pressed: (
+  value: #E3E7EA
+)
+)
+)
+),
+  secondary: (
+  self: (
+  background: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+)
+),
+  border: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  tertiary: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  outline: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
 )
 )
 )
@@ -1184,23 +1978,36 @@ $themes:(
 )
 ),
   button: (
+  neutral: (
   primary: (
   self: (
   background: (
   normal: (
-  value: #97A5B1
+  value: #43505A
 ),
   disabled: (
-  value: rgba(#586976, .5)
+  value: rgba(#39444C, .5)
 ),
   hovered: (
-  value: #C0C9D0
+  value: #586976
 ),
   pressed: (
-  value: #B3BDC6
+  value: #637584
 )
 ),
   border: (
+  normal: (
+  value: #43505A
+),
+  disabled: (
+  value: rgba(#39444C, .5)
+),
+  hovered: (
+  value: #586976
+),
+  pressed: (
+  value: #637584
+),
   outline: (
   value: #013CFE
 )
@@ -1223,7 +2030,7 @@ $themes:(
 )
 )
 ),
-  primary-inversed: (
+  inversed: (
   self: (
   background: (
   normal: (
@@ -1240,6 +2047,18 @@ $themes:(
 )
 ),
   border: (
+  normal: (
+  value: #EAEDEF
+),
+  disabled: (
+  value: rgba(#EAEDEF, .5)
+),
+  hovered: (
+  value: #DCE1E5
+),
+  pressed: (
+  value: #CED5DB
+),
   outline: (
   value: #013CFE
 )
@@ -1279,6 +2098,18 @@ $themes:(
 )
 ),
   border: (
+  normal: (
+  value: #060606
+),
+  disabled: (
+  value: rgba(#060606, .5)
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #1A1F23
+),
   outline: (
   value: #013CFE
 )
@@ -1318,6 +2149,18 @@ $themes:(
 )
 ),
   border: (
+  normal: (
+  value: rgba(#242B31, 0)
+),
+  disabled: (
+  value: rgba(#242B31, 0)
+),
+  hovered: (
+  value: rgba(#2F383F, 0)
+),
+  pressed: (
+  value: rgba(#39444C, 0)
+),
   outline: (
   value: #013CFE
 )
@@ -1340,23 +2183,88 @@ $themes:(
 )
 )
 ),
+  outline: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#242B31, 0)
+),
+  disabled: (
+  value: rgba(#242B31, 0)
+),
+  hovered: (
+  value: rgba(#2F383F, 0)
+),
+  pressed: (
+  value: rgba(#39444C, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#242B31, 0)
+),
+  disabled: (
+  value: rgba(#242B31, 0)
+),
+  hovered: (
+  value: rgba(#2F383F, 0)
+),
+  pressed: (
+  value: rgba(#39444C, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #97A5B1
+),
+  disabled: (
+  value: #586976
+),
+  hovered: (
+  value: #C0C9D0
+),
+  pressed: (
+  value: #B3BDC6
+)
+)
+)
+)
+),
   accent: (
+  primary: (
   self: (
   background: (
   normal: (
-  value: #01259D
+  value: #43505A
 ),
   disabled: (
-  value: rgba(#01259D, .75)
+  value: rgba(#39444C, .5)
 ),
   hovered: (
-  value: #011F85
+  value: #586976
 ),
   pressed: (
-  value: #001A6D
+  value: #637584
 )
 ),
   border: (
+  normal: (
+  value: #43505A
+),
+  disabled: (
+  value: rgba(#39444C, .5)
+),
+  hovered: (
+  value: #586976
+),
+  pressed: (
+  value: #637584
+),
   outline: (
   value: #013CFE
 )
@@ -1365,37 +2273,49 @@ $themes:(
   elements: (
   label: (
   normal: (
-  value: #F8F9FA
+  value: #97A5B1
 ),
   disabled: (
-  value: rgba(#F8F9FA, 0.75)
+  value: #586976
 ),
   hovered: (
-  value: #F8F9FA
+  value: #C0C9D0
 ),
   pressed: (
-  value: #F8F9FA
+  value: #B3BDC6
 )
 )
 )
 ),
-  error: (
+  inversed: (
   self: (
   background: (
   normal: (
-  value: #E86060
+  value: #EAEDEF
 ),
   disabled: (
-  value: rgba(#F1A0A0, .5)
+  value: rgba(#EAEDEF, .5)
 ),
   hovered: (
-  value: #E54B4B
+  value: #DCE1E5
 ),
   pressed: (
-  value: #E23636
+  value: #CED5DB
 )
 ),
   border: (
+  normal: (
+  value: #EAEDEF
+),
+  disabled: (
+  value: rgba(#EAEDEF, .5)
+),
+  hovered: (
+  value: #DCE1E5
+),
+  pressed: (
+  value: #CED5DB
+),
   outline: (
   value: #013CFE
 )
@@ -1404,16 +2324,684 @@ $themes:(
   elements: (
   label: (
   normal: (
-  value: #F8F9FA
+  value: #101315
 ),
   disabled: (
-  value: #F8F9FA
+  value: #6D8292
 ),
   hovered: (
-  value: #F8F9FA
+  value: #101315
 ),
   pressed: (
-  value: #F8F9FA
+  value: #101315
+)
+)
+)
+),
+  secondary: (
+  self: (
+  background: (
+  normal: (
+  value: #060606
+),
+  disabled: (
+  value: rgba(#060606, .5)
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #1A1F23
+)
+),
+  border: (
+  normal: (
+  value: #060606
+),
+  disabled: (
+  value: rgba(#060606, .5)
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #1A1F23
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #EAEDEF
+),
+  disabled: (
+  value: #586976
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #EAEDEF
+)
+)
+)
+),
+  tertiary: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#242B31, 0)
+),
+  disabled: (
+  value: rgba(#242B31, 0)
+),
+  hovered: (
+  value: rgba(#2F383F, 0)
+),
+  pressed: (
+  value: rgba(#39444C, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#242B31, 0)
+),
+  disabled: (
+  value: rgba(#242B31, 0)
+),
+  hovered: (
+  value: rgba(#2F383F, 0)
+),
+  pressed: (
+  value: rgba(#39444C, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #97A5B1
+),
+  disabled: (
+  value: #586976
+),
+  hovered: (
+  value: #C0C9D0
+),
+  pressed: (
+  value: #B3BDC6
+)
+)
+)
+),
+  outline: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#242B31, 0)
+),
+  disabled: (
+  value: rgba(#242B31, 0)
+),
+  hovered: (
+  value: rgba(#2F383F, 0)
+),
+  pressed: (
+  value: rgba(#39444C, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#242B31, 0)
+),
+  disabled: (
+  value: rgba(#242B31, 0)
+),
+  hovered: (
+  value: rgba(#2F383F, 0)
+),
+  pressed: (
+  value: rgba(#39444C, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #97A5B1
+),
+  disabled: (
+  value: #586976
+),
+  hovered: (
+  value: #C0C9D0
+),
+  pressed: (
+  value: #B3BDC6
+)
+)
+)
+)
+),
+  positive: (
+  primary: (
+  self: (
+  background: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: rgba(#E3E7EA, .5)
+),
+  hovered: (
+  value: #DCE1E5
+),
+  pressed: (
+  value: #CED5DB
+)
+),
+  border: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: rgba(#E3E7EA, .5)
+),
+  hovered: (
+  value: #DCE1E5
+),
+  pressed: (
+  value: #CED5DB
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  inversed: (
+  self: (
+  background: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: rgba(#586976, .5)
+),
+  hovered: (
+  value: #1A1F23
+),
+  pressed: (
+  value: #2F383F
+)
+),
+  border: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: rgba(#586976, .5)
+),
+  hovered: (
+  value: #1A1F23
+),
+  pressed: (
+  value: #2F383F
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: #6D8292
+),
+  hovered: (
+  value: #E3E7EA
+),
+  pressed: (
+  value: #E3E7EA
+)
+)
+)
+),
+  secondary: (
+  self: (
+  background: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+)
+),
+  border: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  tertiary: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  outline: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+)
+),
+  negative: (
+  primary: (
+  self: (
+  background: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: rgba(#E3E7EA, .5)
+),
+  hovered: (
+  value: #DCE1E5
+),
+  pressed: (
+  value: #CED5DB
+)
+),
+  border: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: rgba(#E3E7EA, .5)
+),
+  hovered: (
+  value: #DCE1E5
+),
+  pressed: (
+  value: #CED5DB
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  inversed: (
+  self: (
+  background: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: rgba(#586976, .5)
+),
+  hovered: (
+  value: #1A1F23
+),
+  pressed: (
+  value: #2F383F
+)
+),
+  border: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: rgba(#586976, .5)
+),
+  hovered: (
+  value: #1A1F23
+),
+  pressed: (
+  value: #2F383F
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: #6D8292
+),
+  hovered: (
+  value: #E3E7EA
+),
+  pressed: (
+  value: #E3E7EA
+)
+)
+)
+),
+  secondary: (
+  self: (
+  background: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+)
+),
+  border: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  tertiary: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  outline: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
 )
 )
 )

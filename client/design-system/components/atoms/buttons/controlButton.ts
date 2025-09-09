@@ -4,17 +4,19 @@ import type {
   IconWeight,
 } from "@/components/atoms/icons/icon";
 import type {
-  ButtonColor,
+  ButtonMode,
   ButtonContentDirection,
   ButtonSize,
   ButtonStretch,
   ButtonVariant,
+  ButtonTone,
 } from "./button";
 
 export interface ControlButtonProps {
   variant?: ButtonVariant;
   size: ButtonSize;
-  color: ButtonColor;
+  mode: ButtonMode;
+  tone: ButtonTone;
   label?: string;
   contentDirection?: ButtonContentDirection;
   iconName?: IconName;

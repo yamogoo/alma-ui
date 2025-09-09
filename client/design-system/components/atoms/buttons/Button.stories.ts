@@ -3,7 +3,12 @@ import type { Meta, StoryObj } from "@storybook/vue3-vite";
 import { fn } from "storybook/test";
 
 import Button from "./Button.vue";
-import { buttonColors, buttonSizes, buttonVariants } from "./button";
+import {
+  buttonModes,
+  buttonSizes,
+  buttonTones,
+  buttonVariants,
+} from "./button";
 
 import {
   iconNames,
@@ -17,9 +22,13 @@ const meta = {
   tags: ["autodocs"],
   argTypes: {
     size: { control: "select", options: buttonSizes },
-    color: {
+    mode: {
       control: "select",
-      options: buttonColors,
+      options: buttonModes,
+    },
+    tone: {
+      control: "select",
+      options: buttonTones,
     },
     variant: { control: "select", options: buttonVariants },
     contentDirection: {
@@ -69,15 +78,17 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     size: "md",
-    color: "primary",
+    tone: "neutral",
+    mode: "primary",
     label: "Button",
   },
 };
 
-export const PrimaryInversed: Story = {
+export const Inversed: Story = {
   args: {
     size: "md",
-    color: "primaryInversed",
+    tone: "neutral",
+    mode: "inversed",
     label: "Button",
   },
 };
@@ -85,7 +96,8 @@ export const PrimaryInversed: Story = {
 export const Secondary: Story = {
   args: {
     size: "md",
-    color: "secondary",
+    tone: "neutral",
+    mode: "secondary",
     label: "Button",
   },
 };
@@ -93,7 +105,8 @@ export const Secondary: Story = {
 export const Accent: Story = {
   args: {
     size: "md",
-    color: "accent",
+    tone: "accent",
+    mode: "primary",
     label: "Button",
   },
 };
@@ -101,7 +114,8 @@ export const Accent: Story = {
 export const Error: Story = {
   args: {
     size: "md",
-    color: "error",
+    tone: "negative",
+    mode: "primary",
     label: "Button",
   },
 };
@@ -109,7 +123,8 @@ export const Error: Story = {
 export const Large: Story = {
   args: {
     size: "lg",
-    color: "primary",
+    tone: "neutral",
+    mode: "primary",
     label: "Button",
   },
 };
@@ -117,7 +132,8 @@ export const Large: Story = {
 export const Medium: Story = {
   args: {
     size: "md",
-    color: "primary",
+    tone: "neutral",
+    mode: "primary",
     label: "Button",
   },
 };
@@ -125,7 +141,8 @@ export const Medium: Story = {
 export const Small: Story = {
   args: {
     size: "sm",
-    color: "primary",
+    tone: "neutral",
+    mode: "primary",
     label: "Button",
   },
 };

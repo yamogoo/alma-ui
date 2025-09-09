@@ -114,7 +114,8 @@ export interface Props {
     >
     <template #footer>
       <ActionButton
-        :color="'accent'"
+        :tone="'accent'"
+        :mode="'primary'"
         :size="'md'"
         :stretch="'fill'"
         :label="$t.auth.signin.form.register"

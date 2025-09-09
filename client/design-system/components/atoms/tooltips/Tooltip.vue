@@ -18,7 +18,7 @@ const TOOLTIP_OPACITY_IN = 1,
 const TOOLTIP_DURATION_IN = 0.2,
   TOOLTIP_DURATION_OUT = 0.25;
 
-const props = withDefaults(defineProps<TooltipProps>(), {
+withDefaults(defineProps<TooltipProps>(), {
   align: "center",
   tooltipId: useId(),
   // !!not used yet

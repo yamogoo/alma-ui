@@ -12,7 +12,8 @@ const props = withDefaults(defineProps<ButtonProps>(), {
   variant: "default",
   as: "button",
   size: "md",
-  color: "primary",
+  mode: "primary",
+  tone: "neutral",
   contentDirection: "ltr",
   prependIconStyle: "outline",
   prependIconWeight: "500",
@@ -79,7 +80,8 @@ watch(localIsPressed, (isPressed) => {
       {
         [`button_variant-${variant}`]: !!variant,
         [`button_size-${String(size)}`]: !!size,
-        [`button_color-${color}`]: !!color,
+        [`button_mode-${mode}`]: !!mode,
+        [`button_tone-${tone}`]: !!tone,
         [`button_direction-${contentDirection}`]: !!contentDirection,
         [`button_stretch-${stretch}`]: !!stretch,
         [`button_hovered`]: isHovered,
@@ -159,66 +161,86 @@ watch(localIsPressed, (isPressed) => {
   }
 }
 
-@mixin defineThemes($names) {
-  @each $name in $names {
-    &_color-#{$name} {
-      @include themify($themes) {
-        color: themed("button.#{$name}.elements.label.normal.value");
-        fill: themed("button.#{$name}.elements.label.normal.value");
-        background-color: themed(
-          "button.#{$name}.self.background.normal.value"
-        );
-      }
-      @extend %base-transition;
-
-      &:focus {
-        @include themify($themes) {
-          outline: get($outline, "value") solid
-            themed("button.#{$name}.self.border.outline.value");
-        }
-      }
-
-      &.button_hovered {
-        @include themify($themes) {
-          background-color: themed(
-            "button.#{$name}.self.background.hovered.value"
-          );
-        }
-
-        .button__label {
+@mixin defineThemes($map: get($themes, "light.button")) {
+  @each $tone, $modes in $map {
+    @each $mode, $val in $modes {
+      &_tone-#{$tone} {
+        &_mode-#{$mode} {
           @include themify($themes) {
-            color: themed("button.#{$name}.elements.label.hovered.value");
-            fill: themed("button.#{$name}.elements.label.hovered.value");
+            color: themed(
+              "button.#{$tone}.#{$mode}.elements.label.normal.value"
+            );
+            fill: themed(
+              "button.#{$tone}.#{$mode}.elements.label.normal.value"
+            );
+            background-color: themed(
+              "button.#{$tone}.#{$mode}.self.background.normal.value"
+            );
           }
-        }
-      }
+          @extend %base-transition;
 
-      &.button_pressed {
-        @include themify($themes) {
-          background-color: themed(
-            "button.#{$name}.self.background.pressed.value"
-          );
-        }
-
-        .button__label {
-          @include themify($themes) {
-            color: themed("button.#{$name}.elements.label.pressed.value");
-            fill: themed("button.#{$name}.elements.label.pressed.value");
+          &:focus {
+            @include themify($themes) {
+              outline: get($outline, "value") solid
+                themed("button.#{$tone}.#{$mode}.self.border.outline.value");
+            }
           }
-        }
-      }
 
-      &.button_disabled {
-        @include themify($themes) {
-          background-color: themed(
-            "button.#{$name}.self.background.disabled.value"
-          );
-        }
+          &.button_hovered {
+            @include themify($themes) {
+              background-color: themed(
+                "button.#{$tone}.#{$mode}.self.background.hovered.value"
+              );
+            }
 
-        .button__label {
-          @include themify($themes) {
-            color: themed("button.#{$name}.elements.label.disabled.value");
-            fill: themed("button.#{$name}.elements.label.disabled.value");
+            .button__label {
+              @include themify($themes) {
+                color: themed(
+                  "button.#{$tone}.#{$mode}.elements.label.hovered.value"
+                );
+                fill: themed(
+                  "button.#{$tone}.#{$mode}.elements.label.hovered.value"
+                );
+              }
+            }
+          }
+
+          &.button_pressed {
+            @include themify($themes) {
+              background-color: themed(
+                "button.#{$tone}.#{$mode}.self.background.pressed.value"
+              );
+            }
+
+            .button__label {
+              @include themify($themes) {
+                color: themed(
+                  "button.#{$tone}.#{$mode}.elements.label.pressed.value"
+                );
+                fill: themed(
+                  "button.#{$tone}.#{$mode}.elements.label.pressed.value"
+                );
+              }
+            }
+          }
+
+          &.button_disabled {
+            @include themify($themes) {
+              background-color: themed(
+                "button.#{$tone}.#{$mode}.self.background.disabled.value"
+              );
+            }
+
+            .button__label {
+              @include themify($themes) {
+                color: themed(
+                  "button.#{$tone}.#{$mode}.elements.label.disabled.value"
+                );
+                fill: themed(
+                  "button.#{$tone}.#{$mode}.elements.label.disabled.value"
+                );
+              }
+            }
           }
         }
       }
@@ -237,7 +259,7 @@ watch(localIsPressed, (isPressed) => {
   @extend %base-transition;
 
   @include defineButtonSizes();
-  @include defineThemes(get-theme-keys(get($themes, "light.button")));
+  @include defineThemes();
 
   &__label {
     @extend %base-transition;

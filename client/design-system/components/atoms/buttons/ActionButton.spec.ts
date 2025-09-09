@@ -8,7 +8,8 @@ describe("ActionButton", () => {
       const wrapper = mount(ActionButton, {
         props: {
           size: "lg",
-          color: "accent",
+          tone: "neutral",
+          mode: "primary",
         },
       });
 

@@ -50,14 +50,15 @@ export interface Props extends InputProps {
     <template #controls>
       <ControlButton
         data-testid="input__mask-button"
-        role="button"
-        :aria-label="'mask button'"
         :size="'xs'"
         :icon-size="'xs'"
-        :color="'tertiary'"
+        :tone="'neutral'"
+        :mode="'tertiary'"
         :icon-name="!masked ? 'eye' : 'eyeDisabled'"
         :icon-style="'outline'"
         :icon-weight="'400'"
+        role="button"
+        :aria-label="'mask button'"
         @click="onMaskValue"
       />
     </template>
