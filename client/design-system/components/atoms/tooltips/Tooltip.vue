@@ -109,7 +109,6 @@ const onTooltipLeave = (el: Element, done: () => void): void => {
 .tooltip {
   box-sizing: border-box;
   position: relative;
-  pointer-events: none;
 
   &__label {
     position: absolute;

@@ -1,5 +1,7 @@
 packages:
-  - "packages/almads-core"
-  - "packages/almads-vue"
-  - "packages/**"
-  - "apps/**"
+  - packages/design-system
+  - packages/**
+  - apps/**
+
+overrides:
+  design-system: link:../../../../Library/pnpm/global/5/node_modules/design-system

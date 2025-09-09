@@ -32,6 +32,9 @@ export default (opts: { mode: string }) => {
           changeOrigin: true,
         },
       },
+      fs: {
+        allow: ["../.."],
+      },
     },
     define: {
       "import.meta.env.VITE_API_URL": JSON.stringify(process.env.VITE_API_URL),
@@ -66,6 +69,15 @@ export default (opts: { mode: string }) => {
         outDir: "./design-system/assets/scss/abstracts",
         build: "./design-system/tokens/build",
         entryFilePath: "./design-system/tokens/index.ts",
+        paths: ["./design-system/tokens"],
+        mapOptions: { convertCase: true, includeFileName: false },
+      }),
+      TokensParserPlugin({
+        source: "./src/tokens",
+        outDir: "./src/assets/scss/abstracts",
+        build: "./src/tokens/build",
+        entryFilePath: "./src/tokens/index.ts",
+        paths: ["./src/tokens", "./design-system/tokens"],
         mapOptions: { convertCase: true, includeFileName: false },
       }),
     ],
@@ -86,12 +98,14 @@ export default (opts: { mode: string }) => {
       rollupOptions: {
         input: path.resolve(__dirname, "index.html"),
         output: {},
+        external: [],
       },
     },
     resolve: {
       alias: {
+        "@": path.resolve(__dirname, "./design-system"),
         "~": fileURLToPath(new URL("./", import.meta.url)),
-        "@": fileURLToPath(new URL("./design-system", import.meta.url)),
+        // "@": fileURLToPath(new URL("./design-system", import.meta.url)),
         "@@": fileURLToPath(new URL("./src", import.meta.url)),
         "@lp": fileURLToPath(new URL("./landing-src", import.meta.url)),
       },
@@ -106,11 +120,15 @@ export default (opts: { mode: string }) => {
         scss: {
           api: "modern-compiler",
           additionalData: `
+            /* * * Design System * * */
             @use "@/assets/scss/app.colors" as colors;
             @use "@/assets/scss/app.abstracts" as *;
             @use "@/assets/scss/app.core" as *;
             @use "@/assets/scss/app.mixins" as *;
             @use "@/assets/scss/app.extends" as *;
+
+            /* * * App * * */
+            @use "@@/assets/scss/app.abstracts" as *;
           `,
         },
       },

@@ -18,5 +18,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.11.0"
+  "packageManager": "pnpm@10.15.1",
+  "dependencies": {
+    "design-system": "link:../../../../Library/pnpm/global/5/node_modules/design-system"
+  }
 }

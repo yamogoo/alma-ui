@@ -4,7 +4,7 @@ import { defineStore } from "pinia";
 import locales from "@@/locales";
 import { useTypedLocalStorage } from "@/composables/local";
 
-import type { Locale } from "@/typings";
+import type { Locale } from "@@/typings";
 
 const DEFAULT_LOCALE = import.meta.env.VITE_APP_DEFAULT_LOCALE as Locale;
 

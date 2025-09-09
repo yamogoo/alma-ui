@@ -34,7 +34,8 @@ interface JSONToSCSSOptions {
 }
 
 export interface TokensParserOptions {
-  source: string;
+  source?: string;
+  paths?: string[];
   outDir: string;
   cssVarsOutDir?: string;
   build?: string;
@@ -248,7 +249,10 @@ export class TokensParser {
   fileCache: Record<string, any> = {};
 
   constructor(opts: TokensParserOptions) {
-    this.opts = opts;
+    this.opts = {
+      paths: ["."],
+      ...opts,
+    };
     this.parser = new SCSSParser(this);
 
     this.defaultParseOptions = {
@@ -270,7 +274,9 @@ export class TokensParser {
     };
 
     const { source, outDir } = opts;
-    this.listDir(source, outDir);
+    if (source && outDir) {
+      this.listDir(source, outDir);
+    }
     this.generateEntryFile();
   }
 
@@ -358,60 +364,80 @@ export class TokensParser {
     return String(value);
   }
 
-  parseNestedValue(value: string, opts: ParseValueOptions, depth = 0): any {
-    if (depth > 10) return value;
-
+  parseNestedValue(
+    value: string,
+    opts: ParseValueOptions,
+    depth = 0,
+    visited = new Set<string>()
+  ): any {
+    if (depth > 5) return value;
     const regex = /{([^}]+)}/g;
-    let result: any = value;
+    let result = value;
     let match: RegExpExecArray | null;
 
-    while ((match = regex.exec(value)) !== null) {
+    while ((match = regex.exec(result)) !== null) {
       const fullMatch = match[0];
       const pathStr = match[1];
+
+      if (visited.has(fullMatch)) {
+        console.warn(`⚠️ Circular reference detected: ${fullMatch}`);
+        continue;
+      }
+
+      visited.add(fullMatch);
+
       const pathParts = pathStr.split(".");
       const fileName = pathParts.shift();
       if (!fileName) continue;
 
-      try {
-        let json: any;
-        if (this.fileCache[fileName]) {
-          json = this.fileCache[fileName];
-        } else {
-          const filePath = `${this.opts.source}/${fileName}.json`;
-          const file = readFileSync(filePath, "utf-8");
-          json = JSON.parse(file);
-          this.fileCache[fileName] = json;
+      let json;
+      if (this.fileCache[fileName]) {
+        json = this.fileCache[fileName];
+      } else {
+        const paths = this.opts.paths ?? ["."];
+        let fileFound = false;
+        for (const p of paths) {
+          const filePath = `${p}/${fileName}.json`;
+          try {
+            json = JSON.parse(readFileSync(filePath, "utf-8"));
+            this.fileCache[fileName] = json;
+            fileFound = true;
+            break;
+          } catch {}
         }
 
-        let nestedValue = pathParts.reduce((acc, key) => acc?.[key], json);
-        if (nestedValue === undefined) continue;
-
-        if (typeof nestedValue === "string" && nestedValue.startsWith("{")) {
-          nestedValue = this.parseNestedValue(nestedValue, opts, depth + 1);
-        } else if (_.isArray(nestedValue)) {
-          nestedValue = nestedValue.map((v) =>
-            typeof v === "string" && v.startsWith("{")
-              ? this.parseNestedValue(v, opts, depth + 1)
-              : v
+        if (!fileFound) {
+          console.warn(
+            `⚠️ Token file "${fileName}.json" not found in paths: ${paths.join(", ")}`
           );
-        } else if (_.isPlainObject(nestedValue)) {
-          nestedValue = Object.fromEntries(
-            Object.entries(nestedValue).map(([k, v]) => [
-              k,
-              typeof v === "string" && v.startsWith("{")
-                ? this.parseNestedValue(v, opts, depth + 1)
-                : v,
-            ])
-          );
+          visited.delete(fullMatch);
+          continue;
         }
-
-        result = result.replace(fullMatch, nestedValue);
-      } catch (err) {
-        console.error(`Error resolving token ${match[0]}`, err);
       }
+
+      let nestedValue = pathParts.reduce((acc, key) => acc?.[key], json);
+      if (nestedValue === undefined) {
+        console.warn(
+          `⚠️ Token path "${pathStr}" not found in file "${fileName}"`
+        );
+        visited.delete(fullMatch);
+        continue;
+      }
+
+      if (typeof nestedValue === "string" && nestedValue.startsWith("{")) {
+        nestedValue = this.parseNestedValue(
+          nestedValue,
+          opts,
+          depth + 1,
+          visited
+        );
+      }
+
+      result = result.replace(fullMatch, nestedValue);
+      visited.delete(fullMatch);
     }
 
-    return this.normalizeValue(result, opts);
+    return result;
   }
 
   flattenToCSSVariables(
@@ -593,11 +619,30 @@ export class TokensParser {
 
             try {
               let json: any;
-              if (this.fileCache[fileName]) json = this.fileCache[fileName];
-              else {
-                const filePath = `${this.opts.source}/${fileName}.json`;
-                json = JSON.parse(readFileSync(filePath, "utf-8"));
-                this.fileCache[fileName] = json;
+
+              if (this.fileCache[fileName]) {
+                json = this.fileCache[fileName];
+              } else {
+                const paths = this.opts.paths ?? ["."];
+                let fileFound = false;
+
+                for (const p of paths) {
+                  const filePath = `${p}/${fileName}.json`;
+                  try {
+                    const file = readFileSync(filePath, "utf-8");
+                    json = JSON.parse(file);
+                    this.fileCache[fileName] = json;
+                    fileFound = true;
+                    break;
+                  } catch {
+                    continue;
+                  }
+                }
+
+                if (!fileFound) {
+                  unresolvedTokens.push(fullMatch);
+                  continue;
+                }
               }
 
               let nestedValue = pathParts.reduce(

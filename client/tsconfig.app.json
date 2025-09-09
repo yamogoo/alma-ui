@@ -46,12 +46,6 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "src/**/*.mdx",
-
-    "landing-page/**/*.ts",
-    "landing-page/**/*.d.ts",
-    "landing-page/**/*.tsx",
-    "landing-page/**/*.vue",
-    "landing-page/**/*.mdx"
   ],
   "exclude": ["design-system/**/__tests__/*"]
 }
