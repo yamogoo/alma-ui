@@ -448,24 +448,7 @@ $themes:(
 ),
   input: (
   primary: (
-  label: (
-  normal: (
-  value: #2F383F
-),
-  disabled: (
-  value: #8999A7
-),
-  hovered: (
-  value: #101315
-),
-  focused: (
-  value: #101315
-),
-  error: (
-  value: #350808,
-  description: "placeholder = #E96B6B"
-)
-),
+  self: (
   background: (
   normal: (
   value: #E3E7EA
@@ -489,7 +472,7 @@ $themes:(
 )
 )
 ),
-  secondary: (
+  elements: (
   label: (
   normal: (
   value: #2F383F
@@ -507,7 +490,11 @@ $themes:(
   value: #350808,
   description: "placeholder = #E96B6B"
 )
+)
+)
 ),
+  secondary: (
+  self: (
   background: (
   normal: (
   value: #F8F9FA
@@ -528,6 +515,27 @@ $themes:(
   border: (
   outline: (
   value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #2F383F
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  focused: (
+  value: #101315
+),
+  error: (
+  value: #350808,
+  description: "placeholder = #E96B6B"
+)
 )
 )
 )
@@ -1413,24 +1421,7 @@ $themes:(
 ),
   input: (
   primary: (
-  label: (
-  normal: (
-  value: #A5B1BC
-),
-  disabled: (
-  value: #586976
-),
-  hovered: (
-  value: #EAEDEF
-),
-  focused: (
-  value: #EAEDEF
-),
-  error: (
-  value: #FADFDF,
-  description: "placeholder = #E96B6B"
-)
-),
+  self: (
   background: (
   normal: (
   value: #2F383F
@@ -1454,7 +1445,7 @@ $themes:(
 )
 )
 ),
-  secondary: (
+  elements: (
   label: (
   normal: (
   value: #A5B1BC
@@ -1472,7 +1463,11 @@ $themes:(
   value: #FADFDF,
   description: "placeholder = #E96B6B"
 )
+)
+)
 ),
+  secondary: (
+  self: (
   background: (
   normal: (
   value: #1A1F23
@@ -1493,6 +1488,27 @@ $themes:(
   border: (
   outline: (
   value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #A5B1BC
+),
+  disabled: (
+  value: #586976
+),
+  hovered: (
+  value: #EAEDEF
+),
+  focused: (
+  value: #EAEDEF
+),
+  error: (
+  value: #FADFDF,
+  description: "placeholder = #E96B6B"
+)
 )
 )
 )

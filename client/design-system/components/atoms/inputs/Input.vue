@@ -317,7 +317,7 @@ onMounted(() => {
         .input__field {
           @include themify($themes) {
             outline: get($outline, "value") solid
-              themed("input.#{$name}.border.outline.value");
+              themed("input.#{$name}.self.border.outline.value");
           }
         }
       }
@@ -325,8 +325,10 @@ onMounted(() => {
       &:not(.input_disabled) {
         .input__field {
           @include themify($themes) {
-            color: themed("input.#{$name}.label.normal.value");
-            background-color: themed("input.#{$name}.background.normal.value");
+            color: themed("input.#{$name}.elements.label.normal.value");
+            background-color: themed(
+              "input.#{$name}.self.background.normal.value"
+            );
             @extend %base-transition;
           }
         }
@@ -335,8 +337,10 @@ onMounted(() => {
       &.input_focused {
         .input__field {
           @include themify($themes) {
-            color: themed("input.#{$name}.label.focused.value");
-            background-color: themed("input.#{$name}.background.focused.value");
+            color: themed("input.#{$name}.elements.label.focused.value");
+            background-color: themed(
+              "input.#{$name}.self.background.focused.value"
+            );
             @extend %base-transition;
           }
         }
@@ -345,9 +349,9 @@ onMounted(() => {
       &.input_disabled {
         .input__field {
           @include themify($themes) {
-            color: themed("input.#{$name}.label.disabled.value");
+            color: themed("input.#{$name}.elements.label.disabled.value");
             background-color: themed(
-              "input.#{$name}.background.disabled.value"
+              "input.#{$name}.self.background.disabled.value"
             );
             @extend %base-transition;
           }
@@ -357,8 +361,10 @@ onMounted(() => {
       &.input_error {
         .input__field {
           @include themify($themes) {
-            color: themed("input.#{$name}.label.error.value");
-            background-color: themed("input.#{$name}.background.error.value");
+            color: themed("input.#{$name}.elements.label.error.value");
+            background-color: themed(
+              "input.#{$name}.self.background.error.value"
+            );
             @extend %base-transition;
           }
         }
@@ -373,7 +379,7 @@ onMounted(() => {
       .input__error {
         &-message {
           @include themify($themes) {
-            color: themed("input.#{$name}.label.error.value");
+            color: themed("input.#{$name}.elements.label.error.value");
             @extend %base-transition;
           }
         }
