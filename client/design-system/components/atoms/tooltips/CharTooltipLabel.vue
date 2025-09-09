@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from "vue";
 import type { CharTooltipLabelProps } from "./charTooltipLabel";
 
 import { Icon, Text } from "@/components/atoms";
@@ -10,10 +11,17 @@ withDefaults(defineProps<CharTooltipLabelProps>(), {
   iconStyle: "outline",
   iconWeight: "300",
 });
+
+const root = ref<HTMLDivElement | null>(null);
+
+defineExpose({
+  root,
+});
 </script>
 
 <template>
   <div
+    ref="refRoot"
     class="char-tooltip-label"
     :class="[
       `char-tooltip-label_variant-${variant}`,

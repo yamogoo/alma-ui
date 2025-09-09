@@ -7,4 +7,5 @@ export type TooltipAlign = UIElementAlignment;
 export interface TooltipProps extends Pick<CharTooltipLabelProps, "label"> {
   align?: TooltipAlign;
   tooltipId?: string;
+  isFollowingCursor?: boolean;
 }

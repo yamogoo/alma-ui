@@ -18,9 +18,11 @@ const TOOLTIP_OPACITY_IN = 1,
 const TOOLTIP_DURATION_IN = 0.2,
   TOOLTIP_DURATION_OUT = 0.25;
 
-withDefaults(defineProps<TooltipProps>(), {
+const props = withDefaults(defineProps<TooltipProps>(), {
   align: "center",
   tooltipId: useId(),
+  // !!not used yet
+  isFollowingCursor: false,
 });
 
 const refContent = ref<HTMLDivElement | null>(null);
@@ -86,7 +88,12 @@ const onTooltipLeave = (el: Element, done: () => void): void => {
 </script>
 
 <template>
-  <div class="tooltip" :class="[`tooltip_align-${align}`]">
+  <div
+    class="tooltip"
+    :class="[
+      isFollowingCursor ? `tooltip_follow-cursor` : `tooltip_align-${align}`,
+    ]"
+  >
     <div
       ref="refContent"
       class="tooltip__content"
