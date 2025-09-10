@@ -1,0 +1,1261 @@
+{
+  "actionSheet.default.lg.self.min-height": {
+    "value": 32,
+    "type": "size",
+    "unit": "px",
+    "description": "Minimum height of large action sheet"
+  },
+  "actionSheet.default.lg.self.borderRadius": {
+    "value": 16,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for large action sheet"
+  },
+  "actionSheet.default.lg.self.padding": {
+    "value": [
+      48,
+      24,
+      24,
+      24
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside large action sheet"
+  },
+  "actionSheet.default.lg.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "actionSheet.default.md.self.min-height": {
+    "value": 32,
+    "type": "size",
+    "unit": "px",
+    "description": "Minimum height of medium action sheet"
+  },
+  "actionSheet.default.md.self.borderRadius": {
+    "value": 12,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for medium action sheet"
+  },
+  "actionSheet.default.md.self.padding": {
+    "value": [
+      24,
+      24
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside medium action sheet"
+  },
+  "actionSheet.default.md.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "button.default.lg.self.size": {
+    "value": 56,
+    "type": "size",
+    "unit": "px",
+    "description": "Button height for large default button"
+  },
+  "button.default.lg.self.gap": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap between button elements"
+  },
+  "button.default.lg.self.padding": {
+    "value": [
+      0,
+      32,
+      0,
+      32
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside large default button"
+  },
+  "button.default.lg.self.borderRadius": {
+    "value": 9999,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for large default button"
+  },
+  "button.default.lg.elements.label.fontStyle": {
+    "value": "label-1",
+    "type": "alias",
+    "description": "Font style for button label"
+  },
+  "button.default.lg.elements.icon.size": {
+    "value": 20,
+    "type": "size",
+    "unit": "px",
+    "description": "Icon size in large default button"
+  },
+  "button.default.lg.elements.icon.alias.size": {
+    "value": "sm",
+    "type": "unknown",
+    "description": "Alias for icon size"
+  },
+  "button.default.lg.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "button.default.md.self.size": {
+    "value": 44,
+    "type": "size",
+    "unit": "px",
+    "description": "Medium default button height"
+  },
+  "button.default.md.self.gap": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap between elements"
+  },
+  "button.default.md.self.padding": {
+    "value": [
+      0,
+      24,
+      0,
+      24
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside medium button"
+  },
+  "button.default.md.self.borderRadius": {
+    "value": 9999,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for medium button"
+  },
+  "button.default.md.elements.label.fontStyle": {
+    "value": "label-2",
+    "type": "alias",
+    "description": "Font style for button label"
+  },
+  "button.default.md.elements.icon.size": {
+    "value": 16,
+    "type": "size",
+    "unit": "px",
+    "description": "Icon size in medium button"
+  },
+  "button.default.md.elements.icon.alias.size": {
+    "value": "xs",
+    "type": "unknown",
+    "description": "Alias for icon size"
+  },
+  "button.default.md.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "button.default.sm.self.size": {
+    "value": 40,
+    "type": "size",
+    "unit": "px",
+    "description": "Small default button height"
+  },
+  "button.default.sm.self.gap": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap between elements"
+  },
+  "button.default.sm.self.padding": {
+    "value": [
+      0,
+      12,
+      0,
+      12
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside small button"
+  },
+  "button.default.sm.self.borderRadius": {
+    "value": 9999,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for small button"
+  },
+  "button.default.sm.elements.label.fontStyle": {
+    "value": "label-3",
+    "type": "alias",
+    "description": "Font style for button label"
+  },
+  "button.default.sm.elements.icon.size": {
+    "value": 16,
+    "type": "size",
+    "unit": "px",
+    "description": "Icon size in small button"
+  },
+  "button.default.sm.elements.icon.alias.size": {
+    "value": "xs",
+    "type": "unknown",
+    "description": "Alias for icon size"
+  },
+  "button.default.sm.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "button.default.xs.self.size": {
+    "value": 36,
+    "type": "size",
+    "unit": "px",
+    "description": "Extra small default button height"
+  },
+  "button.default.xs.self.gap": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap between elements"
+  },
+  "button.default.xs.self.padding": {
+    "value": [
+      0,
+      12
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside extra small button"
+  },
+  "button.default.xs.self.borderRadius": {
+    "value": 9999,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for extra small button"
+  },
+  "button.default.xs.elements.label.fontStyle": {
+    "value": "label-3",
+    "type": "alias",
+    "description": "Font style for button label"
+  },
+  "button.default.xs.elements.icon.size": {
+    "value": 12,
+    "type": "size",
+    "unit": "px",
+    "description": "Icon size in extra small button"
+  },
+  "button.default.xs.elements.icon.alias.size": {
+    "value": "xxs",
+    "type": "unknown",
+    "description": "Alias for icon size"
+  },
+  "button.default.xs.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "button.rounded.lg.self.size": {
+    "value": 56,
+    "type": "size",
+    "unit": "px",
+    "description": "Large rounded button height"
+  },
+  "button.rounded.lg.self.gap": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap between elements"
+  },
+  "button.rounded.lg.self.padding": {
+    "value": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside large rounded button"
+  },
+  "button.rounded.lg.self.borderRadius": {
+    "value": 9999,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for large rounded button"
+  },
+  "button.rounded.lg.elements.label.fontStyle": {
+    "value": "label-1",
+    "type": "alias",
+    "description": "Font style for button label"
+  },
+  "button.rounded.lg.elements.icon.size": {
+    "value": 20,
+    "type": "size",
+    "unit": "px",
+    "description": "Icon size in large rounded button"
+  },
+  "button.rounded.lg.elements.icon.alias.size": {
+    "value": "sm",
+    "type": "unknown",
+    "description": "Alias for icon size"
+  },
+  "button.rounded.lg.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "button.rounded.md.self.size": {
+    "value": 44,
+    "type": "size",
+    "unit": "px",
+    "description": "Medium rounded button height"
+  },
+  "button.rounded.md.self.gap": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap between elements"
+  },
+  "button.rounded.md.self.padding": {
+    "value": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside medium rounded button"
+  },
+  "button.rounded.md.self.borderRadius": {
+    "value": 9999,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for medium rounded button"
+  },
+  "button.rounded.md.elements.label.fontStyle": {
+    "value": "label-3",
+    "type": "alias",
+    "description": "Font style for button label"
+  },
+  "button.rounded.md.elements.icon.size": {
+    "value": 16,
+    "type": "size",
+    "unit": "px",
+    "description": "Icon size in medium rounded button"
+  },
+  "button.rounded.md.elements.icon.alias.size": {
+    "value": "xs",
+    "type": "unknown",
+    "description": "Alias for icon size"
+  },
+  "button.rounded.md.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "button.rounded.sm.self.size": {
+    "value": 32,
+    "type": "size",
+    "unit": "px",
+    "description": "Small rounded button height"
+  },
+  "button.rounded.sm.self.gap": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap between elements"
+  },
+  "button.rounded.sm.self.padding": {
+    "value": [
+      0,
+      24,
+      0,
+      24
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside small rounded button"
+  },
+  "button.rounded.sm.self.borderRadius": {
+    "value": 9999,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for small rounded button"
+  },
+  "button.rounded.sm.elements.label.fontStyle": {
+    "value": "label-4",
+    "type": "alias",
+    "description": "Font style for button label"
+  },
+  "button.rounded.sm.elements.icon.size": {
+    "value": 16,
+    "type": "size",
+    "unit": "px",
+    "description": "Icon size in small rounded button"
+  },
+  "button.rounded.sm.elements.icon.alias.size": {
+    "value": "xs",
+    "type": "unknown",
+    "description": "Alias for icon size"
+  },
+  "button.rounded.sm.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "button.rounded.xs.self.size": {
+    "value": 24,
+    "type": "size",
+    "unit": "px",
+    "description": "Extra small rounded button height"
+  },
+  "button.rounded.xs.self.gap": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap between elements"
+  },
+  "button.rounded.xs.self.padding": {
+    "value": [
+      0,
+      24,
+      0,
+      24
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside extra small rounded button"
+  },
+  "button.rounded.xs.self.borderRadius": {
+    "value": 9999,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for extra small rounded button"
+  },
+  "button.rounded.xs.elements.label.fontStyle": {
+    "value": "label-4",
+    "type": "alias",
+    "description": "Font style for button label"
+  },
+  "button.rounded.xs.elements.icon.size": {
+    "value": 12,
+    "type": "size",
+    "unit": "px",
+    "description": "Icon size in extra small rounded button"
+  },
+  "button.rounded.xs.elements.icon.alias.size": {
+    "value": "xxs",
+    "type": "unknown",
+    "description": "Alias for icon size"
+  },
+  "button.rounded.xs.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "carouselStack.default.lg.elements.header.padding": {
+    "value": [
+      24,
+      24
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding for the header inside large carousel stack"
+  },
+  "carouselStack.default.lg.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "carouselStack.default.md.elements.header.padding": {
+    "value": [
+      16,
+      16
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding for the header inside medium carousel stack"
+  },
+  "carouselStack.default.md.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "charTooltipLabel.default.lg.self.gap": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "charTooltipLabel.default.lg.self.padding": {
+    "value": [
+      8,
+      12
+    ],
+    "type": "spacing",
+    "unit": "px"
+  },
+  "charTooltipLabel.default.lg.self.borderRadius": {
+    "value": 8,
+    "type": "radius",
+    "unit": "px"
+  },
+  "charTooltipLabel.default.lg.elements.label.fontStyle": {
+    "value": "caption-1",
+    "type": "alias"
+  },
+  "divider.default.lg.self.borderWidth": {
+    "value": 1,
+    "type": "border",
+    "unit": "px",
+    "description": "Divider border width for large size"
+  },
+  "divider.default.lg.self.padding": {
+    "value": 16,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding around the divider for large size"
+  },
+  "divider.default.lg.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "divider.default.md.self.borderWidth": {
+    "value": 1,
+    "type": "border",
+    "unit": "px",
+    "description": "Divider border width for medium size"
+  },
+  "divider.default.md.self.padding": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding around the divider for medium size"
+  },
+  "divider.default.md.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "divider.default.sm.self.borderWidth": {
+    "value": 1,
+    "type": "border",
+    "unit": "px",
+    "description": "Divider border width for small size"
+  },
+  "divider.default.sm.self.padding": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding around the divider for small size"
+  },
+  "divider.default.sm.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "divider.default.xs.self.borderWidth": {
+    "value": 1,
+    "type": "border",
+    "unit": "px",
+    "description": "Divider border width for extra small size"
+  },
+  "divider.default.xs.self.padding": {
+    "value": 0,
+    "type": "spacing",
+    "unit": "px",
+    "description": "No padding for extra small divider"
+  },
+  "divider.default.xs.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "dropDown.default.lg.self.minWidth": {
+    "value": 76,
+    "type": "size",
+    "unit": "px",
+    "description": "Minimum width of large dropdown"
+  },
+  "dropDown.default.lg.self.height": {
+    "value": 56,
+    "type": "size",
+    "unit": "px",
+    "description": "Height of large dropdown"
+  },
+  "dropDown.default.lg.elements": {
+    "value": {
+      "elements": {
+        "label": {
+          "fontStyle": {
+            "value": "label-2",
+            "type": "alias",
+            "meta": {
+              "description": "Font style for dropdown value label",
+              "category": "typography"
+            }
+          }
+        },
+        "icon": {
+          "size": {
+            "value": 12,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Icon size for dropdown value",
+              "category": "dropDown"
+            }
+          }
+        }
+      },
+      "self": {
+        "gap": {
+          "value": 8,
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Gap inside dropdown value component",
+            "category": "dropDown"
+          }
+        },
+        "padding": {
+          "value": [
+            8,
+            12,
+            8,
+            12
+          ],
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Padding inside dropdown value component",
+            "category": "dropDown"
+          }
+        },
+        "borderRadius": {
+          "value": 8,
+          "type": "radius",
+          "unit": "px",
+          "meta": {
+            "description": "Border radius of dropdown value component",
+            "category": "dropDown"
+          }
+        }
+      },
+      "type": "component"
+    },
+    "type": "unknown"
+  },
+  "dropDown.default.lg.tokens.padding": {
+    "value": [
+      8,
+      12,
+      8,
+      12
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding tokens for large dropdown"
+  },
+  "dropDown.default.lg.tokens.borderRadius": {
+    "value": 8,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius token for large dropdown"
+  },
+  "dropDown.default.lg.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "dropDown.default.md.self.minWidth": {
+    "value": 76,
+    "type": "size",
+    "unit": "px",
+    "description": "Minimum width of medium dropdown"
+  },
+  "dropDown.default.md.self.height": {
+    "value": 44,
+    "type": "size",
+    "unit": "px",
+    "description": "Height of medium dropdown"
+  },
+  "dropDown.default.md.elements": {
+    "value": {
+      "elements": {
+        "label": {
+          "fontStyle": {
+            "value": "label-3",
+            "type": "alias",
+            "meta": {
+              "description": "Font style for dropdown value label",
+              "category": "typography"
+            }
+          }
+        },
+        "icon": {
+          "size": {
+            "value": 12,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Icon size for dropdown value",
+              "category": "dropDown"
+            }
+          }
+        }
+      },
+      "self": {
+        "gap": {
+          "value": 8,
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Gap inside dropdown value component",
+            "category": "dropDown"
+          }
+        },
+        "padding": {
+          "value": [
+            8,
+            12,
+            8,
+            12
+          ],
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Padding inside dropdown value component",
+            "category": "dropDown"
+          }
+        },
+        "borderRadius": {
+          "value": 8,
+          "type": "radius",
+          "unit": "px",
+          "meta": {
+            "description": "Border radius of dropdown value component",
+            "category": "dropDown"
+          }
+        }
+      },
+      "type": "component"
+    },
+    "type": "unknown"
+  },
+  "dropDown.default.md.tokens.padding": {
+    "value": [
+      8,
+      12,
+      8,
+      12
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding tokens for medium dropdown"
+  },
+  "dropDown.default.md.tokens.borderRadius": {
+    "value": 8,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius token for medium dropdown"
+  },
+  "dropDown.default.md.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "form.default.md.self.padding": {
+    "value": [
+      16,
+      24
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside the form"
+  },
+  "form.default.md.self.borderRadius": {
+    "value": 16,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius of the form"
+  },
+  "form.default.md.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "formWrapper.default.md.self.padding": {
+    "value": [
+      16,
+      24
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside the form wrapper"
+  },
+  "formWrapper.default.md.self.borderRadius": {
+    "value": 16,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius of the form wrapper"
+  },
+  "formWrapper.default.md.self.borderWidth": {
+    "value": 1,
+    "type": "size",
+    "unit": "px",
+    "description": "Border width of the form wrapper"
+  },
+  "formWrapper.default.md.elements.header.padding": {
+    "value": [
+      12,
+      0
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding for the header inside the form wrapper"
+  },
+  "formWrapper.default.md.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "group.default.lg.self.gap": {
+    "value": 24,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap between elements in large group"
+  },
+  "group.default.lg.self.borderWidth": {
+    "value": 1,
+    "type": "size",
+    "unit": "px",
+    "description": "Border width for large group"
+  },
+  "group.default.lg.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "group.default.md.self.gap": {
+    "value": 16,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap between elements in medium group"
+  },
+  "group.default.md.self.borderWidth": {
+    "value": 1,
+    "type": "size",
+    "unit": "px",
+    "description": "Border width for medium group"
+  },
+  "group.default.md.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "group.default.sm.self.gap": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap between elements in small group"
+  },
+  "group.default.sm.self.borderWidth": {
+    "value": 1,
+    "type": "size",
+    "unit": "px",
+    "description": "Border width for small group"
+  },
+  "group.default.sm.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "icon.default.xxs.self.size": {
+    "value": 12,
+    "type": "size",
+    "unit": "px",
+    "description": "Extra extra small icon size"
+  },
+  "icon.default.xxs.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "icon.default.xs.self.size": {
+    "value": 16,
+    "type": "size",
+    "unit": "px",
+    "description": "Extra small icon size"
+  },
+  "icon.default.xs.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "icon.default.sm.self.size": {
+    "value": 20,
+    "type": "size",
+    "unit": "px",
+    "description": "Small icon size"
+  },
+  "icon.default.sm.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "icon.default.md.self.size": {
+    "value": 24,
+    "type": "size",
+    "unit": "px",
+    "description": "Medium icon size"
+  },
+  "icon.default.md.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "icon.default.lg.self.size": {
+    "value": 32,
+    "type": "size",
+    "unit": "px",
+    "description": "Large icon size"
+  },
+  "icon.default.lg.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "icon.default.xl.self.size": {
+    "value": 48,
+    "type": "size",
+    "unit": "px",
+    "description": "Extra large icon size"
+  },
+  "icon.default.xl.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "icon.default.xxl.self.size": {
+    "value": 56,
+    "type": "size",
+    "unit": "px",
+    "description": "Extra extra large icon size"
+  },
+  "icon.default.xxl.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "input.default.md.self.height": {
+    "value": 44,
+    "type": "size",
+    "unit": "px",
+    "description": "Height of the input field for medium size"
+  },
+  "input.default.md.self.wholeHeight": {
+    "value": 60,
+    "type": "size",
+    "unit": "px",
+    "description": "Total height including padding for medium input"
+  },
+  "input.default.md.self.padding": {
+    "value": [
+      8,
+      16
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Horizontal padding for medium input"
+  },
+  "input.default.md.self.borderRadius": {
+    "value": 16,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for medium input"
+  },
+  "input.default.md.elements": {
+    "value": {
+      "fontStyle": {
+        "value": "label-3",
+        "type": "alias",
+        "meta": {
+          "description": "Font style for input value text",
+          "category": "typography"
+        }
+      },
+      "paddingTop": {
+        "value": 12,
+        "type": "spacing",
+        "unit": "px",
+        "meta": {
+          "description": "Top padding for input value text",
+          "category": "input"
+        }
+      }
+    },
+    "type": "unknown"
+  },
+  "input.default.md.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "input.default.lg.self.height": {
+    "value": 52,
+    "type": "size",
+    "unit": "px",
+    "description": "Height of the input field for large size"
+  },
+  "input.default.lg.self.wholeHeight": {
+    "value": 68,
+    "type": "size",
+    "unit": "px",
+    "description": "Total height including padding for large input"
+  },
+  "input.default.lg.self.padding": {
+    "value": [
+      8,
+      16,
+      8,
+      16
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding for large input"
+  },
+  "input.default.lg.self.borderRadius": {
+    "value": 8,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for large input"
+  },
+  "input.default.lg.elements": {
+    "value": {
+      "fontStyle": {
+        "value": "label-3",
+        "type": "alias",
+        "meta": {
+          "description": "Font style for input value text",
+          "category": "typography"
+        }
+      },
+      "padding-top": {
+        "value": 12,
+        "type": "spacing",
+        "unit": "px",
+        "meta": {
+          "description": "Top padding for input value text",
+          "category": "input"
+        }
+      }
+    },
+    "type": "unknown"
+  },
+  "input.default.lg.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "mainContainer.default.self.borderRadius": {
+    "value": 16,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius of the main container"
+  },
+  "mainContainer.default.self.media.lg.padding": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding for large screens"
+  },
+  "mainContainer.default.self.media.md.padding": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding for medium screens"
+  },
+  "mainContainer.default.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "mainContainer.default.meta.status": {
+    "value": "unused",
+    "type": "string"
+  },
+  "options.default.lg.elements.option.fontStyle": {
+    "value": "label-2",
+    "type": "alias",
+    "description": "Font style for large dropdown option"
+  },
+  "options.default.lg.elements.option.minHeight": {
+    "value": 24,
+    "type": "size",
+    "unit": "px",
+    "description": "Minimum height of large dropdown option"
+  },
+  "options.default.lg.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "options.default.md.elements.option.fontStyle": {
+    "value": "label-3",
+    "type": "alias",
+    "description": "Font style for medium dropdown option"
+  },
+  "options.default.md.elements.option.minHeight": {
+    "value": 24,
+    "type": "size",
+    "unit": "px",
+    "description": "Minimum height of medium dropdown option"
+  },
+  "options.default.md.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "progressbar.default.lg.self.height": {
+    "value": 10,
+    "type": "size",
+    "unit": "px"
+  },
+  "progressbar.default.lg.self.borderRadius": {
+    "value": 5,
+    "type": "radius",
+    "unit": "px"
+  },
+  "progressbar.default.lg.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "progressbar.default.md.self.height": {
+    "value": 8,
+    "type": "size",
+    "unit": "px"
+  },
+  "progressbar.default.md.self.borderRadius": {
+    "value": 4,
+    "type": "radius",
+    "unit": "px"
+  },
+  "progressbar.default.md.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "resizer.default.self.activeAreaWidth": {
+    "value": 20,
+    "type": "size",
+    "unit": "px",
+    "description": "Width of the interactive area for the resizer"
+  },
+  "resizer.default.elements.knob.width": {
+    "value": 76,
+    "type": "size",
+    "unit": "px",
+    "description": "Width of the draggable knob"
+  },
+  "resizer.default.elements.knob.height": {
+    "value": 6,
+    "type": "size",
+    "unit": "px",
+    "description": "Height of the draggable knob"
+  },
+  "resizer.default.elements.knob.borderRadius": {
+    "value": 3,
+    "type": "radius",
+    "unit": "px",
+    "description": "Corner radius of the knob"
+  },
+  "resizer.default.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "scrollbar.default.elements.thumb.width": {
+    "value": 3,
+    "type": "size",
+    "unit": "px",
+    "description": "Width of the scrollbar thumb"
+  },
+  "scrollbar.default.elements.thumb.borderRadius": {
+    "value": 1.5,
+    "type": "radius",
+    "unit": "px",
+    "description": "Corner radius of the scrollbar thumb"
+  },
+  "scrollbar.default.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "sheet.default.lg.self.min-height": {
+    "value": 32,
+    "type": "size",
+    "unit": "px",
+    "description": "Minimum height of large action sheet"
+  },
+  "sheet.default.lg.self.borderRadius": {
+    "value": 16,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for large action sheet"
+  },
+  "sheet.default.lg.self.gap": {
+    "value": 32,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap between elements inside large sheet"
+  },
+  "sheet.default.lg.self.padding": {
+    "value": [
+      48,
+      24,
+      24,
+      24
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside large sheet"
+  },
+  "sheet.default.lg.elements.button.offset": {
+    "value": 24,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Offset for buttons inside large sheet"
+  },
+  "sheet.default.lg.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "sheet.default.md.self.min-height": {
+    "value": 32,
+    "type": "size",
+    "unit": "px",
+    "description": "Minimum height of large action sheet"
+  },
+  "sheet.default.md.self.borderRadius": {
+    "value": 16,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for large action sheet"
+  },
+  "sheet.default.md.self.gap": {
+    "value": 16,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap between elements inside medium sheet"
+  },
+  "sheet.default.md.self.padding": {
+    "value": [
+      24,
+      24
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside medium sheet"
+  },
+  "sheet.default.md.elements.button.offset": {
+    "value": 24,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Offset for buttons inside medium sheet"
+  },
+  "sheet.default.md.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "stepPaginationTabs.default.lg.elements.item.fontStyle": {
+    "value": "title-3",
+    "type": "alias",
+    "description": "Font style for step pagination tab item on large screens"
+  },
+  "stepPaginationTabs.default.lg.elements.item.padding": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding for step pagination tab item on large screens"
+  },
+  "stepPaginationTabs.default.lg.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "stepPaginationTabs.default.md.elements.item.fontStyle": {
+    "value": "title-4",
+    "type": "alias",
+    "description": "Font style for step pagination tab item on medium screens"
+  },
+  "stepPaginationTabs.default.md.elements.item.padding": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding for step pagination tab item on medium screens"
+  },
+  "stepPaginationTabs.default.md.type": {
+    "value": "component",
+    "type": "string"
+  }
+}

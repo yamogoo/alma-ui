@@ -1,0 +1,164 @@
+{
+  "gap.xxs": {
+    "value": 4,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Extra extra small gap"
+  },
+  "gap.xs": {
+    "value": 10,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Extra small gap"
+  },
+  "gap.sm": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Small gap"
+  },
+  "gap.md": {
+    "value": 14,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Medium gap"
+  },
+  "gap.lg": {
+    "value": 24,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Large gap"
+  },
+  "gap.xl": {
+    "value": 32,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Extra large gap"
+  },
+  "outline": {
+    "value": 1,
+    "type": "border",
+    "unit": "px",
+    "description": "Default outline width"
+  },
+  "roundness.xxs": {
+    "value": 4,
+    "type": "radius",
+    "unit": "px",
+    "description": "Extra extra small border radius"
+  },
+  "roundness.xs": {
+    "value": 8,
+    "type": "radius",
+    "unit": "px",
+    "description": "Extra small border radius"
+  },
+  "roundness.sm": {
+    "value": 12,
+    "type": "radius",
+    "unit": "px",
+    "description": "Small border radius"
+  },
+  "roundness.md": {
+    "value": 16,
+    "type": "radius",
+    "unit": "px",
+    "description": "Medium border radius"
+  },
+  "roundness.lg": {
+    "value": 20,
+    "type": "radius",
+    "unit": "px",
+    "description": "Large border radius"
+  },
+  "roundness.xl": {
+    "value": 24,
+    "type": "radius",
+    "unit": "px",
+    "description": "Extra large border radius"
+  },
+  "roundness.xxl": {
+    "value": 32,
+    "type": "radius",
+    "unit": "px",
+    "description": "Extra extra large border radius"
+  },
+  "roundness.infinity": {
+    "value": 9999,
+    "type": "radius",
+    "unit": "px",
+    "description": "Fully rounded / pill shape"
+  },
+  "spacing.xxs": {
+    "value": 4,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Extra extra small spacing"
+  },
+  "spacing.xs": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Extra small spacing"
+  },
+  "spacing.sm": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Small spacing"
+  },
+  "spacing.md": {
+    "value": 16,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Medium spacing"
+  },
+  "spacing.lg": {
+    "value": 24,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Large spacing"
+  },
+  "spacing.xl": {
+    "value": 32,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Extra large spacing"
+  },
+  "spacing.xxl": {
+    "value": 48,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Extra extra large spacing"
+  },
+  "stroke.sm": {
+    "value": 1,
+    "type": "border",
+    "unit": "px",
+    "description": "Thin stroke width"
+  },
+  "stroke.md": {
+    "value": 2,
+    "type": "border",
+    "unit": "px",
+    "description": "Medium stroke width"
+  },
+  "stroke.lg": {
+    "value": 3,
+    "type": "border",
+    "unit": "px",
+    "description": "Large stroke width"
+  },
+  "stroke.xl": {
+    "value": 4,
+    "type": "border",
+    "unit": "px",
+    "description": "Extra large stroke width"
+  },
+  "touchArea.sm.size": {
+    "value": 36,
+    "type": "size",
+    "unit": "px",
+    "description": "Small touch target area"
+  }
+}

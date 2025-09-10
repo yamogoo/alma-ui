@@ -1,0 +1,8 @@
+{
+  "config.scaleFactor": {
+    "value": 1,
+    "type": "number",
+    "unit": "",
+    "description": "Global font scale factor to unify font sizes across platforms. Implementation for mobile platforms is not active yet"
+  }
+}

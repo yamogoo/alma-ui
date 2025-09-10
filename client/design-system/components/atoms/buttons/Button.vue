@@ -250,6 +250,7 @@ watch(localIsPressed, (isPressed) => {
 
 .button {
   box-sizing: border-box;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -265,6 +266,10 @@ watch(localIsPressed, (isPressed) => {
     @extend %base-transition;
   }
 
+  &__skeleton {
+    position: absolute;
+    inset: 0;
+  }
   /* * * Directions * * */
 
   &_direction-ltr {

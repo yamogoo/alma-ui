@@ -341,7 +341,7 @@
             "value": "{colors.blue-50}"
           },
           "disabled": {
-            "value": "{colors.blue-200}"
+            "value": "{colors.blue-0}"
           },
           "hovered": {
             "value": "{colors.blue-100}"
@@ -923,16 +923,16 @@
       "self": {
         "background": {
           "normal": {
-            "value": "{colors.gray-75}"
+            "value": "{colors.red-75}"
           },
           "disabled": {
-            "value": "rgba({colors.gray-75}, .5)"
+            "value": "rgba({colors.red-75}, .5)"
           },
           "hovered": {
-            "value": "{colors.gray-100}"
+            "value": "{colors.red-100}"
           },
           "pressed": {
-            "value": "{colors.gray-150}"
+            "value": "{colors.red-150}"
           }
         },
         "border": {
