@@ -176,6 +176,8 @@ watch(localIsPressed, (isPressed) => {
             background-color: themed(
               "button.#{$tone}.#{$mode}.self.background.normal.value"
             );
+            border: get($outline, "value") solid
+              themed("button.#{$tone}.#{$mode}.self.border.normal.value");
           }
           @extend %base-transition;
 
@@ -191,6 +193,8 @@ watch(localIsPressed, (isPressed) => {
               background-color: themed(
                 "button.#{$tone}.#{$mode}.self.background.hovered.value"
               );
+              border: get($outline, "value") solid
+                themed("button.#{$tone}.#{$mode}.self.border.hovered.value");
             }
 
             .button__label {
@@ -210,6 +214,8 @@ watch(localIsPressed, (isPressed) => {
               background-color: themed(
                 "button.#{$tone}.#{$mode}.self.background.pressed.value"
               );
+              border: get($outline, "value") solid
+                themed("button.#{$tone}.#{$mode}.self.border.pressed.value");
             }
 
             .button__label {
@@ -229,6 +235,8 @@ watch(localIsPressed, (isPressed) => {
               background-color: themed(
                 "button.#{$tone}.#{$mode}.self.background.disabled.value"
               );
+              border: get($outline, "value") solid
+                themed("button.#{$tone}.#{$mode}.self.border.disabled.value");
             }
 
             .button__label {

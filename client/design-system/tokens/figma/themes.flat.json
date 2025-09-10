@@ -111,6 +111,526 @@
     "type": "color",
     "unit": "hex"
   },
+  "themes.dark.button.accent.primary.self.background.normal": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.primary.self.background.disabled": {
+    "value": "rgba(#013CFE, .5)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.primary.self.background.hovered": {
+    "value": "#0130CE",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.primary.self.background.pressed": {
+    "value": "#01259D",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.primary.self.border.normal": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.primary.self.border.disabled": {
+    "value": "rgba(#013CFE, .5)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.primary.self.border.hovered": {
+    "value": "#0130CE",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.primary.self.border.pressed": {
+    "value": "#01259D",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.primary.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.primary.elements.label.normal": {
+    "value": "#DBE3FF",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.primary.elements.label.disabled": {
+    "value": "#92ABFF",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.primary.elements.label.hovered": {
+    "value": "#C3D1FF",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.primary.elements.label.pressed": {
+    "value": "#AABEFF",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.inversed.self.background.normal": {
+    "value": "#EAEDEF",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.inversed.self.background.disabled": {
+    "value": "rgba(#EAEDEF, .5)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.inversed.self.background.hovered": {
+    "value": "#DCE1E5",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.inversed.self.background.pressed": {
+    "value": "#CED5DB",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.inversed.self.border.normal": {
+    "value": "#EAEDEF",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.inversed.self.border.disabled": {
+    "value": "rgba(#EAEDEF, .5)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.inversed.self.border.hovered": {
+    "value": "#DCE1E5",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.inversed.self.border.pressed": {
+    "value": "#CED5DB",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.inversed.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.inversed.elements.label.normal": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.inversed.elements.label.disabled": {
+    "value": "#6D8292",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.inversed.elements.label.hovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.inversed.elements.label.pressed": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.secondary.self.background.normal": {
+    "value": "#060606",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.secondary.self.background.disabled": {
+    "value": "rgba(#060606, .5)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.secondary.self.background.hovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.secondary.self.background.pressed": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.secondary.self.border.normal": {
+    "value": "#060606",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.secondary.self.border.disabled": {
+    "value": "rgba(#060606, .5)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.secondary.self.border.hovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.secondary.self.border.pressed": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.secondary.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.secondary.elements.label.normal": {
+    "value": "#EAEDEF",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.secondary.elements.label.disabled": {
+    "value": "#586976",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.secondary.elements.label.hovered": {
+    "value": "#EAEDEF",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.secondary.elements.label.pressed": {
+    "value": "#EAEDEF",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.tertiary.self.background.normal": {
+    "value": "rgba(#242B31, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.tertiary.self.background.disabled": {
+    "value": "rgba(#242B31, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.tertiary.self.background.hovered": {
+    "value": "rgba(#2F383F, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.tertiary.self.background.pressed": {
+    "value": "rgba(#39444C, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.tertiary.self.border.normal": {
+    "value": "rgba(#242B31, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.tertiary.self.border.disabled": {
+    "value": "rgba(#242B31, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.tertiary.self.border.hovered": {
+    "value": "rgba(#2F383F, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.tertiary.self.border.pressed": {
+    "value": "rgba(#39444C, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.tertiary.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.tertiary.elements.label.normal": {
+    "value": "#97A5B1",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.tertiary.elements.label.disabled": {
+    "value": "#586976",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.tertiary.elements.label.hovered": {
+    "value": "#C0C9D0",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.tertiary.elements.label.pressed": {
+    "value": "#B3BDC6",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.outline.self.background.normal": {
+    "value": "rgba(#242B31, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.outline.self.background.disabled": {
+    "value": "rgba(#242B31, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.outline.self.background.hovered": {
+    "value": "rgba(#2F383F, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.outline.self.background.pressed": {
+    "value": "rgba(#39444C, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.outline.self.border.normal": {
+    "value": "rgba(#242B31, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.outline.self.border.disabled": {
+    "value": "rgba(#242B31, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.outline.self.border.hovered": {
+    "value": "rgba(#2F383F, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.outline.self.border.pressed": {
+    "value": "rgba(#39444C, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.outline.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.outline.elements.label.normal": {
+    "value": "#97A5B1",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.outline.elements.label.disabled": {
+    "value": "#586976",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.outline.elements.label.hovered": {
+    "value": "#C0C9D0",
+    "type": "unknown"
+  },
+  "themes.dark.button.accent.outline.elements.label.pressed": {
+    "value": "#B3BDC6",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.primary.self.background.normal": {
+    "value": "#E3E7EA",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.primary.self.background.disabled": {
+    "value": "rgba(#E3E7EA, .5)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.primary.self.background.hovered": {
+    "value": "#DCE1E5",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.primary.self.background.pressed": {
+    "value": "#CED5DB",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.primary.self.border.normal": {
+    "value": "#F9D5D5",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.primary.self.border.disabled": {
+    "value": "rgba(#F9D5D5, .5)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.primary.self.border.hovered": {
+    "value": "#F7CACA",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.primary.self.border.pressed": {
+    "value": "#F4B5B5",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.primary.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.primary.elements.label.normal": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.primary.elements.label.disabled": {
+    "value": "#8999A7",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.primary.elements.label.hovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.primary.elements.label.pressed": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.inversed.self.background.normal": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.inversed.self.background.disabled": {
+    "value": "rgba(#586976, .5)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.inversed.self.background.hovered": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.inversed.self.background.pressed": {
+    "value": "#2F383F",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.inversed.self.border.normal": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.inversed.self.border.disabled": {
+    "value": "rgba(#586976, .5)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.inversed.self.border.hovered": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.inversed.self.border.pressed": {
+    "value": "#2F383F",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.inversed.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.inversed.elements.label.normal": {
+    "value": "#E3E7EA",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.inversed.elements.label.disabled": {
+    "value": "#6D8292",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.inversed.elements.label.hovered": {
+    "value": "#E3E7EA",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.inversed.elements.label.pressed": {
+    "value": "#E3E7EA",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.secondary.self.background.normal": {
+    "value": "#F9F9F9",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.secondary.self.background.disabled": {
+    "value": "rgba(#F9F9F9, .5)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.secondary.self.background.hovered": {
+    "value": "#EAEDEF",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.secondary.self.background.pressed": {
+    "value": "#DCE1E5",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.secondary.self.border.normal": {
+    "value": "#F9F9F9",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.secondary.self.border.disabled": {
+    "value": "rgba(#F9F9F9, .5)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.secondary.self.border.hovered": {
+    "value": "#EAEDEF",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.secondary.self.border.pressed": {
+    "value": "#DCE1E5",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.secondary.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.secondary.elements.label.normal": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.secondary.elements.label.disabled": {
+    "value": "#8999A7",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.secondary.elements.label.hovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.secondary.elements.label.pressed": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.tertiary.self.background.normal": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.tertiary.self.background.disabled": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.tertiary.self.background.hovered": {
+    "value": "rgba(#DCE1E5, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.tertiary.self.background.pressed": {
+    "value": "rgba(#CED5DB, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.tertiary.self.border.normal": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.tertiary.self.border.disabled": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.tertiary.self.border.hovered": {
+    "value": "rgba(#DCE1E5, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.tertiary.self.border.pressed": {
+    "value": "rgba(#CED5DB, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.tertiary.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.tertiary.elements.label.normal": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.tertiary.elements.label.disabled": {
+    "value": "#8999A7",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.tertiary.elements.label.hovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.tertiary.elements.label.pressed": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.outline.self.background.normal": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.outline.self.background.disabled": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.outline.self.background.hovered": {
+    "value": "rgba(#DCE1E5, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.outline.self.background.pressed": {
+    "value": "rgba(#CED5DB, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.outline.self.border.normal": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.outline.self.border.disabled": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.outline.self.border.hovered": {
+    "value": "rgba(#DCE1E5, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.outline.self.border.pressed": {
+    "value": "rgba(#CED5DB, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.outline.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.outline.elements.label.normal": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.outline.elements.label.disabled": {
+    "value": "#8999A7",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.outline.elements.label.hovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.dark.button.negative.outline.elements.label.pressed": {
+    "value": "#101315",
+    "type": "unknown"
+  },
   "themes.dark.button.neutral.primary.self.background.normal": {
     "value": "#43505A",
     "type": "color",
@@ -397,266 +917,6 @@
     "value": "#B3BDC6",
     "type": "unknown"
   },
-  "themes.dark.button.accent.primary.self.background.normal": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.primary.self.background.disabled": {
-    "value": "rgba(#013CFE, .5)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.primary.self.background.hovered": {
-    "value": "#0130CE",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.primary.self.background.pressed": {
-    "value": "#01259D",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.primary.self.border.normal": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.primary.self.border.disabled": {
-    "value": "rgba(#013CFE, .5)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.primary.self.border.hovered": {
-    "value": "#0130CE",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.primary.self.border.pressed": {
-    "value": "#01259D",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.primary.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.primary.elements.label.normal": {
-    "value": "#DBE3FF",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.primary.elements.label.disabled": {
-    "value": "#92ABFF",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.primary.elements.label.hovered": {
-    "value": "#C3D1FF",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.primary.elements.label.pressed": {
-    "value": "#AABEFF",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.inversed.self.background.normal": {
-    "value": "#EAEDEF",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.inversed.self.background.disabled": {
-    "value": "rgba(#EAEDEF, .5)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.inversed.self.background.hovered": {
-    "value": "#DCE1E5",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.inversed.self.background.pressed": {
-    "value": "#CED5DB",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.inversed.self.border.normal": {
-    "value": "#EAEDEF",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.inversed.self.border.disabled": {
-    "value": "rgba(#EAEDEF, .5)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.inversed.self.border.hovered": {
-    "value": "#DCE1E5",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.inversed.self.border.pressed": {
-    "value": "#CED5DB",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.inversed.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.inversed.elements.label.normal": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.inversed.elements.label.disabled": {
-    "value": "#6D8292",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.inversed.elements.label.hovered": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.inversed.elements.label.pressed": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.secondary.self.background.normal": {
-    "value": "#060606",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.secondary.self.background.disabled": {
-    "value": "rgba(#060606, .5)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.secondary.self.background.hovered": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.secondary.self.background.pressed": {
-    "value": "#1A1F23",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.secondary.self.border.normal": {
-    "value": "#060606",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.secondary.self.border.disabled": {
-    "value": "rgba(#060606, .5)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.secondary.self.border.hovered": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.secondary.self.border.pressed": {
-    "value": "#1A1F23",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.secondary.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.secondary.elements.label.normal": {
-    "value": "#EAEDEF",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.secondary.elements.label.disabled": {
-    "value": "#586976",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.secondary.elements.label.hovered": {
-    "value": "#EAEDEF",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.secondary.elements.label.pressed": {
-    "value": "#EAEDEF",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.tertiary.self.background.normal": {
-    "value": "rgba(#242B31, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.tertiary.self.background.disabled": {
-    "value": "rgba(#242B31, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.tertiary.self.background.hovered": {
-    "value": "rgba(#2F383F, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.tertiary.self.background.pressed": {
-    "value": "rgba(#39444C, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.tertiary.self.border.normal": {
-    "value": "rgba(#242B31, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.tertiary.self.border.disabled": {
-    "value": "rgba(#242B31, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.tertiary.self.border.hovered": {
-    "value": "rgba(#2F383F, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.tertiary.self.border.pressed": {
-    "value": "rgba(#39444C, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.tertiary.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.tertiary.elements.label.normal": {
-    "value": "#97A5B1",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.tertiary.elements.label.disabled": {
-    "value": "#586976",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.tertiary.elements.label.hovered": {
-    "value": "#C0C9D0",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.tertiary.elements.label.pressed": {
-    "value": "#B3BDC6",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.outline.self.background.normal": {
-    "value": "rgba(#242B31, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.outline.self.background.disabled": {
-    "value": "rgba(#242B31, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.outline.self.background.hovered": {
-    "value": "rgba(#2F383F, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.outline.self.background.pressed": {
-    "value": "rgba(#39444C, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.outline.self.border.normal": {
-    "value": "rgba(#242B31, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.outline.self.border.disabled": {
-    "value": "rgba(#242B31, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.outline.self.border.hovered": {
-    "value": "rgba(#2F383F, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.outline.self.border.pressed": {
-    "value": "rgba(#39444C, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.outline.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.outline.elements.label.normal": {
-    "value": "#97A5B1",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.outline.elements.label.disabled": {
-    "value": "#586976",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.outline.elements.label.hovered": {
-    "value": "#C0C9D0",
-    "type": "unknown"
-  },
-  "themes.dark.button.accent.outline.elements.label.pressed": {
-    "value": "#B3BDC6",
-    "type": "unknown"
-  },
   "themes.dark.button.positive.primary.self.background.normal": {
     "value": "#E3E7EA",
     "type": "unknown"
@@ -914,266 +1174,6 @@
     "type": "unknown"
   },
   "themes.dark.button.positive.outline.elements.label.pressed": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.primary.self.background.normal": {
-    "value": "#E3E7EA",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.primary.self.background.disabled": {
-    "value": "rgba(#E3E7EA, .5)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.primary.self.background.hovered": {
-    "value": "#DCE1E5",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.primary.self.background.pressed": {
-    "value": "#CED5DB",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.primary.self.border.normal": {
-    "value": "#F9D5D5",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.primary.self.border.disabled": {
-    "value": "rgba(#F9D5D5, .5)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.primary.self.border.hovered": {
-    "value": "#F7CACA",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.primary.self.border.pressed": {
-    "value": "#F4B5B5",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.primary.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.primary.elements.label.normal": {
-    "value": "#1A1F23",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.primary.elements.label.disabled": {
-    "value": "#8999A7",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.primary.elements.label.hovered": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.primary.elements.label.pressed": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.inversed.self.background.normal": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.inversed.self.background.disabled": {
-    "value": "rgba(#586976, .5)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.inversed.self.background.hovered": {
-    "value": "#1A1F23",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.inversed.self.background.pressed": {
-    "value": "#2F383F",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.inversed.self.border.normal": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.inversed.self.border.disabled": {
-    "value": "rgba(#586976, .5)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.inversed.self.border.hovered": {
-    "value": "#1A1F23",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.inversed.self.border.pressed": {
-    "value": "#2F383F",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.inversed.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.inversed.elements.label.normal": {
-    "value": "#E3E7EA",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.inversed.elements.label.disabled": {
-    "value": "#6D8292",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.inversed.elements.label.hovered": {
-    "value": "#E3E7EA",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.inversed.elements.label.pressed": {
-    "value": "#E3E7EA",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.secondary.self.background.normal": {
-    "value": "#F9F9F9",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.secondary.self.background.disabled": {
-    "value": "rgba(#F9F9F9, .5)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.secondary.self.background.hovered": {
-    "value": "#EAEDEF",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.secondary.self.background.pressed": {
-    "value": "#DCE1E5",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.secondary.self.border.normal": {
-    "value": "#F9F9F9",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.secondary.self.border.disabled": {
-    "value": "rgba(#F9F9F9, .5)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.secondary.self.border.hovered": {
-    "value": "#EAEDEF",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.secondary.self.border.pressed": {
-    "value": "#DCE1E5",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.secondary.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.secondary.elements.label.normal": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.secondary.elements.label.disabled": {
-    "value": "#8999A7",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.secondary.elements.label.hovered": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.secondary.elements.label.pressed": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.tertiary.self.background.normal": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.tertiary.self.background.disabled": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.tertiary.self.background.hovered": {
-    "value": "rgba(#DCE1E5, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.tertiary.self.background.pressed": {
-    "value": "rgba(#CED5DB, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.tertiary.self.border.normal": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.tertiary.self.border.disabled": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.tertiary.self.border.hovered": {
-    "value": "rgba(#DCE1E5, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.tertiary.self.border.pressed": {
-    "value": "rgba(#CED5DB, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.tertiary.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.tertiary.elements.label.normal": {
-    "value": "#1A1F23",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.tertiary.elements.label.disabled": {
-    "value": "#8999A7",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.tertiary.elements.label.hovered": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.tertiary.elements.label.pressed": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.outline.self.background.normal": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.outline.self.background.disabled": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.outline.self.background.hovered": {
-    "value": "rgba(#DCE1E5, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.outline.self.background.pressed": {
-    "value": "rgba(#CED5DB, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.outline.self.border.normal": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.outline.self.border.disabled": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.outline.self.border.hovered": {
-    "value": "rgba(#DCE1E5, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.outline.self.border.pressed": {
-    "value": "rgba(#CED5DB, 0)",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.outline.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.outline.elements.label.normal": {
-    "value": "#1A1F23",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.outline.elements.label.disabled": {
-    "value": "#8999A7",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.outline.elements.label.hovered": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.dark.button.negative.outline.elements.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -1707,279 +1707,6 @@
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.button.neutral.primary.self.background.normal": {
-    "value": "#E3E7EA",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.button.neutral.primary.self.background.disabled": {
-    "value": "rgba(#E3E7EA, .5)",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.button.neutral.primary.self.background.hovered": {
-    "value": "#DCE1E5",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.button.neutral.primary.self.background.pressed": {
-    "value": "#CED5DB",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.button.neutral.primary.self.border.normal": {
-    "value": "#E3E7EA",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.button.neutral.primary.self.border.disabled": {
-    "value": "rgba(#E3E7EA, .5)",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.button.neutral.primary.self.border.hovered": {
-    "value": "#DCE1E5",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.button.neutral.primary.self.border.pressed": {
-    "value": "#CED5DB",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.button.neutral.primary.self.border.outline": {
-    "value": "#013CFE",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.button.neutral.primary.elements.label.normal": {
-    "value": "#1A1F23",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.button.neutral.primary.elements.label.disabled": {
-    "value": "#8999A7",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.button.neutral.primary.elements.label.hovered": {
-    "value": "#101315",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.button.neutral.primary.elements.label.pressed": {
-    "value": "#101315",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.button.neutral.inversed.self.background.normal": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.inversed.self.background.disabled": {
-    "value": "rgba(#586976, .5)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.inversed.self.background.hovered": {
-    "value": "#1A1F23",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.inversed.self.background.pressed": {
-    "value": "#2F383F",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.inversed.self.border.normal": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.inversed.self.border.disabled": {
-    "value": "rgba(#586976, .5)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.inversed.self.border.hovered": {
-    "value": "#1A1F23",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.inversed.self.border.pressed": {
-    "value": "#2F383F",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.inversed.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.inversed.elements.label.normal": {
-    "value": "#E3E7EA",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.inversed.elements.label.disabled": {
-    "value": "#6D8292",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.inversed.elements.label.hovered": {
-    "value": "#E3E7EA",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.inversed.elements.label.pressed": {
-    "value": "#E3E7EA",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.secondary.self.background.normal": {
-    "value": "#F9F9F9",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.secondary.self.background.disabled": {
-    "value": "rgba(#F9F9F9, .5)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.secondary.self.background.hovered": {
-    "value": "#EAEDEF",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.secondary.self.background.pressed": {
-    "value": "#DCE1E5",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.secondary.self.border.normal": {
-    "value": "#F9F9F9",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.secondary.self.border.disabled": {
-    "value": "rgba(#F9F9F9, .5)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.secondary.self.border.hovered": {
-    "value": "#EAEDEF",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.secondary.self.border.pressed": {
-    "value": "#DCE1E5",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.secondary.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.secondary.elements.label.normal": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.secondary.elements.label.disabled": {
-    "value": "#8999A7",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.secondary.elements.label.hovered": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.secondary.elements.label.pressed": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.tertiary.self.background.normal": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.tertiary.self.background.disabled": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.tertiary.self.background.hovered": {
-    "value": "rgba(#DCE1E5, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.tertiary.self.background.pressed": {
-    "value": "rgba(#CED5DB, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.tertiary.self.border.normal": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.tertiary.self.border.disabled": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.tertiary.self.border.hovered": {
-    "value": "rgba(#DCE1E5, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.tertiary.self.border.pressed": {
-    "value": "rgba(#CED5DB, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.tertiary.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.tertiary.elements.label.normal": {
-    "value": "#1A1F23",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.tertiary.elements.label.disabled": {
-    "value": "#8999A7",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.tertiary.elements.label.hovered": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.tertiary.elements.label.pressed": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.outline.self.background.normal": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.outline.self.background.disabled": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.outline.self.background.hovered": {
-    "value": "rgba(#DCE1E5, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.outline.self.background.pressed": {
-    "value": "rgba(#CED5DB, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.outline.self.border.normal": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.outline.self.border.disabled": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.outline.self.border.hovered": {
-    "value": "rgba(#DCE1E5, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.outline.self.border.pressed": {
-    "value": "rgba(#CED5DB, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.outline.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.outline.elements.label.normal": {
-    "value": "#1A1F23",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.outline.elements.label.disabled": {
-    "value": "#8999A7",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.outline.elements.label.hovered": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.neutral.outline.elements.label.pressed": {
-    "value": "#101315",
-    "type": "unknown"
-  },
   "themes.light.button.accent.primary.self.background.normal": {
     "value": "#013CFE",
     "type": "color",
@@ -2301,266 +2028,6 @@
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.button.positive.primary.self.background.normal": {
-    "value": "#E3E7EA",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.primary.self.background.disabled": {
-    "value": "rgba(#E3E7EA, .5)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.primary.self.background.hovered": {
-    "value": "#DCE1E5",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.primary.self.background.pressed": {
-    "value": "#CED5DB",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.primary.self.border.normal": {
-    "value": "#E3E7EA",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.primary.self.border.disabled": {
-    "value": "rgba(#E3E7EA, .5)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.primary.self.border.hovered": {
-    "value": "#DCE1E5",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.primary.self.border.pressed": {
-    "value": "#CED5DB",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.primary.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.primary.elements.label.normal": {
-    "value": "#1A1F23",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.primary.elements.label.disabled": {
-    "value": "#8999A7",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.primary.elements.label.hovered": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.primary.elements.label.pressed": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.inversed.self.background.normal": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.inversed.self.background.disabled": {
-    "value": "rgba(#586976, .5)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.inversed.self.background.hovered": {
-    "value": "#1A1F23",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.inversed.self.background.pressed": {
-    "value": "#2F383F",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.inversed.self.border.normal": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.inversed.self.border.disabled": {
-    "value": "rgba(#586976, .5)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.inversed.self.border.hovered": {
-    "value": "#1A1F23",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.inversed.self.border.pressed": {
-    "value": "#2F383F",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.inversed.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.inversed.elements.label.normal": {
-    "value": "#E3E7EA",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.inversed.elements.label.disabled": {
-    "value": "#6D8292",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.inversed.elements.label.hovered": {
-    "value": "#E3E7EA",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.inversed.elements.label.pressed": {
-    "value": "#E3E7EA",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.secondary.self.background.normal": {
-    "value": "#F9F9F9",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.secondary.self.background.disabled": {
-    "value": "rgba(#F9F9F9, .5)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.secondary.self.background.hovered": {
-    "value": "#EAEDEF",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.secondary.self.background.pressed": {
-    "value": "#DCE1E5",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.secondary.self.border.normal": {
-    "value": "#F9F9F9",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.secondary.self.border.disabled": {
-    "value": "rgba(#F9F9F9, .5)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.secondary.self.border.hovered": {
-    "value": "#EAEDEF",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.secondary.self.border.pressed": {
-    "value": "#DCE1E5",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.secondary.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.secondary.elements.label.normal": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.secondary.elements.label.disabled": {
-    "value": "#8999A7",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.secondary.elements.label.hovered": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.secondary.elements.label.pressed": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.tertiary.self.background.normal": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.tertiary.self.background.disabled": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.tertiary.self.background.hovered": {
-    "value": "rgba(#DCE1E5, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.tertiary.self.background.pressed": {
-    "value": "rgba(#CED5DB, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.tertiary.self.border.normal": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.tertiary.self.border.disabled": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.tertiary.self.border.hovered": {
-    "value": "rgba(#DCE1E5, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.tertiary.self.border.pressed": {
-    "value": "rgba(#CED5DB, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.tertiary.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.tertiary.elements.label.normal": {
-    "value": "#1A1F23",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.tertiary.elements.label.disabled": {
-    "value": "#8999A7",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.tertiary.elements.label.hovered": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.tertiary.elements.label.pressed": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.outline.self.background.normal": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.outline.self.background.disabled": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.outline.self.background.hovered": {
-    "value": "rgba(#DCE1E5, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.outline.self.background.pressed": {
-    "value": "rgba(#CED5DB, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.outline.self.border.normal": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.outline.self.border.disabled": {
-    "value": "rgba(#E3E7EA, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.outline.self.border.hovered": {
-    "value": "rgba(#DCE1E5, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.outline.self.border.pressed": {
-    "value": "rgba(#CED5DB, 0)",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.outline.self.border.outline": {
-    "value": "#013CFE",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.outline.elements.label.normal": {
-    "value": "#1A1F23",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.outline.elements.label.disabled": {
-    "value": "#8999A7",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.outline.elements.label.hovered": {
-    "value": "#101315",
-    "type": "unknown"
-  },
-  "themes.light.button.positive.outline.elements.label.pressed": {
-    "value": "#101315",
-    "type": "unknown"
-  },
   "themes.light.button.negative.primary.self.background.normal": {
     "value": "#F9D5D5",
     "type": "unknown"
@@ -2818,6 +2285,539 @@
     "type": "unknown"
   },
   "themes.light.button.negative.outline.elements.label.pressed": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.primary.self.background.normal": {
+    "value": "#E3E7EA",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.button.neutral.primary.self.background.disabled": {
+    "value": "rgba(#E3E7EA, .5)",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.button.neutral.primary.self.background.hovered": {
+    "value": "#DCE1E5",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.button.neutral.primary.self.background.pressed": {
+    "value": "#CED5DB",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.button.neutral.primary.self.border.normal": {
+    "value": "#E3E7EA",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.button.neutral.primary.self.border.disabled": {
+    "value": "rgba(#E3E7EA, .5)",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.button.neutral.primary.self.border.hovered": {
+    "value": "#DCE1E5",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.button.neutral.primary.self.border.pressed": {
+    "value": "#CED5DB",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.button.neutral.primary.self.border.outline": {
+    "value": "#013CFE",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.button.neutral.primary.elements.label.normal": {
+    "value": "#1A1F23",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.button.neutral.primary.elements.label.disabled": {
+    "value": "#8999A7",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.button.neutral.primary.elements.label.hovered": {
+    "value": "#101315",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.button.neutral.primary.elements.label.pressed": {
+    "value": "#101315",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.button.neutral.inversed.self.background.normal": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.inversed.self.background.disabled": {
+    "value": "rgba(#586976, .5)",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.inversed.self.background.hovered": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.inversed.self.background.pressed": {
+    "value": "#2F383F",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.inversed.self.border.normal": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.inversed.self.border.disabled": {
+    "value": "rgba(#586976, .5)",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.inversed.self.border.hovered": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.inversed.self.border.pressed": {
+    "value": "#2F383F",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.inversed.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.inversed.elements.label.normal": {
+    "value": "#E3E7EA",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.inversed.elements.label.disabled": {
+    "value": "#6D8292",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.inversed.elements.label.hovered": {
+    "value": "#E3E7EA",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.inversed.elements.label.pressed": {
+    "value": "#E3E7EA",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.secondary.self.background.normal": {
+    "value": "#F9F9F9",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.secondary.self.background.disabled": {
+    "value": "rgba(#F9F9F9, .5)",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.secondary.self.background.hovered": {
+    "value": "#EAEDEF",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.secondary.self.background.pressed": {
+    "value": "#DCE1E5",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.secondary.self.border.normal": {
+    "value": "#F9F9F9",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.secondary.self.border.disabled": {
+    "value": "rgba(#F9F9F9, .5)",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.secondary.self.border.hovered": {
+    "value": "#EAEDEF",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.secondary.self.border.pressed": {
+    "value": "#DCE1E5",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.secondary.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.secondary.elements.label.normal": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.secondary.elements.label.disabled": {
+    "value": "#8999A7",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.secondary.elements.label.hovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.secondary.elements.label.pressed": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.tertiary.self.background.normal": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.tertiary.self.background.disabled": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.tertiary.self.background.hovered": {
+    "value": "rgba(#DCE1E5, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.tertiary.self.background.pressed": {
+    "value": "rgba(#CED5DB, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.tertiary.self.border.normal": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.tertiary.self.border.disabled": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.tertiary.self.border.hovered": {
+    "value": "rgba(#DCE1E5, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.tertiary.self.border.pressed": {
+    "value": "rgba(#CED5DB, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.tertiary.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.tertiary.elements.label.normal": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.tertiary.elements.label.disabled": {
+    "value": "#8999A7",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.tertiary.elements.label.hovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.tertiary.elements.label.pressed": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.outline.self.background.normal": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.outline.self.background.disabled": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.outline.self.background.hovered": {
+    "value": "rgba(#DCE1E5, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.outline.self.background.pressed": {
+    "value": "rgba(#CED5DB, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.outline.self.border.normal": {
+    "value": "#CED5DB",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.outline.self.border.disabled": {
+    "value": "#A5B1BC",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.outline.self.border.hovered": {
+    "value": "#C0C9D0",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.outline.self.border.pressed": {
+    "value": "#B3BDC6",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.outline.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.outline.elements.label.normal": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.outline.elements.label.disabled": {
+    "value": "#8999A7",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.outline.elements.label.hovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.neutral.outline.elements.label.pressed": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.primary.self.background.normal": {
+    "value": "#E3E7EA",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.primary.self.background.disabled": {
+    "value": "rgba(#E3E7EA, .5)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.primary.self.background.hovered": {
+    "value": "#DCE1E5",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.primary.self.background.pressed": {
+    "value": "#CED5DB",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.primary.self.border.normal": {
+    "value": "#E3E7EA",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.primary.self.border.disabled": {
+    "value": "rgba(#E3E7EA, .5)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.primary.self.border.hovered": {
+    "value": "#DCE1E5",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.primary.self.border.pressed": {
+    "value": "#CED5DB",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.primary.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.primary.elements.label.normal": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.primary.elements.label.disabled": {
+    "value": "#8999A7",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.primary.elements.label.hovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.primary.elements.label.pressed": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.inversed.self.background.normal": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.inversed.self.background.disabled": {
+    "value": "rgba(#586976, .5)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.inversed.self.background.hovered": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.inversed.self.background.pressed": {
+    "value": "#2F383F",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.inversed.self.border.normal": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.inversed.self.border.disabled": {
+    "value": "rgba(#586976, .5)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.inversed.self.border.hovered": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.inversed.self.border.pressed": {
+    "value": "#2F383F",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.inversed.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.inversed.elements.label.normal": {
+    "value": "#E3E7EA",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.inversed.elements.label.disabled": {
+    "value": "#6D8292",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.inversed.elements.label.hovered": {
+    "value": "#E3E7EA",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.inversed.elements.label.pressed": {
+    "value": "#E3E7EA",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.secondary.self.background.normal": {
+    "value": "#F9F9F9",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.secondary.self.background.disabled": {
+    "value": "rgba(#F9F9F9, .5)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.secondary.self.background.hovered": {
+    "value": "#EAEDEF",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.secondary.self.background.pressed": {
+    "value": "#DCE1E5",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.secondary.self.border.normal": {
+    "value": "#F9F9F9",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.secondary.self.border.disabled": {
+    "value": "rgba(#F9F9F9, .5)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.secondary.self.border.hovered": {
+    "value": "#EAEDEF",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.secondary.self.border.pressed": {
+    "value": "#DCE1E5",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.secondary.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.secondary.elements.label.normal": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.secondary.elements.label.disabled": {
+    "value": "#8999A7",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.secondary.elements.label.hovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.secondary.elements.label.pressed": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.tertiary.self.background.normal": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.tertiary.self.background.disabled": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.tertiary.self.background.hovered": {
+    "value": "rgba(#DCE1E5, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.tertiary.self.background.pressed": {
+    "value": "rgba(#CED5DB, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.tertiary.self.border.normal": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.tertiary.self.border.disabled": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.tertiary.self.border.hovered": {
+    "value": "rgba(#DCE1E5, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.tertiary.self.border.pressed": {
+    "value": "rgba(#CED5DB, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.tertiary.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.tertiary.elements.label.normal": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.tertiary.elements.label.disabled": {
+    "value": "#8999A7",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.tertiary.elements.label.hovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.tertiary.elements.label.pressed": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.outline.self.background.normal": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.outline.self.background.disabled": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.outline.self.background.hovered": {
+    "value": "rgba(#DCE1E5, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.outline.self.background.pressed": {
+    "value": "rgba(#CED5DB, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.outline.self.border.normal": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.outline.self.border.disabled": {
+    "value": "rgba(#E3E7EA, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.outline.self.border.hovered": {
+    "value": "rgba(#DCE1E5, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.outline.self.border.pressed": {
+    "value": "rgba(#CED5DB, 0)",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.outline.self.border.outline": {
+    "value": "#013CFE",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.outline.elements.label.normal": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.outline.elements.label.disabled": {
+    "value": "#8999A7",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.outline.elements.label.hovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.button.positive.outline.elements.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },

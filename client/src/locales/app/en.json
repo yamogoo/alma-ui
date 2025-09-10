@@ -8,7 +8,7 @@
         "userName": "user name",
         "password": "password",
         "login": "login",
-        "skip": "Continue without login",
+        "skip": "continue without login",
         "forgotPassword": "forgot password?",
         "register": "register"
       }
