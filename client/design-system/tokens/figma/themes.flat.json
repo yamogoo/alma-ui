@@ -882,19 +882,19 @@
     "type": "unknown"
   },
   "themes.dark.button.neutral.outline.self.border.normal": {
-    "value": "rgba(#242B31, 0)",
+    "value": "#242B31",
     "type": "unknown"
   },
   "themes.dark.button.neutral.outline.self.border.disabled": {
-    "value": "rgba(#242B31, 0)",
+    "value": "#43505A",
     "type": "unknown"
   },
   "themes.dark.button.neutral.outline.self.border.hovered": {
-    "value": "rgba(#2F383F, 0)",
+    "value": "#2F383F",
     "type": "unknown"
   },
   "themes.dark.button.neutral.outline.self.border.pressed": {
-    "value": "rgba(#39444C, 0)",
+    "value": "#39444C",
     "type": "unknown"
   },
   "themes.dark.button.neutral.outline.self.border.outline": {

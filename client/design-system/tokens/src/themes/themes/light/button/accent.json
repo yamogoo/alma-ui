@@ -30,7 +30,7 @@
           "unit": "hex"
         },
         "disabled": {
-          "value": "{themes.themes.light.button.accent.primary.self.background.disabled.value}",
+          "value": "rgba({themes.themes.light.button.accent.primary.self.background.disabled.value}, 0)",
           "type": "color",
           "unit": "hex"
         },

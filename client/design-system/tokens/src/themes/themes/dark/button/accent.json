@@ -20,7 +20,7 @@
           "value": "{themes.themes.dark.button.accent.primary.self.background.normal.value}"
         },
         "disabled": {
-          "value": "{themes.themes.dark.button.accent.primary.self.background.disabled.value}"
+          "value": "rgba({themes.themes.dark.button.accent.primary.self.background.disabled.value}, 0)"
         },
         "hovered": {
           "value": "{themes.themes.dark.button.accent.primary.self.background.hovered.value}"

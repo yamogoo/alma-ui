@@ -172,7 +172,7 @@ $themes:(
   value: #013CFE
 ),
   disabled: (
-  value: rgba(#013CFE, .5)
+  value: rgba(rgba(#013CFE, .5), 0)
 ),
   hovered: (
   value: #0130CE
@@ -2054,7 +2054,7 @@ $themes:(
   unit: "hex"
 ),
   disabled: (
-  value: rgba(#013CFE, .5),
+  value: rgba(rgba(#013CFE, .5), 0),
   type: "color",
   unit: "hex"
 ),

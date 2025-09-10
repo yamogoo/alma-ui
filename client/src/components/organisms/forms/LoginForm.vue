@@ -119,11 +119,10 @@ export interface Props {
       :text-color="'error'"
       >{{ errorMessage }}</Text
     > -->
-    <!-- <Divider :orientation="'horizontal'" :size="'sm'"></Divider> -->
     <Text :variant="'caption-2'" :text-color="'disabled'">{{
       $t.auth.login.form.description
     }}</Text>
-    <Divider :orientation="'horizontal'" :size="'xs'"></Divider>
+
     <template #footer>
       <Group :orientation="'vertical'" :size="'sm'" :stretch="'fill'">
         <ActionButton
@@ -137,10 +136,11 @@ export interface Props {
           @key.enter="onSubmit"
         >
         </ActionButton>
+        <Divider :orientation="'horizontal'" :size="'md'"></Divider>
         <Tooltip :label="'Button'"
           ><ActionButton
             :tone="'neutral'"
-            :mode="'outline'"
+            :mode="'tertiary'"
             :size="'md'"
             :stretch="'fill'"
             :label="$t.auth.login.form.skip"
