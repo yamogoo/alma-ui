@@ -1,0 +1,58 @@
+{
+  "primary": {
+    "background": {
+      "normal": {
+        "value": "{themes.themes.dark.background.primary.value}",
+        "type": "color"
+      }
+    },
+    "shadow": {
+      "normal": {
+        "value": "{themes.themes.dark.shadow.primary.value}",
+        "type": "color"
+      }
+    }
+  },
+  "secondary": {
+    "background": {
+      "normal": {
+        "value": "{themes.themes.dark.background.secondary.value}",
+        "type": "color"
+      }
+    },
+    "shadow": {
+      "normal": {
+        "value": "{themes.themes.dark.shadow.primary.value}",
+        "type": "color"
+      }
+    }
+  },
+  "accent": {
+    "background": {
+      "normal": {
+        "value": "{themes.themes.dark.background.accent.value}",
+        "type": "color"
+      }
+    },
+    "shadow": {
+      "normal": {
+        "value": "{themes.themes.dark.shadow.primary.value}",
+        "type": "color"
+      }
+    }
+  },
+  "transparental": {
+    "background": {
+      "normal": {
+        "value": "rgba({themes.themes.dark.background.primary.value}, 0)",
+        "type": "color"
+      }
+    },
+    "shadow": {
+      "normal": {
+        "value": "rgba({themes.themes.dark.shadow.primary.value}, 0)",
+        "type": "color"
+      }
+    }
+  }
+}

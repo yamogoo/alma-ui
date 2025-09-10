@@ -6,15 +6,17 @@ import { readFileSync } from "node:fs";
 import * as _ from "lodash-es";
 import Color from "color";
 
-type List<T> = Array<T>;
+import { JSONBuilder, type JSONBuilderOptions } from "./builder";
 
-interface IMap {
+export type List<T> = Array<T>;
+
+export interface IMap {
   [key: string]: Value<unknown>;
 }
 
-type Value<T> = string | number | List<T> | T | IMap;
+export type Value<T> = string | number | List<T> | T | IMap;
 
-interface ParseValueOptions {
+export interface ParseValueOptions {
   convertCase: boolean;
   convertPxToRem: boolean;
   convertToCSSVariables: boolean;
@@ -24,7 +26,7 @@ interface ParseValueOptions {
   unit?: string;
 }
 
-interface JSONToSCSSOptions {
+export interface JSONToSCSSOptions {
   name: string;
   header: string;
   comment: string;
@@ -34,6 +36,7 @@ interface JSONToSCSSOptions {
 }
 
 export interface TokensParserOptions {
+  builder?: JSONBuilderOptions;
   source?: string;
   paths?: string[];
   outDir: string;
@@ -43,6 +46,7 @@ export interface TokensParserOptions {
   mapOptions?: Partial<ParseValueOptions>;
   varsOptions?: Partial<ParseValueOptions>;
   parseOptions?: Partial<ParseValueOptions>;
+  useFileStructureLookup?: boolean;
 }
 
 abstract class Parser {
@@ -250,8 +254,15 @@ export class TokensParser {
 
   constructor(opts: TokensParserOptions) {
     this.opts = {
-      paths: ["."],
       ...opts,
+      builder: {
+        format: "json",
+        outDir: opts.builder?.outDir ?? opts.source,
+        paths: opts.builder?.paths ?? opts.paths ?? ["."],
+        includeRootDirName: opts.builder?.includeRootDirName ?? false,
+        useTokensInSeparateFiles:
+          opts.builder?.useTokensInSeparateFiles ?? true,
+      },
     };
     this.parser = new SCSSParser(this);
 
@@ -272,12 +283,23 @@ export class TokensParser {
       ...this.defaultParseOptions,
       ...opts.varsOptions,
     };
+  }
 
-    const { source, outDir } = opts;
-    if (source && outDir) {
-      this.listDir(source, outDir);
+  async buildAndParse() {
+    const builder = new JSONBuilder(this.opts.builder!);
+    await builder.build();
+
+    if (this.opts.builder) {
+      const builder = new JSONBuilder(this.opts.builder);
+      await builder.build();
     }
-    this.generateEntryFile();
+
+    const { source, outDir } = this.opts;
+    if (source && outDir) {
+      await this.listDir(source, outDir);
+    }
+
+    await this.generateEntryFile();
   }
 
   isKeyValidated(key: string): boolean {
@@ -749,5 +771,73 @@ export class TokensParser {
     } catch (err) {
       console.error("❌ Failed to generate TypeScript entry file", err);
     }
+  }
+
+  // --- Resolve links in file structure --- //
+
+  private async resolveTokenPathRecursive(pathStr: string): Promise<any> {
+    const pathParts = pathStr.split(".");
+
+    const tryResolve = async (
+      currentParts: string[],
+      currentDir: string
+    ): Promise<any> => {
+      if (currentParts.length === 0) return undefined;
+
+      const fileName = `${currentParts[0]}.json`;
+      const filePath = path.join(currentDir, fileName);
+      if (await this.isFile(filePath)) {
+        const content = JSON.parse(await fs.readFile(filePath, "utf-8"));
+        if (currentParts.length === 1) return content;
+        return this.getNestedValue(content, currentParts.slice(1));
+      }
+
+      const dirPath = path.join(currentDir, currentParts[0]);
+      if (await this.isDir(dirPath)) {
+        return tryResolve(currentParts.slice(1), dirPath);
+      }
+
+      for (let i = currentParts.length; i > 0; i--) {
+        const joinedFile = path.join(
+          currentDir,
+          currentParts.slice(0, i).join("/") + ".json"
+        );
+        if (await this.isFile(joinedFile)) {
+          const content = JSON.parse(await fs.readFile(joinedFile, "utf-8"));
+          return this.getNestedValue(content, currentParts.slice(i));
+        }
+      }
+
+      return undefined;
+    };
+
+    for (const rootPath of this.opts.paths ?? ["./"]) {
+      const absRoot = path.resolve(rootPath);
+      const res = await tryResolve(pathParts, absRoot);
+      if (res !== undefined) return res;
+    }
+
+    console.warn(`⚠️ Token path "${pathStr}" could not be resolved.`);
+    return undefined;
+  }
+
+  private async isFile(p: string): Promise<boolean> {
+    try {
+      return (await fs.stat(p)).isFile();
+    } catch {
+      return false;
+    }
+  }
+
+  private async isDir(p: string): Promise<boolean> {
+    try {
+      return (await fs.stat(p)).isDirectory();
+    } catch {
+      return false;
+    }
+  }
+
+  private getNestedValue(obj: any, keys: string[]): any {
+    return keys.reduce((acc, k) => acc?.[k], obj);
   }
 }

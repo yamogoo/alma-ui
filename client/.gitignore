@@ -24,6 +24,7 @@ dist-ssr
 *.sw?
 
 *.temp
+*.cache
 electron
 *storybook.log
 storybook-static

@@ -1,0 +1,34 @@
+{
+  "primary": {
+    "label": {
+      "normal": {
+        "value": "{colors.gray-300}"
+      },
+      "disabled": {
+        "value": "{colors.gray-600}"
+      },
+      "hovered": {
+        "value": "{colors.gray-50}"
+      },
+      "focused": {
+        "value": "{colors.gray-50}"
+      }
+    }
+  },
+  "secondary": {
+    "label": {
+      "normal": {
+        "value": "{colors.gray-300}"
+      },
+      "disabled": {
+        "value": "{colors.gray-600}"
+      },
+      "hovered": {
+        "value": "{colors.gray-50}"
+      },
+      "focused": {
+        "value": "{colors.gray-50}"
+      }
+    }
+  }
+}

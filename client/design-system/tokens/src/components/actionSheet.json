@@ -1,0 +1,73 @@
+{
+  "default": {
+    "lg": {
+      "self": {
+        "min-height": {
+          "value": 32,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Minimum height of large action sheet",
+            "category": "actionSheet"
+          }
+        },
+        "borderRadius": {
+          "value": "{tokens.roundness.md.value}",
+          "type": "radius",
+          "unit": "px",
+          "meta": {
+            "description": "Border radius for large action sheet",
+            "category": "actionSheet"
+          }
+        },
+        "padding": {
+          "value": [
+            "{tokens.spacing.xxl.value}",
+            "{tokens.spacing.lg.value}",
+            "{tokens.spacing.lg.value}",
+            "{tokens.spacing.lg.value}"
+          ],
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Padding inside large action sheet",
+            "category": "actionSheet"
+          }
+        }
+      },
+      "type": "component"
+    },
+    "md": {
+      "self": {
+        "min-height": {
+          "value": 32,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Minimum height of medium action sheet",
+            "category": "actionSheet"
+          }
+        },
+        "borderRadius": {
+          "value": "{tokens.roundness.sm.value}",
+          "type": "radius",
+          "unit": "px",
+          "meta": {
+            "description": "Border radius for medium action sheet",
+            "category": "actionSheet"
+          }
+        },
+        "padding": {
+          "value": ["{tokens.spacing.lg.value}", "{tokens.spacing.lg.value}"],
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Padding inside medium action sheet",
+            "category": "actionSheet"
+          }
+        }
+      },
+      "type": "component"
+    }
+  }
+}

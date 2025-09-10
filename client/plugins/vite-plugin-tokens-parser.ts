@@ -1,12 +1,13 @@
 import { Plugin } from "vite";
 import chokidar from "chokidar";
 
-import { TokensParser, type TokensParserOptions } from "./tokensParser/intex";
+import { TokensParser, type TokensParserOptions } from "./tokensParser";
 
 interface ViteTokensPluginOptions extends TokensParserOptions {}
 
 export function TokensParserPlugin(options: ViteTokensPluginOptions): Plugin {
   let resolvedConfig: any;
+  let parser: TokensParser;
 
   return {
     name: "vite-plugin-tokens-parser",
@@ -16,19 +17,26 @@ export function TokensParserPlugin(options: ViteTokensPluginOptions): Plugin {
       resolvedConfig = config;
     },
 
-    buildStart() {
-      new TokensParser(options);
+    async buildStart() {
+      parser = new TokensParser(options);
+      await parser.buildAndParse();
     },
 
     configureServer(server) {
-      const watcher = chokidar.watch(`${options.source}/**/*.json`, {
+      const watchPaths =
+        options.paths?.length && options.paths.length > 0
+          ? options.paths.map((p) => `${p}/**/*.json`)
+          : ["**/*.json"];
+
+      const watcher = chokidar.watch(watchPaths, {
         ignoreInitial: true,
       });
 
       watcher.on("change", async (file) => {
         console.log(`[tokens-parser] 🔁 File changed: ${file}`);
 
-        new TokensParser(options);
+        parser = new TokensParser(options);
+        await parser.buildAndParse();
 
         const virtualModule = options.entryFilePath ?? "tokens";
         const mod = server.moduleGraph.getModuleById(virtualModule);

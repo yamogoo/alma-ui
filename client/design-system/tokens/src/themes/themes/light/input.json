@@ -1,0 +1,94 @@
+{
+  "primary": {
+    "self": {
+      "background": {
+        "normal": {
+          "value": "{colors.gray-75}"
+        },
+        "disabled": {
+          "value": "{colors.gray-50}"
+        },
+        "hovered": {
+          "value": "{colors.gray-50}"
+        },
+        "focused": {
+          "value": "{colors.gray-50}"
+        },
+        "error": {
+          "value": "{colors.red-50}"
+        }
+      },
+      "border": {
+        "outline": {
+          "value": "{themes.themes.light.border.outline.value}"
+        }
+      }
+    },
+    "elements": {
+      "label": {
+        "normal": {
+          "value": "{colors.gray-800}"
+        },
+        "disabled": {
+          "value": "{colors.gray-400}"
+        },
+        "hovered": {
+          "value": "{colors.gray-950}"
+        },
+        "focused": {
+          "value": "{colors.gray-950}"
+        },
+        "error": {
+          "value": "{colors.red-900}",
+          "description": "placeholder = {themes.themes.light.label.error.value}"
+        }
+      }
+    }
+  },
+  "secondary": {
+    "self": {
+      "background": {
+        "normal": {
+          "value": "{colors.gray-0}"
+        },
+        "disabled": {
+          "value": "{colors.gray-0}"
+        },
+        "hovered": {
+          "value": "{colors.gray-50}"
+        },
+        "focused": {
+          "value": "{colors.gray-100}"
+        },
+        "error": {
+          "value": "{colors.red-50}"
+        }
+      },
+      "border": {
+        "outline": {
+          "value": "{themes.themes.light.border.outline.value}"
+        }
+      }
+    },
+    "elements": {
+      "label": {
+        "normal": {
+          "value": "{colors.gray-800}"
+        },
+        "disabled": {
+          "value": "{colors.gray-400}"
+        },
+        "hovered": {
+          "value": "{colors.gray-950}"
+        },
+        "focused": {
+          "value": "{colors.gray-950}"
+        },
+        "error": {
+          "value": "{colors.red-900}",
+          "description": "placeholder = {themes.themes.light.label.error.value}"
+        }
+      }
+    }
+  }
+}

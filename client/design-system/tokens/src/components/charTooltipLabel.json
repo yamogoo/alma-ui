@@ -1,0 +1,31 @@
+{
+  "default": {
+    "lg": {
+      "self": {
+        "gap": {
+          "value": "{tokens.spacing.sm.value}",
+          "unit": "px",
+          "type": "spacing"
+        },
+        "padding": {
+          "value": ["{tokens.spacing.xs.value}", "{tokens.spacing.sm.value}"],
+          "unit": "px",
+          "type": "spacing"
+        },
+        "borderRadius": {
+          "value": "{tokens.roundness.xs.value}",
+          "unit": "px",
+          "type": "radius"
+        }
+      },
+      "elements": {
+        "label": {
+          "fontStyle": {
+            "value": "caption-1",
+            "type": "alias"
+          }
+        }
+      }
+    }
+  }
+}

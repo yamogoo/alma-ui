@@ -1,0 +1,20 @@
+{
+  "default": {
+    "track": {
+      "normal": {
+        "value": "{colors.gray-375}"
+      },
+      "active": {
+        "value": "{colors.gray-375}"
+      }
+    },
+    "knob": {
+      "normal": {
+        "value": "{colors.gray-0}"
+      },
+      "active": {
+        "value": "{colors.gray-0}"
+      }
+    }
+  }
+}

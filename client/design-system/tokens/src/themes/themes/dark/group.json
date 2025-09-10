@@ -1,0 +1,20 @@
+{
+  "primary": {
+    "self": {
+      "divider": {
+        "value": "{themes.themes.dark.divider.primary.self.border.value}",
+        "type": "color",
+        "unit": "hex"
+      }
+    }
+  },
+  "secondary": {
+    "self": {
+      "divider": {
+        "value": "{themes.themes.dark.divider.secondary.self.border.value}",
+        "type": "color",
+        "unit": "hex"
+      }
+    }
+  }
+}

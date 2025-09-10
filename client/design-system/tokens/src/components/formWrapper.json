@@ -1,0 +1,49 @@
+{
+  "default": {
+    "md": {
+      "self": {
+        "padding": {
+          "value": ["{tokens.spacing.md.value}", "{tokens.spacing.lg.value}"],
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Padding inside the form wrapper",
+            "category": "formWrapper"
+          }
+        },
+        "borderRadius": {
+          "value": "{tokens.roundness.md.value}",
+          "type": "radius",
+          "unit": "px",
+          "meta": {
+            "description": "Border radius of the form wrapper",
+            "category": "formWrapper"
+          }
+        },
+        "borderWidth": {
+          "value": "{tokens.stroke.sm.value}",
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Border width of the form wrapper",
+            "category": "formWrapper"
+          }
+        }
+      },
+      "elements": {
+        "header": {
+          "padding": {
+            "value": ["{tokens.spacing.sm.value}", 0],
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "description": "Padding for the header inside the form wrapper",
+              "category": "formWrapper"
+            }
+          }
+        }
+      },
+      "type": "component"
+    }
+  }
+}

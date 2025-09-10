@@ -1,0 +1,110 @@
+{
+  "primary": {
+    "value": "{colors.gray-800}",
+    "type": "color",
+    "unit": "hex",
+    "description": "Main color",
+    "meta": {
+      "category": "label"
+    }
+  },
+  "primaryInversed": {
+    "value": "{colors.gray-100}",
+    "type": "color",
+    "unit": "hex",
+    "description": "Main inversed color",
+    "meta": {
+      "category": "label"
+    }
+  },
+  "secondary": {
+    "value": "{colors.gray-600}",
+    "type": "color",
+    "unit": "hex",
+    "description": "Secondary color for 2 priority text elements",
+    "meta": {
+      "category": "label"
+    }
+  },
+  "tertiary": {
+    "value": "{colors.gray-500}",
+    "type": "color",
+    "unit": "hex",
+    "description": "Tertiary text color for less important content",
+    "meta": {
+      "category": "label"
+    }
+  },
+  "disabled": {
+    "value": "{colors.gray-400}",
+    "type": "color",
+    "unit": "hex",
+    "description": "Disabled or inactive text color",
+    "meta": {
+      "category": "label"
+    }
+  },
+  "accent": {
+    "value": "{colors.blue-700}",
+    "type": "color",
+    "unit": "hex",
+    "description": "Accent color for highlighting important text",
+    "meta": {
+      "category": "label"
+    }
+  },
+  "accentYellow": {
+    "value": "{colors.yellow-500}",
+    "type": "color",
+    "unit": "hex",
+    "description": "Accent color (yellow) for positive highlights",
+    "meta": {
+      "category": "label"
+    }
+  },
+  "accentGreen": {
+    "value": "{colors.green-600}",
+    "type": "color",
+    "unit": "hex",
+    "description": "Accent color (green) for success state text",
+    "meta": {
+      "category": "label"
+    }
+  },
+  "accentBlue": {
+    "value": "{colors.blue-550}",
+    "type": "color",
+    "unit": "hex",
+    "description": "Accent color (blue) for info text",
+    "meta": {
+      "category": "label"
+    }
+  },
+  "info": {
+    "value": "{colors.blue-400}",
+    "type": "color",
+    "unit": "hex",
+    "description": "Informational text color",
+    "meta": {
+      "category": "label"
+    }
+  },
+  "warning": {
+    "value": "{colors.orange-400}",
+    "type": "color",
+    "unit": "hex",
+    "description": "Warning state text color",
+    "meta": {
+      "category": "label"
+    }
+  },
+  "error": {
+    "value": "{colors.red-325}",
+    "type": "color",
+    "unit": "hex",
+    "description": "Error or destructive text color",
+    "meta": {
+      "category": "label"
+    }
+  }
+}

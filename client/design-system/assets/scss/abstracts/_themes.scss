@@ -2,212 +2,151 @@
 
 
 $themes:(
-  light: (
-  label: (
+  dark: (
+  action-sheet: (
   primary: (
-  value: #2F383F,
-  type: "color",
-  description: "Main color",
-  meta: (
-  category: "label"
+  background: (
+  normal: (
+  value: #101315,
+  type: "color"
 )
 ),
-  primary-inversed: (
-  value: #DCE1E5,
-  type: "color",
-  description: "Main inversed color",
-  meta: (
-  category: "label"
+  shadow: (
+  normal: (
+  value: rgba(#586976, .035),
+  type: "color"
+)
 )
 ),
   secondary: (
-  value: #586976,
-  type: "color",
-  description: "Secondary color for 2 priority text elements",
-  meta: (
-  category: "label"
+  background: (
+  normal: (
+  value: #1A1F23,
+  type: "color"
 )
 ),
-  tertiary: (
-  value: #6D8292,
-  type: "color",
-  description: "Tertiary text color for less important content",
-  meta: (
-  category: "label"
+  shadow: (
+  normal: (
+  value: rgba(#586976, .035),
+  type: "color"
 )
-),
-  disabled: (
-  value: #8999A7,
-  type: "color",
-  description: "Disabled or inactive text color",
-  meta: (
-  category: "label"
 )
 ),
   accent: (
-  value: #01259D,
-  type: "color",
-  description: "Accent color for highlighting important text",
-  meta: (
-  category: "label"
+  background: (
+  normal: (
+  value: #013CFE,
+  type: "color"
 )
 ),
-  accent-yellow: (
-  value: #FFF700,
-  type: "color",
-  description: "Accent color (yellow) for positive highlights",
-  meta: (
-  category: "label"
+  shadow: (
+  normal: (
+  value: rgba(#586976, .035),
+  type: "color"
+)
 )
 ),
-  accent-green: (
-  value: #03CC1C,
-  type: "color",
-  description: "Accent color (green) for success state text",
-  meta: (
-  category: "label"
+  transparental: (
+  background: (
+  normal: (
+  value: rgba(#101315, 0),
+  type: "color"
 )
 ),
-  accent-blue: (
-  value: #0136E6,
-  type: "color",
-  description: "Accent color (blue) for info text",
-  meta: (
-  category: "label"
+  shadow: (
+  normal: (
+  value: rgba(rgba(#586976, .035), 0),
+  type: "color"
 )
-),
-  info: (
-  value: #3161FE,
-  type: "color",
-  description: "Informational text color",
-  meta: (
-  category: "label"
-)
-),
-  warning: (
-  value: #FFB531,
-  type: "color",
-  description: "Warning state text color",
-  meta: (
-  category: "label"
-)
-),
-  error: (
-  value: #E96B6B,
-  type: "color",
-  description: "Error or destructive text color",
-  meta: (
-  category: "label"
 )
 )
 ),
   background: (
   base: (
-  value: #EAEDEF
+  value: #1A1F23,
+  type: "color",
+  unit: "hex"
 ),
   primary: (
-  value: #F8F9FA
+  value: #101315,
+  type: "color",
+  unit: "hex"
 ),
   primary-transparental: (
-  value: rgba(#F8F9FA, 0.75)
+  value: rgba(#101315, .75),
+  type: "color",
+  unit: "hex"
 ),
   primary-inversed: (
-  value: #101315
+  value: #EAEDEF,
+  type: "color",
+  unit: "hex"
 ),
   secondary: (
-  value: #DCE1E5
+  value: #1A1F23,
+  type: "color",
+  unit: "hex"
 ),
   secondary-transparental: (
-  value: rgba(#e5e9f1, 0.75)
+  value: rgba(#1A1F23, .75),
+  type: "color",
+  unit: "hex"
 ),
   tertiary: (
-  value: #A5B1BC
+  value: #2F383F,
+  type: "color",
+  unit: "hex"
 ),
   accent: (
-  value: #013CFE
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
 ),
   accept: (
-  value: #FFB531
+  value: #FFB531,
+  type: "color",
+  unit: "hex"
 ),
   accent-yellow: (
-  value: #FFF700
+  value: #FFF700,
+  type: "color",
+  unit: "hex"
 ),
   accent-green: (
-  value: #03CC1C
+  value: #04FB23,
+  type: "color",
+  unit: "hex"
 ),
   accent-blue: (
-  value: #0136E6
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
 )
 ),
   border: (
   primary: (
-  value: #D5DBE0,
+  value: #242B31,
   type: "color",
+  unit: "hex",
   description: "Default border color"
 ),
   secondary: (
-  value: #C7CFD5,
+  value: #39444C,
   type: "color",
+  unit: "hex",
   description: "Secondary border color, used for subtle dividers"
 ),
   strong: (
-  value: #2F383F,
+  value: #C0C9D0,
   type: "color",
+  unit: "hex",
   description: "Strong border color, used for emphasis and contrast"
 ),
   outline: (
   value: #013CFE,
   type: "color",
+  unit: "hex",
   description: "Outline border color, used for focus states and accentuated elements"
-)
-),
-  shadow: (
-  primary: (
-  value: rgba(#060606, 0.075)
-)
-),
-  divider: (
-  primary: (
-  self: (
-  border: (
-  value: #D5DBE0,
-  type: "color",
-  meta: (
-  category: "border",
-  description: "Primary border color for divider"
-),
-  format: hex
-)
-)
-),
-  secondary: (
-  self: (
-  border: (
-  value: #C7CFD5,
-  type: "color",
-  meta: (
-  category: "border",
-  description: "Secondary border color for divider"
-),
-  format: hex
-)
-)
-)
-),
-  group: (
-  primary: (
-  self: (
-  divider: (
-  value: #D5DBE0
-)
-)
-),
-  secondary: (
-  self: (
-  divider: (
-  value: #C7CFD5
-)
-)
 )
 ),
   button: (
@@ -216,49 +155,75 @@ $themes:(
   self: (
   background: (
   normal: (
-  value: #E3E7EA
+  value: #43505A,
+  type: "color",
+  unit: "hex"
 ),
   disabled: (
-  value: rgba(#E3E7EA, .5)
+  value: rgba(#39444C, .5),
+  type: "color",
+  unit: "hex"
 ),
   hovered: (
-  value: #DCE1E5
+  value: #586976,
+  type: "color",
+  unit: "hex"
 ),
   pressed: (
-  value: #CED5DB
+  value: #637584,
+  type: "color",
+  unit: "hex"
 )
 ),
   border: (
   normal: (
-  value: #E3E7EA
+  value: #43505A,
+  type: "color",
+  unit: "hex"
 ),
   disabled: (
-  value: rgba(#E3E7EA, .5)
+  value: rgba(#39444C, .5),
+  type: "color",
+  unit: "hex"
 ),
   hovered: (
-  value: #DCE1E5
+  value: #586976,
+  type: "color",
+  unit: "hex"
 ),
   pressed: (
-  value: #CED5DB
+  value: #637584,
+  type: "color",
+  unit: "hex"
 ),
   outline: (
-  value: #013CFE
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
 )
 )
 ),
   elements: (
   label: (
   normal: (
-  value: #1A1F23
+  value: #97A5B1,
+  type: "color",
+  unit: "hex"
 ),
   disabled: (
-  value: #8999A7
+  value: #586976,
+  type: "color",
+  unit: "hex"
 ),
   hovered: (
-  value: #101315
+  value: #C0C9D0,
+  type: "color",
+  unit: "hex"
 ),
   pressed: (
-  value: #101315
+  value: #B3BDC6,
+  type: "color",
+  unit: "hex"
 )
 )
 )
@@ -267,49 +232,75 @@ $themes:(
   self: (
   background: (
   normal: (
-  value: #101315
+  value: #EAEDEF,
+  type: "color",
+  unit: "hex"
 ),
   disabled: (
-  value: rgba(#586976, .5)
+  value: rgba(#EAEDEF, .5),
+  type: "color",
+  unit: "hex"
 ),
   hovered: (
-  value: #1A1F23
+  value: #DCE1E5,
+  type: "color",
+  unit: "hex"
 ),
   pressed: (
-  value: #2F383F
+  value: #CED5DB,
+  type: "color",
+  unit: "hex"
 )
 ),
   border: (
   normal: (
-  value: #101315
+  value: #EAEDEF,
+  type: "color",
+  unit: "hex"
 ),
   disabled: (
-  value: rgba(#586976, .5)
+  value: rgba(#EAEDEF, .5),
+  type: "color",
+  unit: "hex"
 ),
   hovered: (
-  value: #1A1F23
+  value: #DCE1E5,
+  type: "color",
+  unit: "hex"
 ),
   pressed: (
-  value: #2F383F
+  value: #CED5DB,
+  type: "color",
+  unit: "hex"
 ),
   outline: (
-  value: #013CFE
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
 )
 )
 ),
   elements: (
   label: (
   normal: (
-  value: #E3E7EA
+  value: #101315,
+  type: "color",
+  unit: "hex"
 ),
   disabled: (
-  value: #6D8292
+  value: #6D8292,
+  type: "color",
+  unit: "hex"
 ),
   hovered: (
-  value: #E3E7EA
+  value: #101315,
+  type: "color",
+  unit: "hex"
 ),
   pressed: (
-  value: #E3E7EA
+  value: #101315,
+  type: "color",
+  unit: "hex"
 )
 )
 )
@@ -318,30 +309,30 @@ $themes:(
   self: (
   background: (
   normal: (
-  value: #F9F9F9
+  value: #060606
 ),
   disabled: (
-  value: rgba(#F9F9F9, .5)
+  value: rgba(#060606, .5)
 ),
   hovered: (
-  value: #EAEDEF
+  value: #101315
 ),
   pressed: (
-  value: #DCE1E5
+  value: #1A1F23
 )
 ),
   border: (
   normal: (
-  value: #F9F9F9
+  value: #060606
 ),
   disabled: (
-  value: rgba(#F9F9F9, .5)
+  value: rgba(#060606, .5)
 ),
   hovered: (
-  value: #EAEDEF
+  value: #101315
 ),
   pressed: (
-  value: #DCE1E5
+  value: #1A1F23
 ),
   outline: (
   value: #013CFE
@@ -351,16 +342,16 @@ $themes:(
   elements: (
   label: (
   normal: (
-  value: #101315
+  value: #EAEDEF
 ),
   disabled: (
-  value: #8999A7
+  value: #586976
 ),
   hovered: (
-  value: #101315
+  value: #EAEDEF
 ),
   pressed: (
-  value: #101315
+  value: #EAEDEF
 )
 )
 )
@@ -369,30 +360,30 @@ $themes:(
   self: (
   background: (
   normal: (
-  value: rgba(#E3E7EA, 0)
+  value: rgba(#242B31, 0)
 ),
   disabled: (
-  value: rgba(#E3E7EA, 0)
+  value: rgba(#242B31, 0)
 ),
   hovered: (
-  value: rgba(#DCE1E5, 0)
+  value: rgba(#2F383F, 0)
 ),
   pressed: (
-  value: rgba(#CED5DB, 0)
+  value: rgba(#39444C, 0)
 )
 ),
   border: (
   normal: (
-  value: rgba(#E3E7EA, 0)
+  value: rgba(#242B31, 0)
 ),
   disabled: (
-  value: rgba(#E3E7EA, 0)
+  value: rgba(#242B31, 0)
 ),
   hovered: (
-  value: rgba(#DCE1E5, 0)
+  value: rgba(#2F383F, 0)
 ),
   pressed: (
-  value: rgba(#CED5DB, 0)
+  value: rgba(#39444C, 0)
 ),
   outline: (
   value: #013CFE
@@ -402,16 +393,16 @@ $themes:(
   elements: (
   label: (
   normal: (
-  value: #1A1F23
+  value: #97A5B1
 ),
   disabled: (
-  value: #8999A7
+  value: #586976
 ),
   hovered: (
-  value: #101315
+  value: #C0C9D0
 ),
   pressed: (
-  value: #101315
+  value: #B3BDC6
 )
 )
 )
@@ -420,30 +411,30 @@ $themes:(
   self: (
   background: (
   normal: (
-  value: rgba(#E3E7EA, 0)
+  value: rgba(#242B31, 0)
 ),
   disabled: (
-  value: rgba(#E3E7EA, 0)
+  value: rgba(#242B31, 0)
 ),
   hovered: (
-  value: rgba(#DCE1E5, 0)
+  value: rgba(#2F383F, 0)
 ),
   pressed: (
-  value: rgba(#CED5DB, 0)
+  value: rgba(#39444C, 0)
 )
 ),
   border: (
   normal: (
-  value: rgba(#E3E7EA, 0)
+  value: rgba(#242B31, 0)
 ),
   disabled: (
-  value: rgba(#E3E7EA, 0)
+  value: rgba(#242B31, 0)
 ),
   hovered: (
-  value: rgba(#DCE1E5, 0)
+  value: rgba(#2F383F, 0)
 ),
   pressed: (
-  value: rgba(#CED5DB, 0)
+  value: rgba(#39444C, 0)
 ),
   outline: (
   value: #013CFE
@@ -453,16 +444,16 @@ $themes:(
   elements: (
   label: (
   normal: (
-  value: #1A1F23
+  value: #97A5B1
 ),
   disabled: (
-  value: #8999A7
+  value: #586976
 ),
   hovered: (
-  value: #101315
+  value: #C0C9D0
 ),
   pressed: (
-  value: #101315
+  value: #B3BDC6
 )
 )
 )
@@ -524,30 +515,30 @@ $themes:(
   self: (
   background: (
   normal: (
-  value: #101315
+  value: #EAEDEF
 ),
   disabled: (
-  value: rgba(#586976, .5)
+  value: rgba(#EAEDEF, .5)
 ),
   hovered: (
-  value: #1A1F23
+  value: #DCE1E5
 ),
   pressed: (
-  value: #2F383F
+  value: #CED5DB
 )
 ),
   border: (
   normal: (
-  value: #101315
+  value: #EAEDEF
 ),
   disabled: (
-  value: rgba(#586976, .5)
+  value: rgba(#EAEDEF, .5)
 ),
   hovered: (
-  value: #1A1F23
+  value: #DCE1E5
 ),
   pressed: (
-  value: #2F383F
+  value: #CED5DB
 ),
   outline: (
   value: #013CFE
@@ -557,16 +548,16 @@ $themes:(
   elements: (
   label: (
   normal: (
-  value: #E3E7EA
+  value: #101315
 ),
   disabled: (
   value: #6D8292
 ),
   hovered: (
-  value: #E3E7EA
+  value: #101315
 ),
   pressed: (
-  value: #E3E7EA
+  value: #101315
 )
 )
 )
@@ -575,30 +566,30 @@ $themes:(
   self: (
   background: (
   normal: (
-  value: #F9F9F9
+  value: #060606
 ),
   disabled: (
-  value: rgba(#F9F9F9, .5)
+  value: rgba(#060606, .5)
 ),
   hovered: (
-  value: #EAEDEF
+  value: #101315
 ),
   pressed: (
-  value: #DCE1E5
+  value: #1A1F23
 )
 ),
   border: (
   normal: (
-  value: #F9F9F9
+  value: #060606
 ),
   disabled: (
-  value: rgba(#F9F9F9, .5)
+  value: rgba(#060606, .5)
 ),
   hovered: (
-  value: #EAEDEF
+  value: #101315
 ),
   pressed: (
-  value: #DCE1E5
+  value: #1A1F23
 ),
   outline: (
   value: #013CFE
@@ -608,16 +599,16 @@ $themes:(
   elements: (
   label: (
   normal: (
-  value: #101315
+  value: #EAEDEF
 ),
   disabled: (
-  value: #8999A7
+  value: #586976
 ),
   hovered: (
-  value: #101315
+  value: #EAEDEF
 ),
   pressed: (
-  value: #101315
+  value: #EAEDEF
 )
 )
 )
@@ -626,30 +617,30 @@ $themes:(
   self: (
   background: (
   normal: (
-  value: rgba(#E3E7EA, 0)
+  value: rgba(#242B31, 0)
 ),
   disabled: (
-  value: rgba(#E3E7EA, 0)
+  value: rgba(#242B31, 0)
 ),
   hovered: (
-  value: rgba(#DCE1E5, 0)
+  value: rgba(#2F383F, 0)
 ),
   pressed: (
-  value: rgba(#CED5DB, 0)
+  value: rgba(#39444C, 0)
 )
 ),
   border: (
   normal: (
-  value: rgba(#E3E7EA, 0)
+  value: rgba(#242B31, 0)
 ),
   disabled: (
-  value: rgba(#E3E7EA, 0)
+  value: rgba(#242B31, 0)
 ),
   hovered: (
-  value: rgba(#DCE1E5, 0)
+  value: rgba(#2F383F, 0)
 ),
   pressed: (
-  value: rgba(#CED5DB, 0)
+  value: rgba(#39444C, 0)
 ),
   outline: (
   value: #013CFE
@@ -659,16 +650,16 @@ $themes:(
   elements: (
   label: (
   normal: (
-  value: #1A1F23
+  value: #97A5B1
 ),
   disabled: (
-  value: #8999A7
+  value: #586976
 ),
   hovered: (
-  value: #101315
+  value: #C0C9D0
 ),
   pressed: (
-  value: #101315
+  value: #B3BDC6
 )
 )
 )
@@ -677,30 +668,30 @@ $themes:(
   self: (
   background: (
   normal: (
-  value: rgba(#E3E7EA, 0)
+  value: rgba(#242B31, 0)
 ),
   disabled: (
-  value: rgba(#E3E7EA, 0)
+  value: rgba(#242B31, 0)
 ),
   hovered: (
-  value: rgba(#DCE1E5, 0)
+  value: rgba(#2F383F, 0)
 ),
   pressed: (
-  value: rgba(#CED5DB, 0)
+  value: rgba(#39444C, 0)
 )
 ),
   border: (
   normal: (
-  value: rgba(#E3E7EA, 0)
+  value: rgba(#242B31, 0)
 ),
   disabled: (
-  value: rgba(#E3E7EA, 0)
+  value: rgba(#242B31, 0)
 ),
   hovered: (
-  value: rgba(#DCE1E5, 0)
+  value: rgba(#2F383F, 0)
 ),
   pressed: (
-  value: rgba(#CED5DB, 0)
+  value: rgba(#39444C, 0)
 ),
   outline: (
   value: #013CFE
@@ -710,16 +701,16 @@ $themes:(
   elements: (
   label: (
   normal: (
-  value: #1A1F23
+  value: #97A5B1
 ),
   disabled: (
-  value: #8999A7
+  value: #586976
 ),
   hovered: (
-  value: #101315
+  value: #C0C9D0
 ),
   pressed: (
-  value: #101315
+  value: #B3BDC6
 )
 )
 )
@@ -1234,344 +1225,6 @@ $themes:(
 ),
   pressed: (
   value: #101315
-)
-)
-)
-)
-)
-),
-  input: (
-  primary: (
-  self: (
-  background: (
-  normal: (
-  value: #E3E7EA
-),
-  disabled: (
-  value: #EAEDEF
-),
-  hovered: (
-  value: #EAEDEF
-),
-  focused: (
-  value: #EAEDEF
-),
-  error: (
-  value: #FADFDF
-)
-),
-  border: (
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #2F383F
-),
-  disabled: (
-  value: #8999A7
-),
-  hovered: (
-  value: #101315
-),
-  focused: (
-  value: #101315
-),
-  error: (
-  value: #350808,
-  description: "placeholder = #E96B6B"
-)
-)
-)
-),
-  secondary: (
-  self: (
-  background: (
-  normal: (
-  value: #F8F9FA
-),
-  disabled: (
-  value: #F8F9FA
-),
-  hovered: (
-  value: #EAEDEF
-),
-  focused: (
-  value: #DCE1E5
-),
-  error: (
-  value: #FADFDF
-)
-),
-  border: (
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #2F383F
-),
-  disabled: (
-  value: #8999A7
-),
-  hovered: (
-  value: #101315
-),
-  focused: (
-  value: #101315
-),
-  error: (
-  value: #350808,
-  description: "placeholder = #E96B6B"
-)
-)
-)
-)
-),
-  selection: (
-  default: (
-  label: (
-  value: #101315
-),
-  background: (
-  value: #FFFA61
-)
-)
-),
-  switch: (
-  default: (
-  track: (
-  normal: (
-  value: #909FAC
-),
-  active: (
-  value: #909FAC
-)
-),
-  knob: (
-  normal: (
-  value: #F8F9FA
-),
-  active: (
-  value: #F8F9FA
-)
-)
-)
-),
-  options: (
-  primary: (
-  label: (
-  normal: (
-  value: #2F383F
-),
-  disabled: (
-  value: #8999A7
-),
-  hovered: (
-  value: #101315
-),
-  focused: (
-  value: #101315
-)
-)
-),
-  secondary: (
-  label: (
-  normal: (
-  value: #2F383F
-),
-  disabled: (
-  value: #8999A7
-),
-  hovered: (
-  value: #101315
-),
-  focused: (
-  value: #101315
-)
-)
-)
-),
-  drop-down: (
-  primary: (
-  value: (
-  label: (
-  normal: (
-  value: #1A1F23
-),
-  hovered: (
-  value: #101315
-),
-  expanded: (
-  value: #101315
-),
-  expanded-hovered: (
-  value: #101315
-)
-),
-  icon: (
-  normal: (
-  value: #1A1F23
-),
-  hovered: (
-  value: #101315
-),
-  expanded: (
-  value: #2F383F
-),
-  expanded-hovered: (
-  value: #242B31
-)
-),
-  background: (
-  normal: (
-  value: #E3E7EA
-),
-  hovered: (
-  value: #DCE1E5
-),
-  expanded: (
-  value: #E3E7EA
-),
-  expanded-hovered: (
-  value: #DCE1E5
-)
-)
-),
-  options: (
-  background: (
-  normal: (
-  value: #D5DBE0
-),
-  hovered: (
-  value: #D5DBE0
-)
-)
-)
-)
-),
-  form: (
-  primary: (
-  background: (
-  value: rgba(#F8F9FA, 0.75)
-),
-  shadow: (
-  value: rgba(#060606, 0.075)
-)
-),
-  secondary: (
-  background: (
-  value: rgba(#e5e9f1, 0.75)
-),
-  shadow: (
-  value: rgba(#060606, 0.075)
-)
-)
-),
-  form-wrapper: (
-  primary: (
-  background: (
-  value: #F8F9FA
-),
-  border: (
-  value: #D5DBE0
-)
-),
-  secondary: (
-  background: (
-  value: #DCE1E5
-),
-  border: (
-  value: #D5DBE0
-)
-)
-),
-  resizer: (
-  default: (
-  elements: (
-  splitter: (
-  normal: (
-  value: #01259D,
-  type: "color",
-  meta: (
-  category: "text",
-  description: "Normal color of the resizer splitter"
-),
-  format: hex
-),
-  active: (
-  value: #01259D,
-  type: "color",
-  meta: (
-  category: "text",
-  description: "Active color of the resizer splitter"
-),
-  format: hex
-)
-),
-  knob: (
-  normal: (
-  value: #6D8292,
-  type: "color",
-  meta: (
-  category: "background",
-  description: "Normal color of the resizer knob"
-),
-  format: hex
-),
-  active: (
-  value: #12ED6A,
-  type: "color",
-  meta: (
-  category: "background",
-  description: "Active color of the resizer knob"
-),
-  format: hex
-)
-)
-)
-)
-),
-  skeleton: (
-  default: (
-  color-in: (
-  value: rgba(#8999A7, 0.25),
-  type: "color"
-),
-  color-out: (
-  value: rgba(#8999A7, 0),
-  type: "color"
-)
-)
-),
-  step-pagination-tabs: (
-  primary: (
-  elements: (
-  item: (
-  label: (
-  normal: (
-  value: #2F383F,
-  type: "color",
-  meta: (
-  category: "text",
-  description: "Normal label color for step pagination tab"
-),
-  format: hex
-),
-  active: (
-  value: #2F383F,
-  type: "color",
-  meta: (
-  category: "text",
-  description: "Active label color for step pagination tab"
-),
-  format: hex
 )
 )
 )
@@ -1582,355 +1235,66 @@ $themes:(
   primary: (
   label: (
   normal: (
-  value: #A5B1BC,
-  type: "color",
-  unit: "hex",
-  meta: (
-  category: "tooltip"
-)
-)
-),
-  icon: (
-  normal: (
-  value: #A5B1BC,
-  type: "color",
-  unit: "hex",
-  meta: (
-  category: "tooltip"
-)
-)
-),
-  background: (
-  normal: (
-  value: #101315,
-  type: "color",
-  unit: "hex",
-  meta: (
-  category: "tooltip"
-)
-)
-)
-),
-  primary-inversed: (
-  label: (
-  normal: (
-  value: #6D8292,
-  type: "color",
-  unit: "hex",
-  meta: (
-  category: "tooltip"
-)
-)
-),
-  icon: (
-  normal: (
-  value: #7B8E9C,
-  type: "color",
-  unit: "hex",
-  meta: (
-  category: "tooltip"
-)
-)
-),
-  background: (
-  normal: (
-  value: #CED5DB,
-  type: "color",
-  unit: "hex",
-  meta: (
-  category: "tooltip"
-)
-)
-)
-)
-),
-  overlay: (
-  primary: (
-  background: (
-  value: #F8F9FA
-)
-),
-  primary-inversed: (
-  background: (
-  value: #101315
-)
-)
-),
-  sheet: (
-  primary: (
-  background: (
-  normal: (
-  value: #F8F9FA
-)
-),
-  shadow: (
-  normal: (
-  value: rgba(#060606, 0.075),
-  type: "color"
-)
-)
-),
-  secondary: (
-  background: (
-  normal: (
-  value: #DCE1E5
-)
-),
-  shadow: (
-  normal: (
-  value: rgba(#060606, 0.075),
-  type: "color"
-)
-)
-),
-  accent: (
-  background: (
-  normal: (
-  value: #013CFE
-)
-),
-  shadow: (
-  normal: (
-  value: rgba(#060606, 0.075),
-  type: "color"
-)
-)
-),
-  transparental: (
-  background: (
-  normal: (
-  value: rgba(#F8F9FA, 0)
-)
-),
-  shadow: (
-  normal: (
-  value: rgba(#060606, 0.075),
-  type: "color"
-)
-)
-)
-),
-  action-sheet: (
-  primary: (
-  background: (
-  normal: (
-  value: #F8F9FA,
-  type: "color"
-)
-),
-  shadow: (
-  normal: (
-  value: rgba(#060606, 0.075),
-  type: "color"
-)
-)
-),
-  secondary: (
-  background: (
-  normal: (
-  value: #DCE1E5,
-  type: "color"
-)
-),
-  shadow: (
-  normal: (
-  value: rgba(#060606, 0.075),
-  type: "color"
-)
-)
-),
-  accent: (
-  background: (
-  normal: (
-  value: #013CFE,
-  type: "color"
-)
-),
-  shadow: (
-  normal: (
-  value: rgba(#060606, 0.075),
-  type: "color"
-)
-)
-),
-  transparental: (
-  background: (
-  normal: (
-  value: rgba(#F8F9FA, 0),
-  type: "color"
-)
-),
-  shadow: (
-  normal: (
-  value: rgba(rgba(#060606, 0.075), 0),
-  type: "color"
-)
-)
-)
-)
-),
-  dark: (
-  label: (
-  primary: (
-  value: #DCE1E5,
-  type: "color",
-  description: "Main color",
-  meta: (
-  category: "label"
-)
-),
-  primary-inversed: (
   value: #2F383F,
   type: "color",
-  description: "Main inversed color",
+  unit: "hex",
   meta: (
-  category: "label"
+  category: "tooltip"
+)
 )
 ),
-  secondary: (
-  value: #A5B1BC,
+  icon: (
+  normal: (
+  value: #2F383F,
   type: "color",
-  description: "Secondary color for 2 priority text elements",
+  unit: "hex",
   meta: (
-  category: "label"
-)
-),
-  tertiary: (
-  value: #8999A7,
-  type: "color",
-  description: "Tertiary text color for less important content",
-  meta: (
-  category: "label"
-)
-),
-  disabled: (
-  value: #6D8292,
-  type: "color",
-  description: "Disabled or inactive text color",
-  meta: (
-  category: "label"
-)
-),
-  accent: (
-  value: #6286FE,
-  type: "color",
-  description: "Accent color for highlighting important text",
-  meta: (
-  category: "label"
-)
-),
-  accent-yellow: (
-  value: #FFF700,
-  type: "color",
-  description: "Accent color (yellow) for positive highlights",
-  meta: (
-  category: "label"
-)
-),
-  accent-green: (
-  value: #04FB23,
-  type: "color",
-  description: "Accent color (green) for success state text",
-  meta: (
-  category: "label"
-)
-),
-  accent-blue: (
-  value: #013CFE,
-  type: "color",
-  description: "Accent color (blue) for info text",
-  meta: (
-  category: "label"
-)
-),
-  info: (
-  value: #3161FE,
-  type: "color",
-  description: "Informational text color",
-  meta: (
-  category: "label"
-)
-),
-  warning: (
-  value: #FFB531,
-  type: "color",
-  description: "Warning state text color",
-  meta: (
-  category: "label"
-)
-),
-  error: (
-  value: #E54B4B,
-  type: "color",
-  description: "Error or destructive text color",
-  meta: (
-  category: "label"
+  category: "tooltip"
 )
 )
 ),
   background: (
-  base: (
-  value: #1A1F23
-),
-  primary: (
-  value: #101315
-),
-  primary-transparental: (
-  value: rgba(#101315, .75)
+  normal: (
+  value: #EAEDEF,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+)
 ),
   primary-inversed: (
-  value: #EAEDEF
-),
-  secondary: (
-  value: #1A1F23
-),
-  secondary-transparental: (
-  value: rgba(#1A1F23, .75)
-),
-  tertiary: (
-  value: #2F383F
-),
-  accent: (
-  value: #013CFE
-),
-  accept: (
-  value: #FFB531
-),
-  accent-yellow: (
-  value: #FFF700
-),
-  accent-green: (
-  value: #04FB23
-),
-  accent-blue: (
-  value: #013CFE
+  label: (
+  normal: (
+  value: #6D8292,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
 )
 ),
-  border: (
-  primary: (
+  icon: (
+  normal: (
+  value: #637584,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+),
+  background: (
+  normal: (
   value: #242B31,
   type: "color",
-  description: "Default border color"
-),
-  secondary: (
-  value: #39444C,
-  type: "color",
-  description: "Secondary border color, used for subtle dividers"
-),
-  strong: (
-  value: #C0C9D0,
-  type: "color",
-  description: "Strong border color, used for emphasis and contrast"
-),
-  outline: (
-  value: #013CFE,
-  type: "color",
-  description: "Outline border color, used for focus states and accentuated elements"
+  unit: "hex",
+  meta: (
+  category: "tooltip"
 )
-),
-  shadow: (
-  primary: (
-  value: rgba(#586976, .035)
+)
+)
 )
 ),
   divider: (
@@ -1961,1048 +1325,116 @@ $themes:(
 )
 )
 ),
-  group: (
+  drop-down: (
   primary: (
-  self: (
-  divider: (
+  value: (
+  label: (
+  normal: (
+  value: #EAEDEF
+),
+  hovered: (
+  value: #DCE1E5
+),
+  expanded: (
+  value: #C0C9D0
+),
+  expanded-hovered: (
+  value: #B3BDC6
+)
+),
+  icon: (
+  normal: (
+  value: #EAEDEF
+),
+  hovered: (
+  value: #DCE1E5
+),
+  expanded: (
+  value: #C0C9D0
+),
+  expanded-hovered: (
+  value: #B3BDC6
+)
+),
+  background: (
+  normal: (
+  value: #242B31
+),
+  hovered: (
+  value: #2F383F
+),
+  expanded: (
+  value: #43505A
+),
+  expanded-hovered: (
+  value: #39444C
+)
+)
+),
+  options: (
+  background: (
+  normal: (
+  value: #2F383F
+),
+  hovered: (
+  value: #2F383F
+)
+)
+)
+)
+),
+  form: (
+  primary: (
+  background: (
+  value: rgba(#101315, .75)
+),
+  shadow: (
+  value: rgba(#586976, .035)
+)
+),
+  secondary: (
+  background: (
+  value: rgba(#1A1F23, .75)
+),
+  shadow: (
+  value: rgba(#586976, .035)
+)
+)
+),
+  form-wrapper: (
+  primary: (
+  background: (
+  value: #101315
+),
+  border: (
+  value: #242B31
+)
+),
+  secondary: (
+  background: (
+  value: #1A1F23
+),
+  border: (
   value: #242B31
 )
 )
 ),
+  group: (
+  primary: (
+  self: (
+  divider: (
+  value: #242B31,
+  type: "color",
+  unit: "hex"
+)
+)
+),
   secondary: (
   self: (
   divider: (
-  value: #39444C
-)
-)
-)
-),
-  button: (
-  neutral: (
-  primary: (
-  self: (
-  background: (
-  normal: (
-  value: #43505A
-),
-  disabled: (
-  value: rgba(#39444C, .5)
-),
-  hovered: (
-  value: #586976
-),
-  pressed: (
-  value: #637584
-)
-),
-  border: (
-  normal: (
-  value: #43505A
-),
-  disabled: (
-  value: rgba(#39444C, .5)
-),
-  hovered: (
-  value: #586976
-),
-  pressed: (
-  value: #637584
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #97A5B1
-),
-  disabled: (
-  value: #586976
-),
-  hovered: (
-  value: #C0C9D0
-),
-  pressed: (
-  value: #B3BDC6
-)
-)
-)
-),
-  inversed: (
-  self: (
-  background: (
-  normal: (
-  value: #EAEDEF
-),
-  disabled: (
-  value: rgba(#EAEDEF, .5)
-),
-  hovered: (
-  value: #DCE1E5
-),
-  pressed: (
-  value: #CED5DB
-)
-),
-  border: (
-  normal: (
-  value: #EAEDEF
-),
-  disabled: (
-  value: rgba(#EAEDEF, .5)
-),
-  hovered: (
-  value: #DCE1E5
-),
-  pressed: (
-  value: #CED5DB
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #101315
-),
-  disabled: (
-  value: #6D8292
-),
-  hovered: (
-  value: #101315
-),
-  pressed: (
-  value: #101315
-)
-)
-)
-),
-  secondary: (
-  self: (
-  background: (
-  normal: (
-  value: #060606
-),
-  disabled: (
-  value: rgba(#060606, .5)
-),
-  hovered: (
-  value: #101315
-),
-  pressed: (
-  value: #1A1F23
-)
-),
-  border: (
-  normal: (
-  value: #060606
-),
-  disabled: (
-  value: rgba(#060606, .5)
-),
-  hovered: (
-  value: #101315
-),
-  pressed: (
-  value: #1A1F23
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #EAEDEF
-),
-  disabled: (
-  value: #586976
-),
-  hovered: (
-  value: #EAEDEF
-),
-  pressed: (
-  value: #EAEDEF
-)
-)
-)
-),
-  tertiary: (
-  self: (
-  background: (
-  normal: (
-  value: rgba(#242B31, 0)
-),
-  disabled: (
-  value: rgba(#242B31, 0)
-),
-  hovered: (
-  value: rgba(#2F383F, 0)
-),
-  pressed: (
-  value: rgba(#39444C, 0)
-)
-),
-  border: (
-  normal: (
-  value: rgba(#242B31, 0)
-),
-  disabled: (
-  value: rgba(#242B31, 0)
-),
-  hovered: (
-  value: rgba(#2F383F, 0)
-),
-  pressed: (
-  value: rgba(#39444C, 0)
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #97A5B1
-),
-  disabled: (
-  value: #586976
-),
-  hovered: (
-  value: #C0C9D0
-),
-  pressed: (
-  value: #B3BDC6
-)
-)
-)
-),
-  outline: (
-  self: (
-  background: (
-  normal: (
-  value: rgba(#242B31, 0)
-),
-  disabled: (
-  value: rgba(#242B31, 0)
-),
-  hovered: (
-  value: rgba(#2F383F, 0)
-),
-  pressed: (
-  value: rgba(#39444C, 0)
-)
-),
-  border: (
-  normal: (
-  value: rgba(#242B31, 0)
-),
-  disabled: (
-  value: rgba(#242B31, 0)
-),
-  hovered: (
-  value: rgba(#2F383F, 0)
-),
-  pressed: (
-  value: rgba(#39444C, 0)
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #97A5B1
-),
-  disabled: (
-  value: #586976
-),
-  hovered: (
-  value: #C0C9D0
-),
-  pressed: (
-  value: #B3BDC6
-)
-)
-)
-)
-),
-  accent: (
-  primary: (
-  self: (
-  background: (
-  normal: (
-  value: #013CFE
-),
-  disabled: (
-  value: rgba(#013CFE, .5)
-),
-  hovered: (
-  value: #0130CE
-),
-  pressed: (
-  value: #01259D
-)
-),
-  border: (
-  normal: (
-  value: #013CFE
-),
-  disabled: (
-  value: rgba(#013CFE, .5)
-),
-  hovered: (
-  value: #0130CE
-),
-  pressed: (
-  value: #01259D
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #DBE3FF
-),
-  disabled: (
-  value: #92ABFF
-),
-  hovered: (
-  value: #C3D1FF
-),
-  pressed: (
-  value: #AABEFF
-)
-)
-)
-),
-  inversed: (
-  self: (
-  background: (
-  normal: (
-  value: #EAEDEF
-),
-  disabled: (
-  value: rgba(#EAEDEF, .5)
-),
-  hovered: (
-  value: #DCE1E5
-),
-  pressed: (
-  value: #CED5DB
-)
-),
-  border: (
-  normal: (
-  value: #EAEDEF
-),
-  disabled: (
-  value: rgba(#EAEDEF, .5)
-),
-  hovered: (
-  value: #DCE1E5
-),
-  pressed: (
-  value: #CED5DB
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #101315
-),
-  disabled: (
-  value: #6D8292
-),
-  hovered: (
-  value: #101315
-),
-  pressed: (
-  value: #101315
-)
-)
-)
-),
-  secondary: (
-  self: (
-  background: (
-  normal: (
-  value: #060606
-),
-  disabled: (
-  value: rgba(#060606, .5)
-),
-  hovered: (
-  value: #101315
-),
-  pressed: (
-  value: #1A1F23
-)
-),
-  border: (
-  normal: (
-  value: #060606
-),
-  disabled: (
-  value: rgba(#060606, .5)
-),
-  hovered: (
-  value: #101315
-),
-  pressed: (
-  value: #1A1F23
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #EAEDEF
-),
-  disabled: (
-  value: #586976
-),
-  hovered: (
-  value: #EAEDEF
-),
-  pressed: (
-  value: #EAEDEF
-)
-)
-)
-),
-  tertiary: (
-  self: (
-  background: (
-  normal: (
-  value: rgba(#242B31, 0)
-),
-  disabled: (
-  value: rgba(#242B31, 0)
-),
-  hovered: (
-  value: rgba(#2F383F, 0)
-),
-  pressed: (
-  value: rgba(#39444C, 0)
-)
-),
-  border: (
-  normal: (
-  value: rgba(#242B31, 0)
-),
-  disabled: (
-  value: rgba(#242B31, 0)
-),
-  hovered: (
-  value: rgba(#2F383F, 0)
-),
-  pressed: (
-  value: rgba(#39444C, 0)
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #97A5B1
-),
-  disabled: (
-  value: #586976
-),
-  hovered: (
-  value: #C0C9D0
-),
-  pressed: (
-  value: #B3BDC6
-)
-)
-)
-),
-  outline: (
-  self: (
-  background: (
-  normal: (
-  value: rgba(#242B31, 0)
-),
-  disabled: (
-  value: rgba(#242B31, 0)
-),
-  hovered: (
-  value: rgba(#2F383F, 0)
-),
-  pressed: (
-  value: rgba(#39444C, 0)
-)
-),
-  border: (
-  normal: (
-  value: rgba(#242B31, 0)
-),
-  disabled: (
-  value: rgba(#242B31, 0)
-),
-  hovered: (
-  value: rgba(#2F383F, 0)
-),
-  pressed: (
-  value: rgba(#39444C, 0)
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #97A5B1
-),
-  disabled: (
-  value: #586976
-),
-  hovered: (
-  value: #C0C9D0
-),
-  pressed: (
-  value: #B3BDC6
-)
-)
-)
-)
-),
-  positive: (
-  primary: (
-  self: (
-  background: (
-  normal: (
-  value: #E3E7EA
-),
-  disabled: (
-  value: rgba(#E3E7EA, .5)
-),
-  hovered: (
-  value: #DCE1E5
-),
-  pressed: (
-  value: #CED5DB
-)
-),
-  border: (
-  normal: (
-  value: #E3E7EA
-),
-  disabled: (
-  value: rgba(#E3E7EA, .5)
-),
-  hovered: (
-  value: #DCE1E5
-),
-  pressed: (
-  value: #CED5DB
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #1A1F23
-),
-  disabled: (
-  value: #8999A7
-),
-  hovered: (
-  value: #101315
-),
-  pressed: (
-  value: #101315
-)
-)
-)
-),
-  inversed: (
-  self: (
-  background: (
-  normal: (
-  value: #101315
-),
-  disabled: (
-  value: rgba(#586976, .5)
-),
-  hovered: (
-  value: #1A1F23
-),
-  pressed: (
-  value: #2F383F
-)
-),
-  border: (
-  normal: (
-  value: #101315
-),
-  disabled: (
-  value: rgba(#586976, .5)
-),
-  hovered: (
-  value: #1A1F23
-),
-  pressed: (
-  value: #2F383F
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #E3E7EA
-),
-  disabled: (
-  value: #6D8292
-),
-  hovered: (
-  value: #E3E7EA
-),
-  pressed: (
-  value: #E3E7EA
-)
-)
-)
-),
-  secondary: (
-  self: (
-  background: (
-  normal: (
-  value: #F9F9F9
-),
-  disabled: (
-  value: rgba(#F9F9F9, .5)
-),
-  hovered: (
-  value: #EAEDEF
-),
-  pressed: (
-  value: #DCE1E5
-)
-),
-  border: (
-  normal: (
-  value: #F9F9F9
-),
-  disabled: (
-  value: rgba(#F9F9F9, .5)
-),
-  hovered: (
-  value: #EAEDEF
-),
-  pressed: (
-  value: #DCE1E5
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #101315
-),
-  disabled: (
-  value: #8999A7
-),
-  hovered: (
-  value: #101315
-),
-  pressed: (
-  value: #101315
-)
-)
-)
-),
-  tertiary: (
-  self: (
-  background: (
-  normal: (
-  value: rgba(#E3E7EA, 0)
-),
-  disabled: (
-  value: rgba(#E3E7EA, 0)
-),
-  hovered: (
-  value: rgba(#DCE1E5, 0)
-),
-  pressed: (
-  value: rgba(#CED5DB, 0)
-)
-),
-  border: (
-  normal: (
-  value: rgba(#E3E7EA, 0)
-),
-  disabled: (
-  value: rgba(#E3E7EA, 0)
-),
-  hovered: (
-  value: rgba(#DCE1E5, 0)
-),
-  pressed: (
-  value: rgba(#CED5DB, 0)
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #1A1F23
-),
-  disabled: (
-  value: #8999A7
-),
-  hovered: (
-  value: #101315
-),
-  pressed: (
-  value: #101315
-)
-)
-)
-),
-  outline: (
-  self: (
-  background: (
-  normal: (
-  value: rgba(#E3E7EA, 0)
-),
-  disabled: (
-  value: rgba(#E3E7EA, 0)
-),
-  hovered: (
-  value: rgba(#DCE1E5, 0)
-),
-  pressed: (
-  value: rgba(#CED5DB, 0)
-)
-),
-  border: (
-  normal: (
-  value: rgba(#E3E7EA, 0)
-),
-  disabled: (
-  value: rgba(#E3E7EA, 0)
-),
-  hovered: (
-  value: rgba(#DCE1E5, 0)
-),
-  pressed: (
-  value: rgba(#CED5DB, 0)
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #1A1F23
-),
-  disabled: (
-  value: #8999A7
-),
-  hovered: (
-  value: #101315
-),
-  pressed: (
-  value: #101315
-)
-)
-)
-)
-),
-  negative: (
-  primary: (
-  self: (
-  background: (
-  normal: (
-  value: #E3E7EA
-),
-  disabled: (
-  value: rgba(#E3E7EA, .5)
-),
-  hovered: (
-  value: #DCE1E5
-),
-  pressed: (
-  value: #CED5DB
-)
-),
-  border: (
-  normal: (
-  value: #E3E7EA
-),
-  disabled: (
-  value: rgba(#E3E7EA, .5)
-),
-  hovered: (
-  value: #DCE1E5
-),
-  pressed: (
-  value: #CED5DB
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #1A1F23
-),
-  disabled: (
-  value: #8999A7
-),
-  hovered: (
-  value: #101315
-),
-  pressed: (
-  value: #101315
-)
-)
-)
-),
-  inversed: (
-  self: (
-  background: (
-  normal: (
-  value: #101315
-),
-  disabled: (
-  value: rgba(#586976, .5)
-),
-  hovered: (
-  value: #1A1F23
-),
-  pressed: (
-  value: #2F383F
-)
-),
-  border: (
-  normal: (
-  value: #101315
-),
-  disabled: (
-  value: rgba(#586976, .5)
-),
-  hovered: (
-  value: #1A1F23
-),
-  pressed: (
-  value: #2F383F
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #E3E7EA
-),
-  disabled: (
-  value: #6D8292
-),
-  hovered: (
-  value: #E3E7EA
-),
-  pressed: (
-  value: #E3E7EA
-)
-)
-)
-),
-  secondary: (
-  self: (
-  background: (
-  normal: (
-  value: #F9F9F9
-),
-  disabled: (
-  value: rgba(#F9F9F9, .5)
-),
-  hovered: (
-  value: #EAEDEF
-),
-  pressed: (
-  value: #DCE1E5
-)
-),
-  border: (
-  normal: (
-  value: #F9F9F9
-),
-  disabled: (
-  value: rgba(#F9F9F9, .5)
-),
-  hovered: (
-  value: #EAEDEF
-),
-  pressed: (
-  value: #DCE1E5
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #101315
-),
-  disabled: (
-  value: #8999A7
-),
-  hovered: (
-  value: #101315
-),
-  pressed: (
-  value: #101315
-)
-)
-)
-),
-  tertiary: (
-  self: (
-  background: (
-  normal: (
-  value: rgba(#E3E7EA, 0)
-),
-  disabled: (
-  value: rgba(#E3E7EA, 0)
-),
-  hovered: (
-  value: rgba(#DCE1E5, 0)
-),
-  pressed: (
-  value: rgba(#CED5DB, 0)
-)
-),
-  border: (
-  normal: (
-  value: rgba(#E3E7EA, 0)
-),
-  disabled: (
-  value: rgba(#E3E7EA, 0)
-),
-  hovered: (
-  value: rgba(#DCE1E5, 0)
-),
-  pressed: (
-  value: rgba(#CED5DB, 0)
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #1A1F23
-),
-  disabled: (
-  value: #8999A7
-),
-  hovered: (
-  value: #101315
-),
-  pressed: (
-  value: #101315
-)
-)
-)
-),
-  outline: (
-  self: (
-  background: (
-  normal: (
-  value: rgba(#E3E7EA, 0)
-),
-  disabled: (
-  value: rgba(#E3E7EA, 0)
-),
-  hovered: (
-  value: rgba(#DCE1E5, 0)
-),
-  pressed: (
-  value: rgba(#CED5DB, 0)
-)
-),
-  border: (
-  normal: (
-  value: rgba(#E3E7EA, 0)
-),
-  disabled: (
-  value: rgba(#E3E7EA, 0)
-),
-  hovered: (
-  value: rgba(#DCE1E5, 0)
-),
-  pressed: (
-  value: rgba(#CED5DB, 0)
-),
-  outline: (
-  value: #013CFE
-)
-)
-),
-  elements: (
-  label: (
-  normal: (
-  value: #1A1F23
-),
-  disabled: (
-  value: #8999A7
-),
-  hovered: (
-  value: #101315
-),
-  pressed: (
-  value: #101315
-)
-)
+  value: #39444C,
+  type: "color",
+  unit: "hex"
 )
 )
 )
@@ -3101,33 +1533,113 @@ $themes:(
 )
 )
 ),
-  selection: (
-  default: (
   label: (
-  value: #EAEDEF
-),
-  background: (
-  value: #9E9900
-)
-)
-),
-  switch: (
-  default: (
-  track: (
-  normal: (
-  value: #3E4A53
-),
-  active: (
-  value: #3E4A53
+  primary: (
+  value: #DCE1E5,
+  type: "color",
+  unit: "hex",
+  description: "Main color",
+  meta: (
+  category: "label"
 )
 ),
-  knob: (
-  normal: (
-  value: #F8F9FA
-),
-  active: (
-  value: #F8F9FA
+  primary-inversed: (
+  value: #2F383F,
+  type: "color",
+  unit: "hex",
+  description: "Main inversed color",
+  meta: (
+  category: "label"
 )
+),
+  secondary: (
+  value: #A5B1BC,
+  type: "color",
+  unit: "hex",
+  description: "Secondary color for 2 priority text elements",
+  meta: (
+  category: "label"
+)
+),
+  tertiary: (
+  value: #8999A7,
+  type: "color",
+  unit: "hex",
+  description: "Tertiary text color for less important content",
+  meta: (
+  category: "label"
+)
+),
+  disabled: (
+  value: #6D8292,
+  type: "color",
+  unit: "hex",
+  description: "Disabled or inactive text color",
+  meta: (
+  category: "label"
+)
+),
+  accent: (
+  value: #6286FE,
+  type: "color",
+  unit: "hex",
+  description: "Accent color for highlighting important text",
+  meta: (
+  category: "label"
+)
+),
+  accent-yellow: (
+  value: #FFF700,
+  type: "color",
+  unit: "hex",
+  description: "Accent color (yellow) for positive highlights",
+  meta: (
+  category: "label"
+)
+),
+  accent-green: (
+  value: #04FB23,
+  type: "color",
+  unit: "hex",
+  description: "Accent color (green) for success state text",
+  meta: (
+  category: "label"
+)
+),
+  accent-blue: (
+  value: #013CFE,
+  type: "color",
+  unit: "hex",
+  description: "Accent color (blue) for info text",
+  meta: (
+  category: "label"
+)
+),
+  info: (
+  value: #3161FE,
+  type: "color",
+  unit: "hex",
+  description: "Informational text color",
+  meta: (
+  category: "label"
+)
+),
+  warning: (
+  value: #FFB531,
+  type: "color",
+  unit: "hex",
+  description: "Warning state text color",
+  meta: (
+  category: "label"
+)
+),
+  error: (
+  value: #E54B4B,
+  type: "color",
+  unit: "hex",
+  description: "Error or destructive text color",
+  meta: (
+  category: "label"
 )
 )
 ),
@@ -3165,97 +1677,15 @@ $themes:(
 )
 )
 ),
-  drop-down: (
-  primary: (
-  value: (
-  label: (
-  normal: (
-  value: #EAEDEF
-),
-  hovered: (
-  value: #DCE1E5
-),
-  expanded: (
-  value: #C0C9D0
-),
-  expanded-hovered: (
-  value: #B3BDC6
-)
-),
-  icon: (
-  normal: (
-  value: #EAEDEF
-),
-  hovered: (
-  value: #DCE1E5
-),
-  expanded: (
-  value: #C0C9D0
-),
-  expanded-hovered: (
-  value: #B3BDC6
-)
-),
-  background: (
-  normal: (
-  value: #242B31
-),
-  hovered: (
-  value: #2F383F
-),
-  expanded: (
-  value: #43505A
-),
-  expanded-hovered: (
-  value: #39444C
-)
-)
-),
-  options: (
-  background: (
-  normal: (
-  value: #2F383F
-),
-  hovered: (
-  value: #2F383F
-)
-)
-)
-)
-),
-  form: (
-  primary: (
-  background: (
-  value: rgba(#101315, .75)
-),
-  shadow: (
-  value: rgba(#586976, .035)
-)
-),
-  secondary: (
-  background: (
-  value: rgba(#1A1F23, .75)
-),
-  shadow: (
-  value: rgba(#586976, .035)
-)
-)
-),
-  form-wrapper: (
+  overlay: (
   primary: (
   background: (
   value: #101315
-),
-  border: (
-  value: #242B31
 )
 ),
-  secondary: (
+  primary-inversed: (
   background: (
-  value: #1A1F23
-),
-  border: (
-  value: #242B31
+  value: #EAEDEF
 )
 )
 ),
@@ -3305,121 +1735,27 @@ $themes:(
 )
 )
 ),
-  skeleton: (
+  selection: (
   default: (
-  color-in: (
-  value: rgba(#6D8292, 0.25),
-  type: "color"
-),
-  color-out: (
-  value: rgba(#6D8292, 0),
-  type: "color"
-)
-)
-),
-  step-pagination-tabs: (
-  primary: (
-  elements: (
-  item: (
   label: (
-  normal: (
-  value: #DCE1E5,
-  type: "color",
-  meta: (
-  category: "text",
-  description: "Normal label color for step pagination tab"
-),
-  format: hex
-),
-  active: (
-  value: #DCE1E5,
-  type: "color",
-  meta: (
-  category: "text",
-  description: "Active label color for step pagination tab"
-),
-  format: hex
-)
-)
-)
-)
-)
-),
-  char-tooltip-label: (
-  primary: (
-  label: (
-  normal: (
-  value: #2F383F,
-  type: "color",
-  unit: "hex",
-  meta: (
-  category: "tooltip"
-)
-)
-),
-  icon: (
-  normal: (
-  value: #2F383F,
-  type: "color",
-  unit: "hex",
-  meta: (
-  category: "tooltip"
-)
-)
-),
-  background: (
-  normal: (
   value: #EAEDEF,
   type: "color",
-  unit: "hex",
-  meta: (
-  category: "tooltip"
-)
-)
-)
-),
-  primary-inversed: (
-  label: (
-  normal: (
-  value: #6D8292,
-  type: "color",
-  unit: "hex",
-  meta: (
-  category: "tooltip"
-)
-)
-),
-  icon: (
-  normal: (
-  value: #637584,
-  type: "color",
-  unit: "hex",
-  meta: (
-  category: "tooltip"
-)
-)
+  unit: "hex"
 ),
   background: (
-  normal: (
-  value: #242B31,
+  value: #9E9900,
   type: "color",
-  unit: "hex",
-  meta: (
-  category: "tooltip"
-)
-)
+  unit: "hex"
 )
 )
 ),
-  overlay: (
+  shadow: (
   primary: (
-  background: (
-  value: #101315
-)
-),
-  primary-inversed: (
-  background: (
-  value: #EAEDEF
+  value: rgba(#586976, .035),
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "shadow"
 )
 )
 ),
@@ -3477,17 +1813,79 @@ $themes:(
 )
 )
 ),
+  skeleton: (
+  default: (
+  color-in: (
+  value: rgba(#6D8292, 0.25),
+  type: "color"
+),
+  color-out: (
+  value: rgba(#6D8292, 0),
+  type: "color"
+)
+)
+),
+  step-pagination-tabs: (
+  primary: (
+  elements: (
+  item: (
+  label: (
+  normal: (
+  value: #DCE1E5,
+  type: "color",
+  meta: (
+  category: "text",
+  description: "Normal label color for step pagination tab"
+),
+  format: hex
+),
+  active: (
+  value: #DCE1E5,
+  type: "color",
+  meta: (
+  category: "text",
+  description: "Active label color for step pagination tab"
+),
+  format: hex
+)
+)
+)
+)
+)
+),
+  switch: (
+  default: (
+  track: (
+  normal: (
+  value: #3E4A53
+),
+  active: (
+  value: #3E4A53
+)
+),
+  knob: (
+  normal: (
+  value: #F8F9FA
+),
+  active: (
+  value: #F8F9FA
+)
+)
+)
+)
+),
+  light: (
   action-sheet: (
   primary: (
   background: (
   normal: (
-  value: #101315,
+  value: #F8F9FA,
   type: "color"
 )
 ),
   shadow: (
   normal: (
-  value: rgba(#586976, .035),
+  value: rgba(#060606, 0.075),
   type: "color"
 )
 )
@@ -3495,13 +1893,13 @@ $themes:(
   secondary: (
   background: (
   normal: (
-  value: #1A1F23,
+  value: #DCE1E5,
   type: "color"
 )
 ),
   shadow: (
   normal: (
-  value: rgba(#586976, .035),
+  value: rgba(#060606, 0.075),
   type: "color"
 )
 )
@@ -3515,7 +1913,7 @@ $themes:(
 ),
   shadow: (
   normal: (
-  value: rgba(#586976, .035),
+  value: rgba(#060606, 0.075),
   type: "color"
 )
 )
@@ -3523,14 +1921,1922 @@ $themes:(
   transparental: (
   background: (
   normal: (
-  value: rgba(#101315, 0),
+  value: rgba(#F8F9FA, 0),
   type: "color"
 )
 ),
   shadow: (
   normal: (
-  value: rgba(rgba(#586976, .035), 0),
+  value: rgba(rgba(#060606, 0.075), 0),
   type: "color"
+)
+)
+)
+),
+  background: (
+  base: (
+  value: #EAEDEF,
+  type: "color",
+  unit: "hex"
+),
+  primary: (
+  value: #F8F9FA,
+  type: "color",
+  unit: "hex"
+),
+  primary-transparental: (
+  value: rgba(#F8F9FA, 0.75),
+  type: "color",
+  unit: "hex"
+),
+  primary-inversed: (
+  value: #101315,
+  type: "color",
+  unit: "hex"
+),
+  secondary: (
+  value: #DCE1E5,
+  type: "color",
+  unit: "hex"
+),
+  secondary-transparental: (
+  value: rgba(#e5e9f1, 0.75),
+  type: "color",
+  unit: "hex"
+),
+  tertiary: (
+  value: #A5B1BC,
+  type: "color",
+  unit: "hex"
+),
+  accent: (
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
+),
+  accept: (
+  value: #FFB531,
+  type: "color",
+  unit: "hex"
+),
+  accent-yellow: (
+  value: #FFF700,
+  type: "color",
+  unit: "hex"
+),
+  accent-green: (
+  value: #03CC1C,
+  type: "color",
+  unit: "hex"
+),
+  accent-blue: (
+  value: #0136E6,
+  type: "color",
+  unit: "hex"
+)
+),
+  border: (
+  primary: (
+  value: #D5DBE0,
+  type: "color",
+  unit: "hex",
+  description: "Default border color"
+),
+  secondary: (
+  value: #C7CFD5,
+  type: "color",
+  unit: "hex",
+  description: "Secondary border color, used for subtle dividers"
+),
+  strong: (
+  value: #2F383F,
+  type: "color",
+  unit: "hex",
+  description: "Strong border color, used for emphasis and contrast"
+),
+  outline: (
+  value: #013CFE,
+  type: "color",
+  unit: "hex",
+  description: "Outline border color, used for focus states and accentuated elements"
+)
+),
+  button: (
+  neutral: (
+  primary: (
+  self: (
+  background: (
+  normal: (
+  value: #E3E7EA,
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: rgba(#E3E7EA, .5),
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: #DCE1E5,
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: #CED5DB,
+  type: "color",
+  unit: "hex"
+)
+),
+  border: (
+  normal: (
+  value: #E3E7EA,
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: rgba(#E3E7EA, .5),
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: #DCE1E5,
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: #CED5DB,
+  type: "color",
+  unit: "hex"
+),
+  outline: (
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23,
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: #8999A7,
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: #101315,
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: #101315,
+  type: "color",
+  unit: "hex"
+)
+)
+)
+),
+  inversed: (
+  self: (
+  background: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: rgba(#586976, .5)
+),
+  hovered: (
+  value: #1A1F23
+),
+  pressed: (
+  value: #2F383F
+)
+),
+  border: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: rgba(#586976, .5)
+),
+  hovered: (
+  value: #1A1F23
+),
+  pressed: (
+  value: #2F383F
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: #6D8292
+),
+  hovered: (
+  value: #E3E7EA
+),
+  pressed: (
+  value: #E3E7EA
+)
+)
+)
+),
+  secondary: (
+  self: (
+  background: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+)
+),
+  border: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  tertiary: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  outline: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+)
+),
+  accent: (
+  primary: (
+  self: (
+  background: (
+  normal: (
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: rgba(#013CFE, .5),
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: #0130CE,
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: #01259D,
+  type: "color",
+  unit: "hex"
+)
+),
+  border: (
+  normal: (
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: rgba(#013CFE, .5),
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: #0130CE,
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: #01259D,
+  type: "color",
+  unit: "hex"
+),
+  outline: (
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #DBE3FF
+),
+  disabled: (
+  value: #92ABFF
+),
+  hovered: (
+  value: #C3D1FF
+),
+  pressed: (
+  value: #AABEFF
+)
+)
+)
+),
+  inversed: (
+  self: (
+  background: (
+  normal: (
+  value: #000E3C,
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: rgba(#000E3C, .5),
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: #001455,
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: #001A6D,
+  type: "color",
+  unit: "hex"
+)
+),
+  border: (
+  normal: (
+  value: #000E3C,
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: rgba(#000E3C, .5),
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: #001455,
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: #001A6D,
+  type: "color",
+  unit: "hex"
+),
+  outline: (
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #DBE3FF,
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: #AABEFF,
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: #C3D1FF,
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: #AABEFF,
+  type: "color",
+  unit: "hex"
+)
+)
+)
+),
+  secondary: (
+  self: (
+  background: (
+  normal: (
+  value: #F9F9F9,
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5),
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: #EAEDEF,
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: #DCE1E5,
+  type: "color",
+  unit: "hex"
+)
+),
+  border: (
+  normal: (
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: #7A99FE,
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: #0130CE,
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: #012BB5,
+  type: "color",
+  unit: "hex"
+),
+  outline: (
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: #7A99FE,
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: #0130CE,
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: #012BB5,
+  type: "color",
+  unit: "hex"
+)
+)
+)
+),
+  tertiary: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0),
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0),
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0),
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: rgba(#CED5DB, 0),
+  type: "color",
+  unit: "hex"
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0),
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0),
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0),
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: rgba(#CED5DB, 0),
+  type: "color",
+  unit: "hex"
+),
+  outline: (
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: #7A99FE,
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: #0130CE,
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: #012BB5,
+  type: "color",
+  unit: "hex"
+)
+)
+)
+),
+  outline: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0),
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0),
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0),
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: rgba(#CED5DB, 0),
+  type: "color",
+  unit: "hex"
+)
+),
+  border: (
+  normal: (
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: #7A99FE,
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: #0130CE,
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: #012BB5,
+  type: "color",
+  unit: "hex"
+),
+  outline: (
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #013CFE,
+  type: "color",
+  unit: "hex"
+),
+  disabled: (
+  value: #7A99FE,
+  type: "color",
+  unit: "hex"
+),
+  hovered: (
+  value: #0130CE,
+  type: "color",
+  unit: "hex"
+),
+  pressed: (
+  value: #012BB5,
+  type: "color",
+  unit: "hex"
+)
+)
+)
+)
+),
+  positive: (
+  primary: (
+  self: (
+  background: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: rgba(#E3E7EA, .5)
+),
+  hovered: (
+  value: #DCE1E5
+),
+  pressed: (
+  value: #CED5DB
+)
+),
+  border: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: rgba(#E3E7EA, .5)
+),
+  hovered: (
+  value: #DCE1E5
+),
+  pressed: (
+  value: #CED5DB
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  inversed: (
+  self: (
+  background: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: rgba(#586976, .5)
+),
+  hovered: (
+  value: #1A1F23
+),
+  pressed: (
+  value: #2F383F
+)
+),
+  border: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: rgba(#586976, .5)
+),
+  hovered: (
+  value: #1A1F23
+),
+  pressed: (
+  value: #2F383F
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: #6D8292
+),
+  hovered: (
+  value: #E3E7EA
+),
+  pressed: (
+  value: #E3E7EA
+)
+)
+)
+),
+  secondary: (
+  self: (
+  background: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+)
+),
+  border: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  tertiary: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  outline: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+)
+),
+  negative: (
+  primary: (
+  self: (
+  background: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: rgba(#E3E7EA, .5)
+),
+  hovered: (
+  value: #DCE1E5
+),
+  pressed: (
+  value: #CED5DB
+)
+),
+  border: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: rgba(#E3E7EA, .5)
+),
+  hovered: (
+  value: #DCE1E5
+),
+  pressed: (
+  value: #CED5DB
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  inversed: (
+  self: (
+  background: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: rgba(#586976, .5)
+),
+  hovered: (
+  value: #1A1F23
+),
+  pressed: (
+  value: #2F383F
+)
+),
+  border: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: rgba(#586976, .5)
+),
+  hovered: (
+  value: #1A1F23
+),
+  pressed: (
+  value: #2F383F
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: #6D8292
+),
+  hovered: (
+  value: #E3E7EA
+),
+  pressed: (
+  value: #E3E7EA
+)
+)
+)
+),
+  secondary: (
+  self: (
+  background: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+)
+),
+  border: (
+  normal: (
+  value: #F9F9F9
+),
+  disabled: (
+  value: rgba(#F9F9F9, .5)
+),
+  hovered: (
+  value: #EAEDEF
+),
+  pressed: (
+  value: #DCE1E5
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #101315
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  tertiary: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+),
+  outline: (
+  self: (
+  background: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+)
+),
+  border: (
+  normal: (
+  value: rgba(#E3E7EA, 0)
+),
+  disabled: (
+  value: rgba(#E3E7EA, 0)
+),
+  hovered: (
+  value: rgba(#DCE1E5, 0)
+),
+  pressed: (
+  value: rgba(#CED5DB, 0)
+),
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  pressed: (
+  value: #101315
+)
+)
+)
+)
+)
+),
+  char-tooltip-label: (
+  primary: (
+  label: (
+  normal: (
+  value: #A5B1BC,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+),
+  icon: (
+  normal: (
+  value: #A5B1BC,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+),
+  background: (
+  normal: (
+  value: #101315,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+)
+),
+  primary-inversed: (
+  label: (
+  normal: (
+  value: #6D8292,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+),
+  icon: (
+  normal: (
+  value: #7B8E9C,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+),
+  background: (
+  normal: (
+  value: #CED5DB,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "tooltip"
+)
+)
+)
+)
+),
+  divider: (
+  primary: (
+  self: (
+  border: (
+  value: #D5DBE0,
+  type: "color",
+  meta: (
+  category: "border",
+  description: "Primary border color for divider"
+),
+  format: hex
+)
+)
+),
+  secondary: (
+  self: (
+  border: (
+  value: #C7CFD5,
+  type: "color",
+  meta: (
+  category: "border",
+  description: "Secondary border color for divider"
+),
+  format: hex
+)
+)
+)
+),
+  drop-down: (
+  primary: (
+  value: (
+  label: (
+  normal: (
+  value: #1A1F23
+),
+  hovered: (
+  value: #101315
+),
+  expanded: (
+  value: #101315
+),
+  expanded-hovered: (
+  value: #101315
+)
+),
+  icon: (
+  normal: (
+  value: #1A1F23
+),
+  hovered: (
+  value: #101315
+),
+  expanded: (
+  value: #2F383F
+),
+  expanded-hovered: (
+  value: #242B31
+)
+),
+  background: (
+  normal: (
+  value: #E3E7EA
+),
+  hovered: (
+  value: #DCE1E5
+),
+  expanded: (
+  value: #E3E7EA
+),
+  expanded-hovered: (
+  value: #DCE1E5
+)
+)
+),
+  options: (
+  background: (
+  normal: (
+  value: #D5DBE0
+),
+  hovered: (
+  value: #D5DBE0
+)
+)
+)
+)
+),
+  form: (
+  primary: (
+  background: (
+  value: rgba(#F8F9FA, 0.75)
+),
+  shadow: (
+  value: rgba(#060606, 0.075)
+)
+),
+  secondary: (
+  background: (
+  value: rgba(#e5e9f1, 0.75)
+),
+  shadow: (
+  value: rgba(#060606, 0.075)
+)
+)
+),
+  form-wrapper: (
+  primary: (
+  background: (
+  value: #F8F9FA
+),
+  border: (
+  value: #D5DBE0
+)
+),
+  secondary: (
+  background: (
+  value: #DCE1E5
+),
+  border: (
+  value: #D5DBE0
+)
+)
+),
+  group: (
+  primary: (
+  self: (
+  divider: (
+  value: #D5DBE0,
+  type: "color",
+  unit: "hex"
+)
+)
+),
+  secondary: (
+  self: (
+  divider: (
+  value: #C7CFD5,
+  type: "color",
+  unit: "hex"
+)
+)
+)
+),
+  input: (
+  primary: (
+  self: (
+  background: (
+  normal: (
+  value: #E3E7EA
+),
+  disabled: (
+  value: #EAEDEF
+),
+  hovered: (
+  value: #EAEDEF
+),
+  focused: (
+  value: #EAEDEF
+),
+  error: (
+  value: #FADFDF
+)
+),
+  border: (
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #2F383F
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  focused: (
+  value: #101315
+),
+  error: (
+  value: #350808,
+  description: "placeholder = #E96B6B"
+)
+)
+)
+),
+  secondary: (
+  self: (
+  background: (
+  normal: (
+  value: #F8F9FA
+),
+  disabled: (
+  value: #F8F9FA
+),
+  hovered: (
+  value: #EAEDEF
+),
+  focused: (
+  value: #DCE1E5
+),
+  error: (
+  value: #FADFDF
+)
+),
+  border: (
+  outline: (
+  value: #013CFE
+)
+)
+),
+  elements: (
+  label: (
+  normal: (
+  value: #2F383F
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  focused: (
+  value: #101315
+),
+  error: (
+  value: #350808,
+  description: "placeholder = #E96B6B"
+)
+)
+)
+)
+),
+  label: (
+  primary: (
+  value: #2F383F,
+  type: "color",
+  unit: "hex",
+  description: "Main color",
+  meta: (
+  category: "label"
+)
+),
+  primary-inversed: (
+  value: #DCE1E5,
+  type: "color",
+  unit: "hex",
+  description: "Main inversed color",
+  meta: (
+  category: "label"
+)
+),
+  secondary: (
+  value: #586976,
+  type: "color",
+  unit: "hex",
+  description: "Secondary color for 2 priority text elements",
+  meta: (
+  category: "label"
+)
+),
+  tertiary: (
+  value: #6D8292,
+  type: "color",
+  unit: "hex",
+  description: "Tertiary text color for less important content",
+  meta: (
+  category: "label"
+)
+),
+  disabled: (
+  value: #8999A7,
+  type: "color",
+  unit: "hex",
+  description: "Disabled or inactive text color",
+  meta: (
+  category: "label"
+)
+),
+  accent: (
+  value: #01259D,
+  type: "color",
+  unit: "hex",
+  description: "Accent color for highlighting important text",
+  meta: (
+  category: "label"
+)
+),
+  accent-yellow: (
+  value: #FFF700,
+  type: "color",
+  unit: "hex",
+  description: "Accent color (yellow) for positive highlights",
+  meta: (
+  category: "label"
+)
+),
+  accent-green: (
+  value: #03CC1C,
+  type: "color",
+  unit: "hex",
+  description: "Accent color (green) for success state text",
+  meta: (
+  category: "label"
+)
+),
+  accent-blue: (
+  value: #0136E6,
+  type: "color",
+  unit: "hex",
+  description: "Accent color (blue) for info text",
+  meta: (
+  category: "label"
+)
+),
+  info: (
+  value: #3161FE,
+  type: "color",
+  unit: "hex",
+  description: "Informational text color",
+  meta: (
+  category: "label"
+)
+),
+  warning: (
+  value: #FFB531,
+  type: "color",
+  unit: "hex",
+  description: "Warning state text color",
+  meta: (
+  category: "label"
+)
+),
+  error: (
+  value: #E96B6B,
+  type: "color",
+  unit: "hex",
+  description: "Error or destructive text color",
+  meta: (
+  category: "label"
+)
+)
+),
+  options: (
+  primary: (
+  label: (
+  normal: (
+  value: #2F383F
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  focused: (
+  value: #101315
+)
+)
+),
+  secondary: (
+  label: (
+  normal: (
+  value: #2F383F
+),
+  disabled: (
+  value: #8999A7
+),
+  hovered: (
+  value: #101315
+),
+  focused: (
+  value: #101315
+)
+)
+)
+),
+  overlay: (
+  primary: (
+  background: (
+  value: #F8F9FA
+)
+),
+  primary-inversed: (
+  background: (
+  value: #101315
+)
+)
+),
+  resizer: (
+  default: (
+  elements: (
+  splitter: (
+  normal: (
+  value: #01259D,
+  type: "color",
+  meta: (
+  category: "text",
+  description: "Normal color of the resizer splitter"
+),
+  format: hex
+),
+  active: (
+  value: #01259D,
+  type: "color",
+  meta: (
+  category: "text",
+  description: "Active color of the resizer splitter"
+),
+  format: hex
+)
+),
+  knob: (
+  normal: (
+  value: #6D8292,
+  type: "color",
+  meta: (
+  category: "background",
+  description: "Normal color of the resizer knob"
+),
+  format: hex
+),
+  active: (
+  value: #12ED6A,
+  type: "color",
+  meta: (
+  category: "background",
+  description: "Active color of the resizer knob"
+),
+  format: hex
+)
+)
+)
+)
+),
+  selection: (
+  default: (
+  label: (
+  value: #101315,
+  type: "color",
+  unit: "hex"
+),
+  background: (
+  value: #FFFA61,
+  type: "color",
+  unit: "hex"
+)
+)
+),
+  shadow: (
+  primary: (
+  value: rgba(#060606, 0.075),
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "shadow"
+)
+)
+),
+  sheet: (
+  primary: (
+  background: (
+  normal: (
+  value: #F8F9FA
+)
+),
+  shadow: (
+  normal: (
+  value: rgba(#060606, 0.075),
+  type: "color"
+)
+)
+),
+  secondary: (
+  background: (
+  normal: (
+  value: #DCE1E5
+)
+),
+  shadow: (
+  normal: (
+  value: rgba(#060606, 0.075),
+  type: "color"
+)
+)
+),
+  accent: (
+  background: (
+  normal: (
+  value: #013CFE
+)
+),
+  shadow: (
+  normal: (
+  value: rgba(#060606, 0.075),
+  type: "color"
+)
+)
+),
+  transparental: (
+  background: (
+  normal: (
+  value: rgba(#F8F9FA, 0)
+)
+),
+  shadow: (
+  normal: (
+  value: rgba(#060606, 0.075),
+  type: "color"
+)
+)
+)
+),
+  skeleton: (
+  default: (
+  color-in: (
+  value: rgba(#8999A7, 0.25),
+  type: "color"
+),
+  color-out: (
+  value: rgba(#8999A7, 0),
+  type: "color"
+)
+)
+),
+  step-pagination-tabs: (
+  primary: (
+  elements: (
+  item: (
+  label: (
+  normal: (
+  value: #2F383F,
+  type: "color",
+  meta: (
+  category: "text",
+  description: "Normal label color for step pagination tab"
+),
+  format: hex
+),
+  active: (
+  value: #2F383F,
+  type: "color",
+  meta: (
+  category: "text",
+  description: "Active label color for step pagination tab"
+),
+  format: hex
+)
+)
+)
+)
+)
+),
+  switch: (
+  default: (
+  track: (
+  normal: (
+  value: #909FAC
+),
+  active: (
+  value: #909FAC
+)
+),
+  knob: (
+  normal: (
+  value: #F8F9FA
+),
+  active: (
+  value: #F8F9FA
 )
 )
 )

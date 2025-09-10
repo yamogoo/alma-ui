@@ -1,0 +1,66 @@
+{
+  "primary": {
+    "label": {
+      "normal": {
+        "value": "{themes.themes.dark.label.primaryInversed.value}",
+        "type": "color",
+        "unit": "hex",
+        "meta": {
+          "category": "tooltip"
+        }
+      }
+    },
+    "icon": {
+      "normal": {
+        "value": "{themes.themes.dark.label.primaryInversed.value}",
+        "type": "color",
+        "unit": "hex",
+        "meta": {
+          "category": "tooltip"
+        }
+      }
+    },
+    "background": {
+      "normal": {
+        "value": "{themes.themes.dark.background.primaryInversed.value}",
+        "type": "color",
+        "unit": "hex",
+        "meta": {
+          "category": "tooltip"
+        }
+      }
+    }
+  },
+  "primaryInversed": {
+    "label": {
+      "normal": {
+        "value": "{colors.gray-500}",
+        "type": "color",
+        "unit": "hex",
+        "meta": {
+          "category": "tooltip"
+        }
+      }
+    },
+    "icon": {
+      "normal": {
+        "value": "{colors.gray-550}",
+        "type": "color",
+        "unit": "hex",
+        "meta": {
+          "category": "tooltip"
+        }
+      }
+    },
+    "background": {
+      "normal": {
+        "value": "{colors.gray-850}",
+        "type": "color",
+        "unit": "hex",
+        "meta": {
+          "category": "tooltip"
+        }
+      }
+    }
+  }
+}

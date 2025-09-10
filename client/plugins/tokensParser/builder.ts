@@ -1,0 +1,139 @@
+// Portions of this file were developed with the assistance of AI tools (ChatGPT).
+
+import fs from "node:fs/promises";
+import path from "node:path";
+import yaml from "js-yaml";
+
+export type JSONBuilderFormat = "json" | "ts" | "yaml";
+
+export interface JSONBuilderOptions {
+  outDir?: string;
+  format?: JSONBuilderFormat;
+  paths: string[];
+  includeRootDirName?: boolean;
+  useTokensInSeparateFiles?: boolean;
+}
+
+export class JSONBuilder {
+  private outDir: string;
+  private format: JSONBuilderFormat;
+  private paths: string[];
+  private includeRootDirName: boolean;
+  private useTokensInSeparateFiles: boolean;
+
+  constructor(options: JSONBuilderOptions) {
+    if (!options.paths || options.paths.length === 0) {
+      throw new Error("JSONBuilder requires at least one path in 'paths'.");
+    }
+    this.outDir = options.outDir ?? ".cache";
+    this.format = options.format ?? "json";
+    this.paths = options.paths;
+    this.includeRootDirName = options.includeRootDirName ?? false;
+    this.useTokensInSeparateFiles = options.useTokensInSeparateFiles ?? true;
+  }
+
+  private async isDir(p: string): Promise<boolean> {
+    try {
+      return (await fs.stat(p)).isDirectory();
+    } catch {
+      return false;
+    }
+  }
+
+  private async readFileContent(filePath: string): Promise<any> {
+    const ext = path.extname(filePath).toLowerCase();
+    const raw = await fs.readFile(filePath, "utf-8");
+
+    if (ext === ".json") return JSON.parse(raw);
+    if (ext === ".yaml" || ext === ".yml") return yaml.load(raw);
+    if (ext === ".ts") {
+      const mod = await import(path.resolve(filePath));
+      return mod.default ?? mod;
+    }
+    return raw;
+  }
+
+  private async buildTree(dir: string): Promise<any> {
+    const entries = await fs.readdir(dir, { withFileTypes: true });
+    const result: Record<string, any> = {};
+
+    for (const entry of entries) {
+      if (entry.name.startsWith(".")) continue;
+
+      const fullPath = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        result[entry.name] = await this.buildTree(fullPath);
+      } else {
+        const key = entry.name.replace(/\.[^.]+$/, "");
+        result[key] = await this.readFileContent(fullPath);
+      }
+    }
+
+    return result;
+  }
+
+  private deepMerge(target: any, source: any): any {
+    if (typeof target !== "object" || target === null) return source;
+    if (typeof source !== "object" || source === null) return source;
+
+    for (const key of Object.keys(source)) {
+      if (key in target) {
+        target[key] = this.deepMerge(target[key], source[key]);
+      } else {
+        target[key] = source[key];
+      }
+    }
+
+    return target;
+  }
+
+  private async writeFile(filePath: string, data: any): Promise<void> {
+    await fs.mkdir(path.dirname(filePath), { recursive: true });
+
+    let content: string;
+    switch (this.format) {
+      case "yaml":
+        content = yaml.dump(data);
+        break;
+      case "ts":
+        content = `export default ${JSON.stringify(data, null, 2)};\n`;
+        break;
+      default:
+        content = JSON.stringify(data, null, 2);
+    }
+
+    await fs.writeFile(filePath, content, "utf-8");
+  }
+
+  async build(): Promise<void> {
+    for (const p of this.paths) {
+      const absPath = path.resolve(p);
+      if (!(await this.isDir(absPath))) continue;
+
+      const subtree = await this.buildTree(absPath);
+
+      if (this.useTokensInSeparateFiles) {
+        for (const [key, value] of Object.entries(subtree)) {
+          const fileName = `${key}.${this.format}`;
+          const outPath = path.join(this.outDir, fileName);
+          await this.writeFile(outPath, value);
+        }
+      } else {
+        const dataToMerge = this.includeRootDirName
+          ? { [path.basename(absPath)]: subtree }
+          : subtree;
+
+        const outPath = path.join(this.outDir, `tokens.${this.format}`);
+
+        let existingData: any = {};
+        try {
+          const raw = await fs.readFile(outPath, "utf-8");
+          existingData = this.format === "json" ? JSON.parse(raw) : raw;
+        } catch {}
+
+        const merged = this.deepMerge(existingData, dataToMerge);
+        await this.writeFile(outPath, merged);
+      }
+    }
+  }
+}

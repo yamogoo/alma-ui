@@ -1,0 +1,18 @@
+{
+  "primary": {
+    "background": {
+      "value": "{themes.themes.light.background.primary.value}"
+    },
+    "border": {
+      "value": "{themes.themes.light.border.primary.value}"
+    }
+  },
+  "secondary": {
+    "background": {
+      "value": "{themes.themes.light.background.secondary.value}"
+    },
+    "border": {
+      "value": "{themes.themes.light.border.primary.value}"
+    }
+  }
+}

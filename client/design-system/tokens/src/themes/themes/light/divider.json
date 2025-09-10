@@ -1,0 +1,28 @@
+{
+  "primary": {
+    "self": {
+      "border": {
+        "value": "{themes.themes.light.border.primary.value}",
+        "type": "color",
+        "format": "hex",
+        "meta": {
+          "category": "border",
+          "description": "Primary border color for divider"
+        }
+      }
+    }
+  },
+  "secondary": {
+    "self": {
+      "border": {
+        "value": "{themes.themes.light.border.secondary.value}",
+        "type": "color",
+        "format": "hex",
+        "meta": {
+          "category": "border",
+          "description": "Secondary border color for divider"
+        }
+      }
+    }
+  }
+}

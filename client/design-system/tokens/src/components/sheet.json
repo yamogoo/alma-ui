@@ -1,0 +1,117 @@
+{
+  "default": {
+    "lg": {
+      "self": {
+        "min-height": {
+          "value": 32,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Minimum height of large action sheet",
+            "category": "sheet"
+          }
+        },
+        "borderRadius": {
+          "value": "{tokens.roundness.md.value}",
+          "type": "radius",
+          "unit": "px",
+          "meta": {
+            "description": "Border radius for large action sheet",
+            "category": "sheet"
+          }
+        },
+        "gap": {
+          "value": "{tokens.spacing.xl.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Gap between elements inside large sheet",
+            "category": "sheet"
+          }
+        },
+        "padding": {
+          "value": [
+            "{tokens.spacing.xxl.value}",
+            "{tokens.spacing.lg.value}",
+            "{tokens.spacing.lg.value}",
+            "{tokens.spacing.lg.value}"
+          ],
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Padding inside large sheet",
+            "category": "sheet"
+          }
+        }
+      },
+      "elements": {
+        "button": {
+          "offset": {
+            "value": "{tokens.spacing.lg.value}",
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "description": "Offset for buttons inside large sheet",
+              "category": "sheet"
+            }
+          }
+        }
+      },
+      "type": "component"
+    },
+    "md": {
+      "self": {
+        "min-height": {
+          "value": 32,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Minimum height of large action sheet",
+            "category": "sheet"
+          }
+        },
+        "borderRadius": {
+          "value": "{tokens.roundness.md.value}",
+          "type": "radius",
+          "unit": "px",
+          "meta": {
+            "description": "Border radius for large action sheet",
+            "category": "sheet"
+          }
+        },
+        "gap": {
+          "value": "{tokens.spacing.md.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Gap between elements inside medium sheet",
+            "category": "sheet"
+          }
+        },
+        "padding": {
+          "value": ["{tokens.spacing.lg.value}", "{tokens.spacing.lg.value}"],
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Padding inside medium sheet",
+            "category": "sheet"
+          }
+        }
+      },
+      "elements": {
+        "button": {
+          "offset": {
+            "value": "{tokens.spacing.lg.value}",
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "description": "Offset for buttons inside medium sheet",
+              "category": "sheet"
+            }
+          }
+        }
+      },
+      "type": "component"
+    }
+  }
+}

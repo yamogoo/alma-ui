@@ -1,0 +1,14 @@
+{
+  "default": {
+    "label": {
+      "value": "{colors.gray-950}",
+      "type": "color",
+      "unit": "hex"
+    },
+    "background": {
+      "value": "{colors.yellow-300}",
+      "type": "color",
+      "unit": "hex"
+    }
+  }
+}

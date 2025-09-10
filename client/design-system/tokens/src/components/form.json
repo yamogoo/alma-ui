@@ -1,0 +1,27 @@
+{
+  "default": {
+    "md": {
+      "self": {
+        "padding": {
+          "value": ["{tokens.spacing.md.value}", "{tokens.spacing.lg.value}"],
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Padding inside the form",
+            "category": "form"
+          }
+        },
+        "borderRadius": {
+          "value": "{tokens.roundness.md.value}",
+          "type": "radius",
+          "unit": "px",
+          "meta": {
+            "description": "Border radius of the form",
+            "category": "form"
+          }
+        }
+      },
+      "type": "component"
+    }
+  }
+}

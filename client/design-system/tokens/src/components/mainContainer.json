@@ -1,0 +1,46 @@
+{
+  "default": {
+    "self": {
+      "borderRadius": {
+        "value": "{tokens.roundness.md.value}",
+        "type": "radius",
+        "unit": "px",
+        "meta": {
+          "description": "Border radius of the main container",
+          "category": "radius",
+          "status": "unused"
+        }
+      },
+      "media": {
+        "lg": {
+          "padding": {
+            "value": "{tokens.spacing.xs.value}",
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "description": "Padding for large screens",
+              "category": "spacing",
+              "status": "unused"
+            }
+          }
+        },
+        "md": {
+          "padding": {
+            "value": "{tokens.spacing.xs.value}",
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "description": "Padding for medium screens",
+              "category": "spacing",
+              "status": "unused"
+            }
+          }
+        }
+      }
+    },
+    "type": "component",
+    "meta": {
+      "status": "unused"
+    }
+  }
+}

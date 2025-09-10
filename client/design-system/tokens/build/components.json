@@ -1,154 +1,38 @@
 {
-  "icon": {
+  "actionSheet": {
     "default": {
-      "xxs": {
-        "self": {
-          "size": {
-            "value": 12,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Extra extra small icon size",
-              "category": "icon",
-              "tags": [
-                "ui",
-                "icon"
-              ]
-            }
-          }
-        },
-        "type": "component"
-      },
-      "xs": {
-        "self": {
-          "size": {
-            "value": 16,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Extra small icon size",
-              "category": "icon",
-              "tags": [
-                "ui",
-                "icon"
-              ]
-            }
-          }
-        },
-        "type": "component"
-      },
-      "sm": {
-        "self": {
-          "size": {
-            "value": 20,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Small icon size",
-              "category": "icon",
-              "tags": [
-                "ui",
-                "icon"
-              ]
-            }
-          }
-        },
-        "type": "component"
-      },
-      "md": {
-        "self": {
-          "size": {
-            "value": 24,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Medium icon size",
-              "category": "icon",
-              "tags": [
-                "ui",
-                "icon"
-              ]
-            }
-          }
-        },
-        "type": "component"
-      },
       "lg": {
         "self": {
-          "size": {
+          "min-height": {
             "value": 32,
             "type": "size",
             "unit": "px",
             "meta": {
-              "description": "Large icon size",
-              "category": "icon",
-              "tags": [
-                "ui",
-                "icon"
-              ]
+              "description": "Minimum height of large action sheet",
+              "category": "actionSheet"
             }
-          }
-        },
-        "type": "component"
-      },
-      "xl": {
-        "self": {
-          "size": {
-            "value": 48,
-            "type": "size",
+          },
+          "borderRadius": {
+            "value": 16,
+            "type": "radius",
             "unit": "px",
             "meta": {
-              "description": "Extra large icon size",
-              "category": "icon",
-              "tags": [
-                "ui",
-                "icon"
-              ]
-            }
-          }
-        },
-        "type": "component"
-      },
-      "xxl": {
-        "self": {
-          "size": {
-            "value": 56,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Extra extra large icon size",
-              "category": "icon",
-              "tags": [
-                "ui",
-                "icon"
-              ]
-            }
-          }
-        },
-        "type": "component"
-      }
-    }
-  },
-  "divider": {
-    "default": {
-      "lg": {
-        "self": {
-          "borderWidth": {
-            "value": 1,
-            "type": "border",
-            "unit": "px",
-            "meta": {
-              "description": "Divider border width for large size",
-              "category": "divider"
+              "description": "Border radius for large action sheet",
+              "category": "actionSheet"
             }
           },
           "padding": {
-            "value": 16,
+            "value": [
+              48,
+              24,
+              24,
+              24
+            ],
             "type": "spacing",
             "unit": "px",
             "meta": {
-              "description": "Padding around the divider for large size",
-              "category": "divider"
+              "description": "Padding inside large action sheet",
+              "category": "actionSheet"
             }
           }
         },
@@ -156,272 +40,34 @@
       },
       "md": {
         "self": {
-          "borderWidth": {
-            "value": 1,
-            "type": "border",
+          "min-height": {
+            "value": 32,
+            "type": "size",
             "unit": "px",
             "meta": {
-              "description": "Divider border width for medium size",
-              "category": "divider"
+              "description": "Minimum height of medium action sheet",
+              "category": "actionSheet"
             }
           },
-          "padding": {
+          "borderRadius": {
             "value": 12,
-            "type": "spacing",
+            "type": "radius",
             "unit": "px",
             "meta": {
-              "description": "Padding around the divider for medium size",
-              "category": "divider"
-            }
-          }
-        },
-        "type": "component"
-      },
-      "sm": {
-        "self": {
-          "borderWidth": {
-            "value": 1,
-            "type": "border",
-            "unit": "px",
-            "meta": {
-              "description": "Divider border width for small size",
-              "category": "divider"
-            }
-          },
-          "padding": {
-            "value": 8,
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "Padding around the divider for small size",
-              "category": "divider"
-            }
-          }
-        },
-        "type": "component"
-      },
-      "xs": {
-        "self": {
-          "borderWidth": {
-            "value": 1,
-            "type": "border",
-            "unit": "px",
-            "meta": {
-              "description": "Divider border width for extra small size",
-              "category": "divider"
-            }
-          },
-          "padding": {
-            "value": 0,
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "No padding for extra small divider",
-              "category": "divider"
-            }
-          }
-        },
-        "type": "component"
-      }
-    }
-  },
-  "input": {
-    "default": {
-      "md": {
-        "self": {
-          "height": {
-            "value": 44,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Height of the input field for medium size",
-              "category": "input"
-            }
-          },
-          "wholeHeight": {
-            "value": 60,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Total height including padding for medium input",
-              "category": "input"
+              "description": "Border radius for medium action sheet",
+              "category": "actionSheet"
             }
           },
           "padding": {
             "value": [
-              8,
-              16
+              24,
+              24
             ],
             "type": "spacing",
             "unit": "px",
             "meta": {
-              "description": "Horizontal padding for medium input",
-              "category": "input"
-            }
-          },
-          "borderRadius": {
-            "value": 16,
-            "type": "radius",
-            "unit": "px",
-            "meta": {
-              "description": "Border radius for medium input",
-              "category": "input"
-            }
-          }
-        },
-        "elements": {
-          "value": {
-            "fontStyle": {
-              "value": "label-3",
-              "type": "alias",
-              "meta": {
-                "description": "Font style for input value text",
-                "category": "typography"
-              }
-            },
-            "paddingTop": {
-              "value": 12,
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "description": "Top padding for input value text",
-                "category": "input"
-              }
-            }
-          },
-          "placeholder": {
-            "fontStyle": {
-              "value": "label-3",
-              "type": "alias",
-              "meta": {
-                "description": "Font style for placeholder text",
-                "category": "typography"
-              }
-            }
-          },
-          "error": {
-            "fontStyle": {
-              "value": "caption-1",
-              "type": "alias",
-              "meta": {
-                "description": "Font style for error text",
-                "category": "typography"
-              }
-            },
-            "padding": {
-              "value": [
-                0,
-                16,
-                0,
-                16
-              ],
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "description": "Padding for error message",
-                "category": "input"
-              }
-            }
-          }
-        },
-        "type": "component"
-      },
-      "lg": {
-        "self": {
-          "height": {
-            "value": 52,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Height of the input field for large size",
-              "category": "input"
-            }
-          },
-          "wholeHeight": {
-            "value": 68,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Total height including padding for large input",
-              "category": "input"
-            }
-          },
-          "padding": {
-            "value": [
-              8,
-              16,
-              8,
-              16
-            ],
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "Padding for large input",
-              "category": "input"
-            }
-          },
-          "borderRadius": {
-            "value": 8,
-            "type": "radius",
-            "unit": "px",
-            "meta": {
-              "description": "Border radius for large input",
-              "category": "input"
-            }
-          }
-        },
-        "elements": {
-          "value": {
-            "fontStyle": {
-              "value": "label-3",
-              "type": "alias",
-              "meta": {
-                "description": "Font style for input value text",
-                "category": "typography"
-              }
-            },
-            "padding-top": {
-              "value": 12,
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "description": "Top padding for input value text",
-                "category": "input"
-              }
-            }
-          },
-          "placeholder": {
-            "fontStyle": {
-              "value": "label-3",
-              "type": "alias",
-              "meta": {
-                "description": "Font style for placeholder text",
-                "category": "typography"
-              }
-            }
-          },
-          "error": {
-            "fontStyle": {
-              "value": "caption-1",
-              "type": "alias",
-              "meta": {
-                "description": "Font style for error text",
-                "category": "typography"
-              }
-            },
-            "padding": {
-              "value": [
-                0,
-                16,
-                0,
-                16
-              ],
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "description": "Padding for error message",
-                "category": "input"
-              }
+              "description": "Padding inside medium action sheet",
+              "category": "actionSheet"
             }
           }
         },
@@ -610,9 +256,9 @@
           "padding": {
             "value": [
               0,
-              16,
+              12,
               0,
-              16
+              12
             ],
             "type": "spacing",
             "unit": "px",
@@ -1057,6 +703,178 @@
       }
     }
   },
+  "carouselStack": {
+    "default": {
+      "lg": {
+        "elements": {
+          "header": {
+            "padding": {
+              "value": [
+                24,
+                24
+              ],
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "description": "Padding for the header inside large carousel stack",
+                "category": "carouselStack"
+              }
+            }
+          }
+        },
+        "type": "component"
+      },
+      "md": {
+        "elements": {
+          "header": {
+            "padding": {
+              "value": [
+                16,
+                16
+              ],
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "description": "Padding for the header inside medium carousel stack",
+                "category": "carouselStack"
+              }
+            }
+          }
+        },
+        "type": "component"
+      }
+    }
+  },
+  "charTooltipLabel": {
+    "default": {
+      "lg": {
+        "self": {
+          "gap": {
+            "value": 12,
+            "unit": "px",
+            "type": "spacing"
+          },
+          "padding": {
+            "value": [
+              8,
+              12
+            ],
+            "unit": "px",
+            "type": "spacing"
+          },
+          "borderRadius": {
+            "value": 8,
+            "unit": "px",
+            "type": "radius"
+          }
+        },
+        "elements": {
+          "label": {
+            "fontStyle": {
+              "value": "caption-1",
+              "type": "alias"
+            }
+          }
+        }
+      }
+    }
+  },
+  "divider": {
+    "default": {
+      "lg": {
+        "self": {
+          "borderWidth": {
+            "value": 1,
+            "type": "border",
+            "unit": "px",
+            "meta": {
+              "description": "Divider border width for large size",
+              "category": "divider"
+            }
+          },
+          "padding": {
+            "value": 16,
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "description": "Padding around the divider for large size",
+              "category": "divider"
+            }
+          }
+        },
+        "type": "component"
+      },
+      "md": {
+        "self": {
+          "borderWidth": {
+            "value": 1,
+            "type": "border",
+            "unit": "px",
+            "meta": {
+              "description": "Divider border width for medium size",
+              "category": "divider"
+            }
+          },
+          "padding": {
+            "value": 12,
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "description": "Padding around the divider for medium size",
+              "category": "divider"
+            }
+          }
+        },
+        "type": "component"
+      },
+      "sm": {
+        "self": {
+          "borderWidth": {
+            "value": 1,
+            "type": "border",
+            "unit": "px",
+            "meta": {
+              "description": "Divider border width for small size",
+              "category": "divider"
+            }
+          },
+          "padding": {
+            "value": 8,
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "description": "Padding around the divider for small size",
+              "category": "divider"
+            }
+          }
+        },
+        "type": "component"
+      },
+      "xs": {
+        "self": {
+          "borderWidth": {
+            "value": 1,
+            "type": "border",
+            "unit": "px",
+            "meta": {
+              "description": "Divider border width for extra small size",
+              "category": "divider"
+            }
+          },
+          "padding": {
+            "value": 0,
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "description": "No padding for extra small divider",
+              "category": "divider"
+            }
+          }
+        },
+        "type": "component"
+      }
+    }
+  },
   "dropDown": {
     "default": {
       "lg": {
@@ -1331,50 +1149,83 @@
       }
     }
   },
-  "options": {
+  "form": {
     "default": {
-      "lg": {
-        "elements": {
-          "option": {
-            "fontStyle": {
-              "value": "label-2",
-              "type": "alias",
-              "meta": {
-                "description": "Font style for large dropdown option",
-                "category": "typography"
-              }
-            },
-            "minHeight": {
-              "value": 24,
-              "type": "size",
-              "unit": "px",
-              "meta": {
-                "description": "Minimum height of large dropdown option",
-                "category": "dropDown"
-              }
+      "md": {
+        "self": {
+          "padding": {
+            "value": [
+              16,
+              24
+            ],
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "description": "Padding inside the form",
+              "category": "form"
+            }
+          },
+          "borderRadius": {
+            "value": 16,
+            "type": "radius",
+            "unit": "px",
+            "meta": {
+              "description": "Border radius of the form",
+              "category": "form"
             }
           }
         },
         "type": "component"
-      },
+      }
+    }
+  },
+  "formWrapper": {
+    "default": {
       "md": {
+        "self": {
+          "padding": {
+            "value": [
+              16,
+              24
+            ],
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "description": "Padding inside the form wrapper",
+              "category": "formWrapper"
+            }
+          },
+          "borderRadius": {
+            "value": 16,
+            "type": "radius",
+            "unit": "px",
+            "meta": {
+              "description": "Border radius of the form wrapper",
+              "category": "formWrapper"
+            }
+          },
+          "borderWidth": {
+            "value": 1,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Border width of the form wrapper",
+              "category": "formWrapper"
+            }
+          }
+        },
         "elements": {
-          "option": {
-            "fontStyle": {
-              "value": "label-3",
-              "type": "alias",
-              "meta": {
-                "description": "Font style for medium dropdown option",
-                "category": "typography"
-              }
-            },
-            "minHeight": {
-              "value": 24,
-              "type": "size",
+          "header": {
+            "padding": {
+              "value": [
+                12,
+                0
+              ],
+              "type": "spacing",
               "unit": "px",
               "meta": {
-                "description": "Minimum height of medium dropdown option",
-                "category": "dropDown"
+                "description": "Padding for the header inside the form wrapper",
+                "category": "formWrapper"
               }
             }
           }
@@ -1456,20 +1307,168 @@
       }
     }
   },
-  "formWrapper": {
+  "icon": {
+    "default": {
+      "xxs": {
+        "self": {
+          "size": {
+            "value": 12,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Extra extra small icon size",
+              "category": "icon",
+              "tags": [
+                "ui",
+                "icon"
+              ]
+            }
+          }
+        },
+        "type": "component"
+      },
+      "xs": {
+        "self": {
+          "size": {
+            "value": 16,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Extra small icon size",
+              "category": "icon",
+              "tags": [
+                "ui",
+                "icon"
+              ]
+            }
+          }
+        },
+        "type": "component"
+      },
+      "sm": {
+        "self": {
+          "size": {
+            "value": 20,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Small icon size",
+              "category": "icon",
+              "tags": [
+                "ui",
+                "icon"
+              ]
+            }
+          }
+        },
+        "type": "component"
+      },
+      "md": {
+        "self": {
+          "size": {
+            "value": 24,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Medium icon size",
+              "category": "icon",
+              "tags": [
+                "ui",
+                "icon"
+              ]
+            }
+          }
+        },
+        "type": "component"
+      },
+      "lg": {
+        "self": {
+          "size": {
+            "value": 32,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Large icon size",
+              "category": "icon",
+              "tags": [
+                "ui",
+                "icon"
+              ]
+            }
+          }
+        },
+        "type": "component"
+      },
+      "xl": {
+        "self": {
+          "size": {
+            "value": 48,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Extra large icon size",
+              "category": "icon",
+              "tags": [
+                "ui",
+                "icon"
+              ]
+            }
+          }
+        },
+        "type": "component"
+      },
+      "xxl": {
+        "self": {
+          "size": {
+            "value": 56,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Extra extra large icon size",
+              "category": "icon",
+              "tags": [
+                "ui",
+                "icon"
+              ]
+            }
+          }
+        },
+        "type": "component"
+      }
+    }
+  },
+  "input": {
     "default": {
       "md": {
         "self": {
+          "height": {
+            "value": 44,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Height of the input field for medium size",
+              "category": "input"
+            }
+          },
+          "wholeHeight": {
+            "value": 60,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Total height including padding for medium input",
+              "category": "input"
+            }
+          },
           "padding": {
             "value": [
-              16,
-              24
+              8,
+              16
             ],
             "type": "spacing",
             "unit": "px",
             "meta": {
-              "description": "Padding inside the form wrapper",
-              "category": "formWrapper"
+              "description": "Horizontal padding for medium input",
+              "category": "input"
             }
           },
           "borderRadius": {
@@ -1477,32 +1476,261 @@
             "type": "radius",
             "unit": "px",
             "meta": {
-              "description": "Border radius of the form wrapper",
-              "category": "formWrapper"
-            }
-          },
-          "borderWidth": {
-            "value": 1,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Border width of the form wrapper",
-              "category": "formWrapper"
+              "description": "Border radius for medium input",
+              "category": "input"
             }
           }
         },
         "elements": {
-          "header": {
+          "value": {
+            "fontStyle": {
+              "value": "label-3",
+              "type": "alias",
+              "meta": {
+                "description": "Font style for input value text",
+                "category": "typography"
+              }
+            },
+            "paddingTop": {
+              "value": 12,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "description": "Top padding for input value text",
+                "category": "input"
+              }
+            }
+          },
+          "placeholder": {
+            "fontStyle": {
+              "value": "label-3",
+              "type": "alias",
+              "meta": {
+                "description": "Font style for placeholder text",
+                "category": "typography"
+              }
+            }
+          },
+          "error": {
+            "fontStyle": {
+              "value": "caption-1",
+              "type": "alias",
+              "meta": {
+                "description": "Font style for error text",
+                "category": "typography"
+              }
+            },
             "padding": {
               "value": [
-                12,
-                0
+                0,
+                16,
+                0,
+                16
               ],
               "type": "spacing",
               "unit": "px",
               "meta": {
-                "description": "Padding for the header inside the form wrapper",
-                "category": "formWrapper"
+                "description": "Padding for error message",
+                "category": "input"
+              }
+            }
+          }
+        },
+        "type": "component"
+      },
+      "lg": {
+        "self": {
+          "height": {
+            "value": 52,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Height of the input field for large size",
+              "category": "input"
+            }
+          },
+          "wholeHeight": {
+            "value": 68,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Total height including padding for large input",
+              "category": "input"
+            }
+          },
+          "padding": {
+            "value": [
+              8,
+              16,
+              8,
+              16
+            ],
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "description": "Padding for large input",
+              "category": "input"
+            }
+          },
+          "borderRadius": {
+            "value": 8,
+            "type": "radius",
+            "unit": "px",
+            "meta": {
+              "description": "Border radius for large input",
+              "category": "input"
+            }
+          }
+        },
+        "elements": {
+          "value": {
+            "fontStyle": {
+              "value": "label-3",
+              "type": "alias",
+              "meta": {
+                "description": "Font style for input value text",
+                "category": "typography"
+              }
+            },
+            "padding-top": {
+              "value": 12,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "description": "Top padding for input value text",
+                "category": "input"
+              }
+            }
+          },
+          "placeholder": {
+            "fontStyle": {
+              "value": "label-3",
+              "type": "alias",
+              "meta": {
+                "description": "Font style for placeholder text",
+                "category": "typography"
+              }
+            }
+          },
+          "error": {
+            "fontStyle": {
+              "value": "caption-1",
+              "type": "alias",
+              "meta": {
+                "description": "Font style for error text",
+                "category": "typography"
+              }
+            },
+            "padding": {
+              "value": [
+                0,
+                16,
+                0,
+                16
+              ],
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "description": "Padding for error message",
+                "category": "input"
+              }
+            }
+          }
+        },
+        "type": "component"
+      }
+    }
+  },
+  "mainContainer": {
+    "default": {
+      "self": {
+        "borderRadius": {
+          "value": 16,
+          "type": "radius",
+          "unit": "px",
+          "meta": {
+            "description": "Border radius of the main container",
+            "category": "radius",
+            "status": "unused"
+          }
+        },
+        "media": {
+          "lg": {
+            "padding": {
+              "value": 8,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "description": "Padding for large screens",
+                "category": "spacing",
+                "status": "unused"
+              }
+            }
+          },
+          "md": {
+            "padding": {
+              "value": 8,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "description": "Padding for medium screens",
+                "category": "spacing",
+                "status": "unused"
+              }
+            }
+          }
+        }
+      },
+      "type": "component",
+      "meta": {
+        "status": "unused"
+      }
+    }
+  },
+  "options": {
+    "default": {
+      "lg": {
+        "elements": {
+          "option": {
+            "fontStyle": {
+              "value": "label-2",
+              "type": "alias",
+              "meta": {
+                "description": "Font style for large dropdown option",
+                "category": "typography"
+              }
+            },
+            "minHeight": {
+              "value": 24,
+              "type": "size",
+              "unit": "px",
+              "meta": {
+                "description": "Minimum height of large dropdown option",
+                "category": "dropDown"
+              }
+            }
+          }
+        },
+        "type": "component"
+      },
+      "md": {
+        "elements": {
+          "option": {
+            "fontStyle": {
+              "value": "label-3",
+              "type": "alias",
+              "meta": {
+                "description": "Font style for medium dropdown option",
+                "category": "typography"
+              }
+            },
+            "minHeight": {
+              "value": 24,
+              "type": "size",
+              "unit": "px",
+              "meta": {
+                "description": "Minimum height of medium dropdown option",
+                "category": "dropDown"
               }
             }
           }
@@ -1514,21 +1742,127 @@
   "progressbar": {
     "default": {
       "lg": {
-        "height": {
-          "value": 10
+        "self": {
+          "height": {
+            "value": 10,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "category": "progressbar"
+            }
+          },
+          "borderRadius": {
+            "value": 5,
+            "type": "radius",
+            "unit": "px",
+            "meta": {
+              "category": "progressbar"
+            }
+          }
         },
-        "borderRadius": {
-          "value": 5
-        }
+        "type": "component"
       },
       "md": {
-        "height": {
-          "value": 8
+        "self": {
+          "height": {
+            "value": 8,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "category": "progressbar"
+            }
+          },
+          "borderRadius": {
+            "value": 4,
+            "type": "radius",
+            "unit": "px",
+            "meta": {
+              "category": "progressbar"
+            }
+          }
         },
-        "borderRadius": {
-          "value": 4
-        }
+        "type": "component"
       }
+    }
+  },
+  "resizer": {
+    "default": {
+      "self": {
+        "activeAreaWidth": {
+          "value": 20,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Width of the interactive area for the resizer",
+            "category": "spacing",
+            "usage": "Used internally by Vue3 Resize Bounding component only"
+          }
+        }
+      },
+      "elements": {
+        "knob": {
+          "width": {
+            "value": 76,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Width of the draggable knob",
+              "category": "size",
+              "usage": "Specific to vue3-resize-bounding"
+            }
+          },
+          "height": {
+            "value": 6,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Height of the draggable knob",
+              "category": "size",
+              "usage": "Specific to vue3-resize-bounding"
+            }
+          },
+          "borderRadius": {
+            "value": 3,
+            "type": "radius",
+            "unit": "px",
+            "meta": {
+              "description": "Corner radius of the knob",
+              "category": "radius",
+              "usage": "Specific to vue3-resize-bounding"
+            }
+          }
+        }
+      },
+      "type": "component"
+    }
+  },
+  "scrollbar": {
+    "default": {
+      "elements": {
+        "thumb": {
+          "width": {
+            "value": 3,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Width of the scrollbar thumb",
+              "category": "size",
+              "usage": "Internal use only"
+            }
+          },
+          "borderRadius": {
+            "value": 1.5,
+            "type": "radius",
+            "unit": "px",
+            "meta": {
+              "description": "Corner radius of the scrollbar thumb",
+              "category": "radius",
+              "usage": "Internal use only"
+            }
+          }
+        }
+      },
+      "type": "component"
     }
   },
   "sheet": {
@@ -1651,111 +1985,6 @@
       }
     }
   },
-  "actionSheet": {
-    "default": {
-      "lg": {
-        "self": {
-          "min-height": {
-            "value": 32,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Minimum height of large action sheet",
-              "category": "actionSheet"
-            }
-          },
-          "borderRadius": {
-            "value": 16,
-            "type": "radius",
-            "unit": "px",
-            "meta": {
-              "description": "Border radius for large action sheet",
-              "category": "actionSheet"
-            }
-          },
-          "padding": {
-            "value": [
-              48,
-              24,
-              24,
-              24
-            ],
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "Padding inside large action sheet",
-              "category": "actionSheet"
-            }
-          }
-        },
-        "type": "component"
-      },
-      "md": {
-        "self": {
-          "min-height": {
-            "value": 32,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Minimum height of medium action sheet",
-              "category": "actionSheet"
-            }
-          },
-          "borderRadius": {
-            "value": 12,
-            "type": "radius",
-            "unit": "px",
-            "meta": {
-              "description": "Border radius for medium action sheet",
-              "category": "actionSheet"
-            }
-          },
-          "padding": {
-            "value": [
-              24,
-              24
-            ],
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "Padding inside medium action sheet",
-              "category": "actionSheet"
-            }
-          }
-        },
-        "type": "component"
-      }
-    }
-  },
-  "scrollbar": {
-    "default": {
-      "elements": {
-        "thumb": {
-          "width": {
-            "value": 3,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Width of the scrollbar thumb",
-              "category": "size",
-              "usage": "Internal use only"
-            }
-          },
-          "borderRadius": {
-            "value": 1.5,
-            "type": "radius",
-            "unit": "px",
-            "meta": {
-              "description": "Corner radius of the scrollbar thumb",
-              "category": "radius",
-              "usage": "Internal use only"
-            }
-          }
-        }
-      },
-      "type": "component"
-    }
-  },
   "stepPaginationTabs": {
     "default": {
       "lg": {
@@ -1801,209 +2030,6 @@
                 "description": "Padding for step pagination tab item on medium screens",
                 "category": "spacing"
               }
-            }
-          }
-        },
-        "type": "component"
-      }
-    }
-  },
-  "mainContainer": {
-    "default": {
-      "self": {
-        "borderRadius": {
-          "value": 16,
-          "type": "radius",
-          "unit": "px",
-          "meta": {
-            "description": "Border radius of the main container",
-            "category": "radius",
-            "status": "unused"
-          }
-        },
-        "media": {
-          "lg": {
-            "padding": {
-              "value": 8,
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "description": "Padding for large screens",
-                "category": "spacing",
-                "status": "unused"
-              }
-            }
-          },
-          "md": {
-            "padding": {
-              "value": 8,
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "description": "Padding for medium screens",
-                "category": "spacing",
-                "status": "unused"
-              }
-            }
-          }
-        }
-      },
-      "type": "component",
-      "meta": {
-        "status": "unused"
-      }
-    }
-  },
-  "carouselStack": {
-    "default": {
-      "lg": {
-        "elements": {
-          "header": {
-            "padding": {
-              "value": [
-                24,
-                24
-              ],
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "description": "Padding for the header inside large carousel stack",
-                "category": "carouselStack"
-              }
-            }
-          }
-        },
-        "type": "component"
-      },
-      "md": {
-        "elements": {
-          "header": {
-            "padding": {
-              "value": [
-                16,
-                16
-              ],
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "description": "Padding for the header inside medium carousel stack",
-                "category": "carouselStack"
-              }
-            }
-          }
-        },
-        "type": "component"
-      }
-    }
-  },
-  "resizer": {
-    "default": {
-      "self": {
-        "activeAreaWidth": {
-          "value": 20,
-          "type": "size",
-          "unit": "px",
-          "meta": {
-            "description": "Width of the interactive area for the resizer",
-            "category": "spacing",
-            "usage": "Used internally by Vue3 Resize Bounding component only"
-          }
-        }
-      },
-      "elements": {
-        "knob": {
-          "width": {
-            "value": 76,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Width of the draggable knob",
-              "category": "size",
-              "usage": "Specific to vue3-resize-bounding"
-            }
-          },
-          "height": {
-            "value": 6,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Height of the draggable knob",
-              "category": "size",
-              "usage": "Specific to vue3-resize-bounding"
-            }
-          },
-          "borderRadius": {
-            "value": 3,
-            "type": "radius",
-            "unit": "px",
-            "meta": {
-              "description": "Corner radius of the knob",
-              "category": "radius",
-              "usage": "Specific to vue3-resize-bounding"
-            }
-          }
-        }
-      },
-      "type": "component"
-    }
-  },
-  "charTooltipLabel": {
-    "default": {
-      "lg": {
-        "self": {
-          "gap": {
-            "value": 12,
-            "unit": "px",
-            "type": "spacing"
-          },
-          "padding": {
-            "value": [
-              8,
-              12
-            ],
-            "unit": "px",
-            "type": "spacing"
-          },
-          "borderRadius": {
-            "value": 8,
-            "unit": "px",
-            "type": "radius"
-          }
-        },
-        "elements": {
-          "label": {
-            "fontStyle": {
-              "value": "caption-1",
-              "type": "alias"
-            }
-          }
-        }
-      }
-    }
-  },
-  "form": {
-    "default": {
-      "md": {
-        "self": {
-          "padding": {
-            "value": [
-              16,
-              24
-            ],
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "Padding inside the form",
-              "category": "form"
-            }
-          },
-          "borderRadius": {
-            "value": 16,
-            "type": "radius",
-            "unit": "px",
-            "meta": {
-              "description": "Border radius of the form",
-              "category": "form"
             }
           }
         },
