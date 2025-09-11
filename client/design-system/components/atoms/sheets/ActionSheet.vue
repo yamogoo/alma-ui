@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { nextTick, ref, watch } from "vue";
+import { nextTick, ref, useTemplateRef, watch } from "vue";
 import gsap from "gsap";
 
 import { OVERLAY_IDS } from "@/constants";
@@ -16,7 +16,7 @@ const emit = defineEmits<{
   (e: "close"): void;
 }>();
 
-const refRoot = ref<HTMLElement | null>(null);
+const refRoot = useTemplateRef<HTMLDivElement | null>("root");
 
 const isRendered = ref(false);
 
@@ -56,7 +56,7 @@ watch(
   <Teleport :to="containerId">
     <div
       v-if="isRendered"
-      ref="refRoot"
+      ref="root"
       class="action-sheet"
       :class="[
         `action-sheet_variant-${variant}`,

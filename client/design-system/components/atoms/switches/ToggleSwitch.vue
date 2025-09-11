@@ -1,5 +1,13 @@
 <script setup lang="ts">
-import { useAttrs, useId, onMounted, ref, watch, toValue, computed } from "vue";
+import {
+  useAttrs,
+  useId,
+  onMounted,
+  watch,
+  toValue,
+  computed,
+  useTemplateRef,
+} from "vue";
 import g from "gsap";
 
 import tokens from "@/tokens";
@@ -29,8 +37,10 @@ const emit = defineEmits<{
 
 const id = useId();
 
-const refRoot = ref<HTMLLabelElement | null>(null);
-const refKnob = ref<HTMLDivElement | null>(null);
+const refRoot = useTemplateRef<HTMLLabelElement | HTMLDivElement | null>(
+  "root"
+);
+const refKnob = useTemplateRef<HTMLDivElement | null>("knob");
 
 const { isPressed } = usePressed(refRoot);
 
@@ -91,7 +101,7 @@ onMounted(() => {
 <template>
   <template v-if="!useNative">
     <div
-      ref="refRoot"
+      ref="root"
       :class="[
         'toggle-switch',
         `toggle-switch_variant-${variant}`,
@@ -109,7 +119,7 @@ onMounted(() => {
     >
       <div class="toggle-switch__track">
         <div class="toggle-switch__track-container">
-          <span ref="refKnob" class="toggle-switch__knob"></span>
+          <span ref="knob" class="toggle-switch__knob"></span>
         </div>
       </div>
       <span v-if="label" class="toggle-switch__label">{{ label }}</span>
@@ -117,7 +127,7 @@ onMounted(() => {
   </template>
   <template v-if="useNative">
     <label
-      ref="refRoot"
+      ref="root"
       :for="id"
       :class="[
         'toggle-switch',
@@ -139,7 +149,7 @@ onMounted(() => {
       />
       <div class="toggle-switch__track">
         <div class="toggle-switch__track-container">
-          <span ref="refKnob" class="toggle-switch__knob"></span>
+          <span ref="knob" class="toggle-switch__knob"></span>
         </div>
       </div>
       <span v-if="label" class="toggle-switch__label">{{ label }}</span>

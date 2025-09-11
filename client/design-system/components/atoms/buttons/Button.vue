@@ -1,5 +1,12 @@
 <script setup lang="ts">
-import { toValue, ref, watch, computed, type ComputedRef } from "vue";
+import {
+  toValue,
+  ref,
+  watch,
+  computed,
+  type ComputedRef,
+  useTemplateRef,
+} from "vue";
 import g from "gsap";
 
 import tokens from "@/tokens";
@@ -31,7 +38,7 @@ const emit = defineEmits<{
   (e: "pointerup", ev: PointerEvent): void;
 }>();
 
-const refRoot = ref<HTMLButtonElement | null>(null);
+const refRoot = useTemplateRef<HTMLButtonElement | null>("root");
 
 const componentTag = props.as;
 
@@ -73,7 +80,7 @@ watch(localIsPressed, (isPressed) => {
 <template>
   <component
     :is="componentTag"
-    ref="refRoot"
+    ref="root"
     role="button"
     class="button"
     :class="[

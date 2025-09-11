@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref, watch, toValue } from "vue";
+import { onMounted, ref, watch, toValue, useTemplateRef } from "vue";
 import g from "gsap";
 
 import { useClickOutside } from "@/composables/local";
@@ -15,7 +15,7 @@ const props = withDefaults(defineProps<DropdownProps>(), {
   isResetButtonShown: false,
 });
 
-const refRoot = ref<HTMLDivElement | null>(null);
+const refRoot = useTemplateRef<HTMLDivElement | null>("root");
 
 const isExpanded = ref(false);
 
@@ -92,7 +92,7 @@ const onOptionClick = (): void => {
 
 <template>
   <div
-    ref="refRoot"
+    ref="root"
     class="dropdown"
     role="menu"
     data-testid="dropdown"

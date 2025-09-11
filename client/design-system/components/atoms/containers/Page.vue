@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref } from "vue";
+import { computed, onMounted, onUnmounted, ref, useTemplateRef } from "vue";
 import g from "gsap";
 
 import { createCustomEvent } from "@/utils";
@@ -22,7 +22,7 @@ const emit = defineEmits<{
   (e: "anim-leave-completed"): void;
 }>();
 
-const refRoot = ref<HTMLDivElement | null>(null);
+const refRoot = useTemplateRef<HTMLDivElement | null>("root");
 
 const isMounted = ref(false);
 
@@ -454,7 +454,7 @@ onUnmounted(() => {
       v-if="isMounted"
       class="page"
       :class="[{ [`page_${color}`]: !!color }]"
-      ref="refRoot"
+      ref="root"
       @pointerdown="onPointerDown"
     >
       <div v-if="$slots.header" class="page__header">

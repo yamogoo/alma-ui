@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import { watch, computed, useTemplateRef, ref, onMounted } from "vue";
+import g from "gsap";
 
 import tokens from "@/tokens";
 
@@ -9,8 +10,6 @@ import type {
   StepPaginationTabItem,
   StepPaginationTabsProps,
 } from "./stepPaginationTabs";
-
-// TODO: finish carousel view
 
 const props = withDefaults(defineProps<StepPaginationTabsProps>(), {
   variant: "default",
@@ -23,31 +22,14 @@ const emit = defineEmits<{
   (e: "update:selected-item-id", selectedItemId: number): void;
 }>();
 
-const visibleItems = computed(() => {
-  const len = props.items.length;
-  if (len === 0) return [];
+const refsItems = ref<Array<HTMLElement>>([]);
+const refTrack = useTemplateRef("track");
 
-  if (len <= 3) return props.items;
+const itemWidth = ref(100 / 3);
 
-  const activeIndex = props.items.findIndex(
-    (i) => i.id === props.selectedItemId
-  );
-  const prevIndex = (activeIndex - 1 + len) % len;
-  const nextIndex = (activeIndex + 1) % len;
-
-  return [
-    props.items[prevIndex],
-    props.items[activeIndex],
-    props.items[nextIndex],
-  ];
-});
-
-const itemPosition = (_item: StepPaginationTabItem, idx: number) => {
-  if (idx === 0) return "left";
-  if (idx === 1) return "center";
-  if (idx === 2) return "right";
-  return "";
-};
+const itemStyle = computed(() => ({
+  width: `${itemWidth.value}%`,
+}));
 
 const textVariant = computed(() => {
   return tokens.stepPaginationTabs.default[props.size].elements.item.fontStyle
@@ -59,6 +41,44 @@ const onItemClick = (item: StepPaginationTabItem): void => {
     emit("update:selected-item-id", item.id);
   }
 };
+
+const getItemState = (idx: number) => {
+  if (idx === props.selectedItemId) return "current";
+  if (idx === props.selectedItemId + 1 && idx < props.items.length)
+    return "next";
+  if (idx === props.selectedItemId - 1 && idx >= 0) return "previous";
+  return "normal";
+};
+
+/* * * Animations * * */
+
+const onAnimTrackAndItem = (id: number, duration = 0.5) => {
+  const tl = g.timeline({ defaults: { duration, ease: "power4.out" } });
+
+  if (refTrack.value) {
+    tl.to(
+      refTrack.value,
+      { x: `${-itemWidth.value * id + itemWidth.value}%` },
+      0
+    );
+  }
+
+  refsItems.value.forEach((el, idx) => {
+    if (!el) return;
+    tl.to(el, { scale: idx === id ? 1 : 0.88 }, 0);
+  });
+};
+
+watch(
+  () => props.selectedItemId,
+  (id) => {
+    onAnimTrackAndItem(id);
+  }
+);
+
+onMounted(() => {
+  onAnimTrackAndItem(props.selectedItemId, 0);
+});
 </script>
 
 <template>
@@ -72,20 +92,23 @@ const onItemClick = (item: StepPaginationTabItem): void => {
       },
     ]"
   >
-    <div class="step-pagination-tabs__track">
-      <Text
-        v-for="(item, idx) in visibleItems"
+    <div ref="track" class="step-pagination-tabs__track">
+      <div
+        v-for="(item, idx) in items"
         :key="item.id"
-        :class="[
-          'step-pagination-tabs__item',
-          { 'step-pagination-tabs__item_active': idx === selectedItemId },
-          itemPosition(item, idx),
-        ]"
-        :variant="textVariant"
-        @click="onItemClick(item)"
+        ref="refsItems"
+        class="step-pagination-tabs__item"
+        :class="`step-pagination-tabs__item_state-${getItemState(idx)}`"
+        :style="itemStyle"
       >
-        {{ item.label }}
-      </Text>
+        <Text
+          :class="['step-pagination-tabs__item-lable']"
+          :variant="textVariant"
+          @click="onItemClick(item)"
+        >
+          {{ item.label }}
+        </Text>
+      </div>
     </div>
   </div>
 </template>
@@ -119,7 +142,7 @@ const onItemClick = (item: StepPaginationTabItem): void => {
           );
         }
 
-        &_active {
+        &_state-active {
           @include themify($themes) {
             color: themed(
               "step-pagination-tabs.#{$name}.elements.item.label.active.value"
@@ -143,19 +166,35 @@ const onItemClick = (item: StepPaginationTabItem): void => {
   &__track {
     position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 16px;
     width: 100%;
   }
 
   &__item {
-    opacity: 0.5;
-    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    transform-origin: center;
+    transition: opacity 0.3s;
     cursor: pointer;
 
-    &_active {
-      opacity: 1;
+    &_state {
+      &-previous {
+        justify-content: flex-start;
+      }
+
+      &-current {
+        justify-content: center;
+        opacity: 1;
+      }
+
+      &-next {
+        justify-content: flex-end;
+      }
+
+      &-next,
+      &-previous {
+        opacity: 0.5;
+      }
     }
   }
 }

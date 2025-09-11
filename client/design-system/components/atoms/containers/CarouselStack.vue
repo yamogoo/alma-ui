@@ -1,5 +1,13 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, nextTick, ref, computed, watch } from "vue";
+import {
+  onMounted,
+  onUnmounted,
+  nextTick,
+  ref,
+  computed,
+  watch,
+  useTemplateRef,
+} from "vue";
 import g from "gsap";
 
 import { px2rem } from "@/utils";
@@ -33,8 +41,8 @@ const AUTOPLAY_DELAY_CORRECTION = 200,
 
 const ANIMATION_FADE_DURATION = 0.15;
 
-const refRoot = ref<HTMLDivElement | null>(null);
-const refTrack = ref<HTMLDivElement | null>(null);
+const refRoot = useTemplateRef<HTMLDivElement | null>("root");
+const refTrack = useTemplateRef<HTMLDivElement | null>("track");
 
 const screenSize = computed(() => {
   const orientation = props.orientation;
@@ -258,7 +266,7 @@ const onLeave = (el: Element, done: () => void): void => {
 
 <template>
   <div
-    ref="refRoot"
+    ref="root"
     class="carousel-stack"
     :class="[
       `carousel-stack_variant-${variant}`,
@@ -283,7 +291,7 @@ const onLeave = (el: Element, done: () => void): void => {
       ></slot>
     </div>
     <div
-      ref="refTrack"
+      ref="track"
       class="carousel-stack__container"
       :style="{ gap: containerGap }"
     >

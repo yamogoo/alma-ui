@@ -3,7 +3,7 @@
   "auth": {
     "login": {
       "form": {
-        "title": "Log in",
+        "title": "Sign in",
         "description": "Create an account and sign in to keep your data saved and synchronized on the server",
         "userName": "user name",
         "password": "password",
@@ -15,7 +15,7 @@
     },
     "signin": {
       "form": {
-        "title": "Sign in",
+        "title": "Sign up",
         "description": "Enter your credentials to access your account",
         "userName": "user name",
         "email": "email",
