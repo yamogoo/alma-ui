@@ -1,8 +1,21 @@
 {
   "name": "sparkpad",
-  "version": "1.0.0",
-  "description": "",
+  "author": {
+    "name": "yamogoo",
+    "email": "grebennikovmisha@gmail.com",
+    "fullName": "Mikhail Grebennikov",
+    "url": "https://github.com/yamogoo"
+  },
+  "private": false,
+  "version": "0.0.0",
+  "license": "MIT",
   "type": "module",
+  "keywords": [
+    "design system",
+    "tokens",
+    "frontend",
+    "custom ui"
+  ],
   "scripts": {
     "client:dev": "pnpm --filter client dev",
     "client:build": "pnpm --filter client build",
@@ -15,9 +28,6 @@
     "storybook:build": "pnpm --filter client storybook:build",
     "install:all": "pnpm install"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "packageManager": "pnpm@10.15.1",
   "dependencies": {
     "design-system": "link:../../../../Library/pnpm/global/5/node_modules/design-system"

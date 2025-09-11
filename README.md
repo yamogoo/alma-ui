@@ -136,3 +136,13 @@ _Then open http://localhost:3000 to see Sparkpad in action._
 - Resizable layouts enabled via Vue3ResizeBounding
 
 - Future projects will grow from this foundation
+
+## License
+
+Licensing is in accordance with the original.
+
+[MIT](https://github.com/yamogoo/sparkpad/blob/main/LICENSE)
+
+## Author
+
+**Mikhail Grebennikov** - [yamogoo](https://github.com/yamogoo)

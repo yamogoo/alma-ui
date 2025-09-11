@@ -6,9 +6,15 @@
     "fullName": "Mikhail Grebennikov",
     "url": "https://github.com/yamogoo"
   },
+  "keywords": [
+    "design system",
+    "tokens",
+    "frontend",
+    "custom ui"
+  ],
   "private": false,
-  "version": "0.0.0",
-  "license": "ISC",
+  "version": "0.1.0",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
