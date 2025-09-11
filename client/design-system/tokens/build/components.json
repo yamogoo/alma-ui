@@ -787,6 +787,38 @@
       }
     }
   },
+  "controlWrapper": {
+    "default": {
+      "md": {
+        "self": {
+          "gap": {
+            "value": 12,
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "category": "control wrapper"
+            }
+          },
+          "paddingV": {
+            "value": 0,
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "category": "control wrapper"
+            }
+          },
+          "paddingH": {
+            "value": 8,
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "category": "control wrapper"
+            }
+          }
+        }
+      }
+    }
+  },
   "divider": {
     "default": {
       "lg": {
@@ -1189,7 +1221,7 @@
   },
   "formWrapper": {
     "default": {
-      "md": {
+      "lg": {
         "self": {
           "padding": {
             "value": [
@@ -1204,7 +1236,7 @@
             }
           },
           "borderRadius": {
-            "value": 16,
+            "value": 20,
             "type": "radius",
             "unit": "px",
             "meta": {
@@ -1213,7 +1245,7 @@
             }
           },
           "borderWidth": {
-            "value": 1,
+            "value": 0,
             "type": "size",
             "unit": "px",
             "meta": {

@@ -734,6 +734,38 @@ $char-tooltip-label:(
 )
 )
 );
+$control-wrapper:(
+  default: (
+  md: (
+  self: (
+  gap: (
+  value: 12px,
+  type: "spacing",
+  unit: "px",
+  meta: (
+  category: "control wrapper"
+)
+),
+  padding-v: (
+  value: 0px,
+  type: "spacing",
+  unit: "px",
+  meta: (
+  category: "control wrapper"
+)
+),
+  padding-h: (
+  value: 8px,
+  type: "spacing",
+  unit: "px",
+  meta: (
+  category: "control wrapper"
+)
+)
+)
+)
+)
+);
 $divider:(
   default: (
   lg: (
@@ -1103,7 +1135,7 @@ $form:(
 );
 $form-wrapper:(
   default: (
-  md: (
+  lg: (
   type: "component",
   self: (
   padding: (
@@ -1116,7 +1148,7 @@ $form-wrapper:(
 )
 ),
   border-radius: (
-  value: 16px,
+  value: 20px,
   type: "radius",
   unit: "px",
   meta: (
@@ -1125,7 +1157,7 @@ $form-wrapper:(
 )
 ),
   border-width: (
-  value: 1px,
+  value: 0px,
   type: "size",
   unit: "px",
   meta: (

@@ -5,7 +5,7 @@ import AnimatedWrapper from "@/components/atoms/containers/AnimatedWrapper.vue";
 
 withDefaults(defineProps<FormWrapperProps>(), {
   variant: "default",
-  size: "md",
+  size: "lg",
   color: "primary",
   bordered: false,
 });

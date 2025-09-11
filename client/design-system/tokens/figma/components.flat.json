@@ -497,6 +497,21 @@
     "value": "caption-1",
     "type": "alias"
   },
+  "controlWrapper.default.md.self.gap": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "controlWrapper.default.md.self.paddingV": {
+    "value": 0,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "controlWrapper.default.md.self.paddingH": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px"
+  },
   "divider.default.lg.self.borderWidth": {
     "value": 1,
     "type": "border",
@@ -772,7 +787,7 @@
     "value": "component",
     "type": "string"
   },
-  "formWrapper.default.md.self.padding": {
+  "formWrapper.default.lg.self.padding": {
     "value": [
       16,
       24
@@ -781,19 +796,19 @@
     "unit": "px",
     "description": "Padding inside the form wrapper"
   },
-  "formWrapper.default.md.self.borderRadius": {
-    "value": 16,
+  "formWrapper.default.lg.self.borderRadius": {
+    "value": 20,
     "type": "radius",
     "unit": "px",
     "description": "Border radius of the form wrapper"
   },
-  "formWrapper.default.md.self.borderWidth": {
-    "value": 1,
+  "formWrapper.default.lg.self.borderWidth": {
+    "value": 0,
     "type": "size",
     "unit": "px",
     "description": "Border width of the form wrapper"
   },
-  "formWrapper.default.md.elements.header.padding": {
+  "formWrapper.default.lg.elements.header.padding": {
     "value": [
       12,
       0
@@ -802,7 +817,7 @@
     "unit": "px",
     "description": "Padding for the header inside the form wrapper"
   },
-  "formWrapper.default.md.type": {
+  "formWrapper.default.lg.type": {
     "value": "component",
     "type": "string"
   },

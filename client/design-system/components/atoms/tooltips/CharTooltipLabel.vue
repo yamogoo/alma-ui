@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { useTemplateRef } from "vue";
 import type { CharTooltipLabelProps } from "./charTooltipLabel";
 
 import { Icon, Text } from "@/components/atoms";
@@ -12,7 +12,7 @@ withDefaults(defineProps<CharTooltipLabelProps>(), {
   iconWeight: "300",
 });
 
-const root = ref<HTMLDivElement | null>(null);
+const root = useTemplateRef("refRoot");
 
 defineExpose({
   root,

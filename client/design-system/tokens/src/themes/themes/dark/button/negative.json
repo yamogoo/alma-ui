@@ -3,49 +3,49 @@
     "self": {
       "background": {
         "normal": {
-          "value": "{colors.gray-75}"
+          "value": "{colors.red-700}"
         },
         "disabled": {
-          "value": "rgba({colors.gray-75}, .5)"
+          "value": "rgba({colors.red-700}, .5)"
         },
         "hovered": {
-          "value": "{colors.gray-100}"
+          "value": "{colors.red-650}"
         },
         "pressed": {
-          "value": "{colors.gray-150}"
+          "value": "{colors.red-600}"
         }
       },
       "border": {
         "normal": {
-          "value": "{themes.themes.light.button.negative.primary.self.background.normal.value}"
+          "value": "{themes.themes.dark.button.negative.primary.self.background.normal.value}"
         },
         "disabled": {
-          "value": "{themes.themes.light.button.negative.primary.self.background.disabled.value}"
+          "value": "{themes.themes.dark.button.negative.primary.self.background.disabled.value}"
         },
         "hovered": {
-          "value": "{themes.themes.light.button.negative.primary.self.background.hovered.value}"
+          "value": "{themes.themes.dark.button.negative.primary.self.background.hovered.value}"
         },
         "pressed": {
-          "value": "{themes.themes.light.button.negative.primary.self.background.pressed.value}"
+          "value": "{themes.themes.dark.button.negative.primary.self.background.pressed.value}"
         },
         "outline": {
-          "value": "{themes.themes.light.border.outline.value}"
+          "value": "{themes.themes.dark.border.outline.value}"
         }
       }
     },
     "elements": {
       "label": {
         "normal": {
-          "value": "{colors.gray-900}"
+          "value": "{colors.gray-300}"
         },
         "disabled": {
-          "value": "{colors.gray-400}"
+          "value": "{colors.gray-600}"
         },
         "hovered": {
-          "value": "{colors.gray-950}"
+          "value": "{colors.gray-250}"
         },
         "pressed": {
-          "value": "{colors.gray-950}"
+          "value": "{colors.gray-250}"
         }
       }
     }
@@ -68,19 +68,19 @@
       },
       "border": {
         "normal": {
-          "value": "{themes.themes.light.button.negative.inversed.self.background.normal.value}"
+          "value": "{themes.themes.dark.button.negative.inversed.self.background.normal.value}"
         },
         "disabled": {
-          "value": "{themes.themes.light.button.negative.inversed.self.background.disabled.value}"
+          "value": "{themes.themes.dark.button.negative.inversed.self.background.disabled.value}"
         },
         "hovered": {
-          "value": "{themes.themes.light.button.negative.inversed.self.background.hovered.value}"
+          "value": "{themes.themes.dark.button.negative.inversed.self.background.hovered.value}"
         },
         "pressed": {
-          "value": "{themes.themes.light.button.negative.inversed.self.background.pressed.value}"
+          "value": "{themes.themes.dark.button.negative.inversed.self.background.pressed.value}"
         },
         "outline": {
-          "value": "{themes.themes.light.border.outline.value}"
+          "value": "{themes.themes.dark.border.outline.value}"
         }
       }
     },
@@ -119,19 +119,19 @@
       },
       "border": {
         "normal": {
-          "value": "{themes.themes.light.button.negative.secondary.self.background.normal.value}"
+          "value": "{themes.themes.dark.button.negative.secondary.self.background.normal.value}"
         },
         "disabled": {
-          "value": "{themes.themes.light.button.negative.secondary.self.background.disabled.value}"
+          "value": "{themes.themes.dark.button.negative.secondary.self.background.disabled.value}"
         },
         "hovered": {
-          "value": "{themes.themes.light.button.negative.secondary.self.background.hovered.value}"
+          "value": "{themes.themes.dark.button.negative.secondary.self.background.hovered.value}"
         },
         "pressed": {
-          "value": "{themes.themes.light.button.negative.secondary.self.background.pressed.value}"
+          "value": "{themes.themes.dark.button.negative.secondary.self.background.pressed.value}"
         },
         "outline": {
-          "value": "{themes.themes.light.border.outline.value}"
+          "value": "{themes.themes.dark.border.outline.value}"
         }
       }
     },
@@ -170,19 +170,19 @@
       },
       "border": {
         "normal": {
-          "value": "{themes.themes.light.button.negative.tertiary.self.background.normal.value}"
+          "value": "{themes.themes.dark.button.negative.tertiary.self.background.normal.value}"
         },
         "disabled": {
-          "value": "{themes.themes.light.button.negative.tertiary.self.background.disabled.value}"
+          "value": "{themes.themes.dark.button.negative.tertiary.self.background.disabled.value}"
         },
         "hovered": {
-          "value": "{themes.themes.light.button.negative.tertiary.self.background.hovered.value}"
+          "value": "{themes.themes.dark.button.negative.tertiary.self.background.hovered.value}"
         },
         "pressed": {
-          "value": "{themes.themes.light.button.negative.tertiary.self.background.pressed.value}"
+          "value": "{themes.themes.dark.button.negative.tertiary.self.background.pressed.value}"
         },
         "outline": {
-          "value": "{themes.themes.light.border.outline.value}"
+          "value": "{themes.themes.dark.border.outline.value}"
         }
       }
     },
@@ -221,19 +221,19 @@
       },
       "border": {
         "normal": {
-          "value": "{themes.themes.light.button.negative.tertiary.self.background.normal.value}"
+          "value": "{themes.themes.dark.button.negative.tertiary.self.background.normal.value}"
         },
         "disabled": {
-          "value": "{themes.themes.light.button.negative.tertiary.self.background.disabled.value}"
+          "value": "{themes.themes.dark.button.negative.tertiary.self.background.disabled.value}"
         },
         "hovered": {
-          "value": "{themes.themes.light.button.negative.tertiary.self.background.hovered.value}"
+          "value": "{themes.themes.dark.button.negative.tertiary.self.background.hovered.value}"
         },
         "pressed": {
-          "value": "{themes.themes.light.button.negative.tertiary.self.background.pressed.value}"
+          "value": "{themes.themes.dark.button.negative.tertiary.self.background.pressed.value}"
         },
         "outline": {
-          "value": "{themes.themes.light.border.outline.value}"
+          "value": "{themes.themes.dark.border.outline.value}"
         }
       }
     },

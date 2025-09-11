@@ -79,7 +79,7 @@ watch(localIsPressed, (isPressed) => {
     :class="[
       {
         [`button_variant-${variant}`]: !!variant,
-        [`button_size-${String(size)}`]: !!size,
+        [`button_size-${size}`]: !!size,
         [`button_mode-${mode}`]: !!mode,
         [`button_tone-${tone}`]: !!tone,
         [`button_direction-${contentDirection}`]: !!contentDirection,

@@ -1,0 +1,32 @@
+{
+  "default": {
+    "md": {
+      "self": {
+        "gap": {
+          "value": "{tokens.spacing.sm.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "control wrapper"
+          }
+        },
+        "paddingV": {
+          "value": 0,
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "control wrapper"
+          }
+        },
+        "paddingH": {
+          "value": "{tokens.spacing.xs.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "control wrapper"
+          }
+        }
+      }
+    }
+  }
+}

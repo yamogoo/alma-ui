@@ -6,6 +6,9 @@ export * from "./buttons";
 // Containers: Page, Group, Overlay, etc.
 export * from "./containers";
 
+// Controls: ControlWrapper, etc.
+export * from "./controls";
+
 // Dividers: simple decorative elements like Divider
 export * from "./dividers";
 

@@ -1,20 +1,28 @@
 <script setup lang="ts">
-import { ThemeSwitch } from "@@/components/moleculas";
-import type { AppHeaderProps } from "@@/components/organisms";
+import { storeToRefs } from "pinia";
 
-withDefaults(defineProps<AppHeaderProps>(), {
-  as: "header",
+import { useLocaleStore } from "@@/stores";
+
+import { Text } from "@/components/atoms";
+import type { AppFooterProps } from "@@/components/organisms";
+
+withDefaults(defineProps<AppFooterProps>(), {
+  as: "footer",
   isMainElement: true,
 });
+
+const { $t } = storeToRefs(useLocaleStore());
 </script>
 
 <template>
   <component
     :is="as"
-    class="app-header"
+    class="app-footer"
     :role="isMainElement ? undefined : 'banner'"
   >
-    <ThemeSwitch></ThemeSwitch>
+    <Text :variant="'caption-3'" :text-color="'secondary'"
+      >{{ $t.about.author }} | 2025</Text
+    >
   </component>
 </template>
 
@@ -26,14 +34,16 @@ withDefaults(defineProps<AppHeaderProps>(), {
   }
 }
 
-.app-header {
+.app-footer {
   $padding-v: px2rem(get($spacing, "sm.value"));
 
   box-sizing: border-box;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   @extend %main-container;
-
   padding-top: $padding-v;
   padding-bottom: $padding-v;
 }

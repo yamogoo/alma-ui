@@ -1,6 +1,6 @@
 {
   "default": {
-    "md": {
+    "lg": {
       "self": {
         "padding": {
           "value": ["{tokens.spacing.md.value}", "{tokens.spacing.lg.value}"],
@@ -12,7 +12,7 @@
           }
         },
         "borderRadius": {
-          "value": "{tokens.roundness.md.value}",
+          "value": "{tokens.roundness.lg.value}",
           "type": "radius",
           "unit": "px",
           "meta": {
@@ -21,7 +21,7 @@
           }
         },
         "borderWidth": {
-          "value": "{tokens.stroke.sm.value}",
+          "value": 0,
           "type": "size",
           "unit": "px",
           "meta": {

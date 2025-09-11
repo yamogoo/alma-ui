@@ -16,8 +16,6 @@ import {
   Tooltip,
 } from "@/components/atoms";
 
-import { ThemeSwitch } from "@@/components/moleculas";
-
 withDefaults(defineProps<Props>(), {
   isLoginError: false,
 });
@@ -149,7 +147,6 @@ export interface Props {
             @press="onContinueAsGuest"
           ></ActionButton>
         </Tooltip>
-        <ThemeSwitch></ThemeSwitch>
       </Group>
     </template>
   </Form>
