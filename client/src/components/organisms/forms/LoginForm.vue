@@ -14,6 +14,7 @@ import {
   PasswordInput,
   Text,
   Tooltip,
+  ToggleSwitch,
 } from "@/components/atoms";
 
 withDefaults(defineProps<Props>(), {
@@ -147,6 +148,7 @@ export interface Props {
             @press="onContinueAsGuest"
           ></ActionButton>
         </Tooltip>
+        <ToggleSwitch :state="true"></ToggleSwitch>
       </Group>
     </template>
   </Form>

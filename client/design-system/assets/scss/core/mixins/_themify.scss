@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "sass:list";
 @use "sass:meta";
+@use "sass:string";
 @use "../../abstracts/themes" as *;
 @use "../mixins/map-get" as utils;
 
@@ -42,7 +43,7 @@ $use-css-variables: false !default;
 
   @if $flag {
     $keys: str-replace($path, ".", "-");
-    @return unquote("var(--#{$keys})");
+    @return string.unquote("var(--#{$keys})");
   }
 
   @if $theme-map == null {
@@ -52,7 +53,7 @@ $use-css-variables: false !default;
 }
 
 @function str-replace($string, $search, $replace: "") {
-  $index: str-index($string, $search);
+  $index: string.index($string, $search);
   @if $index {
     @return str-slice($string, 1, $index - 1) + $replace +
       str-replace(

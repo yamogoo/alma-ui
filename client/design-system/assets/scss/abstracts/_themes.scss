@@ -1853,22 +1853,62 @@ $themes:(
 )
 )
 ),
-  switch: (
-  default: (
+  toggle-switch: (
+  neutral: (
+  elements: (
   track: (
   normal: (
-  value: #3E4A53
+  value: #3E4A53,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "toggle switch"
+)
 ),
   active: (
-  value: #3E4A53
+  value: #3E4A53,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "toggle switch"
+)
 )
 ),
   knob: (
   normal: (
-  value: #F8F9FA
+  value: #F8F9FA,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "toggle switch"
+)
 ),
   active: (
-  value: #F8F9FA
+  value: #F8F9FA,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "toggle switch"
+)
+)
+),
+  label: (
+  normal: (
+  value: #DCE1E5,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "toggle switch"
+)
+),
+  active: (
+  value: #DCE1E5,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "toggle switch"
+)
+)
 )
 )
 )
@@ -3821,22 +3861,62 @@ $themes:(
 )
 )
 ),
-  switch: (
-  default: (
+  toggle-switch: (
+  neutral: (
+  elements: (
   track: (
   normal: (
-  value: #909FAC
+  value: #909FAC,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "toggle switch"
+)
 ),
   active: (
-  value: #909FAC
+  value: #909FAC,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "toggle switch"
+)
 )
 ),
   knob: (
   normal: (
-  value: #F8F9FA
+  value: #F8F9FA,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "toggle switch"
+)
 ),
   active: (
-  value: #F8F9FA
+  value: #F8F9FA,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "toggle switch"
+)
+)
+),
+  label: (
+  normal: (
+  value: #2F383F,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "toggle switch"
+)
+),
+  active: (
+  value: #2F383F,
+  type: "color",
+  unit: "hex",
+  meta: (
+  category: "toggle switch"
+)
+)
 )
 )
 )

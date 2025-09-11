@@ -1912,3 +1912,193 @@ $step-pagination-tabs:(
 )
 )
 );
+$toggle-switch:(
+  default: (
+  lg: (
+  self: (
+  width: (
+  value: 40px,
+  type: "size",
+  unit: "px",
+  meta: (
+  category: "toggle switch"
+)
+),
+  height: (
+  value: 20px,
+  type: "size",
+  unit: "px",
+  meta: (
+  category: "toggle switch"
+)
+),
+  gap: (
+  value: (
+  value: 10px,
+  type: "spacing",
+  unit: "px",
+  meta: (
+  description: "Extra small gap",
+  category: "spacing"
+)
+),
+  type: "spacing",
+  unit: "px",
+  meta: (
+  category: "toggle switch"
+)
+)
+),
+  elements: (
+  track: (
+  padding: (
+  value: 2px,
+  type: "spacing",
+  unit: "px",
+  meta: (
+  category: "toggle switch"
+)
+),
+  border-radius: (
+  value: 10px,
+  type: "radius",
+  unit: "px",
+  meta: (
+  category: "toggle switch"
+)
+)
+),
+  label: (
+  font-style: (
+  value: label-1,
+  type: "alias"
+)
+)
+)
+),
+  md: (
+  self: (
+  width: (
+  value: 36px,
+  type: "size",
+  unit: "px",
+  meta: (
+  category: "toggle switch"
+)
+),
+  height: (
+  value: 18px,
+  type: "size",
+  unit: "px",
+  meta: (
+  category: "toggle switch"
+)
+),
+  gap: (
+  value: (
+  value: 10px,
+  type: "spacing",
+  unit: "px",
+  meta: (
+  description: "Extra small gap",
+  category: "spacing"
+)
+),
+  type: "spacing",
+  unit: "px",
+  meta: (
+  category: "toggle switch"
+)
+)
+),
+  elements: (
+  track: (
+  padding: (
+  value: 2px,
+  type: "spacing",
+  unit: "px",
+  meta: (
+  category: "toggle switch"
+)
+),
+  border-radius: (
+  value: 7px,
+  type: "radius",
+  unit: "px",
+  meta: (
+  category: "toggle switch"
+)
+)
+),
+  label: (
+  font-style: (
+  value: label-1,
+  type: "alias"
+)
+)
+)
+),
+  sm: (
+  self: (
+  width: (
+  value: 32px,
+  type: "size",
+  unit: "px",
+  meta: (
+  category: "toggle switch"
+)
+),
+  height: (
+  value: 16px,
+  type: "size",
+  unit: "px",
+  meta: (
+  category: "toggle switch"
+)
+),
+  gap: (
+  value: (
+  value: 10px,
+  type: "spacing",
+  unit: "px",
+  meta: (
+  description: "Extra small gap",
+  category: "spacing"
+)
+),
+  type: "spacing",
+  unit: "px",
+  meta: (
+  category: "toggle switch"
+)
+)
+),
+  elements: (
+  track: (
+  padding: (
+  value: 2px,
+  type: "spacing",
+  unit: "px",
+  meta: (
+  category: "toggle switch"
+)
+),
+  border-radius: (
+  value: 6px,
+  type: "radius",
+  unit: "px",
+  meta: (
+  category: "toggle switch"
+)
+)
+),
+  label: (
+  font-style: (
+  value: label-1,
+  type: "alias"
+)
+)
+)
+)
+)
+);
