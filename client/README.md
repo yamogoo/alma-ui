@@ -70,7 +70,11 @@ A self-built design system that works like a lightweight framework:
 
    The design system maintains a **strict and fully typed token structure** for scalability and consistency, while projects built on top of it can use a **simplified token model** for faster prototyping and iteration.
 
-10. **Runtime Styling Options**
+10. **Unified Token Source**
+
+    Tokens have a single source of truth in JSON format. From this source, all design tokens are formatted into SCSS maps for use in styling, ensuring consistency across components, themes, and runtime styling.
+
+11. **Runtime Styling Options**
 
     While the system primarily uses **JS tokens** at runtime, it can also support **runtime CSS variables**, though their usage is currently minimal.
 
@@ -145,6 +149,8 @@ _Then open http://localhost:3000 to see Sparkpad in action._
 - Resizable layouts enabled via Vue3ResizeBounding
 
 - Runtime styling can use JS tokens (primary) or CSS variables (secondary)
+
+- Single source of truth for tokens: JSON tokens are formatted into SCSS maps for consistency
 
 - Future projects will grow from this foundation
 
