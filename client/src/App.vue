@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-import { useResizeObserver } from "@vueuse/core";
+import { storeToRefs } from "pinia";
+import { useResizeObserver, useTitle } from "@vueuse/core";
 
 import {
   useAuthStore,
@@ -11,7 +12,13 @@ import {
 
 import { useMeta, useTheme, useConnection } from "@/composables/global";
 
-useMeta("author", import.meta.env.VITE_APP_AUTHOR_NAME);
+import { AUTHOR } from "@@/constants";
+
+const { $t } = storeToRefs(useLocaleStore());
+
+useTitle($t.value.about.title);
+useMeta("description", $t.value.about.description);
+useMeta("author", AUTHOR);
 useTheme("light", {
   selector: "html",
 });

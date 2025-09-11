@@ -1277,15 +1277,7 @@
     "unit": "px"
   },
   "toggleSwitch.default.lg.self.gap": {
-    "value": {
-      "value": 10,
-      "type": "spacing",
-      "unit": "px",
-      "meta": {
-        "description": "Extra small gap",
-        "category": "spacing"
-      }
-    },
+    "value": 10,
     "type": "spacing",
     "unit": "px"
   },
@@ -1314,15 +1306,7 @@
     "unit": "px"
   },
   "toggleSwitch.default.md.self.gap": {
-    "value": {
-      "value": 10,
-      "type": "spacing",
-      "unit": "px",
-      "meta": {
-        "description": "Extra small gap",
-        "category": "spacing"
-      }
-    },
+    "value": 10,
     "type": "spacing",
     "unit": "px"
   },
@@ -1351,15 +1335,7 @@
     "unit": "px"
   },
   "toggleSwitch.default.sm.self.gap": {
-    "value": {
-      "value": 10,
-      "type": "spacing",
-      "unit": "px",
-      "meta": {
-        "description": "Extra small gap",
-        "category": "spacing"
-      }
-    },
+    "value": 10,
     "type": "spacing",
     "unit": "px"
   },
