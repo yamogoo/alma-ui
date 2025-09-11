@@ -10,6 +10,14 @@
             "category": "toggle switch"
           }
         },
+        "disabled": {
+          "value": "{colors.gray-200}",
+          "type": "color",
+          "unit": "hex",
+          "meta": {
+            "category": "toggle switch"
+          }
+        },
         "active": {
           "value": "{colors.gray-375}",
           "type": "color",
@@ -28,6 +36,14 @@
             "category": "toggle switch"
           }
         },
+        "disabled": {
+          "value": "{colors.gray-100}",
+          "type": "color",
+          "unit": "hex",
+          "meta": {
+            "category": "toggle switch"
+          }
+        },
         "active": {
           "value": "{colors.gray-0}",
           "type": "color",
@@ -40,6 +56,14 @@
       "label": {
         "normal": {
           "value": "{themes.themes.light.label.primary.value}",
+          "type": "color",
+          "unit": "hex",
+          "meta": {
+            "category": "toggle switch"
+          }
+        },
+        "disabled": {
+          "value": "{themes.themes.light.label.disabled.value}",
           "type": "color",
           "unit": "hex",
           "meta": {

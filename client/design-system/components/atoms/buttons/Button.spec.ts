@@ -34,7 +34,7 @@ describe("Button.vue", () => {
 
       expect(btn.classes()).toContain("button");
       expect(btn.classes()).toContain("button_size-md");
-      expect(btn.classes()).toContain("button_color-primary");
+      expect(btn.classes()).toContain("button_mode-primary");
     });
   });
 

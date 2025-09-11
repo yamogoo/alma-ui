@@ -18,10 +18,12 @@ export const toggleSwitchSizes = Object.keys(
 
 export type ToggleSwitchSize = keyof typeof tokens.toggleSwitch.default;
 
-export interface ToggleSwithProps {
+export interface ToggleSwitchProps {
   variant?: ToggleSwitchVariant;
   tone?: ToggleSwitchTone;
   size?: ToggleSwitchSize;
-  state?: boolean;
   label?: string;
+  isActive?: boolean;
+  isDisabled?: boolean;
+  useNative?: boolean;
 }

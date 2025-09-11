@@ -1584,6 +1584,11 @@
     "type": "color",
     "unit": "hex"
   },
+  "themes.dark.toggleSwitch.neutral.elements.track.disabled": {
+    "value": "#495661",
+    "type": "color",
+    "unit": "hex"
+  },
   "themes.dark.toggleSwitch.neutral.elements.track.active": {
     "value": "#3E4A53",
     "type": "color",
@@ -1594,6 +1599,11 @@
     "type": "color",
     "unit": "hex"
   },
+  "themes.dark.toggleSwitch.neutral.elements.knob.disabled": {
+    "value": "#637584",
+    "type": "color",
+    "unit": "hex"
+  },
   "themes.dark.toggleSwitch.neutral.elements.knob.active": {
     "value": "#F8F9FA",
     "type": "color",
@@ -1601,6 +1611,11 @@
   },
   "themes.dark.toggleSwitch.neutral.elements.label.normal": {
     "value": "#DCE1E5",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.toggleSwitch.neutral.elements.label.disabled": {
+    "value": "#6D8292",
     "type": "color",
     "unit": "hex"
   },
@@ -3242,6 +3257,11 @@
     "type": "color",
     "unit": "hex"
   },
+  "themes.light.toggleSwitch.neutral.elements.track.disabled": {
+    "value": "#C0C9D0",
+    "type": "color",
+    "unit": "hex"
+  },
   "themes.light.toggleSwitch.neutral.elements.track.active": {
     "value": "#909FAC",
     "type": "color",
@@ -3252,8 +3272,28 @@
     "type": "color",
     "unit": "hex"
   },
+  "themes.light.toggleSwitch.neutral.elements.knob.disabled": {
+    "value": "#DCE1E5",
+    "type": "color",
+    "unit": "hex"
+  },
   "themes.light.toggleSwitch.neutral.elements.knob.active": {
     "value": "#F8F9FA",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.toggleSwitch.neutral.elements.label.normal": {
+    "value": "#2F383F",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.toggleSwitch.neutral.elements.label.disabled": {
+    "value": "#8999A7",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.toggleSwitch.neutral.elements.label.active": {
+    "value": "#2F383F",
     "type": "color",
     "unit": "hex"
   }

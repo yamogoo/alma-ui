@@ -88,6 +88,8 @@ const onLogin = async (email: string, password: string): Promise<void> => {
 onMounted(() => {
   onRedirectIfLoggedIn();
 });
+
+const s = ref(false);
 </script>
 
 <script lang="ts">
@@ -148,7 +150,11 @@ export interface Props {
             @press="onContinueAsGuest"
           ></ActionButton>
         </Tooltip>
-        <ToggleSwitch :state="true"></ToggleSwitch>
+        <ToggleSwitch
+          v-model:is-active="s"
+          :is-disabled="false"
+          :use-native="true"
+        ></ToggleSwitch>
       </Group>
     </template>
   </Form>

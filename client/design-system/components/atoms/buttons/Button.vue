@@ -81,7 +81,7 @@ watch(localIsPressed, (isPressed) => {
         [`button_variant-${variant}`]: !!variant,
         [`button_size-${String(size)}`]: !!size,
         [`button_mode-${mode}`]: !!mode,
-        [`button_tone-${tone}`]: !!tone,
+        [`button_color-${tone}`]: !!tone,
         [`button_direction-${contentDirection}`]: !!contentDirection,
         [`button_stretch-${stretch}`]: !!stretch,
         [`button_hovered`]: isHovered,
@@ -164,7 +164,7 @@ watch(localIsPressed, (isPressed) => {
 @mixin defineThemes($map: get($themes, "light.button")) {
   @each $tone, $modes in $map {
     @each $mode, $val in $modes {
-      &_tone-#{$tone} {
+      &_color-#{$tone} {
         &.button_mode-#{$mode} {
           @include themify($themes) {
             color: themed(
