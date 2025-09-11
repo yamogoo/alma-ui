@@ -3,7 +3,7 @@ import { mount, VueWrapper } from "@vue/test-utils";
 import ThemeSwitch from "./ThemeSwitch.vue";
 
 const getSwitch = <T>(wrapper: VueWrapper<T>) => {
-  return wrapper.findComponent({ name: "Switch" });
+  return wrapper.findComponent({ name: "ToggleSwitch" });
 };
 
 describe("ThemeSwitch", () => {
