@@ -28,6 +28,8 @@ A self-built design system that works like a lightweight framework:
 
 - My component [Vue3ResizeBounding](https://resize-bounding.netlify.app/) for intuitive resizable layouts
 
+- Projects can adopt a simplified token model while retaining compatibility with the strict design system
+
 > Everything is optimized for my stack and workflow, without the bloat of prebuilt UI libraries.
 
 ## 🎯 Advantages of the Custom Design System
@@ -63,6 +65,10 @@ A self-built design system that works like a lightweight framework:
 8. **Resizable Layouts with Vue3ResizeBounding**
 
    The Vue3ResizeBounding component allows creating flexible, resizable UI panels, fully integrated into Sparkpad.
+
+9. **Strict Tokens vs Project Flexibility**
+
+   The design system maintains a **strict and fully typed token structure** for scalability and consistency, while projects built on top of it can use a **simplified token model** for faster prototyping and iteration.
 
 ## 🛠 Stack & Tech
 
