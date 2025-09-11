@@ -12,6 +12,7 @@ import vueRouter from "unplugin-vue-router/vite";
 
 import ColorsGeneratorPlugin from "./plugins/vite-plugin-colors-generator";
 import { TokensParserPlugin } from "./plugins/vite-plugin-tokens-parser";
+import { VitePluginTokenLinter } from "./plugins/vite-plugin-token-linter.ts";
 import { FlattenTokensParserPlugin } from "./plugins/vite-plugin-flatten-tokens-parser";
 
 import VueRouterPlugin from "unplugin-vue-router/vite";
@@ -90,6 +91,9 @@ export default (opts: { mode: string }) => {
           paths: ["./src/tokens/src"],
           includeRootDirName: false,
         },
+      }),
+      VitePluginTokenLinter({
+        source: "./design-system/tokens/src",
       }),
       FlattenTokensParserPlugin({
         source: "./design-system/tokens/build",

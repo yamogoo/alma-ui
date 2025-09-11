@@ -1456,35 +1456,43 @@
   },
   "themes.dark.options.primary.label.normal": {
     "value": "#A5B1BC",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.dark.options.primary.label.disabled": {
     "value": "#586976",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.dark.options.primary.label.hovered": {
     "value": "#EAEDEF",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.dark.options.primary.label.focused": {
     "value": "#EAEDEF",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.dark.options.secondary.label.normal": {
     "value": "#A5B1BC",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.dark.options.secondary.label.disabled": {
     "value": "#586976",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.dark.options.secondary.label.hovered": {
     "value": "#EAEDEF",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.dark.options.secondary.label.focused": {
     "value": "#EAEDEF",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.dark.overlay.primary.background": {
     "value": "#101315",
@@ -3129,43 +3137,53 @@
   },
   "themes.light.options.primary.label.normal": {
     "value": "#2F383F",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.options.primary.label.disabled": {
     "value": "#8999A7",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.options.primary.label.hovered": {
     "value": "#101315",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.options.primary.label.focused": {
     "value": "#101315",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.options.secondary.label.normal": {
     "value": "#2F383F",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.options.secondary.label.disabled": {
     "value": "#8999A7",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.options.secondary.label.hovered": {
     "value": "#101315",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.options.secondary.label.focused": {
     "value": "#101315",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.overlay.primary.background": {
     "value": "#F8F9FA",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
-  "themes.light.overlay.primaryInversed.background": {
+  "themes.light.overlay.primary.primaryInversed.background": {
     "value": "#101315",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.resizer.default.elements.splitter.normal": {
     "value": "#01259D",
@@ -3204,35 +3222,43 @@
   },
   "themes.light.sheet.primary.background.normal": {
     "value": "#F8F9FA",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.sheet.primary.shadow.normal": {
     "value": "rgba(#060606, 0.075)",
-    "type": "color"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.sheet.secondary.background.normal": {
     "value": "#DCE1E5",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.sheet.secondary.shadow.normal": {
     "value": "rgba(#060606, 0.075)",
-    "type": "color"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.sheet.accent.background.normal": {
     "value": "#013CFE",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.sheet.accent.shadow.normal": {
     "value": "rgba(#060606, 0.075)",
-    "type": "color"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.sheet.transparental.background.normal": {
     "value": "rgba(#F8F9FA, 0)",
-    "type": "unknown"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.sheet.transparental.shadow.normal": {
     "value": "rgba(#060606, 0.075)",
-    "type": "color"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.skeleton.default.colorIn": {
     "value": "rgba(#8999A7, 0.25)",

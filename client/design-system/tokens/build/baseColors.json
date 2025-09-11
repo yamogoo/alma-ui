@@ -2,7 +2,7 @@
   "gray": {
     "value": "#353F47",
     "type": "color",
-    "format": "hex",
+    "unit": "hex",
     "meta": {
       "description": "base color",
       "category": "base color"
@@ -11,7 +11,7 @@
   "black": {
     "value": "#000000",
     "type": "color",
-    "format": "hex",
+    "unit": "hex",
     "meta": {
       "description": "base color",
       "category": "base color"
@@ -20,7 +20,7 @@
   "white": {
     "value": "#FFFFFF",
     "type": "color",
-    "format": "hex",
+    "unit": "hex",
     "meta": {
       "description": "base color",
       "category": "base color"
@@ -29,7 +29,7 @@
   "red": {
     "value": "#E23939",
     "type": "color",
-    "format": "hex",
+    "unit": "hex",
     "meta": {
       "description": "additional color",
       "category": "base color"
@@ -38,7 +38,7 @@
   "orange": {
     "value": "#FFC968",
     "type": "color",
-    "format": "hex",
+    "unit": "hex",
     "meta": {
       "description": "additional color",
       "category": "base color"
@@ -47,7 +47,7 @@
   "yellow": {
     "value": "#f2ea00",
     "type": "color",
-    "format": "hex",
+    "unit": "hex",
     "meta": {
       "description": "additional color",
       "category": "base color"
@@ -56,7 +56,7 @@
   "darkGreen": {
     "value": "#16a131",
     "type": "color",
-    "format": "hex",
+    "unit": "hex",
     "meta": {
       "description": "additional color",
       "category": "base color"
@@ -65,7 +65,7 @@
   "green": {
     "value": "#03d31d",
     "type": "color",
-    "format": "hex",
+    "unit": "hex",
     "meta": {
       "description": "additional color",
       "category": "base color"
@@ -74,7 +74,7 @@
   "blue": {
     "value": "#1A4FFE",
     "type": "color",
-    "format": "hex",
+    "unit": "hex",
     "meta": {
       "description": "additional color",
       "category": "base color"
@@ -83,7 +83,7 @@
   "darkBlue": {
     "value": "#1A4FFE",
     "type": "color",
-    "format": "hex",
+    "unit": "hex",
     "meta": {
       "description": "additional color",
       "category": "base color"
@@ -92,7 +92,7 @@
   "accent": {
     "value": "#0FC558",
     "type": "color",
-    "format": "hex",
+    "unit": "hex",
     "meta": {
       "description": "accent color",
       "category": "base color"
@@ -101,7 +101,7 @@
   "cream": {
     "value": "#FFC68E",
     "type": "color",
-    "format": "hex",
+    "unit": "hex",
     "meta": {
       "description": "additional color",
       "category": "base color"
@@ -110,7 +110,7 @@
   "caramel": {
     "value": "#8d4709",
     "type": "color",
-    "format": "hex",
+    "unit": "hex",
     "meta": {
       "description": "additional color",
       "category": "base color"

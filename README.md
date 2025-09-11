@@ -22,12 +22,11 @@ A self-built design system that works like a lightweight framework:
 
 - Fully custom component library
 
-- Custom icons from [Alma Icons](https://almaicons.netlify.app/icons)
+- Custom icons from my another project [Alma Icons](https://almaicons.netlify.app/icons)
 
 - SCSS core with mixins and utility classes
 
-- [Vue3ResizeBounding](https://resize-bounding.netlify.app/) for intuitive resizable layouts (link
-  )
+- My component [Vue3ResizeBounding](https://resize-bounding.netlify.app/) for intuitive resizable layouts
 
 > Everything is optimized for my stack and workflow, without the bloat of prebuilt UI libraries.
 

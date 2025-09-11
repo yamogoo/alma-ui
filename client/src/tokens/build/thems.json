@@ -1,11 +1,5 @@
 {
   "light": {
-    "header": {
-      "self": {
-        "background": {
-          "value": "#9EABB6"
-        }
-      }
-    }
+    "header": {}
   }
 }

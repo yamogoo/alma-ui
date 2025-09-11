@@ -49,6 +49,7 @@
           "fontStyle": {
             "value": "label-1",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for button label",
               "category": "typography"
@@ -127,6 +128,7 @@
           "fontStyle": {
             "value": "label-2",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for button label",
               "category": "typography"
@@ -205,6 +207,7 @@
           "fontStyle": {
             "value": "label-3",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for button label",
               "category": "typography"
@@ -278,6 +281,7 @@
           "fontStyle": {
             "value": "label-3",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for button label",
               "category": "typography"
@@ -353,6 +357,7 @@
           "fontStyle": {
             "value": "label-1",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for button label",
               "category": "typography"
@@ -426,6 +431,7 @@
           "fontStyle": {
             "value": "label-3",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for button label",
               "category": "typography"
@@ -504,6 +510,7 @@
           "fontStyle": {
             "value": "label-4",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for button label",
               "category": "typography"
@@ -582,6 +589,7 @@
           "fontStyle": {
             "value": "label-4",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for button label",
               "category": "typography"

@@ -2,66 +2,79 @@
   "gray": {
     "value": "#353F47",
     "type": "color",
+    "unit": "hex",
     "description": "base color"
   },
   "black": {
     "value": "#000000",
     "type": "color",
+    "unit": "hex",
     "description": "base color"
   },
   "white": {
     "value": "#FFFFFF",
     "type": "color",
+    "unit": "hex",
     "description": "base color"
   },
   "red": {
     "value": "#E23939",
     "type": "color",
+    "unit": "hex",
     "description": "additional color"
   },
   "orange": {
     "value": "#FFC968",
     "type": "color",
+    "unit": "hex",
     "description": "additional color"
   },
   "yellow": {
     "value": "#f2ea00",
     "type": "color",
+    "unit": "hex",
     "description": "additional color"
   },
   "darkGreen": {
     "value": "#16a131",
     "type": "color",
+    "unit": "hex",
     "description": "additional color"
   },
   "green": {
     "value": "#03d31d",
     "type": "color",
+    "unit": "hex",
     "description": "additional color"
   },
   "blue": {
     "value": "#1A4FFE",
     "type": "color",
+    "unit": "hex",
     "description": "additional color"
   },
   "darkBlue": {
     "value": "#1A4FFE",
     "type": "color",
+    "unit": "hex",
     "description": "additional color"
   },
   "accent": {
     "value": "#0FC558",
     "type": "color",
+    "unit": "hex",
     "description": "accent color"
   },
   "cream": {
     "value": "#FFC68E",
     "type": "color",
+    "unit": "hex",
     "description": "additional color"
   },
   "caramel": {
     "value": "#8d4709",
     "type": "color",
+    "unit": "hex",
     "description": "additional color"
   }
 }

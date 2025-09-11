@@ -83,6 +83,7 @@
   "button.default.lg.elements.label.fontStyle": {
     "value": "label-1",
     "type": "alias",
+    "unit": "",
     "description": "Font style for button label"
   },
   "button.default.lg.elements.icon.size": {
@@ -132,6 +133,7 @@
   "button.default.md.elements.label.fontStyle": {
     "value": "label-2",
     "type": "alias",
+    "unit": "",
     "description": "Font style for button label"
   },
   "button.default.md.elements.icon.size": {
@@ -181,6 +183,7 @@
   "button.default.sm.elements.label.fontStyle": {
     "value": "label-3",
     "type": "alias",
+    "unit": "",
     "description": "Font style for button label"
   },
   "button.default.sm.elements.icon.size": {
@@ -228,6 +231,7 @@
   "button.default.xs.elements.label.fontStyle": {
     "value": "label-3",
     "type": "alias",
+    "unit": "",
     "description": "Font style for button label"
   },
   "button.default.xs.elements.icon.size": {
@@ -277,6 +281,7 @@
   "button.rounded.lg.elements.label.fontStyle": {
     "value": "label-1",
     "type": "alias",
+    "unit": "",
     "description": "Font style for button label"
   },
   "button.rounded.lg.elements.icon.size": {
@@ -326,6 +331,7 @@
   "button.rounded.md.elements.label.fontStyle": {
     "value": "label-3",
     "type": "alias",
+    "unit": "",
     "description": "Font style for button label"
   },
   "button.rounded.md.elements.icon.size": {
@@ -375,6 +381,7 @@
   "button.rounded.sm.elements.label.fontStyle": {
     "value": "label-4",
     "type": "alias",
+    "unit": "",
     "description": "Font style for button label"
   },
   "button.rounded.sm.elements.icon.size": {
@@ -424,6 +431,7 @@
   "button.rounded.xs.elements.label.fontStyle": {
     "value": "label-4",
     "type": "alias",
+    "unit": "",
     "description": "Font style for button label"
   },
   "button.rounded.xs.elements.icon.size": {

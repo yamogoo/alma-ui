@@ -3,5 +3,31 @@
     "padding": 16,
     "type": "spacing",
     "unit": "px"
+  },
+  "themeSwitch": {
+    "gap": {
+      "value": 12,
+      "type": "spacing",
+      "unit": "px",
+      "meta": {
+        "category": "theme switch"
+      }
+    },
+    "paddingV": {
+      "value": 0,
+      "type": "spacing",
+      "unit": "px",
+      "meta": {
+        "category": "theme switch"
+      }
+    },
+    "paddingH": {
+      "value": 8,
+      "type": "spacing",
+      "unit": "px",
+      "meta": {
+        "category": "theme switch"
+      }
+    }
   }
 }

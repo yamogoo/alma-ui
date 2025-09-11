@@ -14,8 +14,9 @@ import {
   PasswordInput,
   Text,
   Tooltip,
-  ToggleSwitch,
 } from "@/components/atoms";
+
+import { ThemeSwitch } from "@@/components/moleculas";
 
 withDefaults(defineProps<Props>(), {
   isLoginError: false,
@@ -88,8 +89,6 @@ const onLogin = async (email: string, password: string): Promise<void> => {
 onMounted(() => {
   onRedirectIfLoggedIn();
 });
-
-const s = ref(false);
 </script>
 
 <script lang="ts">
@@ -150,11 +149,7 @@ export interface Props {
             @press="onContinueAsGuest"
           ></ActionButton>
         </Tooltip>
-        <ToggleSwitch
-          v-model:is-active="s"
-          :is-disabled="false"
-          :use-native="true"
-        ></ToggleSwitch>
+        <ThemeSwitch></ThemeSwitch>
       </Group>
     </template>
   </Form>
