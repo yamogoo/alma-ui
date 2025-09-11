@@ -70,6 +70,10 @@ A self-built design system that works like a lightweight framework:
 
    The design system maintains a **strict and fully typed token structure** for scalability and consistency, while projects built on top of it can use a **simplified token model** for faster prototyping and iteration.
 
+10. **Runtime Styling Options**
+
+    While the system primarily uses **JS tokens** at runtime, it can also support **runtime CSS variables**, though their usage is currently minimal.
+
 ## 🛠 Stack & Tech
 
 - Vue 3 + TypeScript
@@ -139,6 +143,8 @@ _Then open http://localhost:3000 to see Sparkpad in action._
 - Design system demonstrates scalable architecture, typed tokens, GSAP animations, and icon integration
 
 - Resizable layouts enabled via Vue3ResizeBounding
+
+- Runtime styling can use JS tokens (primary) or CSS variables (secondary)
 
 - Future projects will grow from this foundation
 
