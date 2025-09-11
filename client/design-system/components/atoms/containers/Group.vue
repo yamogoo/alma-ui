@@ -1,45 +1,17 @@
 <script setup lang="ts">
-import type {
-  UIElementAlignment,
-  UIElementAxisDirection,
-  UIElementOrientation,
-  UIElementStretch,
-  UIElementVariant,
-} from "@/typings";
+import type { GroupProps } from "./group";
 
 const props = withDefaults(defineProps<GroupProps>(), {
   variant: "default",
   as: "div",
   role: "group",
   size: "md",
-  color: "primary",
+  mode: "primary",
   orientation: "horizontal",
   ariaLabel: "group",
 });
 
 const componentTag = props.as;
-</script>
-
-<script lang="ts">
-import type { GroupSize, GroupColor } from "./group";
-
-export interface GroupProps {
-  variant?: UIElementVariant;
-  size?: GroupSize;
-  color?: GroupColor;
-  orientation?: UIElementOrientation;
-  direction?: UIElementAxisDirection;
-  verticalAlignment?: UIElementAlignment;
-  horizontalAlignment?: UIElementAlignment;
-  stretch?: UIElementStretch;
-  wrap?: boolean;
-  gapX?: string;
-  gapY?: string;
-  divider?: boolean;
-  as?: keyof HTMLElementTagNameMap;
-  role?: string;
-  ariaLabel?: string;
-}
 </script>
 
 <template>
@@ -48,8 +20,8 @@ export interface GroupProps {
     class="group"
     :class="[
       `group_variant-${variant}`,
-      `group_size-${String(size)}`,
-      `group_color-${String(color)}`,
+      `group_size-${size}`,
+      `group_mode-${mode}`,
       {
         [`group_direction-${direction}`]: !!direction,
         [`group_orientation-${orientation}`]: !!orientation,
@@ -101,7 +73,7 @@ export interface GroupProps {
 
 @mixin defineThemes($names) {
   @each $name in $names {
-    &_color-#{$name} {
+    &_mode-#{$name} {
       &.group_divider {
         &.group_orientation-horizontal {
           @include themify($themes) {

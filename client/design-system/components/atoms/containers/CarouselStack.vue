@@ -154,29 +154,6 @@ const onPointerUp = () => {
 
 const isCursorGrabbing = computed(() => props.isDruggable && isDragging.value);
 
-onMounted(() => {
-  nextTick(() => {
-    onAnimate(currentSid.value, 0);
-    startAutoPlay();
-    updateItemsScale();
-
-    refTrack.value?.addEventListener("pointerdown", onPointerDown);
-    refTrack.value?.addEventListener("pointermove", onPointerMove);
-    refTrack.value?.addEventListener("pointerup", onPointerUp);
-    refTrack.value?.addEventListener("pointercancel", onPointerUp);
-    refTrack.value?.addEventListener("pointerleave", onPointerUp);
-  });
-});
-
-onUnmounted(() => {
-  stopAutoPlay();
-  refTrack.value?.removeEventListener("pointerdown", onPointerDown);
-  refTrack.value?.removeEventListener("pointermove", onPointerMove);
-  refTrack.value?.removeEventListener("pointerup", onPointerUp);
-  refTrack.value?.removeEventListener("pointercancel", onPointerUp);
-  refTrack.value?.removeEventListener("pointerleave", onPointerUp);
-});
-
 watch(
   () => props.isDruggable,
   () => {
@@ -231,11 +208,23 @@ onMounted(() => {
   nextTick(() => {
     onAnimate(currentSid.value, 0);
     startAutoPlay();
+    updateItemsScale();
+
+    refTrack.value?.addEventListener("pointerdown", onPointerDown);
+    refTrack.value?.addEventListener("pointermove", onPointerMove);
+    refTrack.value?.addEventListener("pointerup", onPointerUp);
+    refTrack.value?.addEventListener("pointercancel", onPointerUp);
+    refTrack.value?.addEventListener("pointerleave", onPointerUp);
   });
 });
 
 onUnmounted(() => {
   stopAutoPlay();
+  refTrack.value?.removeEventListener("pointerdown", onPointerDown);
+  refTrack.value?.removeEventListener("pointermove", onPointerMove);
+  refTrack.value?.removeEventListener("pointerup", onPointerUp);
+  refTrack.value?.removeEventListener("pointercancel", onPointerUp);
+  refTrack.value?.removeEventListener("pointerleave", onPointerUp);
 });
 
 /* * * Animations * * */
@@ -279,10 +268,14 @@ const onLeave = (el: Element, done: () => void): void => {
         [`carousel-stack_stretch-${stretch}`]: stretch,
         'carousel-stack_grabbing': isCursorGrabbing,
       },
-      `carousel-stack_${isItemsClickable ? 'carousel-stack_clickable' : 'carousel-stack_static'}`,
+      `carousel-stack_${isItemsClickable ? 'clickable' : 'static'}`,
     ]"
   >
-    <div v-if="$slots.pagination" class="carousel-stack__header">
+    <div
+      v-if="$slots.pagination"
+      class="carousel-stack__header"
+      data-testid="carousel-stack-header"
+    >
       <slot
         name="pagination"
         :selectedScreenId="selectedScreenId"

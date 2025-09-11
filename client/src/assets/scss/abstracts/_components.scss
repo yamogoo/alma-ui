@@ -6,29 +6,3 @@ $header:(
   unit: "px",
   padding: 16
 );
-$theme-switch:(
-  gap: (
-  value: 12px,
-  type: "spacing",
-  unit: "px",
-  meta: (
-  category: "theme switch"
-)
-),
-  padding-v: (
-  value: 0px,
-  type: "spacing",
-  unit: "px",
-  meta: (
-  category: "theme switch"
-)
-),
-  padding-h: (
-  value: 8px,
-  type: "spacing",
-  unit: "px",
-  meta: (
-  category: "theme switch"
-)
-)
-);

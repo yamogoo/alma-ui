@@ -5,9 +5,8 @@ import type { OverlayProps } from "./overlay";
 defineProps<OverlayProps>();
 </script>
 
-
 <template>
-  <div class="overlay" :class="[{ [`overlay_color-${color}`]: !!color }]"></div>
+  <div class="overlay" :class="[{ [`overlay_mode-${mode}`]: !!mode }]"></div>
 </template>
 
 <style lang="scss">
