@@ -9,7 +9,7 @@ describe("FormWrapper", () => {
     test("renders with default class", () => {
       const wrapper = mount(FormWrapper, {
         props: {
-          size: "md",
+          size: "lg",
           color: "primary",
         },
       });

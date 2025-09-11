@@ -52,7 +52,7 @@ const getItemState = (idx: number) => {
 
 /* * * Animations * * */
 
-const onAnimTrackAndItem = (id: number, duration = 0.5) => {
+const onAnimTrackAndItem = (id: number, duration = 0.55) => {
   const tl = g.timeline({ defaults: { duration, ease: "power4.out" } });
 
   if (refTrack.value) {
