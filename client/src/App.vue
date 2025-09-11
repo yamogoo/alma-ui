@@ -51,5 +51,6 @@ onMounted(() => {
   @include themify($themes) {
     background-color: themed("background.primary.value");
   }
+  @extend %base-transition;
 }
 </style>

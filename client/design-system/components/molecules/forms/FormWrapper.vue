@@ -77,6 +77,7 @@ withDefaults(defineProps<FormWrapperProps>(), {
 
 .form-wrapper {
   overflow: hidden;
+  @extend %base-transition;
 
   @include defineSize();
   @include defineThemes(map.keys(get($themes, "light.form-wrapper")));

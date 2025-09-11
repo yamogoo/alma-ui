@@ -5,6 +5,7 @@ import { Vue3Lottie as LottieAnimation } from "vue3-lottie";
 import type { AnimatedIconProps } from "./animatedIcon";
 
 const props = withDefaults(defineProps<AnimatedIconProps>(), {
+  variant: "default",
   speed: 1,
   loop: false,
 });
@@ -54,9 +55,9 @@ const onCompleted = (): void => {
     class="animated-icon"
     :class="[
       {
-        [`animated-icon_size-${variant}`]: !!variant,
-        [`animated-icon_size-${String(size)}`]: !!size,
-        [`animated-icon_color-${String(color)}`]: !!color,
+        [`animated-icon_variant-${variant}`]: !!variant,
+        [`animated-icon_size-${size}`]: !!size,
+        [`animated-icon_color-${color}`]: !!color,
       },
     ]"
     :animation-data
@@ -75,8 +76,13 @@ const onCompleted = (): void => {
 @mixin defineSizes($map: $icon) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      &_size-#{$size} {
-        @include box(px2rem(get($val, "self.size.value")));
+      &_variant-#{$variant} {
+        &.animated-icon_size-#{$size} {
+          $icon-size: px2rem(get($val, "self.size.value"));
+
+          width: $icon-size !important;
+          height: $icon-size !important;
+        }
       }
     }
   }

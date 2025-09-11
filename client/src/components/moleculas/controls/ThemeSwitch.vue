@@ -33,10 +33,11 @@ const onChangeTheme = () => toggleTheme();
     ></AnimatedIcon>
     <ToggleSwitch
       data-testid="theme-switch"
-      :state="isLightTheme"
+      :is-active="isLightTheme"
+      :is-disabled="false"
       :size="'sm'"
       aria-label="change-theme"
-      @update:state="onChangeTheme"
+      @update:is-active="onChangeTheme"
     ></ToggleSwitch>
   </div>
 </template>
