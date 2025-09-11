@@ -2066,15 +2066,7 @@
             }
           },
           "gap": {
-            "value": {
-              "value": 10,
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "description": "Extra small gap",
-                "category": "spacing"
-              }
-            },
+            "value": 10,
             "type": "spacing",
             "unit": "px",
             "meta": {
@@ -2103,7 +2095,7 @@
           },
           "label": {
             "fontStyle": {
-              "value": "label-1",
+              "value": "label-3",
               "type": "alias"
             }
           }
@@ -2128,15 +2120,7 @@
             }
           },
           "gap": {
-            "value": {
-              "value": 10,
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "description": "Extra small gap",
-                "category": "spacing"
-              }
-            },
+            "value": 10,
             "type": "spacing",
             "unit": "px",
             "meta": {
@@ -2165,7 +2149,7 @@
           },
           "label": {
             "fontStyle": {
-              "value": "label-1",
+              "value": "label-3",
               "type": "alias"
             }
           }
@@ -2190,15 +2174,7 @@
             }
           },
           "gap": {
-            "value": {
-              "value": 10,
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "description": "Extra small gap",
-                "category": "spacing"
-              }
-            },
+            "value": 10,
             "type": "spacing",
             "unit": "px",
             "meta": {
@@ -2227,7 +2203,7 @@
           },
           "label": {
             "fontStyle": {
-              "value": "label-1",
+              "value": "label-3",
               "type": "alias"
             }
           }

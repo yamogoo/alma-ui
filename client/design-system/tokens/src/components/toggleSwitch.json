@@ -19,7 +19,7 @@
           }
         },
         "gap": {
-          "value": "{tokens.gap.xs}",
+          "value": "{tokens.gap.xs.value}",
           "type": "spacing",
           "unit": "px",
           "meta": {
@@ -48,7 +48,7 @@
         },
         "label": {
           "fontStyle": {
-            "value": "label-1",
+            "value": "label-3",
             "type": "alias"
           }
         }
@@ -73,7 +73,7 @@
           }
         },
         "gap": {
-          "value": "{tokens.gap.xs}",
+          "value": "{tokens.gap.xs.value}",
           "type": "spacing",
           "unit": "px",
           "meta": {
@@ -102,7 +102,7 @@
         },
         "label": {
           "fontStyle": {
-            "value": "label-1",
+            "value": "label-3",
             "type": "alias"
           }
         }
@@ -127,7 +127,7 @@
           }
         },
         "gap": {
-          "value": "{tokens.gap.xs}",
+          "value": "{tokens.gap.xs.value}",
           "type": "spacing",
           "unit": "px",
           "meta": {
@@ -156,7 +156,7 @@
         },
         "label": {
           "fontStyle": {
-            "value": "label-1",
+            "value": "label-3",
             "type": "alias"
           }
         }
