@@ -1478,7 +1478,7 @@
                 "value": "#EAEDEF"
               },
               "error": {
-                "value": "#FADFDF",
+                "value": "#E86060",
                 "description": "placeholder = #E96B6B"
               }
             }
@@ -1524,7 +1524,7 @@
                 "value": "#EAEDEF"
               },
               "error": {
-                "value": "#FADFDF",
+                "value": "#E86060",
                 "description": "placeholder = #E96B6B"
               }
             }
@@ -3550,7 +3550,7 @@
                 "value": "#101315"
               },
               "error": {
-                "value": "#350808",
+                "value": "#DE2121",
                 "description": "placeholder = #E96B6B"
               }
             }
@@ -3596,7 +3596,7 @@
                 "value": "#101315"
               },
               "error": {
-                "value": "#350808",
+                "value": "#DE2121",
                 "description": "placeholder = #E96B6B"
               }
             }

@@ -39,7 +39,7 @@
           "value": "{colors.gray-950}"
         },
         "error": {
-          "value": "{colors.red-900}",
+          "value": "{colors.red-500}",
           "description": "placeholder = {themes.themes.light.label.error.value}"
         }
       }
@@ -85,7 +85,7 @@
           "value": "{colors.gray-950}"
         },
         "error": {
-          "value": "{colors.red-900}",
+          "value": "{colors.red-500}",
           "description": "placeholder = {themes.themes.light.label.error.value}"
         }
       }
