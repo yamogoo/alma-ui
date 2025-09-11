@@ -162,7 +162,7 @@ onMounted(() => {
           $track-padding: px2rem(get($val, "elements.track.padding.value"));
           $label-font-style: get($val, "elements.label.font-style.value");
 
-          /* gap: $gap; */
+          gap: $gap;
 
           .toggle-switch__track {
             @include box($width, $height);
@@ -305,7 +305,7 @@ onMounted(() => {
 .toggle-switch {
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
   cursor: pointer;
   @include box(max-content);

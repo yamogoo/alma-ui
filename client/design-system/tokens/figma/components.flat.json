@@ -1300,7 +1300,7 @@
     "unit": "px"
   },
   "toggleSwitch.default.lg.elements.label.fontStyle": {
-    "value": "label-1",
+    "value": "label-3",
     "type": "alias"
   },
   "toggleSwitch.default.md.self.width": {
@@ -1337,7 +1337,7 @@
     "unit": "px"
   },
   "toggleSwitch.default.md.elements.label.fontStyle": {
-    "value": "label-1",
+    "value": "label-3",
     "type": "alias"
   },
   "toggleSwitch.default.sm.self.width": {
@@ -1374,7 +1374,7 @@
     "unit": "px"
   },
   "toggleSwitch.default.sm.elements.label.fontStyle": {
-    "value": "label-1",
+    "value": "label-3",
     "type": "alias"
   }
 }
