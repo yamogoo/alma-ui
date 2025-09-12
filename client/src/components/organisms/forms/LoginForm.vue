@@ -119,7 +119,7 @@ export interface Props {
       :text-color="'error'"
       >{{ errorMessage }}</Text
     > -->
-    <Text :variant="'caption-2'" :text-color="'disabled'">{{
+    <Text :variant="'caption-2'" :text-color="'secondary'">{{
       $t.auth.login.form.description
     }}</Text>
 

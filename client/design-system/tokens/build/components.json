@@ -2342,25 +2342,33 @@
       "default": {
         "md": {
           "self": {
-            "padding": {
-              "value": [
-                16,
-                24
-              ],
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "description": "Padding inside the form",
-                "category": "form"
-              }
-            },
             "borderRadius": {
-              "value": 16,
+              "value": 20,
               "type": "radius",
               "unit": "px",
               "meta": {
                 "description": "Border radius of the form",
                 "category": "form"
+              }
+            }
+          },
+          "elements": {
+            "body": {
+              "gap": {
+                "value": 24,
+                "type": "spacing",
+                "unit": "px",
+                "meta": {
+                  "category": "form"
+                }
+              },
+              "padding": {
+                "value": 12,
+                "type": "spacing",
+                "unit": "px",
+                "meta": {
+                  "category": "form"
+                }
               }
             }
           },

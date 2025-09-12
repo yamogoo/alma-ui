@@ -1,6 +1,6 @@
 {
   "themes.dark.abstracts.background.base": {
-    "value": "#101315",
+    "value": "#15191C",
     "type": "color",
     "unit": "hex"
   },
@@ -1805,12 +1805,12 @@
     "unit": "hex"
   },
   "themes.light.abstracts.label.tertiary": {
-    "value": "#6D8292",
+    "value": "#637584",
     "type": "color",
     "unit": "hex"
   },
   "themes.light.abstracts.label.disabled": {
-    "value": "#8999A7",
+    "value": "#6D8292",
     "type": "color",
     "unit": "hex"
   },
@@ -3379,11 +3379,11 @@
     "unit": "hex"
   },
   "themes.light.atoms.skeleton.default.colorIn": {
-    "value": "rgba(#8999A7, 0.25)",
+    "value": "rgba(#6D8292, 0.25)",
     "type": "color"
   },
   "themes.light.atoms.skeleton.default.colorOut": {
-    "value": "rgba(#8999A7, 0)",
+    "value": "rgba(#6D8292, 0)",
     "type": "color"
   },
   "themes.light.atoms.stepPaginationTabs.primary.elements.item.label.normal": {
@@ -3434,7 +3434,7 @@
     "unit": "hex"
   },
   "themes.light.atoms.toggleSwitch.primary.elements.label.disabled": {
-    "value": "#8999A7",
+    "value": "#6D8292",
     "type": "color",
     "unit": "hex"
   },

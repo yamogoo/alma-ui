@@ -7,6 +7,7 @@ import type { FormProps } from "./form";
 withDefaults(defineProps<FormProps>(), {
   variant: "default",
   size: "md",
+  mode: "primary",
 });
 
 const id = useId();
@@ -49,11 +50,22 @@ const id = useId();
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       $border-radius: get($val, "self.border-radius");
-      $padding: get($val, "self.padding");
 
-      &_#{$size} {
-        padding: $padding;
+      $body-gap: get($val, "elements.body.gap");
+      $body-padding: get($val, "elements.body.padding");
+
+      &_size-#{$size} {
         border-radius: $border-radius;
+
+        .form__body {
+          gap: $body-gap;
+        }
+
+        .form__header,
+        .form__body,
+        .form__footer {
+          padding: $body-padding 0;
+        }
       }
     }
   }
@@ -89,16 +101,9 @@ const id = useId();
     justify-content: center;
   }
 
-  &__header,
-  &__body,
-  &__footer {
-    padding: get($spacing, "sm") 0;
-  }
-
   &__body {
     display: flex;
     flex-direction: column;
-    gap: px2rem(get($spacing, "md"));
   }
 }
 </style>

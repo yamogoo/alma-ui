@@ -2256,7 +2256,7 @@
             }
           },
           "tertiary": {
-            "value": "#6D8292",
+            "value": "#637584",
             "type": "color",
             "unit": "hex",
             "description": "Tertiary text color for less important content",
@@ -2265,7 +2265,7 @@
             }
           },
           "disabled": {
-            "value": "#8999A7",
+            "value": "#6D8292",
             "type": "color",
             "unit": "hex",
             "description": "Disabled or inactive text color",
@@ -4261,11 +4261,11 @@
         "skeleton": {
           "default": {
             "colorIn": {
-              "value": "rgba(#8999A7, 0.25)",
+              "value": "rgba(#6D8292, 0.25)",
               "type": "color"
             },
             "colorOut": {
-              "value": "rgba(#8999A7, 0)",
+              "value": "rgba(#6D8292, 0)",
               "type": "color"
             }
           }
@@ -4363,7 +4363,7 @@
                   }
                 },
                 "disabled": {
-                  "value": "#8999A7",
+                  "value": "#6D8292",
                   "type": "color",
                   "unit": "hex",
                   "meta": {

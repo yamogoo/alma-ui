@@ -15,7 +15,7 @@ export type TextTransform =
 
 export type TextDecoration = "none" | "underline" | "line-through";
 
-export type TextColor = keyof typeof tokens.themes.light.label;
+export type TextColor = keyof typeof tokens.themes.light.abstracts.label;
 
 export interface TextProps {
   as?: UIElementTypographyTag;

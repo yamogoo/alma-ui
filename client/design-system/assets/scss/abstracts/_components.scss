@@ -647,8 +647,13 @@ $molecules:(
   default: (
   md: (
   self: (
-  padding: 16px 24px,
-  border-radius: 16px
+  border-radius: 20px
+),
+  elements: (
+  body: (
+  gap: 24px,
+  padding: 12px
+)
 )
 )
 )

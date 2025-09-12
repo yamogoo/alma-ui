@@ -1435,20 +1435,21 @@
     "value": "label-3",
     "type": "alias"
   },
-  "molecules.form.default.md.self.padding": {
-    "value": [
-      16,
-      24
-    ],
-    "type": "spacing",
-    "unit": "px",
-    "description": "Padding inside the form"
-  },
   "molecules.form.default.md.self.borderRadius": {
-    "value": 16,
+    "value": 20,
     "type": "radius",
     "unit": "px",
     "description": "Border radius of the form"
+  },
+  "molecules.form.default.md.elements.body.gap": {
+    "value": 16,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "molecules.form.default.md.elements.body.padding": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px"
   },
   "molecules.form.default.md.type": {
     "value": "component",
