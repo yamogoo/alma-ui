@@ -2,7 +2,7 @@ import tokens from "@/tokens";
 
 import type { UIElementUnionProps } from "@/typings";
 
-export type SheetColor = keyof typeof tokens.themes.light.sheet;
+export type SheetColor = keyof typeof tokens.themes.light.atoms.sheet;
 
 export interface SheetProps extends Partial<UIElementUnionProps> {
   color?: SheetColor;

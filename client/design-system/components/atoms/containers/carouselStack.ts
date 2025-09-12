@@ -7,7 +7,7 @@ import type {
   UIElementUnionProps,
 } from "@/typings";
 
-export type CarousleStackSize = keyof typeof tokens.carouselStack.default;
+export type CarousleStackSize = keyof typeof tokens.atoms.carouselStack.default;
 
 export interface CarousleStackProps extends Partial<UIElementUnionProps> {
   selectedScreenId?: number;

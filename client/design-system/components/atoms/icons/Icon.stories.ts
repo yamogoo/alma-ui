@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/vue3-vite";
 import Icon from "./Icon.vue";
 import {
   iconNames,
-  iconColors,
+  iconModes,
   iconSizes,
   iconStyles,
   iconWeights,
@@ -27,9 +27,9 @@ const meta = {
       options: iconWeights,
     },
     size: { control: "select", options: iconSizes },
-    color: {
+    mode: {
       control: "select",
-      options: iconColors,
+      options: iconModes,
     },
   },
 } satisfies Meta<typeof Icon>;
@@ -43,7 +43,7 @@ export const SizeXxs: Story = {
     style: "outline",
     weight: "400",
     size: "xxs",
-    color: "primary",
+    mode: "primary",
   },
 };
 
@@ -53,7 +53,7 @@ export const SizeXs: Story = {
     style: "outline",
     weight: "400",
     size: "xs",
-    color: "primary",
+    mode: "primary",
   },
 };
 
@@ -63,7 +63,7 @@ export const SizeSm: Story = {
     style: "outline",
     weight: "400",
     size: "sm",
-    color: "primary",
+    mode: "primary",
   },
 };
 
@@ -73,7 +73,7 @@ export const SizeMd: Story = {
     style: "outline",
     weight: "400",
     size: "md",
-    color: "primary",
+    mode: "primary",
   },
 };
 
@@ -83,6 +83,6 @@ export const SizeLg: Story = {
     style: "outline",
     weight: "400",
     size: "lg",
-    color: "primary",
+    mode: "primary",
   },
 };

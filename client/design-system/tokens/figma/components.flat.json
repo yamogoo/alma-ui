@@ -1442,7 +1442,7 @@
     "description": "Border radius of the form"
   },
   "molecules.form.default.md.elements.body.gap": {
-    "value": 16,
+    "value": 24,
     "type": "spacing",
     "unit": "px"
   },

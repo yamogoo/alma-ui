@@ -4,7 +4,7 @@ import AnimatedIcon from "./AnimatedIcon.vue";
 
 import spinnerAnimatedIcon from "@/assets/animations/spinner.json";
 
-import { iconSizes, iconColors } from "./icon";
+import { iconSizes, iconModes } from "./icon";
 
 const meta = {
   title: "Atoms/icons/AnimatedIcon",
@@ -28,9 +28,9 @@ const meta = {
       defaultValue: true,
     },
     size: { control: "select", options: iconSizes },
-    color: {
+    mode: {
       control: "select",
-      options: iconColors,
+      options: iconModes,
     },
   },
 } satisfies Meta<typeof AnimatedIcon>;
@@ -45,6 +45,6 @@ export const Spinner: Story = {
     isActive: true,
     loop: true,
     size: "xl",
-    color: "accent",
+    mode: "accent",
   },
 };
