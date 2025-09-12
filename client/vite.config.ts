@@ -14,6 +14,7 @@ import ColorsGeneratorPlugin from "./plugins/vite-plugin-colors-generator";
 import { TokensParserPlugin } from "./plugins/vite-plugin-tokens-parser";
 import { VitePluginTokenLinter } from "./plugins/vite-plugin-token-linter.ts";
 import { FlattenTokensParserPlugin } from "./plugins/vite-plugin-flatten-tokens-parser";
+import { JSONBuilderPlugin } from "./plugins/vite-plugin-json-builder";
 
 import VueRouterPlugin from "unplugin-vue-router/vite";
 
@@ -61,6 +62,7 @@ export default (opts: { mode: string }) => {
         dts: true,
       }),
       svgLoader(),
+      // Deign System Tokens and SCSS generation
       ColorsGeneratorPlugin({
         source: "./design-system/tokens/src/baseColors.json",
         outDir: "./design-system/tokens/src/colors.json",
@@ -80,6 +82,14 @@ export default (opts: { mode: string }) => {
         },
         useReflectOriginalStructure: true,
       }),
+      VitePluginTokenLinter({
+        source: "./design-system/tokens/src",
+      }),
+      FlattenTokensParserPlugin({
+        source: "./design-system/tokens/build",
+        outDir: "./design-system/tokens/figma",
+      }),
+      // Application Tokens and SCSS generation
       TokensParserPlugin({
         source: "./src/tokens/.cache",
         outDir: "./src/assets/scss/abstracts",
@@ -92,13 +102,16 @@ export default (opts: { mode: string }) => {
           paths: ["./src/tokens/src"],
           includeRootDirName: false,
         },
+        useReflectOriginalStructure: true,
       }),
-      VitePluginTokenLinter({
-        source: "./design-system/tokens/src",
-      }),
-      FlattenTokensParserPlugin({
-        source: "./design-system/tokens/build",
-        outDir: "./design-system/tokens/figma",
+      // Generate locales JSON from directory structure
+      JSONBuilderPlugin({
+        format: "json",
+        paths: ["./src/locales/src"],
+        outDir: "./src/locales/build",
+        entryFilePath: "./src/locales/index.ts",
+        includeRootDirName: true,
+        includeRootNames: true,
       }),
     ],
     optimizeDeps: {

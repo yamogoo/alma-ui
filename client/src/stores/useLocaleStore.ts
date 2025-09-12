@@ -8,7 +8,7 @@ import type { Locale } from "@@/typings";
 
 const DEFAULT_LOCALE = import.meta.env.VITE_APP_DEFAULT_LOCALE as Locale;
 
-export type LocaleVersion = keyof typeof locales.app.en.version;
+export type LocaleVersion = keyof typeof locales.app.en.common.version;
 
 export const useLocaleStore = defineStore("locale-store", () => {
   const availableLocales = Object.keys(locales.app) as Locale[];

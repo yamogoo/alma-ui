@@ -11,7 +11,9 @@ export interface JSONBuilderOptions {
   format?: JSONBuilderFormat;
   paths: string[];
   includeRootDirName?: boolean;
+  includeRootNames?: boolean;
   useTokensInSeparateFiles?: boolean;
+  entryFilePath?: string;
 }
 
 export class JSONBuilder {
@@ -19,17 +21,22 @@ export class JSONBuilder {
   private format: JSONBuilderFormat;
   private paths: string[];
   private includeRootDirName: boolean;
+  private includeRootNames: boolean;
   private useTokensInSeparateFiles: boolean;
+  private entryFilePath?: string;
 
   constructor(options: JSONBuilderOptions) {
-    if (!options.paths || options.paths.length === 0) {
+    if (!options.paths?.length) {
       throw new Error("JSONBuilder requires at least one path in 'paths'.");
     }
+
     this.outDir = options.outDir ?? ".cache";
     this.format = options.format ?? "json";
     this.paths = options.paths;
     this.includeRootDirName = options.includeRootDirName ?? false;
+    this.includeRootNames = options.includeRootNames ?? false;
     this.useTokensInSeparateFiles = options.useTokensInSeparateFiles ?? true;
+    this.entryFilePath = options.entryFilePath;
   }
 
   private async isDir(p: string): Promise<boolean> {
@@ -53,7 +60,7 @@ export class JSONBuilder {
     return raw;
   }
 
-  private async buildTree(dir: string): Promise<any> {
+  private async buildTree(dir: string): Promise<Record<string, any>> {
     const entries = await fs.readdir(dir, { withFileTypes: true });
     const result: Record<string, any> = {};
 
@@ -62,7 +69,9 @@ export class JSONBuilder {
 
       const fullPath = path.join(dir, entry.name);
       if (entry.isDirectory()) {
-        result[entry.name] = await this.buildTree(fullPath);
+        const subtree = await this.buildTree(fullPath);
+        const indexFile = "index" in subtree ? subtree["index"] : null;
+        result[entry.name] = indexFile ?? subtree;
       } else {
         const key = entry.name.replace(/\.[^.]+$/, "");
         result[key] = await this.readFileContent(fullPath);
@@ -73,15 +82,13 @@ export class JSONBuilder {
   }
 
   private deepMerge(target: any, source: any): any {
+    if (Array.isArray(target) && Array.isArray(source)) return source;
     if (typeof target !== "object" || target === null) return source;
     if (typeof source !== "object" || source === null) return source;
 
     for (const key of Object.keys(source)) {
-      if (key in target) {
-        target[key] = this.deepMerge(target[key], source[key]);
-      } else {
-        target[key] = source[key];
-      }
+      target[key] =
+        key in target ? this.deepMerge(target[key], source[key]) : source[key];
     }
 
     return target;
@@ -105,6 +112,35 @@ export class JSONBuilder {
     await fs.writeFile(filePath, content, "utf-8");
   }
 
+  private async buildEntryFile(): Promise<void> {
+    if (!this.entryFilePath) return;
+
+    const files = await fs.readdir(this.outDir);
+    const jsonFiles = files.filter((f) => f.endsWith(".json"));
+
+    const imports: string[] = [];
+    const spreads: string[] = [];
+
+    for (const file of jsonFiles) {
+      const key = path.basename(file, ".json");
+      const importPath = `./${path.relative(path.dirname(this.entryFilePath), path.join(this.outDir, file)).replace(/\\/g, "/")}`;
+      imports.push(`import ${key} from "${importPath}";`);
+      spreads.push(`...${key}`);
+    }
+
+    const content = `${imports.join("\n")}
+
+const module = {
+  ${spreads.join(",\n  ")}
+};
+
+export default module;
+`;
+
+    await fs.mkdir(path.dirname(this.entryFilePath), { recursive: true });
+    await fs.writeFile(this.entryFilePath, content, "utf-8");
+  }
+
   async build(): Promise<void> {
     for (const p of this.paths) {
       const absPath = path.resolve(p);
@@ -114,26 +150,33 @@ export class JSONBuilder {
 
       if (this.useTokensInSeparateFiles) {
         for (const [key, value] of Object.entries(subtree)) {
-          const fileName = `${key}.${this.format}`;
-          const outPath = path.join(this.outDir, fileName);
-          await this.writeFile(outPath, value);
+          const outPath = path.join(this.outDir, `${key}.${this.format}`);
+          const dataToWrite = this.includeRootNames ? { [key]: value } : value;
+          await this.writeFile(outPath, dataToWrite);
         }
       } else {
-        const dataToMerge = this.includeRootDirName
-          ? { [path.basename(absPath)]: subtree }
-          : subtree;
+        // Если includeRootDirName = true, оборачиваем subtree в имя root dir
+        const rootKey = this.includeRootDirName ? path.basename(absPath) : null;
+        const dataToMerge = rootKey ? { [rootKey]: subtree } : subtree;
 
         const outPath = path.join(this.outDir, `tokens.${this.format}`);
 
         let existingData: any = {};
         try {
           const raw = await fs.readFile(outPath, "utf-8");
-          existingData = this.format === "json" ? JSON.parse(raw) : raw;
+          existingData =
+            this.format === "json"
+              ? JSON.parse(raw)
+              : this.format === "yaml"
+                ? yaml.load(raw)
+                : raw;
         } catch {}
 
         const merged = this.deepMerge(existingData, dataToMerge);
         await this.writeFile(outPath, merged);
       }
     }
+
+    await this.buildEntryFile();
   }
 }

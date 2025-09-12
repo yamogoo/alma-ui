@@ -1,0 +1,104 @@
+{
+  "app": {
+    "en": {
+      "about": {
+        "title": "Sparkpad",
+        "description": "Sparkpad is a free and open-source note-taking application designed to help you organize your thoughts, ideas, and tasks efficiently. With a user-friendly interface and powerful features, Sparkpad makes it easy to capture and manage your notes on the go.",
+        "version": "version",
+        "author": "Misha Grebennikov",
+        "repository": "repository",
+        "license": "license"
+      },
+      "auth": {
+        "login": {
+          "form": {
+            "title": "Sign in",
+            "description": "Create an account and sign in to keep your data saved and synchronized on the server",
+            "userName": "user name",
+            "password": "password",
+            "login": "login",
+            "skip": "continue without login",
+            "forgotPassword": "forgot password?",
+            "register": "register"
+          }
+        },
+        "signin": {
+          "form": {
+            "title": "Sign up",
+            "description": "Enter your credentials to access your account",
+            "userName": "user name",
+            "email": "email",
+            "password": "password",
+            "repeatPassword": "repeat password",
+            "signIn": "sign in",
+            "forgotPassword": "forgot password?",
+            "register": "register"
+          }
+        }
+      },
+      "common": {
+        "version": "version"
+      },
+      "locales": {
+        "en": {
+          "value": "en",
+          "word": "english"
+        },
+        "ru": {
+          "value": "ru",
+          "word": "russian"
+        }
+      }
+    },
+    "ru": {
+      "about": {
+        "title": "Sparkpad",
+        "description": "Sparkpad — это бесплатное приложение с открытым исходным кодом для создания заметок, призванное помочь вам эффективно организовать мысли, идеи и задачи. Благодаря удобному интерфейсу и мощным функциям Sparkpad позволяет легко создавать и управлять заметками где угодно.",
+        "version": "версия",
+        "author": "Миша Гребенников",
+        "repository": "репозиторий",
+        "license": "лицензия"
+      },
+      "auth": {
+        "login": {
+          "form": {
+            "title": "Войти",
+            "description": "Создайте аккаунт и войдите, чтобы ваши данные были сохранены и синхронизированы на сервере",
+            "userName": "имя пользователя",
+            "password": "пароль",
+            "login": "войти",
+            "skip": "продолжить без входа",
+            "forgotPassword": "зыбыли пароль?",
+            "register": "регистрация"
+          }
+        },
+        "signin": {
+          "form": {
+            "title": "Регистрация",
+            "description": "Введите свои учетные данные для доступа к вашей учетной записи",
+            "userName": "имя пользователя",
+            "email": "email",
+            "password": "пароль",
+            "repeatPassword": "повторите пароль",
+            "signIn": "регистрация",
+            "forgotPassword": "забыли пароль?",
+            "register": "регистриация"
+          }
+        }
+      },
+      "common": {
+        "version": "версия"
+      },
+      "locales": {
+        "en": {
+          "value": "en",
+          "word": "английский"
+        },
+        "ru": {
+          "value": "ру",
+          "word": "русский"
+        }
+      }
+    }
+  }
+}

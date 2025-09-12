@@ -1,3 +1,7 @@
-import app from "./app";
+import app from "./build/app.json";
 
-export default { app };
+const module = {
+  ...app
+};
+
+export default module;

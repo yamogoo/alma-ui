@@ -3,7 +3,7 @@
 import { Plugin } from "vite";
 import chokidar from "chokidar";
 
-import { TokensParser, type TokensParserOptions } from "./tokensParser";
+import { TokensParser, type TokensParserOptions } from "./TokensParser";
 
 interface ViteTokensPluginOptions extends TokensParserOptions {}
 
