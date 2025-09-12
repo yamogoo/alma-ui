@@ -78,6 +78,7 @@ export default (opts: { mode: string }) => {
           paths: ["./design-system/tokens/src"],
           includeRootDirName: false,
         },
+        useReflectOriginalStructure: true,
       }),
       TokensParserPlugin({
         source: "./src/tokens/.cache",

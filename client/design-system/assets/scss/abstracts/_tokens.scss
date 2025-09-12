@@ -5,242 +5,138 @@ $gap:(
   xxs: (
   value: 4px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Extra extra small gap",
-  category: "spacing"
-)
+  unit: "px"
 ),
   xs: (
   value: 10px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Extra small gap",
-  category: "spacing"
-)
+  unit: "px"
 ),
   sm: (
   value: 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Small gap",
-  category: "spacing"
-)
+  unit: "px"
 ),
   md: (
   value: 14px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Medium gap",
-  category: "spacing"
-)
+  unit: "px"
 ),
   lg: (
   value: 24px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Large gap",
-  category: "spacing"
-)
+  unit: "px"
 ),
   xl: (
   value: 32px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Extra large gap",
-  category: "spacing"
-)
+  unit: "px"
 )
 );
 $outline:(
   value: 1px,
   type: "border",
-  unit: "px",
-  meta: (
-  description: "Default outline width",
-  category: "border"
-)
+  unit: "px"
 );
 $roundness:(
   xxs: (
   value: 4px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Extra extra small border radius",
-  category: "radius"
-)
+  unit: "px"
 ),
   xs: (
   value: 8px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Extra small border radius",
-  category: "radius"
-)
+  unit: "px"
 ),
   sm: (
   value: 12px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Small border radius",
-  category: "radius"
-)
+  unit: "px"
 ),
   md: (
   value: 16px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Medium border radius",
-  category: "radius"
-)
+  unit: "px"
 ),
   lg: (
   value: 20px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Large border radius",
-  category: "radius"
-)
+  unit: "px"
 ),
   xl: (
   value: 24px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Extra large border radius",
-  category: "radius"
-)
+  unit: "px"
 ),
   xxl: (
   value: 32px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Extra extra large border radius",
-  category: "radius"
-)
+  unit: "px"
 ),
   infinity: (
   value: 9999px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Fully rounded / pill shape",
-  category: "radius"
-)
+  unit: "px"
 )
 );
 $spacing:(
   xxs: (
   value: 4px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Extra extra small spacing",
-  category: "spacing"
-)
+  unit: "px"
 ),
   xs: (
   value: 8px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Extra small spacing",
-  category: "spacing"
-)
+  unit: "px"
 ),
   sm: (
   value: 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Small spacing",
-  category: "spacing"
-)
+  unit: "px"
 ),
   md: (
   value: 16px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Medium spacing",
-  category: "spacing"
-)
+  unit: "px"
 ),
   lg: (
   value: 24px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Large spacing",
-  category: "spacing"
-)
+  unit: "px"
 ),
   xl: (
   value: 32px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Extra large spacing",
-  category: "spacing"
-)
+  unit: "px"
 ),
   xxl: (
   value: 48px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Extra extra large spacing",
-  category: "spacing"
-)
+  unit: "px"
 )
 );
 $stroke:(
   sm: (
   value: 1px,
   type: "border",
-  unit: "px",
-  meta: (
-  description: "Thin stroke width",
-  category: "border"
-)
+  unit: "px"
 ),
   md: (
   value: 2px,
   type: "border",
-  unit: "px",
-  meta: (
-  description: "Medium stroke width",
-  category: "border"
-)
+  unit: "px"
 ),
   lg: (
   value: 3px,
   type: "border",
-  unit: "px",
-  meta: (
-  description: "Large stroke width",
-  category: "border"
-)
+  unit: "px"
 ),
   xl: (
   value: 4px,
   type: "border",
-  unit: "px",
-  meta: (
-  description: "Extra large stroke width",
-  category: "border"
-)
+  unit: "px"
 )
 );
 $touch-area:(
@@ -248,11 +144,11 @@ $touch-area:(
   size: (
   value: 36px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Small touch target area",
-  category: "size"
-)
+  unit: "px"
 )
 )
 );
+
+:root {
+  --scale-factor: 1;
+}

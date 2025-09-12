@@ -5,24 +5,10 @@ $config:(
   scale-factor: (
   value: 1,
   type: "number",
-  unit: "",
-  meta: (
-  description: "Global font scale factor to unify font sizes across platforms. Implementation for mobile platforms is not active yet",
-  category: "typography",
-  build: (
-  web: (
-  exportAsVar: "true",
-  varName: "--scale-factor"
-),
-  ios: (
-  applyMultiplier: "true",
-  status: "unused"
-),
-  android: (
-  applyMultiplier: "true",
-  status: "unused"
-)
-)
-)
+  unit: ""
 )
 );
+
+:root {
+  --scale-factor: 1;
+}

@@ -9,29 +9,17 @@ $action-sheet:(
   min-height: (
   value: 32px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Minimum height of large action sheet",
-  category: "actionSheet"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 16px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius for large action sheet",
-  category: "actionSheet"
-)
+  unit: "px"
 ),
   padding: (
   value: 48px 24px 24px 24px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside large action sheet",
-  category: "actionSheet"
-)
+  unit: "px"
 )
 )
 ),
@@ -41,29 +29,17 @@ $action-sheet:(
   min-height: (
   value: 32px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Minimum height of medium action sheet",
-  category: "actionSheet"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 12px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius for medium action sheet",
-  category: "actionSheet"
-)
+  unit: "px"
 ),
   padding: (
   value: 24px 24px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside medium action sheet",
-  category: "actionSheet"
-)
+  unit: "px"
 )
 )
 )
@@ -77,38 +53,22 @@ $button:(
   size: (
   value: 56px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Button height for large default button",
-  category: "button"
-)
+  unit: "px"
 ),
   gap: (
   value: 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Gap between button elements",
-  category: "button"
-)
+  unit: "px"
 ),
   padding: (
   value: 0px 32px 0px 32px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside large default button",
-  category: "button"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 9999px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius for large default button",
-  category: "button"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -116,30 +76,18 @@ $button:(
   font-style: (
   value: label-1,
   type: "alias",
-  unit: "",
-  meta: (
-  description: "Font style for button label",
-  category: "typography"
-)
+  unit: ""
 )
 ),
   icon: (
   size: (
   value: 20px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Icon size in large default button",
-  category: "button"
-)
+  unit: "px"
 ),
   alias: (
   size: (
-  value: sm,
-  meta: (
-  description: "Alias for icon size",
-  category: "button"
-)
+  value: sm
 )
 )
 )
@@ -151,38 +99,22 @@ $button:(
   size: (
   value: 44px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Medium default button height",
-  category: "button"
-)
+  unit: "px"
 ),
   gap: (
   value: 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Gap between elements",
-  category: "button"
-)
+  unit: "px"
 ),
   padding: (
   value: 0px 24px 0px 24px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside medium button",
-  category: "button"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 9999px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius for medium button",
-  category: "button"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -190,30 +122,18 @@ $button:(
   font-style: (
   value: label-2,
   type: "alias",
-  unit: "",
-  meta: (
-  description: "Font style for button label",
-  category: "typography"
-)
+  unit: ""
 )
 ),
   icon: (
   size: (
   value: 16px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Icon size in medium button",
-  category: "button"
-)
+  unit: "px"
 ),
   alias: (
   size: (
-  value: xs,
-  meta: (
-  description: "Alias for icon size",
-  category: "button"
-)
+  value: xs
 )
 )
 )
@@ -225,38 +145,22 @@ $button:(
   size: (
   value: 40px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Small default button height",
-  category: "button"
-)
+  unit: "px"
 ),
   gap: (
   value: 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Gap between elements",
-  category: "button"
-)
+  unit: "px"
 ),
   padding: (
   value: 0px 12px 0px 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside small button",
-  category: "button"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 9999px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius for small button",
-  category: "button"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -264,30 +168,18 @@ $button:(
   font-style: (
   value: label-3,
   type: "alias",
-  unit: "",
-  meta: (
-  description: "Font style for button label",
-  category: "typography"
-)
+  unit: ""
 )
 ),
   icon: (
   size: (
   value: 16px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Icon size in small button",
-  category: "button"
-)
+  unit: "px"
 ),
   alias: (
   size: (
-  value: xs,
-  meta: (
-  description: "Alias for icon size",
-  category: "button"
-)
+  value: xs
 )
 )
 )
@@ -299,38 +191,22 @@ $button:(
   size: (
   value: 36px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Extra small default button height",
-  category: "button"
-)
+  unit: "px"
 ),
   gap: (
   value: 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Gap between elements",
-  category: "button"
-)
+  unit: "px"
 ),
   padding: (
   value: 0px 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside extra small button",
-  category: "button"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 9999px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius for extra small button",
-  category: "button"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -338,30 +214,18 @@ $button:(
   font-style: (
   value: label-3,
   type: "alias",
-  unit: "",
-  meta: (
-  description: "Font style for button label",
-  category: "typography"
-)
+  unit: ""
 )
 ),
   icon: (
   size: (
   value: 12px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Icon size in extra small button",
-  category: "button"
-)
+  unit: "px"
 ),
   alias: (
   size: (
-  value: xxs,
-  meta: (
-  description: "Alias for icon size",
-  category: "button"
-)
+  value: xxs
 )
 )
 )
@@ -375,38 +239,22 @@ $button:(
   size: (
   value: 56px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Large rounded button height",
-  category: "button"
-)
+  unit: "px"
 ),
   gap: (
   value: 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Gap between elements",
-  category: "button"
-)
+  unit: "px"
 ),
   padding: (
   value: 0px 0px 0px 0px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside large rounded button",
-  category: "button"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 9999px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius for large rounded button",
-  category: "button"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -414,30 +262,18 @@ $button:(
   font-style: (
   value: label-1,
   type: "alias",
-  unit: "",
-  meta: (
-  description: "Font style for button label",
-  category: "typography"
-)
+  unit: ""
 )
 ),
   icon: (
   size: (
   value: 20px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Icon size in large rounded button",
-  category: "button"
-)
+  unit: "px"
 ),
   alias: (
   size: (
-  value: sm,
-  meta: (
-  description: "Alias for icon size",
-  category: "button"
-)
+  value: sm
 )
 )
 )
@@ -449,38 +285,22 @@ $button:(
   size: (
   value: 44px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Medium rounded button height",
-  category: "button"
-)
+  unit: "px"
 ),
   gap: (
   value: 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Gap between elements",
-  category: "button"
-)
+  unit: "px"
 ),
   padding: (
   value: 0px 0px 0px 0px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside medium rounded button",
-  category: "button"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 9999px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius for medium rounded button",
-  category: "button"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -488,30 +308,18 @@ $button:(
   font-style: (
   value: label-3,
   type: "alias",
-  unit: "",
-  meta: (
-  description: "Font style for button label",
-  category: "typography"
-)
+  unit: ""
 )
 ),
   icon: (
   size: (
   value: 16px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Icon size in medium rounded button",
-  category: "button"
-)
+  unit: "px"
 ),
   alias: (
   size: (
-  value: xs,
-  meta: (
-  description: "Alias for icon size",
-  category: "button"
-)
+  value: xs
 )
 )
 )
@@ -523,38 +331,22 @@ $button:(
   size: (
   value: 32px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Small rounded button height",
-  category: "button"
-)
+  unit: "px"
 ),
   gap: (
   value: 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Gap between elements",
-  category: "button"
-)
+  unit: "px"
 ),
   padding: (
   value: 0px 24px 0px 24px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside small rounded button",
-  category: "button"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 9999px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius for small rounded button",
-  category: "button"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -562,30 +354,18 @@ $button:(
   font-style: (
   value: label-4,
   type: "alias",
-  unit: "",
-  meta: (
-  description: "Font style for button label",
-  category: "typography"
-)
+  unit: ""
 )
 ),
   icon: (
   size: (
   value: 16px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Icon size in small rounded button",
-  category: "button"
-)
+  unit: "px"
 ),
   alias: (
   size: (
-  value: xs,
-  meta: (
-  description: "Alias for icon size",
-  category: "button"
-)
+  value: xs
 )
 )
 )
@@ -597,38 +377,22 @@ $button:(
   size: (
   value: 24px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Extra small rounded button height",
-  category: "button"
-)
+  unit: "px"
 ),
   gap: (
   value: 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Gap between elements",
-  category: "button"
-)
+  unit: "px"
 ),
   padding: (
   value: 0px 24px 0px 24px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside extra small rounded button",
-  category: "button"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 9999px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius for extra small rounded button",
-  category: "button"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -636,30 +400,18 @@ $button:(
   font-style: (
   value: label-4,
   type: "alias",
-  unit: "",
-  meta: (
-  description: "Font style for button label",
-  category: "typography"
-)
+  unit: ""
 )
 ),
   icon: (
   size: (
   value: 12px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Icon size in extra small rounded button",
-  category: "button"
-)
+  unit: "px"
 ),
   alias: (
   size: (
-  value: xxs,
-  meta: (
-  description: "Alias for icon size",
-  category: "button"
-)
+  value: xxs
 )
 )
 )
@@ -676,11 +428,7 @@ $carousel-stack:(
   padding: (
   value: 24px 24px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding for the header inside large carousel stack",
-  category: "carouselStack"
-)
+  unit: "px"
 )
 )
 )
@@ -692,11 +440,7 @@ $carousel-stack:(
   padding: (
   value: 16px 16px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding for the header inside medium carousel stack",
-  category: "carouselStack"
-)
+  unit: "px"
 )
 )
 )
@@ -741,26 +485,17 @@ $control-wrapper:(
   gap: (
   value: 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  category: "control wrapper"
-)
+  unit: "px"
 ),
   padding-v: (
   value: 0px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  category: "control wrapper"
-)
+  unit: "px"
 ),
   padding-h: (
   value: 8px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  category: "control wrapper"
-)
+  unit: "px"
 )
 )
 )
@@ -774,20 +509,12 @@ $divider:(
   border-width: (
   value: 1px,
   type: "border",
-  unit: "px",
-  meta: (
-  description: "Divider border width for large size",
-  category: "divider"
-)
+  unit: "px"
 ),
   padding: (
   value: 16px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding around the divider for large size",
-  category: "divider"
-)
+  unit: "px"
 )
 )
 ),
@@ -797,20 +524,12 @@ $divider:(
   border-width: (
   value: 1px,
   type: "border",
-  unit: "px",
-  meta: (
-  description: "Divider border width for medium size",
-  category: "divider"
-)
+  unit: "px"
 ),
   padding: (
   value: 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding around the divider for medium size",
-  category: "divider"
-)
+  unit: "px"
 )
 )
 ),
@@ -820,20 +539,12 @@ $divider:(
   border-width: (
   value: 1px,
   type: "border",
-  unit: "px",
-  meta: (
-  description: "Divider border width for small size",
-  category: "divider"
-)
+  unit: "px"
 ),
   padding: (
   value: 8px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding around the divider for small size",
-  category: "divider"
-)
+  unit: "px"
 )
 )
 ),
@@ -843,20 +554,12 @@ $divider:(
   border-width: (
   value: 1px,
   type: "border",
-  unit: "px",
-  meta: (
-  description: "Divider border width for extra small size",
-  category: "divider"
-)
+  unit: "px"
 ),
   padding: (
   value: 0px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "No padding for extra small divider",
-  category: "divider"
-)
+  unit: "px"
 )
 )
 )
@@ -870,20 +573,12 @@ $drop-down:(
   min-width: (
   value: 76px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Minimum width of large dropdown",
-  category: "dropDown"
-)
+  unit: "px"
 ),
   height: (
   value: 56px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Height of large dropdown",
-  category: "dropDown"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -893,22 +588,14 @@ $drop-down:(
   label: (
   font-style: (
   value: label-2,
-  type: "alias",
-  meta: (
-  description: "Font style for dropdown value label",
-  category: "typography"
-)
+  type: "alias"
 )
 ),
   icon: (
   size: (
   value: 12px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Icon size for dropdown value",
-  category: "dropDown"
-)
+  unit: "px"
 )
 )
 ),
@@ -916,29 +603,17 @@ $drop-down:(
   gap: (
   value: 8px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Gap inside dropdown value component",
-  category: "dropDown"
-)
+  unit: "px"
 ),
   padding: (
   value: 8px 12px 8px 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside dropdown value component",
-  category: "dropDown"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 8px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius of dropdown value component",
-  category: "dropDown"
-)
+  unit: "px"
 )
 )
 ),
@@ -946,20 +621,12 @@ $drop-down:(
   padding: (
   value: 8px 12px 8px 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside dropdown options",
-  category: "dropDown"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 8px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius for dropdown options",
-  category: "dropDown"
-)
+  unit: "px"
 )
 )
 ),
@@ -967,20 +634,12 @@ $drop-down:(
   padding: (
   value: 8px 12px 8px 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding tokens for large dropdown",
-  category: "dropDown"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 8px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius token for large dropdown",
-  category: "dropDown"
-)
+  unit: "px"
 )
 )
 ),
@@ -990,20 +649,12 @@ $drop-down:(
   min-width: (
   value: 76px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Minimum width of medium dropdown",
-  category: "dropDown"
-)
+  unit: "px"
 ),
   height: (
   value: 44px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Height of medium dropdown",
-  category: "dropDown"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -1013,22 +664,14 @@ $drop-down:(
   label: (
   font-style: (
   value: label-3,
-  type: "alias",
-  meta: (
-  description: "Font style for dropdown value label",
-  category: "typography"
-)
+  type: "alias"
 )
 ),
   icon: (
   size: (
   value: 12px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Icon size for dropdown value",
-  category: "dropDown"
-)
+  unit: "px"
 )
 )
 ),
@@ -1036,29 +679,17 @@ $drop-down:(
   gap: (
   value: 8px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Gap inside dropdown value component",
-  category: "dropDown"
-)
+  unit: "px"
 ),
   padding: (
   value: 8px 12px 8px 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside dropdown value component",
-  category: "dropDown"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 8px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius of dropdown value component",
-  category: "dropDown"
-)
+  unit: "px"
 )
 )
 ),
@@ -1066,20 +697,12 @@ $drop-down:(
   padding: (
   value: 8px 12px 8px 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside dropdown options",
-  category: "dropDown"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 8px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius for dropdown options",
-  category: "dropDown"
-)
+  unit: "px"
 )
 )
 ),
@@ -1087,20 +710,12 @@ $drop-down:(
   padding: (
   value: 8px 12px 8px 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding tokens for medium dropdown",
-  category: "dropDown"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 8px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius token for medium dropdown",
-  category: "dropDown"
-)
+  unit: "px"
 )
 )
 )
@@ -1114,20 +729,12 @@ $form:(
   padding: (
   value: 16px 24px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside the form",
-  category: "form"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 16px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius of the form",
-  category: "form"
-)
+  unit: "px"
 )
 )
 )
@@ -1141,29 +748,17 @@ $form-wrapper:(
   padding: (
   value: 16px 24px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside the form wrapper",
-  category: "formWrapper"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 20px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius of the form wrapper",
-  category: "formWrapper"
-)
+  unit: "px"
 ),
   border-width: (
   value: 0px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Border width of the form wrapper",
-  category: "formWrapper"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -1171,11 +766,7 @@ $form-wrapper:(
   padding: (
   value: 12px 0px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding for the header inside the form wrapper",
-  category: "formWrapper"
-)
+  unit: "px"
 )
 )
 )
@@ -1190,20 +781,12 @@ $group:(
   gap: (
   value: 24px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Gap between elements in large group",
-  category: "group"
-)
+  unit: "px"
 ),
   border-width: (
   value: 1px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Border width for large group",
-  category: "group"
-)
+  unit: "px"
 )
 )
 ),
@@ -1213,20 +796,12 @@ $group:(
   gap: (
   value: 16px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Gap between elements in medium group",
-  category: "group"
-)
+  unit: "px"
 ),
   border-width: (
   value: 1px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Border width for medium group",
-  category: "group"
-)
+  unit: "px"
 )
 )
 ),
@@ -1236,20 +811,12 @@ $group:(
   gap: (
   value: 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Gap between elements in small group",
-  category: "group"
-)
+  unit: "px"
 ),
   border-width: (
   value: 1px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Border width for small group",
-  category: "group"
-)
+  unit: "px"
 )
 )
 )
@@ -1263,14 +830,7 @@ $icon:(
   size: (
   value: 12px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Extra extra small icon size",
-  category: "icon",
-  tags: (
-    "ui", "icon"
-  )
-)
+  unit: "px"
 )
 )
 ),
@@ -1280,14 +840,7 @@ $icon:(
   size: (
   value: 16px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Extra small icon size",
-  category: "icon",
-  tags: (
-    "ui", "icon"
-  )
-)
+  unit: "px"
 )
 )
 ),
@@ -1297,14 +850,7 @@ $icon:(
   size: (
   value: 20px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Small icon size",
-  category: "icon",
-  tags: (
-    "ui", "icon"
-  )
-)
+  unit: "px"
 )
 )
 ),
@@ -1314,14 +860,7 @@ $icon:(
   size: (
   value: 24px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Medium icon size",
-  category: "icon",
-  tags: (
-    "ui", "icon"
-  )
-)
+  unit: "px"
 )
 )
 ),
@@ -1331,14 +870,7 @@ $icon:(
   size: (
   value: 32px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Large icon size",
-  category: "icon",
-  tags: (
-    "ui", "icon"
-  )
-)
+  unit: "px"
 )
 )
 ),
@@ -1348,14 +880,7 @@ $icon:(
   size: (
   value: 48px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Extra large icon size",
-  category: "icon",
-  tags: (
-    "ui", "icon"
-  )
-)
+  unit: "px"
 )
 )
 ),
@@ -1365,14 +890,7 @@ $icon:(
   size: (
   value: 56px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Extra extra large icon size",
-  category: "icon",
-  tags: (
-    "ui", "icon"
-  )
-)
+  unit: "px"
 )
 )
 )
@@ -1386,87 +904,51 @@ $input:(
   height: (
   value: 44px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Height of the input field for medium size",
-  category: "input"
-)
+  unit: "px"
 ),
   whole-height: (
   value: 60px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Total height including padding for medium input",
-  category: "input"
-)
+  unit: "px"
 ),
   padding: (
   value: 8px 16px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Horizontal padding for medium input",
-  category: "input"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 16px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius for medium input",
-  category: "input"
-)
+  unit: "px"
 )
 ),
   elements: (
   value: (
   font-style: (
   value: label-3,
-  type: "alias",
-  meta: (
-  description: "Font style for input value text",
-  category: "typography"
-)
+  type: "alias"
 ),
   padding-top: (
   value: 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Top padding for input value text",
-  category: "input"
-)
+  unit: "px"
 )
 ),
   placeholder: (
   font-style: (
   value: label-3,
-  type: "alias",
-  meta: (
-  description: "Font style for placeholder text",
-  category: "typography"
-)
+  type: "alias"
 )
 ),
   error: (
   font-style: (
   value: caption-1,
-  type: "alias",
-  meta: (
-  description: "Font style for error text",
-  category: "typography"
-)
+  type: "alias"
 ),
   padding: (
   value: 0px 16px 0px 16px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding for error message",
-  category: "input"
-)
+  unit: "px"
 )
 )
 )
@@ -1477,87 +959,51 @@ $input:(
   height: (
   value: 52px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Height of the input field for large size",
-  category: "input"
-)
+  unit: "px"
 ),
   whole-height: (
   value: 68px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Total height including padding for large input",
-  category: "input"
-)
+  unit: "px"
 ),
   padding: (
   value: 8px 16px 8px 16px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding for large input",
-  category: "input"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 8px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius for large input",
-  category: "input"
-)
+  unit: "px"
 )
 ),
   elements: (
   value: (
   font-style: (
   value: label-3,
-  type: "alias",
-  meta: (
-  description: "Font style for input value text",
-  category: "typography"
-)
+  type: "alias"
 ),
   padding-top: (
   value: 12px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Top padding for input value text",
-  category: "input"
-)
+  unit: "px"
 )
 ),
   placeholder: (
   font-style: (
   value: label-3,
-  type: "alias",
-  meta: (
-  description: "Font style for placeholder text",
-  category: "typography"
-)
+  type: "alias"
 )
 ),
   error: (
   font-style: (
   value: caption-1,
-  type: "alias",
-  meta: (
-  description: "Font style for error text",
-  category: "typography"
-)
+  type: "alias"
 ),
   padding: (
   value: 0px 16px 0px 16px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding for error message",
-  category: "input"
-)
+  unit: "px"
 )
 )
 )
@@ -1567,43 +1013,25 @@ $input:(
 $main-container:(
   default: (
   type: "component",
-  meta: (
-  status: "unused"
-),
   self: (
   border-radius: (
   value: 16px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius of the main container",
-  category: "radius",
-  status: "unused"
-)
+  unit: "px"
 ),
   media: (
   lg: (
   padding: (
   value: 8px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding for large screens",
-  category: "spacing",
-  status: "unused"
-)
+  unit: "px"
 )
 ),
   md: (
   padding: (
   value: 8px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding for medium screens",
-  category: "spacing",
-  status: "unused"
-)
+  unit: "px"
 )
 )
 )
@@ -1618,20 +1046,12 @@ $options:(
   option: (
   font-style: (
   value: label-2,
-  type: "alias",
-  meta: (
-  description: "Font style for large dropdown option",
-  category: "typography"
-)
+  type: "alias"
 ),
   min-height: (
   value: 24px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Minimum height of large dropdown option",
-  category: "dropDown"
-)
+  unit: "px"
 )
 )
 )
@@ -1642,20 +1062,12 @@ $options:(
   option: (
   font-style: (
   value: label-3,
-  type: "alias",
-  meta: (
-  description: "Font style for medium dropdown option",
-  category: "typography"
-)
+  type: "alias"
 ),
   min-height: (
   value: 24px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Minimum height of medium dropdown option",
-  category: "dropDown"
-)
+  unit: "px"
 )
 )
 )
@@ -1670,18 +1082,12 @@ $progressbar:(
   height: (
   value: 10px,
   type: "size",
-  unit: "px",
-  meta: (
-  category: "progressbar"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 5px,
   type: "radius",
-  unit: "px",
-  meta: (
-  category: "progressbar"
-)
+  unit: "px"
 )
 )
 ),
@@ -1691,18 +1097,12 @@ $progressbar:(
   height: (
   value: 8px,
   type: "size",
-  unit: "px",
-  meta: (
-  category: "progressbar"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 4px,
   type: "radius",
-  unit: "px",
-  meta: (
-  category: "progressbar"
-)
+  unit: "px"
 )
 )
 )
@@ -1715,12 +1115,7 @@ $resizer:(
   active-area-width: (
   value: 20px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Width of the interactive area for the resizer",
-  category: "spacing",
-  usage: "Used internally by Vue3 Resize Bounding component only"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -1728,32 +1123,17 @@ $resizer:(
   width: (
   value: 76px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Width of the draggable knob",
-  category: "size",
-  usage: "Specific to vue3-resize-bounding"
-)
+  unit: "px"
 ),
   height: (
   value: 6px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Height of the draggable knob",
-  category: "size",
-  usage: "Specific to vue3-resize-bounding"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 3px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Corner radius of the knob",
-  category: "radius",
-  usage: "Specific to vue3-resize-bounding"
-)
+  unit: "px"
 )
 )
 )
@@ -1767,22 +1147,12 @@ $scrollbar:(
   width: (
   value: 3px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Width of the scrollbar thumb",
-  category: "size",
-  usage: "Internal use only"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 1.5px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Corner radius of the scrollbar thumb",
-  category: "radius",
-  usage: "Internal use only"
-)
+  unit: "px"
 )
 )
 )
@@ -1796,38 +1166,22 @@ $sheet:(
   min-height: (
   value: 32px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Minimum height of large action sheet",
-  category: "sheet"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 16px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius for large action sheet",
-  category: "sheet"
-)
+  unit: "px"
 ),
   gap: (
   value: 32px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Gap between elements inside large sheet",
-  category: "sheet"
-)
+  unit: "px"
 ),
   padding: (
   value: 48px 24px 24px 24px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside large sheet",
-  category: "sheet"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -1835,11 +1189,7 @@ $sheet:(
   offset: (
   value: 24px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Offset for buttons inside large sheet",
-  category: "sheet"
-)
+  unit: "px"
 )
 )
 )
@@ -1850,38 +1200,22 @@ $sheet:(
   min-height: (
   value: 32px,
   type: "size",
-  unit: "px",
-  meta: (
-  description: "Minimum height of large action sheet",
-  category: "sheet"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 16px,
   type: "radius",
-  unit: "px",
-  meta: (
-  description: "Border radius for large action sheet",
-  category: "sheet"
-)
+  unit: "px"
 ),
   gap: (
   value: 16px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Gap between elements inside medium sheet",
-  category: "sheet"
-)
+  unit: "px"
 ),
   padding: (
   value: 24px 24px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding inside medium sheet",
-  category: "sheet"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -1889,11 +1223,7 @@ $sheet:(
   offset: (
   value: 24px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Offset for buttons inside medium sheet",
-  category: "sheet"
-)
+  unit: "px"
 )
 )
 )
@@ -1908,20 +1238,12 @@ $step-pagination-tabs:(
   item: (
   font-style: (
   value: title-3,
-  type: "alias",
-  meta: (
-  description: "Font style for step pagination tab item on large screens",
-  category: "typography"
-)
+  type: "alias"
 ),
   padding: (
   value: 8px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding for step pagination tab item on large screens",
-  category: "spacing"
-)
+  unit: "px"
 )
 )
 )
@@ -1932,20 +1254,12 @@ $step-pagination-tabs:(
   item: (
   font-style: (
   value: title-4,
-  type: "alias",
-  meta: (
-  description: "Font style for step pagination tab item on medium screens",
-  category: "typography"
-)
+  type: "alias"
 ),
   padding: (
   value: 8px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  description: "Padding for step pagination tab item on medium screens",
-  category: "spacing"
-)
+  unit: "px"
 )
 )
 )
@@ -1959,26 +1273,17 @@ $toggle-switch:(
   width: (
   value: 40px,
   type: "size",
-  unit: "px",
-  meta: (
-  category: "toggle switch"
-)
+  unit: "px"
 ),
   height: (
   value: 20px,
   type: "size",
-  unit: "px",
-  meta: (
-  category: "toggle switch"
-)
+  unit: "px"
 ),
   gap: (
   value: 10px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  category: "toggle switch"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -1986,18 +1291,12 @@ $toggle-switch:(
   padding: (
   value: 2px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  category: "toggle switch"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 10px,
   type: "radius",
-  unit: "px",
-  meta: (
-  category: "toggle switch"
-)
+  unit: "px"
 )
 ),
   label: (
@@ -2013,26 +1312,17 @@ $toggle-switch:(
   width: (
   value: 36px,
   type: "size",
-  unit: "px",
-  meta: (
-  category: "toggle switch"
-)
+  unit: "px"
 ),
   height: (
   value: 18px,
   type: "size",
-  unit: "px",
-  meta: (
-  category: "toggle switch"
-)
+  unit: "px"
 ),
   gap: (
   value: 10px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  category: "toggle switch"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -2040,18 +1330,12 @@ $toggle-switch:(
   padding: (
   value: 2px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  category: "toggle switch"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 7px,
   type: "radius",
-  unit: "px",
-  meta: (
-  category: "toggle switch"
-)
+  unit: "px"
 )
 ),
   label: (
@@ -2067,26 +1351,17 @@ $toggle-switch:(
   width: (
   value: 32px,
   type: "size",
-  unit: "px",
-  meta: (
-  category: "toggle switch"
-)
+  unit: "px"
 ),
   height: (
   value: 16px,
   type: "size",
-  unit: "px",
-  meta: (
-  category: "toggle switch"
-)
+  unit: "px"
 ),
   gap: (
   value: 10px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  category: "toggle switch"
-)
+  unit: "px"
 )
 ),
   elements: (
@@ -2094,18 +1369,12 @@ $toggle-switch:(
   padding: (
   value: 2px,
   type: "spacing",
-  unit: "px",
-  meta: (
-  category: "toggle switch"
-)
+  unit: "px"
 ),
   border-radius: (
   value: 6px,
   type: "radius",
-  unit: "px",
-  meta: (
-  category: "toggle switch"
-)
+  unit: "px"
 )
 ),
   label: (

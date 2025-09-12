@@ -5,61 +5,26 @@ $breakpoints:(
   xs: (
   value: 240px,
   type: "breakpoint",
-  unit: "px",
-  meta: (
-  description: "Extra small screens, phones",
-  category: "breakpoints",
-  tags: (
-    "mobile", "small"
-  )
-)
+  unit: "px"
 ),
   sm: (
   value: 480px,
   type: "breakpoint",
-  unit: "px",
-  meta: (
-  description: "Small screens, phones",
-  category: "breakpoints",
-  tags: (
-    "mobile"
-  )
-)
+  unit: "px"
 ),
   md: (
   value: 820px,
   type: "breakpoint",
-  unit: "px",
-  meta: (
-  description: "Medium screens, tablets",
-  category: "breakpoints",
-  tags: (
-    "tablet"
-  )
-)
+  unit: "px"
 ),
   lg: (
   value: 1280px,
   type: "breakpoint",
-  unit: "px",
-  meta: (
-  description: "Large screens, desktops",
-  category: "breakpoints",
-  tags: (
-    "desktop"
-  )
-)
+  unit: "px"
 ),
   xl: (
   value: 1440px,
   type: "breakpoint",
-  unit: "px",
-  meta: (
-  description: "Extra large screens, wide desktops",
-  category: "breakpoints",
-  tags: (
-    "desktop", "wide"
-  )
-)
+  unit: "px"
 )
 );
