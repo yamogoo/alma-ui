@@ -13,7 +13,7 @@ import {
 import {
   iconNames,
   iconStyles,
-  iconWeigths,
+  iconWeights,
 } from "@/components/atoms/icons/icon";
 
 const meta = {
@@ -45,7 +45,7 @@ const meta = {
     },
     prependIconWeight: {
       control: "select",
-      options: iconWeigths,
+      options: iconWeights,
     },
     appendIconName: {
       control: "select",
@@ -57,7 +57,7 @@ const meta = {
     },
     appendIconWeight: {
       control: "select",
-      options: iconWeigths,
+      options: iconWeights,
     },
     scalePressed: {
       control: "number",

@@ -1,18 +1,10 @@
 <script setup lang="ts">
 import { defineAsyncComponent, computed, markRaw } from "vue";
 
-import type { UIElementVariant } from "@/typings";
-
-import type {
-  IconName,
-  IconStyle,
-  IconWeight,
-  IconColor,
-  IconSize,
-} from "./icon";
+import type { IconProps } from "./icon";
 import { Skeleton } from "@/components/atoms";
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<IconProps>(), {
   variant: "default",
 });
 
@@ -25,17 +17,6 @@ const symbol = computed(() => {
     })
   );
 });
-</script>
-
-<script lang="ts">
-export interface Props {
-  variant?: UIElementVariant;
-  name: IconName;
-  style: IconStyle;
-  weight: IconWeight;
-  color?: IconColor;
-  size?: IconSize;
-}
 </script>
 
 <template>

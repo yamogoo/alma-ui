@@ -8,7 +8,7 @@ import { buttonModes, buttonSizes, buttonTones } from "./button";
 import {
   iconNames,
   iconStyles,
-  iconWeigths,
+  iconWeights,
 } from "@/components/atoms/icons/icon";
 
 const meta = {
@@ -40,7 +40,7 @@ const meta = {
     },
     iconWeight: {
       control: "select",
-      options: iconWeigths,
+      options: iconWeights,
     },
   },
   args: {

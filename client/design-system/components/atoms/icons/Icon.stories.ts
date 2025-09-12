@@ -6,7 +6,7 @@ import {
   iconColors,
   iconSizes,
   iconStyles,
-  iconWeigths,
+  iconWeights,
 } from "./icon";
 
 const meta = {
@@ -24,7 +24,7 @@ const meta = {
     },
     weight: {
       control: "select",
-      options: iconWeigths,
+      options: iconWeights,
     },
     size: { control: "select", options: iconSizes },
     color: {

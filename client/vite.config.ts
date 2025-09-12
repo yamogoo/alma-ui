@@ -15,6 +15,7 @@ import { TokensParserPlugin } from "./plugins/vite-plugin-tokens-parser";
 import { VitePluginTokenLinter } from "./plugins/vite-plugin-token-linter.ts";
 import { FlattenTokensParserPlugin } from "./plugins/vite-plugin-flatten-tokens-parser";
 import { JSONBuilderPlugin } from "./plugins/vite-plugin-json-builder";
+import { AlmaIconsPlugin } from "./plugins/vite-alma-icons-resolver";
 
 import VueRouterPlugin from "unplugin-vue-router/vite";
 
@@ -62,7 +63,12 @@ export default (opts: { mode: string }) => {
         dts: true,
       }),
       svgLoader(),
-      // Deign System Tokens and SCSS generation
+      // Design System: AlmaIcons
+      AlmaIconsPlugin({
+        source: "./design-system/assets/icons",
+        entryFilePath: "./design-system/assets/icons/index.ts",
+      }),
+      // Deign System: Tokens and SCSS generation
       ColorsGeneratorPlugin({
         source: "./design-system/tokens/src/baseColors.json",
         outDir: "./design-system/tokens/src/colors.json",
@@ -89,7 +95,7 @@ export default (opts: { mode: string }) => {
         source: "./design-system/tokens/build",
         outDir: "./design-system/tokens/figma",
       }),
-      // Application Tokens and SCSS generation
+      // Application: Tokens and SCSS generation
       TokensParserPlugin({
         source: "./src/tokens/.cache",
         outDir: "./src/assets/scss/abstracts",
