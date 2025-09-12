@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { nextTick, ref, watch } from "vue";
-import gsap from "gsap";
+import g from "gsap";
 
 import type { AnimatedWrapperProps } from "./animatedWrapper";
 
@@ -23,7 +23,7 @@ watch(
 
     const { duration } = props;
 
-    gsap.fromTo(
+    g.fromTo(
       el,
       { height: prevHeight },
       {
@@ -50,6 +50,5 @@ watch(
 <style lang="scss">
 .animated-wrapper {
   position: relative;
-  /* overflow: hidden; */
 }
 </style>
