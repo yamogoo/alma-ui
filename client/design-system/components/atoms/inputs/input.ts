@@ -4,18 +4,18 @@ import type { UIElementUnionProps } from "@/typings";
 
 import tokens from "@/tokens";
 
-export const inputSizes = Object.keys(tokens.input.default);
+export const inputSizes = Object.keys(tokens.atoms.input.default);
 export type InputSize = (typeof inputSizes)[number];
 
-export type InputColor = keyof typeof tokens.themes.light.input;
-export const inputColors = Object.keys(tokens.themes.light.input);
+export type InputMode = keyof typeof tokens.themes.light.atoms.input;
+export const inputModes = Object.keys(tokens.themes.light.atoms.input);
 
 export type InputState = "focused";
 
 export interface InputProps extends Partial<UIElementUnionProps> {
   value: string;
   placeholder?: string;
-  color?: InputColor;
+  mode?: InputMode;
   isError?: boolean;
   isFocused?: boolean;
   isDisabled?: boolean;

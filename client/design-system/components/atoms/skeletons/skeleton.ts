@@ -1,7 +1,7 @@
 import tokens from "@/tokens";
 
-export type SkeletonColor = keyof typeof tokens.themes.light.skeleton;
+export type SkeletonMode = keyof typeof tokens.themes.light.atoms.skeleton;
 
 export interface SkeletonProps {
-  color?: SkeletonColor;
+  mode?: SkeletonMode;
 }

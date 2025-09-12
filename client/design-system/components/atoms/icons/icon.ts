@@ -10,22 +10,20 @@ export type IconStyle = (typeof iconStyles)[number];
 
 export type IconWeight = (typeof iconWeights)[number];
 
-export const iconColors = Object.keys(tokens.themes.light.label);
+export type IconMode = keyof typeof tokens.themes.light.abstracts.label;
+export const iconModes = Object.keys(tokens.themes.light.abstracts.label);
 
-export type IconColor = keyof typeof tokens.themes.light.label;
-
-export const iconSizes = Object.keys(tokens.icon.default) as Array<
-  keyof typeof tokens.icon.default
+export type IconSize = keyof typeof tokens.atoms.icon.default;
+export const iconSizes = Object.keys(tokens.atoms.icon.default) as Array<
+  keyof typeof tokens.atoms.icon.default
 >;
-
-export type IconSize = (typeof iconSizes)[number];
 
 export interface IconProps {
   variant?: UIElementVariant;
   name: IconName;
   style: IconStyle;
   weight: IconWeight;
-  color?: IconColor;
+  mode?: IconMode;
   size?: IconSize;
 }
 

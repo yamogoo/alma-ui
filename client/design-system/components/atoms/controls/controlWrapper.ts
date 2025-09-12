@@ -1,15 +1,16 @@
 import tokens from "@/tokens";
 
-export type ControlWrapperVariant = keyof typeof tokens.controlWrapper;
+export type ControlWrapperVariant = keyof typeof tokens.atoms.controlWrapper;
 
 export const controlWrapperVariants = Object.keys(
-  tokens.controlWrapper
+  tokens.atoms.controlWrapper
 ) as ControlWrapperVariant[];
 
-export type ControlWrapperSize = keyof typeof tokens.controlWrapper.default;
+export type ControlWrapperSize =
+  keyof typeof tokens.atoms.controlWrapper.default;
 
 export const controlWrapperSizes = Object.keys(
-  tokens.controlWrapper.default
+  tokens.atoms.controlWrapper.default
 ) as ControlWrapperSize[];
 
 export interface ControlWrapperProps {

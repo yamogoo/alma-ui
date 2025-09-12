@@ -1,0 +1,35 @@
+{
+  "default": {
+    "primary": {
+      "elements": {
+        "label": {
+          "normal": {
+            "value": "{themes.themes.light.abstracts.label.primary.value}",
+            "type": "color",
+            "unit": "hex",
+            "meta": {
+              "category": "logo with descriptor"
+            }
+          },
+          "hovered": {
+            "value": "rgba({themes.themes.light.abstracts.label.primary.value}, 0.8)",
+            "type": "color",
+            "unit": "hex",
+            "meta": {
+              "category": "logo with descriptor"
+            }
+          },
+          "pressed": {
+            "value": "rgba({themes.themes.light.abstracts.label.primary.value}, 0.8)",
+            "type": "color",
+            "unit": "hex",
+            "meta": {
+              "category": "logo with descriptor"
+            }
+          }
+        }
+      }
+    },
+    "type": "component"
+  }
+}

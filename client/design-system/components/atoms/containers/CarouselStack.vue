@@ -316,7 +316,7 @@ const onLeave = (el: Element, done: () => void): void => {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSize($map: $carousel-stack) {
+@mixin defineSizes($map: get($atoms, "carousel-stack")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       $header-padding: get($val, "elements.header.padding");
@@ -334,7 +334,7 @@ const onLeave = (el: Element, done: () => void): void => {
 
 .carousel-stack {
   position: relative;
-  @include defineSize();
+  @include defineSizes();
 
   &__container {
     position: relative;

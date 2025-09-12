@@ -18,7 +18,7 @@ withDefaults(defineProps<SheetProps>(), {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSizes($map: $sheet) {
+@mixin defineSizes($map: get($atoms, "sheet")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       $min-height: px2rem(get($val, "self.min-height"));
@@ -34,12 +34,12 @@ withDefaults(defineProps<SheetProps>(), {
   }
 }
 
-@mixin defineTheme($names) {
-  @each $name in $names {
-    &_color-#{$name} {
+@mixin defineThemes($map: get($themes, "light.atoms.sheet")) {
+  @each $mode, $modes in $map {
+    &_mode-#{$mode} {
       @include themify($themes) {
-        background-color: themed("sheet.#{$name}.background.normal");
-        box-shadow: 0 -2px 12px themed("sheet.#{$name}.shadow.normal");
+        background-color: themed("atoms.sheet.#{$mode}.background.normal");
+        box-shadow: 0 -2px 12px themed("atoms.sheet.#{$mode}.shadow.normal");
       }
     }
   }
@@ -54,6 +54,6 @@ withDefaults(defineProps<SheetProps>(), {
   overflow: auto;
 
   @include defineSizes();
-  @include defineTheme(map.keys(get($themes, "light.sheet")));
+  @include defineThemes();
 }
 </style>

@@ -1,0 +1,18 @@
+{
+  "primary": {
+    "background": {
+      "value": "{themes.themes.light.abstracts.background.primary.value}"
+    },
+    "border": {
+      "value": "{themes.themes.light.abstracts.border.primary.value}"
+    }
+  },
+  "secondary": {
+    "background": {
+      "value": "{themes.themes.light.abstracts.background.secondary.value}"
+    },
+    "border": {
+      "value": "{themes.themes.light.abstracts.border.primary.value}"
+    }
+  }
+}

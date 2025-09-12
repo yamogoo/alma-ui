@@ -30,7 +30,7 @@ withDefaults(defineProps<DividerProps>(), {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSize($map: $divider) {
+@mixin defineSizes($map: get($atoms, "divider")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       $border-width: px2rem(get($val, "self.border-width"));
@@ -83,19 +83,19 @@ withDefaults(defineProps<DividerProps>(), {
   }
 }
 
-@mixin defineThemes($names) {
-  @each $mode in $names {
+@mixin defineThemes($map: get($themes, "light.atoms.divider")) {
+  @each $mode, $modes in $map {
     &_mode-#{$mode} {
       &.divider_orientation {
         &-horizontal {
           @include themify($themes) {
-            border-bottom-color: themed("divider.#{$mode}.self.border");
+            border-bottom-color: themed("atoms.divider.#{$mode}.self.border");
           }
         }
 
         &-vertical {
           @include themify($themes) {
-            border-right-color: themed("divider.#{$mode}.self.border");
+            border-right-color: themed("atoms.divider.#{$mode}.self.border");
           }
         }
       }
@@ -106,7 +106,7 @@ withDefaults(defineProps<DividerProps>(), {
 .divider {
   @extend %base-transition;
 
-  @include defineSize();
-  @include defineThemes(map.keys(get($themes, "light.divider")));
+  @include defineSizes();
+  @include defineThemes();
 }
 </style>

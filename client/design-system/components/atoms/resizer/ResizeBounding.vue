@@ -18,10 +18,12 @@ const emits = defineEmits<{
 
 const variant = props.variant;
 
-const knobWidth = tokens.resizer[variant].elements.knob.width.value;
-const knobHeight = tokens.resizer[variant].elements.knob.height.value;
-const knobRoundness = tokens.resizer[variant].elements.knob.borderRadius.value;
-const activeAreaWidth = tokens.resizer[variant].self.activeAreaWidth.value;
+const knobWidth = tokens.atoms.resizer[variant].elements.knob.width.value;
+const knobHeight = tokens.atoms.resizer[variant].elements.knob.height.value;
+const knobRoundness =
+  tokens.atoms.resizer[variant].elements.knob.borderRadius.value;
+const activeAreaWidth =
+  tokens.atoms.resizer[variant].self.activeAreaWidth.value;
 </script>
 
 <template>
@@ -71,13 +73,16 @@ $prefix: "resizer__";
     // normal state:
     .#{$prefix}splitter {
       @include themify($themes) {
-        background: rgba(themed("resizer.default.elements.splitter.normal"), 0);
+        background: rgba(
+          themed("atoms.resizer.default.elements.splitter.normal"),
+          0
+        );
       }
     }
 
     .#{$prefix}knob {
       @include themify($themes) {
-        background: themed("resizer.default.elements.knob.normal");
+        background: themed("atoms.resizer.default.elements.knob.normal");
       }
     }
 
@@ -86,7 +91,7 @@ $prefix: "resizer__";
       .#{$prefix}splitter {
         @include themify($themes) {
           background: rgba(
-            themed("resizer.default.elements.splitter.active"),
+            themed("atoms.resizer.default.elements.splitter.active"),
             1
           );
         }

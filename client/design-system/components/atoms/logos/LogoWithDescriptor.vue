@@ -43,7 +43,7 @@ const computedClass = () => {
 </template>
 
 <style lang="scss">
-@mixin defineButtonSizes($map: $button) {
+@mixin defineButtonSizes($map: get($atoms, "logo-with-descriptor")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       &_variant-#{$variant} {
@@ -63,7 +63,7 @@ const computedClass = () => {
   }
 }
 
-@mixin defineThemes($map: get($themes, "light.logo-with-descriptor")) {
+@mixin defineThemes($map: get($themes, "light.atoms.logo-with-descriptor")) {
   @each $tone, $modes in $map {
     @each $mode, $val in $modes {
       &_tone-#{$tone} {

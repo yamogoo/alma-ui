@@ -14,7 +14,7 @@ import type {
 const props = withDefaults(defineProps<StepPaginationTabsProps>(), {
   variant: "default",
   selectedItemId: 0,
-  color: "primary",
+  mode: "primary",
   size: "md",
 });
 
@@ -32,8 +32,8 @@ const itemStyle = computed(() => ({
 }));
 
 const textVariant = computed(() => {
-  return tokens.stepPaginationTabs.default[props.size].elements.item.fontStyle
-    .value as TextVariant;
+  return tokens.atoms.stepPaginationTabs.default[props.size].elements.item
+    .fontStyle.value as TextVariant;
 });
 
 const onItemClick = (item: StepPaginationTabItem): void => {
@@ -88,7 +88,7 @@ onMounted(() => {
       `step-pagination-tabs_variant-${variant}`,
       {
         [`step-pagination-tabs_size-${String(size)}`]: !!size,
-        [`step-pagination-tabs_color-${String(color)}`]: !!color,
+        [`step-pagination-tabs_mode-${String(mode)}`]: !!mode,
       },
     ]"
   >
@@ -116,7 +116,7 @@ onMounted(() => {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSizes($map: $step-pagination-tabs) {
+@mixin defineSizes($map: get($atoms, "step-pagination-tabs")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       &_variant-#{$variant} {
@@ -132,20 +132,20 @@ onMounted(() => {
   }
 }
 
-@mixin defineThemes($names) {
-  @each $name in $names {
-    &_color-#{$name} {
+@mixin defineThemes($map: get($themes, "light.atoms.step-pagination-tabs")) {
+  @each $mode, $modes in $map {
+    &_mode-#{$mode} {
       .step-pagination__item {
         @include themify($themes) {
           color: themed(
-            "step-pagination-tabs.#{$name}.elements.item.label.normal"
+            "atoms.step-pagination-tabs.#{$mode}.elements.item.label.normal"
           );
         }
 
         &_state-active {
           @include themify($themes) {
             color: themed(
-              "step-pagination-tabs.#{$name}.elements.item.label.active"
+              "atoms.step-pagination-tabs.#{$mode}.elements.item.label.active"
             );
           }
         }
@@ -161,7 +161,7 @@ onMounted(() => {
   width: 100%;
 
   @include defineSizes();
-  @include defineThemes(map.keys(get($themes, "light.step-pagination-tabs")));
+  @include defineThemes();
 
   &__track {
     position: relative;

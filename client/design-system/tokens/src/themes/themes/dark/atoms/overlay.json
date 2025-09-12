@@ -1,0 +1,12 @@
+{
+  "primary": {
+    "background": {
+      "value": "{themes.themes.dark.abstracts.background.primary.value}"
+    }
+  },
+  "primaryInversed": {
+    "background": {
+      "value": "{themes.themes.dark.abstracts.background.primaryInversed.value}"
+    }
+  }
+}

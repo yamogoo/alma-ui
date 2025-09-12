@@ -1,0 +1,22 @@
+{
+  "primary": {
+    "background": {
+      "value": "{themes.themes.light.abstracts.background.primary.value}",
+      "type": "color",
+      "unit": "hex",
+      "meta": {
+        "category": "overlay"
+      }
+    },
+    "primaryInversed": {
+      "background": {
+        "value": "{themes.themes.light.abstracts.background.primaryInversed.value}",
+        "type": "color",
+        "unit": "hex",
+        "meta": {
+          "category": "overlay"
+        }
+      }
+    }
+  }
+}

@@ -136,7 +136,11 @@ export interface Props {
           @key.enter="onSubmit"
         >
         </ActionButton>
-        <Divider :orientation="'horizontal'" :size="'md'"></Divider>
+        <Divider
+          :orientation="'horizontal'"
+          :size="'md'"
+          :mode="'primary'"
+        ></Divider>
         <Tooltip :label="'Button'"
           ><ActionButton
             :tone="'neutral'"

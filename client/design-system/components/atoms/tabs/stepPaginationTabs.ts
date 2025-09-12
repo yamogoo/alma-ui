@@ -3,10 +3,10 @@ import tokens from "@/tokens";
 import type { UIElementUnionProps } from "@/typings";
 
 export type StepPaginationTabSize =
-  keyof typeof tokens.stepPaginationTabs.default;
+  keyof typeof tokens.atoms.stepPaginationTabs.default;
 
-export type StepPaginationTabColor =
-  keyof typeof tokens.themes.light.stepPaginationTabs;
+export type StepPaginationTabMode =
+  keyof typeof tokens.themes.light.atoms.stepPaginationTabs;
 
 export interface StepPaginationTabItem {
   id: number;
@@ -17,5 +17,5 @@ export interface StepPaginationTabsProps extends Partial<UIElementUnionProps> {
   items: StepPaginationTabItem[];
   selectedItemId?: number;
   size?: StepPaginationTabSize;
-  color?: StepPaginationTabColor;
+  mode?: StepPaginationTabMode;
 }

@@ -56,7 +56,7 @@ onMounted(() => {
   overflow: hidden;
 
   @include themify($themes) {
-    background-color: themed("background.base");
+    background-color: themed("abstracts.background.base");
   }
   @extend %base-transition;
 }

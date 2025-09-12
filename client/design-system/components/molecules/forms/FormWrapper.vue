@@ -35,7 +35,7 @@ withDefaults(defineProps<FormWrapperProps>(), {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSize($map: $form-wrapper) {
+@mixin defineSizes($map: get($molecules, "form-wrapper")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       $padding: get($val, "self.padding");
@@ -64,12 +64,12 @@ withDefaults(defineProps<FormWrapperProps>(), {
   }
 }
 
-@mixin defineThemes($names) {
-  @each $mode in $names {
+@mixin defineThemes($map: get($themes, "light.molecules.form-wrapper")) {
+  @each $mode, $modes in $map {
     &_mode-#{$mode} {
       @include themify($themes) {
-        background-color: themed("form-wrapper.#{$mode}.background");
-        border-color: themed("form-wrapper.#{$mode}.border");
+        background-color: themed("molecules.form-wrapper.#{$mode}.background");
+        border-color: themed("molecules.form-wrapper.#{$mode}.border");
       }
     }
   }
@@ -79,7 +79,7 @@ withDefaults(defineProps<FormWrapperProps>(), {
   overflow: hidden;
   @extend %base-transition;
 
-  @include defineSize();
-  @include defineThemes(map.keys(get($themes, "light.form-wrapper")));
+  @include defineSizes();
+  @include defineThemes();
 }
 </style>

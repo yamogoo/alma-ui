@@ -29,7 +29,7 @@ const onChangeTheme = () => toggleTheme();
       :speed="1.33"
       :is-active="!isLightTheme"
       :size="'sm'"
-      :color="'disabled'"
+      :mode="'disabled'"
     ></AnimatedIcon>
     <ToggleSwitch
       data-testid="theme-switch"

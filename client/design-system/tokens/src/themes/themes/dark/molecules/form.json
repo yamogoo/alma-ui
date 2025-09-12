@@ -1,0 +1,18 @@
+{
+  "primary": {
+    "background": {
+      "value": "{themes.themes.dark.abstracts.background.primaryTransparental.value}"
+    },
+    "shadow": {
+      "value": "{themes.themes.dark.abstracts.shadow.primary.value}"
+    }
+  },
+  "secondary": {
+    "background": {
+      "value": "{themes.themes.dark.abstracts.background.secondaryTransparental.value}"
+    },
+    "shadow": {
+      "value": "{themes.themes.dark.abstracts.shadow.primary.value}"
+    }
+  }
+}

@@ -2,12 +2,12 @@ import tokens from "@/tokens";
 
 import type { UIElementUnionProps } from "@/typings";
 
-export type FormSize = keyof typeof tokens.form.default;
+export type FormSize = keyof typeof tokens.molecules.form.default;
 
-export type FormColor = keyof typeof tokens.themes.light.form;
+export type FormMode = keyof typeof tokens.themes.light.molecules.form;
 
 export interface FormProps extends UIElementUnionProps {
   title?: string;
-  color?: FormColor;
+  mode?: FormMode;
   size?: FormSize;
 }

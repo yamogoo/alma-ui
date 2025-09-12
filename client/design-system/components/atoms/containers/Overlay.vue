@@ -12,11 +12,11 @@ defineProps<OverlayProps>();
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineTheme($names) {
-  @each $name in $names {
-    &_color-#{$name} {
+@mixin defineThemes($map: get($themes, "light.atoms.overlay")) {
+  @each $mode, $modes in $map {
+    &_mode-#{$mode} {
       @include themify($themes) {
-        background-color: themed("overlay.#{$name}.background");
+        background-color: themed("atoms.overlay.#{$mode}.background");
       }
     }
   }
@@ -28,6 +28,6 @@ defineProps<OverlayProps>();
   z-index: 1000;
   pointer-events: none;
 
-  @include defineTheme(map.keys(get($themes, "light.overlay")));
+  @include defineThemes(map.keys(get($themes, "light.atoms.overlay")));
 }
 </style>

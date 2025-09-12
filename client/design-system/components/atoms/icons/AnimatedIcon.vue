@@ -57,7 +57,7 @@ const onCompleted = (): void => {
       {
         [`animated-icon_variant-${variant}`]: !!variant,
         [`animated-icon_size-${size}`]: !!size,
-        [`animated-icon_color-${color}`]: !!color,
+        [`animated-icon_mode-${mode}`]: !!mode,
       },
     ]"
     :animation-data
@@ -73,7 +73,7 @@ const onCompleted = (): void => {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSizes($map: $icon) {
+@mixin defineSizes($map: get($atoms, "icon")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       &_variant-#{$variant} {
@@ -88,14 +88,14 @@ const onCompleted = (): void => {
   }
 }
 
-@mixin defineThemes($names) {
-  @each $name in $names {
-    &_color-#{$name} {
+@mixin defineThemes($map: get($themes, "light.abstracts.label")) {
+  @each $mode, $modes in $map {
+    &_mode-#{$mode} {
       svg {
         path {
           @include themify($themes) {
-            fill: themed("label.#{$name}");
-            stroke: themed("label.#{$name}");
+            fill: themed("abstracts.label.#{$mode}");
+            stroke: themed("abstracts.label.#{$mode}");
           }
         }
       }
@@ -110,7 +110,7 @@ const onCompleted = (): void => {
   @extend %base-transition;
 
   @include defineSizes();
-  @include defineThemes(map.keys(get($themes, "light.label")));
+  @include defineThemes();
 
   svg {
     @include box(auto, inherit);

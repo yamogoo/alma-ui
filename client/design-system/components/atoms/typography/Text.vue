@@ -72,7 +72,7 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
   @each $name in $names {
     &_color-#{$name} {
       @include themify($themes) {
-        color: themed("label.#{$name}");
+        color: themed("abstracts.label.#{$name}");
       }
     }
   }
@@ -86,12 +86,12 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
   @extend %base-transition;
 
   @include defineVariants();
-  @include defineThemes(map.keys(get($themes, "light.label")));
+  @include defineThemes(map.keys(get($themes, "light.abstracts.label")));
 
   b {
     &.accent {
       @include themify($themes) {
-        color: themed("label.accent");
+        color: themed("abstracts.label.accent");
       }
     }
   }

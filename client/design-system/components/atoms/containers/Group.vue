@@ -43,7 +43,7 @@ const componentTag = props.as;
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSize($map: $group) {
+@mixin defineSizes($map: get($atoms, "group")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       $gap: px2rem(get($val, "self.gap"));
@@ -72,23 +72,23 @@ const componentTag = props.as;
   }
 }
 
-@mixin defineThemes($names) {
-  @each $mode in $names {
+@mixin defineThemes($map: get($themes, "light.atoms.group")) {
+  @each $mode, $modes in $map {
     &_mode-#{$mode} {
       @include themify($themes) {
-        background-color: themed("group.#{$mode}.self.background");
+        background-color: themed("atoms.group.#{$mode}.self.background");
       }
 
       &.group_divider {
         &.group_orientation-horizontal {
           @include themify($themes) {
-            border-right-color: themed("group.#{$mode}.self.divider");
+            border-right-color: themed("atoms.group.#{$mode}.self.divider");
           }
         }
 
         &.group_orientation-vertical {
           @include themify($themes) {
-            border-bottom-color: themed("group.#{$mode}.self.divider");
+            border-bottom-color: themed("atoms.group.#{$mode}.self.divider");
           }
         }
       }
@@ -100,8 +100,8 @@ const componentTag = props.as;
   display: flex;
   @extend %base-transition;
 
-  @include defineSize();
-  @include defineThemes(map.keys(get($themes, "light.group")));
+  @include defineSizes();
+  @include defineThemes();
 
   &_orientation {
     &-horizontal {
@@ -215,7 +215,7 @@ const componentTag = props.as;
     }
   }
 
-  @each $variant, $sizes in $group {
+  @each $variant, $sizes in get($atoms, "group") {
     @each $size, $val in $sizes {
       &_variant-#{$variant} {
         &.group_size-#{$size} {

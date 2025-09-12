@@ -3,7 +3,7 @@
     "primary": {
       "background": {
         "normal": {
-          "value": "{themes.themes.dark.background.primary.value}",
+          "value": "{themes.themes.dark.abstracts.background.primary.value}",
           "type": "color",
           "unit": "hex",
           "meta": {
@@ -17,7 +17,7 @@
     "primary": {
       "background": {
         "normal": {
-          "value": "{themes.themes.dark.background.accent.value}",
+          "value": "{themes.themes.dark.abstracts.background.accent.value}",
           "type": "color",
           "unit": "hex",
           "meta": {

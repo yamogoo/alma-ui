@@ -18,8 +18,8 @@ const id = useId();
     class="form"
     :class="[
       { [`form_variant-${variant}`]: !!variant },
-      { [`form_size-${String(size)}`]: !!size },
-      { [`form_color-${String(color)}`]: !!color },
+      { [`form_size-${size}`]: !!size },
+      { [`form_mode-${mode}`]: !!mode },
     ]"
     @submit.prevent
   >
@@ -45,7 +45,7 @@ const id = useId();
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSizes($map: $form) {
+@mixin defineSizes($map: get($molecules, "form")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       $border-radius: get($val, "self.border-radius");
@@ -59,13 +59,13 @@ const id = useId();
   }
 }
 
-@mixin defineThemes($names) {
-  @each $name in $names {
-    &_#{$name} {
+@mixin defineThemes($map: get($themes, "light.molecules.form")) {
+  @each $mode, $modes in $map {
+    &_mode-#{$mode} {
       @include themify($themes) {
-        background-color: themed("form.#{$name}.background");
+        background-color: themed("molecules.form.#{$mode}.background");
         @include themify($themes) {
-          box-shadow: 0px 4px 32px themed("form.#{$name}.shadow");
+          box-shadow: 0px 4px 32px themed("molecules.form.#{$mode}.shadow");
         }
       }
     }
@@ -77,7 +77,7 @@ const id = useId();
   @extend %base-transition;
 
   @include defineSizes();
-  @include defineThemes(map.keys(get($themes, "light.form")));
+  @include defineThemes();
 
   &__container {
     @include transition(height, 250ms, ease-in-out);

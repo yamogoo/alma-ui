@@ -20,7 +20,7 @@ withDefaults(defineProps<ControlWrapperProps>(), {
 </template>
 
 <style lang="scss">
-@mixin defineButtonSizes($map: $control-wrapper) {
+@mixin defineButtonSizes($map: get($atoms, "control-wrapper")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       $gap: px2rem(get($val, "self.gap"));

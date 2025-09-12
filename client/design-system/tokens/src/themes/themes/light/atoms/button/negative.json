@@ -1,0 +1,257 @@
+{
+  "primary": {
+    "self": {
+      "background": {
+        "normal": {
+          "value": "{colors.red-75}"
+        },
+        "disabled": {
+          "value": "rgba({colors.red-75}, .5)"
+        },
+        "hovered": {
+          "value": "{colors.red-100}"
+        },
+        "pressed": {
+          "value": "{colors.red-150}"
+        }
+      },
+      "border": {
+        "normal": {
+          "value": "{themes.themes.light.atoms.button.negative.primary.self.background.normal.value}"
+        },
+        "disabled": {
+          "value": "{themes.themes.light.atoms.button.negative.primary.self.background.disabled.value}"
+        },
+        "hovered": {
+          "value": "{themes.themes.light.atoms.button.negative.primary.self.background.hovered.value}"
+        },
+        "pressed": {
+          "value": "{themes.themes.light.atoms.button.negative.primary.self.background.pressed.value}"
+        },
+        "outline": {
+          "value": "{themes.themes.light.abstracts.border.outline.value}"
+        }
+      }
+    },
+    "elements": {
+      "label": {
+        "normal": {
+          "value": "{colors.gray-900}"
+        },
+        "disabled": {
+          "value": "{colors.gray-400}"
+        },
+        "hovered": {
+          "value": "{colors.gray-950}"
+        },
+        "pressed": {
+          "value": "{colors.gray-950}"
+        }
+      }
+    }
+  },
+  "inversed": {
+    "self": {
+      "background": {
+        "normal": {
+          "value": "{colors.gray-950}"
+        },
+        "disabled": {
+          "value": "rgba({colors.gray-600}, .5)"
+        },
+        "hovered": {
+          "value": "{colors.gray-900}"
+        },
+        "pressed": {
+          "value": "{colors.gray-800}"
+        }
+      },
+      "border": {
+        "normal": {
+          "value": "{themes.themes.light.atoms.button.negative.inversed.self.background.normal.value}"
+        },
+        "disabled": {
+          "value": "{themes.themes.light.atoms.button.negative.inversed.self.background.disabled.value}"
+        },
+        "hovered": {
+          "value": "{themes.themes.light.atoms.button.negative.inversed.self.background.hovered.value}"
+        },
+        "pressed": {
+          "value": "{themes.themes.light.atoms.button.negative.inversed.self.background.pressed.value}"
+        },
+        "outline": {
+          "value": "{themes.themes.light.abstracts.border.outline.value}"
+        }
+      }
+    },
+    "elements": {
+      "label": {
+        "normal": {
+          "value": "{colors.gray-75}"
+        },
+        "disabled": {
+          "value": "{colors.gray-500}"
+        },
+        "hovered": {
+          "value": "{colors.gray-75}"
+        },
+        "pressed": {
+          "value": "{colors.gray-75}"
+        }
+      }
+    }
+  },
+  "secondary": {
+    "self": {
+      "background": {
+        "normal": {
+          "value": "{colors.white-0}"
+        },
+        "disabled": {
+          "value": "rgba({colors.white-0}, .5)"
+        },
+        "hovered": {
+          "value": "{colors.gray-50}"
+        },
+        "pressed": {
+          "value": "{colors.gray-100}"
+        }
+      },
+      "border": {
+        "normal": {
+          "value": "{themes.themes.light.atoms.button.negative.secondary.self.background.normal.value}"
+        },
+        "disabled": {
+          "value": "{themes.themes.light.atoms.button.negative.secondary.self.background.disabled.value}"
+        },
+        "hovered": {
+          "value": "{themes.themes.light.atoms.button.negative.secondary.self.background.hovered.value}"
+        },
+        "pressed": {
+          "value": "{themes.themes.light.atoms.button.negative.secondary.self.background.pressed.value}"
+        },
+        "outline": {
+          "value": "{themes.themes.light.abstracts.border.outline.value}"
+        }
+      }
+    },
+    "elements": {
+      "label": {
+        "normal": {
+          "value": "{colors.gray-950}"
+        },
+        "disabled": {
+          "value": "{colors.gray-400}"
+        },
+        "hovered": {
+          "value": "{colors.gray-950}"
+        },
+        "pressed": {
+          "value": "{colors.gray-950}"
+        }
+      }
+    }
+  },
+  "tertiary": {
+    "self": {
+      "background": {
+        "normal": {
+          "value": "rgba({colors.gray-75}, 0)"
+        },
+        "disabled": {
+          "value": "rgba({colors.gray-75}, 0)"
+        },
+        "hovered": {
+          "value": "rgba({colors.gray-100}, 0)"
+        },
+        "pressed": {
+          "value": "rgba({colors.gray-150}, 0)"
+        }
+      },
+      "border": {
+        "normal": {
+          "value": "{themes.themes.light.atoms.button.negative.tertiary.self.background.normal.value}"
+        },
+        "disabled": {
+          "value": "{themes.themes.light.atoms.button.negative.tertiary.self.background.disabled.value}"
+        },
+        "hovered": {
+          "value": "{themes.themes.light.atoms.button.negative.tertiary.self.background.hovered.value}"
+        },
+        "pressed": {
+          "value": "{themes.themes.light.atoms.button.negative.tertiary.self.background.pressed.value}"
+        },
+        "outline": {
+          "value": "{themes.themes.light.abstracts.border.outline.value}"
+        }
+      }
+    },
+    "elements": {
+      "label": {
+        "normal": {
+          "value": "{colors.gray-900}"
+        },
+        "disabled": {
+          "value": "{colors.gray-400}"
+        },
+        "hovered": {
+          "value": "{colors.gray-950}"
+        },
+        "pressed": {
+          "value": "{colors.gray-950}"
+        }
+      }
+    }
+  },
+  "outline": {
+    "self": {
+      "background": {
+        "normal": {
+          "value": "rgba({colors.gray-75}, 0)"
+        },
+        "disabled": {
+          "value": "rgba({colors.gray-75}, 0)"
+        },
+        "hovered": {
+          "value": "rgba({colors.gray-100}, 0)"
+        },
+        "pressed": {
+          "value": "rgba({colors.gray-150}, 0)"
+        }
+      },
+      "border": {
+        "normal": {
+          "value": "{themes.themes.light.atoms.button.negative.outline.self.background.normal.value}"
+        },
+        "disabled": {
+          "value": "{themes.themes.light.atoms.button.negative.outline.self.background.disabled.value}"
+        },
+        "hovered": {
+          "value": "{themes.themes.light.atoms.button.negative.outline.self.background.hovered.value}"
+        },
+        "pressed": {
+          "value": "{themes.themes.light.atoms.button.negative.outline.self.background.pressed.value}"
+        },
+        "outline": {
+          "value": "{themes.themes.light.abstracts.border.outline.value}"
+        }
+      }
+    },
+    "elements": {
+      "label": {
+        "normal": {
+          "value": "{colors.gray-900}"
+        },
+        "disabled": {
+          "value": "{colors.gray-400}"
+        },
+        "hovered": {
+          "value": "{colors.gray-950}"
+        },
+        "pressed": {
+          "value": "{colors.gray-950}"
+        }
+      }
+    }
+  }
+}

@@ -25,8 +25,8 @@ const symbol = computed(() => {
     :class="[
       {
         [`icon_variant-${variant}`]: !!variant,
-        [`icon_size-${String(size)}`]: !!size,
-        [`icon_color-${String(color)}`]: !!color,
+        [`icon_size-${size}`]: !!size,
+        [`icon_mode-${mode}`]: !!mode,
       },
     ]"
     data-testid="icon"
@@ -43,7 +43,7 @@ const symbol = computed(() => {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSizes($map: $icon) {
+@mixin defineSizes($map: get($atoms, "icon")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       $box-size: px2rem(get($val, "self.size"));
@@ -57,11 +57,11 @@ const symbol = computed(() => {
   }
 }
 
-@mixin defineThemes($names) {
-  @each $name in $names {
-    &_color-#{$name} {
+@mixin defineThemes($map: get($themes, "light.abstracts.label")) {
+  @each $mode, $modes in $map {
+    &_mode-#{$mode} {
       @include themify($themes) {
-        fill: themed("label.#{$name}");
+        fill: themed("abstracts.label.#{$mode}");
       }
     }
   }
@@ -74,7 +74,7 @@ const symbol = computed(() => {
   @extend %base-transition;
 
   @include defineSizes();
-  @include defineThemes(map.keys(get($themes, "light.label")));
+  @include defineThemes();
 
   svg {
     @include box(auto, inherit);

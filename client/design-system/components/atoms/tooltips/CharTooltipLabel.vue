@@ -7,7 +7,7 @@ import { Icon, Text } from "@/components/atoms";
 withDefaults(defineProps<CharTooltipLabelProps>(), {
   variant: "default",
   size: "lg",
-  color: "primary",
+  mode: "primary",
   iconStyle: "outline",
   iconWeight: "300",
 });
@@ -26,7 +26,7 @@ defineExpose({
     :class="[
       `char-tooltip-label_variant-${variant}`,
       `char-tooltip-label_size-${size}`,
-      `char-tooltip-label_color-${color}`,
+      `char-tooltip-label_mode-${mode}`,
     ]"
   >
     <Icon
@@ -46,7 +46,7 @@ defineExpose({
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSized($map: $char-tooltip-label) {
+@mixin defineSized($map: get($atoms, "char-tooltip-label")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       &_variant-#{$variant} {
@@ -70,14 +70,14 @@ defineExpose({
   }
 }
 
-@mixin defineThemes($names) {
-  @each $name in $names {
-    &_color-#{$name} {
+@mixin defineThemes($map: get($themes, "light.atoms.char-tooltip-label")) {
+  @each $mode, $modes in $map {
+    &_mode-#{$mode} {
       @include themify($themes) {
-        color: themed("char-tooltip-label.#{$name}.label.normal");
-        fill: themed("char-tooltip-label.#{$name}.label.normal");
+        color: themed("atoms.char-tooltip-label.#{$mode}.label.normal");
+        fill: themed("atoms.char-tooltip-label.#{$mode}.label.normal");
         background-color: themed(
-          "char-tooltip-label.#{$name}.background.normal"
+          "atoms.char-tooltip-label.#{$mode}.background.normal"
         );
 
         .text {
@@ -98,6 +98,6 @@ defineExpose({
   flex-direction: column;
 
   @include defineSized();
-  @include defineThemes(map.keys(get($themes, "light.char-tooltip-label")));
+  @include defineThemes();
 }
 </style>

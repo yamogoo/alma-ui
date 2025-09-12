@@ -1,0 +1,94 @@
+{
+  "primary": {
+    "self": {
+      "background": {
+        "normal": {
+          "value": "{colors.gray-800}"
+        },
+        "disabled": {
+          "value": "{colors.gray-950}"
+        },
+        "hovered": {
+          "value": "{colors.gray-900}"
+        },
+        "focused": {
+          "value": "{colors.gray-850}"
+        },
+        "error": {
+          "value": "rgba({colors.red-600}, .2)"
+        }
+      },
+      "border": {
+        "outline": {
+          "value": "{themes.themes.dark.abstracts.border.outline.value}"
+        }
+      }
+    },
+    "elements": {
+      "label": {
+        "normal": {
+          "value": "{colors.gray-300}"
+        },
+        "disabled": {
+          "value": "{colors.gray-600}"
+        },
+        "hovered": {
+          "value": "{colors.gray-50}"
+        },
+        "focused": {
+          "value": "{colors.gray-50}"
+        },
+        "error": {
+          "value": "{colors.red-350}",
+          "description": "placeholder = {themes.themes.light.abstracts.label.error.value}"
+        }
+      }
+    }
+  },
+  "secondary": {
+    "self": {
+      "background": {
+        "normal": {
+          "value": "{colors.gray-900}"
+        },
+        "disabled": {
+          "value": "{colors.gray-800}"
+        },
+        "hovered": {
+          "value": "{colors.gray-950}"
+        },
+        "focused": {
+          "value": "{colors.gray-900}"
+        },
+        "error": {
+          "value": "{colors.red-900}"
+        }
+      },
+      "border": {
+        "outline": {
+          "value": "{themes.themes.dark.abstracts.border.outline.value}"
+        }
+      }
+    },
+    "elements": {
+      "label": {
+        "normal": {
+          "value": "{colors.gray-300}"
+        },
+        "disabled": {
+          "value": "{colors.gray-600}"
+        },
+        "hovered": {
+          "value": "{colors.gray-50}"
+        },
+        "focused": {
+          "value": "{colors.gray-50}"
+        },
+        "error": {
+          "value": "{colors.red-350}",
+          "description": "placeholder = {themes.themes.dark.abstracts.label.error.value}"
+        }
+      }
+    }
+  }
+}

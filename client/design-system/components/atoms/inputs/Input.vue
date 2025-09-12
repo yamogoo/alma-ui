@@ -19,7 +19,7 @@ import { Text, ControlButton, AnimatedWrapper } from "@/components/atoms";
 
 const props = withDefaults(defineProps<InputProps>(), {
   variant: "default",
-  color: "primary",
+  mode: "primary",
   size: "lg",
   type: "text",
   isError: false,
@@ -198,7 +198,7 @@ onMounted(() => {
     data-testid="input"
     :class="[
       `input_variant-${variant}`,
-      `input_color-${String(color)}`,
+      `input_mode-${String(mode)}`,
       {
         [`input_size-${String(size)}`]: size,
         [`input_error`]: isError,
@@ -263,7 +263,7 @@ onMounted(() => {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineInputSizes($map: $input) {
+@mixin defineInputSizes($map: get($atoms, "input")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       $value-font-style: get($val, "elements.label.font-style");
@@ -308,13 +308,14 @@ onMounted(() => {
   }
 }
 
-@mixin defineThemes($names) {
-  @each $name in $names {
-    &_color-#{$name} {
+@mixin defineThemes($map: get($themes, "light.atoms.input")) {
+  @each $mode, $modes in $map {
+    &_mode-#{$mode} {
       &:focus {
         .input__field {
           @include themify($themes) {
-            outline: $outline solid themed("input.#{$name}.self.border.outline");
+            outline: $outline solid
+              themed("atoms.input.#{$mode}.self.border.outline");
           }
         }
       }
@@ -322,8 +323,10 @@ onMounted(() => {
       &:not(.input_disabled) {
         .input__field {
           @include themify($themes) {
-            color: themed("input.#{$name}.elements.label.normal");
-            background-color: themed("input.#{$name}.self.background.normal");
+            color: themed("atoms.input.#{$mode}.elements.label.normal");
+            background-color: themed(
+              "atoms.input.#{$mode}.self.background.normal"
+            );
             @extend %base-transition;
           }
         }
@@ -332,8 +335,10 @@ onMounted(() => {
       &.input_focused {
         .input__field {
           @include themify($themes) {
-            color: themed("input.#{$name}.elements.label.focused");
-            background-color: themed("input.#{$name}.self.background.focused");
+            color: themed("atoms.input.#{$mode}.elements.label.focused");
+            background-color: themed(
+              "atoms.input.#{$mode}.self.background.focused"
+            );
             @extend %base-transition;
           }
         }
@@ -342,8 +347,10 @@ onMounted(() => {
       &.input_disabled {
         .input__field {
           @include themify($themes) {
-            color: themed("input.#{$name}.elements.label.disabled");
-            background-color: themed("input.#{$name}.self.background.disabled");
+            color: themed("atoms.input.#{$mode}.elements.label.disabled");
+            background-color: themed(
+              "atoms.input.#{$mode}.self.background.disabled"
+            );
             @extend %base-transition;
           }
         }
@@ -352,8 +359,10 @@ onMounted(() => {
       &.input_error {
         .input__field {
           @include themify($themes) {
-            color: themed("input.#{$name}.elements.label.error");
-            background-color: themed("input.#{$name}.self.background.error");
+            color: themed("atoms.input.#{$mode}.elements.label.error");
+            background-color: themed(
+              "atoms.input.#{$mode}.self.background.error"
+            );
             @extend %base-transition;
           }
         }
@@ -368,7 +377,7 @@ onMounted(() => {
       .input__error {
         &-message {
           @include themify($themes) {
-            color: themed("input.#{$name}.elements.label.error");
+            color: themed("atoms.input.#{$mode}.elements.label.error");
             @extend %base-transition;
           }
         }
@@ -382,7 +391,7 @@ onMounted(() => {
   position: relative;
 
   @include defineInputSizes();
-  @include defineThemes(map.keys(get($themes, "light.input")));
+  @include defineThemes();
 
   &__field {
     box-sizing: border-box;
@@ -426,8 +435,10 @@ onMounted(() => {
 
       &::selection {
         @include themify($themes) {
-          color: themed("selection.default.label") !important;
-          background: themed("selection.default.background") !important;
+          color: themed("abstracts.selection.default.label") !important;
+          background: themed(
+            "abstracts.selection.default.background"
+          ) !important;
         }
       }
     }

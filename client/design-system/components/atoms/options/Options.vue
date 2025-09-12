@@ -53,7 +53,7 @@ const showCurrentOption = (key: T) => {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSize($map: $options) {
+@mixin defineSizes($map: get($atoms, "options")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       $option-font-style: get($val, "elements.option.font-style");
@@ -71,17 +71,17 @@ const showCurrentOption = (key: T) => {
   }
 }
 
-@mixin defineThemes($names) {
-  @each $mode in $names {
+@mixin defineThemes($map: get($themes, "light.atoms.options")) {
+  @each $mode, $modes in $map {
     &_mode-#{$mode} {
       .options__option {
         @include themify($themes) {
-          color: themed("options.#{$mode}.label.normal");
+          color: themed("atoms.options.#{$mode}.label.normal");
         }
 
         &:hover {
           @include themify($themes) {
-            color: themed("options.#{$mode}.label.hovered");
+            color: themed("atoms.options.#{$mode}.label.hovered");
           }
         }
       }
@@ -93,8 +93,8 @@ const showCurrentOption = (key: T) => {
   margin: 0;
   padding: 0;
 
-  @include defineSize();
-  @include defineThemes(map.keys(get($themes, "light.options")));
+  @include defineSizes();
+  @include defineThemes();
 
   &__option {
     list-style: none;

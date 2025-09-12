@@ -5,7 +5,7 @@ import g from "gsap";
 import type { SkeletonProps } from "./skeleton";
 
 withDefaults(defineProps<SkeletonProps>(), {
-  color: "default",
+  mode: "default",
 });
 
 const refShape = ref<HTMLDivElement | null>(null);
@@ -33,20 +33,24 @@ const onAnimate = (el: Element): void => {
 
 <template>
   <div class="skeleton">
-    <div ref="refShape" class="skeleton__shape"></div>
+    <div
+      ref="refShape"
+      class="skeleton__shape"
+      :class="[`input_mode-${String(mode)}`]"
+    ></div>
   </div>
 </template>
 
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineTheme($names) {
-  @each $name in $names {
-    &_variant-#{$name} {
+@mixin defineThemes($map: get($themes, "light.atoms.skeleton")) {
+  @each $mode, $modes in $map {
+    &_mode-#{$mode} {
       &.skeleton__shape {
         @include themify($themes) {
-          $color-in: themed("skeleton.#{$name}.color-in");
-          $color-out: themed("skeleton.#{$name}.color-out");
+          $color-in: themed("atoms.skeleton.#{$mode}.color-in");
+          $color-out: themed("atoms.skeleton.#{$mode}.color-out");
           background: linear-gradient(90deg, $color-out, $color-in, $color-out);
         }
       }
@@ -61,7 +65,7 @@ const onAnimate = (el: Element): void => {
   z-index: 1;
   cursor: wait;
 
-  @include defineTheme(map.keys(get($themes, "light.skeleton")));
+  @include defineThemes();
 
   &__shape {
     position: absolute;

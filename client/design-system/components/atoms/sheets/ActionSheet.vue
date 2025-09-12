@@ -60,8 +60,8 @@ watch(
       class="action-sheet"
       :class="[
         `action-sheet_variant-${variant}`,
-        `action-sheet_size-${String(size)}`,
-        { [`action-sheet_color-${String(color)}`]: !!color },
+        `action-sheet_size-${size}`,
+        { [`action-sheet_mode-${mode}`]: !!mode },
       ]"
     >
       <slot></slot>
@@ -72,7 +72,7 @@ watch(
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSizes($map: $action-sheet) {
+@mixin defineSizes($map: get($atoms, "action-sheet")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       $min-height: px2rem(get($val, "self.min-height"));
@@ -88,12 +88,15 @@ watch(
   }
 }
 
-@mixin defineTheme($names) {
-  @each $name in $names {
-    &_color-#{$name} {
+@mixin defineThemes($map: get($themes, "light.atoms.action-sheet")) {
+  @each $mode, $modes in $map {
+    &_mode-#{$mode} {
       @include themify($themes) {
-        background-color: themed("action-sheet.#{$name}.background.normal");
-        box-shadow: 0 -2px 12px themed("action-sheet.#{$name}.shadow.normal");
+        background-color: themed(
+          "atoms.action-sheet.#{$mode}.background.normal"
+        );
+        box-shadow: 0 -2px 12px
+          themed("atoms.action-sheet.#{$mode}.shadow.normal");
       }
     }
   }
@@ -108,6 +111,6 @@ watch(
   overflow: auto;
 
   @include defineSizes();
-  @include defineTheme(map.keys(get($themes, "light.action-sheet")));
+  @include defineThemes();
 }
 </style>

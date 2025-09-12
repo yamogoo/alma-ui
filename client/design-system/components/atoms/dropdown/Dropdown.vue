@@ -144,7 +144,7 @@ const onOptionClick = (): void => {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSizes($map: $drop-down) {
+@mixin defineSizes($map: get($atoms, "dropdown")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       $min-width: px2rem(get($val, "self.min-width"));
@@ -208,45 +208,51 @@ const onOptionClick = (): void => {
   }
 }
 
-@mixin defineThemes($names) {
-  @each $mode in $names {
+@mixin defineThemes($map: get($themes, "light.atoms.dropdown")) {
+  @each $mode, $modes in $map {
     &_mode-#{$mode} {
       &.dropdown_normal {
         .dropdown__current-value {
           @include themify($themes) {
             background-color: themed(
-              "drop-down.#{$mode}.current-value.background.normal"
+              "atoms.dropdown.#{$mode}.current-value.background.normal"
             );
           }
 
           &-label {
             @include themify($themes) {
-              color: themed("drop-down.#{$mode}.current-value.label.normal");
+              color: themed(
+                "atoms.dropdown.#{$mode}.current-value.label.normal"
+              );
             }
           }
 
           &-icon {
             @include themify($themes) {
-              fill: themed("drop-down.#{$mode}.current-value.icon.normal");
+              fill: themed("atoms.dropdown.#{$mode}.current-value.icon.normal");
             }
           }
 
           &:hover {
             @include themify($themes) {
               background-color: themed(
-                "drop-down.#{$mode}.current-value.background.hovered"
+                "atoms.dropdown.#{$mode}.current-value.background.hovered"
               );
             }
 
             &-label {
               @include themify($themes) {
-                color: themed("drop-down.#{$mode}.current-value.label.hovered");
+                color: themed(
+                  "atoms.dropdown.#{$mode}.current-value.label.hovered"
+                );
               }
             }
 
             &-icon {
               @include themify($themes) {
-                fill: themed("drop-down.#{$mode}.current-value.icon.hovered");
+                fill: themed(
+                  "atoms.dropdown.#{$mode}.current-value.icon.hovered"
+                );
               }
             }
           }
@@ -257,33 +263,37 @@ const onOptionClick = (): void => {
         .dropdown__current-value {
           @include themify($themes) {
             background-color: themed(
-              "drop-down.#{$mode}.current-value.background.expanded"
+              "atoms.dropdown.#{$mode}.current-value.background.expanded"
             );
           }
 
           &-label {
             @include themify($themes) {
-              color: themed("drop-down.#{$mode}.current-value.label.expanded");
+              color: themed(
+                "atoms.dropdown.#{$mode}.current-value.label.expanded"
+              );
             }
           }
 
           &-icon {
             @include themify($themes) {
-              fill: themed("drop-down.#{$mode}.current-value.icon.expanded");
+              fill: themed(
+                "atoms.dropdown.#{$mode}.current-value.icon.expanded"
+              );
             }
           }
 
           &:hover {
             @include themify($themes) {
               background-color: themed(
-                "drop-down.#{$mode}.current-value.background.expanded-hovered"
+                "atoms.dropdown.#{$mode}.current-value.background.expanded-hovered"
               );
             }
 
             &-label {
               @include themify($themes) {
                 color: themed(
-                  "drop-down.#{$mode}.current-value.label.expanded-hovered"
+                  "atoms.dropdown.#{$mode}.current-value.label.expanded-hovered"
                 );
               }
             }
@@ -291,7 +301,7 @@ const onOptionClick = (): void => {
             &-icon {
               @include themify($themes) {
                 fill: themed(
-                  "drop-down.#{$mode}.current-value.icon.expanded-hovered"
+                  "atoms.dropdown.#{$mode}.current-value.icon.expanded-hovered"
                 );
               }
             }
@@ -301,14 +311,14 @@ const onOptionClick = (): void => {
         .dropdown__options {
           @include themify($themes) {
             background-color: themed(
-              "drop-down.#{$mode}.options.background.normal"
+              "atoms.dropdown.#{$mode}.options.background.normal"
             );
           }
 
           &:hover {
             @include themify($themes) {
               background-color: themed(
-                "drop-down.#{$mode}.options.background.hovered"
+                "atoms.dropdown.#{$mode}.options.background.hovered"
               );
             }
           }
@@ -324,7 +334,7 @@ const onOptionClick = (): void => {
   user-select: none;
 
   @include defineSizes();
-  @include defineThemes(map.keys(get($themes, "light.drop-down")));
+  @include defineThemes();
 
   &__current-value {
     box-sizing: border-box;

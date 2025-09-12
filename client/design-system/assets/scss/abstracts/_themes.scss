@@ -3,6 +3,52 @@
 
 $themes:(
   dark: (
+  abstracts: (
+  background: (
+  base: #15191C,
+  primary: #101315,
+  primary-transparental: rgba(#101315, .75),
+  primary-inversed: #EAEDEF,
+  secondary: #1A1F23,
+  secondary-transparental: rgba(#1A1F23, .75),
+  tertiary: #2F383F,
+  accent: #013CFE,
+  accept: #FFB531,
+  accent-yellow: #FFF700,
+  accent-green: #04FB23,
+  accent-blue: #013CFE
+),
+  border: (
+  primary: #242B31,
+  secondary: #39444C,
+  strong: #C0C9D0,
+  outline: #013CFE
+),
+  label: (
+  primary: #DCE1E5,
+  primary-inversed: #2F383F,
+  secondary: #A5B1BC,
+  tertiary: #8999A7,
+  disabled: #6D8292,
+  accent: #6286FE,
+  accent-yellow: #FFF700,
+  accent-green: #04FB23,
+  accent-blue: #013CFE,
+  info: #3161FE,
+  warning: #FFB531,
+  error: #E54B4B
+),
+  selection: (
+  default: (
+  label: #EAEDEF,
+  background: #9E9900
+)
+),
+  shadow: (
+  primary: rgba(#586976, .035)
+)
+),
+  atoms: (
   action-sheet: (
   primary: (
   background: (
@@ -36,26 +82,6 @@ $themes:(
   normal: rgba(rgba(#586976, .035), 0)
 )
 )
-),
-  background: (
-  base: #1A1F23,
-  primary: #101315,
-  primary-transparental: rgba(#101315, .75),
-  primary-inversed: #EAEDEF,
-  secondary: #1A1F23,
-  secondary-transparental: rgba(#1A1F23, .75),
-  tertiary: #2F383F,
-  accent: #013CFE,
-  accept: #FFB531,
-  accent-yellow: #FFF700,
-  accent-green: #04FB23,
-  accent-blue: #013CFE
-),
-  border: (
-  primary: #242B31,
-  secondary: #39444C,
-  strong: #C0C9D0,
-  outline: #013CFE
 ),
   button: (
   accent: (
@@ -603,7 +629,7 @@ $themes:(
 )
 )
 ),
-  drop-down: (
+  dropdown: (
   primary: (
   current-value: (
   label: (
@@ -631,26 +657,6 @@ $themes:(
   hovered: #2F383F
 )
 )
-)
-),
-  form: (
-  primary: (
-  background: rgba(#101315, .75),
-  shadow: rgba(#586976, .035)
-),
-  secondary: (
-  background: rgba(#1A1F23, .75),
-  shadow: rgba(#586976, .035)
-)
-),
-  form-wrapper: (
-  primary: (
-  background: #101315,
-  border: #242B31
-),
-  secondary: (
-  background: #1A1F23,
-  border: #242B31
 )
 ),
   group: (
@@ -721,20 +727,6 @@ $themes:(
 )
 )
 ),
-  label: (
-  primary: #DCE1E5,
-  primary-inversed: #2F383F,
-  secondary: #A5B1BC,
-  tertiary: #8999A7,
-  disabled: #6D8292,
-  accent: #6286FE,
-  accent-yellow: #FFF700,
-  accent-green: #04FB23,
-  accent-blue: #013CFE,
-  info: #3161FE,
-  warning: #FFB531,
-  error: #E54B4B
-),
   logo-with-descriptor: (
   default: (
   primary: (
@@ -788,15 +780,6 @@ $themes:(
 )
 )
 ),
-  selection: (
-  default: (
-  label: #EAEDEF,
-  background: #9E9900
-)
-),
-  shadow: (
-  primary: rgba(#586976, .035)
-),
   sheet: (
   primary: (
   background: (
@@ -849,26 +832,8 @@ $themes:(
 )
 )
 ),
-  templates: (
-  main-header: (
-  neutral: (
-  primary: (
-  background: (
-  normal: #101315
-)
-)
-),
-  accent: (
-  primary: (
-  background: (
-  normal: #013CFE
-)
-)
-)
-)
-),
   toggle-switch: (
-  neutral: (
+  primary: (
   elements: (
   track: (
   normal: #3E4A53,
@@ -889,7 +854,94 @@ $themes:(
 )
 )
 ),
+  molecules: (
+  form: (
+  primary: (
+  background: rgba(#101315, .75),
+  shadow: rgba(#586976, .035)
+),
+  secondary: (
+  background: rgba(#1A1F23, .75),
+  shadow: rgba(#586976, .035)
+)
+),
+  form-wrapper: (
+  primary: (
+  background: #101315,
+  border: #242B31
+),
+  secondary: (
+  background: #1A1F23,
+  border: #242B31
+)
+)
+),
+  templates: (
+  main-header: (
+  neutral: (
+  primary: (
+  background: (
+  normal: #101315
+)
+)
+),
+  accent: (
+  primary: (
+  background: (
+  normal: #013CFE
+)
+)
+)
+)
+)
+),
   light: (
+  abstracts: (
+  background: (
+  base: #EAEDEF,
+  primary: #F8F9FA,
+  primary-transparental: rgba(#F8F9FA, 0.75),
+  primary-inversed: #101315,
+  secondary: #DCE1E5,
+  secondary-transparental: rgba(#e5e9f1, 0.75),
+  tertiary: #A5B1BC,
+  accent: #013CFE,
+  accept: #FFB531,
+  accent-yellow: #FFF700,
+  accent-green: #03CC1C,
+  accent-blue: #0136E6
+),
+  border: (
+  primary: #D5DBE0,
+  secondary: #C7CFD5,
+  strong: #2F383F,
+  outline: #013CFE
+),
+  label: (
+  primary: #2F383F,
+  primary-inversed: #DCE1E5,
+  secondary: #586976,
+  tertiary: #6D8292,
+  disabled: #8999A7,
+  accent: #01259D,
+  accent-yellow: #FFF700,
+  accent-green: #03CC1C,
+  accent-blue: #0136E6,
+  info: #3161FE,
+  warning: #FFB531,
+  error: #E96B6B
+),
+  selection: (
+  default: (
+  label: #101315,
+  background: #FFFA61
+)
+),
+  shadow: (
+  primary: rgba(#060606, 0.075)
+)
+),
+  atoms: (
   action-sheet: (
   primary: (
   background: (
@@ -923,26 +975,6 @@ $themes:(
   normal: rgba(rgba(#060606, 0.075), 0)
 )
 )
-),
-  background: (
-  base: #EAEDEF,
-  primary: #F8F9FA,
-  primary-transparental: rgba(#F8F9FA, 0.75),
-  primary-inversed: #101315,
-  secondary: #DCE1E5,
-  secondary-transparental: rgba(#e5e9f1, 0.75),
-  tertiary: #A5B1BC,
-  accent: #013CFE,
-  accept: #FFB531,
-  accent-yellow: #FFF700,
-  accent-green: #03CC1C,
-  accent-blue: #0136E6
-),
-  border: (
-  primary: #D5DBE0,
-  secondary: #C7CFD5,
-  strong: #2F383F,
-  outline: #013CFE
 ),
   button: (
   accent: (
@@ -1490,7 +1522,7 @@ $themes:(
 )
 )
 ),
-  drop-down: (
+  dropdown: (
   primary: (
   current-value: (
   label: (
@@ -1518,26 +1550,6 @@ $themes:(
   hovered: #D5DBE0
 )
 )
-)
-),
-  form: (
-  primary: (
-  background: rgba(#F8F9FA, 0.75),
-  shadow: rgba(#060606, 0.075)
-),
-  secondary: (
-  background: rgba(#e5e9f1, 0.75),
-  shadow: rgba(#060606, 0.075)
-)
-),
-  form-wrapper: (
-  primary: (
-  background: #F8F9FA,
-  border: #D5DBE0
-),
-  secondary: (
-  background: #DCE1E5,
-  border: #D5DBE0
 )
 ),
   group: (
@@ -1608,20 +1620,6 @@ $themes:(
 )
 )
 ),
-  label: (
-  primary: #2F383F,
-  primary-inversed: #DCE1E5,
-  secondary: #586976,
-  tertiary: #6D8292,
-  disabled: #8999A7,
-  accent: #01259D,
-  accent-yellow: #FFF700,
-  accent-green: #03CC1C,
-  accent-blue: #0136E6,
-  info: #3161FE,
-  warning: #FFB531,
-  error: #E96B6B
-),
   logo-with-descriptor: (
   default: (
   primary: (
@@ -1675,15 +1673,6 @@ $themes:(
 )
 )
 ),
-  selection: (
-  default: (
-  label: #101315,
-  background: #FFFA61
-)
-),
-  shadow: (
-  primary: rgba(#060606, 0.075)
-),
   sheet: (
   primary: (
   background: (
@@ -1736,26 +1725,8 @@ $themes:(
 )
 )
 ),
-  templates: (
-  main-header: (
-  neutral: (
-  primary: (
-  background: (
-  normal: #F8F9FA
-)
-)
-),
-  accent: (
-  primary: (
-  background: (
-  normal: #013CFE
-)
-)
-)
-)
-),
   toggle-switch: (
-  neutral: (
+  primary: (
   elements: (
   track: (
   normal: #909FAC,
@@ -1771,6 +1742,47 @@ $themes:(
   normal: #2F383F,
   disabled: #8999A7,
   active: #2F383F
+)
+)
+)
+)
+),
+  molecules: (
+  form: (
+  primary: (
+  background: rgba(#F8F9FA, 0.75),
+  shadow: rgba(#060606, 0.075)
+),
+  secondary: (
+  background: rgba(#e5e9f1, 0.75),
+  shadow: rgba(#060606, 0.075)
+)
+),
+  form-wrapper: (
+  primary: (
+  background: #F8F9FA,
+  border: #D5DBE0
+),
+  secondary: (
+  background: #DCE1E5,
+  border: #D5DBE0
+)
+)
+),
+  templates: (
+  main-header: (
+  neutral: (
+  primary: (
+  background: (
+  normal: #F8F9FA
+)
+)
+),
+  accent: (
+  primary: (
+  background: (
+  normal: #013CFE
+)
 )
 )
 )
