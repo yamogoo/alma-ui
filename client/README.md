@@ -1,10 +1,10 @@
-# Sparkpad
+# Renum
 
 ### R&D Playground for UI & System Design
 
-> "I’m not building a universal framework. I’m creating tools for myself to explore architectural and visual approaches. Sparkpad is an example of my R&D work, showcasing how I think and design systems."
+> "I’m not building a universal framework. I’m creating tools for myself to explore architectural and visual approaches. Renum is an example of my R&D work, showcasing how I think and design systems."
 
-Sparkpad combines a custom design system with an MDX editor. It’s not meant for everyone — it’s a laboratory for experimentation, prototyping, and refining ideas.
+Renum combines a custom design system with an MDX editor. It’s not meant for everyone — it’s a laboratory for experimentation, prototyping, and refining ideas.
 
 ## 🚀 Core Idea
 
@@ -64,7 +64,7 @@ A self-built design system that works like a lightweight framework:
 
 8. **Resizable Layouts with Vue3ResizeBounding**
 
-   The Vue3ResizeBounding component allows creating flexible, resizable UI panels, fully integrated into Sparkpad.
+   The Vue3ResizeBounding component allows creating flexible, resizable UI panels, fully integrated into Renum.
 
 9. **Strict Tokens vs Project Flexibility**
 
@@ -98,11 +98,11 @@ A self-built design system that works like a lightweight framework:
 
 **Modular Design Tokens System**
 
-> Developed a modular token system for the design system with support for JSON, YAML, and TypeScript. TokensParser and JSONBuilder were partially developed with AI assistance, but all architecture, integration, and other components were implemented independently. The AI-generated files are located in [`~/client/plugins`](https://github.com/yamogoo/sparkpad/tree/main/client/plugins).
+> Developed a modular token system for the design system with support for JSON, YAML, and TypeScript. TokensParser and JSONBuilder were partially developed with AI assistance, but all architecture, integration, and other components were implemented independently. The AI-generated files are located in [`~/client/plugins`](https://github.com/yamogoo/renum/tree/main/client/plugins).
 
 ## ⚡ Philosophy
 
-Sparkpad is a research-focused project, not just a product. Its main purpose is:
+Renum is a research-focused project, not just a product. Its main purpose is:
 
 - Explore new UI and UX patterns
 
@@ -118,12 +118,12 @@ _Currently no public demo available — project is intended for R&D and internal
 
 # Clone repository
 
-git clone https://github.com/yamogoo/sparkpad.git
+git clone https://github.com/yamogoo/renum.git
 
 # Install dependencies
 
 ```bash
-cd sparkpad
+cd renum
 
 pnpm install
 ```
@@ -136,7 +136,7 @@ pnpm install
 pnpm dev
 ```
 
-_Then open http://localhost:3000 to see Sparkpad in action._
+_Then open http://localhost:3000 to see Renum in action._
 
 ## 📝 R&D Notes
 
@@ -158,7 +158,7 @@ _Then open http://localhost:3000 to see Sparkpad in action._
 
 Licensing is in accordance with the original.
 
-[MIT](https://github.com/yamogoo/sparkpad/blob/main/LICENSE)
+[MIT](https://github.com/yamogoo/renum/blob/main/LICENSE)
 
 ## Author
 

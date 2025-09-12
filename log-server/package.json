@@ -1,7 +1,7 @@
 {
   "name": "log-server",
   "version": "1.0.0",
-  "description": "sparkpad log server",
+  "description": "renum log server",
   "main": "main.js",
   "author": {
     "name": "yamogoo",
