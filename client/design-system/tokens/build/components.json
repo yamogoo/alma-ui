@@ -1824,6 +1824,35 @@
       }
     }
   },
+  "logoWithDescriptor": {
+    "default": {
+      "md": {
+        "self": {
+          "gap": {
+            "value": 12,
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "category": "logo with descriptor"
+            }
+          }
+        },
+        "elements": {
+          "label": {
+            "fontStyle": {
+              "value": "label-1",
+              "type": "alias",
+              "unit": "",
+              "meta": {
+                "category": "logo with descriptor"
+              }
+            }
+          }
+        }
+      },
+      "type": "component"
+    }
+  },
   "mainContainer": {
     "default": {
       "self": {

@@ -735,6 +735,19 @@ $themes:(
   warning: #FFB531,
   error: #E54B4B
 ),
+  logo-with-descriptor: (
+  default: (
+  primary: (
+  elements: (
+  label: (
+  normal: #DCE1E5,
+  hovered: rgba(#DCE1E5, 0.8),
+  pressed: rgba(#DCE1E5, 0.8)
+)
+)
+)
+)
+),
   options: (
   primary: (
   label: (
@@ -1590,6 +1603,19 @@ $themes:(
   info: #3161FE,
   warning: #FFB531,
   error: #E96B6B
+),
+  logo-with-descriptor: (
+  default: (
+  primary: (
+  elements: (
+  label: (
+  normal: #2F383F,
+  hovered: rgba(#2F383F, 0.8),
+  pressed: rgba(#2F383F, 0.8)
+)
+)
+)
+)
 ),
   options: (
   primary: (

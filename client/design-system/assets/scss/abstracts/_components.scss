@@ -475,6 +475,20 @@ $input:(
 )
 )
 );
+$logo-with-descriptor:(
+  default: (
+  md: (
+  self: (
+  gap: 12px
+),
+  elements: (
+  label: (
+  font-style: label-1
+)
+)
+)
+)
+);
 $main-container:(
   default: (
   self: (

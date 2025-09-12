@@ -1145,6 +1145,20 @@
     "value": "component",
     "type": "string"
   },
+  "logoWithDescriptor.default.md.self.gap": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "logoWithDescriptor.default.md.elements.label.fontStyle": {
+    "value": "label-1",
+    "type": "alias",
+    "unit": ""
+  },
+  "logoWithDescriptor.default.type": {
+    "value": "component",
+    "type": "string"
+  },
   "mainContainer.default.self.borderRadius": {
     "value": 16,
     "type": "radius",
