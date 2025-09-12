@@ -1,10 +1,18 @@
 {
   "en": {
     "value": "en",
-    "word": "английский"
+    "word": "english"
   },
   "ru": {
-    "value": "ру",
-    "word": "русский"
+    "value": "ru",
+    "word": "russian"
+  },
+  "de": {
+    "value": "de",
+    "word": "немецкий"
+  },
+  "fr": {
+    "value": "ru",
+    "word": "французский"
   }
 }
