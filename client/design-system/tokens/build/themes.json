@@ -1944,6 +1944,38 @@
           }
         }
       },
+      "templates": {
+        "mainHeader": {
+          "neutral": {
+            "primary": {
+              "background": {
+                "normal": {
+                  "value": "#101315",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "main header"
+                  }
+                }
+              }
+            }
+          },
+          "accent": {
+            "primary": {
+              "background": {
+                "normal": {
+                  "value": "#013CFE",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "main header"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
       "toggleSwitch": {
         "neutral": {
           "elements": {
@@ -2035,13 +2067,21 @@
           "background": {
             "normal": {
               "value": "#F8F9FA",
-              "type": "color"
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "action sheet"
+              }
             }
           },
           "shadow": {
             "normal": {
               "value": "rgba(#060606, 0.075)",
-              "type": "color"
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "action sheet"
+              }
             }
           }
         },
@@ -2049,13 +2089,21 @@
           "background": {
             "normal": {
               "value": "#DCE1E5",
-              "type": "color"
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "action sheet"
+              }
             }
           },
           "shadow": {
             "normal": {
               "value": "rgba(#060606, 0.075)",
-              "type": "color"
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "action sheet"
+              }
             }
           }
         },
@@ -2063,13 +2111,21 @@
           "background": {
             "normal": {
               "value": "#013CFE",
-              "type": "color"
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "action sheet"
+              }
             }
           },
           "shadow": {
             "normal": {
               "value": "rgba(#060606, 0.075)",
-              "type": "color"
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "action sheet"
+              }
             }
           }
         },
@@ -2077,13 +2133,21 @@
           "background": {
             "normal": {
               "value": "rgba(#F8F9FA, 0)",
-              "type": "color"
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "action sheet"
+              }
             }
           },
           "shadow": {
             "normal": {
               "value": "rgba(rgba(#060606, 0.075), 0)",
-              "type": "color"
+              "type": "color",
+              "unit": "hex",
+              "meta": {
+                "category": "action sheet"
+              }
             }
           }
         }
@@ -4114,6 +4178,38 @@
                   "meta": {
                     "category": "text",
                     "description": "Active label color for step pagination tab"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "templates": {
+        "mainHeader": {
+          "neutral": {
+            "primary": {
+              "background": {
+                "normal": {
+                  "value": "#F8F9FA",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "main header"
+                  }
+                }
+              }
+            }
+          },
+          "accent": {
+            "primary": {
+              "background": {
+                "normal": {
+                  "value": "#013CFE",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "main header"
                   }
                 }
               }

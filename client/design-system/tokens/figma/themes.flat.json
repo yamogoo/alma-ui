@@ -1640,6 +1640,16 @@
     "unit": "hex",
     "description": "Active label color for step pagination tab"
   },
+  "themes.dark.templates.mainHeader.neutral.primary.background.normal": {
+    "value": "#101315",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.templates.mainHeader.accent.primary.background.normal": {
+    "value": "#013CFE",
+    "type": "color",
+    "unit": "hex"
+  },
   "themes.dark.toggleSwitch.neutral.elements.track.normal": {
     "value": "#3E4A53",
     "type": "color",
@@ -1687,35 +1697,43 @@
   },
   "themes.light.actionSheet.primary.background.normal": {
     "value": "#F8F9FA",
-    "type": "color"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.actionSheet.primary.shadow.normal": {
     "value": "rgba(#060606, 0.075)",
-    "type": "color"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.actionSheet.secondary.background.normal": {
     "value": "#DCE1E5",
-    "type": "color"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.actionSheet.secondary.shadow.normal": {
     "value": "rgba(#060606, 0.075)",
-    "type": "color"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.actionSheet.accent.background.normal": {
     "value": "#013CFE",
-    "type": "color"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.actionSheet.accent.shadow.normal": {
     "value": "rgba(#060606, 0.075)",
-    "type": "color"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.actionSheet.transparental.background.normal": {
     "value": "rgba(#F8F9FA, 0)",
-    "type": "color"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.actionSheet.transparental.shadow.normal": {
     "value": "rgba(rgba(#060606, 0.075), 0)",
-    "type": "color"
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.background.base": {
     "value": "#EAEDEF",
@@ -3383,6 +3401,16 @@
     "type": "color",
     "unit": "hex",
     "description": "Active label color for step pagination tab"
+  },
+  "themes.light.templates.mainHeader.neutral.primary.background.normal": {
+    "value": "#F8F9FA",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.templates.mainHeader.accent.primary.background.normal": {
+    "value": "#013CFE",
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.toggleSwitch.neutral.elements.track.normal": {
     "value": "#909FAC",

@@ -614,6 +614,27 @@ $step-pagination-tabs:(
 )
 )
 );
+$templates:(
+  main-header: (
+  default: (
+  lg: (
+  self: (
+  padding: 16px
+)
+),
+  md: (
+  self: (
+  padding: 12px
+)
+),
+  sm: (
+  self: (
+  padding: 8px
+)
+)
+)
+)
+);
 $toggle-switch:(
   default: (
   lg: (

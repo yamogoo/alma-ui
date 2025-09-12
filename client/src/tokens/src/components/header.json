@@ -1,5 +1,0 @@
-{
-  "padding": "{tokens.spacing.md.value}",
-  "type": "spacing",
-  "unit": "px"
-}

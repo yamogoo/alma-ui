@@ -1,0 +1,30 @@
+{
+  "neutral": {
+    "primary": {
+      "background": {
+        "normal": {
+          "value": "{themes.themes.dark.background.primary.value}",
+          "type": "color",
+          "unit": "hex",
+          "meta": {
+            "category": "main header"
+          }
+        }
+      }
+    }
+  },
+  "accent": {
+    "primary": {
+      "background": {
+        "normal": {
+          "value": "{themes.themes.dark.background.accent.value}",
+          "type": "color",
+          "unit": "hex",
+          "meta": {
+            "category": "main header"
+          }
+        }
+      }
+    }
+  }
+}

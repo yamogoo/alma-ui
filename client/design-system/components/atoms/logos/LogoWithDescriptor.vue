@@ -38,7 +38,7 @@ const computedClass = () => {
     ]"
   >
     <Logo data-testid="logo" />
-    <Text variant="body-2" class="logo-with-descriptor__label">renum</Text>
+    <Text variant="body-2" class="logo-with-descriptor__label">re:num</Text>
   </div>
 </template>
 

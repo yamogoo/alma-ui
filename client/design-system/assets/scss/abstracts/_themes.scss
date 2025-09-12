@@ -849,6 +849,24 @@ $themes:(
 )
 )
 ),
+  templates: (
+  main-header: (
+  neutral: (
+  primary: (
+  background: (
+  normal: #101315
+)
+)
+),
+  accent: (
+  primary: (
+  background: (
+  normal: #013CFE
+)
+)
+)
+)
+),
   toggle-switch: (
   neutral: (
   elements: (
@@ -1713,6 +1731,24 @@ $themes:(
   label: (
   normal: #2F383F,
   active: #2F383F
+)
+)
+)
+)
+),
+  templates: (
+  main-header: (
+  neutral: (
+  primary: (
+  background: (
+  normal: #F8F9FA
+)
+)
+),
+  accent: (
+  primary: (
+  background: (
+  normal: #013CFE
 )
 )
 )

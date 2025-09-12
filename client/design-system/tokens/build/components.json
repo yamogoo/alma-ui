@@ -2254,6 +2254,48 @@
       }
     }
   },
+  "templates": {
+    "mainHeader": {
+      "default": {
+        "lg": {
+          "self": {
+            "padding": {
+              "value": 16,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "main header"
+              }
+            }
+          }
+        },
+        "md": {
+          "self": {
+            "padding": {
+              "value": 12,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "main header"
+              }
+            }
+          }
+        },
+        "sm": {
+          "self": {
+            "padding": {
+              "value": 8,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "main header"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "toggleSwitch": {
     "default": {
       "lg": {

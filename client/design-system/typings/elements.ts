@@ -49,22 +49,21 @@ export type UIElementContentKey = string | number | Symbol;
 
 export type UIElementTypographyTitleTag = `h${1 | 2 | 3 | 4 | 5 | 6}`;
 
-export type UIElementTypographyParagraphTag =
-  | "p"
-  | "span"
-  | "a"
-  | "li"
-  | "ol"
-  | "ul"
-  | "b"
-  | "i";
-
 export type UIElementTypographyLinkTag = "a";
+
+export type UIElementTypographyListItemTag = "li" | "ol" | "ul";
+
+export type UIElementTypographyParagraphTag = "p" | "span" | "a" | "b" | "i";
+
+export type UIElementHeaderTag = "div" | "header" | "section";
+
+export type UIElementFooterTag = "div" | "footer" | "section";
 
 export type UIElementTypographyTag =
   | UIElementTypographyTitleTag
   | UIElementTypographyParagraphTag
-  | UIElementTypographyLinkTag;
+  | UIElementTypographyLinkTag
+  | UIElementTypographyListItemTag;
 
 export interface UIElementUnionProps<V = UIElementVariant> {
   variant?: V;

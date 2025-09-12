@@ -1401,6 +1401,21 @@
     "value": "component",
     "type": "string"
   },
+  "templates.mainHeader.default.lg.self.padding": {
+    "value": 16,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "templates.mainHeader.default.md.self.padding": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "templates.mainHeader.default.sm.self.padding": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px"
+  },
   "toggleSwitch.default.lg.self.width": {
     "value": 40,
     "type": "size",
