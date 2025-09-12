@@ -146,6 +146,8 @@
             "alias": {
               "size": {
                 "value": "sm",
+                "type": "alias",
+                "unit": "",
                 "meta": {
                   "description": "Alias for icon size",
                   "category": "button"
@@ -225,6 +227,8 @@
             "alias": {
               "size": {
                 "value": "xs",
+                "type": "alias",
+                "unit": "",
                 "meta": {
                   "description": "Alias for icon size",
                   "category": "button"
@@ -304,6 +308,8 @@
             "alias": {
               "size": {
                 "value": "xs",
+                "type": "alias",
+                "unit": "",
                 "meta": {
                   "description": "Alias for icon size",
                   "category": "button"
@@ -381,6 +387,8 @@
             "alias": {
               "size": {
                 "value": "xxs",
+                "type": "alias",
+                "unit": "",
                 "meta": {
                   "description": "Alias for icon size",
                   "category": "button"
@@ -462,6 +470,8 @@
             "alias": {
               "size": {
                 "value": "sm",
+                "type": "alias",
+                "unit": "",
                 "meta": {
                   "description": "Alias for icon size",
                   "category": "button"
@@ -541,6 +551,8 @@
             "alias": {
               "size": {
                 "value": "xs",
+                "type": "alias",
+                "unit": "",
                 "meta": {
                   "description": "Alias for icon size",
                   "category": "button"
@@ -620,6 +632,8 @@
             "alias": {
               "size": {
                 "value": "xs",
+                "type": "alias",
+                "unit": "",
                 "meta": {
                   "description": "Alias for icon size",
                   "category": "button"
@@ -699,6 +713,8 @@
             "alias": {
               "size": {
                 "value": "xxs",
+                "type": "alias",
+                "unit": "",
                 "meta": {
                   "description": "Alias for icon size",
                   "category": "button"
@@ -945,6 +961,7 @@
                 "fontStyle": {
                   "value": "label-2",
                   "type": "alias",
+                  "unit": "",
                   "meta": {
                     "description": "Font style for dropdown value label",
                     "category": "typography"
@@ -1080,6 +1097,7 @@
                 "fontStyle": {
                   "value": "label-3",
                   "type": "alias",
+                  "unit": "",
                   "meta": {
                     "description": "Font style for dropdown value label",
                     "category": "typography"
@@ -1645,6 +1663,7 @@
             "fontStyle": {
               "value": "label-3",
               "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Font style for input value text",
                 "category": "typography"
@@ -1664,6 +1683,7 @@
             "fontStyle": {
               "value": "label-3",
               "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Font style for placeholder text",
                 "category": "typography"
@@ -1674,6 +1694,7 @@
             "fontStyle": {
               "value": "caption-1",
               "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Font style for error text",
                 "category": "typography"
@@ -1746,6 +1767,7 @@
             "fontStyle": {
               "value": "label-3",
               "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Font style for input value text",
                 "category": "typography"
@@ -1765,6 +1787,7 @@
             "fontStyle": {
               "value": "label-3",
               "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Font style for placeholder text",
                 "category": "typography"
@@ -1775,6 +1798,7 @@
             "fontStyle": {
               "value": "caption-1",
               "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Font style for error text",
                 "category": "typography"
@@ -1809,7 +1833,7 @@
           "unit": "px",
           "meta": {
             "description": "Border radius of the main container",
-            "category": "radius",
+            "category": "main container",
             "status": "unused"
           }
         },
@@ -1821,7 +1845,7 @@
               "unit": "px",
               "meta": {
                 "description": "Padding for large screens",
-                "category": "spacing",
+                "category": "main container",
                 "status": "unused"
               }
             }
@@ -1833,7 +1857,7 @@
               "unit": "px",
               "meta": {
                 "description": "Padding for medium screens",
-                "category": "spacing",
+                "category": "main container",
                 "status": "unused"
               }
             }
@@ -1842,7 +1866,8 @@
       },
       "type": "component",
       "meta": {
-        "status": "unused"
+        "status": "unused",
+        "category": "main container"
       }
     }
   },
@@ -1854,6 +1879,7 @@
             "fontStyle": {
               "value": "label-2",
               "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Font style for large dropdown option",
                 "category": "typography"
@@ -1878,6 +1904,7 @@
             "fontStyle": {
               "value": "label-3",
               "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Font style for medium dropdown option",
                 "category": "typography"
@@ -2152,6 +2179,7 @@
             "fontStyle": {
               "value": "title-3",
               "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Font style for step pagination tab item on large screens",
                 "category": "typography"
@@ -2176,6 +2204,7 @@
             "fontStyle": {
               "value": "title-4",
               "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Font style for step pagination tab item on medium screens",
                 "category": "typography"

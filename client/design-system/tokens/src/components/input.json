@@ -44,6 +44,7 @@
           "fontStyle": {
             "value": "label-3",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for input value text",
               "category": "typography"
@@ -63,6 +64,7 @@
           "fontStyle": {
             "value": "label-3",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for placeholder text",
               "category": "typography"
@@ -73,6 +75,7 @@
           "fontStyle": {
             "value": "caption-1",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for error text",
               "category": "typography"
@@ -145,6 +148,7 @@
           "fontStyle": {
             "value": "label-3",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for input value text",
               "category": "typography"
@@ -164,6 +168,7 @@
           "fontStyle": {
             "value": "label-3",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for placeholder text",
               "category": "typography"
@@ -174,6 +179,7 @@
           "fontStyle": {
             "value": "caption-1",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for error text",
               "category": "typography"

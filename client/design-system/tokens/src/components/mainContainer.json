@@ -7,7 +7,7 @@
         "unit": "px",
         "meta": {
           "description": "Border radius of the main container",
-          "category": "radius",
+          "category": "main container",
           "status": "unused"
         }
       },
@@ -19,7 +19,7 @@
             "unit": "px",
             "meta": {
               "description": "Padding for large screens",
-              "category": "spacing",
+              "category": "main container",
               "status": "unused"
             }
           }
@@ -31,7 +31,7 @@
             "unit": "px",
             "meta": {
               "description": "Padding for medium screens",
-              "category": "spacing",
+              "category": "main container",
               "status": "unused"
             }
           }
@@ -40,7 +40,8 @@
     },
     "type": "component",
     "meta": {
-      "status": "unused"
+      "status": "unused",
+      "category": "main container"
     }
   }
 }

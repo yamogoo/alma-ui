@@ -6,7 +6,7 @@
           "normal": {
             "value": "{themes.themes.light.label.primary.value}",
             "type": "color",
-            "format": "hex",
+            "unit": "hex",
             "meta": {
               "category": "text",
               "description": "Normal label color for step pagination tab"
@@ -15,7 +15,7 @@
           "active": {
             "value": "{themes.themes.light.label.primary.value}",
             "type": "color",
-            "format": "hex",
+            "unit": "hex",
             "meta": {
               "category": "text",
               "description": "Active label color for step pagination tab"

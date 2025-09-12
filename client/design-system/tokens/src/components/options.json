@@ -6,6 +6,7 @@
           "fontStyle": {
             "value": "label-2",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for large dropdown option",
               "category": "typography"
@@ -30,6 +31,7 @@
           "fontStyle": {
             "value": "label-3",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for medium dropdown option",
               "category": "typography"

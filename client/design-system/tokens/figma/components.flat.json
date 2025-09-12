@@ -94,7 +94,8 @@
   },
   "button.default.lg.elements.icon.alias.size": {
     "value": "sm",
-    "type": "unknown",
+    "type": "alias",
+    "unit": "",
     "description": "Alias for icon size"
   },
   "button.default.lg.type": {
@@ -144,7 +145,8 @@
   },
   "button.default.md.elements.icon.alias.size": {
     "value": "xs",
-    "type": "unknown",
+    "type": "alias",
+    "unit": "",
     "description": "Alias for icon size"
   },
   "button.default.md.type": {
@@ -194,7 +196,8 @@
   },
   "button.default.sm.elements.icon.alias.size": {
     "value": "xs",
-    "type": "unknown",
+    "type": "alias",
+    "unit": "",
     "description": "Alias for icon size"
   },
   "button.default.sm.type": {
@@ -242,7 +245,8 @@
   },
   "button.default.xs.elements.icon.alias.size": {
     "value": "xxs",
-    "type": "unknown",
+    "type": "alias",
+    "unit": "",
     "description": "Alias for icon size"
   },
   "button.default.xs.type": {
@@ -292,7 +296,8 @@
   },
   "button.rounded.lg.elements.icon.alias.size": {
     "value": "sm",
-    "type": "unknown",
+    "type": "alias",
+    "unit": "",
     "description": "Alias for icon size"
   },
   "button.rounded.lg.type": {
@@ -342,7 +347,8 @@
   },
   "button.rounded.md.elements.icon.alias.size": {
     "value": "xs",
-    "type": "unknown",
+    "type": "alias",
+    "unit": "",
     "description": "Alias for icon size"
   },
   "button.rounded.md.type": {
@@ -392,7 +398,8 @@
   },
   "button.rounded.sm.elements.icon.alias.size": {
     "value": "xs",
-    "type": "unknown",
+    "type": "alias",
+    "unit": "",
     "description": "Alias for icon size"
   },
   "button.rounded.sm.type": {
@@ -442,7 +449,8 @@
   },
   "button.rounded.xs.elements.icon.alias.size": {
     "value": "xxs",
-    "type": "unknown",
+    "type": "alias",
+    "unit": "",
     "description": "Alias for icon size"
   },
   "button.rounded.xs.type": {
@@ -591,6 +599,7 @@
   "dropDown.default.lg.elements.currentValue.elements.label.fontStyle": {
     "value": "label-2",
     "type": "alias",
+    "unit": "",
     "description": "Font style for dropdown value label"
   },
   "dropDown.default.lg.elements.currentValue.elements.icon.size": {
@@ -679,6 +688,7 @@
   "dropDown.default.md.elements.currentValue.elements.label.fontStyle": {
     "value": "label-3",
     "type": "alias",
+    "unit": "",
     "description": "Font style for dropdown value label"
   },
   "dropDown.default.md.elements.currentValue.elements.icon.size": {
@@ -1031,6 +1041,7 @@
   "input.default.md.elements.label.fontStyle": {
     "value": "label-3",
     "type": "alias",
+    "unit": "",
     "description": "Font style for input value text"
   },
   "input.default.md.elements.label.paddingTop": {
@@ -1042,11 +1053,13 @@
   "input.default.md.elements.placeholder.fontStyle": {
     "value": "label-3",
     "type": "alias",
+    "unit": "",
     "description": "Font style for placeholder text"
   },
   "input.default.md.elements.error.fontStyle": {
     "value": "caption-1",
     "type": "alias",
+    "unit": "",
     "description": "Font style for error text"
   },
   "input.default.md.elements.error.padding": {
@@ -1096,6 +1109,7 @@
   "input.default.lg.elements.label.fontStyle": {
     "value": "label-3",
     "type": "alias",
+    "unit": "",
     "description": "Font style for input value text"
   },
   "input.default.lg.elements.label.padding-top": {
@@ -1107,11 +1121,13 @@
   "input.default.lg.elements.placeholder.fontStyle": {
     "value": "label-3",
     "type": "alias",
+    "unit": "",
     "description": "Font style for placeholder text"
   },
   "input.default.lg.elements.error.fontStyle": {
     "value": "caption-1",
     "type": "alias",
+    "unit": "",
     "description": "Font style for error text"
   },
   "input.default.lg.elements.error.padding": {
@@ -1155,9 +1171,14 @@
     "value": "unused",
     "type": "string"
   },
+  "mainContainer.default.meta.category": {
+    "value": "main container",
+    "type": "string"
+  },
   "options.default.lg.elements.option.fontStyle": {
     "value": "label-2",
     "type": "alias",
+    "unit": "",
     "description": "Font style for large dropdown option"
   },
   "options.default.lg.elements.option.minHeight": {
@@ -1173,6 +1194,7 @@
   "options.default.md.elements.option.fontStyle": {
     "value": "label-3",
     "type": "alias",
+    "unit": "",
     "description": "Font style for medium dropdown option"
   },
   "options.default.md.elements.option.minHeight": {
@@ -1336,6 +1358,7 @@
   "stepPaginationTabs.default.lg.elements.item.fontStyle": {
     "value": "title-3",
     "type": "alias",
+    "unit": "",
     "description": "Font style for step pagination tab item on large screens"
   },
   "stepPaginationTabs.default.lg.elements.item.padding": {
@@ -1351,6 +1374,7 @@
   "stepPaginationTabs.default.md.elements.item.fontStyle": {
     "value": "title-4",
     "type": "alias",
+    "unit": "",
     "description": "Font style for step pagination tab item on medium screens"
   },
   "stepPaginationTabs.default.md.elements.item.padding": {

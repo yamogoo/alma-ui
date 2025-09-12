@@ -4,7 +4,7 @@
       "border": {
         "value": "{themes.themes.dark.border.primary.value}",
         "type": "color",
-        "format": "hex",
+        "unit": "hex",
         "meta": {
           "category": "border",
           "description": "Primary border color for divider"
@@ -17,7 +17,7 @@
       "border": {
         "value": "{themes.themes.dark.border.secondary.value}",
         "type": "color",
-        "format": "hex",
+        "unit": "hex",
         "meta": {
           "category": "border",
           "description": "Secondary border color for divider"

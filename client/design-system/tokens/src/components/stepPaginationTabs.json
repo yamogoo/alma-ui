@@ -6,6 +6,7 @@
           "fontStyle": {
             "value": "title-3",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for step pagination tab item on large screens",
               "category": "typography"
@@ -30,6 +31,7 @@
           "fontStyle": {
             "value": "title-4",
             "type": "alias",
+            "unit": "",
             "meta": {
               "description": "Font style for step pagination tab item on medium screens",
               "category": "typography"

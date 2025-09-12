@@ -69,6 +69,8 @@
           "alias": {
             "size": {
               "value": "sm",
+              "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Alias for icon size",
                 "category": "button"
@@ -148,6 +150,8 @@
           "alias": {
             "size": {
               "value": "xs",
+              "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Alias for icon size",
                 "category": "button"
@@ -227,6 +231,8 @@
           "alias": {
             "size": {
               "value": "xs",
+              "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Alias for icon size",
                 "category": "button"
@@ -301,6 +307,8 @@
           "alias": {
             "size": {
               "value": "xxs",
+              "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Alias for icon size",
                 "category": "button"
@@ -377,6 +385,8 @@
           "alias": {
             "size": {
               "value": "sm",
+              "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Alias for icon size",
                 "category": "button"
@@ -451,6 +461,8 @@
           "alias": {
             "size": {
               "value": "xs",
+              "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Alias for icon size",
                 "category": "button"
@@ -530,6 +542,8 @@
           "alias": {
             "size": {
               "value": "xs",
+              "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Alias for icon size",
                 "category": "button"
@@ -609,6 +623,8 @@
           "alias": {
             "size": {
               "value": "xxs",
+              "type": "alias",
+              "unit": "",
               "meta": {
                 "description": "Alias for icon size",
                 "category": "button"

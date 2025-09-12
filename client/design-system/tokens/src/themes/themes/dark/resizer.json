@@ -5,7 +5,7 @@
         "normal": {
           "value": "{themes.themes.light.label.accent.value}",
           "type": "color",
-          "format": "hex",
+          "unit": "hex",
           "meta": {
             "category": "text",
             "description": "Normal color of the resizer splitter"
@@ -14,7 +14,7 @@
         "active": {
           "value": "{themes.themes.light.label.accent.value}",
           "type": "color",
-          "format": "hex",
+          "unit": "hex",
           "meta": {
             "category": "text",
             "description": "Active color of the resizer splitter"
@@ -25,7 +25,7 @@
         "normal": {
           "value": "{colors.gray-750}",
           "type": "color",
-          "format": "hex",
+          "unit": "hex",
           "meta": {
             "category": "background",
             "description": "Normal color of the resizer knob"
@@ -34,7 +34,7 @@
         "active": {
           "value": "{colors.accent-750}",
           "type": "color",
-          "format": "hex",
+          "unit": "hex",
           "meta": {
             "category": "background",
             "description": "Active color of the resizer knob"
