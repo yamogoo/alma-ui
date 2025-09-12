@@ -4,18 +4,18 @@
 
 %main-container {
   @include respond-above(sm) {
-    padding: 0 get($spacing, "lg.value");
+    padding: 0 get($spacing, "lg");
   }
   @include respond-below(sm) {
-    padding: 0 get($spacing, "sm.value");
+    padding: 0 get($spacing, "sm");
   }
 }
 
 %content-container {
   @include respond-above(sm) {
-    padding: 0 get($spacing, "xxl.value");
+    padding: 0 get($spacing, "xxl");
   }
   @include respond-below(sm) {
-    padding: 0 get($spacing, "sm.value");
+    padding: 0 get($spacing, "sm");
   }
 }

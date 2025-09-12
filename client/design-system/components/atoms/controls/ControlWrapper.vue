@@ -23,9 +23,9 @@ withDefaults(defineProps<ControlWrapperProps>(), {
 @mixin defineButtonSizes($map: $control-wrapper) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $gap: px2rem(get($val, "self.gap.value"));
-      $padding-v: px2rem(get($val, "self.padding-v.value"));
-      $padding-h: px2rem(get($val, "self.padding-h.value"));
+      $gap: px2rem(get($val, "self.gap"));
+      $padding-v: px2rem(get($val, "self.padding-v"));
+      $padding-h: px2rem(get($val, "self.padding-h"));
       $padding: $padding-v $padding-h;
 
       &_variant-#{$variant} {

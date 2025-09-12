@@ -12,7 +12,7 @@
 
     &__#{$k} {
       @each $key, $value in $v {
-        $result: map.get($value, "value");
+        $result: $value;
 
         @if $key == "font-size" or $key == "letter-spacing" {
           #{$key}: px2em($result);

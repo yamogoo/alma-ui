@@ -23,6 +23,7 @@
     "preview": "vite preview",
     "test:unit": "vitest",
     "test:ui": "vitest --ui",
+    "tokens:build": "node style-dictionary.config.js",
     "storybook:dev": "storybook dev -p 6006",
     "storybook:build": "storybook build"
   },
@@ -71,6 +72,8 @@
     "prettier": "^3.6.2",
     "sass": "^1.92.1",
     "storybook": "^9.1.5",
+    "style-dictionary": "^5.0.4",
+    "style-dictionary-esm": "^1.9.2",
     "terser": "^5.44.0",
     "typed-css-modules": "^0.9.1",
     "typescript": "~5.8.3",

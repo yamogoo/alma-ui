@@ -16,7 +16,7 @@ defineProps<OverlayProps>();
   @each $name in $names {
     &_color-#{$name} {
       @include themify($themes) {
-        background-color: themed("overlay.#{$name}.background.value");
+        background-color: themed("overlay.#{$name}.background");
       }
     }
   }

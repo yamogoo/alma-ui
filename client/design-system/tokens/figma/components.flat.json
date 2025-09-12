@@ -588,68 +588,60 @@
     "unit": "px",
     "description": "Height of large dropdown"
   },
-  "dropDown.default.lg.elements": {
-    "value": {
-      "elements": {
-        "label": {
-          "fontStyle": {
-            "value": "label-2",
-            "type": "alias",
-            "meta": {
-              "description": "Font style for dropdown value label",
-              "category": "typography"
-            }
-          }
-        },
-        "icon": {
-          "size": {
-            "value": 12,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Icon size for dropdown value",
-              "category": "dropDown"
-            }
-          }
-        }
-      },
-      "self": {
-        "gap": {
-          "value": 8,
-          "type": "spacing",
-          "unit": "px",
-          "meta": {
-            "description": "Gap inside dropdown value component",
-            "category": "dropDown"
-          }
-        },
-        "padding": {
-          "value": [
-            8,
-            12,
-            8,
-            12
-          ],
-          "type": "spacing",
-          "unit": "px",
-          "meta": {
-            "description": "Padding inside dropdown value component",
-            "category": "dropDown"
-          }
-        },
-        "borderRadius": {
-          "value": 8,
-          "type": "radius",
-          "unit": "px",
-          "meta": {
-            "description": "Border radius of dropdown value component",
-            "category": "dropDown"
-          }
-        }
-      },
-      "type": "component"
-    },
-    "type": "unknown"
+  "dropDown.default.lg.elements.currentValue.elements.label.fontStyle": {
+    "value": "label-2",
+    "type": "alias",
+    "description": "Font style for dropdown value label"
+  },
+  "dropDown.default.lg.elements.currentValue.elements.icon.size": {
+    "value": 12,
+    "type": "size",
+    "unit": "px",
+    "description": "Icon size for dropdown value"
+  },
+  "dropDown.default.lg.elements.currentValue.self.gap": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap inside dropdown value component"
+  },
+  "dropDown.default.lg.elements.currentValue.self.padding": {
+    "value": [
+      8,
+      12,
+      8,
+      12
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside dropdown value component"
+  },
+  "dropDown.default.lg.elements.currentValue.self.borderRadius": {
+    "value": 8,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius of dropdown value component"
+  },
+  "dropDown.default.lg.elements.currentValue.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "dropDown.default.lg.elements.options.padding": {
+    "value": [
+      8,
+      12,
+      8,
+      12
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside dropdown options"
+  },
+  "dropDown.default.lg.elements.options.borderRadius": {
+    "value": 8,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for dropdown options"
   },
   "dropDown.default.lg.tokens.padding": {
     "value": [
@@ -684,68 +676,60 @@
     "unit": "px",
     "description": "Height of medium dropdown"
   },
-  "dropDown.default.md.elements": {
-    "value": {
-      "elements": {
-        "label": {
-          "fontStyle": {
-            "value": "label-3",
-            "type": "alias",
-            "meta": {
-              "description": "Font style for dropdown value label",
-              "category": "typography"
-            }
-          }
-        },
-        "icon": {
-          "size": {
-            "value": 12,
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Icon size for dropdown value",
-              "category": "dropDown"
-            }
-          }
-        }
-      },
-      "self": {
-        "gap": {
-          "value": 8,
-          "type": "spacing",
-          "unit": "px",
-          "meta": {
-            "description": "Gap inside dropdown value component",
-            "category": "dropDown"
-          }
-        },
-        "padding": {
-          "value": [
-            8,
-            12,
-            8,
-            12
-          ],
-          "type": "spacing",
-          "unit": "px",
-          "meta": {
-            "description": "Padding inside dropdown value component",
-            "category": "dropDown"
-          }
-        },
-        "borderRadius": {
-          "value": 8,
-          "type": "radius",
-          "unit": "px",
-          "meta": {
-            "description": "Border radius of dropdown value component",
-            "category": "dropDown"
-          }
-        }
-      },
-      "type": "component"
-    },
-    "type": "unknown"
+  "dropDown.default.md.elements.currentValue.elements.label.fontStyle": {
+    "value": "label-3",
+    "type": "alias",
+    "description": "Font style for dropdown value label"
+  },
+  "dropDown.default.md.elements.currentValue.elements.icon.size": {
+    "value": 12,
+    "type": "size",
+    "unit": "px",
+    "description": "Icon size for dropdown value"
+  },
+  "dropDown.default.md.elements.currentValue.self.gap": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap inside dropdown value component"
+  },
+  "dropDown.default.md.elements.currentValue.self.padding": {
+    "value": [
+      8,
+      12,
+      8,
+      12
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside dropdown value component"
+  },
+  "dropDown.default.md.elements.currentValue.self.borderRadius": {
+    "value": 8,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius of dropdown value component"
+  },
+  "dropDown.default.md.elements.currentValue.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "dropDown.default.md.elements.options.padding": {
+    "value": [
+      8,
+      12,
+      8,
+      12
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside dropdown options"
+  },
+  "dropDown.default.md.elements.options.borderRadius": {
+    "value": 8,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for dropdown options"
   },
   "dropDown.default.md.tokens.padding": {
     "value": [
@@ -966,27 +950,37 @@
     "unit": "px",
     "description": "Border radius for medium input"
   },
-  "input.default.md.elements": {
-    "value": {
-      "fontStyle": {
-        "value": "label-3",
-        "type": "alias",
-        "meta": {
-          "description": "Font style for input value text",
-          "category": "typography"
-        }
-      },
-      "paddingTop": {
-        "value": 12,
-        "type": "spacing",
-        "unit": "px",
-        "meta": {
-          "description": "Top padding for input value text",
-          "category": "input"
-        }
-      }
-    },
-    "type": "unknown"
+  "input.default.md.elements.label.fontStyle": {
+    "value": "label-3",
+    "type": "alias",
+    "description": "Font style for input value text"
+  },
+  "input.default.md.elements.label.paddingTop": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Top padding for input value text"
+  },
+  "input.default.md.elements.placeholder.fontStyle": {
+    "value": "label-3",
+    "type": "alias",
+    "description": "Font style for placeholder text"
+  },
+  "input.default.md.elements.error.fontStyle": {
+    "value": "caption-1",
+    "type": "alias",
+    "description": "Font style for error text"
+  },
+  "input.default.md.elements.error.padding": {
+    "value": [
+      0,
+      16,
+      0,
+      16
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding for error message"
   },
   "input.default.md.type": {
     "value": "component",
@@ -1021,27 +1015,37 @@
     "unit": "px",
     "description": "Border radius for large input"
   },
-  "input.default.lg.elements": {
-    "value": {
-      "fontStyle": {
-        "value": "label-3",
-        "type": "alias",
-        "meta": {
-          "description": "Font style for input value text",
-          "category": "typography"
-        }
-      },
-      "padding-top": {
-        "value": 12,
-        "type": "spacing",
-        "unit": "px",
-        "meta": {
-          "description": "Top padding for input value text",
-          "category": "input"
-        }
-      }
-    },
-    "type": "unknown"
+  "input.default.lg.elements.label.fontStyle": {
+    "value": "label-3",
+    "type": "alias",
+    "description": "Font style for input value text"
+  },
+  "input.default.lg.elements.label.padding-top": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Top padding for input value text"
+  },
+  "input.default.lg.elements.placeholder.fontStyle": {
+    "value": "label-3",
+    "type": "alias",
+    "description": "Font style for placeholder text"
+  },
+  "input.default.lg.elements.error.fontStyle": {
+    "value": "caption-1",
+    "type": "alias",
+    "description": "Font style for error text"
+  },
+  "input.default.lg.elements.error.padding": {
+    "value": [
+      0,
+      16,
+      0,
+      16
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding for error message"
   },
   "input.default.lg.type": {
     "value": "component",

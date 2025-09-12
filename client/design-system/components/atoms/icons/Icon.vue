@@ -65,7 +65,7 @@ export interface Props {
 @mixin defineSizes($map: $icon) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $box-size: px2rem(get($val, "self.size.value"));
+      $box-size: px2rem(get($val, "self.size"));
 
       &_variant-#{$variant} {
         &.icon_size-#{$size} {
@@ -80,7 +80,7 @@ export interface Props {
   @each $name in $names {
     &_color-#{$name} {
       @include themify($themes) {
-        fill: themed("label.#{$name}.value");
+        fill: themed("label.#{$name}");
       }
     }
   }

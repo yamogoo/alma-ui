@@ -71,16 +71,13 @@ $prefix: "resizer__";
     // normal state:
     .#{$prefix}splitter {
       @include themify($themes) {
-        background: rgba(
-          themed("resizer.default.elements.splitter.normal.value"),
-          0
-        );
+        background: rgba(themed("resizer.default.elements.splitter.normal"), 0);
       }
     }
 
     .#{$prefix}knob {
       @include themify($themes) {
-        background: themed("resizer.default.elements.knob.normal.value");
+        background: themed("resizer.default.elements.knob.normal");
       }
     }
 
@@ -89,7 +86,7 @@ $prefix: "resizer__";
       .#{$prefix}splitter {
         @include themify($themes) {
           background: rgba(
-            themed("resizer.default.elements.splitter.active.value"),
+            themed("resizer.default.elements.splitter.active"),
             1
           );
         }

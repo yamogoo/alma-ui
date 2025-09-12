@@ -1325,7 +1325,7 @@
       },
       "dropDown": {
         "primary": {
-          "value": {
+          "currentValue": {
             "label": {
               "normal": {
                 "value": "#EAEDEF"
@@ -3397,7 +3397,7 @@
       },
       "dropDown": {
         "primary": {
-          "value": {
+          "currentValue": {
             "label": {
               "normal": {
                 "value": "#1A1F23"

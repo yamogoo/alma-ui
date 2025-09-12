@@ -45,8 +45,8 @@ const onAnimate = (el: Element): void => {
     &_variant-#{$name} {
       &.skeleton__shape {
         @include themify($themes) {
-          $color-in: themed("skeleton.#{$name}.color-in.value");
-          $color-out: themed("skeleton.#{$name}.color-out.value");
+          $color-in: themed("skeleton.#{$name}.color-in");
+          $color-out: themed("skeleton.#{$name}.color-out");
           background: linear-gradient(90deg, $color-out, $color-in, $color-out);
         }
       }
@@ -56,7 +56,7 @@ const onAnimate = (el: Element): void => {
 
 .skeleton {
   position: relative;
-  border-radius: px2rem(get($roundness, "xs.value"));
+  border-radius: px2rem(get($roundness, "xs"));
   overflow: hidden;
   z-index: 1;
   cursor: wait;

@@ -1,5 +1,3 @@
-// Portions of this file were developed with the assistance of AI tools (ChatGPT).
-
 import fs from "node:fs";
 import Color from "color";
 

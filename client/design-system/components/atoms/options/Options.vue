@@ -52,8 +52,8 @@ const showCurrentOption = (key: T) => {
 @mixin defineSize($map: $options) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $option-font-style: get($val, "elements.option.font-style.value");
-      $option-min-height: px2rem(get($val, "elements.option.min-height.value"));
+      $option-font-style: get($val, "elements.option.font-style");
+      $option-min-height: px2rem(get($val, "elements.option.min-height"));
 
       &_variant-#{$variant} {
         &.options_size-#{$size} {
@@ -72,12 +72,12 @@ const showCurrentOption = (key: T) => {
     &_color-#{$name} {
       .options__option {
         @include themify($themes) {
-          color: themed("options.#{$name}.label.normal.value");
+          color: themed("options.#{$name}.label.normal");
         }
 
         &:hover {
           @include themify($themes) {
-            color: themed("options.#{$name}.label.hovered.value");
+            color: themed("options.#{$name}.label.hovered");
           }
         }
       }

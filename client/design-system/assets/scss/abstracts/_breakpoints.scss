@@ -2,29 +2,9 @@
 
 
 $breakpoints:(
-  xs: (
-  value: 240px,
-  type: "breakpoint",
-  unit: "px"
-),
-  sm: (
-  value: 480px,
-  type: "breakpoint",
-  unit: "px"
-),
-  md: (
-  value: 820px,
-  type: "breakpoint",
-  unit: "px"
-),
-  lg: (
-  value: 1280px,
-  type: "breakpoint",
-  unit: "px"
-),
-  xl: (
-  value: 1440px,
-  type: "breakpoint",
-  unit: "px"
-)
+  xs: 240px,
+  sm: 480px,
+  md: 820px,
+  lg: 1280px,
+  xl: 1440px
 );

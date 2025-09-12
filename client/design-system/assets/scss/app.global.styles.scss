@@ -6,28 +6,28 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: get($scrollbar, "default.elements.thumb.width.value");
+  width: get($scrollbar, "default.elements.thumb.width");
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   @include themify($themes) {
-    background: rgba(themed("label.disabled.value"), 0);
+    background: rgba(themed("label.disabled"), 0);
   }
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  border-radius: get($scrollbar, "default.elements.thumb.border-radius.value");
+  border-radius: get($scrollbar, "default.elements.thumb.border-radius");
   @include themify($themes) {
-    background: themed("label.primary.value");
+    background: themed("label.primary");
   }
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   @include themify($themes) {
-    background: themed("label.accent.value");
+    background: themed("label.accent");
   }
 }
 

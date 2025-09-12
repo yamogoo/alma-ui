@@ -48,8 +48,8 @@ const id = useId();
 @mixin defineSizes($map: $form) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $border-radius: get($val, "self.border-radius.value");
-      $padding: get($val, "self.padding.value");
+      $border-radius: get($val, "self.border-radius");
+      $padding: get($val, "self.padding");
 
       &_#{$size} {
         padding: $padding;
@@ -63,9 +63,9 @@ const id = useId();
   @each $name in $names {
     &_#{$name} {
       @include themify($themes) {
-        background-color: themed("form.#{$name}.background.value");
+        background-color: themed("form.#{$name}.background");
         @include themify($themes) {
-          box-shadow: 0px 4px 32px themed("form.#{$name}.shadow.value");
+          box-shadow: 0px 4px 32px themed("form.#{$name}.shadow");
         }
       }
     }
@@ -92,13 +92,13 @@ const id = useId();
   &__header,
   &__body,
   &__footer {
-    padding: get($spacing, "sm.value") 0;
+    padding: get($spacing, "sm") 0;
   }
 
   &__body {
     display: flex;
     flex-direction: column;
-    gap: px2rem(get($spacing, "md.value"));
+    gap: px2rem(get($spacing, "md"));
   }
 }
 </style>

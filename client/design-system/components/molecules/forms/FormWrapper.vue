@@ -38,12 +38,12 @@ withDefaults(defineProps<FormWrapperProps>(), {
 @mixin defineSize($map: $form-wrapper) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $padding: get($val, "self.padding.value");
+      $padding: get($val, "self.padding");
 
-      $border-radius: px2rem(get($val, "self.border-radius.value"));
-      $border-width: px2rem(get($val, "self.border-width.value"));
+      $border-radius: px2rem(get($val, "self.border-radius"));
+      $border-width: px2rem(get($val, "self.border-width"));
 
-      $header-padding: get($val, "elements.header.padding.value");
+      $header-padding: get($val, "elements.header.padding");
 
       &_variant-#{$variant} {
         &.form-wrapper_size-#{$size} {
@@ -68,8 +68,8 @@ withDefaults(defineProps<FormWrapperProps>(), {
   @each $name in $names {
     &_color-#{$name} {
       @include themify($themes) {
-        background-color: themed("form-wrapper.#{$name}.background.value");
-        border-color: themed("form-wrapper.#{$name}.border.value");
+        background-color: themed("form-wrapper.#{$name}.background");
+        border-color: themed("form-wrapper.#{$name}.border");
       }
     }
   }

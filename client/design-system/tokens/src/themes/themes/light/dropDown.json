@@ -1,6 +1,6 @@
 {
   "primary": {
-    "value": {
+    "currentValue": {
       "label": {
         "normal": {
           "value": "{colors.gray-900}"

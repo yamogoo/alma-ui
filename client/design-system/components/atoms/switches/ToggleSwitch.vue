@@ -165,12 +165,12 @@ onMounted(() => {
     @each $size, $val in $sizes {
       &_variant-#{$variant} {
         &.toggle-switch_size-#{$size} {
-          $gap: get($val, "self.gap.value");
-          $width: px2rem(get($val, "self.width.value"));
-          $height: px2rem(get($val, "self.height.value"));
+          $gap: get($val, "self.gap");
+          $width: px2rem(get($val, "self.width"));
+          $height: px2rem(get($val, "self.height"));
 
-          $track-padding: px2rem(get($val, "elements.track.padding.value"));
-          $label-font-style: get($val, "elements.label.font-style.value");
+          $track-padding: px2rem(get($val, "elements.track.padding"));
+          $label-font-style: get($val, "elements.label.font-style");
 
           gap: $gap;
 
@@ -203,7 +203,7 @@ onMounted(() => {
             .toggle-switch__track {
               @include themify($themes) {
                 background-color: themed(
-                  "toggle-switch.#{$tone}.elements.track.normal.value"
+                  "toggle-switch.#{$tone}.elements.track.normal"
                 );
               }
             }
@@ -211,16 +211,14 @@ onMounted(() => {
             .toggle-switch__knob {
               @include themify($themes) {
                 background-color: themed(
-                  "toggle-switch.#{$tone}.elements.knob.normal.value"
+                  "toggle-switch.#{$tone}.elements.knob.normal"
                 );
               }
             }
 
             .toggle-switch__label {
               @include themify($themes) {
-                color: themed(
-                  "toggle-switch.#{$tone}.elements.label.normal.value"
-                );
+                color: themed("toggle-switch.#{$tone}.elements.label.normal");
               }
             }
           }
@@ -229,7 +227,7 @@ onMounted(() => {
             .toggle-switch__track {
               @include themify($themes) {
                 background-color: themed(
-                  "toggle-switch.#{$tone}.elements.track.active.value"
+                  "toggle-switch.#{$tone}.elements.track.active"
                 );
               }
             }
@@ -237,16 +235,14 @@ onMounted(() => {
             .toggle-switch__knob {
               @include themify($themes) {
                 background-color: themed(
-                  "toggle-switch.#{$tone}.elements.knob.active.value"
+                  "toggle-switch.#{$tone}.elements.knob.active"
                 );
               }
             }
 
             .toggle-switch__label {
               @include themify($themes) {
-                color: themed(
-                  "toggle-switch.#{$tone}.elements.label.active.value"
-                );
+                color: themed("toggle-switch.#{$tone}.elements.label.active");
               }
             }
           }
@@ -259,7 +255,7 @@ onMounted(() => {
             .toggle-switch__track {
               @include themify($themes) {
                 background-color: themed(
-                  "toggle-switch.#{$tone}.elements.track.disabled.value"
+                  "toggle-switch.#{$tone}.elements.track.disabled"
                 );
               }
             }
@@ -267,16 +263,14 @@ onMounted(() => {
             .toggle-switch__knob {
               @include themify($themes) {
                 background-color: themed(
-                  "toggle-switch.#{$tone}.elements.knob.disabled.value"
+                  "toggle-switch.#{$tone}.elements.knob.disabled"
                 );
               }
             }
 
             .toggle-switch__label {
               @include themify($themes) {
-                color: themed(
-                  "toggle-switch.#{$tone}.elements.label.disabled.value"
-                );
+                color: themed("toggle-switch.#{$tone}.elements.label.disabled");
               }
             }
           }
@@ -285,7 +279,7 @@ onMounted(() => {
             .toggle-switch__track {
               @include themify($themes) {
                 background-color: themed(
-                  "toggle-switch.#{$tone}.elements.track.disabled.value"
+                  "toggle-switch.#{$tone}.elements.track.disabled"
                 );
               }
             }
@@ -293,16 +287,14 @@ onMounted(() => {
             .toggle-switch__knob {
               @include themify($themes) {
                 background-color: themed(
-                  "toggle-switch.#{$tone}.elements.knob.disabled.value"
+                  "toggle-switch.#{$tone}.elements.knob.disabled"
                 );
               }
             }
 
             .toggle-switch__label {
               @include themify($themes) {
-                color: themed(
-                  "toggle-switch.#{$tone}.elements.label.disabled.value"
-                );
+                color: themed("toggle-switch.#{$tone}.elements.label.disabled");
               }
             }
           }

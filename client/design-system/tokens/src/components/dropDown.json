@@ -22,7 +22,7 @@
         }
       },
       "elements": {
-        "value": {
+        "currentValue": {
           "elements": {
             "label": {
               "fontStyle": {
@@ -147,7 +147,7 @@
         }
       },
       "elements": {
-        "value": {
+        "currentValue": {
           "elements": {
             "label": {
               "fontStyle": {

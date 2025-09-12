@@ -56,7 +56,7 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
   @each $variant, $val in $map {
     &_variant-#{$variant} {
       @each $key, $value in $val {
-        $result: map.get($value, "value");
+        $result: $value;
 
         @if $key == "font-size" {
           #{$key}: px2em($result);
@@ -72,7 +72,7 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
   @each $name in $names {
     &_color-#{$name} {
       @include themify($themes) {
-        color: themed("label.#{$name}.value");
+        color: themed("label.#{$name}");
       }
     }
   }
@@ -91,7 +91,7 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
   b {
     &.accent {
       @include themify($themes) {
-        color: themed("label.accent.value");
+        color: themed("label.accent");
       }
     }
   }

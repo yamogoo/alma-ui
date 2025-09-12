@@ -78,7 +78,7 @@ const onCompleted = (): void => {
     @each $size, $val in $sizes {
       &_variant-#{$variant} {
         &.animated-icon_size-#{$size} {
-          $icon-size: px2rem(get($val, "self.size.value"));
+          $icon-size: px2rem(get($val, "self.size"));
 
           width: $icon-size !important;
           height: $icon-size !important;
@@ -94,8 +94,8 @@ const onCompleted = (): void => {
       svg {
         path {
           @include themify($themes) {
-            fill: themed("label.#{$name}.value");
-            stroke: themed("label.#{$name}.value");
+            fill: themed("label.#{$name}");
+            stroke: themed("label.#{$name}");
           }
         }
       }

@@ -47,8 +47,8 @@ const componentTag = props.as;
 @mixin defineSize($map: $group) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $gap: px2rem(get($val, "self.gap.value"));
-      $divider-border-width: px2rem(get($val, "self.border-width.value"));
+      $gap: px2rem(get($val, "self.gap"));
+      $divider-border-width: px2rem(get($val, "self.border-width"));
 
       &_variant-#{$variant} {
         &.group_size-#{$size} {
@@ -77,13 +77,13 @@ const componentTag = props.as;
       &.group_divider {
         &.group_orientation-horizontal {
           @include themify($themes) {
-            border-right-color: themed("group.#{$name}.self.divider.value");
+            border-right-color: themed("group.#{$name}.self.divider");
           }
         }
 
         &.group_orientation-vertical {
           @include themify($themes) {
-            border-bottom-color: themed("group.#{$name}.self.divider.value");
+            border-bottom-color: themed("group.#{$name}.self.divider");
           }
         }
       }
@@ -214,7 +214,7 @@ const componentTag = props.as;
     @each $size, $val in $sizes {
       &_variant-#{$variant} {
         &.group_size-#{$size} {
-          gap: px2rem(get($val, "self.gap.value"));
+          gap: px2rem(get($val, "self.gap"));
         }
       }
     }

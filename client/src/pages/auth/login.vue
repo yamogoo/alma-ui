@@ -134,7 +134,7 @@ onUnmounted(() => {
   position: relative;
   align-content: center;
   @include box(100%);
-  padding: get($spacing, "lg.value");
+  padding: get($spacing, "lg");
   overflow: hidden;
 
   /* &__content {} */

@@ -319,7 +319,7 @@ const onLeave = (el: Element, done: () => void): void => {
 @mixin defineSize($map: $carousel-stack) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $header-padding: get($val, "elements.header.padding.value");
+      $header-padding: get($val, "elements.header.padding");
 
       &_variant-#{$variant} {
         &.carousel-stack_size-#{$size} {

@@ -33,8 +33,8 @@ withDefaults(defineProps<DividerProps>(), {
 @mixin defineSize($map: $divider) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $border-width: px2rem(get($val, "self.border-width.value"));
-      $padding: get($val, "self.padding.value");
+      $border-width: px2rem(get($val, "self.border-width"));
+      $padding: get($val, "self.padding");
 
       &_variant-#{$variant} {
         &.divider_size-#{$size} {
@@ -89,13 +89,13 @@ withDefaults(defineProps<DividerProps>(), {
       &.divider_orientation {
         &-horizontal {
           @include themify($themes) {
-            border-bottom-color: themed("divider.#{$name}.self.border.value");
+            border-bottom-color: themed("divider.#{$name}.self.border");
           }
         }
 
         &-vertical {
           @include themify($themes) {
-            border-right-color: themed("divider.#{$name}.self.border.value");
+            border-right-color: themed("divider.#{$name}.self.border");
           }
         }
       }

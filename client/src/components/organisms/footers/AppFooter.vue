@@ -35,7 +35,7 @@ const { $t } = storeToRefs(useLocaleStore());
 }
 
 .app-footer {
-  $padding-v: px2rem(get($spacing, "sm.value"));
+  $padding-v: px2rem(get($spacing, "sm"));
 
   box-sizing: border-box;
   position: relative;

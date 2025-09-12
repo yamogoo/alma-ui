@@ -520,17 +520,5 @@ onUnmounted(() => {
       background-color: themed("background", "accent");
     }
   } */
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  a {
-    color: white;
-    text-align: center;
-  }
 }
 </style>

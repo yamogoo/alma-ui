@@ -4,43 +4,17 @@
 $action-sheet:(
   default: (
   lg: (
-  type: "component",
   self: (
-  min-height: (
-  value: 32px,
-  type: "size",
-  unit: "px"
-),
-  border-radius: (
-  value: 16px,
-  type: "radius",
-  unit: "px"
-),
-  padding: (
-  value: 48px 24px 24px 24px,
-  type: "spacing",
-  unit: "px"
-)
+  min-height: 32px,
+  border-radius: 16px,
+  padding: 48px 24px 24px 24px
 )
 ),
   md: (
-  type: "component",
   self: (
-  min-height: (
-  value: 32px,
-  type: "size",
-  unit: "px"
-),
-  border-radius: (
-  value: 12px,
-  type: "radius",
-  unit: "px"
-),
-  padding: (
-  value: 24px 24px,
-  type: "spacing",
-  unit: "px"
-)
+  min-height: 32px,
+  border-radius: 12px,
+  padding: 24px 24px
 )
 )
 )
@@ -48,185 +22,77 @@ $action-sheet:(
 $button:(
   default: (
   lg: (
-  type: "component",
   self: (
-  size: (
-  value: 56px,
-  type: "size",
-  unit: "px"
-),
-  gap: (
-  value: 12px,
-  type: "spacing",
-  unit: "px"
-),
-  padding: (
-  value: 0px 32px 0px 32px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 9999px,
-  type: "radius",
-  unit: "px"
-)
+  size: 56px,
+  gap: 12px,
+  padding: 0px 32px 0px 32px,
+  border-radius: 9999px
 ),
   elements: (
   label: (
-  font-style: (
-  value: label-1,
-  type: "alias",
-  unit: ""
-)
+  font-style: label-1
 ),
   icon: (
-  size: (
-  value: 20px,
-  type: "size",
-  unit: "px"
-),
+  size: 20px,
   alias: (
-  size: (
-  value: sm
-)
+  size: sm
 )
 )
 )
 ),
   md: (
-  type: "component",
   self: (
-  size: (
-  value: 44px,
-  type: "size",
-  unit: "px"
-),
-  gap: (
-  value: 12px,
-  type: "spacing",
-  unit: "px"
-),
-  padding: (
-  value: 0px 24px 0px 24px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 9999px,
-  type: "radius",
-  unit: "px"
-)
+  size: 44px,
+  gap: 12px,
+  padding: 0px 24px 0px 24px,
+  border-radius: 9999px
 ),
   elements: (
   label: (
-  font-style: (
-  value: label-2,
-  type: "alias",
-  unit: ""
-)
+  font-style: label-2
 ),
   icon: (
-  size: (
-  value: 16px,
-  type: "size",
-  unit: "px"
-),
+  size: 16px,
   alias: (
-  size: (
-  value: xs
-)
+  size: xs
 )
 )
 )
 ),
   sm: (
-  type: "component",
   self: (
-  size: (
-  value: 40px,
-  type: "size",
-  unit: "px"
-),
-  gap: (
-  value: 12px,
-  type: "spacing",
-  unit: "px"
-),
-  padding: (
-  value: 0px 12px 0px 12px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 9999px,
-  type: "radius",
-  unit: "px"
-)
+  size: 40px,
+  gap: 12px,
+  padding: 0px 12px 0px 12px,
+  border-radius: 9999px
 ),
   elements: (
   label: (
-  font-style: (
-  value: label-3,
-  type: "alias",
-  unit: ""
-)
+  font-style: label-3
 ),
   icon: (
-  size: (
-  value: 16px,
-  type: "size",
-  unit: "px"
-),
+  size: 16px,
   alias: (
-  size: (
-  value: xs
-)
+  size: xs
 )
 )
 )
 ),
   xs: (
-  type: "component",
   self: (
-  size: (
-  value: 36px,
-  type: "size",
-  unit: "px"
-),
-  gap: (
-  value: 12px,
-  type: "spacing",
-  unit: "px"
-),
-  padding: (
-  value: 0px 12px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 9999px,
-  type: "radius",
-  unit: "px"
-)
+  size: 36px,
+  gap: 12px,
+  padding: 0px 12px,
+  border-radius: 9999px
 ),
   elements: (
   label: (
-  font-style: (
-  value: label-3,
-  type: "alias",
-  unit: ""
-)
+  font-style: label-3
 ),
   icon: (
-  size: (
-  value: 12px,
-  type: "size",
-  unit: "px"
-),
+  size: 12px,
   alias: (
-  size: (
-  value: xxs
-)
+  size: xxs
 )
 )
 )
@@ -234,185 +100,77 @@ $button:(
 ),
   rounded: (
   lg: (
-  type: "component",
   self: (
-  size: (
-  value: 56px,
-  type: "size",
-  unit: "px"
-),
-  gap: (
-  value: 12px,
-  type: "spacing",
-  unit: "px"
-),
-  padding: (
-  value: 0px 0px 0px 0px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 9999px,
-  type: "radius",
-  unit: "px"
-)
+  size: 56px,
+  gap: 12px,
+  padding: 0px 0px 0px 0px,
+  border-radius: 9999px
 ),
   elements: (
   label: (
-  font-style: (
-  value: label-1,
-  type: "alias",
-  unit: ""
-)
+  font-style: label-1
 ),
   icon: (
-  size: (
-  value: 20px,
-  type: "size",
-  unit: "px"
-),
+  size: 20px,
   alias: (
-  size: (
-  value: sm
-)
+  size: sm
 )
 )
 )
 ),
   md: (
-  type: "component",
   self: (
-  size: (
-  value: 44px,
-  type: "size",
-  unit: "px"
-),
-  gap: (
-  value: 12px,
-  type: "spacing",
-  unit: "px"
-),
-  padding: (
-  value: 0px 0px 0px 0px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 9999px,
-  type: "radius",
-  unit: "px"
-)
+  size: 44px,
+  gap: 12px,
+  padding: 0px 0px 0px 0px,
+  border-radius: 9999px
 ),
   elements: (
   label: (
-  font-style: (
-  value: label-3,
-  type: "alias",
-  unit: ""
-)
+  font-style: label-3
 ),
   icon: (
-  size: (
-  value: 16px,
-  type: "size",
-  unit: "px"
-),
+  size: 16px,
   alias: (
-  size: (
-  value: xs
-)
+  size: xs
 )
 )
 )
 ),
   sm: (
-  type: "component",
   self: (
-  size: (
-  value: 32px,
-  type: "size",
-  unit: "px"
-),
-  gap: (
-  value: 12px,
-  type: "spacing",
-  unit: "px"
-),
-  padding: (
-  value: 0px 24px 0px 24px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 9999px,
-  type: "radius",
-  unit: "px"
-)
+  size: 32px,
+  gap: 12px,
+  padding: 0px 24px 0px 24px,
+  border-radius: 9999px
 ),
   elements: (
   label: (
-  font-style: (
-  value: label-4,
-  type: "alias",
-  unit: ""
-)
+  font-style: label-4
 ),
   icon: (
-  size: (
-  value: 16px,
-  type: "size",
-  unit: "px"
-),
+  size: 16px,
   alias: (
-  size: (
-  value: xs
-)
+  size: xs
 )
 )
 )
 ),
   xs: (
-  type: "component",
   self: (
-  size: (
-  value: 24px,
-  type: "size",
-  unit: "px"
-),
-  gap: (
-  value: 12px,
-  type: "spacing",
-  unit: "px"
-),
-  padding: (
-  value: 0px 24px 0px 24px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 9999px,
-  type: "radius",
-  unit: "px"
-)
+  size: 24px,
+  gap: 12px,
+  padding: 0px 24px 0px 24px,
+  border-radius: 9999px
 ),
   elements: (
   label: (
-  font-style: (
-  value: label-4,
-  type: "alias",
-  unit: ""
-)
+  font-style: label-4
 ),
   icon: (
-  size: (
-  value: 12px,
-  type: "size",
-  unit: "px"
-),
+  size: 12px,
   alias: (
-  size: (
-  value: xxs
-)
+  size: xxs
 )
 )
 )
@@ -422,26 +180,16 @@ $button:(
 $carousel-stack:(
   default: (
   lg: (
-  type: "component",
   elements: (
   header: (
-  padding: (
-  value: 24px 24px,
-  type: "spacing",
-  unit: "px"
-)
+  padding: 24px 24px
 )
 )
 ),
   md: (
-  type: "component",
   elements: (
   header: (
-  padding: (
-  value: 16px 16px,
-  type: "spacing",
-  unit: "px"
-)
+  padding: 16px 16px
 )
 )
 )
@@ -451,28 +199,13 @@ $char-tooltip-label:(
   default: (
   lg: (
   self: (
-  gap: (
-  value: 12px,
-  type: "spacing",
-  unit: "px"
-),
-  padding: (
-  value: 8px 12px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 8px,
-  type: "radius",
-  unit: "px"
-)
+  gap: 12px,
+  padding: 8px 12px,
+  border-radius: 8px
 ),
   elements: (
   label: (
-  font-style: (
-  value: caption-1,
-  type: "alias"
-)
+  font-style: caption-1
 )
 )
 )
@@ -482,21 +215,9 @@ $control-wrapper:(
   default: (
   md: (
   self: (
-  gap: (
-  value: 12px,
-  type: "spacing",
-  unit: "px"
-),
-  padding-v: (
-  value: 0px,
-  type: "spacing",
-  unit: "px"
-),
-  padding-h: (
-  value: 8px,
-  type: "spacing",
-  unit: "px"
-)
+  gap: 12px,
+  padding-v: 0px,
+  padding-h: 8px
 )
 )
 )
@@ -504,63 +225,27 @@ $control-wrapper:(
 $divider:(
   default: (
   lg: (
-  type: "component",
   self: (
-  border-width: (
-  value: 1px,
-  type: "border",
-  unit: "px"
-),
-  padding: (
-  value: 16px,
-  type: "spacing",
-  unit: "px"
-)
+  border-width: 1px,
+  padding: 16px
 )
 ),
   md: (
-  type: "component",
   self: (
-  border-width: (
-  value: 1px,
-  type: "border",
-  unit: "px"
-),
-  padding: (
-  value: 12px,
-  type: "spacing",
-  unit: "px"
-)
+  border-width: 1px,
+  padding: 12px
 )
 ),
   sm: (
-  type: "component",
   self: (
-  border-width: (
-  value: 1px,
-  type: "border",
-  unit: "px"
-),
-  padding: (
-  value: 8px,
-  type: "spacing",
-  unit: "px"
-)
+  border-width: 1px,
+  padding: 8px
 )
 ),
   xs: (
-  type: "component",
   self: (
-  border-width: (
-  value: 1px,
-  type: "border",
-  unit: "px"
-),
-  padding: (
-  value: 0px,
-  type: "spacing",
-  unit: "px"
-)
+  border-width: 1px,
+  padding: 0px
 )
 )
 )
@@ -568,155 +253,65 @@ $divider:(
 $drop-down:(
   default: (
   lg: (
-  type: "component",
   self: (
-  min-width: (
-  value: 76px,
-  type: "size",
-  unit: "px"
-),
-  height: (
-  value: 56px,
-  type: "size",
-  unit: "px"
-)
+  min-width: 76px,
+  height: 56px
 ),
   elements: (
-  value: (
-  type: "component",
+  current-value: (
   elements: (
   label: (
-  font-style: (
-  value: label-2,
-  type: "alias"
-)
+  font-style: label-2
 ),
   icon: (
-  size: (
-  value: 12px,
-  type: "size",
-  unit: "px"
-)
+  size: 12px
 )
 ),
   self: (
-  gap: (
-  value: 8px,
-  type: "spacing",
-  unit: "px"
-),
-  padding: (
-  value: 8px 12px 8px 12px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 8px,
-  type: "radius",
-  unit: "px"
-)
+  gap: 8px,
+  padding: 8px 12px 8px 12px,
+  border-radius: 8px
 )
 ),
   options: (
-  padding: (
-  value: 8px 12px 8px 12px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 8px,
-  type: "radius",
-  unit: "px"
-)
+  padding: 8px 12px 8px 12px,
+  border-radius: 8px
 )
 ),
   tokens: (
-  padding: (
-  value: 8px 12px 8px 12px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 8px,
-  type: "radius",
-  unit: "px"
-)
+  padding: 8px 12px 8px 12px,
+  border-radius: 8px
 )
 ),
   md: (
-  type: "component",
   self: (
-  min-width: (
-  value: 76px,
-  type: "size",
-  unit: "px"
-),
-  height: (
-  value: 44px,
-  type: "size",
-  unit: "px"
-)
+  min-width: 76px,
+  height: 44px
 ),
   elements: (
-  value: (
-  type: "component",
+  current-value: (
   elements: (
   label: (
-  font-style: (
-  value: label-3,
-  type: "alias"
-)
+  font-style: label-3
 ),
   icon: (
-  size: (
-  value: 12px,
-  type: "size",
-  unit: "px"
-)
+  size: 12px
 )
 ),
   self: (
-  gap: (
-  value: 8px,
-  type: "spacing",
-  unit: "px"
-),
-  padding: (
-  value: 8px 12px 8px 12px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 8px,
-  type: "radius",
-  unit: "px"
-)
+  gap: 8px,
+  padding: 8px 12px 8px 12px,
+  border-radius: 8px
 )
 ),
   options: (
-  padding: (
-  value: 8px 12px 8px 12px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 8px,
-  type: "radius",
-  unit: "px"
-)
+  padding: 8px 12px 8px 12px,
+  border-radius: 8px
 )
 ),
   tokens: (
-  padding: (
-  value: 8px 12px 8px 12px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 8px,
-  type: "radius",
-  unit: "px"
-)
+  padding: 8px 12px 8px 12px,
+  border-radius: 8px
 )
 )
 )
@@ -724,18 +319,9 @@ $drop-down:(
 $form:(
   default: (
   md: (
-  type: "component",
   self: (
-  padding: (
-  value: 16px 24px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 16px,
-  type: "radius",
-  unit: "px"
-)
+  padding: 16px 24px,
+  border-radius: 16px
 )
 )
 )
@@ -743,31 +329,14 @@ $form:(
 $form-wrapper:(
   default: (
   lg: (
-  type: "component",
   self: (
-  padding: (
-  value: 16px 24px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 20px,
-  type: "radius",
-  unit: "px"
-),
-  border-width: (
-  value: 0px,
-  type: "size",
-  unit: "px"
-)
+  padding: 16px 24px,
+  border-radius: 20px,
+  border-width: 0px
 ),
   elements: (
   header: (
-  padding: (
-  value: 12px 0px,
-  type: "spacing",
-  unit: "px"
-)
+  padding: 12px 0px
 )
 )
 )
@@ -776,48 +345,21 @@ $form-wrapper:(
 $group:(
   default: (
   lg: (
-  type: "component",
   self: (
-  gap: (
-  value: 24px,
-  type: "spacing",
-  unit: "px"
-),
-  border-width: (
-  value: 1px,
-  type: "size",
-  unit: "px"
-)
+  gap: 24px,
+  border-width: 1px
 )
 ),
   md: (
-  type: "component",
   self: (
-  gap: (
-  value: 16px,
-  type: "spacing",
-  unit: "px"
-),
-  border-width: (
-  value: 1px,
-  type: "size",
-  unit: "px"
-)
+  gap: 16px,
+  border-width: 1px
 )
 ),
   sm: (
-  type: "component",
   self: (
-  gap: (
-  value: 12px,
-  type: "spacing",
-  unit: "px"
-),
-  border-width: (
-  value: 1px,
-  type: "size",
-  unit: "px"
-)
+  gap: 12px,
+  border-width: 1px
 )
 )
 )
@@ -825,73 +367,38 @@ $group:(
 $icon:(
   default: (
   xxs: (
-  type: "component",
   self: (
-  size: (
-  value: 12px,
-  type: "size",
-  unit: "px"
-)
+  size: 12px
 )
 ),
   xs: (
-  type: "component",
   self: (
-  size: (
-  value: 16px,
-  type: "size",
-  unit: "px"
-)
+  size: 16px
 )
 ),
   sm: (
-  type: "component",
   self: (
-  size: (
-  value: 20px,
-  type: "size",
-  unit: "px"
-)
+  size: 20px
 )
 ),
   md: (
-  type: "component",
   self: (
-  size: (
-  value: 24px,
-  type: "size",
-  unit: "px"
-)
+  size: 24px
 )
 ),
   lg: (
-  type: "component",
   self: (
-  size: (
-  value: 32px,
-  type: "size",
-  unit: "px"
-)
+  size: 32px
 )
 ),
   xl: (
-  type: "component",
   self: (
-  size: (
-  value: 48px,
-  type: "size",
-  unit: "px"
-)
+  size: 48px
 )
 ),
   xxl: (
-  type: "component",
   self: (
-  size: (
-  value: 56px,
-  type: "size",
-  unit: "px"
-)
+  size: 56px
 )
 )
 )
@@ -899,112 +406,44 @@ $icon:(
 $input:(
   default: (
   md: (
-  type: "component",
   self: (
-  height: (
-  value: 44px,
-  type: "size",
-  unit: "px"
-),
-  whole-height: (
-  value: 60px,
-  type: "size",
-  unit: "px"
-),
-  padding: (
-  value: 8px 16px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 16px,
-  type: "radius",
-  unit: "px"
-)
+  height: 44px,
+  whole-height: 60px,
+  padding: 8px 16px,
+  border-radius: 16px
 ),
   elements: (
-  value: (
-  font-style: (
-  value: label-3,
-  type: "alias"
-),
-  padding-top: (
-  value: 12px,
-  type: "spacing",
-  unit: "px"
-)
+  label: (
+  font-style: label-3,
+  padding-top: 12px
 ),
   placeholder: (
-  font-style: (
-  value: label-3,
-  type: "alias"
-)
+  font-style: label-3
 ),
   error: (
-  font-style: (
-  value: caption-1,
-  type: "alias"
-),
-  padding: (
-  value: 0px 16px 0px 16px,
-  type: "spacing",
-  unit: "px"
-)
+  font-style: caption-1,
+  padding: 0px 16px 0px 16px
 )
 )
 ),
   lg: (
-  type: "component",
   self: (
-  height: (
-  value: 52px,
-  type: "size",
-  unit: "px"
-),
-  whole-height: (
-  value: 68px,
-  type: "size",
-  unit: "px"
-),
-  padding: (
-  value: 8px 16px 8px 16px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 8px,
-  type: "radius",
-  unit: "px"
-)
+  height: 52px,
+  whole-height: 68px,
+  padding: 8px 16px 8px 16px,
+  border-radius: 8px
 ),
   elements: (
-  value: (
-  font-style: (
-  value: label-3,
-  type: "alias"
-),
-  padding-top: (
-  value: 12px,
-  type: "spacing",
-  unit: "px"
-)
+  label: (
+  font-style: label-3,
+  padding-top: 12px
 ),
   placeholder: (
-  font-style: (
-  value: label-3,
-  type: "alias"
-)
+  font-style: label-3
 ),
   error: (
-  font-style: (
-  value: caption-1,
-  type: "alias"
-),
-  padding: (
-  value: 0px 16px 0px 16px,
-  type: "spacing",
-  unit: "px"
-)
+  font-style: caption-1,
+  padding: 0px 16px 0px 16px
 )
 )
 )
@@ -1012,27 +451,14 @@ $input:(
 );
 $main-container:(
   default: (
-  type: "component",
   self: (
-  border-radius: (
-  value: 16px,
-  type: "radius",
-  unit: "px"
-),
+  border-radius: 16px,
   media: (
   lg: (
-  padding: (
-  value: 8px,
-  type: "spacing",
-  unit: "px"
-)
+  padding: 8px
 ),
   md: (
-  padding: (
-  value: 8px,
-  type: "spacing",
-  unit: "px"
-)
+  padding: 8px
 )
 )
 )
@@ -1041,34 +467,18 @@ $main-container:(
 $options:(
   default: (
   lg: (
-  type: "component",
   elements: (
   option: (
-  font-style: (
-  value: label-2,
-  type: "alias"
-),
-  min-height: (
-  value: 24px,
-  type: "size",
-  unit: "px"
-)
+  font-style: label-2,
+  min-height: 24px
 )
 )
 ),
   md: (
-  type: "component",
   elements: (
   option: (
-  font-style: (
-  value: label-3,
-  type: "alias"
-),
-  min-height: (
-  value: 24px,
-  type: "size",
-  unit: "px"
-)
+  font-style: label-3,
+  min-height: 24px
 )
 )
 )
@@ -1077,83 +487,39 @@ $options:(
 $progressbar:(
   default: (
   lg: (
-  type: "component",
   self: (
-  height: (
-  value: 10px,
-  type: "size",
-  unit: "px"
-),
-  border-radius: (
-  value: 5px,
-  type: "radius",
-  unit: "px"
-)
+  height: 10px,
+  border-radius: 5px
 )
 ),
   md: (
-  type: "component",
   self: (
-  height: (
-  value: 8px,
-  type: "size",
-  unit: "px"
-),
-  border-radius: (
-  value: 4px,
-  type: "radius",
-  unit: "px"
-)
+  height: 8px,
+  border-radius: 4px
 )
 )
 )
 );
 $resizer:(
   default: (
-  type: "component",
   self: (
-  active-area-width: (
-  value: 20px,
-  type: "size",
-  unit: "px"
-)
+  active-area-width: 20px
 ),
   elements: (
   knob: (
-  width: (
-  value: 76px,
-  type: "size",
-  unit: "px"
-),
-  height: (
-  value: 6px,
-  type: "size",
-  unit: "px"
-),
-  border-radius: (
-  value: 3px,
-  type: "radius",
-  unit: "px"
-)
+  width: 76px,
+  height: 6px,
+  border-radius: 3px
 )
 )
 )
 );
 $scrollbar:(
   default: (
-  type: "component",
   elements: (
   thumb: (
-  width: (
-  value: 3px,
-  type: "size",
-  unit: "px"
-),
-  border-radius: (
-  value: 1.5px,
-  type: "radius",
-  unit: "px"
-)
+  width: 3px,
+  border-radius: 1.5px
 )
 )
 )
@@ -1161,70 +527,28 @@ $scrollbar:(
 $sheet:(
   default: (
   lg: (
-  type: "component",
   self: (
-  min-height: (
-  value: 32px,
-  type: "size",
-  unit: "px"
-),
-  border-radius: (
-  value: 16px,
-  type: "radius",
-  unit: "px"
-),
-  gap: (
-  value: 32px,
-  type: "spacing",
-  unit: "px"
-),
-  padding: (
-  value: 48px 24px 24px 24px,
-  type: "spacing",
-  unit: "px"
-)
+  min-height: 32px,
+  border-radius: 16px,
+  gap: 32px,
+  padding: 48px 24px 24px 24px
 ),
   elements: (
   button: (
-  offset: (
-  value: 24px,
-  type: "spacing",
-  unit: "px"
-)
+  offset: 24px
 )
 )
 ),
   md: (
-  type: "component",
   self: (
-  min-height: (
-  value: 32px,
-  type: "size",
-  unit: "px"
-),
-  border-radius: (
-  value: 16px,
-  type: "radius",
-  unit: "px"
-),
-  gap: (
-  value: 16px,
-  type: "spacing",
-  unit: "px"
-),
-  padding: (
-  value: 24px 24px,
-  type: "spacing",
-  unit: "px"
-)
+  min-height: 32px,
+  border-radius: 16px,
+  gap: 16px,
+  padding: 24px 24px
 ),
   elements: (
   button: (
-  offset: (
-  value: 24px,
-  type: "spacing",
-  unit: "px"
-)
+  offset: 24px
 )
 )
 )
@@ -1233,34 +557,18 @@ $sheet:(
 $step-pagination-tabs:(
   default: (
   lg: (
-  type: "component",
   elements: (
   item: (
-  font-style: (
-  value: title-3,
-  type: "alias"
-),
-  padding: (
-  value: 8px,
-  type: "spacing",
-  unit: "px"
-)
+  font-style: title-3,
+  padding: 8px
 )
 )
 ),
   md: (
-  type: "component",
   elements: (
   item: (
-  font-style: (
-  value: title-4,
-  type: "alias"
-),
-  padding: (
-  value: 8px,
-  type: "spacing",
-  unit: "px"
-)
+  font-style: title-4,
+  padding: 8px
 )
 )
 )
@@ -1270,118 +578,49 @@ $toggle-switch:(
   default: (
   lg: (
   self: (
-  width: (
-  value: 40px,
-  type: "size",
-  unit: "px"
-),
-  height: (
-  value: 20px,
-  type: "size",
-  unit: "px"
-),
-  gap: (
-  value: 10px,
-  type: "spacing",
-  unit: "px"
-)
+  width: 40px,
+  height: 20px,
+  gap: 10px
 ),
   elements: (
   track: (
-  padding: (
-  value: 2px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 10px,
-  type: "radius",
-  unit: "px"
-)
+  padding: 2px,
+  border-radius: 10px
 ),
   label: (
-  font-style: (
-  value: label-3,
-  type: "alias"
-)
+  font-style: label-3
 )
 )
 ),
   md: (
   self: (
-  width: (
-  value: 36px,
-  type: "size",
-  unit: "px"
-),
-  height: (
-  value: 18px,
-  type: "size",
-  unit: "px"
-),
-  gap: (
-  value: 10px,
-  type: "spacing",
-  unit: "px"
-)
+  width: 36px,
+  height: 18px,
+  gap: 10px
 ),
   elements: (
   track: (
-  padding: (
-  value: 2px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 7px,
-  type: "radius",
-  unit: "px"
-)
+  padding: 2px,
+  border-radius: 7px
 ),
   label: (
-  font-style: (
-  value: label-3,
-  type: "alias"
-)
+  font-style: label-3
 )
 )
 ),
   sm: (
   self: (
-  width: (
-  value: 32px,
-  type: "size",
-  unit: "px"
-),
-  height: (
-  value: 16px,
-  type: "size",
-  unit: "px"
-),
-  gap: (
-  value: 10px,
-  type: "spacing",
-  unit: "px"
-)
+  width: 32px,
+  height: 16px,
+  gap: 10px
 ),
   elements: (
   track: (
-  padding: (
-  value: 2px,
-  type: "spacing",
-  unit: "px"
-),
-  border-radius: (
-  value: 6px,
-  type: "radius",
-  unit: "px"
-)
+  padding: 2px,
+  border-radius: 6px
 ),
   label: (
-  font-style: (
-  value: label-3,
-  type: "alias"
-)
+  font-style: label-3
 )
 )
 )

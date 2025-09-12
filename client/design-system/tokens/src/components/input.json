@@ -40,7 +40,7 @@
         }
       },
       "elements": {
-        "value": {
+        "label": {
           "fontStyle": {
             "value": "label-3",
             "type": "alias",
@@ -141,7 +141,7 @@
         }
       },
       "elements": {
-        "value": {
+        "label": {
           "fontStyle": {
             "value": "label-3",
             "type": "alias",

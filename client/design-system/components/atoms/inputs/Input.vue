@@ -266,20 +266,17 @@ onMounted(() => {
 @mixin defineInputSizes($map: $input) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $value-font-style: get($val, "elements.value.font-style.value");
-      $placeholder-font-style: get(
-        $val,
-        "elements.placeholder.font-style.value"
-      );
-      $error-font-style: get($val, "elements.error.font-style.value");
+      $value-font-style: get($val, "elements.label.font-style");
+      $placeholder-font-style: get($val, "elements.placeholder.font-style");
+      $error-font-style: get($val, "elements.error.font-style");
 
-      $value-padding-top: px2rem(get($val, "elements.value.padding-top.value"));
+      $value-padding-top: px2rem(get($val, "elements.label.padding-top"));
 
-      $height: get($val, "self.height.value");
-      $whole-height: get($val, "self.whole-height.value");
-      $padding: get($val, "self.padding.value");
-      $border-radius: get($val, "self.border-radius.value");
-      $error-padding: get($val, "elements.error.padding.value");
+      $height: get($val, "self.height");
+      $whole-height: get($val, "self.whole-height");
+      $padding: get($val, "self.padding");
+      $border-radius: get($val, "self.border-radius");
+      $error-padding: get($val, "elements.error.padding");
 
       &_variant-#{$variant} {
         &.input_size-#{$size} {
@@ -317,8 +314,7 @@ onMounted(() => {
       &:focus {
         .input__field {
           @include themify($themes) {
-            outline: get($outline, "value") solid
-              themed("input.#{$name}.self.border.outline.value");
+            outline: $outline solid themed("input.#{$name}.self.border.outline");
           }
         }
       }
@@ -326,10 +322,8 @@ onMounted(() => {
       &:not(.input_disabled) {
         .input__field {
           @include themify($themes) {
-            color: themed("input.#{$name}.elements.label.normal.value");
-            background-color: themed(
-              "input.#{$name}.self.background.normal.value"
-            );
+            color: themed("input.#{$name}.elements.label.normal");
+            background-color: themed("input.#{$name}.self.background.normal");
             @extend %base-transition;
           }
         }
@@ -338,10 +332,8 @@ onMounted(() => {
       &.input_focused {
         .input__field {
           @include themify($themes) {
-            color: themed("input.#{$name}.elements.label.focused.value");
-            background-color: themed(
-              "input.#{$name}.self.background.focused.value"
-            );
+            color: themed("input.#{$name}.elements.label.focused");
+            background-color: themed("input.#{$name}.self.background.focused");
             @extend %base-transition;
           }
         }
@@ -350,10 +342,8 @@ onMounted(() => {
       &.input_disabled {
         .input__field {
           @include themify($themes) {
-            color: themed("input.#{$name}.elements.label.disabled.value");
-            background-color: themed(
-              "input.#{$name}.self.background.disabled.value"
-            );
+            color: themed("input.#{$name}.elements.label.disabled");
+            background-color: themed("input.#{$name}.self.background.disabled");
             @extend %base-transition;
           }
         }
@@ -362,10 +352,8 @@ onMounted(() => {
       &.input_error {
         .input__field {
           @include themify($themes) {
-            color: themed("input.#{$name}.elements.label.error.value");
-            background-color: themed(
-              "input.#{$name}.self.background.error.value"
-            );
+            color: themed("input.#{$name}.elements.label.error");
+            background-color: themed("input.#{$name}.self.background.error");
             @extend %base-transition;
           }
         }
@@ -380,7 +368,7 @@ onMounted(() => {
       .input__error {
         &-message {
           @include themify($themes) {
-            color: themed("input.#{$name}.elements.label.error.value");
+            color: themed("input.#{$name}.elements.label.error");
             @extend %base-transition;
           }
         }
@@ -411,7 +399,7 @@ onMounted(() => {
     &-content {
       display: flex;
       align-items: center;
-      gap: px2rem(get($gap, "xs.value"));
+      gap: px2rem(get($gap, "xs"));
       height: 100%;
 
       &-icon {
@@ -438,8 +426,8 @@ onMounted(() => {
 
       &::selection {
         @include themify($themes) {
-          color: themed("selection.default.label.value") !important;
-          background: themed("selection.default.background.value") !important;
+          color: themed("selection.default.label") !important;
+          background: themed("selection.default.background") !important;
         }
       }
     }

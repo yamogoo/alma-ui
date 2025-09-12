@@ -195,35 +195,69 @@ export class SCSSParser extends Parser {
 
       if (hasTokenFields) {
         const tokenObj = map as IMap;
-        const parts: string[] = [];
 
-        // --- value ---
-        if (tokenObj.value !== undefined) {
-          if (_.isPlainObject(tokenObj.value)) {
-            parts.push(
-              `value: ${this.parseMap(tokenObj.value, opts, [...path, "value"])}`
-            );
-          } else if (Array.isArray(tokenObj.value)) {
-            parts.push(
-              `value: ${this.parseList(tokenObj.value as any[], opts)}`
-            );
+        // --- exportAsVar support (выполняется всегда) ---
+        if (tokenObj.meta?.build?.web?.exportAsVar) {
+          const varName =
+            tokenObj.meta.build.web.varName ||
+            `--${path.join("-") || opts.fileName || "token"}`;
+
+          const localOpts: ParseValueOptions = {
+            ...opts,
+            key: typeof tokenObj.type === "string" ? tokenObj.type : opts.key,
+            unit:
+              Object.prototype.hasOwnProperty.call(tokenObj, "unit") &&
+              typeof tokenObj.unit === "string"
+                ? (tokenObj.unit as string)
+                : opts.unit,
+          };
+
+          let cssValue: string;
+          if (
+            _.isPlainObject(tokenObj.value) ||
+            Array.isArray(tokenObj.value)
+          ) {
+            cssValue = this.parseMap(tokenObj.value, localOpts, [
+              ...path,
+              "value",
+            ]);
           } else {
-            const localOpts: ParseValueOptions = {
-              ...opts,
-              key: typeof tokenObj.type === "string" ? tokenObj.type : opts.key,
-              unit:
-                Object.prototype.hasOwnProperty.call(tokenObj, "unit") &&
-                typeof tokenObj.unit === "string"
-                  ? (tokenObj.unit as string)
-                  : opts.unit,
-            };
-            parts.push(
-              `value: ${this.normalizeValue(tokenObj.value, localOpts)}`
-            );
+            cssValue = this.normalizeValue(tokenObj.value, localOpts);
           }
+
+          this.collectedCssVars.push(`  ${varName}: ${cssValue};`);
         }
 
         if (useReflect) {
+          const parts: string[] = [];
+
+          // --- value ---
+          if (tokenObj.value !== undefined) {
+            if (_.isPlainObject(tokenObj.value)) {
+              parts.push(
+                `value: ${this.parseMap(tokenObj.value, opts, [...path, "value"])}`
+              );
+            } else if (Array.isArray(tokenObj.value)) {
+              parts.push(
+                `value: ${this.parseList(tokenObj.value as any[], opts)}`
+              );
+            } else {
+              const localOpts: ParseValueOptions = {
+                ...opts,
+                key:
+                  typeof tokenObj.type === "string" ? tokenObj.type : opts.key,
+                unit:
+                  Object.prototype.hasOwnProperty.call(tokenObj, "unit") &&
+                  typeof tokenObj.unit === "string"
+                    ? (tokenObj.unit as string)
+                    : opts.unit,
+              };
+              parts.push(
+                `value: ${this.normalizeValue(tokenObj.value, localOpts)}`
+              );
+            }
+          }
+
           // --- type / unit / description / extra keys ---
           for (const field of ["type", "unit", "description"]) {
             if (tokenObj[field] !== undefined) {
@@ -247,18 +281,27 @@ export class SCSSParser extends Parser {
             );
             parts.push(`${kebabKey}: ${value}`);
           }
-        }
 
-        // --- exportAsVar support ---
-        if (
-          tokenObj.meta &&
-          tokenObj.meta.build &&
-          tokenObj.meta.build.web &&
-          tokenObj.meta.build.web.exportAsVar
-        ) {
-          const varName =
-            tokenObj.meta.build.web.varName ||
-            `--${path.join("-") || opts.fileName || "token"}`;
+          return `(\n  ${parts.join(",\n  ")}\n)`;
+        } else {
+          // --- Minimal structure: value only, но сохраняем вложенные ключи ---
+          if (tokenObj.value === undefined) {
+            const nestedParts: string[] = [];
+            const subKeys = keys.filter(
+              (k) => !["type", "unit", "meta", "description"].includes(k)
+            );
+            for (const subKey of subKeys) {
+              const kebabKey = opts.convertCase
+                ? this.tokensParser.toKebabCase(subKey)
+                : subKey;
+              const value = this.parseMap((map as IMap)[subKey] as any, opts, [
+                ...path,
+                kebabKey,
+              ]);
+              nestedParts.push(`${kebabKey}: ${value}`);
+            }
+            return `(\n  ${nestedParts.join(",\n  ")}\n)`;
+          }
 
           const localOpts: ParseValueOptions = {
             ...opts,
@@ -270,31 +313,27 @@ export class SCSSParser extends Parser {
                 : opts.unit,
           };
 
-          const cssValue = this.normalizeValue(tokenObj.value, localOpts);
-          this.collectedCssVars.push(`  ${varName}: ${cssValue};`);
-        }
-
-        if (useReflect) {
-          return `(\n  ${parts.join(",\n  ")}\n)`;
-        } else {
-          // Minimal structure: value only
-          return tokenObj.value !== undefined
-            ? this.normalizeValue(tokenObj.value, opts)
-            : '""';
+          if (_.isPlainObject(tokenObj.value)) {
+            return this.parseMap(tokenObj.value, localOpts, [...path, "value"]);
+          } else if (Array.isArray(tokenObj.value)) {
+            return this.parseList(tokenObj.value as any[], localOpts);
+          } else {
+            return this.normalizeValue(tokenObj.value, localOpts);
+          }
         }
       }
 
-      // --- Plain objectwithout tokens ---
-      return `(\n${Object.entries(map)
-        .filter(([k]) => this.tokensParser.isKeyValidated(k))
-        .map(([k, v]) => {
-          const kebabKey = opts.convertCase
-            ? this.tokensParser.toKebabCase(k)
-            : k;
-          const value = this.parseMap(v as any, opts, [...path, kebabKey]);
-          return `  ${kebabKey}: ${value}`;
-        })
-        .join(",\n")}\n)`;
+      // --- Plain object без токенов ---
+      const nestedParts: string[] = [];
+      for (const [k, v] of Object.entries(map)) {
+        if (!this.tokensParser.isKeyValidated(k)) continue;
+        const kebabKey = opts.convertCase
+          ? this.tokensParser.toKebabCase(k)
+          : k;
+        const value = this.parseMap(v as any, opts, [...path, kebabKey]);
+        nestedParts.push(`${kebabKey}: ${value}`);
+      }
+      return `(\n  ${nestedParts.join(",\n  ")}\n)`;
     }
 
     return String(map);

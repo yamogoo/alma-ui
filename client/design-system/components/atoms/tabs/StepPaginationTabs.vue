@@ -121,7 +121,7 @@ onMounted(() => {
     @each $size, $val in $sizes {
       &_variant-#{$variant} {
         &.step-pagination_size-#{$size} {
-          $font-style: get($val, "elements.item.font-style.value");
+          $font-style: get($val, "elements.item.font-style");
 
           .step-pagination__item {
             @extend %t__#{$font-style};
@@ -138,14 +138,14 @@ onMounted(() => {
       .step-pagination__item {
         @include themify($themes) {
           color: themed(
-            "step-pagination-tabs.#{$name}.elements.item.label.normal.value"
+            "step-pagination-tabs.#{$name}.elements.item.label.normal"
           );
         }
 
         &_state-active {
           @include themify($themes) {
             color: themed(
-              "step-pagination-tabs.#{$name}.elements.item.label.active.value"
+              "step-pagination-tabs.#{$name}.elements.item.label.active"
             );
           }
         }

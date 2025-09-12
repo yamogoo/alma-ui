@@ -4,7 +4,7 @@
 
 @mixin respond-above($breakpoint, $container-name: default) {
   @if map.has-key($breakpoints, $breakpoint) {
-    $breakpoint-value: get($breakpoints, "#{$breakpoint}.value");
+    $breakpoint-value: get($breakpoints, "#{$breakpoint}");
 
     @if $container-name == default {
       @media (min-width: $breakpoint-value) {
@@ -24,7 +24,7 @@
 
 @mixin respond-below($breakpoint, $container-name: default) {
   @if map.has-key($breakpoints, $breakpoint) {
-    $breakpoint-value: get($breakpoints, "#{$breakpoint}.value");
+    $breakpoint-value: get($breakpoints, "#{$breakpoint}");
 
     @if $container-name == default {
       @media (max-width: ($breakpoint-value - 1)) {
@@ -44,8 +44,8 @@
 
 @mixin respond-between($lower, $upper, $container-name: default) {
   @if map.has-key($breakpoints, $lower) and map.has-key($breakpoints, $upper) {
-    $lower-breakpoint: get($breakpoints, "#{$lower}.value");
-    $upper-breakpoint: get($breakpoints, "#{$upper}.value");
+    $lower-breakpoint: get($breakpoints, "#{$lower}");
+    $upper-breakpoint: get($breakpoints, "#{$upper}");
 
     @if $container-name == default {
       @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {

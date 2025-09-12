@@ -51,11 +51,11 @@ defineExpose({
     @each $size, $val in $sizes {
       &_variant-#{$variant} {
         &.char-tooltip-label_size-#{$size} {
-          $gap: px2rem(get($val, "self.gap.value"));
-          $padding: get($val, "self.padding.value");
-          $border-radius: px2rem(get($val, "self.border-radius.value"));
+          $gap: px2rem(get($val, "self.gap"));
+          $padding: get($val, "self.padding");
+          $border-radius: px2rem(get($val, "self.border-radius"));
 
-          $label-font-style: get($val, "elements.label.font-style.value");
+          $label-font-style: get($val, "elements.label.font-style");
 
           gap: $gap;
           padding: $padding;
@@ -74,10 +74,10 @@ defineExpose({
   @each $name in $names {
     &_color-#{$name} {
       @include themify($themes) {
-        color: themed("char-tooltip-label.#{$name}.label.normal.value");
-        fill: themed("char-tooltip-label.#{$name}.label.normal.value");
+        color: themed("char-tooltip-label.#{$name}.label.normal");
+        fill: themed("char-tooltip-label.#{$name}.label.normal");
         background-color: themed(
-          "char-tooltip-label.#{$name}.background.normal.value"
+          "char-tooltip-label.#{$name}.background.normal"
         );
 
         .text {

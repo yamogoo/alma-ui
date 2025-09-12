@@ -2,150 +2,42 @@
 
 
 $gap:(
-  xxs: (
-  value: 4px,
-  type: "spacing",
-  unit: "px"
-),
-  xs: (
-  value: 10px,
-  type: "spacing",
-  unit: "px"
-),
-  sm: (
-  value: 12px,
-  type: "spacing",
-  unit: "px"
-),
-  md: (
-  value: 14px,
-  type: "spacing",
-  unit: "px"
-),
-  lg: (
-  value: 24px,
-  type: "spacing",
-  unit: "px"
-),
-  xl: (
-  value: 32px,
-  type: "spacing",
-  unit: "px"
-)
+  xxs: 4px,
+  xs: 10px,
+  sm: 12px,
+  md: 14px,
+  lg: 24px,
+  xl: 32px
 );
-$outline:(
-  value: 1px,
-  type: "border",
-  unit: "px"
-);
+$outline:1px;
 $roundness:(
-  xxs: (
-  value: 4px,
-  type: "radius",
-  unit: "px"
-),
-  xs: (
-  value: 8px,
-  type: "radius",
-  unit: "px"
-),
-  sm: (
-  value: 12px,
-  type: "radius",
-  unit: "px"
-),
-  md: (
-  value: 16px,
-  type: "radius",
-  unit: "px"
-),
-  lg: (
-  value: 20px,
-  type: "radius",
-  unit: "px"
-),
-  xl: (
-  value: 24px,
-  type: "radius",
-  unit: "px"
-),
-  xxl: (
-  value: 32px,
-  type: "radius",
-  unit: "px"
-),
-  infinity: (
-  value: 9999px,
-  type: "radius",
-  unit: "px"
-)
+  xxs: 4px,
+  xs: 8px,
+  sm: 12px,
+  md: 16px,
+  lg: 20px,
+  xl: 24px,
+  xxl: 32px,
+  infinity: 9999px
 );
 $spacing:(
-  xxs: (
-  value: 4px,
-  type: "spacing",
-  unit: "px"
-),
-  xs: (
-  value: 8px,
-  type: "spacing",
-  unit: "px"
-),
-  sm: (
-  value: 12px,
-  type: "spacing",
-  unit: "px"
-),
-  md: (
-  value: 16px,
-  type: "spacing",
-  unit: "px"
-),
-  lg: (
-  value: 24px,
-  type: "spacing",
-  unit: "px"
-),
-  xl: (
-  value: 32px,
-  type: "spacing",
-  unit: "px"
-),
-  xxl: (
-  value: 48px,
-  type: "spacing",
-  unit: "px"
-)
+  xxs: 4px,
+  xs: 8px,
+  sm: 12px,
+  md: 16px,
+  lg: 24px,
+  xl: 32px,
+  xxl: 48px
 );
 $stroke:(
-  sm: (
-  value: 1px,
-  type: "border",
-  unit: "px"
-),
-  md: (
-  value: 2px,
-  type: "border",
-  unit: "px"
-),
-  lg: (
-  value: 3px,
-  type: "border",
-  unit: "px"
-),
-  xl: (
-  value: 4px,
-  type: "border",
-  unit: "px"
-)
+  sm: 1px,
+  md: 2px,
+  lg: 3px,
+  xl: 4px
 );
 $touch-area:(
   sm: (
-  size: (
-  value: 36px,
-  type: "size",
-  unit: "px"
-)
+  size: 36px
 )
 );
 

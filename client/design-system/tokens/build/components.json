@@ -939,7 +939,7 @@
           }
         },
         "elements": {
-          "value": {
+          "currentValue": {
             "elements": {
               "label": {
                 "fontStyle": {
@@ -1074,7 +1074,7 @@
           }
         },
         "elements": {
-          "value": {
+          "currentValue": {
             "elements": {
               "label": {
                 "fontStyle": {
@@ -1522,7 +1522,7 @@
           }
         },
         "elements": {
-          "value": {
+          "label": {
             "fontStyle": {
               "value": "label-3",
               "type": "alias",
@@ -1623,7 +1623,7 @@
           }
         },
         "elements": {
-          "value": {
+          "label": {
             "fontStyle": {
               "value": "label-3",
               "type": "alias",

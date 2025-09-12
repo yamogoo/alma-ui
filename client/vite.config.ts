@@ -80,7 +80,7 @@ export default (opts: { mode: string }) => {
           paths: ["./design-system/tokens/src"],
           includeRootDirName: false,
         },
-        useReflectOriginalStructure: true,
+        useReflectOriginalStructure: false,
       }),
       VitePluginTokenLinter({
         source: "./design-system/tokens/src",

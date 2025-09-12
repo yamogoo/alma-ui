@@ -134,13 +134,13 @@ watch(localIsPressed, (isPressed) => {
 @mixin defineButtonSizes($map: $button) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $button-size: px2rem(get($val, "self.size.value"));
-      $gap: px2rem(get($val, "self.gap.value"));
-      $border-radius: get($val, "self.border-radius.value");
-      $padding: get($val, "self.padding.value");
+      $button-size: px2rem(get($val, "self.size"));
+      $gap: px2rem(get($val, "self.gap"));
+      $border-radius: get($val, "self.border-radius");
+      $padding: get($val, "self.padding");
 
-      $font-style: get($val, "elements.label.font-style.value");
-      $icon-size: px2rem(get($val, "elements.icon.size.value"));
+      $font-style: get($val, "elements.label.font-style");
+      $icon-size: px2rem(get($val, "elements.icon.size"));
 
       &_variant-#{$variant} {
         &.button_size-#{$size} {
@@ -174,44 +174,38 @@ watch(localIsPressed, (isPressed) => {
       &_tone-#{$tone} {
         &.button_mode-#{$mode} {
           @include themify($themes) {
-            color: themed(
-              "button.#{$tone}.#{$mode}.elements.label.normal.value"
-            );
-            fill: themed(
-              "button.#{$tone}.#{$mode}.elements.label.normal.value"
-            );
+            color: themed("button.#{$tone}.#{$mode}.elements.label.normal");
+            fill: themed("button.#{$tone}.#{$mode}.elements.label.normal");
             background-color: themed(
-              "button.#{$tone}.#{$mode}.self.background.normal.value"
+              "button.#{$tone}.#{$mode}.self.background.normal"
             );
-            border: get($outline, "value") solid
-              themed("button.#{$tone}.#{$mode}.self.border.normal.value");
+            border: $outline solid
+              themed("button.#{$tone}.#{$mode}.self.border.normal");
           }
           @extend %base-transition;
 
           &:focus {
             @include themify($themes) {
-              outline: get($outline, "value") solid
-                themed("button.#{$tone}.#{$mode}.self.border.outline.value");
+              outline: $outline solid
+                themed("button.#{$tone}.#{$mode}.self.border.outline");
             }
           }
 
           &.button_hovered {
             @include themify($themes) {
               background-color: themed(
-                "button.#{$tone}.#{$mode}.self.background.hovered.value"
+                "button.#{$tone}.#{$mode}.self.background.hovered"
               );
-              border: get($outline, "value") solid
-                themed("button.#{$tone}.#{$mode}.self.border.hovered.value");
+              border: $outline solid
+                themed("button.#{$tone}.#{$mode}.self.border.hovered");
             }
 
             .button__label {
               @include themify($themes) {
                 color: themed(
-                  "button.#{$tone}.#{$mode}.elements.label.hovered.value"
+                  "button.#{$tone}.#{$mode}.elements.label.hovered"
                 );
-                fill: themed(
-                  "button.#{$tone}.#{$mode}.elements.label.hovered.value"
-                );
+                fill: themed("button.#{$tone}.#{$mode}.elements.label.hovered");
               }
             }
           }
@@ -219,20 +213,18 @@ watch(localIsPressed, (isPressed) => {
           &.button_pressed {
             @include themify($themes) {
               background-color: themed(
-                "button.#{$tone}.#{$mode}.self.background.pressed.value"
+                "button.#{$tone}.#{$mode}.self.background.pressed"
               );
-              border: get($outline, "value") solid
-                themed("button.#{$tone}.#{$mode}.self.border.pressed.value");
+              border: $outline solid
+                themed("button.#{$tone}.#{$mode}.self.border.pressed");
             }
 
             .button__label {
               @include themify($themes) {
                 color: themed(
-                  "button.#{$tone}.#{$mode}.elements.label.pressed.value"
+                  "button.#{$tone}.#{$mode}.elements.label.pressed"
                 );
-                fill: themed(
-                  "button.#{$tone}.#{$mode}.elements.label.pressed.value"
-                );
+                fill: themed("button.#{$tone}.#{$mode}.elements.label.pressed");
               }
             }
           }
@@ -240,19 +232,19 @@ watch(localIsPressed, (isPressed) => {
           &.button_disabled {
             @include themify($themes) {
               background-color: themed(
-                "button.#{$tone}.#{$mode}.self.background.disabled.value"
+                "button.#{$tone}.#{$mode}.self.background.disabled"
               );
-              border: get($outline, "value") solid
-                themed("button.#{$tone}.#{$mode}.self.border.disabled.value");
+              border: $outline solid
+                themed("button.#{$tone}.#{$mode}.self.border.disabled");
             }
 
             .button__label {
               @include themify($themes) {
                 color: themed(
-                  "button.#{$tone}.#{$mode}.elements.label.disabled.value"
+                  "button.#{$tone}.#{$mode}.elements.label.disabled"
                 );
                 fill: themed(
-                  "button.#{$tone}.#{$mode}.elements.label.disabled.value"
+                  "button.#{$tone}.#{$mode}.elements.label.disabled"
                 );
               }
             }

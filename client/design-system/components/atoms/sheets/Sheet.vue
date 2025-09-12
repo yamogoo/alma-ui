@@ -21,8 +21,8 @@ withDefaults(defineProps<SheetProps>(), {
 @mixin defineSizes($map: $sheet) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $min-height: px2rem(get($val, "self.min-height.value"));
-      $border-radius: px2rem(get($val, "self.border-radius.value"));
+      $min-height: px2rem(get($val, "self.min-height"));
+      $border-radius: px2rem(get($val, "self.border-radius"));
 
       &_variant-#{$variant} {
         &.sheet__size-#{$size} {
@@ -38,8 +38,8 @@ withDefaults(defineProps<SheetProps>(), {
   @each $name in $names {
     &_color-#{$name} {
       @include themify($themes) {
-        background-color: themed("sheet.#{$name}.background.normal.value");
-        box-shadow: 0 -2px 12px themed("sheet.#{$name}.shadow.normal.value");
+        background-color: themed("sheet.#{$name}.background.normal");
+        box-shadow: 0 -2px 12px themed("sheet.#{$name}.shadow.normal");
       }
     }
   }

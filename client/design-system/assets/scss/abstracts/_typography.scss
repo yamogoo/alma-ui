@@ -4,604 +4,156 @@
 $typography:(
   tokens: (
   font-family: (
-  primary: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: "font"
-),
-  secondary: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: "font"
-)
+  primary: Manrope,
+  secondary: Manrope
 ),
   font-weight: (
-  light: (
-  value: 400,
-  type: "fontWeight",
-  unit: ""
-),
-  regular: (
-  value: 500,
-  type: "fontWeight",
-  unit: ""
-),
-  semibold: (
-  value: 700,
-  type: "fontWeight",
-  unit: ""
-),
-  bold: (
-  value: 800,
-  type: "fontWeight",
-  unit: ""
-)
+  light: 400,
+  regular: 500,
+  semibold: 700,
+  bold: 800
 )
 ),
   styles: (
   display-1: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 164px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 800,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 100%,
-  type: "lineHeight",
-  unit: "%"
-),
-  letter-spacing: (
-  value: 0px,
-  type: "letterSpacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 164px,
+  font-style: normal,
+  font-weight: 800,
+  line-height: 100%,
+  letter-spacing: 0px
 ),
   display-2: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 96px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 800,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 100%,
-  type: "lineHeight",
-  unit: "%"
-),
-  letter-spacing: (
-  value: -2px,
-  type: "letterSpacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 96px,
+  font-style: normal,
+  font-weight: 800,
+  line-height: 100%,
+  letter-spacing: -2px
 ),
   display-3: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 80px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 800,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 100%,
-  type: "lineHeight",
-  unit: "%"
-),
-  letter-spacing: (
-  value: -1px,
-  type: "letterSpacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 80px,
+  font-style: normal,
+  font-weight: 800,
+  line-height: 100%,
+  letter-spacing: -1px
 ),
   display-4: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 64px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 800,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 100%,
-  type: "lineHeight",
-  unit: "%"
-),
-  letter-spacing: (
-  value: -0.3px,
-  type: "letterSpacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 64px,
+  font-style: normal,
+  font-weight: 800,
+  line-height: 100%,
+  letter-spacing: -0.3px
 ),
   title-1: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 36px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 700,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 44px,
-  type: "size",
-  unit: "px"
-),
-  letter-spacing: (
-  value: -0.3px,
-  type: "letterSpacing",
-  unit: "px"
-),
-  margin-bottom: (
-  value: 8px,
-  type: "spacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 36px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 44px,
+  letter-spacing: -0.3px,
+  margin-bottom: 8px
 ),
   title-2: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 28px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 700,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 28px,
-  type: "size",
-  unit: "px"
-),
-  letter-spacing: (
-  value: -0.3px,
-  type: "letterSpacing",
-  unit: "px"
-),
-  margin-bottom: (
-  value: 8px,
-  type: "spacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 28px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 28px,
+  letter-spacing: -0.3px,
+  margin-bottom: 8px
 ),
   title-3: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 22px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 700,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 24px,
-  type: "size",
-  unit: "px"
-),
-  letter-spacing: (
-  value: -0.3px,
-  type: "letterSpacing",
-  unit: "px"
-),
-  margin-bottom: (
-  value: 8px,
-  type: "spacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 22px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 24px,
+  letter-spacing: -0.3px,
+  margin-bottom: 8px
 ),
   title-4: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 18px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 700,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 20px,
-  type: "size",
-  unit: "px"
-),
-  letter-spacing: (
-  value: -0.3px,
-  type: "letterSpacing",
-  unit: "px"
-),
-  margin-bottom: (
-  value: 8px,
-  type: "spacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 18px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 20px,
+  letter-spacing: -0.3px,
+  margin-bottom: 8px
 ),
   body-1: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 40px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 700,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 150%,
-  type: "lineHeight",
-  unit: "%"
-),
-  letter-spacing: (
-  value: 0.48px,
-  type: "letterSpacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 40px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 150%,
+  letter-spacing: 0.48px
 ),
   body-2: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 19px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 500,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 150%,
-  type: "lineHeight",
-  unit: "%"
-),
-  letter-spacing: (
-  value: 0.39px,
-  type: "letterSpacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 19px,
+  font-style: normal,
+  font-weight: 500,
+  line-height: 150%,
+  letter-spacing: 0.39px
 ),
   label-1: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 22px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 500,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 32px,
-  type: "size",
-  unit: "px"
-),
-  letter-spacing: (
-  value: 0.1px,
-  type: "letterSpacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 22px,
+  font-style: normal,
+  font-weight: 500,
+  line-height: 32px,
+  letter-spacing: 0.1px
 ),
   label-2: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 18px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 500,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 28px,
-  type: "size",
-  unit: "px"
-),
-  letter-spacing: (
-  value: 0.1px,
-  type: "letterSpacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 18px,
+  font-style: normal,
+  font-weight: 500,
+  line-height: 28px,
+  letter-spacing: 0.1px
 ),
   label-3: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 14px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 500,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 22px,
-  type: "size",
-  unit: "px"
-),
-  letter-spacing: (
-  value: 0.1px,
-  type: "letterSpacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 14px,
+  font-style: normal,
+  font-weight: 500,
+  line-height: 22px,
+  letter-spacing: 0.1px
 ),
   label-4: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 12px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 500,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 18px,
-  type: "size",
-  unit: "px"
-),
-  letter-spacing: (
-  value: 0.1px,
-  type: "letterSpacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 12px,
+  font-style: normal,
+  font-weight: 500,
+  line-height: 18px,
+  letter-spacing: 0.1px
 ),
   caption-1: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 12px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 500,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 17px,
-  type: "size",
-  unit: "px"
-),
-  letter-spacing: (
-  value: 0.48px,
-  type: "letterSpacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 12px,
+  font-style: normal,
+  font-weight: 500,
+  line-height: 17px,
+  letter-spacing: 0.48px
 ),
   caption-2: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 11.5px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 400,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 16px,
-  type: "size",
-  unit: "px"
-),
-  letter-spacing: (
-  value: 0.48px,
-  type: "letterSpacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 11.5px,
+  font-style: normal,
+  font-weight: 400,
+  line-height: 16px,
+  letter-spacing: 0.48px
 ),
   caption-3: (
-  font-family: (
-  value: Manrope,
-  type: "fontFamily",
-  unit: ""
-),
-  font-size: (
-  value: 11px,
-  type: "size",
-  unit: "px"
-),
-  font-style: (
-  value: normal,
-  type: "fontStyle",
-  unit: ""
-),
-  font-weight: (
-  value: 500,
-  type: "fontWeight",
-  unit: ""
-),
-  line-height: (
-  value: 11px,
-  type: "size",
-  unit: "px"
-),
-  letter-spacing: (
-  value: 0.3px,
-  type: "letterSpacing",
-  unit: "px"
-)
+  font-family: Manrope,
+  font-size: 11px,
+  font-style: normal,
+  font-weight: 500,
+  line-height: 11px,
+  letter-spacing: 0.3px
 )
 )
 );
