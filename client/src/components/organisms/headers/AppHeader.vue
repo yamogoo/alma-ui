@@ -3,10 +3,7 @@ import { Group, ToolbarBlock, LogoWithDescriptor } from "@/components/atoms";
 
 import { MainHeader } from "@/components/templates";
 
-import type { AppHeaderProps } from "./appHeader";
 import { LanguageMenu, ThemeSwitch } from "@@/components/moleculas";
-
-withDefaults(defineProps<AppHeaderProps>(), {});
 </script>
 
 <template>

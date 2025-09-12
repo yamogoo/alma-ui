@@ -877,18 +877,54 @@ $themes:(
 )
 ),
   templates: (
-  main-header: (
+  main-footer: (
   neutral: (
   primary: (
+  self: (
   background: (
   normal: #101315
+),
+  border: (
+  normal: rgba(#101315,0)
+)
 )
 )
 ),
   accent: (
   primary: (
+  self: (
   background: (
   normal: #013CFE
+),
+  border: (
+  normal: rgba(#013CFE,0)
+)
+)
+)
+)
+),
+  main-header: (
+  neutral: (
+  primary: (
+  self: (
+  background: (
+  normal: #101315
+),
+  border: (
+  normal: rgba(#101315,0)
+)
+)
+)
+),
+  accent: (
+  primary: (
+  self: (
+  background: (
+  normal: #013CFE
+),
+  border: (
+  normal: rgba(#013CFE,0)
+)
 )
 )
 )
@@ -1770,18 +1806,54 @@ $themes:(
 )
 ),
   templates: (
-  main-header: (
+  main-footer: (
   neutral: (
   primary: (
+  self: (
   background: (
   normal: #F8F9FA
+),
+  border: (
+  normal: rgba(#F8F9FA,0)
+)
 )
 )
 ),
   accent: (
   primary: (
+  self: (
   background: (
   normal: #013CFE
+),
+  border: (
+  normal: rgba(#013CFE,0)
+)
+)
+)
+)
+),
+  main-header: (
+  neutral: (
+  primary: (
+  self: (
+  background: (
+  normal: #F8F9FA
+),
+  border: (
+  normal: rgba(#F8F9FA,0)
+)
+)
+)
+),
+  accent: (
+  primary: (
+  self: (
+  background: (
+  normal: #013CFE
+),
+  border: (
+  normal: rgba(#013CFE,0)
+)
 )
 )
 )

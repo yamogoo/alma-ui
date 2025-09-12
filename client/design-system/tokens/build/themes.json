@@ -2105,16 +2105,28 @@
         }
       },
       "templates": {
-        "mainHeader": {
+        "mainFooter": {
           "neutral": {
             "primary": {
-              "background": {
-                "normal": {
-                  "value": "#101315",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "main header"
+              "self": {
+                "background": {
+                  "normal": {
+                    "value": "#101315",
+                    "type": "color",
+                    "unit": "hex",
+                    "meta": {
+                      "category": "main footer"
+                    }
+                  }
+                },
+                "border": {
+                  "normal": {
+                    "value": "rgba(#101315,0)",
+                    "type": "color",
+                    "unit": "hex",
+                    "meta": {
+                      "category": "main footer"
+                    }
                   }
                 }
               }
@@ -2122,13 +2134,79 @@
           },
           "accent": {
             "primary": {
-              "background": {
-                "normal": {
-                  "value": "#013CFE",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "main header"
+              "self": {
+                "background": {
+                  "normal": {
+                    "value": "#013CFE",
+                    "type": "color",
+                    "unit": "hex",
+                    "meta": {
+                      "category": "main footer"
+                    }
+                  }
+                },
+                "border": {
+                  "normal": {
+                    "value": "rgba(#013CFE,0)",
+                    "type": "color",
+                    "unit": "hex",
+                    "meta": {
+                      "category": "main footer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "mainHeader": {
+          "neutral": {
+            "primary": {
+              "self": {
+                "background": {
+                  "normal": {
+                    "value": "#101315",
+                    "type": "color",
+                    "unit": "hex",
+                    "meta": {
+                      "category": "main footer"
+                    }
+                  }
+                },
+                "border": {
+                  "normal": {
+                    "value": "rgba(#101315,0)",
+                    "type": "color",
+                    "unit": "hex",
+                    "meta": {
+                      "category": "main footer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "accent": {
+            "primary": {
+              "self": {
+                "background": {
+                  "normal": {
+                    "value": "#013CFE",
+                    "type": "color",
+                    "unit": "hex",
+                    "meta": {
+                      "category": "main footer"
+                    }
+                  }
+                },
+                "border": {
+                  "normal": {
+                    "value": "rgba(#013CFE,0)",
+                    "type": "color",
+                    "unit": "hex",
+                    "meta": {
+                      "category": "main footer"
+                    }
                   }
                 }
               }
@@ -4422,16 +4500,28 @@
         }
       },
       "templates": {
-        "mainHeader": {
+        "mainFooter": {
           "neutral": {
             "primary": {
-              "background": {
-                "normal": {
-                  "value": "#F8F9FA",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "main header"
+              "self": {
+                "background": {
+                  "normal": {
+                    "value": "#F8F9FA",
+                    "type": "color",
+                    "unit": "hex",
+                    "meta": {
+                      "category": "main footer"
+                    }
+                  }
+                },
+                "border": {
+                  "normal": {
+                    "value": "rgba(#F8F9FA,0)",
+                    "type": "color",
+                    "unit": "hex",
+                    "meta": {
+                      "category": "main footer"
+                    }
                   }
                 }
               }
@@ -4439,13 +4529,79 @@
           },
           "accent": {
             "primary": {
-              "background": {
-                "normal": {
-                  "value": "#013CFE",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "main header"
+              "self": {
+                "background": {
+                  "normal": {
+                    "value": "#013CFE",
+                    "type": "color",
+                    "unit": "hex",
+                    "meta": {
+                      "category": "main footer"
+                    }
+                  }
+                },
+                "border": {
+                  "normal": {
+                    "value": "rgba(#013CFE,0)",
+                    "type": "color",
+                    "unit": "hex",
+                    "meta": {
+                      "category": "main footer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "mainHeader": {
+          "neutral": {
+            "primary": {
+              "self": {
+                "background": {
+                  "normal": {
+                    "value": "#F8F9FA",
+                    "type": "color",
+                    "unit": "hex",
+                    "meta": {
+                      "category": "main header"
+                    }
+                  }
+                },
+                "border": {
+                  "normal": {
+                    "value": "rgba(#F8F9FA,0)",
+                    "type": "color",
+                    "unit": "hex",
+                    "meta": {
+                      "category": "main header"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "accent": {
+            "primary": {
+              "self": {
+                "background": {
+                  "normal": {
+                    "value": "#013CFE",
+                    "type": "color",
+                    "unit": "hex",
+                    "meta": {
+                      "category": "main header"
+                    }
+                  }
+                },
+                "border": {
+                  "normal": {
+                    "value": "rgba(#013CFE,0)",
+                    "type": "color",
+                    "unit": "hex",
+                    "meta": {
+                      "category": "main header"
+                    }
                   }
                 }
               }

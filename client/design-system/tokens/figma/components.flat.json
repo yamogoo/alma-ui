@@ -1489,6 +1489,21 @@
     "value": "component",
     "type": "string"
   },
+  "templates.mainFooter.default.lg.self.padding": {
+    "value": 16,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "templates.mainFooter.default.md.self.padding": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "templates.mainFooter.default.sm.self.padding": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px"
+  },
   "templates.mainHeader.default.lg.self.padding": {
     "value": 16,
     "type": "spacing",

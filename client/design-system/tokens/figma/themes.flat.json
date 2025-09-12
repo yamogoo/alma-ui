@@ -1699,6 +1699,16 @@
     "value": "#242B31",
     "type": "unknown"
   },
+  "themes.dark.templates.mainFooter.neutral.primary.background.normal": {
+    "value": "#101315",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.templates.mainFooter.accent.primary.background.normal": {
+    "value": "#013CFE",
+    "type": "color",
+    "unit": "hex"
+  },
   "themes.dark.templates.mainHeader.neutral.primary.background.normal": {
     "value": "#101315",
     "type": "color",
@@ -3475,13 +3485,43 @@
     "value": "#D5DBE0",
     "type": "unknown"
   },
-  "themes.light.templates.mainHeader.neutral.primary.background.normal": {
+  "themes.light.templates.mainFooter.neutral.primary.self.background.normal": {
     "value": "#F8F9FA",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.templates.mainHeader.accent.primary.background.normal": {
+  "themes.light.templates.mainFooter.neutral.primary.self.border.normal": {
+    "value": "rgba(#F8F9FA,0)",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.templates.mainFooter.accent.primary.self.background.normal": {
     "value": "#013CFE",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.templates.mainFooter.accent.primary.self.border.normal": {
+    "value": "rgba(#013CFE,0)",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.templates.mainHeader.neutral.primary.self.background.normal": {
+    "value": "#F8F9FA",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.templates.mainHeader.neutral.primary.self.border.normal": {
+    "value": "rgba(#F8F9FA,0)",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.templates.mainHeader.accent.primary.self.background.normal": {
+    "value": "#013CFE",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.templates.mainHeader.accent.primary.self.border.normal": {
+    "value": "rgba(#013CFE,0)",
     "type": "color",
     "unit": "hex"
   }
