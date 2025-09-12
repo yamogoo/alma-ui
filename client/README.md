@@ -98,7 +98,7 @@ A self-built design system that works like a lightweight framework:
 
 **Modular Design Tokens System**
 
-> Developed a modular token system for the design system with support for JSON, YAML, and TypeScript. TokensParser and JSONBuilder were partially developed with AI assistance, but all architecture, integration, and other components were implemented independently.
+> Developed a modular token system for the design system with support for JSON, YAML, and TypeScript. TokensParser and JSONBuilder were partially developed with AI assistance, but all architecture, integration, and other components were implemented independently. The AI-generated files are located in [`~/client/plugins`](https://github.com/yamogoo/sparkpad/tree/main/client/plugins).
 
 ## ⚡ Philosophy
 
