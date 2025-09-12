@@ -811,6 +811,11 @@
     "unit": "px",
     "description": "Gap between elements in large group"
   },
+  "group.default.lg.self.borderRadius": {
+    "value": 0,
+    "type": "radius",
+    "unit": "px"
+  },
   "group.default.lg.self.borderWidth": {
     "value": 1,
     "type": "size",
@@ -826,6 +831,11 @@
     "type": "spacing",
     "unit": "px",
     "description": "Gap between elements in medium group"
+  },
+  "group.default.md.self.borderRadius": {
+    "value": 0,
+    "type": "radius",
+    "unit": "px"
   },
   "group.default.md.self.borderWidth": {
     "value": 1,
@@ -843,6 +853,11 @@
     "unit": "px",
     "description": "Gap between elements in small group"
   },
+  "group.default.sm.self.borderRadius": {
+    "value": 0,
+    "type": "radius",
+    "unit": "px"
+  },
   "group.default.sm.self.borderWidth": {
     "value": 1,
     "type": "size",
@@ -850,6 +865,69 @@
     "description": "Border width for small group"
   },
   "group.default.sm.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "group.block.lg.self.gap": {
+    "value": 24,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap between elements in large group"
+  },
+  "group.block.lg.self.borderRadius": {
+    "value": 16,
+    "type": "radius",
+    "unit": "px"
+  },
+  "group.block.lg.self.borderWidth": {
+    "value": 1,
+    "type": "size",
+    "unit": "px",
+    "description": "Border width for large group"
+  },
+  "group.block.lg.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "group.block.md.self.gap": {
+    "value": 16,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap between elements in medium group"
+  },
+  "group.block.md.self.borderRadius": {
+    "value": 12,
+    "type": "radius",
+    "unit": "px"
+  },
+  "group.block.md.self.borderWidth": {
+    "value": 1,
+    "type": "size",
+    "unit": "px",
+    "description": "Border width for medium group"
+  },
+  "group.block.md.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "group.block.sm.self.gap": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap between elements in small group"
+  },
+  "group.block.sm.self.borderRadius": {
+    "value": 8,
+    "type": "radius",
+    "unit": "px"
+  },
+  "group.block.sm.self.borderWidth": {
+    "value": 1,
+    "type": "size",
+    "unit": "px",
+    "description": "Border width for small group"
+  },
+  "group.block.sm.type": {
     "value": "component",
     "type": "string"
   },

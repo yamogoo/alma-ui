@@ -1,9 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`ToggleSwitch > events > should emit "update:is-acitve" when clicking on the wrapper 1`] = `
-[
-  [
-    false,
-  ],
-]
-`;

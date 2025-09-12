@@ -4,19 +4,19 @@ import type {
   UIElementAxisDirection,
   UIElementOrientation,
   UIElementStretch,
-  UIElementVariant,
 } from "@/typings";
 
-export type GroupSize = keyof typeof tokens.group.default;
+export type GroupVariant = keyof typeof tokens.group;
+export const groupVariants = Object.keys(tokens.group) as GroupVariant[];
 
+export type GroupSize = keyof typeof tokens.group.default;
 export const groupSizes = Object.keys(tokens.group.default) as GroupSize[];
 
 export type GroupMode = keyof typeof tokens.themes.light.group;
-
 export const groupModes = Object.keys(tokens.themes.light.group) as GroupMode[];
 
 export interface GroupProps {
-  variant?: UIElementVariant;
+  variant?: GroupVariant;
   size?: GroupSize;
   mode?: GroupMode;
   orientation?: UIElementOrientation;

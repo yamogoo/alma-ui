@@ -8,10 +8,16 @@ import type { DropdownProps } from "./dropdown";
 
 import { Icon } from "@/components/atoms";
 
+const ARROW_ICON_ROTATION_EXPANDED = 0,
+  ARROW_ICON_ROTATION_SHRINKED = 90;
+
+const EXPAND_ARROW_ICON_DURATION_IN = 0.25,
+  EXPAND_ARROW_ICON_DURATION_OUT = 0.15;
+
 const props = withDefaults(defineProps<DropdownProps>(), {
   variant: "default",
   size: "md",
-  color: "primary",
+  mode: "primary",
   isResetButtonShown: false,
 });
 
@@ -29,13 +35,10 @@ const onExpand = (): void => {
 
 /* * * Animations * * */
 
-const ARROW_ICON_ROTATION_EXPANDED = 0,
-  ARROW_ICON_ROTATION_SHRINKED = 90;
-
 const getIcon = (): HTMLDivElement | null => {
   if (!refRoot.value) return null;
   return refRoot.value.getElementsByClassName(
-    "dropdown__value-icon"
+    "dropdown__current-value-icon"
   )[0] as HTMLDivElement;
 };
 
@@ -43,8 +46,8 @@ const setIconState = (isExpanded: boolean, isAnimate = true): void => {
   const el = getIcon();
   if (el)
     isExpanded
-      ? onAnimExpandIconIn(el, isAnimate ? 0.25 : 0)
-      : onAnimExpandIconOut(el, isAnimate ? 0.15 : 0);
+      ? onAnimExpandIconIn(el, isAnimate ? EXPAND_ARROW_ICON_DURATION_IN : 0)
+      : onAnimExpandIconOut(el, isAnimate ? EXPAND_ARROW_ICON_DURATION_OUT : 0);
 };
 
 const onAnimExpandIconIn = (el: HTMLDivElement, duration: number): void => {
@@ -98,29 +101,29 @@ const onOptionClick = (): void => {
     data-testid="dropdown"
     :class="[
       {
-        [`dropdown_${variant}`]: !!variant,
-        [`dropdown_${size}`]: !!size,
-        [`dropdown_${color}`]: !!color,
+        [`dropdown_variant-${variant}`]: !!variant,
+        [`dropdown_size-${size}`]: !!size,
+        [`dropdown_mode-${mode}`]: !!mode,
       },
-      `dropdown_${isExpanded ? 'expanded' : 'normal'}`,
+      `dropdown_state-${isExpanded ? 'expanded' : 'normal'}`,
     ]"
     :aria-expanded="isExpanded"
   >
     <div
-      class="dropdown__value"
+      class="dropdown__current-value"
       data-testid="dropdown-value"
       aria-haspopup="listbox"
       @click="onExpand"
     >
-      <div class="dropdown__value-container">
-        <div class="dropdown__value-content">
-          <span class="dropdown__value-label">{{ value }}</span
-          ><span v-if="valuePostfix" class="dropdown__value-postfix">{{
+      <div class="dropdown__current-value-container">
+        <div class="dropdown__current-value-content">
+          <span class="dropdown__current-value-label">{{ value }}</span
+          ><span v-if="valuePostfix" class="dropdown__current-value-postfix">{{
             valuePostfix
           }}</span>
         </div>
         <Icon
-          class="dropdown__value-icon"
+          class="dropdown__current-value-icon"
           :name="'down'"
           :style="'outline'"
           :weight="'500'"
@@ -169,19 +172,19 @@ const onOptionClick = (): void => {
         &.dropdown_size-#{$size} {
           min-width: $min-width;
 
-          &.dropdown_normal {
-            .dropdown__value {
+          &.dropdown_state-normal {
+            .dropdown__current-value {
               border-radius: $value-border-radius;
             }
           }
 
-          &.dropdown_expanded {
-            .dropdown__value {
+          &.dropdown_state-expanded {
+            .dropdown__current-value {
               border-radius: $value-border-radius $value-border-radius 0 0;
             }
           }
 
-          .dropdown__value {
+          .dropdown__current-value {
             height: $height;
             gap: $value-gap;
             padding: $value-padding;
@@ -206,44 +209,44 @@ const onOptionClick = (): void => {
 }
 
 @mixin defineThemes($names) {
-  @each $name in $names {
-    &_#{$name} {
+  @each $mode in $names {
+    &_mode-#{$mode} {
       &.dropdown_normal {
-        .dropdown__value {
+        .dropdown__current-value {
           @include themify($themes) {
             background-color: themed(
-              "drop-down.#{$name}.current-value.background.normal"
+              "drop-down.#{$mode}.current-value.background.normal"
             );
           }
 
           &-label {
             @include themify($themes) {
-              color: themed("drop-down.#{$name}.current-value.label.normal");
+              color: themed("drop-down.#{$mode}.current-value.label.normal");
             }
           }
 
           &-icon {
             @include themify($themes) {
-              fill: themed("drop-down.#{$name}.current-value.icon.normal");
+              fill: themed("drop-down.#{$mode}.current-value.icon.normal");
             }
           }
 
           &:hover {
             @include themify($themes) {
               background-color: themed(
-                "drop-down.#{$name}.current-value.background.hovered"
+                "drop-down.#{$mode}.current-value.background.hovered"
               );
             }
 
             &-label {
               @include themify($themes) {
-                color: themed("drop-down.#{$name}.current-value.label.hovered");
+                color: themed("drop-down.#{$mode}.current-value.label.hovered");
               }
             }
 
             &-icon {
               @include themify($themes) {
-                fill: themed("drop-down.#{$name}.current-value.icon.hovered");
+                fill: themed("drop-down.#{$mode}.current-value.icon.hovered");
               }
             }
           }
@@ -251,36 +254,36 @@ const onOptionClick = (): void => {
       }
 
       &.dropdown_expanded {
-        .dropdown__value {
+        .dropdown__current-value {
           @include themify($themes) {
             background-color: themed(
-              "drop-down.#{$name}.current-value.background.expanded"
+              "drop-down.#{$mode}.current-value.background.expanded"
             );
           }
 
           &-label {
             @include themify($themes) {
-              color: themed("drop-down.#{$name}.current-value.label.expanded");
+              color: themed("drop-down.#{$mode}.current-value.label.expanded");
             }
           }
 
           &-icon {
             @include themify($themes) {
-              fill: themed("drop-down.#{$name}.current-value.icon.expanded");
+              fill: themed("drop-down.#{$mode}.current-value.icon.expanded");
             }
           }
 
           &:hover {
             @include themify($themes) {
               background-color: themed(
-                "drop-down.#{$name}.current-value.background.expanded-hovered"
+                "drop-down.#{$mode}.current-value.background.expanded-hovered"
               );
             }
 
             &-label {
               @include themify($themes) {
                 color: themed(
-                  "drop-down.#{$name}.current-value.label.expanded-hovered"
+                  "drop-down.#{$mode}.current-value.label.expanded-hovered"
                 );
               }
             }
@@ -288,7 +291,7 @@ const onOptionClick = (): void => {
             &-icon {
               @include themify($themes) {
                 fill: themed(
-                  "drop-down.#{$name}.current-value.icon.expanded-hovered"
+                  "drop-down.#{$mode}.current-value.icon.expanded-hovered"
                 );
               }
             }
@@ -298,14 +301,14 @@ const onOptionClick = (): void => {
         .dropdown__options {
           @include themify($themes) {
             background-color: themed(
-              "drop-down.#{$name}.options.background.normal"
+              "drop-down.#{$mode}.options.background.normal"
             );
           }
 
           &:hover {
             @include themify($themes) {
               background-color: themed(
-                "drop-down.#{$name}.options.background.hovered"
+                "drop-down.#{$mode}.options.background.hovered"
               );
             }
           }
@@ -323,7 +326,7 @@ const onOptionClick = (): void => {
   @include defineSizes();
   @include defineThemes(map.keys(get($themes, "light.drop-down")));
 
-  &__value {
+  &__current-value {
     box-sizing: border-box;
     align-content: center;
     width: 100%;
@@ -346,21 +349,23 @@ const onOptionClick = (): void => {
     }
   }
 
-  &__value-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: px2rem(get($spacing, "xs"));
-    width: 100%;
-    overflow: hidden;
-  }
+  &__current-value {
+    &-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: px2rem(get($spacing, "xs"));
+      width: 100%;
+      overflow: hidden;
+    }
 
-  &__value-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: px2rem(get($spacing, "xs"));
+    &-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: px2rem(get($spacing, "xs"));
+    }
   }
 
   &__controlbar {
@@ -386,7 +391,7 @@ const onOptionClick = (): void => {
     }
   }
 
-  .dropdown__value,
+  .dropdown__current-value,
   .dropdown__options {
     @include transition(
       color background background-color fill stroke opacity,

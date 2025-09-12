@@ -6,8 +6,7 @@ const props = withDefaults(defineProps<GroupProps>(), {
   as: "div",
   role: "group",
   size: "md",
-  mode: "primary",
-  orientation: "horizontal",
+  mode: "ghost",
   ariaLabel: "group",
 });
 
@@ -48,11 +47,13 @@ const componentTag = props.as;
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       $gap: px2rem(get($val, "self.gap"));
+      $border-radius: px2rem(get($val, "self.border-radius"));
       $divider-border-width: px2rem(get($val, "self.border-width"));
 
       &_variant-#{$variant} {
         &.group_size-#{$size} {
           gap: $gap;
+          border-radius: $border-radius;
 
           &.group_divider {
             &.group_orientation-horizontal {
@@ -72,18 +73,22 @@ const componentTag = props.as;
 }
 
 @mixin defineThemes($names) {
-  @each $name in $names {
-    &_mode-#{$name} {
+  @each $mode in $names {
+    &_mode-#{$mode} {
+      @include themify($themes) {
+        background-color: themed("group.#{$mode}.self.background");
+      }
+
       &.group_divider {
         &.group_orientation-horizontal {
           @include themify($themes) {
-            border-right-color: themed("group.#{$name}.self.divider");
+            border-right-color: themed("group.#{$mode}.self.divider");
           }
         }
 
         &.group_orientation-vertical {
           @include themify($themes) {
-            border-bottom-color: themed("group.#{$name}.self.divider");
+            border-bottom-color: themed("group.#{$mode}.self.divider");
           }
         }
       }

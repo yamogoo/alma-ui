@@ -1,7 +1,9 @@
 <script setup lang="ts" generic="T">
 import type { OptionsProps } from "./options";
+import { Text } from "@/components/atoms";
 
 const props = withDefaults(defineProps<OptionsProps<T>>(), {
+  variant: "default",
   isCurrentOptionShown: false,
 });
 
@@ -27,21 +29,23 @@ const showCurrentOption = (key: T) => {
     class="options"
     :class="[
       {
+        [`options_variant-${variant}`]: !!variant,
         [`options_size-${size}`]: !!size,
-        [`options_color-${color}`]: !!color,
+        [`options_mode-${mode}`]: !!mode,
       },
     ]"
   >
     <template v-for="key in items" :key="key">
-      <li
+      <Text
         v-if="showCurrentOption(key)"
+        :as="'li'"
         class="options__option"
         data-testid="options__option"
         @click="onSelect(key)"
       >
         {{ `${typeof key === "string" && !$slots.default ? key : ""}` }}
         <slot :value="key"></slot>
-      </li>
+      </Text>
     </template>
   </ul>
 </template>
@@ -68,16 +72,16 @@ const showCurrentOption = (key: T) => {
 }
 
 @mixin defineThemes($names) {
-  @each $name in $names {
-    &_color-#{$name} {
+  @each $mode in $names {
+    &_mode-#{$mode} {
       .options__option {
         @include themify($themes) {
-          color: themed("options.#{$name}.label.normal");
+          color: themed("options.#{$mode}.label.normal");
         }
 
         &:hover {
           @include themify($themes) {
-            color: themed("options.#{$name}.label.hovered");
+            color: themed("options.#{$mode}.label.hovered");
           }
         }
       }

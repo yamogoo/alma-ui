@@ -1,0 +1,17 @@
+<script setup lang="ts">
+import type { ToolbarBlockProps } from "./toolbarBlock";
+
+import { Group } from "@/components/atoms";
+
+const props = withDefaults(defineProps<ToolbarBlockProps>(), {
+  variant: "block",
+  size: "md",
+  mode: "primary",
+});
+</script>
+
+<template>
+  <Group class="toolbar-block" v-bind="props">
+    <slot></slot>
+  </Group>
+</template>

@@ -1287,6 +1287,14 @@
               "category": "group"
             }
           },
+          "borderRadius": {
+            "value": 0,
+            "type": "radius",
+            "unit": "px",
+            "meta": {
+              "category": "group"
+            }
+          },
           "borderWidth": {
             "value": 1,
             "type": "size",
@@ -1310,6 +1318,14 @@
               "category": "group"
             }
           },
+          "borderRadius": {
+            "value": 0,
+            "type": "radius",
+            "unit": "px",
+            "meta": {
+              "category": "group"
+            }
+          },
           "borderWidth": {
             "value": 1,
             "type": "size",
@@ -1330,6 +1346,109 @@
             "unit": "px",
             "meta": {
               "description": "Gap between elements in small group",
+              "category": "group"
+            }
+          },
+          "borderRadius": {
+            "value": 0,
+            "type": "radius",
+            "unit": "px",
+            "meta": {
+              "category": "group"
+            }
+          },
+          "borderWidth": {
+            "value": 1,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Border width for small group",
+              "category": "group"
+            }
+          }
+        },
+        "type": "component"
+      }
+    },
+    "block": {
+      "lg": {
+        "self": {
+          "gap": {
+            "value": 24,
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "description": "Gap between elements in large group",
+              "category": "group"
+            }
+          },
+          "borderRadius": {
+            "value": 16,
+            "type": "radius",
+            "unit": "px",
+            "meta": {
+              "category": "group"
+            }
+          },
+          "borderWidth": {
+            "value": 1,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Border width for large group",
+              "category": "group"
+            }
+          }
+        },
+        "type": "component"
+      },
+      "md": {
+        "self": {
+          "gap": {
+            "value": 16,
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "description": "Gap between elements in medium group",
+              "category": "group"
+            }
+          },
+          "borderRadius": {
+            "value": 12,
+            "type": "radius",
+            "unit": "px",
+            "meta": {
+              "category": "group"
+            }
+          },
+          "borderWidth": {
+            "value": 1,
+            "type": "size",
+            "unit": "px",
+            "meta": {
+              "description": "Border width for medium group",
+              "category": "group"
+            }
+          }
+        },
+        "type": "component"
+      },
+      "sm": {
+        "self": {
+          "gap": {
+            "value": 12,
+            "type": "spacing",
+            "unit": "px",
+            "meta": {
+              "description": "Gap between elements in small group",
+              "category": "group"
+            }
+          },
+          "borderRadius": {
+            "value": 8,
+            "type": "radius",
+            "unit": "px",
+            "meta": {
               "category": "group"
             }
           },

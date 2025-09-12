@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { ThemeSwitch } from "@@/components/moleculas";
+import { Group, ToolbarBlock } from "@/components/atoms";
+
+import { LanguageMenu, ThemeSwitch } from "@@/components/moleculas";
 import type { AppHeaderProps } from "@@/components/organisms";
 
 withDefaults(defineProps<AppHeaderProps>(), {
@@ -14,7 +16,10 @@ withDefaults(defineProps<AppHeaderProps>(), {
     class="app-header"
     :role="isMainElement ? undefined : 'banner'"
   >
-    <ThemeSwitch></ThemeSwitch>
+    <Group :direction="'forward'" :orientation="'horizontal'" :size="'md'">
+      <ToolbarBlock><LanguageMenu></LanguageMenu></ToolbarBlock>
+      <ToolbarBlock><ThemeSwitch></ThemeSwitch></ToolbarBlock>
+    </Group>
   </component>
 </template>
 

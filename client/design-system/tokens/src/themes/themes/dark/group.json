@@ -1,6 +1,9 @@
 {
   "primary": {
     "self": {
+      "background": {
+        "value": "{themes.themes.dark.background.primary.value}"
+      },
       "divider": {
         "value": "{themes.themes.dark.divider.primary.self.border.value}",
         "type": "color",
@@ -10,6 +13,21 @@
   },
   "secondary": {
     "self": {
+      "background": {
+        "value": "{themes.themes.dark.background.secondary.value}"
+      },
+      "divider": {
+        "value": "{themes.themes.dark.divider.secondary.self.border.value}",
+        "type": "color",
+        "unit": "hex"
+      }
+    }
+  },
+  "ghost": {
+    "self": {
+      "background": {
+        "value": "rgba({colors.gray-1000}, 0)"
+      },
       "divider": {
         "value": "{themes.themes.dark.divider.secondary.self.border.value}",
         "type": "color",

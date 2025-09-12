@@ -6,7 +6,7 @@ import AnimatedWrapper from "@/components/atoms/containers/AnimatedWrapper.vue";
 withDefaults(defineProps<FormWrapperProps>(), {
   variant: "default",
   size: "lg",
-  color: "primary",
+  mode: "primary",
   bordered: false,
 });
 </script>
@@ -16,8 +16,8 @@ withDefaults(defineProps<FormWrapperProps>(), {
     class="form-wrapper"
     :class="[
       `form-wrapper_variant-${variant}`,
-      `form-wrapper_size-${String(size)}`,
-      `form-wrapper_color-${color}`,
+      `form-wrapper_size-${size}`,
+      `form-wrapper_mode-${mode}`,
 
       { 'form-wrapper_bordered': bordered },
     ]"
@@ -65,11 +65,11 @@ withDefaults(defineProps<FormWrapperProps>(), {
 }
 
 @mixin defineThemes($names) {
-  @each $name in $names {
-    &_color-#{$name} {
+  @each $mode in $names {
+    &_mode-#{$mode} {
       @include themify($themes) {
-        background-color: themed("form-wrapper.#{$name}.background");
-        border-color: themed("form-wrapper.#{$name}.border");
+        background-color: themed("form-wrapper.#{$mode}.background");
+        border-color: themed("form-wrapper.#{$mode}.border");
       }
     }
   }

@@ -5,7 +5,7 @@ withDefaults(defineProps<DividerProps>(), {
   as: "span",
   variant: "default",
   size: "md",
-  color: "primary",
+  mode: "primary",
   orientation: "horizontal",
   align: "center",
 });
@@ -18,7 +18,7 @@ withDefaults(defineProps<DividerProps>(), {
     :class="[
       `divider_variant-${variant}`,
       `divider_size-${size}`,
-      `divider_color-${color}`,
+      `divider_mode-${mode}`,
       `divider_orientation-${orientation}`,
       `divider_align-${align}`,
     ]"
@@ -84,18 +84,18 @@ withDefaults(defineProps<DividerProps>(), {
 }
 
 @mixin defineThemes($names) {
-  @each $name in $names {
-    &_color-#{$name} {
+  @each $mode in $names {
+    &_mode-#{$mode} {
       &.divider_orientation {
         &-horizontal {
           @include themify($themes) {
-            border-bottom-color: themed("divider.#{$name}.self.border");
+            border-bottom-color: themed("divider.#{$mode}.self.border");
           }
         }
 
         &-vertical {
           @include themify($themes) {
-            border-right-color: themed("divider.#{$name}.self.border");
+            border-right-color: themed("divider.#{$mode}.self.border");
           }
         }
       }

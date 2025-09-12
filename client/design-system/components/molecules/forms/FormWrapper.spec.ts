@@ -1,21 +1,32 @@
 import { mount } from "@vue/test-utils";
 
 import FormWrapper from "./FormWrapper.vue";
+import type { FormWrapperProps } from "./formWrapper";
 
 const CLASS_NAME = "form-wrapper";
 
 describe("FormWrapper", () => {
   describe("classes", () => {
-    test("renders with default class", () => {
+    test("renders with default class", async () => {
+      const props: FormWrapperProps = {
+        variant: "default",
+        size: "lg",
+        mode: "primary",
+      };
+
       const wrapper = mount(FormWrapper, {
-        props: {
-          size: "lg",
-          color: "primary",
-        },
+        props,
       });
 
-      expect(wrapper.classes(`${CLASS_NAME}_color-primary`)).toBeTruthy();
-      expect(wrapper.classes(`${CLASS_NAME}_size-md`)).toBeTruthy();
+      expect(
+        wrapper.classes(`${CLASS_NAME}_variant-${props.variant}`)
+      ).toBeTruthy();
+      expect(wrapper.classes(`${CLASS_NAME}_mode-${props.mode}`)).toBeTruthy();
+      expect(wrapper.classes(`${CLASS_NAME}_size-${props.size}`)).toBeTruthy();
+
+      await wrapper.setProps({ bordered: true });
+
+      expect(wrapper.classes(`${CLASS_NAME}_bordered`)).toBeTruthy();
     });
   });
 

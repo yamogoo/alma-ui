@@ -49,7 +49,15 @@ export type UIElementContentKey = string | number | Symbol;
 
 export type UIElementTypographyTitleTag = `h${1 | 2 | 3 | 4 | 5 | 6}`;
 
-export type UIElementTypographyParagraphTag = "p" | "span";
+export type UIElementTypographyParagraphTag =
+  | "p"
+  | "span"
+  | "a"
+  | "li"
+  | "ol"
+  | "ul"
+  | "b"
+  | "i";
 
 export type UIElementTypographyLinkTag = "a";
 

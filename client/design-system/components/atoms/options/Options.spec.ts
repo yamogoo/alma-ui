@@ -2,7 +2,9 @@ import { mount, VueWrapper } from "@vue/test-utils";
 import { getTypedEmittedEvent } from "@/utils/vitest";
 
 import Options from "./Options.vue";
-import type { OptionsItems } from "./options";
+import type { OptionsItems, OptionsProps } from "./options";
+
+const CLASS_NAME = "options";
 
 const items: OptionsItems<string> = ["First", "Second", "Third"];
 
@@ -11,6 +13,28 @@ const getOptions = <T>(wrapper: VueWrapper<T>) => {
 };
 
 describe("Options", () => {
+  describe("classes", () => {
+    test("renders with default class", async () => {
+      const props: OptionsProps<string> = {
+        items,
+        value: items[0],
+        variant: "default",
+        size: "lg",
+        mode: "primary",
+      };
+
+      const wrapper = mount(Options, {
+        props,
+      });
+
+      expect(
+        wrapper.classes(`${CLASS_NAME}_variant-${props.variant}`)
+      ).toBeTruthy();
+      expect(wrapper.classes(`${CLASS_NAME}_mode-${props.mode}`)).toBeTruthy();
+      expect(wrapper.classes(`${CLASS_NAME}_size-${props.size}`)).toBeTruthy();
+    });
+  });
+
   describe("elements", () => {
     test("should render optons", () => {
       const wrapper = mount(Options, {

@@ -16,11 +16,11 @@ const getOptions = <T>(wrapper: VueWrapper<T>) => {
 };
 
 const getValueLabel = <T>(wrapper: VueWrapper<T>) => {
-  return wrapper.find(".dropdown__value-label");
+  return wrapper.find(".dropdown__current-value-label");
 };
 
 const getValuePostfix = <T>(wrapper: VueWrapper<T>) => {
-  return wrapper.find(".dropdown__value-postfix");
+  return wrapper.find(".dropdown__current-value-postfix");
 };
 
 describe("Dropdown", () => {

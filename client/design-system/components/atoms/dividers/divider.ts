@@ -8,10 +8,17 @@ import type {
 } from "@/typings";
 
 export type DividerVariant = UIElementVariant;
+export const dividerVariants = Object.keys(tokens.divider) as DividerVariant[];
 
 export type DividerSize = keyof typeof tokens.divider.default;
+export const dividerSizes = Object.keys(
+  tokens.divider.default
+) as DividerSize[];
 
-export type DividerColor = keyof typeof tokens.themes.light.divider;
+export type DividerMode = keyof typeof tokens.themes.light.divider;
+export const dividerModes = Object.keys(
+  tokens.themes.light.divider
+) as DividerMode[];
 
 export type DividerAlign = UIElementAlignment;
 
@@ -19,7 +26,7 @@ export interface DividerProps {
   as?: UIElementTypographyTag;
   variant?: DividerVariant;
   size?: DividerSize;
-  color?: DividerColor;
+  mode?: DividerMode;
   orientation?: UIElementOrientation;
   align?: DividerAlign;
 }

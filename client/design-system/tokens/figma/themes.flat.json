@@ -1217,51 +1217,60 @@
     "type": "color",
     "description": "Secondary border color for divider"
   },
-  "themes.dark.dropDown.primary": {
-    "value": {
-      "label": {
-        "normal": {
-          "value": "#EAEDEF"
-        },
-        "hovered": {
-          "value": "#DCE1E5"
-        },
-        "expanded": {
-          "value": "#C0C9D0"
-        },
-        "expandedHovered": {
-          "value": "#B3BDC6"
-        }
-      },
-      "icon": {
-        "normal": {
-          "value": "#EAEDEF"
-        },
-        "hovered": {
-          "value": "#DCE1E5"
-        },
-        "expanded": {
-          "value": "#C0C9D0"
-        },
-        "expandedHovered": {
-          "value": "#B3BDC6"
-        }
-      },
-      "background": {
-        "normal": {
-          "value": "#242B31"
-        },
-        "hovered": {
-          "value": "#2F383F"
-        },
-        "expanded": {
-          "value": "#43505A"
-        },
-        "expandedHovered": {
-          "value": "#39444C"
-        }
-      }
-    },
+  "themes.dark.dropDown.primary.currentValue.label.normal": {
+    "value": "#EAEDEF",
+    "type": "unknown"
+  },
+  "themes.dark.dropDown.primary.currentValue.label.hovered": {
+    "value": "#DCE1E5",
+    "type": "unknown"
+  },
+  "themes.dark.dropDown.primary.currentValue.label.expanded": {
+    "value": "#C0C9D0",
+    "type": "unknown"
+  },
+  "themes.dark.dropDown.primary.currentValue.label.expandedHovered": {
+    "value": "#B3BDC6",
+    "type": "unknown"
+  },
+  "themes.dark.dropDown.primary.currentValue.icon.normal": {
+    "value": "#EAEDEF",
+    "type": "unknown"
+  },
+  "themes.dark.dropDown.primary.currentValue.icon.hovered": {
+    "value": "#DCE1E5",
+    "type": "unknown"
+  },
+  "themes.dark.dropDown.primary.currentValue.icon.expanded": {
+    "value": "#C0C9D0",
+    "type": "unknown"
+  },
+  "themes.dark.dropDown.primary.currentValue.icon.expandedHovered": {
+    "value": "#B3BDC6",
+    "type": "unknown"
+  },
+  "themes.dark.dropDown.primary.currentValue.background.normal": {
+    "value": "#242B31",
+    "type": "unknown"
+  },
+  "themes.dark.dropDown.primary.currentValue.background.hovered": {
+    "value": "#2F383F",
+    "type": "unknown"
+  },
+  "themes.dark.dropDown.primary.currentValue.background.expanded": {
+    "value": "#43505A",
+    "type": "unknown"
+  },
+  "themes.dark.dropDown.primary.currentValue.background.expandedHovered": {
+    "value": "#39444C",
+    "type": "unknown"
+  },
+  "themes.dark.dropDown.primary.options.background.normal": {
+    "value": "#2F383F",
+    "type": "unknown"
+  },
+  "themes.dark.dropDown.primary.options.background.hovered": {
+    "value": "#2F383F",
     "type": "unknown"
   },
   "themes.dark.form.primary.background": {
@@ -1296,12 +1305,29 @@
     "value": "#242B31",
     "type": "unknown"
   },
+  "themes.dark.group.primary.self.background": {
+    "value": "#101315",
+    "type": "unknown"
+  },
   "themes.dark.group.primary.self.divider": {
     "value": "#242B31",
     "type": "color",
     "unit": "hex"
   },
+  "themes.dark.group.secondary.self.background": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
   "themes.dark.group.secondary.self.divider": {
+    "value": "#39444C",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.group.ghost.self.background": {
+    "value": "rgba(#050607, 0)",
+    "type": "unknown"
+  },
+  "themes.dark.group.ghost.self.divider": {
     "value": "#39444C",
     "type": "color",
     "unit": "hex"
@@ -2898,51 +2924,60 @@
     "type": "color",
     "description": "Secondary border color for divider"
   },
-  "themes.light.dropDown.primary": {
-    "value": {
-      "label": {
-        "normal": {
-          "value": "#1A1F23"
-        },
-        "hovered": {
-          "value": "#101315"
-        },
-        "expanded": {
-          "value": "#101315"
-        },
-        "expandedHovered": {
-          "value": "#101315"
-        }
-      },
-      "icon": {
-        "normal": {
-          "value": "#1A1F23"
-        },
-        "hovered": {
-          "value": "#101315"
-        },
-        "expanded": {
-          "value": "#2F383F"
-        },
-        "expandedHovered": {
-          "value": "#242B31"
-        }
-      },
-      "background": {
-        "normal": {
-          "value": "#E3E7EA"
-        },
-        "hovered": {
-          "value": "#DCE1E5"
-        },
-        "expanded": {
-          "value": "#E3E7EA"
-        },
-        "expandedHovered": {
-          "value": "#DCE1E5"
-        }
-      }
-    },
+  "themes.light.dropDown.primary.currentValue.label.normal": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.light.dropDown.primary.currentValue.label.hovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.dropDown.primary.currentValue.label.expanded": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.dropDown.primary.currentValue.label.expandedHovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.dropDown.primary.currentValue.icon.normal": {
+    "value": "#1A1F23",
+    "type": "unknown"
+  },
+  "themes.light.dropDown.primary.currentValue.icon.hovered": {
+    "value": "#101315",
+    "type": "unknown"
+  },
+  "themes.light.dropDown.primary.currentValue.icon.expanded": {
+    "value": "#2F383F",
+    "type": "unknown"
+  },
+  "themes.light.dropDown.primary.currentValue.icon.expandedHovered": {
+    "value": "#242B31",
+    "type": "unknown"
+  },
+  "themes.light.dropDown.primary.currentValue.background.normal": {
+    "value": "#E3E7EA",
+    "type": "unknown"
+  },
+  "themes.light.dropDown.primary.currentValue.background.hovered": {
+    "value": "#DCE1E5",
+    "type": "unknown"
+  },
+  "themes.light.dropDown.primary.currentValue.background.expanded": {
+    "value": "#E3E7EA",
+    "type": "unknown"
+  },
+  "themes.light.dropDown.primary.currentValue.background.expandedHovered": {
+    "value": "#DCE1E5",
+    "type": "unknown"
+  },
+  "themes.light.dropDown.primary.options.background.normal": {
+    "value": "#D5DBE0",
+    "type": "unknown"
+  },
+  "themes.light.dropDown.primary.options.background.hovered": {
+    "value": "#D5DBE0",
     "type": "unknown"
   },
   "themes.light.form.primary.background": {
@@ -2977,12 +3012,29 @@
     "value": "#D5DBE0",
     "type": "unknown"
   },
+  "themes.light.group.primary.self.background": {
+    "value": "#F8F9FA",
+    "type": "unknown"
+  },
   "themes.light.group.primary.self.divider": {
     "value": "#D5DBE0",
     "type": "color",
     "unit": "hex"
   },
+  "themes.light.group.secondary.self.background": {
+    "value": "#DCE1E5",
+    "type": "unknown"
+  },
   "themes.light.group.secondary.self.divider": {
+    "value": "#C7CFD5",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.group.ghost.self.background": {
+    "value": "rgba(#F8F9FA, 0)",
+    "type": "unknown"
+  },
+  "themes.light.group.ghost.self.divider": {
     "value": "#C7CFD5",
     "type": "color",
     "unit": "hex"

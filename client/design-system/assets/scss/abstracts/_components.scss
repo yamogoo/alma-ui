@@ -347,18 +347,44 @@ $group:(
   lg: (
   self: (
   gap: 24px,
+  border-radius: 0px,
   border-width: 1px
 )
 ),
   md: (
   self: (
   gap: 16px,
+  border-radius: 0px,
   border-width: 1px
 )
 ),
   sm: (
   self: (
   gap: 12px,
+  border-radius: 0px,
+  border-width: 1px
+)
+)
+),
+  block: (
+  lg: (
+  self: (
+  gap: 24px,
+  border-radius: 16px,
+  border-width: 1px
+)
+),
+  md: (
+  self: (
+  gap: 16px,
+  border-radius: 12px,
+  border-width: 1px
+)
+),
+  sm: (
+  self: (
+  gap: 12px,
+  border-radius: 8px,
   border-width: 1px
 )
 )
