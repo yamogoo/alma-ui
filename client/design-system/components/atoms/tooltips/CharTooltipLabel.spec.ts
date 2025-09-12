@@ -15,7 +15,7 @@ describe("CharTooltipLabel", () => {
     expect(wrapper.classes()).toContain("char-tooltip-label");
     expect(wrapper.classes()).toContain("char-tooltip-label_variant-default");
     expect(wrapper.classes()).toContain("char-tooltip-label_size-lg");
-    expect(wrapper.classes()).toContain("char-tooltip-label_color-primary");
+    expect(wrapper.classes()).toContain("char-tooltip-label_mode-primary");
     expect(wrapper.text()).toContain("Hello");
   });
 
@@ -25,14 +25,14 @@ describe("CharTooltipLabel", () => {
         label: "Custom",
         variant: "default",
         size: "lg",
-        color: "primaryInversed",
+        mode: "primaryInversed",
       },
     });
 
     expect(wrapper.classes()).toContain("char-tooltip-label_variant-default");
     expect(wrapper.classes()).toContain("char-tooltip-label_size-lg");
     expect(wrapper.classes()).toContain(
-      "char-tooltip-label_color-primaryInversed"
+      "char-tooltip-label_mode-primaryInversed"
     );
   });
 

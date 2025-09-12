@@ -37,10 +37,10 @@ describe("Form", () => {
   describe("classes", () => {
     test("adds a class to the color", () => {
       const wrapper = mount(Form, {
-        props: { color: "primary" },
+        props: { mode: "primary" },
       });
 
-      expect(wrapper.classes()).toContain("form_color-primary");
+      expect(wrapper.classes()).toContain("form_mode-primary");
     });
 
     test("adds class for size", () => {

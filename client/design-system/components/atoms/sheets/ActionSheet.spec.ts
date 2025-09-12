@@ -13,6 +13,10 @@ vi.mock("gsap", () => ({
 }));
 
 describe("ActionSheet.vue", () => {
+  beforeEach(() => {
+    vi.useFakeTimers();
+  });
+
   mountWithTeleport();
 
   test("renders nothing when inactive initially", () => {
@@ -48,7 +52,7 @@ describe("ActionSheet.vue", () => {
         containerId: "#app",
         isActive: false,
         size: "md",
-        color: "primary",
+        mode: "primary",
       },
       attachTo: document.body,
     });
@@ -63,6 +67,6 @@ describe("ActionSheet.vue", () => {
 
     expect(el).not.toBeNull();
     expect(el!.classList.contains("action-sheet_size-md")).toBe(true);
-    expect(el!.classList.contains("action-sheet_color-primary")).toBe(true);
+    expect(el!.classList.contains("action-sheet_mode-primary")).toBe(true);
   });
 });
