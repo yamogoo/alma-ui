@@ -49,7 +49,7 @@ export interface Props extends InputProps {
   >
     <template #controls>
       <ControlButton
-        data-testid="input__mask-button"
+        data-testid="input-mask-button"
         :size="'xs'"
         :icon-size="'xs'"
         :tone="'neutral'"
