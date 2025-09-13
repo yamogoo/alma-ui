@@ -1362,10 +1362,6 @@
     "unit": "px",
     "description": "Padding for step pagination tab item on medium screens"
   },
-  "atoms.stepPaginationTabs.default.type": {
-    "value": "component",
-    "type": "string"
-  },
   "atoms.toggleSwitch.default.lg.self.width": {
     "value": 40,
     "type": "size",

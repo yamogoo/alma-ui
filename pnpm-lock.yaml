@@ -20,6 +20,9 @@ importers:
       '@vueuse/core':
         specifier: ^13.9.0
         version: 13.9.0(vue@3.5.21(typescript@5.8.3))
+      alma-icons:
+        specifier: ^1.0.0
+        version: 1.0.0
       axios:
         specifier: ^1.12.1
         version: 1.12.1
@@ -1291,6 +1294,9 @@ packages:
 
   alien-signals@1.0.13:
     resolution: {integrity: sha512-OGj9yyTnJEttvzhTUWuscOvtqxq5vrhF7vL9oS0xJ2mK0ItPYP1/y+vCFebfxoEyAz0++1AIwJ5CMr+Fk3nDmg==}
+
+  alma-icons@1.0.0:
+    resolution: {integrity: sha512-4QLqMFnK3g1QqavQJl9rohaBrQjG/AMs+bB5VjRVziDIT0QQx7xN0xO0/kjxDMU33Eg1WoSDHQzbaCyXpQPxsg==}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -4859,6 +4865,8 @@ snapshots:
       uri-js: 4.4.1
 
   alien-signals@1.0.13: {}
+
+  alma-icons@1.0.0: {}
 
   ansi-regex@5.0.1: {}
 

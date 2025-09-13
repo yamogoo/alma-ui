@@ -1,6 +1,6 @@
 import tokens from "@/tokens";
 
-import { iconNames, iconStyles, iconWeights } from "@/assets/icons";
+import { iconNames, iconStyles, iconWeights } from "alma-icons";
 
 import type { UIElementVariant } from "@/typings";
 
@@ -27,4 +27,4 @@ export interface IconProps {
   size?: IconSize;
 }
 
-export * from "@/assets/icons";
+export * from "alma-icons";

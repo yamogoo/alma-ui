@@ -1,7 +1,8 @@
 import { defineConfig, loadEnv } from "vite";
+
 import process from "node:process";
-import { fileURLToPath, URL } from "node:url";
 import path from "path";
+import { fileURLToPath, URL } from "node:url";
 
 import vue from "@vitejs/plugin-vue";
 
@@ -62,7 +63,7 @@ export default (opts: { mode: string }) => {
       VueRouterPlugin({
         dts: true,
       }),
-      svgLoader(),
+      svgLoader({ defaultImport: "component" }),
       // Design System: AlmaIcons
       AlmaIconsPlugin({
         source: "./design-system/assets/icons",
@@ -144,7 +145,6 @@ export default (opts: { mode: string }) => {
       alias: {
         "@": path.resolve(__dirname, "./design-system"),
         "~": fileURLToPath(new URL("./", import.meta.url)),
-        // "@": fileURLToPath(new URL("./design-system", import.meta.url)),
         "@@": fileURLToPath(new URL("./src", import.meta.url)),
         "@lp": fileURLToPath(new URL("./landing-src", import.meta.url)),
       },

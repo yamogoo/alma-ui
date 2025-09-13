@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineAsyncComponent, computed, markRaw } from "vue";
 
-import type { IconProps } from "./icon";
+import { iconManifest, type IconFullName, type IconProps } from "./icon";
 import { Skeleton } from "@/components/atoms";
 
 const props = withDefaults(defineProps<IconProps>(), {
@@ -11,11 +11,10 @@ const props = withDefaults(defineProps<IconProps>(), {
 const symbol = computed(() => {
   const { name, style, weight } = props;
 
-  return markRaw(
-    defineAsyncComponent(async () => {
-      return import(`../../../assets/icons/${name}_${style}_${weight}.svg`);
-    })
-  );
+  const key = `${name}_${style}_${weight}`;
+
+  const loader = iconManifest[key as IconFullName];
+  return loader ? markRaw(defineAsyncComponent(loader)) : null;
 });
 </script>
 

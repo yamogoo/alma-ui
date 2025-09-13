@@ -2177,8 +2177,7 @@
               }
             }
           }
-        },
-        "type": "component"
+        }
       }
     },
     "toggleSwitch": {
