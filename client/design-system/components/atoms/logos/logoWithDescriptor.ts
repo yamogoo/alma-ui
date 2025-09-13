@@ -33,4 +33,5 @@ export interface LogoWithDescriptorProps {
   size?: LogoWithDescriptorSize;
   tone?: LogoWithDescriptorTone;
   mode?: LogoWithDescriptorMode;
+  name?: string;
 }

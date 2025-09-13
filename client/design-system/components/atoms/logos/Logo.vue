@@ -1,6 +1,6 @@
 <template>
   <svg
-    class="renum-logo"
+    class="logo"
     width="23"
     height="33"
     viewBox="0 0 23 33"

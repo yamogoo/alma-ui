@@ -1,10 +1,10 @@
-# Renum
+# Alma UI
 
 ### R&D Playground for UI & System Design
 
 > "I’m not building a universal framework. I’m creating tools for myself to explore architectural and visual approaches. Renum is an example of my R&D work, showcasing how I think and design systems."
 
-Renum combines a custom design system with an MDX editor. It’s not meant for everyone — it’s a laboratory for experimentation, prototyping, and refining ideas.
+Alma UI Kit combines a custom design system with an MDX editor. It’s not meant for everyone — it’s a laboratory for experimentation, prototyping, and refining ideas.
 
 ## 🚀 Core Idea
 
@@ -102,7 +102,7 @@ A self-built design system that works like a lightweight framework:
 
 **Modular Design Tokens System**
 
-> Developed a modular token system for the design system with support for JSON, YAML, and TypeScript. TokensParser and JSONBuilder were partially developed with AI assistance, but all architecture, integration, and other components were implemented independently. The AI-generated files are located in [`~/client/plugins`](https://github.com/yamogoo/renum/tree/main/client/plugins).
+> Developed a modular token system for the design system with support for JSON, YAML, and TypeScript. TokensParser and JSONBuilder were partially developed with AI assistance, but all architecture, integration, and other components were implemented independently. The AI-generated files are located in [`~/client/plugins`](https://github.com/yamogoo/alma-ui/tree/main/client/plugins).
 
 ## ⚡ Philosophy
 
@@ -122,12 +122,12 @@ _Currently no public demo available — project is intended for R&D and internal
 
 # Clone repository
 
-git clone https://github.com/yamogoo/renum.git
+git clone https://github.com/yamogoo/alma-ui.git
 
 # Install dependencies
 
 ```bash
-cd renum
+cd alma-ui
 
 pnpm install
 ```
@@ -162,7 +162,7 @@ _Then open http://localhost:3000 to see Renum in action._
 
 Licensing is in accordance with the original.
 
-[MIT](https://github.com/yamogoo/renum/blob/main/LICENSE)
+[MIT](https://github.com/yamogoo/alma-ui/blob/main/LICENSE)
 
 ## Author
 
