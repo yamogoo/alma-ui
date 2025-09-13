@@ -1,0 +1,66 @@
+{
+  "default": {
+    "lg": {
+      "self": {
+        "gap": {
+          "value": "{tokens.spacing.md.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "simple menu"
+          }
+        },
+        "padding": {
+          "value": 0,
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "simple menu"
+          }
+        }
+      },
+      "item": {},
+      "item-label": {
+        "fontStyle": {
+          "value": "label-2",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "category": "simple menu"
+          }
+        }
+      }
+    },
+    "md": {
+      "self": {
+        "gap": {
+          "value": "{tokens.spacing.md.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "simple menu"
+          }
+        },
+        "padding": {
+          "value": 0,
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "simple menu"
+          }
+        }
+      },
+      "item": {},
+      "item-label": {
+        "fontStyle": {
+          "value": "label-2",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "category": "simple menu"
+          }
+        }
+      }
+    }
+  }
+}

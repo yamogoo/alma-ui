@@ -1,26 +1,24 @@
 {
   "default": {
-    "elements": {
-      "thumb": {
-        "width": {
-          "value": 3,
-          "type": "size",
-          "unit": "px",
-          "meta": {
-            "description": "Width of the scrollbar thumb",
-            "category": "size",
-            "usage": "Internal use only"
-          }
-        },
-        "borderRadius": {
-          "value": 1.5,
-          "type": "radius",
-          "unit": "px",
-          "meta": {
-            "description": "Corner radius of the scrollbar thumb",
-            "category": "radius",
-            "usage": "Internal use only"
-          }
+    "thumb": {
+      "width": {
+        "value": 3,
+        "type": "size",
+        "unit": "px",
+        "meta": {
+          "description": "Width of the scrollbar thumb",
+          "category": "size",
+          "usage": "Internal use only"
+        }
+      },
+      "borderRadius": {
+        "value": 1.5,
+        "type": "radius",
+        "unit": "px",
+        "meta": {
+          "description": "Corner radius of the scrollbar thumb",
+          "category": "radius",
+          "usage": "Internal use only"
         }
       }
     },

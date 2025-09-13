@@ -44,37 +44,35 @@
           }
         }
       },
-      "elements": {
-        "label": {
-          "fontStyle": {
-            "value": "label-1",
+      "label": {
+        "fontStyle": {
+          "value": "label-1",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "description": "Font style for button label",
+            "category": "typography"
+          }
+        }
+      },
+      "icon": {
+        "size": {
+          "value": "{components.atoms.icon.default.sm.self.size.value}",
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Icon size in large default button",
+            "category": "button"
+          }
+        },
+        "alias": {
+          "size": {
+            "value": "sm",
             "type": "alias",
             "unit": "",
             "meta": {
-              "description": "Font style for button label",
-              "category": "typography"
-            }
-          }
-        },
-        "icon": {
-          "size": {
-            "value": "{components.atoms.icon.default.sm.self.size.value}",
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Icon size in large default button",
+              "description": "Alias for icon size",
               "category": "button"
-            }
-          },
-          "alias": {
-            "size": {
-              "value": "sm",
-              "type": "alias",
-              "unit": "",
-              "meta": {
-                "description": "Alias for icon size",
-                "category": "button"
-              }
             }
           }
         }
@@ -125,37 +123,35 @@
           }
         }
       },
-      "elements": {
-        "label": {
-          "fontStyle": {
-            "value": "label-2",
+      "label": {
+        "fontStyle": {
+          "value": "label-2",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "description": "Font style for button label",
+            "category": "typography"
+          }
+        }
+      },
+      "icon": {
+        "size": {
+          "value": "{components.atoms.icon.default.xs.self.size.value}",
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Icon size in medium button",
+            "category": "button"
+          }
+        },
+        "alias": {
+          "size": {
+            "value": "xs",
             "type": "alias",
             "unit": "",
             "meta": {
-              "description": "Font style for button label",
-              "category": "typography"
-            }
-          }
-        },
-        "icon": {
-          "size": {
-            "value": "{components.atoms.icon.default.xs.self.size.value}",
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Icon size in medium button",
+              "description": "Alias for icon size",
               "category": "button"
-            }
-          },
-          "alias": {
-            "size": {
-              "value": "xs",
-              "type": "alias",
-              "unit": "",
-              "meta": {
-                "description": "Alias for icon size",
-                "category": "button"
-              }
             }
           }
         }
@@ -206,37 +202,35 @@
           }
         }
       },
-      "elements": {
-        "label": {
-          "fontStyle": {
-            "value": "label-3",
+      "label": {
+        "fontStyle": {
+          "value": "label-3",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "description": "Font style for button label",
+            "category": "typography"
+          }
+        }
+      },
+      "icon": {
+        "size": {
+          "value": "{components.atoms.icon.default.xs.self.size.value}",
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Icon size in small button",
+            "category": "button"
+          }
+        },
+        "alias": {
+          "size": {
+            "value": "xs",
             "type": "alias",
             "unit": "",
             "meta": {
-              "description": "Font style for button label",
-              "category": "typography"
-            }
-          }
-        },
-        "icon": {
-          "size": {
-            "value": "{components.atoms.icon.default.xs.self.size.value}",
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Icon size in small button",
+              "description": "Alias for icon size",
               "category": "button"
-            }
-          },
-          "alias": {
-            "size": {
-              "value": "xs",
-              "type": "alias",
-              "unit": "",
-              "meta": {
-                "description": "Alias for icon size",
-                "category": "button"
-              }
             }
           }
         }
@@ -282,37 +276,35 @@
           }
         }
       },
-      "elements": {
-        "label": {
-          "fontStyle": {
-            "value": "label-3",
+      "label": {
+        "fontStyle": {
+          "value": "label-3",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "description": "Font style for button label",
+            "category": "typography"
+          }
+        }
+      },
+      "icon": {
+        "size": {
+          "value": "{components.atoms.icon.default.xxs.self.size.value}",
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Icon size in extra small button",
+            "category": "button"
+          }
+        },
+        "alias": {
+          "size": {
+            "value": "xxs",
             "type": "alias",
             "unit": "",
             "meta": {
-              "description": "Font style for button label",
-              "category": "typography"
-            }
-          }
-        },
-        "icon": {
-          "size": {
-            "value": "{components.atoms.icon.default.xxs.self.size.value}",
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Icon size in extra small button",
+              "description": "Alias for icon size",
               "category": "button"
-            }
-          },
-          "alias": {
-            "size": {
-              "value": "xxs",
-              "type": "alias",
-              "unit": "",
-              "meta": {
-                "description": "Alias for icon size",
-                "category": "button"
-              }
             }
           }
         }
@@ -360,37 +352,35 @@
           }
         }
       },
-      "elements": {
-        "label": {
-          "fontStyle": {
-            "value": "label-1",
+      "label": {
+        "fontStyle": {
+          "value": "label-1",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "description": "Font style for button label",
+            "category": "typography"
+          }
+        }
+      },
+      "icon": {
+        "size": {
+          "value": "{components.atoms.icon.default.sm.self.size.value}",
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Icon size in large rounded button",
+            "category": "button"
+          }
+        },
+        "alias": {
+          "size": {
+            "value": "sm",
             "type": "alias",
             "unit": "",
             "meta": {
-              "description": "Font style for button label",
-              "category": "typography"
-            }
-          }
-        },
-        "icon": {
-          "size": {
-            "value": "{components.atoms.icon.default.sm.self.size.value}",
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Icon size in large rounded button",
+              "description": "Alias for icon size",
               "category": "button"
-            }
-          },
-          "alias": {
-            "size": {
-              "value": "sm",
-              "type": "alias",
-              "unit": "",
-              "meta": {
-                "description": "Alias for icon size",
-                "category": "button"
-              }
             }
           }
         }
@@ -436,37 +426,35 @@
           }
         }
       },
-      "elements": {
-        "label": {
-          "fontStyle": {
-            "value": "label-3",
+      "label": {
+        "fontStyle": {
+          "value": "label-3",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "description": "Font style for button label",
+            "category": "typography"
+          }
+        }
+      },
+      "icon": {
+        "size": {
+          "value": "{components.atoms.icon.default.xs.self.size.value}",
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Icon size in medium rounded button",
+            "category": "button"
+          }
+        },
+        "alias": {
+          "size": {
+            "value": "xs",
             "type": "alias",
             "unit": "",
             "meta": {
-              "description": "Font style for button label",
-              "category": "typography"
-            }
-          }
-        },
-        "icon": {
-          "size": {
-            "value": "{components.atoms.icon.default.xs.self.size.value}",
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Icon size in medium rounded button",
+              "description": "Alias for icon size",
               "category": "button"
-            }
-          },
-          "alias": {
-            "size": {
-              "value": "xs",
-              "type": "alias",
-              "unit": "",
-              "meta": {
-                "description": "Alias for icon size",
-                "category": "button"
-              }
             }
           }
         }
@@ -517,37 +505,35 @@
           }
         }
       },
-      "elements": {
-        "label": {
-          "fontStyle": {
-            "value": "label-4",
+      "label": {
+        "fontStyle": {
+          "value": "label-4",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "description": "Font style for button label",
+            "category": "typography"
+          }
+        }
+      },
+      "icon": {
+        "size": {
+          "value": "{components.atoms.icon.default.xs.self.size.value}",
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Icon size in small rounded button",
+            "category": "button"
+          }
+        },
+        "alias": {
+          "size": {
+            "value": "xs",
             "type": "alias",
             "unit": "",
             "meta": {
-              "description": "Font style for button label",
-              "category": "typography"
-            }
-          }
-        },
-        "icon": {
-          "size": {
-            "value": "{components.atoms.icon.default.xs.self.size.value}",
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Icon size in small rounded button",
+              "description": "Alias for icon size",
               "category": "button"
-            }
-          },
-          "alias": {
-            "size": {
-              "value": "xs",
-              "type": "alias",
-              "unit": "",
-              "meta": {
-                "description": "Alias for icon size",
-                "category": "button"
-              }
             }
           }
         }
@@ -598,37 +584,35 @@
           }
         }
       },
-      "elements": {
-        "label": {
-          "fontStyle": {
-            "value": "label-4",
+      "label": {
+        "fontStyle": {
+          "value": "label-4",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "description": "Font style for button label",
+            "category": "typography"
+          }
+        }
+      },
+      "icon": {
+        "size": {
+          "value": "{components.atoms.icon.default.xxs.self.size.value}",
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Icon size in extra small rounded button",
+            "category": "button"
+          }
+        },
+        "alias": {
+          "size": {
+            "value": "xxs",
             "type": "alias",
             "unit": "",
             "meta": {
-              "description": "Font style for button label",
-              "category": "typography"
-            }
-          }
-        },
-        "icon": {
-          "size": {
-            "value": "{components.atoms.icon.default.xxs.self.size.value}",
-            "type": "size",
-            "unit": "px",
-            "meta": {
-              "description": "Icon size in extra small rounded button",
+              "description": "Alias for icon size",
               "category": "button"
-            }
-          },
-          "alias": {
-            "size": {
-              "value": "xxs",
-              "type": "alias",
-              "unit": "",
-              "meta": {
-                "description": "Alias for icon size",
-                "category": "button"
-              }
             }
           }
         }

@@ -78,6 +78,10 @@ A self-built design system that works like a lightweight framework:
 
     While the system primarily uses **JS tokens** at runtime, it can also support **runtime CSS variables**, though their usage is currently minimal.
 
+12. **Full Test Coverage**
+
+    The design system is fully covered with unit and integration tests, ensuring reliability, maintainability, and confidence when extending or refactoring components.
+
 ## 🛠 Stack & Tech
 
 - Vue 3 + TypeScript

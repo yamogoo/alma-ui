@@ -56,8 +56,8 @@ const showCurrentOption = (key: T) => {
 @mixin defineSizes($map: get($atoms, "options")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $option-font-style: get($val, "elements.option.font-style");
-      $option-min-height: px2rem(get($val, "elements.option.min-height"));
+      $option-font-style: get($val, "option.font-style");
+      $option-min-height: px2rem(get($val, "option.min-height"));
 
       &_variant-#{$variant} {
         &.options_size-#{$size} {

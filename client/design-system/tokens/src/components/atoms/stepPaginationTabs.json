@@ -1,54 +1,49 @@
 {
   "default": {
     "lg": {
-      "elements": {
-        "item": {
-          "fontStyle": {
-            "value": "title-3",
-            "type": "alias",
-            "unit": "",
-            "meta": {
-              "description": "Font style for step pagination tab item on large screens",
-              "category": "typography"
-            }
-          },
-          "padding": {
-            "value": "{tokens.spacing.xs.value}",
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "Padding for step pagination tab item on large screens",
-              "category": "spacing"
-            }
+      "item": {
+        "fontStyle": {
+          "value": "title-3",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "description": "Font style for step pagination tab item on large screens",
+            "category": "typography"
+          }
+        },
+        "padding": {
+          "value": "{tokens.spacing.xs.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Padding for step pagination tab item on large screens",
+            "category": "spacing"
           }
         }
-      },
-      "type": "component"
+      }
     },
     "md": {
-      "elements": {
-        "item": {
-          "fontStyle": {
-            "value": "title-4",
-            "type": "alias",
-            "unit": "",
-            "meta": {
-              "description": "Font style for step pagination tab item on medium screens",
-              "category": "typography"
-            }
-          },
-          "padding": {
-            "value": "{tokens.spacing.xs.value}",
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "Padding for step pagination tab item on medium screens",
-              "category": "spacing"
-            }
+      "item": {
+        "fontStyle": {
+          "value": "title-4",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "description": "Font style for step pagination tab item on medium screens",
+            "category": "typography"
+          }
+        },
+        "padding": {
+          "value": "{tokens.spacing.xs.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Padding for step pagination tab item on medium screens",
+            "category": "spacing"
           }
         }
-      },
-      "type": "component"
-    }
+      }
+    },
+    "type": "component"
   }
 }

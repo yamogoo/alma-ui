@@ -51,8 +51,8 @@ const id = useId();
     @each $size, $val in $sizes {
       $border-radius: get($val, "self.border-radius");
 
-      $body-gap: get($val, "elements.body.gap");
-      $body-padding: get($val, "elements.body.padding");
+      $body-gap: get($val, "body.gap");
+      $body-padding: get($val, "body.padding");
 
       &_size-#{$size} {
         border-radius: $border-radius;

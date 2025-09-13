@@ -34,5 +34,4 @@ export interface MainFooterProps {
   size?: MainFooterSize;
   tone?: MainFooterTone;
   mode?: MainFooterMode;
-  isMainElement?: boolean;
 }

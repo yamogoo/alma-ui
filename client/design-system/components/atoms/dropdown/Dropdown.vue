@@ -150,23 +150,16 @@ const onOptionClick = (): void => {
       $min-width: px2rem(get($val, "self.min-width"));
       $height: px2rem(get($val, "self.height"));
 
-      $value-gap: px2rem(get($val, "elements.current-value.self.gap"));
-      $value-padding: get($val, "elements.current-value.self.padding");
+      $value-gap: px2rem(get($val, "current-value.self.gap"));
+      $value-padding: get($val, "current-value.self.padding");
       $value-border-radius: px2rem(
-        get($val, "elements.current-value.self.border-radius")
+        get($val, "current-value.self.border-radius")
       );
-      $value-font-style: get(
-        $val,
-        "elements.current-value.elements.label.font-style"
-      );
-      $value-icon-size: px2rem(
-        get($val, "elements.current-value.elements.icon.size")
-      );
+      $value-font-style: get($val, "current-value.label.font-style");
+      $value-icon-size: px2rem(get($val, "current-value.icon.size"));
 
-      $options-border-radius: px2rem(
-        get($val, "elements.options.border-radius")
-      );
-      $options-padding: get($val, "elements.options.padding");
+      $options-border-radius: px2rem(get($val, "options.border-radius"));
+      $options-padding: get($val, "options.padding");
 
       &_variant-#{$variant} {
         &.dropdown_size-#{$size} {

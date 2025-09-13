@@ -39,61 +39,59 @@
           }
         }
       },
-      "elements": {
-        "label": {
-          "fontStyle": {
-            "value": "label-3",
-            "type": "alias",
-            "unit": "",
-            "meta": {
-              "description": "Font style for input value text",
-              "category": "typography"
-            }
-          },
-          "paddingTop": {
-            "value": "{tokens.spacing.sm.value}",
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "Top padding for input value text",
-              "category": "input"
-            }
+      "label": {
+        "fontStyle": {
+          "value": "label-3",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "description": "Font style for input value text",
+            "category": "typography"
           }
         },
-        "placeholder": {
-          "fontStyle": {
-            "value": "label-3",
-            "type": "alias",
-            "unit": "",
-            "meta": {
-              "description": "Font style for placeholder text",
-              "category": "typography"
-            }
+        "paddingTop": {
+          "value": "{tokens.spacing.sm.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Top padding for input value text",
+            "category": "input"
+          }
+        }
+      },
+      "placeholder": {
+        "fontStyle": {
+          "value": "label-3",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "description": "Font style for placeholder text",
+            "category": "typography"
+          }
+        }
+      },
+      "error": {
+        "fontStyle": {
+          "value": "caption-1",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "description": "Font style for error text",
+            "category": "typography"
           }
         },
-        "error": {
-          "fontStyle": {
-            "value": "caption-1",
-            "type": "alias",
-            "unit": "",
-            "meta": {
-              "description": "Font style for error text",
-              "category": "typography"
-            }
-          },
-          "padding": {
-            "value": [
-              0,
-              "{tokens.spacing.md.value}",
-              0,
-              "{tokens.spacing.md.value}"
-            ],
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "Padding for error message",
-              "category": "input"
-            }
+        "padding": {
+          "value": [
+            0,
+            "{tokens.spacing.md.value}",
+            0,
+            "{tokens.spacing.md.value}"
+          ],
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Padding for error message",
+            "category": "input"
           }
         }
       },
@@ -143,61 +141,59 @@
           }
         }
       },
-      "elements": {
-        "label": {
-          "fontStyle": {
-            "value": "label-3",
-            "type": "alias",
-            "unit": "",
-            "meta": {
-              "description": "Font style for input value text",
-              "category": "typography"
-            }
-          },
-          "padding-top": {
-            "value": "{tokens.spacing.sm.value}",
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "Top padding for input value text",
-              "category": "input"
-            }
+      "label": {
+        "fontStyle": {
+          "value": "label-3",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "description": "Font style for input value text",
+            "category": "typography"
           }
         },
-        "placeholder": {
-          "fontStyle": {
-            "value": "label-3",
-            "type": "alias",
-            "unit": "",
-            "meta": {
-              "description": "Font style for placeholder text",
-              "category": "typography"
-            }
+        "padding-top": {
+          "value": "{tokens.spacing.sm.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Top padding for input value text",
+            "category": "input"
+          }
+        }
+      },
+      "placeholder": {
+        "fontStyle": {
+          "value": "label-3",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "description": "Font style for placeholder text",
+            "category": "typography"
+          }
+        }
+      },
+      "error": {
+        "fontStyle": {
+          "value": "caption-1",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "description": "Font style for error text",
+            "category": "typography"
           }
         },
-        "error": {
-          "fontStyle": {
-            "value": "caption-1",
-            "type": "alias",
-            "unit": "",
-            "meta": {
-              "description": "Font style for error text",
-              "category": "typography"
-            }
-          },
-          "padding": {
-            "value": [
-              0,
-              "{tokens.spacing.md.value}",
-              0,
-              "{tokens.spacing.md.value}"
-            ],
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "Padding for error message",
-              "category": "input"
-            }
+        "padding": {
+          "value": [
+            0,
+            "{tokens.spacing.md.value}",
+            0,
+            "{tokens.spacing.md.value}"
+          ],
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Padding for error message",
+            "category": "input"
           }
         }
       },

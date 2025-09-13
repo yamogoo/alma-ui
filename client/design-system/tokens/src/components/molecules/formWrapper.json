@@ -30,16 +30,14 @@
           }
         }
       },
-      "elements": {
-        "header": {
-          "padding": {
-            "value": ["{tokens.spacing.sm.value}", 0],
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "Padding for the header inside the form wrapper",
-              "category": "formWrapper"
-            }
+      "header": {
+        "padding": {
+          "value": ["{tokens.spacing.sm.value}", 0],
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Padding for the header inside the form wrapper",
+            "category": "formWrapper"
           }
         }
       },

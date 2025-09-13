@@ -32,8 +32,8 @@ const itemStyle = computed(() => ({
 }));
 
 const textVariant = computed(() => {
-  return tokens.atoms.stepPaginationTabs.default[props.size].elements.item
-    .fontStyle.value as TextVariant;
+  return tokens.atoms.stepPaginationTabs.default[props.size].item.fontStyle
+    .value as TextVariant;
 });
 
 const onItemClick = (item: StepPaginationTabItem): void => {
@@ -121,7 +121,7 @@ onMounted(() => {
     @each $size, $val in $sizes {
       &_variant-#{$variant} {
         &.step-pagination_size-#{$size} {
-          $font-style: get($val, "elements.item.font-style");
+          $font-style: get($val, "item.font-style");
 
           .step-pagination__item {
             @extend %t__#{$font-style};
@@ -138,14 +138,14 @@ onMounted(() => {
       .step-pagination__item {
         @include themify($themes) {
           color: themed(
-            "atoms.step-pagination-tabs.#{$mode}.elements.item.label.normal"
+            "atoms.step-pagination-tabs.#{$mode}.item.label.normal"
           );
         }
 
         &_state-active {
           @include themify($themes) {
             color: themed(
-              "atoms.step-pagination-tabs.#{$mode}.elements.item.label.active"
+              "atoms.step-pagination-tabs.#{$mode}.item.label.active"
             );
           }
         }

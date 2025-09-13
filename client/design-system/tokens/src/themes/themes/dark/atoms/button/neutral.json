@@ -51,28 +51,26 @@
         }
       }
     },
-    "elements": {
-      "label": {
-        "normal": {
-          "value": "{colors.gray-350}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "disabled": {
-          "value": "{colors.gray-600}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "hovered": {
-          "value": "{colors.gray-200}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "pressed": {
-          "value": "{colors.gray-250}",
-          "type": "color",
-          "unit": "hex"
-        }
+    "label": {
+      "normal": {
+        "value": "{colors.gray-350}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "disabled": {
+        "value": "{colors.gray-600}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "hovered": {
+        "value": "{colors.gray-200}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "pressed": {
+        "value": "{colors.gray-250}",
+        "type": "color",
+        "unit": "hex"
       }
     }
   },
@@ -128,28 +126,26 @@
         }
       }
     },
-    "elements": {
-      "label": {
-        "normal": {
-          "value": "{colors.gray-950}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "disabled": {
-          "value": "{colors.gray-500}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "hovered": {
-          "value": "{colors.gray-950}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "pressed": {
-          "value": "{colors.gray-950}",
-          "type": "color",
-          "unit": "hex"
-        }
+    "label": {
+      "normal": {
+        "value": "{colors.gray-950}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "disabled": {
+        "value": "{colors.gray-500}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "hovered": {
+        "value": "{colors.gray-950}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "pressed": {
+        "value": "{colors.gray-950}",
+        "type": "color",
+        "unit": "hex"
       }
     }
   },
@@ -187,20 +183,18 @@
         }
       }
     },
-    "elements": {
-      "label": {
-        "normal": {
-          "value": "{colors.gray-50}"
-        },
-        "disabled": {
-          "value": "{colors.gray-600}"
-        },
-        "hovered": {
-          "value": "{colors.gray-50}"
-        },
-        "pressed": {
-          "value": "{colors.gray-50}"
-        }
+    "label": {
+      "normal": {
+        "value": "{colors.gray-50}"
+      },
+      "disabled": {
+        "value": "{colors.gray-600}"
+      },
+      "hovered": {
+        "value": "{colors.gray-50}"
+      },
+      "pressed": {
+        "value": "{colors.gray-50}"
       }
     }
   },
@@ -238,20 +232,18 @@
         }
       }
     },
-    "elements": {
-      "label": {
-        "normal": {
-          "value": "{colors.gray-350}"
-        },
-        "disabled": {
-          "value": "{colors.gray-600}"
-        },
-        "hovered": {
-          "value": "{colors.gray-200}"
-        },
-        "pressed": {
-          "value": "{colors.gray-250}"
-        }
+    "label": {
+      "normal": {
+        "value": "{colors.gray-350}"
+      },
+      "disabled": {
+        "value": "{colors.gray-600}"
+      },
+      "hovered": {
+        "value": "{colors.gray-200}"
+      },
+      "pressed": {
+        "value": "{colors.gray-250}"
       }
     }
   },
@@ -289,20 +281,18 @@
         }
       }
     },
-    "elements": {
-      "label": {
-        "normal": {
-          "value": "{colors.gray-350}"
-        },
-        "disabled": {
-          "value": "{colors.gray-600}"
-        },
-        "hovered": {
-          "value": "{colors.gray-200}"
-        },
-        "pressed": {
-          "value": "{colors.gray-250}"
-        }
+    "label": {
+      "normal": {
+        "value": "{colors.gray-350}"
+      },
+      "disabled": {
+        "value": "{colors.gray-600}"
+      },
+      "hovered": {
+        "value": "{colors.gray-200}"
+      },
+      "pressed": {
+        "value": "{colors.gray-250}"
       }
     }
   }

@@ -4,6 +4,7 @@ import { Group, ToolbarBlock, LogoWithDescriptor } from "@/components/atoms";
 import { MainHeader } from "@/components/templates";
 
 import { LanguageMenu, ThemeSwitch } from "@@/components/moleculas";
+import { MainMenu } from "@@/components/organisms";
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import { LanguageMenu, ThemeSwitch } from "@@/components/moleculas";
     <template #left>
       <LogoWithDescriptor></LogoWithDescriptor>
     </template>
+    <MainMenu></MainMenu>
     <template #right>
       <Group :direction="'forward'" :orientation="'horizontal'" :size="'md'">
         <ToolbarBlock><LanguageMenu></LanguageMenu></ToolbarBlock>

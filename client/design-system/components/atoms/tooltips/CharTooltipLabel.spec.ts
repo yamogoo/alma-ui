@@ -25,15 +25,13 @@ describe("CharTooltipLabel", () => {
         label: "Custom",
         variant: "default",
         size: "lg",
-        mode: "primaryInversed",
+        mode: "inversed",
       },
     });
 
     expect(wrapper.classes()).toContain("char-tooltip-label_variant-default");
     expect(wrapper.classes()).toContain("char-tooltip-label_size-lg");
-    expect(wrapper.classes()).toContain(
-      "char-tooltip-label_mode-primaryInversed"
-    );
+    expect(wrapper.classes()).toContain("char-tooltip-label_mode-inversed");
   });
 
   test("renders the text label", () => {

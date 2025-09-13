@@ -47,7 +47,7 @@ const localIsPressed = ref(false);
 
 const computedButtonSize: ComputedRef<IconSize> = computed(
   () =>
-    tokens.atoms.button[props.variant][props.size].elements.icon.alias.size
+    tokens.atoms.button[props.variant][props.size].icon.alias.size
       .value as IconSize
 );
 
@@ -139,8 +139,8 @@ watch(localIsPressed, (isPressed) => {
       $border-radius: get($val, "self.border-radius");
       $padding: get($val, "self.padding");
 
-      $font-style: get($val, "elements.label.font-style");
-      $icon-size: px2rem(get($val, "elements.icon.size"));
+      $font-style: get($val, "label.font-style");
+      $icon-size: px2rem(get($val, "icon.size"));
 
       &_variant-#{$variant} {
         &.button_size-#{$size} {
@@ -174,12 +174,8 @@ watch(localIsPressed, (isPressed) => {
       &_tone-#{$tone} {
         &.button_mode-#{$mode} {
           @include themify($themes) {
-            color: themed(
-              "atoms.button.#{$tone}.#{$mode}.elements.label.normal"
-            );
-            fill: themed(
-              "atoms.button.#{$tone}.#{$mode}.elements.label.normal"
-            );
+            color: themed("atoms.button.#{$tone}.#{$mode}.label.normal");
+            fill: themed("atoms.button.#{$tone}.#{$mode}.label.normal");
             background-color: themed(
               "atoms.button.#{$tone}.#{$mode}.self.background.normal"
             );
@@ -206,12 +202,8 @@ watch(localIsPressed, (isPressed) => {
 
             .button__label {
               @include themify($themes) {
-                color: themed(
-                  "atoms.button.#{$tone}.#{$mode}.elements.label.hovered"
-                );
-                fill: themed(
-                  "atoms.button.#{$tone}.#{$mode}.elements.label.hovered"
-                );
+                color: themed("atoms.button.#{$tone}.#{$mode}.label.hovered");
+                fill: themed("atoms.button.#{$tone}.#{$mode}.label.hovered");
               }
             }
           }
@@ -227,12 +219,8 @@ watch(localIsPressed, (isPressed) => {
 
             .button__label {
               @include themify($themes) {
-                color: themed(
-                  "atoms.button.#{$tone}.#{$mode}.elements.label.pressed"
-                );
-                fill: themed(
-                  "atoms.button.#{$tone}.#{$mode}.elements.label.pressed"
-                );
+                color: themed("atoms.button.#{$tone}.#{$mode}.label.pressed");
+                fill: themed("atoms.button.#{$tone}.#{$mode}.label.pressed");
               }
             }
           }
@@ -248,12 +236,8 @@ watch(localIsPressed, (isPressed) => {
 
             .button__label {
               @include themify($themes) {
-                color: themed(
-                  "atoms.button.#{$tone}.#{$mode}.elements.label.disabled"
-                );
-                fill: themed(
-                  "atoms.button.#{$tone}.#{$mode}.elements.label.disabled"
-                );
+                color: themed("atoms.button.#{$tone}.#{$mode}.label.disabled");
+                fill: themed("atoms.button.#{$tone}.#{$mode}.label.disabled");
               }
             }
           }

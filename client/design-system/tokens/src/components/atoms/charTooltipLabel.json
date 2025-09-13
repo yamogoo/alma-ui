@@ -18,12 +18,10 @@
           "type": "radius"
         }
       },
-      "elements": {
-        "label": {
-          "fontStyle": {
-            "value": "caption-1",
-            "type": "alias"
-          }
+      "label": {
+        "fontStyle": {
+          "value": "caption-1",
+          "type": "alias"
         }
       }
     }

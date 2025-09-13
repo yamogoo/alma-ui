@@ -55,7 +55,7 @@ defineExpose({
           $padding: get($val, "self.padding");
           $border-radius: px2rem(get($val, "self.border-radius"));
 
-          $label-font-style: get($val, "elements.label.font-style");
+          $label-font-style: get($val, "label.font-style");
 
           gap: $gap;
           padding: $padding;
@@ -77,7 +77,7 @@ defineExpose({
         color: themed("atoms.char-tooltip-label.#{$mode}.label.normal");
         fill: themed("atoms.char-tooltip-label.#{$mode}.label.normal");
         background-color: themed(
-          "atoms.char-tooltip-label.#{$mode}.background.normal"
+          "atoms.char-tooltip-label.#{$mode}.self.background.normal"
         );
 
         .text {

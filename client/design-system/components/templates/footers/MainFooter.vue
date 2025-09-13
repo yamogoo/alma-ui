@@ -3,7 +3,6 @@ import type { MainFooterProps } from "@/components/templates";
 
 withDefaults(defineProps<MainFooterProps>(), {
   as: "footer",
-  isMainElement: true,
 });
 </script>
 
@@ -11,7 +10,12 @@ withDefaults(defineProps<MainFooterProps>(), {
   <component
     :is="as"
     class="main-footer"
-    :role="isMainElement ? undefined : 'banner'"
+    :class="[
+      `main-footer_variant-${variant}`,
+      `main-footer_size-${size}`,
+      `main-footer_mode-${mode}`,
+      `main-footer_tone-${tone}`,
+    ]"
   >
     <div v-if="$slots.left" class="main-footer__section-left">
       <slot name="left"></slot>

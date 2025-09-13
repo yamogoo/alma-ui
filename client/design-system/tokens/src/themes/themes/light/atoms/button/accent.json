@@ -51,20 +51,18 @@
         }
       }
     },
-    "elements": {
-      "label": {
-        "normal": {
-          "value": "{colors.blue-50}"
-        },
-        "disabled": {
-          "value": "{colors.blue-0}"
-        },
-        "hovered": {
-          "value": "{colors.blue-100}"
-        },
-        "pressed": {
-          "value": "{colors.blue-150}"
-        }
+    "label": {
+      "normal": {
+        "value": "{colors.blue-50}"
+      },
+      "disabled": {
+        "value": "{colors.blue-0}"
+      },
+      "hovered": {
+        "value": "{colors.blue-100}"
+      },
+      "pressed": {
+        "value": "{colors.blue-150}"
       }
     }
   },
@@ -120,28 +118,26 @@
         }
       }
     },
-    "elements": {
-      "label": {
-        "normal": {
-          "value": "{colors.blue-50}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "disabled": {
-          "value": "{colors.blue-150}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "hovered": {
-          "value": "{colors.blue-100}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "pressed": {
-          "value": "{colors.blue-150}",
-          "type": "color",
-          "unit": "hex"
-        }
+    "label": {
+      "normal": {
+        "value": "{colors.blue-50}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "disabled": {
+        "value": "{colors.blue-150}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "hovered": {
+        "value": "{colors.blue-100}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "pressed": {
+        "value": "{colors.blue-150}",
+        "type": "color",
+        "unit": "hex"
       }
     }
   },
@@ -197,28 +193,26 @@
         }
       }
     },
-    "elements": {
-      "label": {
-        "normal": {
-          "value": "{colors.blue-500}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "disabled": {
-          "value": "{colors.blue-250}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "hovered": {
-          "value": "{colors.blue-600}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "pressed": {
-          "value": "{colors.blue-650}",
-          "type": "color",
-          "unit": "hex"
-        }
+    "label": {
+      "normal": {
+        "value": "{colors.blue-500}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "disabled": {
+        "value": "{colors.blue-250}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "hovered": {
+        "value": "{colors.blue-600}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "pressed": {
+        "value": "{colors.blue-650}",
+        "type": "color",
+        "unit": "hex"
       }
     }
   },
@@ -274,28 +268,26 @@
         }
       }
     },
-    "elements": {
-      "label": {
-        "normal": {
-          "value": "{colors.blue-500}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "disabled": {
-          "value": "{colors.blue-250}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "hovered": {
-          "value": "{colors.blue-600}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "pressed": {
-          "value": "{colors.blue-650}",
-          "type": "color",
-          "unit": "hex"
-        }
+    "label": {
+      "normal": {
+        "value": "{colors.blue-500}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "disabled": {
+        "value": "{colors.blue-250}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "hovered": {
+        "value": "{colors.blue-600}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "pressed": {
+        "value": "{colors.blue-650}",
+        "type": "color",
+        "unit": "hex"
       }
     }
   },
@@ -351,28 +343,26 @@
         }
       }
     },
-    "elements": {
-      "label": {
-        "normal": {
-          "value": "{colors.blue-500}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "disabled": {
-          "value": "{colors.blue-250}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "hovered": {
-          "value": "{colors.blue-600}",
-          "type": "color",
-          "unit": "hex"
-        },
-        "pressed": {
-          "value": "{colors.blue-650}",
-          "type": "color",
-          "unit": "hex"
-        }
+    "label": {
+      "normal": {
+        "value": "{colors.blue-500}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "disabled": {
+        "value": "{colors.blue-250}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "hovered": {
+        "value": "{colors.blue-600}",
+        "type": "color",
+        "unit": "hex"
+      },
+      "pressed": {
+        "value": "{colors.blue-650}",
+        "type": "color",
+        "unit": "hex"
       }
     }
   }

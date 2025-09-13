@@ -266,17 +266,17 @@ onMounted(() => {
 @mixin defineInputSizes($map: get($atoms, "input")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $value-font-style: get($val, "elements.label.font-style");
-      $placeholder-font-style: get($val, "elements.placeholder.font-style");
-      $error-font-style: get($val, "elements.error.font-style");
+      $value-font-style: get($val, "label.font-style");
+      $placeholder-font-style: get($val, "placeholder.font-style");
+      $error-font-style: get($val, "error.font-style");
 
-      $value-padding-top: px2rem(get($val, "elements.label.padding-top"));
+      $value-padding-top: px2rem(get($val, "label.padding-top"));
 
       $height: get($val, "self.height");
       $whole-height: get($val, "self.whole-height");
       $padding: get($val, "self.padding");
       $border-radius: get($val, "self.border-radius");
-      $error-padding: get($val, "elements.error.padding");
+      $error-padding: get($val, "error.padding");
 
       &_variant-#{$variant} {
         &.input_size-#{$size} {
@@ -323,7 +323,7 @@ onMounted(() => {
       &:not(.input_disabled) {
         .input__field {
           @include themify($themes) {
-            color: themed("atoms.input.#{$mode}.elements.label.normal");
+            color: themed("atoms.input.#{$mode}.label.normal");
             background-color: themed(
               "atoms.input.#{$mode}.self.background.normal"
             );
@@ -335,7 +335,7 @@ onMounted(() => {
       &.input_focused {
         .input__field {
           @include themify($themes) {
-            color: themed("atoms.input.#{$mode}.elements.label.focused");
+            color: themed("atoms.input.#{$mode}.label.focused");
             background-color: themed(
               "atoms.input.#{$mode}.self.background.focused"
             );
@@ -347,7 +347,7 @@ onMounted(() => {
       &.input_disabled {
         .input__field {
           @include themify($themes) {
-            color: themed("atoms.input.#{$mode}.elements.label.disabled");
+            color: themed("atoms.input.#{$mode}.label.disabled");
             background-color: themed(
               "atoms.input.#{$mode}.self.background.disabled"
             );
@@ -359,7 +359,7 @@ onMounted(() => {
       &.input_error {
         .input__field {
           @include themify($themes) {
-            color: themed("atoms.input.#{$mode}.elements.label.error");
+            color: themed("atoms.input.#{$mode}.label.error");
             background-color: themed(
               "atoms.input.#{$mode}.self.background.error"
             );
@@ -377,7 +377,7 @@ onMounted(() => {
       .input__error {
         &-message {
           @include themify($themes) {
-            color: themed("atoms.input.#{$mode}.elements.label.error");
+            color: themed("atoms.input.#{$mode}.label.error");
             @extend %base-transition;
           }
         }

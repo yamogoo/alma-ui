@@ -29,7 +29,6 @@ $atoms:(
   padding: 0px 32px 0px 32px,
   border-radius: 9999px
 ),
-  elements: (
   label: (
   font-style: label-1
 ),
@@ -37,7 +36,6 @@ $atoms:(
   size: 20px,
   alias: (
   size: sm
-)
 )
 )
 ),
@@ -48,7 +46,6 @@ $atoms:(
   padding: 0px 24px 0px 24px,
   border-radius: 9999px
 ),
-  elements: (
   label: (
   font-style: label-2
 ),
@@ -56,7 +53,6 @@ $atoms:(
   size: 16px,
   alias: (
   size: xs
-)
 )
 )
 ),
@@ -67,7 +63,6 @@ $atoms:(
   padding: 0px 12px 0px 12px,
   border-radius: 9999px
 ),
-  elements: (
   label: (
   font-style: label-3
 ),
@@ -75,7 +70,6 @@ $atoms:(
   size: 16px,
   alias: (
   size: xs
-)
 )
 )
 ),
@@ -86,7 +80,6 @@ $atoms:(
   padding: 0px 12px,
   border-radius: 9999px
 ),
-  elements: (
   label: (
   font-style: label-3
 ),
@@ -94,7 +87,6 @@ $atoms:(
   size: 12px,
   alias: (
   size: xxs
-)
 )
 )
 )
@@ -107,7 +99,6 @@ $atoms:(
   padding: 0px 0px 0px 0px,
   border-radius: 9999px
 ),
-  elements: (
   label: (
   font-style: label-1
 ),
@@ -115,7 +106,6 @@ $atoms:(
   size: 20px,
   alias: (
   size: sm
-)
 )
 )
 ),
@@ -126,7 +116,6 @@ $atoms:(
   padding: 0px 0px 0px 0px,
   border-radius: 9999px
 ),
-  elements: (
   label: (
   font-style: label-3
 ),
@@ -134,7 +123,6 @@ $atoms:(
   size: 16px,
   alias: (
   size: xs
-)
 )
 )
 ),
@@ -145,7 +133,6 @@ $atoms:(
   padding: 0px 24px 0px 24px,
   border-radius: 9999px
 ),
-  elements: (
   label: (
   font-style: label-4
 ),
@@ -153,7 +140,6 @@ $atoms:(
   size: 16px,
   alias: (
   size: xs
-)
 )
 )
 ),
@@ -164,7 +150,6 @@ $atoms:(
   padding: 0px 24px 0px 24px,
   border-radius: 9999px
 ),
-  elements: (
   label: (
   font-style: label-4
 ),
@@ -176,22 +161,17 @@ $atoms:(
 )
 )
 )
-)
 ),
   carousel-stack: (
   default: (
   lg: (
-  elements: (
   header: (
   padding: 24px 24px
 )
-)
 ),
   md: (
-  elements: (
   header: (
   padding: 16px 16px
-)
 )
 )
 )
@@ -204,10 +184,8 @@ $atoms:(
   padding: 8px 12px,
   border-radius: 8px
 ),
-  elements: (
   label: (
   font-style: caption-1
-)
 )
 )
 )
@@ -258,9 +236,12 @@ $atoms:(
   min-width: 76px,
   height: 56px
 ),
-  elements: (
   current-value: (
-  elements: (
+  self: (
+  gap: 8px,
+  padding: 8px 12px 8px 12px,
+  border-radius: 8px
+),
   label: (
   font-style: label-2
 ),
@@ -268,16 +249,9 @@ $atoms:(
   size: 12px
 )
 ),
-  self: (
-  gap: 8px,
-  padding: 8px 12px 8px 12px,
-  border-radius: 8px
-)
-),
   options: (
   padding: 8px 12px 8px 12px,
   border-radius: 8px
-)
 ),
   tokens: (
   padding: 8px 12px 8px 12px,
@@ -289,9 +263,12 @@ $atoms:(
   min-width: 76px,
   height: 44px
 ),
-  elements: (
   current-value: (
-  elements: (
+  self: (
+  gap: 8px,
+  padding: 8px 12px 8px 12px,
+  border-radius: 8px
+),
   label: (
   font-style: label-3
 ),
@@ -299,16 +276,9 @@ $atoms:(
   size: 12px
 )
 ),
-  self: (
-  gap: 8px,
-  padding: 8px 12px 8px 12px,
-  border-radius: 8px
-)
-),
   options: (
   padding: 8px 12px 8px 12px,
   border-radius: 8px
-)
 ),
   tokens: (
   padding: 8px 12px 8px 12px,
@@ -413,7 +383,6 @@ $atoms:(
   padding: 8px 16px,
   border-radius: 16px
 ),
-  elements: (
   label: (
   font-style: label-3,
   padding-top: 12px
@@ -424,7 +393,6 @@ $atoms:(
   error: (
   font-style: caption-1,
   padding: 0px 16px 0px 16px
-)
 )
 ),
   lg: (
@@ -434,7 +402,6 @@ $atoms:(
   padding: 8px 16px 8px 16px,
   border-radius: 8px
 ),
-  elements: (
   label: (
   font-style: label-3,
   padding-top: 12px
@@ -445,7 +412,6 @@ $atoms:(
   error: (
   font-style: caption-1,
   padding: 0px 16px 0px 16px
-)
 )
 )
 )
@@ -456,10 +422,8 @@ $atoms:(
   self: (
   gap: 12px
 ),
-  elements: (
   label: (
   font-style: label-1
-)
 )
 )
 )
@@ -482,19 +446,15 @@ $atoms:(
   options: (
   default: (
   lg: (
-  elements: (
   option: (
   font-style: label-2,
   min-height: 24px
 )
-)
 ),
   md: (
-  elements: (
   option: (
   font-style: label-3,
   min-height: 24px
-)
 )
 )
 )
@@ -520,22 +480,18 @@ $atoms:(
   self: (
   active-area-width: 20px
 ),
-  elements: (
   knob: (
   width: 76px,
   height: 6px,
   border-radius: 3px
 )
 )
-)
 ),
   scrollbar: (
   default: (
-  elements: (
   thumb: (
   width: 3px,
   border-radius: 1.5px
-)
 )
 )
 ),
@@ -548,10 +504,8 @@ $atoms:(
   gap: 32px,
   padding: 48px 24px 24px 24px
 ),
-  elements: (
   button: (
   offset: 24px
-)
 )
 ),
   md: (
@@ -561,10 +515,36 @@ $atoms:(
   gap: 16px,
   padding: 24px 24px
 ),
-  elements: (
   button: (
   offset: 24px
 )
+)
+)
+),
+  simple-menu: (
+  default: (
+  lg: (
+  self: (
+  gap: 16px,
+  padding: 0px
+),
+  item: (
+  
+),
+  item-label: (
+  font-style: label-2
+)
+),
+  md: (
+  self: (
+  gap: 16px,
+  padding: 0px
+),
+  item: (
+  
+),
+  item-label: (
+  font-style: label-2
 )
 )
 )
@@ -572,19 +552,15 @@ $atoms:(
   step-pagination-tabs: (
   default: (
   lg: (
-  elements: (
   item: (
   font-style: title-3,
   padding: 8px
 )
-)
 ),
   md: (
-  elements: (
   item: (
   font-style: title-4,
   padding: 8px
-)
 )
 )
 )
@@ -597,14 +573,12 @@ $atoms:(
   height: 20px,
   gap: 10px
 ),
-  elements: (
   track: (
   padding: 2px,
   border-radius: 10px
 ),
   label: (
   font-style: label-3
-)
 )
 ),
   md: (
@@ -613,14 +587,12 @@ $atoms:(
   height: 18px,
   gap: 10px
 ),
-  elements: (
   track: (
   padding: 2px,
   border-radius: 7px
 ),
   label: (
   font-style: label-3
-)
 )
 ),
   sm: (
@@ -629,14 +601,12 @@ $atoms:(
   height: 16px,
   gap: 10px
 ),
-  elements: (
   track: (
   padding: 2px,
   border-radius: 6px
 ),
   label: (
   font-style: label-3
-)
 )
 )
 )
@@ -649,11 +619,9 @@ $molecules:(
   self: (
   border-radius: 20px
 ),
-  elements: (
   body: (
   gap: 24px,
   padding: 12px
-)
 )
 )
 )
@@ -666,14 +634,15 @@ $molecules:(
   border-radius: 20px,
   border-width: 0px
 ),
-  elements: (
   header: (
   padding: 12px 0px
 )
 )
 )
 )
-)
+);
+$organisms:(
+  
 );
 $templates:(
   main-footer: (

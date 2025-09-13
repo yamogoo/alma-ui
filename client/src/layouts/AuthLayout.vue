@@ -14,7 +14,7 @@ const { isConnected } = storeToRefs(useConnectionStore());
     <AppHeader></AppHeader>
     <RouterView></RouterView>
     <AppFooter></AppFooter>
-    <ActionSheet :is-active="!isConnected" :color="'primary'">
+    <ActionSheet :is-active="!isConnected" :mode="'primary'">
       <Text :variant="'caption-2'"> Connection Lost</Text>
     </ActionSheet>
   </Page>

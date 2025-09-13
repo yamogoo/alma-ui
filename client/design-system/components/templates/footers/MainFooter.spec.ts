@@ -4,19 +4,19 @@ import MainFooter from "./MainFooter.vue";
 import type { MainFooterProps } from "./index";
 
 enum Classes {
-  ROOT_CLASS = "main-header",
+  ROOT_CLASS = "main-footer",
   VARIANT = `${Classes.ROOT_CLASS}_variant`,
   SIZE = `${Classes.ROOT_CLASS}_size`,
   MODE = `${Classes.ROOT_CLASS}_mode`,
   TONE = `${Classes.ROOT_CLASS}_tone`,
 }
 
-describe("MainHeader", () => {
+describe("MainFooter", () => {
   describe("classes", () => {
     test("should have props based classes (variant/size)", async () => {
       const props: MainFooterProps = {
         variant: "default",
-        size: "md",
+        size: "lg",
         tone: "neutral",
         mode: "primary",
       };

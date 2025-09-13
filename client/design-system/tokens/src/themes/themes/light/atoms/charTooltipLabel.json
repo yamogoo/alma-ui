@@ -1,5 +1,17 @@
 {
   "primary": {
+    "self": {
+      "background": {
+        "normal": {
+          "value": "{themes.themes.light.abstracts.background.primaryInversed.value}",
+          "type": "color",
+          "unit": "hex",
+          "meta": {
+            "category": "tooltip"
+          }
+        }
+      }
+    },
     "label": {
       "normal": {
         "value": "{colors.gray-300}",
@@ -19,19 +31,21 @@
           "category": "tooltip"
         }
       }
-    },
-    "background": {
-      "normal": {
-        "value": "{themes.themes.light.abstracts.background.primaryInversed.value}",
-        "type": "color",
-        "unit": "hex",
-        "meta": {
-          "category": "tooltip"
-        }
-      }
     }
   },
-  "primaryInversed": {
+  "inversed": {
+    "self": {
+      "background": {
+        "normal": {
+          "value": "{colors.gray-150}",
+          "type": "color",
+          "unit": "hex",
+          "meta": {
+            "category": "tooltip"
+          }
+        }
+      }
+    },
     "label": {
       "normal": {
         "value": "{colors.gray-500}",
@@ -45,16 +59,6 @@
     "icon": {
       "normal": {
         "value": "{colors.gray-450}",
-        "type": "color",
-        "unit": "hex",
-        "meta": {
-          "category": "tooltip"
-        }
-      }
-    },
-    "background": {
-      "normal": {
-        "value": "{colors.gray-150}",
         "type": "color",
         "unit": "hex",
         "meta": {

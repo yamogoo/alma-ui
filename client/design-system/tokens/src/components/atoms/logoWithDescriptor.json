@@ -11,15 +11,13 @@
           }
         }
       },
-      "elements": {
-        "label": {
-          "fontStyle": {
-            "value": "label-1",
-            "type": "alias",
-            "unit": "",
-            "meta": {
-              "category": "logo with descriptor"
-            }
+      "label": {
+        "fontStyle": {
+          "value": "label-1",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "category": "logo with descriptor"
           }
         }
       }

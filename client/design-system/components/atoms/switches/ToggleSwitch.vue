@@ -52,9 +52,7 @@ const onChange = (e: Event): void => {
 };
 
 const padding = computed(
-  () =>
-    tokens.atoms.toggleSwitch.default[`${props.size}`].elements.track.padding
-      .value
+  () => tokens.atoms.toggleSwitch.default[`${props.size}`].track.padding.value
 );
 
 const onKeyDown = (e: KeyboardEvent): void => {
@@ -170,8 +168,8 @@ onMounted(() => {
           $width: px2rem(get($val, "self.width"));
           $height: px2rem(get($val, "self.height"));
 
-          $track-padding: px2rem(get($val, "elements.track.padding"));
-          $label-font-style: get($val, "elements.label.font-style");
+          $track-padding: px2rem(get($val, "track.padding"));
+          $label-font-style: get($val, "label.font-style");
 
           gap: $gap;
 
@@ -204,7 +202,7 @@ onMounted(() => {
             .toggle-switch__track {
               @include themify($themes) {
                 background-color: themed(
-                  "atoms.toggle-switch.#{$mode}.elements.track.normal"
+                  "atoms.toggle-switch.#{$mode}.track.normal"
                 );
               }
             }
@@ -212,16 +210,14 @@ onMounted(() => {
             .toggle-switch__knob {
               @include themify($themes) {
                 background-color: themed(
-                  "atoms.toggle-switch.#{$mode}.elements.knob.normal"
+                  "atoms.toggle-switch.#{$mode}.knob.normal"
                 );
               }
             }
 
             .toggle-switch__label {
               @include themify($themes) {
-                color: themed(
-                  "atoms.toggle-switch.#{$mode}.elements.label.normal"
-                );
+                color: themed("atoms.toggle-switch.#{$mode}.label.normal");
               }
             }
           }
@@ -230,7 +226,7 @@ onMounted(() => {
             .toggle-switch__track {
               @include themify($themes) {
                 background-color: themed(
-                  "atoms.toggle-switch.#{$mode}.elements.track.active"
+                  "atoms.toggle-switch.#{$mode}.track.active"
                 );
               }
             }
@@ -238,16 +234,14 @@ onMounted(() => {
             .toggle-switch__knob {
               @include themify($themes) {
                 background-color: themed(
-                  "atoms.toggle-switch.#{$mode}.elements.knob.active"
+                  "atoms.toggle-switch.#{$mode}.knob.active"
                 );
               }
             }
 
             .toggle-switch__label {
               @include themify($themes) {
-                color: themed(
-                  "atoms.toggle-switch.#{$mode}.elements.label.active"
-                );
+                color: themed("atoms.toggle-switch.#{$mode}.label.active");
               }
             }
           }
@@ -260,7 +254,7 @@ onMounted(() => {
             .toggle-switch__track {
               @include themify($themes) {
                 background-color: themed(
-                  "atoms.toggle-switch.#{$mode}.elements.track.disabled"
+                  "atoms.toggle-switch.#{$mode}.track.disabled"
                 );
               }
             }
@@ -268,16 +262,14 @@ onMounted(() => {
             .toggle-switch__knob {
               @include themify($themes) {
                 background-color: themed(
-                  "atoms.toggle-switch.#{$mode}.elements.knob.disabled"
+                  "atoms.toggle-switch.#{$mode}.knob.disabled"
                 );
               }
             }
 
             .toggle-switch__label {
               @include themify($themes) {
-                color: themed(
-                  "atoms.toggle-switch.#{$mode}.elements.label.disabled"
-                );
+                color: themed("atoms.toggle-switch.#{$mode}.label.disabled");
               }
             }
           }
@@ -286,7 +278,7 @@ onMounted(() => {
             .toggle-switch__track {
               @include themify($themes) {
                 background-color: themed(
-                  "atoms.toggle-switch.#{$mode}.elements.track.disabled"
+                  "atoms.toggle-switch.#{$mode}.track.disabled"
                 );
               }
             }
@@ -294,16 +286,14 @@ onMounted(() => {
             .toggle-switch__knob {
               @include themify($themes) {
                 background-color: themed(
-                  "atoms.toggle-switch.#{$mode}.elements.knob.disabled"
+                  "atoms.toggle-switch.#{$mode}.knob.disabled"
                 );
               }
             }
 
             .toggle-switch__label {
               @include themify($themes) {
-                color: themed(
-                  "atoms.toggle-switch.#{$mode}.elements.label.disabled"
-                );
+                color: themed("atoms.toggle-switch.#{$mode}.label.disabled");
               }
             }
           }

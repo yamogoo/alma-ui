@@ -49,7 +49,7 @@ const computedClass = () => {
       &_variant-#{$variant} {
         &.logo-with-descriptor_size-#{$size} {
           $gap: px2rem(get($val, "self.gap"));
-          $label-font-style: get($val, "elements.label.font-style");
+          $label-font-style: get($val, "label.font-style");
 
           gap: $gap;
 
@@ -70,7 +70,7 @@ const computedClass = () => {
         &.logo-with-descriptor_mode-#{$mode} {
           $states: get(
             $themes,
-            "light.logo-with-descriptor.default.primary.elements.label"
+            "light.logo-with-descriptor.default.primary.label"
           );
 
           &.logo-with-descriptor {
@@ -79,7 +79,7 @@ const computedClass = () => {
                 .logo-with-descriptor__label {
                   @include themify($themes) {
                     color: themed(
-                      "logo-with-descriptor.#{$tone}.#{$mode}.elements.label.#{state}"
+                      "logo-with-descriptor.#{$tone}.#{$mode}.label.#{state}"
                     );
                   }
                 }

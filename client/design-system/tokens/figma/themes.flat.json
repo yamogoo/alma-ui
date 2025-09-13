@@ -222,19 +222,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.primary.elements.label.normal": {
+  "themes.dark.atoms.button.accent.primary.label.normal": {
     "value": "#DBE3FF",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.primary.elements.label.disabled": {
+  "themes.dark.atoms.button.accent.primary.label.disabled": {
     "value": "#92ABFF",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.primary.elements.label.hovered": {
+  "themes.dark.atoms.button.accent.primary.label.hovered": {
     "value": "#C3D1FF",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.primary.elements.label.pressed": {
+  "themes.dark.atoms.button.accent.primary.label.pressed": {
     "value": "#AABEFF",
     "type": "unknown"
   },
@@ -274,19 +274,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.inversed.elements.label.normal": {
+  "themes.dark.atoms.button.accent.inversed.label.normal": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.inversed.elements.label.disabled": {
+  "themes.dark.atoms.button.accent.inversed.label.disabled": {
     "value": "#6D8292",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.inversed.elements.label.hovered": {
+  "themes.dark.atoms.button.accent.inversed.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.inversed.elements.label.pressed": {
+  "themes.dark.atoms.button.accent.inversed.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -326,19 +326,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.secondary.elements.label.normal": {
+  "themes.dark.atoms.button.accent.secondary.label.normal": {
     "value": "#EAEDEF",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.secondary.elements.label.disabled": {
+  "themes.dark.atoms.button.accent.secondary.label.disabled": {
     "value": "#586976",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.secondary.elements.label.hovered": {
+  "themes.dark.atoms.button.accent.secondary.label.hovered": {
     "value": "#EAEDEF",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.secondary.elements.label.pressed": {
+  "themes.dark.atoms.button.accent.secondary.label.pressed": {
     "value": "#EAEDEF",
     "type": "unknown"
   },
@@ -378,19 +378,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.tertiary.elements.label.normal": {
+  "themes.dark.atoms.button.accent.tertiary.label.normal": {
     "value": "#97A5B1",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.tertiary.elements.label.disabled": {
+  "themes.dark.atoms.button.accent.tertiary.label.disabled": {
     "value": "#586976",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.tertiary.elements.label.hovered": {
+  "themes.dark.atoms.button.accent.tertiary.label.hovered": {
     "value": "#C0C9D0",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.tertiary.elements.label.pressed": {
+  "themes.dark.atoms.button.accent.tertiary.label.pressed": {
     "value": "#B3BDC6",
     "type": "unknown"
   },
@@ -430,19 +430,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.outline.elements.label.normal": {
+  "themes.dark.atoms.button.accent.outline.label.normal": {
     "value": "#97A5B1",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.outline.elements.label.disabled": {
+  "themes.dark.atoms.button.accent.outline.label.disabled": {
     "value": "#586976",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.outline.elements.label.hovered": {
+  "themes.dark.atoms.button.accent.outline.label.hovered": {
     "value": "#C0C9D0",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.accent.outline.elements.label.pressed": {
+  "themes.dark.atoms.button.accent.outline.label.pressed": {
     "value": "#B3BDC6",
     "type": "unknown"
   },
@@ -482,19 +482,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.primary.elements.label.normal": {
+  "themes.dark.atoms.button.negative.primary.label.normal": {
     "value": "#A5B1BC",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.primary.elements.label.disabled": {
+  "themes.dark.atoms.button.negative.primary.label.disabled": {
     "value": "#586976",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.primary.elements.label.hovered": {
+  "themes.dark.atoms.button.negative.primary.label.hovered": {
     "value": "#B3BDC6",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.primary.elements.label.pressed": {
+  "themes.dark.atoms.button.negative.primary.label.pressed": {
     "value": "#B3BDC6",
     "type": "unknown"
   },
@@ -534,19 +534,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.inversed.elements.label.normal": {
+  "themes.dark.atoms.button.negative.inversed.label.normal": {
     "value": "#E3E7EA",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.inversed.elements.label.disabled": {
+  "themes.dark.atoms.button.negative.inversed.label.disabled": {
     "value": "#6D8292",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.inversed.elements.label.hovered": {
+  "themes.dark.atoms.button.negative.inversed.label.hovered": {
     "value": "#E3E7EA",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.inversed.elements.label.pressed": {
+  "themes.dark.atoms.button.negative.inversed.label.pressed": {
     "value": "#E3E7EA",
     "type": "unknown"
   },
@@ -586,19 +586,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.secondary.elements.label.normal": {
+  "themes.dark.atoms.button.negative.secondary.label.normal": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.secondary.elements.label.disabled": {
+  "themes.dark.atoms.button.negative.secondary.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.secondary.elements.label.hovered": {
+  "themes.dark.atoms.button.negative.secondary.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.secondary.elements.label.pressed": {
+  "themes.dark.atoms.button.negative.secondary.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -638,19 +638,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.tertiary.elements.label.normal": {
+  "themes.dark.atoms.button.negative.tertiary.label.normal": {
     "value": "#1A1F23",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.tertiary.elements.label.disabled": {
+  "themes.dark.atoms.button.negative.tertiary.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.tertiary.elements.label.hovered": {
+  "themes.dark.atoms.button.negative.tertiary.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.tertiary.elements.label.pressed": {
+  "themes.dark.atoms.button.negative.tertiary.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -690,19 +690,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.outline.elements.label.normal": {
+  "themes.dark.atoms.button.negative.outline.label.normal": {
     "value": "#1A1F23",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.outline.elements.label.disabled": {
+  "themes.dark.atoms.button.negative.outline.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.outline.elements.label.hovered": {
+  "themes.dark.atoms.button.negative.outline.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.negative.outline.elements.label.pressed": {
+  "themes.dark.atoms.button.negative.outline.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -751,22 +751,22 @@
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.button.neutral.primary.elements.label.normal": {
+  "themes.dark.atoms.button.neutral.primary.label.normal": {
     "value": "#97A5B1",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.button.neutral.primary.elements.label.disabled": {
+  "themes.dark.atoms.button.neutral.primary.label.disabled": {
     "value": "#586976",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.button.neutral.primary.elements.label.hovered": {
+  "themes.dark.atoms.button.neutral.primary.label.hovered": {
     "value": "#C0C9D0",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.button.neutral.primary.elements.label.pressed": {
+  "themes.dark.atoms.button.neutral.primary.label.pressed": {
     "value": "#B3BDC6",
     "type": "color",
     "unit": "hex"
@@ -816,22 +816,22 @@
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.button.neutral.inversed.elements.label.normal": {
+  "themes.dark.atoms.button.neutral.inversed.label.normal": {
     "value": "#101315",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.button.neutral.inversed.elements.label.disabled": {
+  "themes.dark.atoms.button.neutral.inversed.label.disabled": {
     "value": "#6D8292",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.button.neutral.inversed.elements.label.hovered": {
+  "themes.dark.atoms.button.neutral.inversed.label.hovered": {
     "value": "#101315",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.button.neutral.inversed.elements.label.pressed": {
+  "themes.dark.atoms.button.neutral.inversed.label.pressed": {
     "value": "#101315",
     "type": "color",
     "unit": "hex"
@@ -872,19 +872,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.neutral.secondary.elements.label.normal": {
+  "themes.dark.atoms.button.neutral.secondary.label.normal": {
     "value": "#EAEDEF",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.neutral.secondary.elements.label.disabled": {
+  "themes.dark.atoms.button.neutral.secondary.label.disabled": {
     "value": "#586976",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.neutral.secondary.elements.label.hovered": {
+  "themes.dark.atoms.button.neutral.secondary.label.hovered": {
     "value": "#EAEDEF",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.neutral.secondary.elements.label.pressed": {
+  "themes.dark.atoms.button.neutral.secondary.label.pressed": {
     "value": "#EAEDEF",
     "type": "unknown"
   },
@@ -924,19 +924,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.neutral.tertiary.elements.label.normal": {
+  "themes.dark.atoms.button.neutral.tertiary.label.normal": {
     "value": "#97A5B1",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.neutral.tertiary.elements.label.disabled": {
+  "themes.dark.atoms.button.neutral.tertiary.label.disabled": {
     "value": "#586976",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.neutral.tertiary.elements.label.hovered": {
+  "themes.dark.atoms.button.neutral.tertiary.label.hovered": {
     "value": "#C0C9D0",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.neutral.tertiary.elements.label.pressed": {
+  "themes.dark.atoms.button.neutral.tertiary.label.pressed": {
     "value": "#B3BDC6",
     "type": "unknown"
   },
@@ -976,19 +976,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.neutral.outline.elements.label.normal": {
+  "themes.dark.atoms.button.neutral.outline.label.normal": {
     "value": "#97A5B1",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.neutral.outline.elements.label.disabled": {
+  "themes.dark.atoms.button.neutral.outline.label.disabled": {
     "value": "#586976",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.neutral.outline.elements.label.hovered": {
+  "themes.dark.atoms.button.neutral.outline.label.hovered": {
     "value": "#C0C9D0",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.neutral.outline.elements.label.pressed": {
+  "themes.dark.atoms.button.neutral.outline.label.pressed": {
     "value": "#B3BDC6",
     "type": "unknown"
   },
@@ -1028,19 +1028,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.primary.elements.label.normal": {
+  "themes.dark.atoms.button.positive.primary.label.normal": {
     "value": "#1A1F23",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.primary.elements.label.disabled": {
+  "themes.dark.atoms.button.positive.primary.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.primary.elements.label.hovered": {
+  "themes.dark.atoms.button.positive.primary.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.primary.elements.label.pressed": {
+  "themes.dark.atoms.button.positive.primary.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -1080,19 +1080,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.inversed.elements.label.normal": {
+  "themes.dark.atoms.button.positive.inversed.label.normal": {
     "value": "#E3E7EA",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.inversed.elements.label.disabled": {
+  "themes.dark.atoms.button.positive.inversed.label.disabled": {
     "value": "#6D8292",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.inversed.elements.label.hovered": {
+  "themes.dark.atoms.button.positive.inversed.label.hovered": {
     "value": "#E3E7EA",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.inversed.elements.label.pressed": {
+  "themes.dark.atoms.button.positive.inversed.label.pressed": {
     "value": "#E3E7EA",
     "type": "unknown"
   },
@@ -1132,19 +1132,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.secondary.elements.label.normal": {
+  "themes.dark.atoms.button.positive.secondary.label.normal": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.secondary.elements.label.disabled": {
+  "themes.dark.atoms.button.positive.secondary.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.secondary.elements.label.hovered": {
+  "themes.dark.atoms.button.positive.secondary.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.secondary.elements.label.pressed": {
+  "themes.dark.atoms.button.positive.secondary.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -1184,19 +1184,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.tertiary.elements.label.normal": {
+  "themes.dark.atoms.button.positive.tertiary.label.normal": {
     "value": "#1A1F23",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.tertiary.elements.label.disabled": {
+  "themes.dark.atoms.button.positive.tertiary.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.tertiary.elements.label.hovered": {
+  "themes.dark.atoms.button.positive.tertiary.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.tertiary.elements.label.pressed": {
+  "themes.dark.atoms.button.positive.tertiary.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -1236,21 +1236,26 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.outline.elements.label.normal": {
+  "themes.dark.atoms.button.positive.outline.label.normal": {
     "value": "#1A1F23",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.outline.elements.label.disabled": {
+  "themes.dark.atoms.button.positive.outline.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.outline.elements.label.hovered": {
+  "themes.dark.atoms.button.positive.outline.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.dark.atoms.button.positive.outline.elements.label.pressed": {
+  "themes.dark.atoms.button.positive.outline.label.pressed": {
     "value": "#101315",
     "type": "unknown"
+  },
+  "themes.dark.atoms.charTooltipLabel.primary.self.background.normal": {
+    "value": "#EAEDEF",
+    "type": "color",
+    "unit": "hex"
   },
   "themes.dark.atoms.charTooltipLabel.primary.label.normal": {
     "value": "#2F383F",
@@ -1262,23 +1267,18 @@
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.charTooltipLabel.primary.background.normal": {
-    "value": "#EAEDEF",
+  "themes.dark.atoms.charTooltipLabel.inversed.self.background.normal": {
+    "value": "#242B31",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.charTooltipLabel.primaryInversed.label.normal": {
+  "themes.dark.atoms.charTooltipLabel.inversed.label.normal": {
     "value": "#6D8292",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.charTooltipLabel.primaryInversed.icon.normal": {
+  "themes.dark.atoms.charTooltipLabel.inversed.icon.normal": {
     "value": "#637584",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.dark.atoms.charTooltipLabel.primaryInversed.background.normal": {
-    "value": "#242B31",
     "type": "color",
     "unit": "hex"
   },
@@ -1415,23 +1415,23 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.input.primary.elements.label.normal": {
+  "themes.dark.atoms.input.primary.label.normal": {
     "value": "#A5B1BC",
     "type": "unknown"
   },
-  "themes.dark.atoms.input.primary.elements.label.disabled": {
+  "themes.dark.atoms.input.primary.label.disabled": {
     "value": "#586976",
     "type": "unknown"
   },
-  "themes.dark.atoms.input.primary.elements.label.hovered": {
+  "themes.dark.atoms.input.primary.label.hovered": {
     "value": "#EAEDEF",
     "type": "unknown"
   },
-  "themes.dark.atoms.input.primary.elements.label.focused": {
+  "themes.dark.atoms.input.primary.label.focused": {
     "value": "#EAEDEF",
     "type": "unknown"
   },
-  "themes.dark.atoms.input.primary.elements.label.error": {
+  "themes.dark.atoms.input.primary.label.error": {
     "value": "#E86060",
     "type": "unknown"
   },
@@ -1459,37 +1459,37 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.dark.atoms.input.secondary.elements.label.normal": {
+  "themes.dark.atoms.input.secondary.label.normal": {
     "value": "#A5B1BC",
     "type": "unknown"
   },
-  "themes.dark.atoms.input.secondary.elements.label.disabled": {
+  "themes.dark.atoms.input.secondary.label.disabled": {
     "value": "#586976",
     "type": "unknown"
   },
-  "themes.dark.atoms.input.secondary.elements.label.hovered": {
+  "themes.dark.atoms.input.secondary.label.hovered": {
     "value": "#EAEDEF",
     "type": "unknown"
   },
-  "themes.dark.atoms.input.secondary.elements.label.focused": {
+  "themes.dark.atoms.input.secondary.label.focused": {
     "value": "#EAEDEF",
     "type": "unknown"
   },
-  "themes.dark.atoms.input.secondary.elements.label.error": {
+  "themes.dark.atoms.input.secondary.label.error": {
     "value": "#E86060",
     "type": "unknown"
   },
-  "themes.dark.atoms.logoWithDescriptor.default.primary.elements.label.normal": {
+  "themes.dark.atoms.logoWithDescriptor.default.primary.label.normal": {
     "value": "#DCE1E5",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.logoWithDescriptor.default.primary.elements.label.hovered": {
+  "themes.dark.atoms.logoWithDescriptor.default.primary.label.hovered": {
     "value": "rgba(#DCE1E5, 0.8)",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.logoWithDescriptor.default.primary.elements.label.pressed": {
+  "themes.dark.atoms.logoWithDescriptor.default.primary.label.pressed": {
     "value": "rgba(#DCE1E5, 0.8)",
     "type": "color",
     "unit": "hex"
@@ -1546,25 +1546,25 @@
     "value": "#EAEDEF",
     "type": "unknown"
   },
-  "themes.dark.atoms.resizer.default.elements.splitter.normal": {
+  "themes.dark.atoms.resizer.default.splitter.normal": {
     "value": "#01259D",
     "type": "color",
     "unit": "hex",
     "description": "Normal color of the resizer splitter"
   },
-  "themes.dark.atoms.resizer.default.elements.splitter.active": {
+  "themes.dark.atoms.resizer.default.splitter.active": {
     "value": "#01259D",
     "type": "color",
     "unit": "hex",
     "description": "Active color of the resizer splitter"
   },
-  "themes.dark.atoms.resizer.default.elements.knob.normal": {
+  "themes.dark.atoms.resizer.default.knob.normal": {
     "value": "#39444C",
     "type": "color",
     "unit": "hex",
     "description": "Normal color of the resizer knob"
   },
-  "themes.dark.atoms.resizer.default.elements.knob.active": {
+  "themes.dark.atoms.resizer.default.knob.active": {
     "value": "#097C37",
     "type": "color",
     "unit": "hex",
@@ -1610,59 +1610,59 @@
     "value": "rgba(#6D8292, 0)",
     "type": "color"
   },
-  "themes.dark.atoms.stepPaginationTabs.primary.elements.item.label.normal": {
+  "themes.dark.atoms.stepPaginationTabs.primary.item.label.normal": {
     "value": "#DCE1E5",
     "type": "color",
     "unit": "hex",
     "description": "Normal label color for step pagination tab"
   },
-  "themes.dark.atoms.stepPaginationTabs.primary.elements.item.label.active": {
+  "themes.dark.atoms.stepPaginationTabs.primary.item.label.active": {
     "value": "#DCE1E5",
     "type": "color",
     "unit": "hex",
     "description": "Active label color for step pagination tab"
   },
-  "themes.dark.atoms.toggleSwitch.primary.elements.track.normal": {
+  "themes.dark.atoms.toggleSwitch.primary.track.normal": {
     "value": "#3E4A53",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.toggleSwitch.primary.elements.track.disabled": {
+  "themes.dark.atoms.toggleSwitch.primary.track.disabled": {
     "value": "#495661",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.toggleSwitch.primary.elements.track.active": {
+  "themes.dark.atoms.toggleSwitch.primary.track.active": {
     "value": "#3E4A53",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.toggleSwitch.primary.elements.knob.normal": {
+  "themes.dark.atoms.toggleSwitch.primary.knob.normal": {
     "value": "#F8F9FA",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.toggleSwitch.primary.elements.knob.disabled": {
+  "themes.dark.atoms.toggleSwitch.primary.knob.disabled": {
     "value": "#637584",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.toggleSwitch.primary.elements.knob.active": {
+  "themes.dark.atoms.toggleSwitch.primary.knob.active": {
     "value": "#F8F9FA",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.toggleSwitch.primary.elements.label.normal": {
+  "themes.dark.atoms.toggleSwitch.primary.label.normal": {
     "value": "#DCE1E5",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.toggleSwitch.primary.elements.label.disabled": {
+  "themes.dark.atoms.toggleSwitch.primary.label.disabled": {
     "value": "#6D8292",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.toggleSwitch.primary.elements.label.active": {
+  "themes.dark.atoms.toggleSwitch.primary.label.active": {
     "value": "#DCE1E5",
     "type": "color",
     "unit": "hex"
@@ -1699,23 +1699,43 @@
     "value": "#242B31",
     "type": "unknown"
   },
-  "themes.dark.templates.mainFooter.neutral.primary.background.normal": {
+  "themes.dark.templates.mainFooter.neutral.primary.self.background.normal": {
     "value": "#101315",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.templates.mainFooter.accent.primary.background.normal": {
+  "themes.dark.templates.mainFooter.neutral.primary.self.border.normal": {
+    "value": "rgba(#101315,0)",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.templates.mainFooter.accent.primary.self.background.normal": {
     "value": "#013CFE",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.templates.mainHeader.neutral.primary.background.normal": {
+  "themes.dark.templates.mainFooter.accent.primary.self.border.normal": {
+    "value": "rgba(#013CFE,0)",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.templates.mainHeader.neutral.primary.self.background.normal": {
     "value": "#101315",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.templates.mainHeader.accent.primary.background.normal": {
+  "themes.dark.templates.mainHeader.neutral.primary.self.border.normal": {
+    "value": "rgba(#101315,0)",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.templates.mainHeader.accent.primary.self.background.normal": {
     "value": "#013CFE",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.templates.mainHeader.accent.primary.self.border.normal": {
+    "value": "rgba(#013CFE,0)",
     "type": "color",
     "unit": "hex"
   },
@@ -1959,19 +1979,19 @@
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.primary.elements.label.normal": {
+  "themes.light.atoms.button.accent.primary.label.normal": {
     "value": "#DBE3FF",
     "type": "unknown"
   },
-  "themes.light.atoms.button.accent.primary.elements.label.disabled": {
+  "themes.light.atoms.button.accent.primary.label.disabled": {
     "value": "#F3F6FF",
     "type": "unknown"
   },
-  "themes.light.atoms.button.accent.primary.elements.label.hovered": {
+  "themes.light.atoms.button.accent.primary.label.hovered": {
     "value": "#C3D1FF",
     "type": "unknown"
   },
-  "themes.light.atoms.button.accent.primary.elements.label.pressed": {
+  "themes.light.atoms.button.accent.primary.label.pressed": {
     "value": "#AABEFF",
     "type": "unknown"
   },
@@ -2020,22 +2040,22 @@
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.inversed.elements.label.normal": {
+  "themes.light.atoms.button.accent.inversed.label.normal": {
     "value": "#DBE3FF",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.inversed.elements.label.disabled": {
+  "themes.light.atoms.button.accent.inversed.label.disabled": {
     "value": "#AABEFF",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.inversed.elements.label.hovered": {
+  "themes.light.atoms.button.accent.inversed.label.hovered": {
     "value": "#C3D1FF",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.inversed.elements.label.pressed": {
+  "themes.light.atoms.button.accent.inversed.label.pressed": {
     "value": "#AABEFF",
     "type": "color",
     "unit": "hex"
@@ -2085,22 +2105,22 @@
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.secondary.elements.label.normal": {
+  "themes.light.atoms.button.accent.secondary.label.normal": {
     "value": "#013CFE",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.secondary.elements.label.disabled": {
+  "themes.light.atoms.button.accent.secondary.label.disabled": {
     "value": "#7A99FE",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.secondary.elements.label.hovered": {
+  "themes.light.atoms.button.accent.secondary.label.hovered": {
     "value": "#0130CE",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.secondary.elements.label.pressed": {
+  "themes.light.atoms.button.accent.secondary.label.pressed": {
     "value": "#012BB5",
     "type": "color",
     "unit": "hex"
@@ -2150,22 +2170,22 @@
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.tertiary.elements.label.normal": {
+  "themes.light.atoms.button.accent.tertiary.label.normal": {
     "value": "#013CFE",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.tertiary.elements.label.disabled": {
+  "themes.light.atoms.button.accent.tertiary.label.disabled": {
     "value": "#7A99FE",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.tertiary.elements.label.hovered": {
+  "themes.light.atoms.button.accent.tertiary.label.hovered": {
     "value": "#0130CE",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.tertiary.elements.label.pressed": {
+  "themes.light.atoms.button.accent.tertiary.label.pressed": {
     "value": "#012BB5",
     "type": "color",
     "unit": "hex"
@@ -2215,22 +2235,22 @@
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.outline.elements.label.normal": {
+  "themes.light.atoms.button.accent.outline.label.normal": {
     "value": "#013CFE",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.outline.elements.label.disabled": {
+  "themes.light.atoms.button.accent.outline.label.disabled": {
     "value": "#7A99FE",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.outline.elements.label.hovered": {
+  "themes.light.atoms.button.accent.outline.label.hovered": {
     "value": "#0130CE",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.accent.outline.elements.label.pressed": {
+  "themes.light.atoms.button.accent.outline.label.pressed": {
     "value": "#012BB5",
     "type": "color",
     "unit": "hex"
@@ -2271,19 +2291,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.primary.elements.label.normal": {
+  "themes.light.atoms.button.negative.primary.label.normal": {
     "value": "#1A1F23",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.primary.elements.label.disabled": {
+  "themes.light.atoms.button.negative.primary.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.primary.elements.label.hovered": {
+  "themes.light.atoms.button.negative.primary.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.primary.elements.label.pressed": {
+  "themes.light.atoms.button.negative.primary.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -2323,19 +2343,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.inversed.elements.label.normal": {
+  "themes.light.atoms.button.negative.inversed.label.normal": {
     "value": "#E3E7EA",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.inversed.elements.label.disabled": {
+  "themes.light.atoms.button.negative.inversed.label.disabled": {
     "value": "#6D8292",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.inversed.elements.label.hovered": {
+  "themes.light.atoms.button.negative.inversed.label.hovered": {
     "value": "#E3E7EA",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.inversed.elements.label.pressed": {
+  "themes.light.atoms.button.negative.inversed.label.pressed": {
     "value": "#E3E7EA",
     "type": "unknown"
   },
@@ -2375,19 +2395,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.secondary.elements.label.normal": {
+  "themes.light.atoms.button.negative.secondary.label.normal": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.secondary.elements.label.disabled": {
+  "themes.light.atoms.button.negative.secondary.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.secondary.elements.label.hovered": {
+  "themes.light.atoms.button.negative.secondary.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.secondary.elements.label.pressed": {
+  "themes.light.atoms.button.negative.secondary.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -2427,19 +2447,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.tertiary.elements.label.normal": {
+  "themes.light.atoms.button.negative.tertiary.label.normal": {
     "value": "#1A1F23",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.tertiary.elements.label.disabled": {
+  "themes.light.atoms.button.negative.tertiary.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.tertiary.elements.label.hovered": {
+  "themes.light.atoms.button.negative.tertiary.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.tertiary.elements.label.pressed": {
+  "themes.light.atoms.button.negative.tertiary.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -2479,19 +2499,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.outline.elements.label.normal": {
+  "themes.light.atoms.button.negative.outline.label.normal": {
     "value": "#1A1F23",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.outline.elements.label.disabled": {
+  "themes.light.atoms.button.negative.outline.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.outline.elements.label.hovered": {
+  "themes.light.atoms.button.negative.outline.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.button.negative.outline.elements.label.pressed": {
+  "themes.light.atoms.button.negative.outline.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -2540,22 +2560,22 @@
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.neutral.primary.elements.label.normal": {
+  "themes.light.atoms.button.neutral.primary.label.normal": {
     "value": "#1A1F23",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.neutral.primary.elements.label.disabled": {
+  "themes.light.atoms.button.neutral.primary.label.disabled": {
     "value": "#8999A7",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.neutral.primary.elements.label.hovered": {
+  "themes.light.atoms.button.neutral.primary.label.hovered": {
     "value": "#101315",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.button.neutral.primary.elements.label.pressed": {
+  "themes.light.atoms.button.neutral.primary.label.pressed": {
     "value": "#101315",
     "type": "color",
     "unit": "hex"
@@ -2596,19 +2616,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.light.atoms.button.neutral.inversed.elements.label.normal": {
+  "themes.light.atoms.button.neutral.inversed.label.normal": {
     "value": "#E3E7EA",
     "type": "unknown"
   },
-  "themes.light.atoms.button.neutral.inversed.elements.label.disabled": {
+  "themes.light.atoms.button.neutral.inversed.label.disabled": {
     "value": "#6D8292",
     "type": "unknown"
   },
-  "themes.light.atoms.button.neutral.inversed.elements.label.hovered": {
+  "themes.light.atoms.button.neutral.inversed.label.hovered": {
     "value": "#E3E7EA",
     "type": "unknown"
   },
-  "themes.light.atoms.button.neutral.inversed.elements.label.pressed": {
+  "themes.light.atoms.button.neutral.inversed.label.pressed": {
     "value": "#E3E7EA",
     "type": "unknown"
   },
@@ -2648,19 +2668,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.light.atoms.button.neutral.secondary.elements.label.normal": {
+  "themes.light.atoms.button.neutral.secondary.label.normal": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.button.neutral.secondary.elements.label.disabled": {
+  "themes.light.atoms.button.neutral.secondary.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.light.atoms.button.neutral.secondary.elements.label.hovered": {
+  "themes.light.atoms.button.neutral.secondary.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.button.neutral.secondary.elements.label.pressed": {
+  "themes.light.atoms.button.neutral.secondary.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -2700,19 +2720,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.light.atoms.button.neutral.tertiary.elements.label.normal": {
+  "themes.light.atoms.button.neutral.tertiary.label.normal": {
     "value": "#1A1F23",
     "type": "unknown"
   },
-  "themes.light.atoms.button.neutral.tertiary.elements.label.disabled": {
+  "themes.light.atoms.button.neutral.tertiary.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.light.atoms.button.neutral.tertiary.elements.label.hovered": {
+  "themes.light.atoms.button.neutral.tertiary.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.button.neutral.tertiary.elements.label.pressed": {
+  "themes.light.atoms.button.neutral.tertiary.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -2752,19 +2772,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.light.atoms.button.neutral.outline.elements.label.normal": {
+  "themes.light.atoms.button.neutral.outline.label.normal": {
     "value": "#1A1F23",
     "type": "unknown"
   },
-  "themes.light.atoms.button.neutral.outline.elements.label.disabled": {
+  "themes.light.atoms.button.neutral.outline.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.light.atoms.button.neutral.outline.elements.label.hovered": {
+  "themes.light.atoms.button.neutral.outline.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.button.neutral.outline.elements.label.pressed": {
+  "themes.light.atoms.button.neutral.outline.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -2804,19 +2824,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.primary.elements.label.normal": {
+  "themes.light.atoms.button.positive.primary.label.normal": {
     "value": "#1A1F23",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.primary.elements.label.disabled": {
+  "themes.light.atoms.button.positive.primary.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.primary.elements.label.hovered": {
+  "themes.light.atoms.button.positive.primary.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.primary.elements.label.pressed": {
+  "themes.light.atoms.button.positive.primary.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -2856,19 +2876,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.inversed.elements.label.normal": {
+  "themes.light.atoms.button.positive.inversed.label.normal": {
     "value": "#E3E7EA",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.inversed.elements.label.disabled": {
+  "themes.light.atoms.button.positive.inversed.label.disabled": {
     "value": "#6D8292",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.inversed.elements.label.hovered": {
+  "themes.light.atoms.button.positive.inversed.label.hovered": {
     "value": "#E3E7EA",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.inversed.elements.label.pressed": {
+  "themes.light.atoms.button.positive.inversed.label.pressed": {
     "value": "#E3E7EA",
     "type": "unknown"
   },
@@ -2908,19 +2928,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.secondary.elements.label.normal": {
+  "themes.light.atoms.button.positive.secondary.label.normal": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.secondary.elements.label.disabled": {
+  "themes.light.atoms.button.positive.secondary.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.secondary.elements.label.hovered": {
+  "themes.light.atoms.button.positive.secondary.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.secondary.elements.label.pressed": {
+  "themes.light.atoms.button.positive.secondary.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -2960,19 +2980,19 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.tertiary.elements.label.normal": {
+  "themes.light.atoms.button.positive.tertiary.label.normal": {
     "value": "#1A1F23",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.tertiary.elements.label.disabled": {
+  "themes.light.atoms.button.positive.tertiary.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.tertiary.elements.label.hovered": {
+  "themes.light.atoms.button.positive.tertiary.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.tertiary.elements.label.pressed": {
+  "themes.light.atoms.button.positive.tertiary.label.pressed": {
     "value": "#101315",
     "type": "unknown"
   },
@@ -3012,21 +3032,26 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.outline.elements.label.normal": {
+  "themes.light.atoms.button.positive.outline.label.normal": {
     "value": "#1A1F23",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.outline.elements.label.disabled": {
+  "themes.light.atoms.button.positive.outline.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.outline.elements.label.hovered": {
+  "themes.light.atoms.button.positive.outline.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.button.positive.outline.elements.label.pressed": {
+  "themes.light.atoms.button.positive.outline.label.pressed": {
     "value": "#101315",
     "type": "unknown"
+  },
+  "themes.light.atoms.charTooltipLabel.primary.self.background.normal": {
+    "value": "#101315",
+    "type": "color",
+    "unit": "hex"
   },
   "themes.light.atoms.charTooltipLabel.primary.label.normal": {
     "value": "#A5B1BC",
@@ -3038,23 +3063,18 @@
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.charTooltipLabel.primary.background.normal": {
-    "value": "#101315",
+  "themes.light.atoms.charTooltipLabel.inversed.self.background.normal": {
+    "value": "#CED5DB",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.charTooltipLabel.primaryInversed.label.normal": {
+  "themes.light.atoms.charTooltipLabel.inversed.label.normal": {
     "value": "#6D8292",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.charTooltipLabel.primaryInversed.icon.normal": {
+  "themes.light.atoms.charTooltipLabel.inversed.icon.normal": {
     "value": "#7B8E9C",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.atoms.charTooltipLabel.primaryInversed.background.normal": {
-    "value": "#CED5DB",
     "type": "color",
     "unit": "hex"
   },
@@ -3191,23 +3211,23 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.light.atoms.input.primary.elements.label.normal": {
+  "themes.light.atoms.input.primary.label.normal": {
     "value": "#2F383F",
     "type": "unknown"
   },
-  "themes.light.atoms.input.primary.elements.label.disabled": {
+  "themes.light.atoms.input.primary.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.light.atoms.input.primary.elements.label.hovered": {
+  "themes.light.atoms.input.primary.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.input.primary.elements.label.focused": {
+  "themes.light.atoms.input.primary.label.focused": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.input.primary.elements.label.error": {
+  "themes.light.atoms.input.primary.label.error": {
     "value": "#DE2121",
     "type": "unknown"
   },
@@ -3235,37 +3255,37 @@
     "value": "#013CFE",
     "type": "unknown"
   },
-  "themes.light.atoms.input.secondary.elements.label.normal": {
+  "themes.light.atoms.input.secondary.label.normal": {
     "value": "#2F383F",
     "type": "unknown"
   },
-  "themes.light.atoms.input.secondary.elements.label.disabled": {
+  "themes.light.atoms.input.secondary.label.disabled": {
     "value": "#8999A7",
     "type": "unknown"
   },
-  "themes.light.atoms.input.secondary.elements.label.hovered": {
+  "themes.light.atoms.input.secondary.label.hovered": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.input.secondary.elements.label.focused": {
+  "themes.light.atoms.input.secondary.label.focused": {
     "value": "#101315",
     "type": "unknown"
   },
-  "themes.light.atoms.input.secondary.elements.label.error": {
+  "themes.light.atoms.input.secondary.label.error": {
     "value": "#DE2121",
     "type": "unknown"
   },
-  "themes.light.atoms.logoWithDescriptor.default.primary.elements.label.normal": {
+  "themes.light.atoms.logoWithDescriptor.default.primary.label.normal": {
     "value": "#2F383F",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.logoWithDescriptor.default.primary.elements.label.hovered": {
+  "themes.light.atoms.logoWithDescriptor.default.primary.label.hovered": {
     "value": "rgba(#2F383F, 0.8)",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.logoWithDescriptor.default.primary.elements.label.pressed": {
+  "themes.light.atoms.logoWithDescriptor.default.primary.label.pressed": {
     "value": "rgba(#2F383F, 0.8)",
     "type": "color",
     "unit": "hex"
@@ -3324,25 +3344,25 @@
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.resizer.default.elements.splitter.normal": {
+  "themes.light.atoms.resizer.default.splitter.normal": {
     "value": "#01259D",
     "type": "color",
     "unit": "hex",
     "description": "Normal color of the resizer splitter"
   },
-  "themes.light.atoms.resizer.default.elements.splitter.active": {
+  "themes.light.atoms.resizer.default.splitter.active": {
     "value": "#01259D",
     "type": "color",
     "unit": "hex",
     "description": "Active color of the resizer splitter"
   },
-  "themes.light.atoms.resizer.default.elements.knob.normal": {
+  "themes.light.atoms.resizer.default.knob.normal": {
     "value": "#6D8292",
     "type": "color",
     "unit": "hex",
     "description": "Normal color of the resizer knob"
   },
-  "themes.light.atoms.resizer.default.elements.knob.active": {
+  "themes.light.atoms.resizer.default.knob.active": {
     "value": "#12ED6A",
     "type": "color",
     "unit": "hex",
@@ -3396,59 +3416,59 @@
     "value": "rgba(#6D8292, 0)",
     "type": "color"
   },
-  "themes.light.atoms.stepPaginationTabs.primary.elements.item.label.normal": {
+  "themes.light.atoms.stepPaginationTabs.primary.item.label.normal": {
     "value": "#2F383F",
     "type": "color",
     "unit": "hex",
     "description": "Normal label color for step pagination tab"
   },
-  "themes.light.atoms.stepPaginationTabs.primary.elements.item.label.active": {
+  "themes.light.atoms.stepPaginationTabs.primary.item.label.active": {
     "value": "#2F383F",
     "type": "color",
     "unit": "hex",
     "description": "Active label color for step pagination tab"
   },
-  "themes.light.atoms.toggleSwitch.primary.elements.track.normal": {
+  "themes.light.atoms.toggleSwitch.primary.track.normal": {
     "value": "#909FAC",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.toggleSwitch.primary.elements.track.disabled": {
+  "themes.light.atoms.toggleSwitch.primary.track.disabled": {
     "value": "#C0C9D0",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.toggleSwitch.primary.elements.track.active": {
+  "themes.light.atoms.toggleSwitch.primary.track.active": {
     "value": "#909FAC",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.toggleSwitch.primary.elements.knob.normal": {
+  "themes.light.atoms.toggleSwitch.primary.knob.normal": {
     "value": "#F8F9FA",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.toggleSwitch.primary.elements.knob.disabled": {
+  "themes.light.atoms.toggleSwitch.primary.knob.disabled": {
     "value": "#DCE1E5",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.toggleSwitch.primary.elements.knob.active": {
+  "themes.light.atoms.toggleSwitch.primary.knob.active": {
     "value": "#F8F9FA",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.toggleSwitch.primary.elements.label.normal": {
+  "themes.light.atoms.toggleSwitch.primary.label.normal": {
     "value": "#2F383F",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.toggleSwitch.primary.elements.label.disabled": {
+  "themes.light.atoms.toggleSwitch.primary.label.disabled": {
     "value": "#6D8292",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.toggleSwitch.primary.elements.label.active": {
+  "themes.light.atoms.toggleSwitch.primary.label.active": {
     "value": "#2F383F",
     "type": "color",
     "unit": "hex"

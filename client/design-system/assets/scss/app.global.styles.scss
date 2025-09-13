@@ -6,7 +6,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: get($atoms, "scrollbar.default.elements.thumb.width");
+  width: get($atoms, "scrollbar.default.thumb.width");
 }
 
 /* Track */
@@ -18,7 +18,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  border-radius: get($atoms, "scrollbar.default.elements.thumb.border-radius");
+  border-radius: get($atoms, "scrollbar.default.thumb.border-radius");
   @include themify($themes) {
     background: themed("abstracts.label.primary");
   }

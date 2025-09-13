@@ -44,20 +44,17 @@
           }
         }
       },
-      "elements": {
-        "button": {
-          "offset": {
-            "value": "{tokens.spacing.lg.value}",
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "Offset for buttons inside large sheet",
-              "category": "sheet"
-            }
+      "button": {
+        "offset": {
+          "value": "{tokens.spacing.lg.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Offset for buttons inside large sheet",
+            "category": "sheet"
           }
         }
-      },
-      "type": "component"
+      }
     },
     "md": {
       "self": {
@@ -98,20 +95,17 @@
           }
         }
       },
-      "elements": {
-        "button": {
-          "offset": {
-            "value": "{tokens.spacing.lg.value}",
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "Offset for buttons inside medium sheet",
-              "category": "sheet"
-            }
+      "button": {
+        "offset": {
+          "value": "{tokens.spacing.lg.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Offset for buttons inside medium sheet",
+            "category": "sheet"
           }
         }
-      },
-      "type": "component"
+      }
     }
   }
 }

@@ -1,10 +1,17 @@
 import tokens from "@/tokens";
+
 import type {
   UIElementAlignment,
   UIElementAxisDirection,
   UIElementOrientation,
   UIElementStretch,
 } from "@/typings";
+
+export type GroupOrientation = UIElementOrientation;
+export type GroupDirection = UIElementAxisDirection;
+export type GroupAlignment = UIElementAlignment;
+export type GroupStretch = UIElementStretch;
+export type GroupAsTag = keyof HTMLElementTagNameMap;
 
 export type GroupVariant = keyof typeof tokens.atoms.group;
 export const groupVariants = Object.keys(tokens.atoms.group) as GroupVariant[];
@@ -23,16 +30,16 @@ export interface GroupProps {
   variant?: GroupVariant;
   size?: GroupSize;
   mode?: GroupMode;
-  orientation?: UIElementOrientation;
-  direction?: UIElementAxisDirection;
-  verticalAlignment?: UIElementAlignment;
-  horizontalAlignment?: UIElementAlignment;
-  stretch?: UIElementStretch;
+  orientation?: GroupOrientation;
+  direction?: GroupDirection;
+  verticalAlignment?: GroupAlignment;
+  horizontalAlignment?: GroupAlignment;
+  stretch?: GroupStretch;
   wrap?: boolean;
   gapX?: string;
   gapY?: string;
   divider?: boolean;
-  as?: keyof HTMLElementTagNameMap;
+  as?: GroupAsTag;
   role?: string;
   ariaLabel?: string;
 }

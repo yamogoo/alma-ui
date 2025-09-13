@@ -12,23 +12,21 @@
           }
         }
       },
-      "elements": {
-        "body": {
-          "gap": {
-            "value": "{tokens.spacing.lg.value}",
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "category": "form"
-            }
-          },
-          "padding": {
-            "value": "{tokens.spacing.sm.value}",
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "category": "form"
-            }
+      "body": {
+        "gap": {
+          "value": "{tokens.spacing.lg.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "form"
+          }
+        },
+        "padding": {
+          "value": "{tokens.spacing.sm.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "form"
           }
         }
       },

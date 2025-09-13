@@ -80,19 +80,19 @@
     "unit": "px",
     "description": "Border radius for large default button"
   },
-  "atoms.button.default.lg.elements.label.fontStyle": {
+  "atoms.button.default.lg.label.fontStyle": {
     "value": "label-1",
     "type": "alias",
     "unit": "",
     "description": "Font style for button label"
   },
-  "atoms.button.default.lg.elements.icon.size": {
+  "atoms.button.default.lg.icon.size": {
     "value": 20,
     "type": "size",
     "unit": "px",
     "description": "Icon size in large default button"
   },
-  "atoms.button.default.lg.elements.icon.alias.size": {
+  "atoms.button.default.lg.icon.alias.size": {
     "value": "sm",
     "type": "alias",
     "unit": "",
@@ -131,19 +131,19 @@
     "unit": "px",
     "description": "Border radius for medium button"
   },
-  "atoms.button.default.md.elements.label.fontStyle": {
+  "atoms.button.default.md.label.fontStyle": {
     "value": "label-2",
     "type": "alias",
     "unit": "",
     "description": "Font style for button label"
   },
-  "atoms.button.default.md.elements.icon.size": {
+  "atoms.button.default.md.icon.size": {
     "value": 16,
     "type": "size",
     "unit": "px",
     "description": "Icon size in medium button"
   },
-  "atoms.button.default.md.elements.icon.alias.size": {
+  "atoms.button.default.md.icon.alias.size": {
     "value": "xs",
     "type": "alias",
     "unit": "",
@@ -182,19 +182,19 @@
     "unit": "px",
     "description": "Border radius for small button"
   },
-  "atoms.button.default.sm.elements.label.fontStyle": {
+  "atoms.button.default.sm.label.fontStyle": {
     "value": "label-3",
     "type": "alias",
     "unit": "",
     "description": "Font style for button label"
   },
-  "atoms.button.default.sm.elements.icon.size": {
+  "atoms.button.default.sm.icon.size": {
     "value": 16,
     "type": "size",
     "unit": "px",
     "description": "Icon size in small button"
   },
-  "atoms.button.default.sm.elements.icon.alias.size": {
+  "atoms.button.default.sm.icon.alias.size": {
     "value": "xs",
     "type": "alias",
     "unit": "",
@@ -231,19 +231,19 @@
     "unit": "px",
     "description": "Border radius for extra small button"
   },
-  "atoms.button.default.xs.elements.label.fontStyle": {
+  "atoms.button.default.xs.label.fontStyle": {
     "value": "label-3",
     "type": "alias",
     "unit": "",
     "description": "Font style for button label"
   },
-  "atoms.button.default.xs.elements.icon.size": {
+  "atoms.button.default.xs.icon.size": {
     "value": 12,
     "type": "size",
     "unit": "px",
     "description": "Icon size in extra small button"
   },
-  "atoms.button.default.xs.elements.icon.alias.size": {
+  "atoms.button.default.xs.icon.alias.size": {
     "value": "xxs",
     "type": "alias",
     "unit": "",
@@ -282,19 +282,19 @@
     "unit": "px",
     "description": "Border radius for large rounded button"
   },
-  "atoms.button.rounded.lg.elements.label.fontStyle": {
+  "atoms.button.rounded.lg.label.fontStyle": {
     "value": "label-1",
     "type": "alias",
     "unit": "",
     "description": "Font style for button label"
   },
-  "atoms.button.rounded.lg.elements.icon.size": {
+  "atoms.button.rounded.lg.icon.size": {
     "value": 20,
     "type": "size",
     "unit": "px",
     "description": "Icon size in large rounded button"
   },
-  "atoms.button.rounded.lg.elements.icon.alias.size": {
+  "atoms.button.rounded.lg.icon.alias.size": {
     "value": "sm",
     "type": "alias",
     "unit": "",
@@ -333,19 +333,19 @@
     "unit": "px",
     "description": "Border radius for medium rounded button"
   },
-  "atoms.button.rounded.md.elements.label.fontStyle": {
+  "atoms.button.rounded.md.label.fontStyle": {
     "value": "label-3",
     "type": "alias",
     "unit": "",
     "description": "Font style for button label"
   },
-  "atoms.button.rounded.md.elements.icon.size": {
+  "atoms.button.rounded.md.icon.size": {
     "value": 16,
     "type": "size",
     "unit": "px",
     "description": "Icon size in medium rounded button"
   },
-  "atoms.button.rounded.md.elements.icon.alias.size": {
+  "atoms.button.rounded.md.icon.alias.size": {
     "value": "xs",
     "type": "alias",
     "unit": "",
@@ -384,19 +384,19 @@
     "unit": "px",
     "description": "Border radius for small rounded button"
   },
-  "atoms.button.rounded.sm.elements.label.fontStyle": {
+  "atoms.button.rounded.sm.label.fontStyle": {
     "value": "label-4",
     "type": "alias",
     "unit": "",
     "description": "Font style for button label"
   },
-  "atoms.button.rounded.sm.elements.icon.size": {
+  "atoms.button.rounded.sm.icon.size": {
     "value": 16,
     "type": "size",
     "unit": "px",
     "description": "Icon size in small rounded button"
   },
-  "atoms.button.rounded.sm.elements.icon.alias.size": {
+  "atoms.button.rounded.sm.icon.alias.size": {
     "value": "xs",
     "type": "alias",
     "unit": "",
@@ -435,19 +435,19 @@
     "unit": "px",
     "description": "Border radius for extra small rounded button"
   },
-  "atoms.button.rounded.xs.elements.label.fontStyle": {
+  "atoms.button.rounded.xs.label.fontStyle": {
     "value": "label-4",
     "type": "alias",
     "unit": "",
     "description": "Font style for button label"
   },
-  "atoms.button.rounded.xs.elements.icon.size": {
+  "atoms.button.rounded.xs.icon.size": {
     "value": 12,
     "type": "size",
     "unit": "px",
     "description": "Icon size in extra small rounded button"
   },
-  "atoms.button.rounded.xs.elements.icon.alias.size": {
+  "atoms.button.rounded.xs.icon.alias.size": {
     "value": "xxs",
     "type": "alias",
     "unit": "",
@@ -457,7 +457,7 @@
     "value": "component",
     "type": "string"
   },
-  "atoms.carouselStack.default.lg.elements.header.padding": {
+  "atoms.carouselStack.default.lg.header.padding": {
     "value": [
       24,
       24
@@ -470,7 +470,7 @@
     "value": "component",
     "type": "string"
   },
-  "atoms.carouselStack.default.md.elements.header.padding": {
+  "atoms.carouselStack.default.md.header.padding": {
     "value": [
       16,
       16
@@ -501,7 +501,7 @@
     "type": "radius",
     "unit": "px"
   },
-  "atoms.charTooltipLabel.default.lg.elements.label.fontStyle": {
+  "atoms.charTooltipLabel.default.lg.label.fontStyle": {
     "value": "caption-1",
     "type": "alias"
   },
@@ -596,25 +596,13 @@
     "unit": "px",
     "description": "Height of large dropdown"
   },
-  "atoms.dropdown.default.lg.elements.currentValue.elements.label.fontStyle": {
-    "value": "label-2",
-    "type": "alias",
-    "unit": "",
-    "description": "Font style for dropdown value label"
-  },
-  "atoms.dropdown.default.lg.elements.currentValue.elements.icon.size": {
-    "value": 12,
-    "type": "size",
-    "unit": "px",
-    "description": "Icon size for dropdown value"
-  },
-  "atoms.dropdown.default.lg.elements.currentValue.self.gap": {
+  "atoms.dropdown.default.lg.currentValue.self.gap": {
     "value": 8,
     "type": "spacing",
     "unit": "px",
     "description": "Gap inside dropdown value component"
   },
-  "atoms.dropdown.default.lg.elements.currentValue.self.padding": {
+  "atoms.dropdown.default.lg.currentValue.self.padding": {
     "value": [
       8,
       12,
@@ -625,17 +613,29 @@
     "unit": "px",
     "description": "Padding inside dropdown value component"
   },
-  "atoms.dropdown.default.lg.elements.currentValue.self.borderRadius": {
+  "atoms.dropdown.default.lg.currentValue.self.borderRadius": {
     "value": 8,
     "type": "radius",
     "unit": "px",
     "description": "Border radius of dropdown value component"
   },
-  "atoms.dropdown.default.lg.elements.currentValue.type": {
+  "atoms.dropdown.default.lg.currentValue.label.fontStyle": {
+    "value": "label-2",
+    "type": "alias",
+    "unit": "",
+    "description": "Font style for dropdown value label"
+  },
+  "atoms.dropdown.default.lg.currentValue.icon.size": {
+    "value": 12,
+    "type": "size",
+    "unit": "px",
+    "description": "Icon size for dropdown value"
+  },
+  "atoms.dropdown.default.lg.currentValue.type": {
     "value": "component",
     "type": "string"
   },
-  "atoms.dropdown.default.lg.elements.options.padding": {
+  "atoms.dropdown.default.lg.options.padding": {
     "value": [
       8,
       12,
@@ -646,7 +646,7 @@
     "unit": "px",
     "description": "Padding inside dropdown options"
   },
-  "atoms.dropdown.default.lg.elements.options.borderRadius": {
+  "atoms.dropdown.default.lg.options.borderRadius": {
     "value": 8,
     "type": "radius",
     "unit": "px",
@@ -685,25 +685,13 @@
     "unit": "px",
     "description": "Height of medium dropdown"
   },
-  "atoms.dropdown.default.md.elements.currentValue.elements.label.fontStyle": {
-    "value": "label-3",
-    "type": "alias",
-    "unit": "",
-    "description": "Font style for dropdown value label"
-  },
-  "atoms.dropdown.default.md.elements.currentValue.elements.icon.size": {
-    "value": 12,
-    "type": "size",
-    "unit": "px",
-    "description": "Icon size for dropdown value"
-  },
-  "atoms.dropdown.default.md.elements.currentValue.self.gap": {
+  "atoms.dropdown.default.md.currentValue.self.gap": {
     "value": 8,
     "type": "spacing",
     "unit": "px",
     "description": "Gap inside dropdown value component"
   },
-  "atoms.dropdown.default.md.elements.currentValue.self.padding": {
+  "atoms.dropdown.default.md.currentValue.self.padding": {
     "value": [
       8,
       12,
@@ -714,17 +702,29 @@
     "unit": "px",
     "description": "Padding inside dropdown value component"
   },
-  "atoms.dropdown.default.md.elements.currentValue.self.borderRadius": {
+  "atoms.dropdown.default.md.currentValue.self.borderRadius": {
     "value": 8,
     "type": "radius",
     "unit": "px",
     "description": "Border radius of dropdown value component"
   },
-  "atoms.dropdown.default.md.elements.currentValue.type": {
+  "atoms.dropdown.default.md.currentValue.label.fontStyle": {
+    "value": "label-3",
+    "type": "alias",
+    "unit": "",
+    "description": "Font style for dropdown value label"
+  },
+  "atoms.dropdown.default.md.currentValue.icon.size": {
+    "value": 12,
+    "type": "size",
+    "unit": "px",
+    "description": "Icon size for dropdown value"
+  },
+  "atoms.dropdown.default.md.currentValue.type": {
     "value": "component",
     "type": "string"
   },
-  "atoms.dropdown.default.md.elements.options.padding": {
+  "atoms.dropdown.default.md.options.padding": {
     "value": [
       8,
       12,
@@ -735,7 +735,7 @@
     "unit": "px",
     "description": "Padding inside dropdown options"
   },
-  "atoms.dropdown.default.md.elements.options.borderRadius": {
+  "atoms.dropdown.default.md.options.borderRadius": {
     "value": 8,
     "type": "radius",
     "unit": "px",
@@ -985,31 +985,31 @@
     "unit": "px",
     "description": "Border radius for medium input"
   },
-  "atoms.input.default.md.elements.label.fontStyle": {
+  "atoms.input.default.md.label.fontStyle": {
     "value": "label-3",
     "type": "alias",
     "unit": "",
     "description": "Font style for input value text"
   },
-  "atoms.input.default.md.elements.label.paddingTop": {
+  "atoms.input.default.md.label.paddingTop": {
     "value": 12,
     "type": "spacing",
     "unit": "px",
     "description": "Top padding for input value text"
   },
-  "atoms.input.default.md.elements.placeholder.fontStyle": {
+  "atoms.input.default.md.placeholder.fontStyle": {
     "value": "label-3",
     "type": "alias",
     "unit": "",
     "description": "Font style for placeholder text"
   },
-  "atoms.input.default.md.elements.error.fontStyle": {
+  "atoms.input.default.md.error.fontStyle": {
     "value": "caption-1",
     "type": "alias",
     "unit": "",
     "description": "Font style for error text"
   },
-  "atoms.input.default.md.elements.error.padding": {
+  "atoms.input.default.md.error.padding": {
     "value": [
       0,
       16,
@@ -1053,31 +1053,31 @@
     "unit": "px",
     "description": "Border radius for large input"
   },
-  "atoms.input.default.lg.elements.label.fontStyle": {
+  "atoms.input.default.lg.label.fontStyle": {
     "value": "label-3",
     "type": "alias",
     "unit": "",
     "description": "Font style for input value text"
   },
-  "atoms.input.default.lg.elements.label.padding-top": {
+  "atoms.input.default.lg.label.padding-top": {
     "value": 12,
     "type": "spacing",
     "unit": "px",
     "description": "Top padding for input value text"
   },
-  "atoms.input.default.lg.elements.placeholder.fontStyle": {
+  "atoms.input.default.lg.placeholder.fontStyle": {
     "value": "label-3",
     "type": "alias",
     "unit": "",
     "description": "Font style for placeholder text"
   },
-  "atoms.input.default.lg.elements.error.fontStyle": {
+  "atoms.input.default.lg.error.fontStyle": {
     "value": "caption-1",
     "type": "alias",
     "unit": "",
     "description": "Font style for error text"
   },
-  "atoms.input.default.lg.elements.error.padding": {
+  "atoms.input.default.lg.error.padding": {
     "value": [
       0,
       16,
@@ -1097,7 +1097,7 @@
     "type": "spacing",
     "unit": "px"
   },
-  "atoms.logoWithDescriptor.default.md.elements.label.fontStyle": {
+  "atoms.logoWithDescriptor.default.md.label.fontStyle": {
     "value": "label-1",
     "type": "alias",
     "unit": ""
@@ -1136,13 +1136,13 @@
     "value": "main container",
     "type": "string"
   },
-  "atoms.options.default.lg.elements.option.fontStyle": {
+  "atoms.options.default.lg.option.fontStyle": {
     "value": "label-2",
     "type": "alias",
     "unit": "",
     "description": "Font style for large dropdown option"
   },
-  "atoms.options.default.lg.elements.option.minHeight": {
+  "atoms.options.default.lg.option.minHeight": {
     "value": 24,
     "type": "size",
     "unit": "px",
@@ -1152,13 +1152,13 @@
     "value": "component",
     "type": "string"
   },
-  "atoms.options.default.md.elements.option.fontStyle": {
+  "atoms.options.default.md.option.fontStyle": {
     "value": "label-3",
     "type": "alias",
     "unit": "",
     "description": "Font style for medium dropdown option"
   },
-  "atoms.options.default.md.elements.option.minHeight": {
+  "atoms.options.default.md.option.minHeight": {
     "value": 24,
     "type": "size",
     "unit": "px",
@@ -1202,19 +1202,19 @@
     "unit": "px",
     "description": "Width of the interactive area for the resizer"
   },
-  "atoms.resizer.default.elements.knob.width": {
+  "atoms.resizer.default.knob.width": {
     "value": 76,
     "type": "size",
     "unit": "px",
     "description": "Width of the draggable knob"
   },
-  "atoms.resizer.default.elements.knob.height": {
+  "atoms.resizer.default.knob.height": {
     "value": 6,
     "type": "size",
     "unit": "px",
     "description": "Height of the draggable knob"
   },
-  "atoms.resizer.default.elements.knob.borderRadius": {
+  "atoms.resizer.default.knob.borderRadius": {
     "value": 3,
     "type": "radius",
     "unit": "px",
@@ -1224,13 +1224,13 @@
     "value": "component",
     "type": "string"
   },
-  "atoms.scrollbar.default.elements.thumb.width": {
+  "atoms.scrollbar.default.thumb.width": {
     "value": 3,
     "type": "size",
     "unit": "px",
     "description": "Width of the scrollbar thumb"
   },
-  "atoms.scrollbar.default.elements.thumb.borderRadius": {
+  "atoms.scrollbar.default.thumb.borderRadius": {
     "value": 1.5,
     "type": "radius",
     "unit": "px",
@@ -1269,15 +1269,11 @@
     "unit": "px",
     "description": "Padding inside large sheet"
   },
-  "atoms.sheet.default.lg.elements.button.offset": {
+  "atoms.sheet.default.lg.button.offset": {
     "value": 24,
     "type": "spacing",
     "unit": "px",
     "description": "Offset for buttons inside large sheet"
-  },
-  "atoms.sheet.default.lg.type": {
-    "value": "component",
-    "type": "string"
   },
   "atoms.sheet.default.md.self.min-height": {
     "value": 32,
@@ -1306,45 +1302,67 @@
     "unit": "px",
     "description": "Padding inside medium sheet"
   },
-  "atoms.sheet.default.md.elements.button.offset": {
+  "atoms.sheet.default.md.button.offset": {
     "value": 24,
     "type": "spacing",
     "unit": "px",
     "description": "Offset for buttons inside medium sheet"
   },
-  "atoms.sheet.default.md.type": {
-    "value": "component",
-    "type": "string"
+  "atoms.simpleMenu.default.lg.self.gap": {
+    "value": 16,
+    "type": "spacing",
+    "unit": "px"
   },
-  "atoms.stepPaginationTabs.default.lg.elements.item.fontStyle": {
+  "atoms.simpleMenu.default.lg.self.padding": {
+    "value": 0,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "atoms.simpleMenu.default.lg.item-label.fontStyle": {
+    "value": "label-2",
+    "type": "alias",
+    "unit": ""
+  },
+  "atoms.simpleMenu.default.md.self.gap": {
+    "value": 16,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "atoms.simpleMenu.default.md.self.padding": {
+    "value": 0,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "atoms.simpleMenu.default.md.item-label.fontStyle": {
+    "value": "label-2",
+    "type": "alias",
+    "unit": ""
+  },
+  "atoms.stepPaginationTabs.default.lg.item.fontStyle": {
     "value": "title-3",
     "type": "alias",
     "unit": "",
     "description": "Font style for step pagination tab item on large screens"
   },
-  "atoms.stepPaginationTabs.default.lg.elements.item.padding": {
+  "atoms.stepPaginationTabs.default.lg.item.padding": {
     "value": 8,
     "type": "spacing",
     "unit": "px",
     "description": "Padding for step pagination tab item on large screens"
   },
-  "atoms.stepPaginationTabs.default.lg.type": {
-    "value": "component",
-    "type": "string"
-  },
-  "atoms.stepPaginationTabs.default.md.elements.item.fontStyle": {
+  "atoms.stepPaginationTabs.default.md.item.fontStyle": {
     "value": "title-4",
     "type": "alias",
     "unit": "",
     "description": "Font style for step pagination tab item on medium screens"
   },
-  "atoms.stepPaginationTabs.default.md.elements.item.padding": {
+  "atoms.stepPaginationTabs.default.md.item.padding": {
     "value": 8,
     "type": "spacing",
     "unit": "px",
     "description": "Padding for step pagination tab item on medium screens"
   },
-  "atoms.stepPaginationTabs.default.md.type": {
+  "atoms.stepPaginationTabs.default.type": {
     "value": "component",
     "type": "string"
   },
@@ -1363,17 +1381,17 @@
     "type": "spacing",
     "unit": "px"
   },
-  "atoms.toggleSwitch.default.lg.elements.track.padding": {
+  "atoms.toggleSwitch.default.lg.track.padding": {
     "value": 2,
     "type": "spacing",
     "unit": "px"
   },
-  "atoms.toggleSwitch.default.lg.elements.track.borderRadius": {
+  "atoms.toggleSwitch.default.lg.track.borderRadius": {
     "value": 10,
     "type": "radius",
     "unit": "px"
   },
-  "atoms.toggleSwitch.default.lg.elements.label.fontStyle": {
+  "atoms.toggleSwitch.default.lg.label.fontStyle": {
     "value": "label-3",
     "type": "alias"
   },
@@ -1392,17 +1410,17 @@
     "type": "spacing",
     "unit": "px"
   },
-  "atoms.toggleSwitch.default.md.elements.track.padding": {
+  "atoms.toggleSwitch.default.md.track.padding": {
     "value": 2,
     "type": "spacing",
     "unit": "px"
   },
-  "atoms.toggleSwitch.default.md.elements.track.borderRadius": {
+  "atoms.toggleSwitch.default.md.track.borderRadius": {
     "value": 7,
     "type": "radius",
     "unit": "px"
   },
-  "atoms.toggleSwitch.default.md.elements.label.fontStyle": {
+  "atoms.toggleSwitch.default.md.label.fontStyle": {
     "value": "label-3",
     "type": "alias"
   },
@@ -1421,17 +1439,17 @@
     "type": "spacing",
     "unit": "px"
   },
-  "atoms.toggleSwitch.default.sm.elements.track.padding": {
+  "atoms.toggleSwitch.default.sm.track.padding": {
     "value": 2,
     "type": "spacing",
     "unit": "px"
   },
-  "atoms.toggleSwitch.default.sm.elements.track.borderRadius": {
+  "atoms.toggleSwitch.default.sm.track.borderRadius": {
     "value": 6,
     "type": "radius",
     "unit": "px"
   },
-  "atoms.toggleSwitch.default.sm.elements.label.fontStyle": {
+  "atoms.toggleSwitch.default.sm.label.fontStyle": {
     "value": "label-3",
     "type": "alias"
   },
@@ -1441,12 +1459,12 @@
     "unit": "px",
     "description": "Border radius of the form"
   },
-  "molecules.form.default.md.elements.body.gap": {
+  "molecules.form.default.md.body.gap": {
     "value": 24,
     "type": "spacing",
     "unit": "px"
   },
-  "molecules.form.default.md.elements.body.padding": {
+  "molecules.form.default.md.body.padding": {
     "value": 12,
     "type": "spacing",
     "unit": "px"
@@ -1476,7 +1494,7 @@
     "unit": "px",
     "description": "Border width of the form wrapper"
   },
-  "molecules.formWrapper.default.lg.elements.header.padding": {
+  "molecules.formWrapper.default.lg.header.padding": {
     "value": [
       12,
       0

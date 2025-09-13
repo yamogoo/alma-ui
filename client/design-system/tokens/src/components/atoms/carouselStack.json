@@ -1,32 +1,28 @@
 {
   "default": {
     "lg": {
-      "elements": {
-        "header": {
-          "padding": {
-            "value": ["{tokens.spacing.lg.value}", "{tokens.spacing.lg.value}"],
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "Padding for the header inside large carousel stack",
-              "category": "carouselStack"
-            }
+      "header": {
+        "padding": {
+          "value": ["{tokens.spacing.lg.value}", "{tokens.spacing.lg.value}"],
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Padding for the header inside large carousel stack",
+            "category": "carouselStack"
           }
         }
       },
       "type": "component"
     },
     "md": {
-      "elements": {
-        "header": {
-          "padding": {
-            "value": ["{tokens.spacing.md.value}", "{tokens.spacing.md.value}"],
-            "type": "spacing",
-            "unit": "px",
-            "meta": {
-              "description": "Padding for the header inside medium carousel stack",
-              "category": "carouselStack"
-            }
+      "header": {
+        "padding": {
+          "value": ["{tokens.spacing.md.value}", "{tokens.spacing.md.value}"],
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Padding for the header inside medium carousel stack",
+            "category": "carouselStack"
           }
         }
       },

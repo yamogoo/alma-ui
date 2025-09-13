@@ -1,44 +1,42 @@
 {
   "default": {
-    "elements": {
-      "splitter": {
-        "normal": {
-          "value": "{themes.themes.light.abstracts.label.accent.value}",
-          "type": "color",
-          "unit": "hex",
-          "meta": {
-            "category": "text",
-            "description": "Normal color of the resizer splitter"
-          }
-        },
-        "active": {
-          "value": "{themes.themes.light.abstracts.label.accent.value}",
-          "type": "color",
-          "unit": "hex",
-          "meta": {
-            "category": "text",
-            "description": "Active color of the resizer splitter"
-          }
+    "splitter": {
+      "normal": {
+        "value": "{themes.themes.light.abstracts.label.accent.value}",
+        "type": "color",
+        "unit": "hex",
+        "meta": {
+          "category": "text",
+          "description": "Normal color of the resizer splitter"
         }
       },
-      "knob": {
-        "normal": {
-          "value": "{colors.gray-750}",
-          "type": "color",
-          "unit": "hex",
-          "meta": {
-            "category": "background",
-            "description": "Normal color of the resizer knob"
-          }
-        },
-        "active": {
-          "value": "{colors.accent-750}",
-          "type": "color",
-          "unit": "hex",
-          "meta": {
-            "category": "background",
-            "description": "Active color of the resizer knob"
-          }
+      "active": {
+        "value": "{themes.themes.light.abstracts.label.accent.value}",
+        "type": "color",
+        "unit": "hex",
+        "meta": {
+          "category": "text",
+          "description": "Active color of the resizer splitter"
+        }
+      }
+    },
+    "knob": {
+      "normal": {
+        "value": "{colors.gray-750}",
+        "type": "color",
+        "unit": "hex",
+        "meta": {
+          "category": "background",
+          "description": "Normal color of the resizer knob"
+        }
+      },
+      "active": {
+        "value": "{colors.accent-750}",
+        "type": "color",
+        "unit": "hex",
+        "meta": {
+          "category": "background",
+          "description": "Active color of the resizer knob"
         }
       }
     }

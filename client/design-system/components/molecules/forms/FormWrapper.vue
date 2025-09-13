@@ -43,7 +43,7 @@ withDefaults(defineProps<FormWrapperProps>(), {
       $border-radius: px2rem(get($val, "self.border-radius"));
       $border-width: px2rem(get($val, "self.border-width"));
 
-      $header-padding: get($val, "elements.header.padding");
+      $header-padding: get($val, "header.padding");
 
       &_variant-#{$variant} {
         &.form-wrapper_size-#{$size} {
