@@ -26,7 +26,7 @@ watch(isPressed, (isState) => {
 </script>
 
 <template>
-  <div ref="root" class="menu-item">
+  <div ref="root" class="menu-item" :aria-selected="isActive">
     <slot></slot>
   </div>
 </template>
