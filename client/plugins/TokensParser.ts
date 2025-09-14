@@ -7,6 +7,8 @@ import * as _ from "lodash-es";
 
 import { JSONBuilder, type JSONBuilderOptions } from "./JSONBuilder";
 
+/* * * Common Types * * */
+
 export type List<T> = Array<T>;
 
 export interface TokenObj {
@@ -76,6 +78,8 @@ export interface TokensParserOptions {
   useReflectOriginalStructure?: boolean;
 }
 
+/* * * Abstract Parser * * */
+
 abstract class Parser {
   abstract parseValue<T>(value: Value<T>, opts: ParseValueOptions): Value<T>;
   abstract parseList(list: List<unknown>, opts: ParseValueOptions): string;
@@ -86,6 +90,8 @@ abstract class Parser {
   ): string;
 }
 
+/* * * SCSS Parser * * */
+
 export class SCSSParser extends Parser {
   private tokensParser: TokensParser;
   private collectedCssVars: string[] = [];
@@ -95,7 +101,7 @@ export class SCSSParser extends Parser {
     this.tokensParser = tokensParser;
   }
 
-  // PUBLIC: очистить накопленные CSS-переменные (чтобы не дублировать между файлами)
+  // PUBLIC: clear accumulated CSS variables (to avoid duplication between files)
   public clearCssVars() {
     this.collectedCssVars = [];
   }
@@ -771,7 +777,7 @@ export class TokensParser {
           ? { [topLevelKey]: json }
           : json;
 
-      // --- Очистить ранее собранные CSS-переменные (чтобы не дублировались между файлами) ---
+      // --- Clear previously collected CSS variables (so they are not duplicated between files) ---
       if (this.parser instanceof SCSSParser) {
         this.parser.clearCssVars();
       }
@@ -782,8 +788,8 @@ export class TokensParser {
         const keyLine = `$${kebabKey}:`;
         const map = v as IMap;
 
-        // === ВАЖНО: передаём начальный path = [kebabKey] чтобы префикс сохранялся ===
-        // если kebabKey пустой (маловероятно), передаём fileName как fallback
+        // --- IMPORTANT: pass initial path = [kebabKey] so that the prefix is ​​preserved ---
+        // if kebabKey is empty (unlikely), pass fileName as fallback
         const initialPath =
           kebabKey && kebabKey.length > 0
             ? [kebabKey]
@@ -799,7 +805,7 @@ export class TokensParser {
         content += `${str}\n`;
       }
 
-      // --- CSS vars from exportAsVar (или convertToCSSVariables) ---
+      // --- CSS vars from exportAsVar (or convertToCSSVariables) ---
       if (this.parser instanceof SCSSParser) {
         const cssVarsBlock = this.parser.getCssVarsBlock();
         if (cssVarsBlock) {
