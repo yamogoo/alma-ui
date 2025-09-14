@@ -593,36 +593,6 @@ $themes:(
 )
 )
 ),
-  dropdown: (
-  primary: (
-  current-value: (
-  label: (
-  normal: #EAEDEF,
-  hovered: #DCE1E5,
-  expanded: #C0C9D0,
-  expanded-hovered: #B3BDC6
-),
-  icon: (
-  normal: #EAEDEF,
-  hovered: #DCE1E5,
-  expanded: #C0C9D0,
-  expanded-hovered: #B3BDC6
-),
-  background: (
-  normal: #242B31,
-  hovered: #2F383F,
-  expanded: #43505A,
-  expanded-hovered: #39444C
-)
-),
-  options: (
-  background: (
-  normal: #2F383F,
-  hovered: #2F383F
-)
-)
-)
-),
   group: (
   primary: (
   self: (
@@ -807,6 +777,64 @@ $themes:(
 )
 ),
   molecules: (
+  dropdown: (
+  primary: (
+  current-value: (
+  label: (
+  normal: #EAEDEF,
+  hovered: #DCE1E5,
+  expanded: #C0C9D0,
+  expanded-hovered: #B3BDC6
+),
+  icon: (
+  normal: #EAEDEF,
+  hovered: #DCE1E5,
+  expanded: #C0C9D0,
+  expanded-hovered: #B3BDC6
+),
+  background: (
+  normal: #242B31,
+  hovered: #2F383F,
+  expanded: #43505A,
+  expanded-hovered: #39444C
+)
+),
+  options: (
+  background: (
+  normal: #2F383F,
+  hovered: #2F383F
+)
+)
+),
+  secondary: (
+  current-value: (
+  label: (
+  normal: #EAEDEF,
+  hovered: #DCE1E5,
+  expanded: #C0C9D0,
+  expanded-hovered: #B3BDC6
+),
+  icon: (
+  normal: #EAEDEF,
+  hovered: #DCE1E5,
+  expanded: #C0C9D0,
+  expanded-hovered: #B3BDC6
+),
+  background: (
+  normal: #242B31,
+  hovered: #2F383F,
+  expanded: #43505A,
+  expanded-hovered: #39444C
+)
+),
+  options: (
+  background: (
+  normal: #2F383F,
+  hovered: #2F383F
+)
+)
+)
+),
   form: (
   primary: (
   background: rgba(#101315, .75),
@@ -1474,36 +1502,6 @@ $themes:(
 )
 )
 ),
-  dropdown: (
-  primary: (
-  current-value: (
-  label: (
-  normal: #1A1F23,
-  hovered: #101315,
-  expanded: #101315,
-  expanded-hovered: #101315
-),
-  icon: (
-  normal: #1A1F23,
-  hovered: #101315,
-  expanded: #2F383F,
-  expanded-hovered: #242B31
-),
-  background: (
-  normal: #E3E7EA,
-  hovered: #DCE1E5,
-  expanded: #E3E7EA,
-  expanded-hovered: #DCE1E5
-)
-),
-  options: (
-  background: (
-  normal: #D5DBE0,
-  hovered: #D5DBE0
-)
-)
-)
-),
   group: (
   primary: (
   self: (
@@ -1688,6 +1686,64 @@ $themes:(
 )
 ),
   molecules: (
+  dropdown: (
+  primary: (
+  current-value: (
+  label: (
+  normal: #1A1F23,
+  hovered: #101315,
+  expanded: #101315,
+  expanded-hovered: #101315
+),
+  icon: (
+  normal: #1A1F23,
+  hovered: #101315,
+  expanded: #2F383F,
+  expanded-hovered: #242B31
+),
+  background: (
+  normal: #EAEDEF,
+  hovered: #E3E7EA,
+  expanded: #EAEDEF,
+  expanded-hovered: #E3E7EA
+)
+),
+  options: (
+  background: (
+  normal: #DCE1E5,
+  hovered: #DCE1E5
+)
+)
+),
+  secondary: (
+  current-value: (
+  label: (
+  normal: #1A1F23,
+  hovered: #101315,
+  expanded: #101315,
+  expanded-hovered: #101315
+),
+  icon: (
+  normal: #1A1F23,
+  hovered: #101315,
+  expanded: #2F383F,
+  expanded-hovered: #242B31
+),
+  background: (
+  normal: #E3E7EA,
+  hovered: #DCE1E5,
+  expanded: #E3E7EA,
+  expanded-hovered: #DCE1E5
+)
+),
+  options: (
+  background: (
+  normal: #D5DBE0,
+  hovered: #D5DBE0
+)
+)
+)
+),
   form: (
   primary: (
   background: rgba(#F8F9FA, 0.75),
@@ -1765,7 +1821,3 @@ $themes:(
 )
 )
 );
-
-:root {
-  --scale-factor: 1;
-}

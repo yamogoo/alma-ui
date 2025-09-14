@@ -195,8 +195,8 @@ $atoms:(
   md: (
   self: (
   gap: 12px,
-  padding-v: 0px,
-  padding-h: 8px
+  padding-v: 4px,
+  padding-h: 4px
 )
 )
 )
@@ -229,69 +229,12 @@ $atoms:(
 )
 )
 ),
-  dropdown: (
-  default: (
-  lg: (
-  self: (
-  min-width: 76px,
-  height: 56px
-),
-  current-value: (
-  self: (
-  gap: 8px,
-  padding: 8px 12px 8px 12px,
-  border-radius: 8px
-),
-  label: (
-  font-style: label-2
-),
-  icon: (
-  size: 12px
-)
-),
-  options: (
-  padding: 8px 12px 8px 12px,
-  border-radius: 8px
-),
-  tokens: (
-  padding: 8px 12px 8px 12px,
-  border-radius: 8px
-)
-),
-  md: (
-  self: (
-  min-width: 76px,
-  height: 44px
-),
-  current-value: (
-  self: (
-  gap: 8px,
-  padding: 8px 12px 8px 12px,
-  border-radius: 8px
-),
-  label: (
-  font-style: label-3
-),
-  icon: (
-  size: 12px
-)
-),
-  options: (
-  padding: 8px 12px 8px 12px,
-  border-radius: 8px
-),
-  tokens: (
-  padding: 8px 12px 8px 12px,
-  border-radius: 8px
-)
-)
-)
-),
   group: (
   default: (
   lg: (
   self: (
   gap: 24px,
+  padding: 0px,
   border-radius: 0px,
   border-width: 1px
 )
@@ -299,6 +242,7 @@ $atoms:(
   md: (
   self: (
   gap: 16px,
+  padding: 0px,
   border-radius: 0px,
   border-width: 1px
 )
@@ -306,6 +250,7 @@ $atoms:(
   sm: (
   self: (
   gap: 12px,
+  padding: 0px,
   border-radius: 0px,
   border-width: 1px
 )
@@ -315,20 +260,23 @@ $atoms:(
   lg: (
   self: (
   gap: 24px,
+  padding: 4px,
   border-radius: 16px,
   border-width: 1px
 )
 ),
   md: (
   self: (
-  gap: 16px,
+  gap: 12px,
+  padding: 4px,
   border-radius: 12px,
   border-width: 1px
 )
 ),
   sm: (
   self: (
-  gap: 12px,
+  gap: 8px,
+  padding: 4px,
   border-radius: 8px,
   border-width: 1px
 )
@@ -549,6 +497,18 @@ $atoms:(
 )
 )
 ),
+  snackbar: (
+  default: (
+  lg: (
+  self: (
+  gap: 12px,
+  padding-h: 24px,
+  padding-v: 16px,
+  border-radius: 12px
+)
+)
+)
+),
   step-pagination-tabs: (
   default: (
   lg: (
@@ -613,6 +573,64 @@ $atoms:(
 )
 );
 $molecules:(
+  dropdown: (
+  default: (
+  lg: (
+  self: (
+  min-width: 76px,
+  height: 56px
+),
+  current-value: (
+  self: (
+  gap: 8px,
+  padding: 8px 12px 8px 12px,
+  border-radius: 8px
+),
+  label: (
+  font-style: label-2
+),
+  icon: (
+  size: 12px
+)
+),
+  options: (
+  padding: 8px 12px 8px 12px,
+  border-radius: 8px
+),
+  tokens: (
+  padding: 8px 12px 8px 12px,
+  border-radius: 8px
+)
+),
+  md: (
+  self: (
+  min-width: 76px,
+  height: 44px
+),
+  current-value: (
+  self: (
+  gap: 8px,
+  padding: 8px 12px 8px 12px,
+  border-radius: 8px
+),
+  label: (
+  font-style: label-3
+),
+  icon: (
+  size: 12px
+)
+),
+  options: (
+  padding: 8px 12px 8px 12px,
+  border-radius: 8px
+),
+  tokens: (
+  padding: 8px 12px 8px 12px,
+  border-radius: 8px
+)
+)
+)
+),
   form: (
   default: (
   md: (
@@ -684,3 +702,230 @@ $templates:(
 )
 )
 );
+
+:root {
+  --components-atoms-action-sheet-default-lg-self-min-height: 32px;
+  --components-atoms-action-sheet-default-lg-self-border-radius: 16px;
+  --components-atoms-action-sheet-default-lg-self-padding: 48px 24px 24px 24px;
+  --components-atoms-action-sheet-default-md-self-min-height: 32px;
+  --components-atoms-action-sheet-default-md-self-border-radius: 12px;
+  --components-atoms-action-sheet-default-md-self-padding: 24px 24px;
+  --components-atoms-button-default-lg-self-size: 56px;
+  --components-atoms-button-default-lg-self-gap: 12px;
+  --components-atoms-button-default-lg-self-padding: 0px 32px 0px 32px;
+  --components-atoms-button-default-lg-self-border-radius: 9999px;
+  --components-atoms-button-default-lg-label-font-style: label-1;
+  --components-atoms-button-default-lg-icon-size: 20px;
+  --components-atoms-button-default-lg-icon-alias-size: sm;
+  --components-atoms-button-default-md-self-size: 44px;
+  --components-atoms-button-default-md-self-gap: 12px;
+  --components-atoms-button-default-md-self-padding: 0px 24px 0px 24px;
+  --components-atoms-button-default-md-self-border-radius: 9999px;
+  --components-atoms-button-default-md-label-font-style: label-2;
+  --components-atoms-button-default-md-icon-size: 16px;
+  --components-atoms-button-default-md-icon-alias-size: xs;
+  --components-atoms-button-default-sm-self-size: 40px;
+  --components-atoms-button-default-sm-self-gap: 12px;
+  --components-atoms-button-default-sm-self-padding: 0px 12px 0px 12px;
+  --components-atoms-button-default-sm-self-border-radius: 9999px;
+  --components-atoms-button-default-sm-label-font-style: label-3;
+  --components-atoms-button-default-sm-icon-size: 16px;
+  --components-atoms-button-default-sm-icon-alias-size: xs;
+  --components-atoms-button-default-xs-self-size: 36px;
+  --components-atoms-button-default-xs-self-gap: 12px;
+  --components-atoms-button-default-xs-self-padding: 0px 12px;
+  --components-atoms-button-default-xs-self-border-radius: 9999px;
+  --components-atoms-button-default-xs-label-font-style: label-3;
+  --components-atoms-button-default-xs-icon-size: 12px;
+  --components-atoms-button-default-xs-icon-alias-size: xxs;
+  --components-atoms-button-rounded-lg-self-size: 56px;
+  --components-atoms-button-rounded-lg-self-gap: 12px;
+  --components-atoms-button-rounded-lg-self-padding: 0px 0px 0px 0px;
+  --components-atoms-button-rounded-lg-self-border-radius: 9999px;
+  --components-atoms-button-rounded-lg-label-font-style: label-1;
+  --components-atoms-button-rounded-lg-icon-size: 20px;
+  --components-atoms-button-rounded-lg-icon-alias-size: sm;
+  --components-atoms-button-rounded-md-self-size: 44px;
+  --components-atoms-button-rounded-md-self-gap: 12px;
+  --components-atoms-button-rounded-md-self-padding: 0px 0px 0px 0px;
+  --components-atoms-button-rounded-md-self-border-radius: 9999px;
+  --components-atoms-button-rounded-md-label-font-style: label-3;
+  --components-atoms-button-rounded-md-icon-size: 16px;
+  --components-atoms-button-rounded-md-icon-alias-size: xs;
+  --components-atoms-button-rounded-sm-self-size: 32px;
+  --components-atoms-button-rounded-sm-self-gap: 12px;
+  --components-atoms-button-rounded-sm-self-padding: 0px 24px 0px 24px;
+  --components-atoms-button-rounded-sm-self-border-radius: 9999px;
+  --components-atoms-button-rounded-sm-label-font-style: label-4;
+  --components-atoms-button-rounded-sm-icon-size: 16px;
+  --components-atoms-button-rounded-sm-icon-alias-size: xs;
+  --components-atoms-button-rounded-xs-self-size: 24px;
+  --components-atoms-button-rounded-xs-self-gap: 12px;
+  --components-atoms-button-rounded-xs-self-padding: 0px 24px 0px 24px;
+  --components-atoms-button-rounded-xs-self-border-radius: 9999px;
+  --components-atoms-button-rounded-xs-label-font-style: label-4;
+  --components-atoms-button-rounded-xs-icon-size: 12px;
+  --components-atoms-button-rounded-xs-icon-alias-size: xxs;
+  --components-atoms-carousel-stack-default-lg-header-padding: 24px 24px;
+  --components-atoms-carousel-stack-default-md-header-padding: 16px 16px;
+  --components-atoms-char-tooltip-label-default-lg-self-gap: 12px;
+  --components-atoms-char-tooltip-label-default-lg-self-padding: 8px 12px;
+  --components-atoms-char-tooltip-label-default-lg-self-border-radius: 8px;
+  --components-atoms-char-tooltip-label-default-lg-label-font-style: caption-1;
+  --components-atoms-control-wrapper-default-md-self-gap: 12px;
+  --components-atoms-control-wrapper-default-md-self-padding-v: 4px;
+  --components-atoms-control-wrapper-default-md-self-padding-h: 4px;
+  --components-atoms-divider-default-lg-self-border-width: 1px;
+  --components-atoms-divider-default-lg-self-padding: 16px;
+  --components-atoms-divider-default-md-self-border-width: 1px;
+  --components-atoms-divider-default-md-self-padding: 12px;
+  --components-atoms-divider-default-sm-self-border-width: 1px;
+  --components-atoms-divider-default-sm-self-padding: 8px;
+  --components-atoms-divider-default-xs-self-border-width: 1px;
+  --components-atoms-divider-default-xs-self-padding: 0px;
+  --components-atoms-group-default-lg-self-gap: 24px;
+  --components-atoms-group-default-lg-self-padding: 0px;
+  --components-atoms-group-default-lg-self-border-radius: 0px;
+  --components-atoms-group-default-lg-self-border-width: 1px;
+  --components-atoms-group-default-md-self-gap: 16px;
+  --components-atoms-group-default-md-self-padding: 0px;
+  --components-atoms-group-default-md-self-border-radius: 0px;
+  --components-atoms-group-default-md-self-border-width: 1px;
+  --components-atoms-group-default-sm-self-gap: 12px;
+  --components-atoms-group-default-sm-self-padding: 0px;
+  --components-atoms-group-default-sm-self-border-radius: 0px;
+  --components-atoms-group-default-sm-self-border-width: 1px;
+  --components-atoms-group-block-lg-self-gap: 24px;
+  --components-atoms-group-block-lg-self-padding: 4px;
+  --components-atoms-group-block-lg-self-border-radius: 16px;
+  --components-atoms-group-block-lg-self-border-width: 1px;
+  --components-atoms-group-block-md-self-gap: 12px;
+  --components-atoms-group-block-md-self-padding: 4px;
+  --components-atoms-group-block-md-self-border-radius: 12px;
+  --components-atoms-group-block-md-self-border-width: 1px;
+  --components-atoms-group-block-sm-self-gap: 8px;
+  --components-atoms-group-block-sm-self-padding: 4px;
+  --components-atoms-group-block-sm-self-border-radius: 8px;
+  --components-atoms-group-block-sm-self-border-width: 1px;
+  --components-atoms-icon-default-xxs-self-size: 12px;
+  --components-atoms-icon-default-xs-self-size: 16px;
+  --components-atoms-icon-default-sm-self-size: 20px;
+  --components-atoms-icon-default-md-self-size: 24px;
+  --components-atoms-icon-default-lg-self-size: 32px;
+  --components-atoms-icon-default-xl-self-size: 48px;
+  --components-atoms-icon-default-xxl-self-size: 56px;
+  --components-atoms-input-default-md-self-height: 44px;
+  --components-atoms-input-default-md-self-whole-height: 60px;
+  --components-atoms-input-default-md-self-padding: 8px 16px;
+  --components-atoms-input-default-md-self-border-radius: 16px;
+  --components-atoms-input-default-md-label-font-style: label-3;
+  --components-atoms-input-default-md-label-padding-top: 12px;
+  --components-atoms-input-default-md-placeholder-font-style: label-3;
+  --components-atoms-input-default-md-error-font-style: caption-1;
+  --components-atoms-input-default-md-error-padding: 0px 16px 0px 16px;
+  --components-atoms-input-default-lg-self-height: 52px;
+  --components-atoms-input-default-lg-self-whole-height: 68px;
+  --components-atoms-input-default-lg-self-padding: 8px 16px 8px 16px;
+  --components-atoms-input-default-lg-self-border-radius: 8px;
+  --components-atoms-input-default-lg-label-font-style: label-3;
+  --components-atoms-input-default-lg-label-padding-top: 12px;
+  --components-atoms-input-default-lg-placeholder-font-style: label-3;
+  --components-atoms-input-default-lg-error-font-style: caption-1;
+  --components-atoms-input-default-lg-error-padding: 0px 16px 0px 16px;
+  --components-atoms-logo-with-descriptor-default-md-self-gap: 12px;
+  --components-atoms-logo-with-descriptor-default-md-label-font-style: label-1;
+  --components-atoms-main-container-default-self-border-radius: 16px;
+  --components-atoms-main-container-default-self-media-lg-padding: 8px;
+  --components-atoms-main-container-default-self-media-md-padding: 8px;
+  --components-atoms-options-default-lg-option-font-style: label-2;
+  --components-atoms-options-default-lg-option-min-height: 24px;
+  --components-atoms-options-default-md-option-font-style: label-3;
+  --components-atoms-options-default-md-option-min-height: 24px;
+  --components-atoms-progressbar-default-lg-self-height: 10px;
+  --components-atoms-progressbar-default-lg-self-border-radius: 5px;
+  --components-atoms-progressbar-default-md-self-height: 8px;
+  --components-atoms-progressbar-default-md-self-border-radius: 4px;
+  --components-atoms-resizer-default-self-active-area-width: 20px;
+  --components-atoms-resizer-default-knob-width: 76px;
+  --components-atoms-resizer-default-knob-height: 6px;
+  --components-atoms-resizer-default-knob-border-radius: 3px;
+  --components-atoms-scrollbar-default-thumb-width: 3px;
+  --components-atoms-scrollbar-default-thumb-border-radius: 1.5px;
+  --components-atoms-sheet-default-lg-self-min-height: 32px;
+  --components-atoms-sheet-default-lg-self-border-radius: 16px;
+  --components-atoms-sheet-default-lg-self-gap: 32px;
+  --components-atoms-sheet-default-lg-self-padding: 48px 24px 24px 24px;
+  --components-atoms-sheet-default-lg-button-offset: 24px;
+  --components-atoms-sheet-default-md-self-min-height: 32px;
+  --components-atoms-sheet-default-md-self-border-radius: 16px;
+  --components-atoms-sheet-default-md-self-gap: 16px;
+  --components-atoms-sheet-default-md-self-padding: 24px 24px;
+  --components-atoms-sheet-default-md-button-offset: 24px;
+  --components-atoms-simple-menu-default-lg-self-gap: 16px;
+  --components-atoms-simple-menu-default-lg-self-padding: 0px;
+  --components-atoms-simple-menu-default-lg-item-label-font-style: label-2;
+  --components-atoms-simple-menu-default-md-self-gap: 16px;
+  --components-atoms-simple-menu-default-md-self-padding: 0px;
+  --components-atoms-simple-menu-default-md-item-label-font-style: label-2;
+  --components-atoms-snackbar-default-lg-self-gap: 12px;
+  --components-atoms-snackbar-default-lg-self-padding-h: 24px;
+  --components-atoms-snackbar-default-lg-self-padding-v: 16px;
+  --components-atoms-snackbar-default-lg-self-border-radius: 12px;
+  --components-atoms-step-pagination-tabs-default-lg-item-font-style: title-3;
+  --components-atoms-step-pagination-tabs-default-lg-item-padding: 8px;
+  --components-atoms-step-pagination-tabs-default-md-item-font-style: title-4;
+  --components-atoms-step-pagination-tabs-default-md-item-padding: 8px;
+  --components-atoms-toggle-switch-default-lg-self-width: 40px;
+  --components-atoms-toggle-switch-default-lg-self-height: 20px;
+  --components-atoms-toggle-switch-default-lg-self-gap: 10px;
+  --components-atoms-toggle-switch-default-lg-track-padding: 2px;
+  --components-atoms-toggle-switch-default-lg-track-border-radius: 10px;
+  --components-atoms-toggle-switch-default-lg-label-font-style: label-3;
+  --components-atoms-toggle-switch-default-md-self-width: 36px;
+  --components-atoms-toggle-switch-default-md-self-height: 18px;
+  --components-atoms-toggle-switch-default-md-self-gap: 10px;
+  --components-atoms-toggle-switch-default-md-track-padding: 2px;
+  --components-atoms-toggle-switch-default-md-track-border-radius: 7px;
+  --components-atoms-toggle-switch-default-md-label-font-style: label-3;
+  --components-atoms-toggle-switch-default-sm-self-width: 32px;
+  --components-atoms-toggle-switch-default-sm-self-height: 16px;
+  --components-atoms-toggle-switch-default-sm-self-gap: 10px;
+  --components-atoms-toggle-switch-default-sm-track-padding: 2px;
+  --components-atoms-toggle-switch-default-sm-track-border-radius: 6px;
+  --components-atoms-toggle-switch-default-sm-label-font-style: label-3;
+  --components-molecules-dropdown-default-lg-self-min-width: 76px;
+  --components-molecules-dropdown-default-lg-self-height: 56px;
+  --components-molecules-dropdown-default-lg-current-value-self-gap: 8px;
+  --components-molecules-dropdown-default-lg-current-value-self-padding: 8px 12px 8px 12px;
+  --components-molecules-dropdown-default-lg-current-value-self-border-radius: 8px;
+  --components-molecules-dropdown-default-lg-current-value-label-font-style: label-2;
+  --components-molecules-dropdown-default-lg-current-value-icon-size: 12px;
+  --components-molecules-dropdown-default-lg-options-padding: 8px 12px 8px 12px;
+  --components-molecules-dropdown-default-lg-options-border-radius: 8px;
+  --components-molecules-dropdown-default-lg-tokens-padding: 8px 12px 8px 12px;
+  --components-molecules-dropdown-default-lg-tokens-border-radius: 8px;
+  --components-molecules-dropdown-default-md-self-min-width: 76px;
+  --components-molecules-dropdown-default-md-self-height: 44px;
+  --components-molecules-dropdown-default-md-current-value-self-gap: 8px;
+  --components-molecules-dropdown-default-md-current-value-self-padding: 8px 12px 8px 12px;
+  --components-molecules-dropdown-default-md-current-value-self-border-radius: 8px;
+  --components-molecules-dropdown-default-md-current-value-label-font-style: label-3;
+  --components-molecules-dropdown-default-md-current-value-icon-size: 12px;
+  --components-molecules-dropdown-default-md-options-padding: 8px 12px 8px 12px;
+  --components-molecules-dropdown-default-md-options-border-radius: 8px;
+  --components-molecules-dropdown-default-md-tokens-padding: 8px 12px 8px 12px;
+  --components-molecules-dropdown-default-md-tokens-border-radius: 8px;
+  --components-molecules-form-default-md-self-border-radius: 20px;
+  --components-molecules-form-default-md-body-gap: 24px;
+  --components-molecules-form-default-md-body-padding: 12px;
+  --components-molecules-form-wrapper-default-lg-self-padding: 16px 24px;
+  --components-molecules-form-wrapper-default-lg-self-border-radius: 20px;
+  --components-molecules-form-wrapper-default-lg-self-border-width: 0px;
+  --components-molecules-form-wrapper-default-lg-header-padding: 12px 0px;
+  --components-templates-main-footer-default-lg-self-padding: 16px;
+  --components-templates-main-footer-default-md-self-padding: 12px;
+  --components-templates-main-footer-default-sm-self-padding: 8px;
+  --components-templates-main-header-default-lg-self-padding: 16px;
+  --components-templates-main-header-default-md-self-padding: 12px;
+  --components-templates-main-header-default-sm-self-padding: 8px;
+}

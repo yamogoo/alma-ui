@@ -11,6 +11,14 @@
             "category": "group"
           }
         },
+        "padding": {
+          "value": 0,
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "group"
+          }
+        },
         "borderRadius": {
           "value": 0,
           "type": "radius",
@@ -42,6 +50,14 @@
             "category": "group"
           }
         },
+        "padding": {
+          "value": 0,
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "group"
+          }
+        },
         "borderRadius": {
           "value": 0,
           "type": "radius",
@@ -70,6 +86,14 @@
           "unit": "px",
           "meta": {
             "description": "Gap between elements in small group",
+            "category": "group"
+          }
+        },
+        "padding": {
+          "value": 0,
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
             "category": "group"
           }
         },
@@ -106,6 +130,14 @@
             "category": "group"
           }
         },
+        "padding": {
+          "value": "{tokens.spacing.xxs.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "group"
+          }
+        },
         "borderRadius": {
           "value": "{tokens.roundness.md.value}",
           "type": "radius",
@@ -129,11 +161,19 @@
     "md": {
       "self": {
         "gap": {
-          "value": "{tokens.spacing.md.value}",
+          "value": "{tokens.spacing.sm.value}",
           "type": "spacing",
           "unit": "px",
           "meta": {
             "description": "Gap between elements in medium group",
+            "category": "group"
+          }
+        },
+        "padding": {
+          "value": "{tokens.spacing.xxs.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
             "category": "group"
           }
         },
@@ -160,11 +200,19 @@
     "sm": {
       "self": {
         "gap": {
-          "value": "{tokens.spacing.sm.value}",
+          "value": "{tokens.spacing.xs.value}",
           "type": "spacing",
           "unit": "px",
           "meta": {
             "description": "Gap between elements in small group",
+            "category": "group"
+          }
+        },
+        "padding": {
+          "value": "{tokens.spacing.xxs.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
             "category": "group"
           }
         },

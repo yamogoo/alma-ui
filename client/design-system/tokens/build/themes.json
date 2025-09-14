@@ -1424,134 +1424,6 @@
             }
           }
         },
-        "dropdown": {
-          "primary": {
-            "currentValue": {
-              "label": {
-                "normal": {
-                  "value": "#EAEDEF",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "hovered": {
-                  "value": "#DCE1E5",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "expanded": {
-                  "value": "#C0C9D0",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "expandedHovered": {
-                  "value": "#B3BDC6",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                }
-              },
-              "icon": {
-                "normal": {
-                  "value": "#EAEDEF",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "hovered": {
-                  "value": "#DCE1E5",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "expanded": {
-                  "value": "#C0C9D0",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "expandedHovered": {
-                  "value": "#B3BDC6",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                }
-              },
-              "background": {
-                "normal": {
-                  "value": "#242B31",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "hovered": {
-                  "value": "#2F383F",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "expanded": {
-                  "value": "#43505A",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "expandedHovered": {
-                  "value": "#39444C",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                }
-              }
-            },
-            "options": {
-              "background": {
-                "normal": {
-                  "value": "#2F383F",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "hovered": {
-                  "value": "#2F383F",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                }
-              }
-            }
-          }
-        },
         "group": {
           "primary": {
             "self": {
@@ -2019,6 +1891,260 @@
         }
       },
       "molecules": {
+        "dropdown": {
+          "primary": {
+            "currentValue": {
+              "label": {
+                "normal": {
+                  "value": "#EAEDEF",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "hovered": {
+                  "value": "#DCE1E5",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expanded": {
+                  "value": "#C0C9D0",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expandedHovered": {
+                  "value": "#B3BDC6",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                }
+              },
+              "icon": {
+                "normal": {
+                  "value": "#EAEDEF",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "hovered": {
+                  "value": "#DCE1E5",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expanded": {
+                  "value": "#C0C9D0",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expandedHovered": {
+                  "value": "#B3BDC6",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                }
+              },
+              "background": {
+                "normal": {
+                  "value": "#242B31",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "hovered": {
+                  "value": "#2F383F",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expanded": {
+                  "value": "#43505A",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expandedHovered": {
+                  "value": "#39444C",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                }
+              }
+            },
+            "options": {
+              "background": {
+                "normal": {
+                  "value": "#2F383F",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "hovered": {
+                  "value": "#2F383F",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                }
+              }
+            }
+          },
+          "secondary": {
+            "currentValue": {
+              "label": {
+                "normal": {
+                  "value": "#EAEDEF",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "hovered": {
+                  "value": "#DCE1E5",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expanded": {
+                  "value": "#C0C9D0",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expandedHovered": {
+                  "value": "#B3BDC6",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                }
+              },
+              "icon": {
+                "normal": {
+                  "value": "#EAEDEF",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "hovered": {
+                  "value": "#DCE1E5",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expanded": {
+                  "value": "#C0C9D0",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expandedHovered": {
+                  "value": "#B3BDC6",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                }
+              },
+              "background": {
+                "normal": {
+                  "value": "#242B31",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "hovered": {
+                  "value": "#2F383F",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expanded": {
+                  "value": "#43505A",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expandedHovered": {
+                  "value": "#39444C",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                }
+              }
+            },
+            "options": {
+              "background": {
+                "normal": {
+                  "value": "#2F383F",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "hovered": {
+                  "value": "#2F383F",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                }
+              }
+            }
+          }
+        },
         "form": {
           "primary": {
             "background": {
@@ -3725,134 +3851,6 @@
             }
           }
         },
-        "dropdown": {
-          "primary": {
-            "currentValue": {
-              "label": {
-                "normal": {
-                  "value": "#1A1F23",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "hovered": {
-                  "value": "#101315",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "expanded": {
-                  "value": "#101315",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "expandedHovered": {
-                  "value": "#101315",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                }
-              },
-              "icon": {
-                "normal": {
-                  "value": "#1A1F23",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "hovered": {
-                  "value": "#101315",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "expanded": {
-                  "value": "#2F383F",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "expandedHovered": {
-                  "value": "#242B31",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                }
-              },
-              "background": {
-                "normal": {
-                  "value": "#E3E7EA",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "hovered": {
-                  "value": "#DCE1E5",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "expanded": {
-                  "value": "#E3E7EA",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "expandedHovered": {
-                  "value": "#DCE1E5",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                }
-              }
-            },
-            "options": {
-              "background": {
-                "normal": {
-                  "value": "#D5DBE0",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                },
-                "hovered": {
-                  "value": "#D5DBE0",
-                  "type": "color",
-                  "unit": "hex",
-                  "meta": {
-                    "category": "dropdown"
-                  }
-                }
-              }
-            }
-          }
-        },
         "group": {
           "primary": {
             "self": {
@@ -4366,6 +4364,260 @@
         }
       },
       "molecules": {
+        "dropdown": {
+          "primary": {
+            "currentValue": {
+              "label": {
+                "normal": {
+                  "value": "#1A1F23",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "hovered": {
+                  "value": "#101315",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expanded": {
+                  "value": "#101315",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expandedHovered": {
+                  "value": "#101315",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                }
+              },
+              "icon": {
+                "normal": {
+                  "value": "#1A1F23",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "hovered": {
+                  "value": "#101315",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expanded": {
+                  "value": "#2F383F",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expandedHovered": {
+                  "value": "#242B31",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                }
+              },
+              "background": {
+                "normal": {
+                  "value": "#EAEDEF",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "hovered": {
+                  "value": "#E3E7EA",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expanded": {
+                  "value": "#EAEDEF",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expandedHovered": {
+                  "value": "#E3E7EA",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                }
+              }
+            },
+            "options": {
+              "background": {
+                "normal": {
+                  "value": "#DCE1E5",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "hovered": {
+                  "value": "#DCE1E5",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                }
+              }
+            }
+          },
+          "secondary": {
+            "currentValue": {
+              "label": {
+                "normal": {
+                  "value": "#1A1F23",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "hovered": {
+                  "value": "#101315",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expanded": {
+                  "value": "#101315",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expandedHovered": {
+                  "value": "#101315",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                }
+              },
+              "icon": {
+                "normal": {
+                  "value": "#1A1F23",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "hovered": {
+                  "value": "#101315",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expanded": {
+                  "value": "#2F383F",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expandedHovered": {
+                  "value": "#242B31",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                }
+              },
+              "background": {
+                "normal": {
+                  "value": "#E3E7EA",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "hovered": {
+                  "value": "#DCE1E5",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expanded": {
+                  "value": "#E3E7EA",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "expandedHovered": {
+                  "value": "#DCE1E5",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                }
+              }
+            },
+            "options": {
+              "background": {
+                "normal": {
+                  "value": "#D5DBE0",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                },
+                "hovered": {
+                  "value": "#D5DBE0",
+                  "type": "color",
+                  "unit": "hex",
+                  "meta": {
+                    "category": "dropdown"
+                  }
+                }
+              }
+            }
+          }
+        },
         "form": {
           "primary": {
             "background": {

@@ -8,11 +8,11 @@ import { MainMenu } from "@@/components/organisms";
 </script>
 
 <template>
-  <MainHeader class="app-header">
+  <MainHeader class="app-header" data-testid="app-header">
     <template #left>
-      <MainLogo></MainLogo>
+      <MainLogo data-testid="app-header-logo"></MainLogo>
     </template>
-    <MainMenu v-if="false"></MainMenu>
+    <MainMenu v-if="false" data-testid="app-header-menu"></MainMenu>
     <template #right>
       <Group :direction="'forward'" :orientation="'horizontal'" :size="'md'">
         <ToolbarBlock><LanguageMenu></LanguageMenu></ToolbarBlock>

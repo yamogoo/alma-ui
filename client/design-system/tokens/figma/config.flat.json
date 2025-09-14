@@ -1,4 +1,9 @@
 {
+  "config.IS_FULL_RUNTIME": {
+    "value": true,
+    "type": "boolean",
+    "unit": ""
+  },
   "config.scaleFactor": {
     "value": 1,
     "type": "number",

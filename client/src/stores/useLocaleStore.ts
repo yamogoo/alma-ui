@@ -4,7 +4,7 @@ import { defineStore } from "pinia";
 import locales from "@@/locales";
 import { useTypedLocalStorage } from "@/composables/local";
 
-import type { Locale } from "@@/typings";
+import type { Locale, LocaleSchema } from "@@/typings";
 
 const DEFAULT_LOCALE = import.meta.env.VITE_APP_DEFAULT_LOCALE as Locale;
 
@@ -28,7 +28,9 @@ export const useLocaleStore = defineStore("locale-store", () => {
     }
   };
 
-  const $t = computed(() => locales.app[currentLocale.value]);
+  const $t = computed<LocaleSchema>(() => {
+    return locales.app[currentLocale.value];
+  });
 
   return {
     currentLocale,

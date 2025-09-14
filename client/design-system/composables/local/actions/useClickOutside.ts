@@ -10,10 +10,12 @@ export const useClickOutside = (el: Ref, cb: (...args: unknown[]) => void) => {
 
   onMounted(() => {
     window.addEventListener("pointerdown", listener);
+    window.addEventListener("click", listener);
   });
 
   onBeforeUnmount(() => {
     window.removeEventListener("pointerdown", listener);
+    window.removeEventListener("click", listener);
   });
 
   return { listener };

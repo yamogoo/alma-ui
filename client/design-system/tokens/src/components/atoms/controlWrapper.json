@@ -11,7 +11,7 @@
           }
         },
         "paddingV": {
-          "value": 0,
+          "value": "{tokens.spacing.xxs.value}",
           "type": "spacing",
           "unit": "px",
           "meta": {
@@ -19,7 +19,7 @@
           }
         },
         "paddingH": {
-          "value": "{tokens.spacing.xs.value}",
+          "value": "{tokens.spacing.xxs.value}",
           "type": "spacing",
           "unit": "px",
           "meta": {

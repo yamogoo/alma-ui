@@ -2,9 +2,11 @@
 
 
 $config:(
+  is_full_runtime: true,
   scale-factor: 1
 );
 
 :root {
+  --IS-FULL-RUNTIME: true;
   --scale-factor: 1;
 }

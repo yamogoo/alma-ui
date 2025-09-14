@@ -795,7 +795,7 @@
               }
             },
             "paddingV": {
-              "value": 0,
+              "value": 4,
               "type": "spacing",
               "unit": "px",
               "meta": {
@@ -803,7 +803,7 @@
               }
             },
             "paddingH": {
-              "value": 8,
+              "value": 4,
               "type": "spacing",
               "unit": "px",
               "meta": {
@@ -910,274 +910,6 @@
         }
       }
     },
-    "dropdown": {
-      "default": {
-        "lg": {
-          "self": {
-            "minWidth": {
-              "value": 76,
-              "type": "size",
-              "unit": "px",
-              "meta": {
-                "description": "Minimum width of large dropdown",
-                "category": "dropDown"
-              }
-            },
-            "height": {
-              "value": 56,
-              "type": "size",
-              "unit": "px",
-              "meta": {
-                "description": "Height of large dropdown",
-                "category": "dropDown"
-              }
-            }
-          },
-          "currentValue": {
-            "self": {
-              "gap": {
-                "value": 8,
-                "type": "spacing",
-                "unit": "px",
-                "meta": {
-                  "description": "Gap inside dropdown value component",
-                  "category": "dropDown"
-                }
-              },
-              "padding": {
-                "value": [
-                  8,
-                  12,
-                  8,
-                  12
-                ],
-                "type": "spacing",
-                "unit": "px",
-                "meta": {
-                  "description": "Padding inside dropdown value component",
-                  "category": "dropDown"
-                }
-              },
-              "borderRadius": {
-                "value": 8,
-                "type": "radius",
-                "unit": "px",
-                "meta": {
-                  "description": "Border radius of dropdown value component",
-                  "category": "dropDown"
-                }
-              }
-            },
-            "label": {
-              "fontStyle": {
-                "value": "label-2",
-                "type": "alias",
-                "unit": "",
-                "meta": {
-                  "description": "Font style for dropdown value label",
-                  "category": "typography"
-                }
-              }
-            },
-            "icon": {
-              "size": {
-                "value": 12,
-                "type": "size",
-                "unit": "px",
-                "meta": {
-                  "description": "Icon size for dropdown value",
-                  "category": "dropDown"
-                }
-              }
-            },
-            "type": "component"
-          },
-          "options": {
-            "padding": {
-              "value": [
-                8,
-                12,
-                8,
-                12
-              ],
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "description": "Padding inside dropdown options",
-                "category": "dropDown"
-              }
-            },
-            "borderRadius": {
-              "value": 8,
-              "type": "radius",
-              "unit": "px",
-              "meta": {
-                "description": "Border radius for dropdown options",
-                "category": "dropDown"
-              }
-            }
-          },
-          "tokens": {
-            "padding": {
-              "value": [
-                8,
-                12,
-                8,
-                12
-              ],
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "description": "Padding tokens for large dropdown",
-                "category": "dropDown"
-              }
-            },
-            "borderRadius": {
-              "value": 8,
-              "type": "radius",
-              "unit": "px",
-              "meta": {
-                "description": "Border radius token for large dropdown",
-                "category": "dropDown"
-              }
-            }
-          },
-          "type": "component"
-        },
-        "md": {
-          "self": {
-            "minWidth": {
-              "value": 76,
-              "type": "size",
-              "unit": "px",
-              "meta": {
-                "description": "Minimum width of medium dropdown",
-                "category": "dropDown"
-              }
-            },
-            "height": {
-              "value": 44,
-              "type": "size",
-              "unit": "px",
-              "meta": {
-                "description": "Height of medium dropdown",
-                "category": "dropDown"
-              }
-            }
-          },
-          "currentValue": {
-            "self": {
-              "gap": {
-                "value": 8,
-                "type": "spacing",
-                "unit": "px",
-                "meta": {
-                  "description": "Gap inside dropdown value component",
-                  "category": "dropDown"
-                }
-              },
-              "padding": {
-                "value": [
-                  8,
-                  12,
-                  8,
-                  12
-                ],
-                "type": "spacing",
-                "unit": "px",
-                "meta": {
-                  "description": "Padding inside dropdown value component",
-                  "category": "dropDown"
-                }
-              },
-              "borderRadius": {
-                "value": 8,
-                "type": "radius",
-                "unit": "px",
-                "meta": {
-                  "description": "Border radius of dropdown value component",
-                  "category": "dropDown"
-                }
-              }
-            },
-            "label": {
-              "fontStyle": {
-                "value": "label-3",
-                "type": "alias",
-                "unit": "",
-                "meta": {
-                  "description": "Font style for dropdown value label",
-                  "category": "typography"
-                }
-              }
-            },
-            "icon": {
-              "size": {
-                "value": 12,
-                "type": "size",
-                "unit": "px",
-                "meta": {
-                  "description": "Icon size for dropdown value",
-                  "category": "dropDown"
-                }
-              }
-            },
-            "type": "component"
-          },
-          "options": {
-            "padding": {
-              "value": [
-                8,
-                12,
-                8,
-                12
-              ],
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "description": "Padding inside dropdown options",
-                "category": "dropDown"
-              }
-            },
-            "borderRadius": {
-              "value": 8,
-              "type": "radius",
-              "unit": "px",
-              "meta": {
-                "description": "Border radius for dropdown options",
-                "category": "dropDown"
-              }
-            }
-          },
-          "tokens": {
-            "padding": {
-              "value": [
-                8,
-                12,
-                8,
-                12
-              ],
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "description": "Padding tokens for medium dropdown",
-                "category": "dropDown"
-              }
-            },
-            "borderRadius": {
-              "value": 8,
-              "type": "radius",
-              "unit": "px",
-              "meta": {
-                "description": "Border radius token for medium dropdown",
-                "category": "dropDown"
-              }
-            }
-          },
-          "type": "component"
-        }
-      }
-    },
     "group": {
       "default": {
         "lg": {
@@ -1188,6 +920,14 @@
               "unit": "px",
               "meta": {
                 "description": "Gap between elements in large group",
+                "category": "group"
+              }
+            },
+            "padding": {
+              "value": 0,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
                 "category": "group"
               }
             },
@@ -1222,6 +962,14 @@
                 "category": "group"
               }
             },
+            "padding": {
+              "value": 0,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "group"
+              }
+            },
             "borderRadius": {
               "value": 0,
               "type": "radius",
@@ -1250,6 +998,14 @@
               "unit": "px",
               "meta": {
                 "description": "Gap between elements in small group",
+                "category": "group"
+              }
+            },
+            "padding": {
+              "value": 0,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
                 "category": "group"
               }
             },
@@ -1286,6 +1042,14 @@
                 "category": "group"
               }
             },
+            "padding": {
+              "value": 4,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "group"
+              }
+            },
             "borderRadius": {
               "value": 16,
               "type": "radius",
@@ -1309,11 +1073,19 @@
         "md": {
           "self": {
             "gap": {
-              "value": 16,
+              "value": 12,
               "type": "spacing",
               "unit": "px",
               "meta": {
                 "description": "Gap between elements in medium group",
+                "category": "group"
+              }
+            },
+            "padding": {
+              "value": 4,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
                 "category": "group"
               }
             },
@@ -1340,11 +1112,19 @@
         "sm": {
           "self": {
             "gap": {
-              "value": 12,
+              "value": 8,
               "type": "spacing",
               "unit": "px",
               "meta": {
                 "description": "Gap between elements in small group",
+                "category": "group"
+              }
+            },
+            "padding": {
+              "value": 4,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
                 "category": "group"
               }
             },
@@ -2132,6 +1912,46 @@
         }
       }
     },
+    "snackbar": {
+      "default": {
+        "lg": {
+          "self": {
+            "gap": {
+              "value": 12,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "snackbar"
+              }
+            },
+            "paddingH": {
+              "value": 24,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "snackbar"
+              }
+            },
+            "paddingV": {
+              "value": 16,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "snackbar"
+              }
+            },
+            "borderRadius": {
+              "value": 12,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "snackbar"
+              }
+            }
+          }
+        }
+      }
+    },
     "stepPaginationTabs": {
       "default": {
         "lg": {
@@ -2342,6 +2162,274 @@
     }
   },
   "molecules": {
+    "dropdown": {
+      "default": {
+        "lg": {
+          "self": {
+            "minWidth": {
+              "value": 76,
+              "type": "size",
+              "unit": "px",
+              "meta": {
+                "description": "Minimum width of large dropdown",
+                "category": "dropDown"
+              }
+            },
+            "height": {
+              "value": 56,
+              "type": "size",
+              "unit": "px",
+              "meta": {
+                "description": "Height of large dropdown",
+                "category": "dropDown"
+              }
+            }
+          },
+          "currentValue": {
+            "self": {
+              "gap": {
+                "value": 8,
+                "type": "spacing",
+                "unit": "px",
+                "meta": {
+                  "description": "Gap inside dropdown value component",
+                  "category": "dropDown"
+                }
+              },
+              "padding": {
+                "value": [
+                  8,
+                  12,
+                  8,
+                  12
+                ],
+                "type": "spacing",
+                "unit": "px",
+                "meta": {
+                  "description": "Padding inside dropdown value component",
+                  "category": "dropDown"
+                }
+              },
+              "borderRadius": {
+                "value": 8,
+                "type": "radius",
+                "unit": "px",
+                "meta": {
+                  "description": "Border radius of dropdown value component",
+                  "category": "dropDown"
+                }
+              }
+            },
+            "label": {
+              "fontStyle": {
+                "value": "label-2",
+                "type": "alias",
+                "unit": "",
+                "meta": {
+                  "description": "Font style for dropdown value label",
+                  "category": "typography"
+                }
+              }
+            },
+            "icon": {
+              "size": {
+                "value": 12,
+                "type": "size",
+                "unit": "px",
+                "meta": {
+                  "description": "Icon size for dropdown value",
+                  "category": "dropDown"
+                }
+              }
+            },
+            "type": "component"
+          },
+          "options": {
+            "padding": {
+              "value": [
+                8,
+                12,
+                8,
+                12
+              ],
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "description": "Padding inside dropdown options",
+                "category": "dropDown"
+              }
+            },
+            "borderRadius": {
+              "value": 8,
+              "type": "radius",
+              "unit": "px",
+              "meta": {
+                "description": "Border radius for dropdown options",
+                "category": "dropDown"
+              }
+            }
+          },
+          "tokens": {
+            "padding": {
+              "value": [
+                8,
+                12,
+                8,
+                12
+              ],
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "description": "Padding tokens for large dropdown",
+                "category": "dropDown"
+              }
+            },
+            "borderRadius": {
+              "value": 8,
+              "type": "radius",
+              "unit": "px",
+              "meta": {
+                "description": "Border radius token for large dropdown",
+                "category": "dropDown"
+              }
+            }
+          },
+          "type": "component"
+        },
+        "md": {
+          "self": {
+            "minWidth": {
+              "value": 76,
+              "type": "size",
+              "unit": "px",
+              "meta": {
+                "description": "Minimum width of medium dropdown",
+                "category": "dropDown"
+              }
+            },
+            "height": {
+              "value": 44,
+              "type": "size",
+              "unit": "px",
+              "meta": {
+                "description": "Height of medium dropdown",
+                "category": "dropDown"
+              }
+            }
+          },
+          "currentValue": {
+            "self": {
+              "gap": {
+                "value": 8,
+                "type": "spacing",
+                "unit": "px",
+                "meta": {
+                  "description": "Gap inside dropdown value component",
+                  "category": "dropDown"
+                }
+              },
+              "padding": {
+                "value": [
+                  8,
+                  12,
+                  8,
+                  12
+                ],
+                "type": "spacing",
+                "unit": "px",
+                "meta": {
+                  "description": "Padding inside dropdown value component",
+                  "category": "dropDown"
+                }
+              },
+              "borderRadius": {
+                "value": 8,
+                "type": "radius",
+                "unit": "px",
+                "meta": {
+                  "description": "Border radius of dropdown value component",
+                  "category": "dropDown"
+                }
+              }
+            },
+            "label": {
+              "fontStyle": {
+                "value": "label-3",
+                "type": "alias",
+                "unit": "",
+                "meta": {
+                  "description": "Font style for dropdown value label",
+                  "category": "typography"
+                }
+              }
+            },
+            "icon": {
+              "size": {
+                "value": 12,
+                "type": "size",
+                "unit": "px",
+                "meta": {
+                  "description": "Icon size for dropdown value",
+                  "category": "dropDown"
+                }
+              }
+            },
+            "type": "component"
+          },
+          "options": {
+            "padding": {
+              "value": [
+                8,
+                12,
+                8,
+                12
+              ],
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "description": "Padding inside dropdown options",
+                "category": "dropDown"
+              }
+            },
+            "borderRadius": {
+              "value": 8,
+              "type": "radius",
+              "unit": "px",
+              "meta": {
+                "description": "Border radius for dropdown options",
+                "category": "dropDown"
+              }
+            }
+          },
+          "tokens": {
+            "padding": {
+              "value": [
+                8,
+                12,
+                8,
+                12
+              ],
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "description": "Padding tokens for medium dropdown",
+                "category": "dropDown"
+              }
+            },
+            "borderRadius": {
+              "value": 8,
+              "type": "radius",
+              "unit": "px",
+              "meta": {
+                "description": "Border radius token for medium dropdown",
+                "category": "dropDown"
+              }
+            }
+          },
+          "type": "component"
+        }
+      }
+    },
     "form": {
       "default": {
         "md": {

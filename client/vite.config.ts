@@ -16,7 +16,6 @@ import { TokensParserPlugin } from "./plugins/vite-plugin-tokens-parser";
 import { VitePluginTokenLinter } from "./plugins/vite-plugin-token-linter.ts";
 import { FlattenTokensParserPlugin } from "./plugins/vite-plugin-flatten-tokens-parser";
 import { JSONBuilderPlugin } from "./plugins/vite-plugin-json-builder";
-import { AlmaIconsPlugin } from "./plugins/vite-alma-icons-resolver";
 
 import VueRouterPlugin from "unplugin-vue-router/vite";
 
@@ -64,11 +63,6 @@ export default (opts: { mode: string }) => {
         dts: true,
       }),
       svgLoader({ defaultImport: "component" }),
-      // Design System: AlmaIcons
-      AlmaIconsPlugin({
-        source: "./design-system/assets/icons",
-        entryFilePath: "./design-system/assets/icons/index.ts",
-      }),
       // Deign System: Tokens and SCSS generation
       ColorsGeneratorPlugin({
         source: "./design-system/tokens/src/baseColors.json",
@@ -81,7 +75,13 @@ export default (opts: { mode: string }) => {
         build: "./design-system/tokens/build",
         entryFilePath: "./design-system/tokens/index.ts",
         paths: ["./design-system/tokens", "./design-system/tokens/.cache"],
-        mapOptions: { convertCase: true, includeFileName: false },
+        mapOptions: {
+          convertCase: true,
+          includeFileName: false,
+          convertToCSSVariables: true,
+          includeFileNameToCSSVariables: true,
+          excludeCSSVariables: ["./design-system/tokens/.cache/themes.json"],
+        },
         builder: {
           format: "json",
           paths: ["./design-system/tokens/src"],
@@ -103,7 +103,11 @@ export default (opts: { mode: string }) => {
         build: "./src/tokens/build",
         entryFilePath: "./src/tokens/index.ts",
         paths: ["./src/tokens", "./design-system/tokens/.cache"],
-        mapOptions: { convertCase: true, includeFileName: false },
+        mapOptions: {
+          convertCase: true,
+          includeFileName: false,
+          convertToCSSVariables: true,
+        },
         builder: {
           format: "json",
           paths: ["./src/tokens/src"],

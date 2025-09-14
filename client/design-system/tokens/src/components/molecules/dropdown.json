@@ -33,7 +33,7 @@
             }
           },
           "padding": {
-            "value": "{components.atoms.dropdown.default.lg.tokens.padding.value}",
+            "value": "{components.molecules.dropdown.default.lg.tokens.padding.value}",
             "type": "spacing",
             "unit": "px",
             "meta": {
@@ -42,7 +42,7 @@
             }
           },
           "borderRadius": {
-            "value": "{components.atoms.dropdown.default.lg.tokens.borderRadius.value}",
+            "value": "{components.molecules.dropdown.default.lg.tokens.borderRadius.value}",
             "type": "radius",
             "unit": "px",
             "meta": {
@@ -77,7 +77,7 @@
       },
       "options": {
         "padding": {
-          "value": "{components.atoms.dropdown.default.lg.tokens.padding.value}",
+          "value": "{components.molecules.dropdown.default.lg.tokens.padding.value}",
           "type": "spacing",
           "unit": "px",
           "meta": {
@@ -86,7 +86,7 @@
           }
         },
         "borderRadius": {
-          "value": "{components.atoms.dropdown.default.lg.tokens.borderRadius.value}",
+          "value": "{components.molecules.dropdown.default.lg.tokens.borderRadius.value}",
           "type": "radius",
           "unit": "px",
           "meta": {
@@ -155,7 +155,7 @@
             }
           },
           "padding": {
-            "value": "{components.atoms.dropdown.default.md.tokens.padding.value}",
+            "value": "{components.molecules.dropdown.default.lg.tokens.padding.value}",
             "type": "spacing",
             "unit": "px",
             "meta": {
@@ -164,7 +164,7 @@
             }
           },
           "borderRadius": {
-            "value": "{components.atoms.dropdown.default.md.tokens.borderRadius.value}",
+            "value": "{components.molecules.dropdown.default.lg.tokens.borderRadius.value}",
             "type": "radius",
             "unit": "px",
             "meta": {
@@ -199,7 +199,7 @@
       },
       "options": {
         "padding": {
-          "value": "{components.atoms.dropdown.default.md.tokens.padding.value}",
+          "value": "{components.molecules.dropdown.default.lg.tokens.padding.value}",
           "type": "spacing",
           "unit": "px",
           "meta": {
@@ -208,7 +208,7 @@
           }
         },
         "borderRadius": {
-          "value": "{components.atoms.dropdown.default.md.tokens.borderRadius.value}",
+          "value": "{components.molecules.dropdown.default.lg.tokens.borderRadius.value}",
           "type": "radius",
           "unit": "px",
           "meta": {

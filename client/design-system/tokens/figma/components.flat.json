@@ -511,12 +511,12 @@
     "unit": "px"
   },
   "atoms.controlWrapper.default.md.self.paddingV": {
-    "value": 0,
+    "value": 4,
     "type": "spacing",
     "unit": "px"
   },
   "atoms.controlWrapper.default.md.self.paddingH": {
-    "value": 8,
+    "value": 4,
     "type": "spacing",
     "unit": "px"
   },
@@ -584,189 +584,16 @@
     "value": "component",
     "type": "string"
   },
-  "atoms.dropdown.default.lg.self.minWidth": {
-    "value": 76,
-    "type": "size",
-    "unit": "px",
-    "description": "Minimum width of large dropdown"
-  },
-  "atoms.dropdown.default.lg.self.height": {
-    "value": 56,
-    "type": "size",
-    "unit": "px",
-    "description": "Height of large dropdown"
-  },
-  "atoms.dropdown.default.lg.currentValue.self.gap": {
-    "value": 8,
-    "type": "spacing",
-    "unit": "px",
-    "description": "Gap inside dropdown value component"
-  },
-  "atoms.dropdown.default.lg.currentValue.self.padding": {
-    "value": [
-      8,
-      12,
-      8,
-      12
-    ],
-    "type": "spacing",
-    "unit": "px",
-    "description": "Padding inside dropdown value component"
-  },
-  "atoms.dropdown.default.lg.currentValue.self.borderRadius": {
-    "value": 8,
-    "type": "radius",
-    "unit": "px",
-    "description": "Border radius of dropdown value component"
-  },
-  "atoms.dropdown.default.lg.currentValue.label.fontStyle": {
-    "value": "label-2",
-    "type": "alias",
-    "unit": "",
-    "description": "Font style for dropdown value label"
-  },
-  "atoms.dropdown.default.lg.currentValue.icon.size": {
-    "value": 12,
-    "type": "size",
-    "unit": "px",
-    "description": "Icon size for dropdown value"
-  },
-  "atoms.dropdown.default.lg.currentValue.type": {
-    "value": "component",
-    "type": "string"
-  },
-  "atoms.dropdown.default.lg.options.padding": {
-    "value": [
-      8,
-      12,
-      8,
-      12
-    ],
-    "type": "spacing",
-    "unit": "px",
-    "description": "Padding inside dropdown options"
-  },
-  "atoms.dropdown.default.lg.options.borderRadius": {
-    "value": 8,
-    "type": "radius",
-    "unit": "px",
-    "description": "Border radius for dropdown options"
-  },
-  "atoms.dropdown.default.lg.tokens.padding": {
-    "value": [
-      8,
-      12,
-      8,
-      12
-    ],
-    "type": "spacing",
-    "unit": "px",
-    "description": "Padding tokens for large dropdown"
-  },
-  "atoms.dropdown.default.lg.tokens.borderRadius": {
-    "value": 8,
-    "type": "radius",
-    "unit": "px",
-    "description": "Border radius token for large dropdown"
-  },
-  "atoms.dropdown.default.lg.type": {
-    "value": "component",
-    "type": "string"
-  },
-  "atoms.dropdown.default.md.self.minWidth": {
-    "value": 76,
-    "type": "size",
-    "unit": "px",
-    "description": "Minimum width of medium dropdown"
-  },
-  "atoms.dropdown.default.md.self.height": {
-    "value": 44,
-    "type": "size",
-    "unit": "px",
-    "description": "Height of medium dropdown"
-  },
-  "atoms.dropdown.default.md.currentValue.self.gap": {
-    "value": 8,
-    "type": "spacing",
-    "unit": "px",
-    "description": "Gap inside dropdown value component"
-  },
-  "atoms.dropdown.default.md.currentValue.self.padding": {
-    "value": [
-      8,
-      12,
-      8,
-      12
-    ],
-    "type": "spacing",
-    "unit": "px",
-    "description": "Padding inside dropdown value component"
-  },
-  "atoms.dropdown.default.md.currentValue.self.borderRadius": {
-    "value": 8,
-    "type": "radius",
-    "unit": "px",
-    "description": "Border radius of dropdown value component"
-  },
-  "atoms.dropdown.default.md.currentValue.label.fontStyle": {
-    "value": "label-3",
-    "type": "alias",
-    "unit": "",
-    "description": "Font style for dropdown value label"
-  },
-  "atoms.dropdown.default.md.currentValue.icon.size": {
-    "value": 12,
-    "type": "size",
-    "unit": "px",
-    "description": "Icon size for dropdown value"
-  },
-  "atoms.dropdown.default.md.currentValue.type": {
-    "value": "component",
-    "type": "string"
-  },
-  "atoms.dropdown.default.md.options.padding": {
-    "value": [
-      8,
-      12,
-      8,
-      12
-    ],
-    "type": "spacing",
-    "unit": "px",
-    "description": "Padding inside dropdown options"
-  },
-  "atoms.dropdown.default.md.options.borderRadius": {
-    "value": 8,
-    "type": "radius",
-    "unit": "px",
-    "description": "Border radius for dropdown options"
-  },
-  "atoms.dropdown.default.md.tokens.padding": {
-    "value": [
-      8,
-      12,
-      8,
-      12
-    ],
-    "type": "spacing",
-    "unit": "px",
-    "description": "Padding tokens for medium dropdown"
-  },
-  "atoms.dropdown.default.md.tokens.borderRadius": {
-    "value": 8,
-    "type": "radius",
-    "unit": "px",
-    "description": "Border radius token for medium dropdown"
-  },
-  "atoms.dropdown.default.md.type": {
-    "value": "component",
-    "type": "string"
-  },
   "atoms.group.default.lg.self.gap": {
     "value": 24,
     "type": "spacing",
     "unit": "px",
     "description": "Gap between elements in large group"
+  },
+  "atoms.group.default.lg.self.padding": {
+    "value": 0,
+    "type": "spacing",
+    "unit": "px"
   },
   "atoms.group.default.lg.self.borderRadius": {
     "value": 0,
@@ -789,6 +616,11 @@
     "unit": "px",
     "description": "Gap between elements in medium group"
   },
+  "atoms.group.default.md.self.padding": {
+    "value": 0,
+    "type": "spacing",
+    "unit": "px"
+  },
   "atoms.group.default.md.self.borderRadius": {
     "value": 0,
     "type": "radius",
@@ -809,6 +641,11 @@
     "type": "spacing",
     "unit": "px",
     "description": "Gap between elements in small group"
+  },
+  "atoms.group.default.sm.self.padding": {
+    "value": 0,
+    "type": "spacing",
+    "unit": "px"
   },
   "atoms.group.default.sm.self.borderRadius": {
     "value": 0,
@@ -831,6 +668,11 @@
     "unit": "px",
     "description": "Gap between elements in large group"
   },
+  "atoms.group.block.lg.self.padding": {
+    "value": 4,
+    "type": "spacing",
+    "unit": "px"
+  },
   "atoms.group.block.lg.self.borderRadius": {
     "value": 16,
     "type": "radius",
@@ -847,10 +689,15 @@
     "type": "string"
   },
   "atoms.group.block.md.self.gap": {
-    "value": 16,
+    "value": 12,
     "type": "spacing",
     "unit": "px",
     "description": "Gap between elements in medium group"
+  },
+  "atoms.group.block.md.self.padding": {
+    "value": 4,
+    "type": "spacing",
+    "unit": "px"
   },
   "atoms.group.block.md.self.borderRadius": {
     "value": 12,
@@ -868,10 +715,15 @@
     "type": "string"
   },
   "atoms.group.block.sm.self.gap": {
-    "value": 12,
+    "value": 8,
     "type": "spacing",
     "unit": "px",
     "description": "Gap between elements in small group"
+  },
+  "atoms.group.block.sm.self.padding": {
+    "value": 4,
+    "type": "spacing",
+    "unit": "px"
   },
   "atoms.group.block.sm.self.borderRadius": {
     "value": 8,
@@ -1338,6 +1190,26 @@
     "type": "alias",
     "unit": ""
   },
+  "atoms.snackbar.default.lg.self.gap": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "atoms.snackbar.default.lg.self.paddingH": {
+    "value": 24,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "atoms.snackbar.default.lg.self.paddingV": {
+    "value": 16,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "atoms.snackbar.default.lg.self.borderRadius": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px"
+  },
   "atoms.stepPaginationTabs.default.lg.item.fontStyle": {
     "value": "title-3",
     "type": "alias",
@@ -1448,6 +1320,184 @@
   "atoms.toggleSwitch.default.sm.label.fontStyle": {
     "value": "label-3",
     "type": "alias"
+  },
+  "molecules.dropdown.default.lg.self.minWidth": {
+    "value": 76,
+    "type": "size",
+    "unit": "px",
+    "description": "Minimum width of large dropdown"
+  },
+  "molecules.dropdown.default.lg.self.height": {
+    "value": 56,
+    "type": "size",
+    "unit": "px",
+    "description": "Height of large dropdown"
+  },
+  "molecules.dropdown.default.lg.currentValue.self.gap": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap inside dropdown value component"
+  },
+  "molecules.dropdown.default.lg.currentValue.self.padding": {
+    "value": [
+      8,
+      12,
+      8,
+      12
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside dropdown value component"
+  },
+  "molecules.dropdown.default.lg.currentValue.self.borderRadius": {
+    "value": 8,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius of dropdown value component"
+  },
+  "molecules.dropdown.default.lg.currentValue.label.fontStyle": {
+    "value": "label-2",
+    "type": "alias",
+    "unit": "",
+    "description": "Font style for dropdown value label"
+  },
+  "molecules.dropdown.default.lg.currentValue.icon.size": {
+    "value": 12,
+    "type": "size",
+    "unit": "px",
+    "description": "Icon size for dropdown value"
+  },
+  "molecules.dropdown.default.lg.currentValue.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "molecules.dropdown.default.lg.options.padding": {
+    "value": [
+      8,
+      12,
+      8,
+      12
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside dropdown options"
+  },
+  "molecules.dropdown.default.lg.options.borderRadius": {
+    "value": 8,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for dropdown options"
+  },
+  "molecules.dropdown.default.lg.tokens.padding": {
+    "value": [
+      8,
+      12,
+      8,
+      12
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding tokens for large dropdown"
+  },
+  "molecules.dropdown.default.lg.tokens.borderRadius": {
+    "value": 8,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius token for large dropdown"
+  },
+  "molecules.dropdown.default.lg.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "molecules.dropdown.default.md.self.minWidth": {
+    "value": 76,
+    "type": "size",
+    "unit": "px",
+    "description": "Minimum width of medium dropdown"
+  },
+  "molecules.dropdown.default.md.self.height": {
+    "value": 44,
+    "type": "size",
+    "unit": "px",
+    "description": "Height of medium dropdown"
+  },
+  "molecules.dropdown.default.md.currentValue.self.gap": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Gap inside dropdown value component"
+  },
+  "molecules.dropdown.default.md.currentValue.self.padding": {
+    "value": [
+      8,
+      12,
+      8,
+      12
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside dropdown value component"
+  },
+  "molecules.dropdown.default.md.currentValue.self.borderRadius": {
+    "value": 8,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius of dropdown value component"
+  },
+  "molecules.dropdown.default.md.currentValue.label.fontStyle": {
+    "value": "label-3",
+    "type": "alias",
+    "unit": "",
+    "description": "Font style for dropdown value label"
+  },
+  "molecules.dropdown.default.md.currentValue.icon.size": {
+    "value": 12,
+    "type": "size",
+    "unit": "px",
+    "description": "Icon size for dropdown value"
+  },
+  "molecules.dropdown.default.md.currentValue.type": {
+    "value": "component",
+    "type": "string"
+  },
+  "molecules.dropdown.default.md.options.padding": {
+    "value": [
+      8,
+      12,
+      8,
+      12
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding inside dropdown options"
+  },
+  "molecules.dropdown.default.md.options.borderRadius": {
+    "value": 8,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius for dropdown options"
+  },
+  "molecules.dropdown.default.md.tokens.padding": {
+    "value": [
+      8,
+      12,
+      8,
+      12
+    ],
+    "type": "spacing",
+    "unit": "px",
+    "description": "Padding tokens for medium dropdown"
+  },
+  "molecules.dropdown.default.md.tokens.borderRadius": {
+    "value": 8,
+    "type": "radius",
+    "unit": "px",
+    "description": "Border radius token for medium dropdown"
+  },
+  "molecules.dropdown.default.md.type": {
+    "value": "component",
+    "type": "string"
   },
   "molecules.form.default.md.self.borderRadius": {
     "value": 20,

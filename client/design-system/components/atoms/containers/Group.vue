@@ -47,12 +47,14 @@ const componentTag = props.as;
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       $gap: px2rem(get($val, "self.gap"));
+      $padding: px2rem(get($val, "self.padding"));
       $border-radius: px2rem(get($val, "self.border-radius"));
       $divider-border-width: px2rem(get($val, "self.border-width"));
 
       &_variant-#{$variant} {
         &.group_size-#{$size} {
           gap: $gap;
+          padding: $padding;
           border-radius: $border-radius;
 
           &.group_divider {

@@ -1,2 +1,2 @@
-export * from './locale';
-export * from './lcoalStorage';
+export * from "./locale";
+export * from "./lcoalStorage";

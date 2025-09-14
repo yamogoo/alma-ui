@@ -8,3 +8,11 @@ $breakpoints:(
   lg: 1280px,
   xl: 1440px
 );
+
+:root {
+  --breakpoints-xs: 240px;
+  --breakpoints-sm: 480px;
+  --breakpoints-md: 820px;
+  --breakpoints-lg: 1280px;
+  --breakpoints-xl: 1440px;
+}

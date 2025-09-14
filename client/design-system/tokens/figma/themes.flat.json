@@ -1294,76 +1294,6 @@
     "unit": "hex",
     "description": "Secondary border color for divider"
   },
-  "themes.dark.atoms.dropdown.primary.currentValue.label.normal": {
-    "value": "#EAEDEF",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.dark.atoms.dropdown.primary.currentValue.label.hovered": {
-    "value": "#DCE1E5",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.dark.atoms.dropdown.primary.currentValue.label.expanded": {
-    "value": "#C0C9D0",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.dark.atoms.dropdown.primary.currentValue.label.expandedHovered": {
-    "value": "#B3BDC6",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.dark.atoms.dropdown.primary.currentValue.icon.normal": {
-    "value": "#EAEDEF",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.dark.atoms.dropdown.primary.currentValue.icon.hovered": {
-    "value": "#DCE1E5",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.dark.atoms.dropdown.primary.currentValue.icon.expanded": {
-    "value": "#C0C9D0",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.dark.atoms.dropdown.primary.currentValue.icon.expandedHovered": {
-    "value": "#B3BDC6",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.dark.atoms.dropdown.primary.currentValue.background.normal": {
-    "value": "#242B31",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.dark.atoms.dropdown.primary.currentValue.background.hovered": {
-    "value": "#2F383F",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.dark.atoms.dropdown.primary.currentValue.background.expanded": {
-    "value": "#43505A",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.dark.atoms.dropdown.primary.currentValue.background.expandedHovered": {
-    "value": "#39444C",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.dark.atoms.dropdown.primary.options.background.normal": {
-    "value": "#2F383F",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.dark.atoms.dropdown.primary.options.background.hovered": {
-    "value": "#2F383F",
-    "type": "color",
-    "unit": "hex"
-  },
   "themes.dark.atoms.group.primary.self.background": {
     "value": "#101315",
     "type": "unknown"
@@ -1664,6 +1594,146 @@
   },
   "themes.dark.atoms.toggleSwitch.primary.label.active": {
     "value": "#DCE1E5",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.primary.currentValue.label.normal": {
+    "value": "#EAEDEF",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.primary.currentValue.label.hovered": {
+    "value": "#DCE1E5",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.primary.currentValue.label.expanded": {
+    "value": "#C0C9D0",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.primary.currentValue.label.expandedHovered": {
+    "value": "#B3BDC6",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.primary.currentValue.icon.normal": {
+    "value": "#EAEDEF",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.primary.currentValue.icon.hovered": {
+    "value": "#DCE1E5",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.primary.currentValue.icon.expanded": {
+    "value": "#C0C9D0",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.primary.currentValue.icon.expandedHovered": {
+    "value": "#B3BDC6",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.primary.currentValue.background.normal": {
+    "value": "#242B31",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.primary.currentValue.background.hovered": {
+    "value": "#2F383F",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.primary.currentValue.background.expanded": {
+    "value": "#43505A",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.primary.currentValue.background.expandedHovered": {
+    "value": "#39444C",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.primary.options.background.normal": {
+    "value": "#2F383F",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.primary.options.background.hovered": {
+    "value": "#2F383F",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.secondary.currentValue.label.normal": {
+    "value": "#EAEDEF",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.secondary.currentValue.label.hovered": {
+    "value": "#DCE1E5",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.secondary.currentValue.label.expanded": {
+    "value": "#C0C9D0",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.secondary.currentValue.label.expandedHovered": {
+    "value": "#B3BDC6",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.secondary.currentValue.icon.normal": {
+    "value": "#EAEDEF",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.secondary.currentValue.icon.hovered": {
+    "value": "#DCE1E5",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.secondary.currentValue.icon.expanded": {
+    "value": "#C0C9D0",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.secondary.currentValue.icon.expandedHovered": {
+    "value": "#B3BDC6",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.secondary.currentValue.background.normal": {
+    "value": "#242B31",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.secondary.currentValue.background.hovered": {
+    "value": "#2F383F",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.secondary.currentValue.background.expanded": {
+    "value": "#43505A",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.secondary.currentValue.background.expandedHovered": {
+    "value": "#39444C",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.secondary.options.background.normal": {
+    "value": "#2F383F",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.dark.molecules.dropdown.secondary.options.background.hovered": {
+    "value": "#2F383F",
     "type": "color",
     "unit": "hex"
   },
@@ -3090,76 +3160,6 @@
     "unit": "hex",
     "description": "Secondary border color for divider"
   },
-  "themes.light.atoms.dropdown.primary.currentValue.label.normal": {
-    "value": "#1A1F23",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.atoms.dropdown.primary.currentValue.label.hovered": {
-    "value": "#101315",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.atoms.dropdown.primary.currentValue.label.expanded": {
-    "value": "#101315",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.atoms.dropdown.primary.currentValue.label.expandedHovered": {
-    "value": "#101315",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.atoms.dropdown.primary.currentValue.icon.normal": {
-    "value": "#1A1F23",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.atoms.dropdown.primary.currentValue.icon.hovered": {
-    "value": "#101315",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.atoms.dropdown.primary.currentValue.icon.expanded": {
-    "value": "#2F383F",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.atoms.dropdown.primary.currentValue.icon.expandedHovered": {
-    "value": "#242B31",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.atoms.dropdown.primary.currentValue.background.normal": {
-    "value": "#E3E7EA",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.atoms.dropdown.primary.currentValue.background.hovered": {
-    "value": "#DCE1E5",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.atoms.dropdown.primary.currentValue.background.expanded": {
-    "value": "#E3E7EA",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.atoms.dropdown.primary.currentValue.background.expandedHovered": {
-    "value": "#DCE1E5",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.atoms.dropdown.primary.options.background.normal": {
-    "value": "#D5DBE0",
-    "type": "color",
-    "unit": "hex"
-  },
-  "themes.light.atoms.dropdown.primary.options.background.hovered": {
-    "value": "#D5DBE0",
-    "type": "color",
-    "unit": "hex"
-  },
   "themes.light.atoms.group.primary.self.background": {
     "value": "#F8F9FA",
     "type": "unknown"
@@ -3470,6 +3470,146 @@
   },
   "themes.light.atoms.toggleSwitch.primary.label.active": {
     "value": "#2F383F",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.primary.currentValue.label.normal": {
+    "value": "#1A1F23",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.primary.currentValue.label.hovered": {
+    "value": "#101315",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.primary.currentValue.label.expanded": {
+    "value": "#101315",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.primary.currentValue.label.expandedHovered": {
+    "value": "#101315",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.primary.currentValue.icon.normal": {
+    "value": "#1A1F23",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.primary.currentValue.icon.hovered": {
+    "value": "#101315",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.primary.currentValue.icon.expanded": {
+    "value": "#2F383F",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.primary.currentValue.icon.expandedHovered": {
+    "value": "#242B31",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.primary.currentValue.background.normal": {
+    "value": "#EAEDEF",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.primary.currentValue.background.hovered": {
+    "value": "#E3E7EA",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.primary.currentValue.background.expanded": {
+    "value": "#EAEDEF",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.primary.currentValue.background.expandedHovered": {
+    "value": "#E3E7EA",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.primary.options.background.normal": {
+    "value": "#DCE1E5",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.primary.options.background.hovered": {
+    "value": "#DCE1E5",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.secondary.currentValue.label.normal": {
+    "value": "#1A1F23",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.secondary.currentValue.label.hovered": {
+    "value": "#101315",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.secondary.currentValue.label.expanded": {
+    "value": "#101315",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.secondary.currentValue.label.expandedHovered": {
+    "value": "#101315",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.secondary.currentValue.icon.normal": {
+    "value": "#1A1F23",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.secondary.currentValue.icon.hovered": {
+    "value": "#101315",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.secondary.currentValue.icon.expanded": {
+    "value": "#2F383F",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.secondary.currentValue.icon.expandedHovered": {
+    "value": "#242B31",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.secondary.currentValue.background.normal": {
+    "value": "#E3E7EA",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.secondary.currentValue.background.hovered": {
+    "value": "#DCE1E5",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.secondary.currentValue.background.expanded": {
+    "value": "#E3E7EA",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.secondary.currentValue.background.expandedHovered": {
+    "value": "#DCE1E5",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.secondary.options.background.normal": {
+    "value": "#D5DBE0",
+    "type": "color",
+    "unit": "hex"
+  },
+  "themes.light.molecules.dropdown.secondary.options.background.hovered": {
+    "value": "#D5DBE0",
     "type": "color",
     "unit": "hex"
   },

@@ -6,7 +6,8 @@ import { useLocaleStore } from "@@/stores";
 import { LOCALE_KEYS } from "@@/constants";
 import type { Locale } from "@@/typings";
 
-import { Dropdown, Options } from "@/components/atoms";
+import { Dropdown } from "@/components/molecules";
+import { Options } from "@/components/atoms";
 
 const { currentLocale } = storeToRefs(useLocaleStore());
 const { setLocale } = useLocaleStore();
