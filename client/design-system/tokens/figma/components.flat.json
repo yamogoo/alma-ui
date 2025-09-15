@@ -1190,28 +1190,8 @@
     "type": "alias",
     "unit": ""
   },
-  "atoms.snackbar.default.lg.self.gap": {
-    "value": 12,
-    "type": "spacing",
-    "unit": "px"
-  },
-  "atoms.snackbar.default.lg.self.paddingH": {
-    "value": 24,
-    "type": "spacing",
-    "unit": "px"
-  },
-  "atoms.snackbar.default.lg.self.paddingV": {
-    "value": 16,
-    "type": "spacing",
-    "unit": "px"
-  },
-  "atoms.snackbar.default.lg.self.borderRadius": {
-    "value": 12,
-    "type": "spacing",
-    "unit": "px"
-  },
   "atoms.stepPaginationTabs.default.lg.item.fontStyle": {
-    "value": "title-3",
+    "value": "title-1",
     "type": "alias",
     "unit": "",
     "description": "Font style for step pagination tab item on large screens"
@@ -1223,7 +1203,7 @@
     "description": "Padding for step pagination tab item on large screens"
   },
   "atoms.stepPaginationTabs.default.md.item.fontStyle": {
-    "value": "title-4",
+    "value": "title-2",
     "type": "alias",
     "unit": "",
     "description": "Font style for step pagination tab item on medium screens"
@@ -1552,6 +1532,76 @@
   "molecules.formWrapper.default.lg.type": {
     "value": "component",
     "type": "string"
+  },
+  "molecules.snackbar.default.lg.self.gap": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "molecules.snackbar.default.lg.self.paddingH": {
+    "value": 24,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "molecules.snackbar.default.lg.self.paddingV": {
+    "value": 16,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "molecules.snackbar.default.lg.self.borderRadius": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "molecules.snackbar.default.lg.content.gap": {
+    "value": 0,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "molecules.snackbar.default.lg.title.fontStyle": {
+    "value": "title-3",
+    "type": "alias",
+    "unit": ""
+  },
+  "molecules.snackbar.default.lg.description.fontStyle": {
+    "value": "body-3",
+    "type": "alias",
+    "unit": ""
+  },
+  "molecules.snackbar.default.md.self.gap": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "molecules.snackbar.default.md.self.paddingH": {
+    "value": 16,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "molecules.snackbar.default.md.self.paddingV": {
+    "value": 12,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "molecules.snackbar.default.md.self.borderRadius": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "molecules.snackbar.default.md.content.gap": {
+    "value": 0,
+    "type": "spacing",
+    "unit": "px"
+  },
+  "molecules.snackbar.default.md.title.fontStyle": {
+    "value": "title-3",
+    "type": "alias",
+    "unit": ""
+  },
+  "molecules.snackbar.default.md.description.fontStyle": {
+    "value": "body-3",
+    "type": "alias",
+    "unit": ""
   },
   "templates.mainFooter.default.lg.self.padding": {
     "value": 16,

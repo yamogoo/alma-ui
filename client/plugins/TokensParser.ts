@@ -76,6 +76,9 @@ export interface TokensParserOptions {
   parseOptions?: Partial<ParseValueOptions>;
   useFileStructureLookup?: boolean;
   useReflectOriginalStructure?: boolean;
+  themesDir?: string;
+  themesOutFile?: string; // scss
+  themesIncludeRequired?: boolean;
 }
 
 /* * * Abstract Parser * * */
@@ -304,7 +307,7 @@ export class SCSSParser extends Parser {
           ? explicitVarName
           : pathPart || (filePart ? `${filePart}` : "");
 
-        // --- NEW: includeFileNameToCSSVariables ---
+        // --- includeFileNameToCSSVariables ---
         if (
           !explicitVarName &&
           this.tokensParser.opts?.mapOptions?.includeFileNameToCSSVariables &&
@@ -351,10 +354,14 @@ export class SCSSParser extends Parser {
       if (useReflect) {
         const parts: string[] = [];
 
+        // value
         if (tokenObj.value !== undefined) {
           if (_.isPlainObject(tokenObj.value)) {
             parts.push(
-              `value: ${this.parseMap(tokenObj.value, opts, [...path, "value"])}`
+              `value: ${this.parseMap(tokenObj.value, opts, [
+                ...path,
+                "value",
+              ])}`
             );
           } else if (Array.isArray(tokenObj.value)) {
             parts.push(
@@ -376,17 +383,49 @@ export class SCSSParser extends Parser {
           }
         }
 
-        for (const field of ["type", "unit", "description"]) {
-          if (tokenObj[field] !== undefined) {
-            let parsed = this.normalizeValue(tokenObj[field], opts);
-            parsed = `"${parsed}"`;
-            parts.push(`${field}: ${parsed}`);
-          }
+        // type / unit always treated as scalar fields (if present)
+        if (tokenObj.type !== undefined) {
+          let parsed = this.normalizeValue(tokenObj.type, opts);
+          parsed = `"${parsed}"`;
+          parts.push(`type: ${parsed}`);
+        }
+        if (tokenObj.unit !== undefined) {
+          let parsed = this.normalizeValue(tokenObj.unit, opts);
+          parsed = `"${parsed}"`;
+          parts.push(`unit: ${parsed}`);
         }
 
-        const extraKeys = keys.filter(
-          (k) => !["value", "type", "unit", "description", "meta"].includes(k)
-        );
+        // description: include only if it's NOT a nested object.
+        // if it's a plain object, we will handle it below as an "extra key" (nested token).
+        if (
+          tokenObj.description !== undefined &&
+          !_.isPlainObject(tokenObj.description)
+        ) {
+          let parsed = this.normalizeValue(tokenObj.description, opts);
+          parsed = `"${parsed}"`;
+          parts.push(`description: ${parsed}`);
+        }
+
+        // meta: serialize explicitly and remove description inside meta (serializeMeta already does that)
+        if (tokenObj.meta !== undefined) {
+          const serializedMeta = this.serializeMeta(tokenObj.meta, opts, [
+            ...path,
+            "meta",
+          ]);
+          parts.push(`meta: ${serializedMeta}`);
+        }
+
+        // extra keys: exclude tokens fields already handled; treat description as extra key
+        // only if it was a nested object (we didn't emit it above).
+        const extraKeys = keys.filter((k) => {
+          if (["value", "type", "unit", "meta"].includes(k)) return false;
+          if (k === "description") {
+            // include description only if it's a nested object (a token), otherwise already handled
+            return _.isPlainObject((map as IMap)[k]);
+          }
+          return true;
+        });
+
         for (const extraKey of extraKeys) {
           const kebabKey = opts.convertCase
             ? this.tokensParser.toKebabCase(extraKey)
@@ -401,11 +440,24 @@ export class SCSSParser extends Parser {
 
         return `(\n  ${parts.join(",\n  ")}\n)`;
       } else {
+        // not reflecting original structure
         if (tokenObj.value === undefined) {
+          // When value is undefined we treat object as container of nested tokens.
+          // IMPORTANT: don't unconditionally exclude "description" here — exclude it only when
+          // it's a scalar token field (not a nested token object). This fixes the bug
+          // where a nested token named "description" was previously dropped.
           const nestedParts: string[] = [];
-          const subKeys = keys.filter(
-            (k) => !["type", "unit", "meta", "description"].includes(k)
-          );
+          const subKeys = keys.filter((k) => {
+            // always skip token scalar fields
+            if (["type", "unit", "meta"].includes(k)) return false;
+            if (k === "description") {
+              // if description is a scalar (string/number) it's a field and must be skipped;
+              // but if it's a plain object — it's a nested token and must be kept.
+              return _.isPlainObject((map as IMap)[k]);
+            }
+            return true;
+          });
+
           for (const subKey of subKeys) {
             const kebabKey = opts.convertCase
               ? this.tokensParser.toKebabCase(subKey)
@@ -416,9 +468,21 @@ export class SCSSParser extends Parser {
             ]);
             nestedParts.push(`${kebabKey}: ${value}`);
           }
+
+          // include meta (but without meta.description) if present
+          if ((map as any).meta !== undefined && !subKeys.includes("meta")) {
+            // if meta exists as scalar or object and not already processed, include serialized meta
+            const serializedMeta = this.serializeMeta((map as any).meta, opts, [
+              ...path,
+              "meta",
+            ]);
+            nestedParts.push(`meta: ${serializedMeta}`);
+          }
+
           return `(\n  ${nestedParts.join(",\n  ")}\n)`;
         }
 
+        // token has a value -> return final normalized value
         const localOpts: ParseValueOptions = {
           ...opts,
           key: typeof tokenObj.type === "string" ? tokenObj.type : opts.key,
@@ -444,6 +508,12 @@ export class SCSSParser extends Parser {
     for (const [k, v] of Object.entries(map as Record<string, any>)) {
       if (!this.tokensParser.isKeyValidated(k)) continue;
       const kebabKey = opts.convertCase ? this.tokensParser.toKebabCase(k) : k;
+
+      // --- FIX: убираем description ТОЛЬКО внутри meta ---
+      if (k === "description" && path[path.length - 1] === "meta") {
+        continue;
+      }
+
       const value = this.parseMap(v as any, opts, [...path, kebabKey]);
       nestedParts.push(`${kebabKey}: ${value}`);
     }
@@ -511,17 +581,30 @@ export class TokensParser {
     const builder = new JSONBuilder(this.opts.builder!);
     await builder.build();
 
-    if (this.opts.builder) {
-      const builder = new JSONBuilder(this.opts.builder);
-      await builder.build();
-    }
-
-    const { source, outDir } = this.opts;
-    if (source && outDir) {
-      await this.listDir(source, outDir);
+    if (this.opts.source && this.opts.outDir) {
+      await this.listDir(this.opts.source, this.opts.outDir);
     }
 
     await this.generateEntryFile();
+
+    // --- THEMES ---
+    if (this.opts.themesDir && this.opts.themesOutFile) {
+      const includeRequired = this.opts.themesIncludeRequired ?? false;
+
+      if (this.opts.themesDir.endsWith(".json")) {
+        await this.generateThemesFromFile(
+          this.opts.themesDir,
+          this.opts.themesOutFile,
+          includeRequired
+        );
+      } else {
+        await this.generateThemesFromDir(
+          this.opts.themesDir,
+          this.opts.themesOutFile,
+          includeRequired
+        );
+      }
+    }
   }
 
   isKeyValidated(key: string): boolean {
@@ -691,32 +774,114 @@ export class TokensParser {
     opts?: ParseValueOptions
   ): string[] {
     const useOpts = opts ?? this.defaultVarsOptions;
+
+    if (_.isPlainObject(obj) && "value" in obj) {
+      const flatPath =
+        useOpts.includeFileName && useOpts.fileName
+          ? [
+              useOpts.convertCase
+                ? this.toKebabCase(useOpts.fileName!)
+                : useOpts.fileName!,
+              ...path,
+            ]
+          : path;
+
+      const cssVarName = `--${flatPath.join("-")}`;
+      const finalValue =
+        obj.value !== undefined
+          ? this.parser.parseValue(obj.value, useOpts)
+          : "initial";
+
+      result.push(`${cssVarName}: ${finalValue};`);
+      return result;
+    }
+
     for (const [key, value] of Object.entries(obj)) {
       const newKey = useOpts.convertCase ? this.toKebabCase(key) : key;
       const newPath = [...path, newKey];
-
       if (_.isPlainObject(value)) {
         this.flattenToCSSVariables(value, newPath, result, useOpts);
-      } else {
-        const flatPath =
-          useOpts.includeFileName && useOpts.fileName
-            ? [
-                useOpts.convertCase
-                  ? this.toKebabCase(useOpts.fileName!)
-                  : useOpts.fileName!,
-                ...newPath,
-              ]
-            : newPath;
-
-        const cssVarName = `--${flatPath.join("-")}`;
-        const finalValue =
-          value !== undefined
-            ? this.parser.parseValue(value, useOpts)
-            : "initial";
-        result.push(`${cssVarName}: ${finalValue};`);
       }
     }
+
     return result;
+  }
+
+  // --- Theming --- //
+
+  async writeCSSFile(filePath: string, cssContent: string) {
+    await fs.mkdir(path.dirname(filePath), { recursive: true });
+    await fs.writeFile(filePath, cssContent, "utf-8");
+  }
+
+  async generateThemesFromDir(
+    inputDir: string,
+    outputPath: string,
+    includeRequired: boolean
+  ): Promise<void> {
+    const files = await fs.readdir(inputDir);
+    const themes: Record<string, any> = {};
+
+    for (const file of files) {
+      if (!file.endsWith(".json")) continue;
+      const themeName = path.basename(file, ".json");
+      const raw = await fs.readFile(path.join(inputDir, file), "utf-8");
+      themes[themeName] = JSON.parse(raw);
+    }
+
+    const css = this.generateThemesBlockFromObject(themes, includeRequired);
+    await fs.mkdir(path.dirname(outputPath), { recursive: true });
+    await fs.writeFile(outputPath, css, "utf-8");
+  }
+
+  async generateThemesFromFile(
+    inputPath: string,
+    outputPath: string,
+    includeRequired: boolean
+  ): Promise<void> {
+    const raw = await fs.readFile(inputPath, "utf-8");
+    const themes = JSON.parse(raw);
+
+    const css = this.generateThemesBlockFromObject(themes, includeRequired);
+    await fs.mkdir(path.dirname(outputPath), { recursive: true });
+    await fs.writeFile(outputPath, css, "utf-8");
+  }
+
+  generateThemesBlockFromObject(
+    themes: Record<string, any>,
+    includeRequired: boolean
+  ): string {
+    let css = "";
+
+    for (const [themeName, themeObj] of Object.entries(themes)) {
+      const vars: string[] = [];
+
+      const walk = (obj: any, path: string[] = []) => {
+        if (_.isPlainObject(obj) && "value" in obj) {
+          const exportAsVar = obj.meta?.build?.web?.exportAsVar ?? false;
+
+          if (!includeRequired || exportAsVar) {
+            const cssVarName = `--${path.join("-")}`;
+            vars.push(
+              `${cssVarName}: ${this.parser.parseValue(obj.value, this.defaultVarsOptions)}`
+            );
+          }
+          return;
+        }
+
+        if (_.isPlainObject(obj)) {
+          for (const [k, v] of Object.entries(obj)) {
+            walk(v, [...path, this.toKebabCase(k)]);
+          }
+        }
+      };
+
+      walk(themeObj);
+
+      css += `\n[data-theme="${themeName}"] {\n  ${vars.join("\n  ")}\n}\n`;
+    }
+
+    return css;
   }
 
   // --- JSONToSCSS ---

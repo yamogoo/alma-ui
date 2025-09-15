@@ -11,7 +11,7 @@ const { $t } = storeToRefs(useLocaleStore());
 
 <template>
   <MainFooter :as="'footer'" class="app-footer" :is-main-element="true">
-    <Text :variant="'caption-3'" :text-color="'secondary'"
+    <Text :variant="'caption-2'" :text-color="'secondary'"
       >{{ $t.about.author }} | 2025</Text
     >
   </MainFooter>

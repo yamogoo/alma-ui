@@ -655,6 +655,170 @@
     "value": "#0B0202",
     "type": "string"
   },
+  "carrot-0": {
+    "value": "#FFF5F3",
+    "type": "string"
+  },
+  "carrot-25": {
+    "value": "#FEEBE7",
+    "type": "string"
+  },
+  "carrot-50": {
+    "value": "#FEE2DB",
+    "type": "string"
+  },
+  "carrot-75": {
+    "value": "#FED8CF",
+    "type": "string"
+  },
+  "carrot-100": {
+    "value": "#FECEC4",
+    "type": "string"
+  },
+  "carrot-125": {
+    "value": "#FDC4B8",
+    "type": "string"
+  },
+  "carrot-150": {
+    "value": "#FDBBAC",
+    "type": "string"
+  },
+  "carrot-175": {
+    "value": "#FDB1A0",
+    "type": "string"
+  },
+  "carrot-200": {
+    "value": "#FDA794",
+    "type": "string"
+  },
+  "carrot-225": {
+    "value": "#FC9D88",
+    "type": "string"
+  },
+  "carrot-250": {
+    "value": "#FC947C",
+    "type": "string"
+  },
+  "carrot-275": {
+    "value": "#FC8A70",
+    "type": "string"
+  },
+  "carrot-300": {
+    "value": "#FC8065",
+    "type": "string"
+  },
+  "carrot-325": {
+    "value": "#FB7659",
+    "type": "string"
+  },
+  "carrot-350": {
+    "value": "#FB6D4D",
+    "type": "string"
+  },
+  "carrot-375": {
+    "value": "#FB6341",
+    "type": "string"
+  },
+  "carrot-400": {
+    "value": "#FA5935",
+    "type": "string"
+  },
+  "carrot-425": {
+    "value": "#FA4F29",
+    "type": "string"
+  },
+  "carrot-450": {
+    "value": "#FA461D",
+    "type": "string"
+  },
+  "carrot-475": {
+    "value": "#FA3C11",
+    "type": "string"
+  },
+  "carrot-500": {
+    "value": "#F93206",
+    "type": "string"
+  },
+  "carrot-525": {
+    "value": "#EE3005",
+    "type": "string"
+  },
+  "carrot-550": {
+    "value": "#E22D05",
+    "type": "string"
+  },
+  "carrot-575": {
+    "value": "#D62B05",
+    "type": "string"
+  },
+  "carrot-600": {
+    "value": "#CA2905",
+    "type": "string"
+  },
+  "carrot-625": {
+    "value": "#BE2604",
+    "type": "string"
+  },
+  "carrot-650": {
+    "value": "#B22404",
+    "type": "string"
+  },
+  "carrot-675": {
+    "value": "#A62104",
+    "type": "string"
+  },
+  "carrot-700": {
+    "value": "#9A1F03",
+    "type": "string"
+  },
+  "carrot-725": {
+    "value": "#8F1D03",
+    "type": "string"
+  },
+  "carrot-750": {
+    "value": "#831A03",
+    "type": "string"
+  },
+  "carrot-775": {
+    "value": "#771803",
+    "type": "string"
+  },
+  "carrot-800": {
+    "value": "#6B1502",
+    "type": "string"
+  },
+  "carrot-825": {
+    "value": "#5F1302",
+    "type": "string"
+  },
+  "carrot-850": {
+    "value": "#531102",
+    "type": "string"
+  },
+  "carrot-875": {
+    "value": "#470E02",
+    "type": "string"
+  },
+  "carrot-900": {
+    "value": "#3B0C01",
+    "type": "string"
+  },
+  "carrot-925": {
+    "value": "#300A01",
+    "type": "string"
+  },
+  "carrot-950": {
+    "value": "#240701",
+    "type": "string"
+  },
+  "carrot-975": {
+    "value": "#180501",
+    "type": "string"
+  },
+  "carrot-1000": {
+    "value": "#0C0200",
+    "type": "string"
+  },
   "orange-0": {
     "value": "#FFFBF3",
     "type": "string"

@@ -1912,52 +1912,12 @@
         }
       }
     },
-    "snackbar": {
-      "default": {
-        "lg": {
-          "self": {
-            "gap": {
-              "value": 12,
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "category": "snackbar"
-              }
-            },
-            "paddingH": {
-              "value": 24,
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "category": "snackbar"
-              }
-            },
-            "paddingV": {
-              "value": 16,
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "category": "snackbar"
-              }
-            },
-            "borderRadius": {
-              "value": 12,
-              "type": "spacing",
-              "unit": "px",
-              "meta": {
-                "category": "snackbar"
-              }
-            }
-          }
-        }
-      }
-    },
     "stepPaginationTabs": {
       "default": {
         "lg": {
           "item": {
             "fontStyle": {
-              "value": "title-3",
+              "value": "title-1",
               "type": "alias",
               "unit": "",
               "meta": {
@@ -1979,7 +1939,7 @@
         "md": {
           "item": {
             "fontStyle": {
-              "value": "title-4",
+              "value": "title-2",
               "type": "alias",
               "unit": "",
               "meta": {
@@ -2516,6 +2476,142 @@
             }
           },
           "type": "component"
+        }
+      }
+    },
+    "snackbar": {
+      "default": {
+        "lg": {
+          "self": {
+            "gap": {
+              "value": 12,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "snackbar"
+              }
+            },
+            "paddingH": {
+              "value": 24,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "snackbar"
+              }
+            },
+            "paddingV": {
+              "value": 16,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "snackbar"
+              }
+            },
+            "borderRadius": {
+              "value": 12,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "snackbar"
+              }
+            }
+          },
+          "content": {
+            "gap": {
+              "value": 0,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "snackbar"
+              }
+            }
+          },
+          "title": {
+            "fontStyle": {
+              "value": "title-3",
+              "type": "alias",
+              "unit": "",
+              "meta": {
+                "category": "snackbar"
+              }
+            }
+          },
+          "description": {
+            "fontStyle": {
+              "value": "body-3",
+              "type": "alias",
+              "unit": "",
+              "meta": {
+                "category": "snackbar"
+              }
+            }
+          }
+        },
+        "md": {
+          "self": {
+            "gap": {
+              "value": 8,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "snackbar"
+              }
+            },
+            "paddingH": {
+              "value": 16,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "snackbar"
+              }
+            },
+            "paddingV": {
+              "value": 12,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "snackbar"
+              }
+            },
+            "borderRadius": {
+              "value": 8,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "snackbar"
+              }
+            }
+          },
+          "content": {
+            "gap": {
+              "value": 0,
+              "type": "spacing",
+              "unit": "px",
+              "meta": {
+                "category": "snackbar"
+              }
+            }
+          },
+          "title": {
+            "fontStyle": {
+              "value": "title-3",
+              "type": "alias",
+              "unit": "",
+              "meta": {
+                "category": "snackbar"
+              }
+            }
+          },
+          "description": {
+            "fontStyle": {
+              "value": "body-3",
+              "type": "alias",
+              "unit": "",
+              "meta": {
+                "category": "snackbar"
+              }
+            }
+          }
         }
       }
     }

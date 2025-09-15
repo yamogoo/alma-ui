@@ -35,6 +35,15 @@
       "category": "base color"
     }
   },
+  "carrot": {
+    "value": "#FA471F",
+    "type": "color",
+    "unit": "hex",
+    "meta": {
+      "description": "additional color",
+      "category": "base color"
+    }
+  },
   "orange": {
     "value": "#FFC968",
     "type": "color",

@@ -17,7 +17,7 @@
               - type
               - unit
               - meta
-        - elements
+        - elementName
           - propName
             - state
               - value
@@ -35,7 +35,7 @@
               - type
               - unit
               - meta
-        - elements
+        - elementName
           - propsName
             - state
               - value

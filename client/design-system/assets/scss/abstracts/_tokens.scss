@@ -40,33 +40,3 @@ $touch-area:(
   size: 36px
 )
 );
-
-:root {
-  --tokens-gap-xxs: 4px;
-  --tokens-gap-xs: 10px;
-  --tokens-gap-sm: 12px;
-  --tokens-gap-md: 14px;
-  --tokens-gap-lg: 24px;
-  --tokens-gap-xl: 32px;
-  --tokens-outline: 1px;
-  --tokens-roundness-xxs: 4px;
-  --tokens-roundness-xs: 8px;
-  --tokens-roundness-sm: 12px;
-  --tokens-roundness-md: 16px;
-  --tokens-roundness-lg: 20px;
-  --tokens-roundness-xl: 24px;
-  --tokens-roundness-xxl: 32px;
-  --tokens-roundness-infinity: 9999px;
-  --tokens-spacing-xxs: 4px;
-  --tokens-spacing-xs: 8px;
-  --tokens-spacing-sm: 12px;
-  --tokens-spacing-md: 16px;
-  --tokens-spacing-lg: 24px;
-  --tokens-spacing-xl: 32px;
-  --tokens-spacing-xxl: 48px;
-  --tokens-stroke-sm: 1px;
-  --tokens-stroke-md: 2px;
-  --tokens-stroke-lg: 3px;
-  --tokens-stroke-xl: 4px;
-  --tokens-touch-area-sm-size: 36px;
-}

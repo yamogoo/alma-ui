@@ -1,39 +1,183 @@
 {
-  "typography.tokens.fontFamily.primary": {
+  "typography.styles.body-1.fontFamily": {
     "value": "Manrope",
     "type": "fontFamily",
-    "unit": "font",
-    "description": "Primary font family"
-  },
-  "typography.tokens.fontFamily.secondary": {
-    "value": "Manrope",
-    "type": "fontFamily",
-    "unit": "font",
-    "description": "Secondary font family"
-  },
-  "typography.tokens.fontWeight.light": {
-    "value": 400,
-    "type": "fontWeight",
     "unit": "",
-    "description": "Light weight"
+    "description": "Body-1 font family"
   },
-  "typography.tokens.fontWeight.regular": {
-    "value": 500,
-    "type": "fontWeight",
+  "typography.styles.body-1.fontSize": {
+    "value": 18,
+    "type": "size",
+    "unit": "px",
+    "description": "Body-1 font size"
+  },
+  "typography.styles.body-1.fontStyle": {
+    "value": "normal",
+    "type": "fontStyle",
     "unit": "",
-    "description": "Regular weight"
+    "description": "Body-1 font style"
   },
-  "typography.tokens.fontWeight.semibold": {
+  "typography.styles.body-1.fontWeight": {
     "value": 700,
     "type": "fontWeight",
     "unit": "",
-    "description": "Semibold weight"
+    "description": "Body-1 font weight"
   },
-  "typography.tokens.fontWeight.bold": {
-    "value": 800,
+  "typography.styles.body-1.lineHeight": {
+    "value": "150%",
+    "type": "lineHeight",
+    "unit": "%",
+    "description": "Body-1 line height"
+  },
+  "typography.styles.body-1.letterSpacing": {
+    "value": 0.48,
+    "type": "letterSpacing",
+    "unit": "px",
+    "description": "Body-1 letter spacing"
+  },
+  "typography.styles.body-2.fontFamily": {
+    "value": "Manrope",
+    "type": "fontFamily",
+    "unit": "",
+    "description": "Body-2 font family"
+  },
+  "typography.styles.body-2.fontSize": {
+    "value": 16,
+    "type": "size",
+    "unit": "px",
+    "description": "Body-2 font size"
+  },
+  "typography.styles.body-2.fontStyle": {
+    "value": "normal",
+    "type": "fontStyle",
+    "unit": "",
+    "description": "Body-2 font style"
+  },
+  "typography.styles.body-2.fontWeight": {
+    "value": 500,
     "type": "fontWeight",
     "unit": "",
-    "description": "Bold weight"
+    "description": "Body-2 font weight"
+  },
+  "typography.styles.body-2.lineHeight": {
+    "value": "150%",
+    "type": "lineHeight",
+    "unit": "%",
+    "description": "Body-2 line height"
+  },
+  "typography.styles.body-2.letterSpacing": {
+    "value": 0.39,
+    "type": "letterSpacing",
+    "unit": "px",
+    "description": "Body-2 letter spacing"
+  },
+  "typography.styles.body-3.fontFamily": {
+    "value": "Manrope",
+    "type": "fontFamily",
+    "unit": "",
+    "description": "Body-2 font family"
+  },
+  "typography.styles.body-3.fontSize": {
+    "value": 14,
+    "type": "size",
+    "unit": "px",
+    "description": "Body-2 font size"
+  },
+  "typography.styles.body-3.fontStyle": {
+    "value": "normal",
+    "type": "fontStyle",
+    "unit": "",
+    "description": "Body-2 font style"
+  },
+  "typography.styles.body-3.fontWeight": {
+    "value": 500,
+    "type": "fontWeight",
+    "unit": "",
+    "description": "Body-2 font weight"
+  },
+  "typography.styles.body-3.lineHeight": {
+    "value": "150%",
+    "type": "lineHeight",
+    "unit": "%",
+    "description": "Body-2 line height"
+  },
+  "typography.styles.body-3.letterSpacing": {
+    "value": 0.39,
+    "type": "letterSpacing",
+    "unit": "px",
+    "description": "Body-2 letter spacing"
+  },
+  "typography.styles.caption-1.fontFamily": {
+    "value": "Manrope",
+    "type": "fontFamily",
+    "unit": "",
+    "description": "Caption-1 font family"
+  },
+  "typography.styles.caption-1.fontSize": {
+    "value": 12,
+    "type": "size",
+    "unit": "px",
+    "description": "Caption-1 font size"
+  },
+  "typography.styles.caption-1.fontStyle": {
+    "value": "normal",
+    "type": "fontStyle",
+    "unit": "",
+    "description": "Caption-1 font style"
+  },
+  "typography.styles.caption-1.fontWeight": {
+    "value": 500,
+    "type": "fontWeight",
+    "unit": "",
+    "description": "Caption-1 font weight"
+  },
+  "typography.styles.caption-1.lineHeight": {
+    "value": 17,
+    "type": "size",
+    "unit": "px",
+    "description": "Caption-1 line height"
+  },
+  "typography.styles.caption-1.letterSpacing": {
+    "value": 0.48,
+    "type": "letterSpacing",
+    "unit": "px",
+    "description": "Caption-1 letter spacing"
+  },
+  "typography.styles.caption-2.fontFamily": {
+    "value": "Manrope",
+    "type": "fontFamily",
+    "unit": "",
+    "description": "Caption-2 font family"
+  },
+  "typography.styles.caption-2.fontSize": {
+    "value": 11.5,
+    "type": "size",
+    "unit": "px",
+    "description": "Caption-2 font size"
+  },
+  "typography.styles.caption-2.fontStyle": {
+    "value": "normal",
+    "type": "fontStyle",
+    "unit": "",
+    "description": "Caption-2 font style"
+  },
+  "typography.styles.caption-2.fontWeight": {
+    "value": 400,
+    "type": "fontWeight",
+    "unit": "",
+    "description": "Caption-2 font weight"
+  },
+  "typography.styles.caption-2.lineHeight": {
+    "value": 16,
+    "type": "size",
+    "unit": "px",
+    "description": "Caption-2 line height"
+  },
+  "typography.styles.caption-2.letterSpacing": {
+    "value": 0.48,
+    "type": "letterSpacing",
+    "unit": "px",
+    "description": "Caption-2 letter spacing"
   },
   "typography.styles.display-1.fontFamily": {
     "value": "Manrope",
@@ -142,282 +286,6 @@
     "type": "letterSpacing",
     "unit": "px",
     "description": "Display-3 letter spacing"
-  },
-  "typography.styles.display-4.fontFamily": {
-    "value": "Manrope",
-    "type": "fontFamily",
-    "unit": "",
-    "description": "Display-4 font family"
-  },
-  "typography.styles.display-4.fontSize": {
-    "value": 64,
-    "type": "size",
-    "unit": "px",
-    "description": "Display-4 font size"
-  },
-  "typography.styles.display-4.fontStyle": {
-    "value": "normal",
-    "type": "fontStyle",
-    "unit": "",
-    "description": "Display-4 font style"
-  },
-  "typography.styles.display-4.fontWeight": {
-    "value": 800,
-    "type": "fontWeight",
-    "unit": "",
-    "description": "Display-4 font weight"
-  },
-  "typography.styles.display-4.lineHeight": {
-    "value": "100%",
-    "type": "lineHeight",
-    "unit": "%",
-    "description": "Display-4 line height"
-  },
-  "typography.styles.display-4.letterSpacing": {
-    "value": -0.3,
-    "type": "letterSpacing",
-    "unit": "px",
-    "description": "Display-4 letter spacing"
-  },
-  "typography.styles.title-1.fontFamily": {
-    "value": "Manrope",
-    "type": "fontFamily",
-    "unit": "",
-    "description": "Title-1 font family"
-  },
-  "typography.styles.title-1.fontSize": {
-    "value": 36,
-    "type": "size",
-    "unit": "px",
-    "description": "Title-1 font size"
-  },
-  "typography.styles.title-1.fontStyle": {
-    "value": "normal",
-    "type": "fontStyle",
-    "unit": "",
-    "description": "Title-1 font style"
-  },
-  "typography.styles.title-1.fontWeight": {
-    "value": 700,
-    "type": "fontWeight",
-    "unit": "",
-    "description": "Title-1 font weight"
-  },
-  "typography.styles.title-1.lineHeight": {
-    "value": 44,
-    "type": "size",
-    "unit": "px",
-    "description": "Title-1 line height"
-  },
-  "typography.styles.title-1.letterSpacing": {
-    "value": -0.3,
-    "type": "letterSpacing",
-    "unit": "px",
-    "description": "Title-1 letter spacing"
-  },
-  "typography.styles.title-1.marginBottom": {
-    "value": 8,
-    "type": "spacing",
-    "unit": "px",
-    "description": "Title-1 bottom margin"
-  },
-  "typography.styles.title-2.fontFamily": {
-    "value": "Manrope",
-    "type": "fontFamily",
-    "unit": "",
-    "description": "Title-2 font family"
-  },
-  "typography.styles.title-2.fontSize": {
-    "value": 28,
-    "type": "size",
-    "unit": "px",
-    "description": "Title-2 font size"
-  },
-  "typography.styles.title-2.fontStyle": {
-    "value": "normal",
-    "type": "fontStyle",
-    "unit": "",
-    "description": "Title-2 font style"
-  },
-  "typography.styles.title-2.fontWeight": {
-    "value": 700,
-    "type": "fontWeight",
-    "unit": "",
-    "description": "Title-2 font weight"
-  },
-  "typography.styles.title-2.lineHeight": {
-    "value": 28,
-    "type": "size",
-    "unit": "px",
-    "description": "Title-2 line height"
-  },
-  "typography.styles.title-2.letterSpacing": {
-    "value": -0.3,
-    "type": "letterSpacing",
-    "unit": "px",
-    "description": "Title-2 letter spacing"
-  },
-  "typography.styles.title-2.marginBottom": {
-    "value": 8,
-    "type": "spacing",
-    "unit": "px",
-    "description": "Title-2 bottom margin"
-  },
-  "typography.styles.title-3.fontFamily": {
-    "value": "Manrope",
-    "type": "fontFamily",
-    "unit": "",
-    "description": "Title-3 font family"
-  },
-  "typography.styles.title-3.fontSize": {
-    "value": 22,
-    "type": "size",
-    "unit": "px",
-    "description": "Title-3 font size"
-  },
-  "typography.styles.title-3.fontStyle": {
-    "value": "normal",
-    "type": "fontStyle",
-    "unit": "",
-    "description": "Title-3 font style"
-  },
-  "typography.styles.title-3.fontWeight": {
-    "value": 700,
-    "type": "fontWeight",
-    "unit": "",
-    "description": "Title-3 font weight"
-  },
-  "typography.styles.title-3.lineHeight": {
-    "value": 24,
-    "type": "size",
-    "unit": "px",
-    "description": "Title-3 line height"
-  },
-  "typography.styles.title-3.letterSpacing": {
-    "value": -0.3,
-    "type": "letterSpacing",
-    "unit": "px",
-    "description": "Title-3 letter spacing"
-  },
-  "typography.styles.title-3.marginBottom": {
-    "value": 8,
-    "type": "spacing",
-    "unit": "px",
-    "description": "Title-3 bottom margin"
-  },
-  "typography.styles.title-4.fontFamily": {
-    "value": "Manrope",
-    "type": "fontFamily",
-    "unit": "",
-    "description": "Title-4 font family"
-  },
-  "typography.styles.title-4.fontSize": {
-    "value": 18,
-    "type": "size",
-    "unit": "px",
-    "description": "Title-4 font size"
-  },
-  "typography.styles.title-4.fontStyle": {
-    "value": "normal",
-    "type": "fontStyle",
-    "unit": "",
-    "description": "Title-4 font style"
-  },
-  "typography.styles.title-4.fontWeight": {
-    "value": 700,
-    "type": "fontWeight",
-    "unit": "",
-    "description": "Title-4 font weight"
-  },
-  "typography.styles.title-4.lineHeight": {
-    "value": 20,
-    "type": "size",
-    "unit": "px",
-    "description": "Title-4 line height"
-  },
-  "typography.styles.title-4.letterSpacing": {
-    "value": -0.3,
-    "type": "letterSpacing",
-    "unit": "px",
-    "description": "Title-4 letter spacing"
-  },
-  "typography.styles.title-4.marginBottom": {
-    "value": 8,
-    "type": "spacing",
-    "unit": "px",
-    "description": "Title-4 bottom margin"
-  },
-  "typography.styles.body-1.fontFamily": {
-    "value": "Manrope",
-    "type": "fontFamily",
-    "unit": "",
-    "description": "Body-1 font family"
-  },
-  "typography.styles.body-1.fontSize": {
-    "value": 40,
-    "type": "size",
-    "unit": "px",
-    "description": "Body-1 font size"
-  },
-  "typography.styles.body-1.fontStyle": {
-    "value": "normal",
-    "type": "fontStyle",
-    "unit": "",
-    "description": "Body-1 font style"
-  },
-  "typography.styles.body-1.fontWeight": {
-    "value": 700,
-    "type": "fontWeight",
-    "unit": "",
-    "description": "Body-1 font weight"
-  },
-  "typography.styles.body-1.lineHeight": {
-    "value": "150%",
-    "type": "lineHeight",
-    "unit": "%",
-    "description": "Body-1 line height"
-  },
-  "typography.styles.body-1.letterSpacing": {
-    "value": 0.48,
-    "type": "letterSpacing",
-    "unit": "px",
-    "description": "Body-1 letter spacing"
-  },
-  "typography.styles.body-2.fontFamily": {
-    "value": "Manrope",
-    "type": "fontFamily",
-    "unit": "",
-    "description": "Body-2 font family"
-  },
-  "typography.styles.body-2.fontSize": {
-    "value": 19,
-    "type": "size",
-    "unit": "px",
-    "description": "Body-2 font size"
-  },
-  "typography.styles.body-2.fontStyle": {
-    "value": "normal",
-    "type": "fontStyle",
-    "unit": "",
-    "description": "Body-2 font style"
-  },
-  "typography.styles.body-2.fontWeight": {
-    "value": 500,
-    "type": "fontWeight",
-    "unit": "",
-    "description": "Body-2 font weight"
-  },
-  "typography.styles.body-2.lineHeight": {
-    "value": "150%",
-    "type": "lineHeight",
-    "unit": "%",
-    "description": "Body-2 line height"
-  },
-  "typography.styles.body-2.letterSpacing": {
-    "value": 0.39,
-    "type": "letterSpacing",
-    "unit": "px",
-    "description": "Body-2 letter spacing"
   },
   "typography.styles.label-1.fontFamily": {
     "value": "Manrope",
@@ -563,112 +431,196 @@
     "unit": "px",
     "description": "Label-4 letter spacing"
   },
-  "typography.styles.caption-1.fontFamily": {
+  "typography.styles.title-1.fontFamily": {
     "value": "Manrope",
     "type": "fontFamily",
     "unit": "",
-    "description": "Caption-1 font family"
+    "description": "Title-1 font family"
   },
-  "typography.styles.caption-1.fontSize": {
-    "value": 12,
+  "typography.styles.title-1.fontSize": {
+    "value": 24,
     "type": "size",
     "unit": "px",
-    "description": "Caption-1 font size"
+    "description": "Title-1 font size"
   },
-  "typography.styles.caption-1.fontStyle": {
+  "typography.styles.title-1.fontStyle": {
     "value": "normal",
     "type": "fontStyle",
     "unit": "",
-    "description": "Caption-1 font style"
+    "description": "Title-1 font style"
   },
-  "typography.styles.caption-1.fontWeight": {
-    "value": 500,
+  "typography.styles.title-1.fontWeight": {
+    "value": 700,
     "type": "fontWeight",
     "unit": "",
-    "description": "Caption-1 font weight"
+    "description": "Title-1 font weight"
   },
-  "typography.styles.caption-1.lineHeight": {
-    "value": 17,
+  "typography.styles.title-1.lineHeight": {
+    "value": 32,
     "type": "size",
     "unit": "px",
-    "description": "Caption-1 line height"
+    "description": "Title-1 line height"
   },
-  "typography.styles.caption-1.letterSpacing": {
-    "value": 0.48,
+  "typography.styles.title-1.letterSpacing": {
+    "value": -0.3,
     "type": "letterSpacing",
     "unit": "px",
-    "description": "Caption-1 letter spacing"
+    "description": "Title-1 letter spacing"
   },
-  "typography.styles.caption-2.fontFamily": {
+  "typography.styles.title-1.marginBottom": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Title-1 bottom margin"
+  },
+  "typography.styles.title-2.fontFamily": {
     "value": "Manrope",
     "type": "fontFamily",
     "unit": "",
-    "description": "Caption-2 font family"
+    "description": "Label-2 font family"
   },
-  "typography.styles.caption-2.fontSize": {
-    "value": 11.5,
+  "typography.styles.title-2.fontSize": {
+    "value": 18,
     "type": "size",
     "unit": "px",
-    "description": "Caption-2 font size"
+    "description": "Label-2 font size"
   },
-  "typography.styles.caption-2.fontStyle": {
+  "typography.styles.title-2.fontStyle": {
     "value": "normal",
     "type": "fontStyle",
     "unit": "",
-    "description": "Caption-2 font style"
+    "description": "Label-2 font style"
   },
-  "typography.styles.caption-2.fontWeight": {
-    "value": 400,
+  "typography.styles.title-2.fontWeight": {
+    "value": 700,
     "type": "fontWeight",
     "unit": "",
-    "description": "Caption-2 font weight"
+    "description": "Label-2 font weight"
   },
-  "typography.styles.caption-2.lineHeight": {
+  "typography.styles.title-2.lineHeight": {
+    "value": 24,
+    "type": "size",
+    "unit": "px",
+    "description": "Label-2 line height"
+  },
+  "typography.styles.title-2.letterSpacing": {
+    "value": 0.1,
+    "type": "letterSpacing",
+    "unit": "px",
+    "description": "Label-2 letter spacing"
+  },
+  "typography.styles.title-3.fontFamily": {
+    "value": "Manrope",
+    "type": "fontFamily",
+    "unit": "",
+    "description": "Label-3 font family"
+  },
+  "typography.styles.title-3.fontSize": {
     "value": 16,
     "type": "size",
     "unit": "px",
-    "description": "Caption-2 line height"
+    "description": "Label-3 font size"
   },
-  "typography.styles.caption-2.letterSpacing": {
-    "value": 0.48,
-    "type": "letterSpacing",
-    "unit": "px",
-    "description": "Caption-2 letter spacing"
-  },
-  "typography.styles.caption-3.fontFamily": {
-    "value": "Manrope",
-    "type": "fontFamily",
-    "unit": "",
-    "description": "Caption-3 font family"
-  },
-  "typography.styles.caption-3.fontSize": {
-    "value": 11,
-    "type": "size",
-    "unit": "px",
-    "description": "Caption-3 font size"
-  },
-  "typography.styles.caption-3.fontStyle": {
+  "typography.styles.title-3.fontStyle": {
     "value": "normal",
     "type": "fontStyle",
     "unit": "",
-    "description": "Caption-3 font style"
+    "description": "Label-3 font style"
   },
-  "typography.styles.caption-3.fontWeight": {
+  "typography.styles.title-3.fontWeight": {
+    "value": 700,
+    "type": "fontWeight",
+    "unit": "",
+    "description": "Label-3 font weight"
+  },
+  "typography.styles.title-3.lineHeight": {
+    "value": 22,
+    "type": "size",
+    "unit": "px",
+    "description": "Label-3 line height"
+  },
+  "typography.styles.title-3.letterSpacing": {
+    "value": 0.1,
+    "type": "letterSpacing",
+    "unit": "px",
+    "description": "Label-3 letter spacing"
+  },
+  "typography.styles.title-4.fontFamily": {
+    "value": "Manrope",
+    "type": "fontFamily",
+    "unit": "",
+    "description": "Title-4 font family"
+  },
+  "typography.styles.title-4.fontSize": {
+    "value": 12,
+    "type": "size",
+    "unit": "px",
+    "description": "Title-4 font size"
+  },
+  "typography.styles.title-4.fontStyle": {
+    "value": "normal",
+    "type": "fontStyle",
+    "unit": "",
+    "description": "Title-4 font style"
+  },
+  "typography.styles.title-4.fontWeight": {
+    "value": 700,
+    "type": "fontWeight",
+    "unit": "",
+    "description": "Title-4 font weight"
+  },
+  "typography.styles.title-4.lineHeight": {
+    "value": 18,
+    "type": "size",
+    "unit": "px",
+    "description": "Title-4 line height"
+  },
+  "typography.styles.title-4.letterSpacing": {
+    "value": -0.3,
+    "type": "letterSpacing",
+    "unit": "px",
+    "description": "Title-4 letter spacing"
+  },
+  "typography.styles.title-4.marginBottom": {
+    "value": 8,
+    "type": "spacing",
+    "unit": "px",
+    "description": "Title-4 bottom margin"
+  },
+  "typography.tokens.fontFamily.primary": {
+    "value": "Manrope",
+    "type": "fontFamily",
+    "unit": "font",
+    "description": "Primary font family"
+  },
+  "typography.tokens.fontFamily.secondary": {
+    "value": "Manrope",
+    "type": "fontFamily",
+    "unit": "font",
+    "description": "Secondary font family"
+  },
+  "typography.tokens.fontWeight.light": {
+    "value": 400,
+    "type": "fontWeight",
+    "unit": "",
+    "description": "Light weight"
+  },
+  "typography.tokens.fontWeight.regular": {
     "value": 500,
     "type": "fontWeight",
     "unit": "",
-    "description": "Caption-3 font weight"
+    "description": "Regular weight"
   },
-  "typography.styles.caption-3.lineHeight": {
-    "value": 11,
-    "type": "size",
-    "unit": "px",
-    "description": "Caption-3 line height"
+  "typography.tokens.fontWeight.semibold": {
+    "value": 700,
+    "type": "fontWeight",
+    "unit": "",
+    "description": "Semibold weight"
   },
-  "typography.styles.caption-3.letterSpacing": {
-    "value": 0.3,
-    "type": "letterSpacing",
-    "unit": "px",
-    "description": "Caption-3 letter spacing"
+  "typography.tokens.fontWeight.bold": {
+    "value": 800,
+    "type": "fontWeight",
+    "unit": "",
+    "description": "Bold weight"
   }
 }

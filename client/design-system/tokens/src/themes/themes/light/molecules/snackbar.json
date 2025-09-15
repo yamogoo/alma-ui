@@ -1,0 +1,150 @@
+{
+  "neutral": {
+    "primary": {
+      "self": {
+        "background": {
+          "value": "{themes.themes.light.abstracts.background.primary.value}",
+          "type": "color",
+          "unit": "",
+          "meta": {
+            "category": "snackbar"
+          }
+        }
+      },
+      "title": {
+        "value": "{themes.themes.light.abstracts.label.primary.value}",
+        "type": "color",
+        "unit": "",
+        "meta": {
+          "category": "snackbar"
+        }
+      },
+      "description": {
+        "value": "{themes.themes.light.abstracts.label.secondary.value}",
+        "type": "color",
+        "unit": "",
+        "meta": {
+          "category": "snackbar"
+        }
+      },
+      "closeButton": {
+        "tone": {
+          "value": "neutral"
+        },
+        "mode": {
+          "value": "inversed"
+        }
+      }
+    },
+    "inversed": {
+      "self": {
+        "background": {
+          "value": "{themes.themes.light.abstracts.background.primaryInversed.value}",
+          "type": "color",
+          "unit": "",
+          "meta": {
+            "category": "snackbar"
+          }
+        }
+      },
+      "title": {
+        "value": "{themes.themes.light.abstracts.label.primaryInversed.value}",
+        "type": "color",
+        "unit": "",
+        "meta": {
+          "category": "snackbar"
+        }
+      },
+      "description": {
+        "value": "{themes.themes.light.abstracts.label.secondaryInversed.value}",
+        "type": "color",
+        "unit": "",
+        "meta": {
+          "category": "snackbar"
+        }
+      },
+      "closeButton": {
+        "tone": {
+          "value": "neutral"
+        },
+        "mode": {
+          "value": "primary"
+        }
+      }
+    }
+  },
+  "accent": {
+    "primary": {
+      "self": {
+        "background": {
+          "value": "{themes.themes.light.abstracts.background.accent.value}",
+          "type": "color",
+          "unit": "",
+          "meta": {
+            "category": "snackbar"
+          }
+        }
+      },
+      "title": {
+        "value": "{themes.themes.light.abstracts.label.primaryInversed.value}",
+        "type": "color",
+        "unit": "",
+        "meta": {
+          "category": "snackbar"
+        }
+      },
+      "description": {
+        "value": "{themes.themes.light.abstracts.label.primaryInversed.value}",
+        "type": "color",
+        "unit": "",
+        "meta": {
+          "category": "snackbar"
+        }
+      },
+      "closeButton": {
+        "tone": {
+          "value": "neutral"
+        },
+        "mode": {
+          "value": "inversed"
+        }
+      }
+    },
+    "inversed": {
+      "self": {
+        "background": {
+          "value": "{themes.themes.light.abstracts.background.accent.value}",
+          "type": "color",
+          "unit": "",
+          "meta": {
+            "category": "snackbar"
+          }
+        }
+      },
+      "title": {
+        "value": "{themes.themes.light.abstracts.label.primaryInversed.value}",
+        "type": "color",
+        "unit": "",
+        "meta": {
+          "category": "snackbar"
+        }
+      },
+      "description": {
+        "value": "{themes.themes.light.abstracts.label.primaryInversed.value}",
+        "type": "color",
+        "unit": "",
+        "meta": {
+          "category": "snackbar"
+        }
+      },
+      "closeButton": {
+        "tone": {
+          "value": "neutral"
+        },
+        "mode": {
+          "value": "inversed"
+        }
+      }
+    }
+  }
+}

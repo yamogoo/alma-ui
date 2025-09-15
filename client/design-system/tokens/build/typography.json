@@ -1,66 +1,286 @@
 {
   "typography": {
-    "tokens": {
-      "fontFamily": {
-        "primary": {
+    "styles": {
+      "body-1": {
+        "fontFamily": {
           "value": "Manrope",
           "type": "fontFamily",
-          "unit": "font",
-          "meta": {
-            "description": "Primary font family",
-            "category": "typography"
-          }
-        },
-        "secondary": {
-          "value": "Manrope",
-          "type": "fontFamily",
-          "unit": "font",
-          "meta": {
-            "description": "Secondary font family",
-            "category": "typography"
-          }
-        }
-      },
-      "fontWeight": {
-        "light": {
-          "value": 400,
-          "type": "fontWeight",
           "unit": "",
           "meta": {
-            "description": "Light weight",
+            "description": "Body-1 font family",
             "category": "typography"
           }
         },
-        "regular": {
-          "value": 500,
-          "type": "fontWeight",
+        "fontSize": {
+          "value": 18,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Body-1 font size",
+            "category": "typography"
+          }
+        },
+        "fontStyle": {
+          "value": "normal",
+          "type": "fontStyle",
           "unit": "",
           "meta": {
-            "description": "Regular weight",
+            "description": "Body-1 font style",
             "category": "typography"
           }
         },
-        "semibold": {
+        "fontWeight": {
           "value": 700,
           "type": "fontWeight",
           "unit": "",
           "meta": {
-            "description": "Semibold weight",
+            "description": "Body-1 font weight",
             "category": "typography"
           }
         },
-        "bold": {
-          "value": 800,
-          "type": "fontWeight",
-          "unit": "",
+        "lineHeight": {
+          "value": "150%",
+          "type": "lineHeight",
+          "unit": "%",
           "meta": {
-            "description": "Bold weight",
+            "description": "Body-1 line height",
+            "category": "typography"
+          }
+        },
+        "letterSpacing": {
+          "value": 0.48,
+          "type": "letterSpacing",
+          "unit": "px",
+          "meta": {
+            "description": "Body-1 letter spacing",
             "category": "typography"
           }
         }
-      }
-    },
-    "styles": {
+      },
+      "body-2": {
+        "fontFamily": {
+          "value": "Manrope",
+          "type": "fontFamily",
+          "unit": "",
+          "meta": {
+            "description": "Body-2 font family",
+            "category": "typography"
+          }
+        },
+        "fontSize": {
+          "value": 16,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Body-2 font size",
+            "category": "typography"
+          }
+        },
+        "fontStyle": {
+          "value": "normal",
+          "type": "fontStyle",
+          "unit": "",
+          "meta": {
+            "description": "Body-2 font style",
+            "category": "typography"
+          }
+        },
+        "fontWeight": {
+          "value": 500,
+          "type": "fontWeight",
+          "unit": "",
+          "meta": {
+            "description": "Body-2 font weight",
+            "category": "typography"
+          }
+        },
+        "lineHeight": {
+          "value": "150%",
+          "type": "lineHeight",
+          "unit": "%",
+          "meta": {
+            "description": "Body-2 line height",
+            "category": "typography"
+          }
+        },
+        "letterSpacing": {
+          "value": 0.39,
+          "type": "letterSpacing",
+          "unit": "px",
+          "meta": {
+            "description": "Body-2 letter spacing",
+            "category": "typography"
+          }
+        }
+      },
+      "body-3": {
+        "fontFamily": {
+          "value": "Manrope",
+          "type": "fontFamily",
+          "unit": "",
+          "meta": {
+            "description": "Body-2 font family",
+            "category": "typography"
+          }
+        },
+        "fontSize": {
+          "value": 14,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Body-2 font size",
+            "category": "typography"
+          }
+        },
+        "fontStyle": {
+          "value": "normal",
+          "type": "fontStyle",
+          "unit": "",
+          "meta": {
+            "description": "Body-2 font style",
+            "category": "typography"
+          }
+        },
+        "fontWeight": {
+          "value": 500,
+          "type": "fontWeight",
+          "unit": "",
+          "meta": {
+            "description": "Body-2 font weight",
+            "category": "typography"
+          }
+        },
+        "lineHeight": {
+          "value": "150%",
+          "type": "lineHeight",
+          "unit": "%",
+          "meta": {
+            "description": "Body-2 line height",
+            "category": "typography"
+          }
+        },
+        "letterSpacing": {
+          "value": 0.39,
+          "type": "letterSpacing",
+          "unit": "px",
+          "meta": {
+            "description": "Body-2 letter spacing",
+            "category": "typography"
+          }
+        }
+      },
+      "caption-1": {
+        "fontFamily": {
+          "value": "Manrope",
+          "type": "fontFamily",
+          "unit": "",
+          "meta": {
+            "description": "Caption-1 font family",
+            "category": "typography"
+          }
+        },
+        "fontSize": {
+          "value": 12,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Caption-1 font size",
+            "category": "typography"
+          }
+        },
+        "fontStyle": {
+          "value": "normal",
+          "type": "fontStyle",
+          "unit": "",
+          "meta": {
+            "description": "Caption-1 font style",
+            "category": "typography"
+          }
+        },
+        "fontWeight": {
+          "value": 500,
+          "type": "fontWeight",
+          "unit": "",
+          "meta": {
+            "description": "Caption-1 font weight",
+            "category": "typography"
+          }
+        },
+        "lineHeight": {
+          "value": 17,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Caption-1 line height",
+            "category": "typography"
+          }
+        },
+        "letterSpacing": {
+          "value": 0.48,
+          "type": "letterSpacing",
+          "unit": "px",
+          "meta": {
+            "description": "Caption-1 letter spacing",
+            "category": "typography"
+          }
+        }
+      },
+      "caption-2": {
+        "fontFamily": {
+          "value": "Manrope",
+          "type": "fontFamily",
+          "unit": "",
+          "meta": {
+            "description": "Caption-2 font family",
+            "category": "typography"
+          }
+        },
+        "fontSize": {
+          "value": 11.5,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Caption-2 font size",
+            "category": "typography"
+          }
+        },
+        "fontStyle": {
+          "value": "normal",
+          "type": "fontStyle",
+          "unit": "",
+          "meta": {
+            "description": "Caption-2 font style",
+            "category": "typography"
+          }
+        },
+        "fontWeight": {
+          "value": 400,
+          "type": "fontWeight",
+          "unit": "",
+          "meta": {
+            "description": "Caption-2 font weight",
+            "category": "typography"
+          }
+        },
+        "lineHeight": {
+          "value": 16,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Caption-2 line height",
+            "category": "typography"
+          }
+        },
+        "letterSpacing": {
+          "value": 0.48,
+          "type": "letterSpacing",
+          "unit": "px",
+          "meta": {
+            "description": "Caption-2 letter spacing",
+            "category": "typography"
+          }
+        }
+      },
       "display-1": {
         "fontFamily": {
           "value": "Manrope",
@@ -225,434 +445,6 @@
           "unit": "px",
           "meta": {
             "description": "Display-3 letter spacing",
-            "category": "typography"
-          }
-        }
-      },
-      "display-4": {
-        "fontFamily": {
-          "value": "Manrope",
-          "type": "fontFamily",
-          "unit": "",
-          "meta": {
-            "description": "Display-4 font family",
-            "category": "typography"
-          }
-        },
-        "fontSize": {
-          "value": 64,
-          "type": "size",
-          "unit": "px",
-          "meta": {
-            "description": "Display-4 font size",
-            "category": "typography"
-          }
-        },
-        "fontStyle": {
-          "value": "normal",
-          "type": "fontStyle",
-          "unit": "",
-          "meta": {
-            "description": "Display-4 font style",
-            "category": "typography"
-          }
-        },
-        "fontWeight": {
-          "value": 800,
-          "type": "fontWeight",
-          "unit": "",
-          "meta": {
-            "description": "Display-4 font weight",
-            "category": "typography"
-          }
-        },
-        "lineHeight": {
-          "value": "100%",
-          "type": "lineHeight",
-          "unit": "%",
-          "meta": {
-            "description": "Display-4 line height",
-            "category": "typography"
-          }
-        },
-        "letterSpacing": {
-          "value": -0.3,
-          "type": "letterSpacing",
-          "unit": "px",
-          "meta": {
-            "description": "Display-4 letter spacing",
-            "category": "typography"
-          }
-        }
-      },
-      "title-1": {
-        "fontFamily": {
-          "value": "Manrope",
-          "type": "fontFamily",
-          "unit": "",
-          "meta": {
-            "description": "Title-1 font family",
-            "category": "typography"
-          }
-        },
-        "fontSize": {
-          "value": 36,
-          "type": "size",
-          "unit": "px",
-          "meta": {
-            "description": "Title-1 font size",
-            "category": "typography"
-          }
-        },
-        "fontStyle": {
-          "value": "normal",
-          "type": "fontStyle",
-          "unit": "",
-          "meta": {
-            "description": "Title-1 font style",
-            "category": "typography"
-          }
-        },
-        "fontWeight": {
-          "value": 700,
-          "type": "fontWeight",
-          "unit": "",
-          "meta": {
-            "description": "Title-1 font weight",
-            "category": "typography"
-          }
-        },
-        "lineHeight": {
-          "value": 44,
-          "type": "size",
-          "unit": "px",
-          "meta": {
-            "description": "Title-1 line height",
-            "category": "typography"
-          }
-        },
-        "letterSpacing": {
-          "value": -0.3,
-          "type": "letterSpacing",
-          "unit": "px",
-          "meta": {
-            "description": "Title-1 letter spacing",
-            "category": "typography"
-          }
-        },
-        "marginBottom": {
-          "value": 8,
-          "type": "spacing",
-          "unit": "px",
-          "meta": {
-            "description": "Title-1 bottom margin",
-            "category": "spacing"
-          }
-        }
-      },
-      "title-2": {
-        "fontFamily": {
-          "value": "Manrope",
-          "type": "fontFamily",
-          "unit": "",
-          "meta": {
-            "description": "Title-2 font family",
-            "category": "typography"
-          }
-        },
-        "fontSize": {
-          "value": 28,
-          "type": "size",
-          "unit": "px",
-          "meta": {
-            "description": "Title-2 font size",
-            "category": "typography"
-          }
-        },
-        "fontStyle": {
-          "value": "normal",
-          "type": "fontStyle",
-          "unit": "",
-          "meta": {
-            "description": "Title-2 font style",
-            "category": "typography"
-          }
-        },
-        "fontWeight": {
-          "value": 700,
-          "type": "fontWeight",
-          "unit": "",
-          "meta": {
-            "description": "Title-2 font weight",
-            "category": "typography"
-          }
-        },
-        "lineHeight": {
-          "value": 28,
-          "type": "size",
-          "unit": "px",
-          "meta": {
-            "description": "Title-2 line height",
-            "category": "typography"
-          }
-        },
-        "letterSpacing": {
-          "value": -0.3,
-          "type": "letterSpacing",
-          "unit": "px",
-          "meta": {
-            "description": "Title-2 letter spacing",
-            "category": "typography"
-          }
-        },
-        "marginBottom": {
-          "value": 8,
-          "type": "spacing",
-          "unit": "px",
-          "meta": {
-            "description": "Title-2 bottom margin",
-            "category": "spacing"
-          }
-        }
-      },
-      "title-3": {
-        "fontFamily": {
-          "value": "Manrope",
-          "type": "fontFamily",
-          "unit": "",
-          "meta": {
-            "description": "Title-3 font family",
-            "category": "typography"
-          }
-        },
-        "fontSize": {
-          "value": 22,
-          "type": "size",
-          "unit": "px",
-          "meta": {
-            "description": "Title-3 font size",
-            "category": "typography"
-          }
-        },
-        "fontStyle": {
-          "value": "normal",
-          "type": "fontStyle",
-          "unit": "",
-          "meta": {
-            "description": "Title-3 font style",
-            "category": "typography"
-          }
-        },
-        "fontWeight": {
-          "value": 700,
-          "type": "fontWeight",
-          "unit": "",
-          "meta": {
-            "description": "Title-3 font weight",
-            "category": "typography"
-          }
-        },
-        "lineHeight": {
-          "value": 24,
-          "type": "size",
-          "unit": "px",
-          "meta": {
-            "description": "Title-3 line height",
-            "category": "typography"
-          }
-        },
-        "letterSpacing": {
-          "value": -0.3,
-          "type": "letterSpacing",
-          "unit": "px",
-          "meta": {
-            "description": "Title-3 letter spacing",
-            "category": "typography"
-          }
-        },
-        "marginBottom": {
-          "value": 8,
-          "type": "spacing",
-          "unit": "px",
-          "meta": {
-            "description": "Title-3 bottom margin",
-            "category": "spacing"
-          }
-        }
-      },
-      "title-4": {
-        "fontFamily": {
-          "value": "Manrope",
-          "type": "fontFamily",
-          "unit": "",
-          "meta": {
-            "description": "Title-4 font family",
-            "category": "typography"
-          }
-        },
-        "fontSize": {
-          "value": 18,
-          "type": "size",
-          "unit": "px",
-          "meta": {
-            "description": "Title-4 font size",
-            "category": "typography"
-          }
-        },
-        "fontStyle": {
-          "value": "normal",
-          "type": "fontStyle",
-          "unit": "",
-          "meta": {
-            "description": "Title-4 font style",
-            "category": "typography"
-          }
-        },
-        "fontWeight": {
-          "value": 700,
-          "type": "fontWeight",
-          "unit": "",
-          "meta": {
-            "description": "Title-4 font weight",
-            "category": "typography"
-          }
-        },
-        "lineHeight": {
-          "value": 20,
-          "type": "size",
-          "unit": "px",
-          "meta": {
-            "description": "Title-4 line height",
-            "category": "typography"
-          }
-        },
-        "letterSpacing": {
-          "value": -0.3,
-          "type": "letterSpacing",
-          "unit": "px",
-          "meta": {
-            "description": "Title-4 letter spacing",
-            "category": "typography"
-          }
-        },
-        "marginBottom": {
-          "value": 8,
-          "type": "spacing",
-          "unit": "px",
-          "meta": {
-            "description": "Title-4 bottom margin",
-            "category": "spacing"
-          }
-        }
-      },
-      "body-1": {
-        "fontFamily": {
-          "value": "Manrope",
-          "type": "fontFamily",
-          "unit": "",
-          "meta": {
-            "description": "Body-1 font family",
-            "category": "typography"
-          }
-        },
-        "fontSize": {
-          "value": 40,
-          "type": "size",
-          "unit": "px",
-          "meta": {
-            "description": "Body-1 font size",
-            "category": "typography"
-          }
-        },
-        "fontStyle": {
-          "value": "normal",
-          "type": "fontStyle",
-          "unit": "",
-          "meta": {
-            "description": "Body-1 font style",
-            "category": "typography"
-          }
-        },
-        "fontWeight": {
-          "value": 700,
-          "type": "fontWeight",
-          "unit": "",
-          "meta": {
-            "description": "Body-1 font weight",
-            "category": "typography"
-          }
-        },
-        "lineHeight": {
-          "value": "150%",
-          "type": "lineHeight",
-          "unit": "%",
-          "meta": {
-            "description": "Body-1 line height",
-            "category": "typography"
-          }
-        },
-        "letterSpacing": {
-          "value": 0.48,
-          "type": "letterSpacing",
-          "unit": "px",
-          "meta": {
-            "description": "Body-1 letter spacing",
-            "category": "typography"
-          }
-        }
-      },
-      "body-2": {
-        "fontFamily": {
-          "value": "Manrope",
-          "type": "fontFamily",
-          "unit": "",
-          "meta": {
-            "description": "Body-2 font family",
-            "category": "typography"
-          }
-        },
-        "fontSize": {
-          "value": 19,
-          "type": "size",
-          "unit": "px",
-          "meta": {
-            "description": "Body-2 font size",
-            "category": "typography"
-          }
-        },
-        "fontStyle": {
-          "value": "normal",
-          "type": "fontStyle",
-          "unit": "",
-          "meta": {
-            "description": "Body-2 font style",
-            "category": "typography"
-          }
-        },
-        "fontWeight": {
-          "value": 500,
-          "type": "fontWeight",
-          "unit": "",
-          "meta": {
-            "description": "Body-2 font weight",
-            "category": "typography"
-          }
-        },
-        "lineHeight": {
-          "value": "150%",
-          "type": "lineHeight",
-          "unit": "%",
-          "meta": {
-            "description": "Body-2 line height",
-            "category": "typography"
-          }
-        },
-        "letterSpacing": {
-          "value": 0.39,
-          "type": "letterSpacing",
-          "unit": "px",
-          "meta": {
-            "description": "Body-2 letter spacing",
             "category": "typography"
           }
         }
@@ -881,13 +673,190 @@
           }
         }
       },
-      "caption-1": {
+      "title-1": {
         "fontFamily": {
           "value": "Manrope",
           "type": "fontFamily",
           "unit": "",
           "meta": {
-            "description": "Caption-1 font family",
+            "description": "Title-1 font family",
+            "category": "typography"
+          }
+        },
+        "fontSize": {
+          "value": 24,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Title-1 font size",
+            "category": "typography"
+          }
+        },
+        "fontStyle": {
+          "value": "normal",
+          "type": "fontStyle",
+          "unit": "",
+          "meta": {
+            "description": "Title-1 font style",
+            "category": "typography"
+          }
+        },
+        "fontWeight": {
+          "value": 700,
+          "type": "fontWeight",
+          "unit": "",
+          "meta": {
+            "description": "Title-1 font weight",
+            "category": "typography"
+          }
+        },
+        "lineHeight": {
+          "value": 32,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Title-1 line height",
+            "category": "typography"
+          }
+        },
+        "letterSpacing": {
+          "value": -0.3,
+          "type": "letterSpacing",
+          "unit": "px",
+          "meta": {
+            "description": "Title-1 letter spacing",
+            "category": "typography"
+          }
+        },
+        "marginBottom": {
+          "value": 8,
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Title-1 bottom margin",
+            "category": "spacing"
+          }
+        }
+      },
+      "title-2": {
+        "fontFamily": {
+          "value": "Manrope",
+          "type": "fontFamily",
+          "unit": "",
+          "meta": {
+            "description": "Label-2 font family",
+            "category": "typography"
+          }
+        },
+        "fontSize": {
+          "value": 18,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Label-2 font size",
+            "category": "typography"
+          }
+        },
+        "fontStyle": {
+          "value": "normal",
+          "type": "fontStyle",
+          "unit": "",
+          "meta": {
+            "description": "Label-2 font style",
+            "category": "typography"
+          }
+        },
+        "fontWeight": {
+          "value": 700,
+          "type": "fontWeight",
+          "unit": "",
+          "meta": {
+            "description": "Label-2 font weight",
+            "category": "typography"
+          }
+        },
+        "lineHeight": {
+          "value": 24,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Label-2 line height",
+            "category": "typography"
+          }
+        },
+        "letterSpacing": {
+          "value": 0.1,
+          "type": "letterSpacing",
+          "unit": "px",
+          "meta": {
+            "description": "Label-2 letter spacing",
+            "category": "typography"
+          }
+        }
+      },
+      "title-3": {
+        "fontFamily": {
+          "value": "Manrope",
+          "type": "fontFamily",
+          "unit": "",
+          "meta": {
+            "description": "Label-3 font family",
+            "category": "typography"
+          }
+        },
+        "fontSize": {
+          "value": 16,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Label-3 font size",
+            "category": "typography"
+          }
+        },
+        "fontStyle": {
+          "value": "normal",
+          "type": "fontStyle",
+          "unit": "",
+          "meta": {
+            "description": "Label-3 font style",
+            "category": "typography"
+          }
+        },
+        "fontWeight": {
+          "value": 700,
+          "type": "fontWeight",
+          "unit": "",
+          "meta": {
+            "description": "Label-3 font weight",
+            "category": "typography"
+          }
+        },
+        "lineHeight": {
+          "value": 22,
+          "type": "size",
+          "unit": "px",
+          "meta": {
+            "description": "Label-3 line height",
+            "category": "typography"
+          }
+        },
+        "letterSpacing": {
+          "value": 0.1,
+          "type": "letterSpacing",
+          "unit": "px",
+          "meta": {
+            "description": "Label-3 letter spacing",
+            "category": "typography"
+          }
+        }
+      },
+      "title-4": {
+        "fontFamily": {
+          "value": "Manrope",
+          "type": "fontFamily",
+          "unit": "",
+          "meta": {
+            "description": "Title-4 font family",
             "category": "typography"
           }
         },
@@ -896,7 +865,7 @@
           "type": "size",
           "unit": "px",
           "meta": {
-            "description": "Caption-1 font size",
+            "description": "Title-4 font size",
             "category": "typography"
           }
         },
@@ -905,146 +874,103 @@
           "type": "fontStyle",
           "unit": "",
           "meta": {
-            "description": "Caption-1 font style",
+            "description": "Title-4 font style",
             "category": "typography"
           }
         },
         "fontWeight": {
-          "value": 500,
+          "value": 700,
           "type": "fontWeight",
           "unit": "",
           "meta": {
-            "description": "Caption-1 font weight",
+            "description": "Title-4 font weight",
             "category": "typography"
           }
         },
         "lineHeight": {
-          "value": 17,
+          "value": 18,
           "type": "size",
           "unit": "px",
           "meta": {
-            "description": "Caption-1 line height",
+            "description": "Title-4 line height",
             "category": "typography"
           }
         },
         "letterSpacing": {
-          "value": 0.48,
+          "value": -0.3,
           "type": "letterSpacing",
           "unit": "px",
           "meta": {
-            "description": "Caption-1 letter spacing",
+            "description": "Title-4 letter spacing",
+            "category": "typography"
+          }
+        },
+        "marginBottom": {
+          "value": 8,
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "description": "Title-4 bottom margin",
+            "category": "spacing"
+          }
+        }
+      }
+    },
+    "tokens": {
+      "fontFamily": {
+        "primary": {
+          "value": "Manrope",
+          "type": "fontFamily",
+          "unit": "font",
+          "meta": {
+            "description": "Primary font family",
+            "category": "typography"
+          }
+        },
+        "secondary": {
+          "value": "Manrope",
+          "type": "fontFamily",
+          "unit": "font",
+          "meta": {
+            "description": "Secondary font family",
             "category": "typography"
           }
         }
       },
-      "caption-2": {
-        "fontFamily": {
-          "value": "Manrope",
-          "type": "fontFamily",
-          "unit": "",
-          "meta": {
-            "description": "Caption-2 font family",
-            "category": "typography"
-          }
-        },
-        "fontSize": {
-          "value": 11.5,
-          "type": "size",
-          "unit": "px",
-          "meta": {
-            "description": "Caption-2 font size",
-            "category": "typography"
-          }
-        },
-        "fontStyle": {
-          "value": "normal",
-          "type": "fontStyle",
-          "unit": "",
-          "meta": {
-            "description": "Caption-2 font style",
-            "category": "typography"
-          }
-        },
-        "fontWeight": {
+      "fontWeight": {
+        "light": {
           "value": 400,
           "type": "fontWeight",
           "unit": "",
           "meta": {
-            "description": "Caption-2 font weight",
+            "description": "Light weight",
             "category": "typography"
           }
         },
-        "lineHeight": {
-          "value": 16,
-          "type": "size",
-          "unit": "px",
-          "meta": {
-            "description": "Caption-2 line height",
-            "category": "typography"
-          }
-        },
-        "letterSpacing": {
-          "value": 0.48,
-          "type": "letterSpacing",
-          "unit": "px",
-          "meta": {
-            "description": "Caption-2 letter spacing",
-            "category": "typography"
-          }
-        }
-      },
-      "caption-3": {
-        "fontFamily": {
-          "value": "Manrope",
-          "type": "fontFamily",
-          "unit": "",
-          "meta": {
-            "description": "Caption-3 font family",
-            "category": "typography"
-          }
-        },
-        "fontSize": {
-          "value": 11,
-          "type": "size",
-          "unit": "px",
-          "meta": {
-            "description": "Caption-3 font size",
-            "category": "typography"
-          }
-        },
-        "fontStyle": {
-          "value": "normal",
-          "type": "fontStyle",
-          "unit": "",
-          "meta": {
-            "description": "Caption-3 font style",
-            "category": "typography"
-          }
-        },
-        "fontWeight": {
+        "regular": {
           "value": 500,
           "type": "fontWeight",
           "unit": "",
           "meta": {
-            "description": "Caption-3 font weight",
+            "description": "Regular weight",
             "category": "typography"
           }
         },
-        "lineHeight": {
-          "value": 11,
-          "type": "size",
-          "unit": "px",
+        "semibold": {
+          "value": 700,
+          "type": "fontWeight",
+          "unit": "",
           "meta": {
-            "description": "Caption-3 line height",
+            "description": "Semibold weight",
             "category": "typography"
           }
         },
-        "letterSpacing": {
-          "value": 0.3,
-          "type": "letterSpacing",
-          "unit": "px",
+        "bold": {
+          "value": 800,
+          "type": "fontWeight",
+          "unit": "",
           "meta": {
-            "description": "Caption-3 letter spacing",
+            "description": "Bold weight",
             "category": "typography"
           }
         }

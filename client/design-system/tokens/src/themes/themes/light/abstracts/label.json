@@ -26,8 +26,26 @@
       "category": "label"
     }
   },
+  "secondaryInversed": {
+    "value": "{colors.gray-400}",
+    "type": "color",
+    "unit": "hex",
+    "description": "Secondary color for 2 priority text elements",
+    "meta": {
+      "category": "label"
+    }
+  },
   "tertiary": {
     "value": "{colors.gray-550}",
+    "type": "color",
+    "unit": "hex",
+    "description": "Tertiary text color for less important content",
+    "meta": {
+      "category": "label"
+    }
+  },
+  "tertiaryInversed": {
+    "value": "{colors.gray-450}",
     "type": "color",
     "unit": "hex",
     "description": "Tertiary text color for less important content",

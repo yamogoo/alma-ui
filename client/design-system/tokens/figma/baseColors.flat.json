@@ -23,6 +23,12 @@
     "unit": "hex",
     "description": "additional color"
   },
+  "carrot": {
+    "value": "#FA471F",
+    "type": "color",
+    "unit": "hex",
+    "description": "additional color"
+  },
   "orange": {
     "value": "#FFC968",
     "type": "color",

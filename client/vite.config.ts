@@ -78,10 +78,14 @@ export default (opts: { mode: string }) => {
         mapOptions: {
           convertCase: true,
           includeFileName: false,
-          convertToCSSVariables: true,
+          convertToCSSVariables: false,
           includeFileNameToCSSVariables: true,
           excludeCSSVariables: ["./design-system/tokens/.cache/themes.json"],
         },
+        themesDir: "./design-system/tokens/build/themes.json",
+        themesOutFile:
+          "./design-system/assets/scss/abstracts/_runtime_themes.scss",
+        themesIncludeRequired: true,
         builder: {
           format: "json",
           paths: ["./design-system/tokens/src"],

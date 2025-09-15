@@ -1,0 +1,136 @@
+{
+  "default": {
+    "lg": {
+      "self": {
+        "gap": {
+          "value": "{tokens.spacing.sm.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "snackbar"
+          }
+        },
+        "paddingH": {
+          "value": "{tokens.spacing.lg.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "snackbar"
+          }
+        },
+        "paddingV": {
+          "value": "{tokens.spacing.md.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "snackbar"
+          }
+        },
+        "borderRadius": {
+          "value": "{tokens.roundness.sm.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "snackbar"
+          }
+        }
+      },
+      "content": {
+        "gap": {
+          "value": 0,
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "snackbar"
+          }
+        }
+      },
+      "title": {
+        "fontStyle": {
+          "value": "title-3",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "category": "snackbar"
+          }
+        }
+      },
+      "description": {
+        "fontStyle": {
+          "value": "body-3",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "category": "snackbar"
+          }
+        }
+      }
+    },
+    "md": {
+      "self": {
+        "gap": {
+          "value": "{tokens.spacing.xs.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "snackbar"
+          }
+        },
+        "paddingH": {
+          "value": "{tokens.spacing.md.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "snackbar"
+          }
+        },
+        "paddingV": {
+          "value": "{tokens.spacing.sm.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "snackbar"
+          }
+        },
+        "borderRadius": {
+          "value": "{tokens.roundness.xs.value}",
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "snackbar"
+          }
+        }
+      },
+      "content": {
+        "gap": {
+          "value": 0,
+          "type": "spacing",
+          "unit": "px",
+          "meta": {
+            "category": "snackbar"
+          }
+        }
+      },
+      "title": {
+        "fontStyle": {
+          "value": "title-3",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "category": "snackbar"
+          }
+        }
+      },
+      "description": {
+        "fontStyle": {
+          "value": "body-3",
+          "type": "alias",
+          "unit": "",
+          "meta": {
+            "category": "snackbar"
+          }
+        }
+      }
+    }
+  }
+}

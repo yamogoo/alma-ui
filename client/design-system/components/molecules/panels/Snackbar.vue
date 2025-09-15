@@ -1,23 +1,135 @@
 <script setup lang="ts">
-import { ControlButton } from "@/components/atoms";
+import tokens from "@/tokens";
+
+import type { SnackbarProps } from "./snackbar";
+import { ControlButton, Text } from "@/components/atoms";
+
+withDefaults(defineProps<SnackbarProps>(), {
+  variant: "default",
+  tone: "neutral",
+  mode: "primary",
+  size: "md",
+  isCloseButtonShown: false,
+});
 </script>
 
 <template>
-  <div class="snackbar">
-    <slot></slot>
+  <div
+    class="snackbar"
+    :class="[
+      `snackbar_variant-${variant}`,
+      `snackbar_size-${size}`,
+      `snackbar_tone-${tone}`,
+      `snackbar_mode-${mode}`,
+    ]"
+    :role="status === 'info' ? 'status' : 'alert'"
+  >
+    <slot v-if="$slots.default"></slot>
+    <div v-if="!$slots.default" class="snackbar__content">
+      <Text v-if="title" class="snackbar__content-title"> {{ title }}</Text>
+      <Text v-if="description" class="snackbar__content-description">
+        {{ description }}</Text
+      >
+    </div>
     <ControlButton
       class="snackbar__close-button"
-      :variant="'default'"
-      :size="'sm'"
+      :variant="'rounded'"
+      :size="'xs'"
       :tone="'neutral'"
       :mode="'inversed'"
       :icon-name="'cross'"
       :icon-style="'outline'"
       :icon-weight="'300'"
+      :aria-label="'Close nottification'"
     ></ControlButton>
   </div>
 </template>
 
 <style lang="scss">
-/* .snackbar { } */
+@use "sass:map";
+
+@mixin defineSizes($map: get($molecules, "snackbar")) {
+  @each $variant, $sizes in $map {
+    @each $size, $val in $sizes {
+      $gap: px2rem(get($val, "self.gap"));
+
+      $padding-h: px2rem(get($val, "self.padding-h"));
+      $padding-v: px2rem(get($val, "self.padding-v"));
+      $padding: $padding-v $padding-h;
+
+      $border-radius: px2rem(get($val, "self.border-radius"));
+
+      $content-gap: px2rem(get($val, "content.gap"));
+      $title-font-style: get($val, "title.font-style");
+      $description-font-style: get($val, "description.font-style");
+
+      &_variant-#{$variant} {
+        &.snackbar_size-#{$size} {
+          gap: $gap;
+          padding: $padding;
+          border-radius: $border-radius;
+
+          .snackbar__content {
+            gap: $content-gap;
+
+            &-title {
+              @extend %t__#{$title-font-style};
+            }
+
+            &-description {
+              @extend %t__#{$description-font-style};
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin defineThemes($map: get($themes, "light.molecules.snackbar")) {
+  @each $tone, $modes in $map {
+    @each $mode, $val in $modes {
+      &_tone-#{$tone} {
+        &.snackbar_mode-#{$mode} {
+          @include themify($themes) {
+            background-color: themed(
+              "molecules.snackbar.#{$tone}.#{$mode}.self.background"
+            );
+          }
+
+          .snackbar {
+            &__content {
+              &-title {
+                @include themify($themes) {
+                  color: themed("molecules.snackbar.#{$tone}.#{$mode}.title");
+                }
+              }
+
+              &-description {
+                @include themify($themes) {
+                  color: themed(
+                    "molecules.snackbar.#{$tone}.#{$mode}.description"
+                  );
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.snackbar {
+  display: flex;
+  @extend %base-transition;
+
+  @include defineSizes();
+  @include defineThemes();
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 </style>

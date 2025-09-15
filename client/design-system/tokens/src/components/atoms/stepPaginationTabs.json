@@ -3,7 +3,7 @@
     "lg": {
       "item": {
         "fontStyle": {
-          "value": "title-3",
+          "value": "title-1",
           "type": "alias",
           "unit": "",
           "meta": {
@@ -25,7 +25,7 @@
     "md": {
       "item": {
         "fontStyle": {
-          "value": "title-4",
+          "value": "title-2",
           "type": "alias",
           "unit": "",
           "meta": {

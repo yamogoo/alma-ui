@@ -2,22 +2,16 @@
 
 import { Plugin } from "vite";
 import chokidar from "chokidar";
-
 import { TokensParser, type TokensParserOptions } from "./TokensParser";
 
 interface ViteTokensPluginOptions extends TokensParserOptions {}
 
 export function TokensParserPlugin(options: ViteTokensPluginOptions): Plugin {
-  let resolvedConfig: any;
   let parser: TokensParser;
 
   return {
     name: "vite-plugin-tokens-parser",
     enforce: "pre",
-
-    configResolved(config) {
-      resolvedConfig = config;
-    },
 
     async buildStart() {
       parser = new TokensParser(options);
@@ -40,8 +34,8 @@ export function TokensParserPlugin(options: ViteTokensPluginOptions): Plugin {
         parser = new TokensParser(options);
         await parser.buildAndParse();
 
-        const virtualModule = options.entryFilePath ?? "tokens";
-        const mod = server.moduleGraph.getModuleById(virtualModule);
+        const entryFile = options.entryFilePath ?? "tokens";
+        const mod = server.moduleGraph.getModuleById(entryFile);
 
         if (mod) {
           server.moduleGraph.invalidateModule(mod);
@@ -50,16 +44,16 @@ export function TokensParserPlugin(options: ViteTokensPluginOptions): Plugin {
             updates: [
               {
                 type: "js-update",
-                path: virtualModule,
-                acceptedPath: virtualModule,
+                path: entryFile,
+                acceptedPath: entryFile,
                 timestamp: Date.now(),
               },
             ],
           });
-          console.log(`[tokens-parser] 🔁 HMR triggered for ${virtualModule}`);
+          console.log(`[tokens-parser] 🔁 HMR triggered for ${entryFile}`);
         } else {
           console.warn(
-            `[tokens-parser] ⚠️ Could not find module ${virtualModule} in Vite graph`
+            `[tokens-parser] ⚠️ Could not find module ${entryFile} in Vite graph`
           );
         }
       });
