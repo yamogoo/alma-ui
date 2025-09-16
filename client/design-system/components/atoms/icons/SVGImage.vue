@@ -46,19 +46,25 @@ const symbol = computed(() => {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSizes($map: $icon) {
-  @each $size, $val in $map {
-    &_size-#{$size} {
-      @include box(px2rem(get($val, "size")));
+@mixin defineSizes($map: get($atoms, "icon")) {
+  @each $variant, $sizes in $map {
+    @each $size, $val in $sizes {
+      $box-size: px2rem(get($val, "self.size"));
+
+      &_variant-#{$variant} {
+        &.icon_size-#{$size} {
+          @include box($box-size);
+        }
+      }
     }
   }
 }
 
 @mixin defineThemes($map: get($themes, "light.abstracts.label")) {
-  @each $mode, $val in $map {
+  @each $mode, $modes in $map {
     &_mode-#{$mode} {
       @include themify($themes) {
-        fill: themed("label.abstracts.#{$mode}");
+        fill: themed("abstracts.label.#{$mode}");
       }
     }
   }
