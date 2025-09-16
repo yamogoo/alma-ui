@@ -71,7 +71,7 @@ describe("Form", () => {
       const comp = wrapper.findComponent(Text);
 
       expect(comp.props("variant")).toBe("title-4");
-      expect(comp.props("textColor")).toBe("primary");
+      expect(comp.props("mode")).toBe("primary");
       expect(comp.text()).toBe("My Title");
     });
   });

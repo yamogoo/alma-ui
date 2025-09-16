@@ -1,14 +1,14 @@
 import { describe, expect, test } from "vitest";
 import { mount } from "@vue/test-utils";
 
-import ToggleSwitch from "./ToggleSwitch.vue";
+import Switch from "./Switch.vue";
 
-describe("ToggleSwitch", () => {
+describe("Switch", () => {
   describe("props", () => {
     test.each([true, false])(
       "should render correctly with useNative=%s",
       (useNative) => {
-        const wrapper = mount(ToggleSwitch, {
+        const wrapper = mount(Switch, {
           props: { useNative, isActive: true },
         });
 

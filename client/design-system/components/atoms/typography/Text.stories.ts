@@ -15,7 +15,7 @@ const meta = {
   component: Text,
   tags: ["autodocs"],
   argTypes: {
-    textColor: {
+    mode: {
       control: "select",
       options: colors,
     },
@@ -29,7 +29,7 @@ type Story = StoryObj<typeof meta>;
 export const Display1: Story = {
   args: {
     variant: "display-1",
-    textColor: "primary",
+    mode: "primary",
     value: "Display 1",
   },
 };
@@ -37,7 +37,7 @@ export const Display1: Story = {
 export const Display2: Story = {
   args: {
     variant: "display-2",
-    textColor: "primary",
+    mode: "primary",
     value: "Display 2",
   },
 };
@@ -45,7 +45,7 @@ export const Display2: Story = {
 export const Display3: Story = {
   args: {
     variant: "display-3",
-    textColor: "primary",
+    mode: "primary",
     value: "Display 3",
   },
 };
@@ -53,7 +53,7 @@ export const Display3: Story = {
 export const Body1: Story = {
   args: {
     variant: "body-1",
-    textColor: "primary",
+    mode: "primary",
     value: "Body 1",
   },
 };
@@ -61,7 +61,7 @@ export const Body1: Story = {
 export const Body2: Story = {
   args: {
     variant: "body-2",
-    textColor: "primary",
+    mode: "primary",
     value: "Body 2",
   },
 };
@@ -69,7 +69,7 @@ export const Body2: Story = {
 export const Label1: Story = {
   args: {
     variant: "label-1",
-    textColor: "primary",
+    mode: "primary",
     value: "Label 1",
   },
 };
@@ -77,7 +77,7 @@ export const Label1: Story = {
 export const Label2: Story = {
   args: {
     variant: "label-2",
-    textColor: "primary",
+    mode: "primary",
     value: "Label 2",
   },
 };
@@ -85,7 +85,7 @@ export const Label2: Story = {
 export const Label3: Story = {
   args: {
     variant: "label-3",
-    textColor: "primary",
+    mode: "primary",
     value: "Label 3",
   },
 };
@@ -93,7 +93,7 @@ export const Label3: Story = {
 export const Label4: Story = {
   args: {
     variant: "label-4",
-    textColor: "primary",
+    mode: "primary",
     value: "Label 4",
   },
 };
@@ -101,7 +101,7 @@ export const Label4: Story = {
 export const Caption1: Story = {
   args: {
     variant: "caption-1",
-    textColor: "primary",
+    mode: "primary",
     value: "Caption 1",
   },
 };
@@ -109,7 +109,7 @@ export const Caption1: Story = {
 export const Caption2: Story = {
   args: {
     variant: "caption-2",
-    textColor: "primary",
+    mode: "primary",
     value: "Caption 2",
   },
 };

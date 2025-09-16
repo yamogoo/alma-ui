@@ -1,8 +1,6 @@
-import tokens from "@/tokens";
+import type { TextMode, TextVariant } from "@/adapters";
 
 import type { UIElementTypographyTag } from "@/typings";
-
-export type TextVariant = keyof typeof tokens.typography.styles;
 
 export type TextStyle = "normal" | "italic" | "oblique";
 
@@ -15,13 +13,11 @@ export type TextTransform =
 
 export type TextDecoration = "none" | "underline" | "line-through";
 
-export type TextColor = keyof typeof tokens.themes.light.abstracts.label;
-
 export interface TextProps {
   as?: UIElementTypographyTag;
   value?: string;
   variant?: TextVariant;
-  textColor?: TextColor;
+  mode?: TextMode;
   display?: "inline-block" | "block";
   color?: string;
   weight?: string;

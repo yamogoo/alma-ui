@@ -1960,7 +1960,7 @@
         }
       }
     },
-    "toggleSwitch": {
+    "switch": {
       "default": {
         "lg": {
           "self": {

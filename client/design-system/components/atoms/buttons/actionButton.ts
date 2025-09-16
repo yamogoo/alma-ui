@@ -1,15 +1,18 @@
 import type {
+  ButtonMode,
+  ButtonSize,
+  ButtonTone,
+  ButtonVariant,
+} from "@/adapters";
+
+import type {
   IconName,
   IconStyle,
   IconWeight,
 } from "@/components/atoms/icons/icon";
 import type {
-  ButtonMode,
   ButtonContentDirection,
-  ButtonSize,
   ButtonStretch,
-  ButtonVariant,
-  ButtonTone,
   ButtonRequiredProps,
 } from "./button";
 

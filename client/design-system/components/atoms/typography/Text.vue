@@ -5,7 +5,7 @@ import type { TextProps } from "@/components/atoms";
 
 const props = withDefaults(defineProps<TextProps>(), {
   as: "span",
-  textColor: "primary",
+  mode: "primary",
 });
 
 const componentTag = props.as;
@@ -39,7 +39,7 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
     :class="[
       {
         [`text_variant-${String(variant)}`]: !!variant,
-        [`text_color-${String(textColor)}`]: !!textColor,
+        [`text_color-${String(mode)}`]: !!mode,
       },
     ]"
     :style="computedStyle"

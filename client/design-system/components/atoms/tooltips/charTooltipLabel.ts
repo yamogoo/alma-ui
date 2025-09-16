@@ -1,15 +1,10 @@
-import tokens from "@/tokens";
+import type {
+  CharTooltipLabelMode,
+  CharTooltipLabelSize,
+  CharTooltipLabelVariant,
+} from "@/adapters";
 
 import type { IconName, IconStyle, IconWeight } from "@/components/atoms";
-
-export type CharTooltipLabelVariant =
-  keyof typeof tokens.atoms.charTooltipLabel;
-
-export type CharTooltipLabelSize =
-  keyof typeof tokens.atoms.charTooltipLabel.default;
-
-export type CharTooltipLabelMode =
-  keyof typeof tokens.themes.light.atoms.charTooltipLabel;
 
 export interface CharTooltipLabelProps {
   variant?: CharTooltipLabelVariant;

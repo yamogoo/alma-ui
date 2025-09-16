@@ -14,7 +14,7 @@ import tokens from "@/tokens";
 
 import { usePressed } from "@/composables/local";
 
-import type { ToggleSwitchProps } from "@/components/atoms";
+import type { SwitchProps } from "@/components/atoms";
 
 defineOptions({
   inheritAttrs: false,
@@ -22,7 +22,7 @@ defineOptions({
 
 useAttrs();
 
-const props = withDefaults(defineProps<ToggleSwitchProps>(), {
+const props = withDefaults(defineProps<SwitchProps>(), {
   variant: "default",
   mode: "primary",
   size: "md",
@@ -52,7 +52,7 @@ const onChange = (e: Event): void => {
 };
 
 const padding = computed(
-  () => tokens.atoms.toggleSwitch.default[`${props.size}`].track.padding.value
+  () => tokens.atoms.switch.default[`${props.size}`].track.padding.value
 );
 
 const onKeyDown = (e: KeyboardEvent): void => {
@@ -102,12 +102,12 @@ onMounted(() => {
     <div
       ref="root"
       :class="[
-        'toggle-switch',
-        `toggle-switch_variant-${variant}`,
-        `toggle-switch_mode-${mode}`,
-        `toggle-switch_size-${size}`,
-        `toggle-switch_state-${isActive ? 'active' : 'normal'}`,
-        { 'toggle-switch_disabled': isDisabled },
+        'switch',
+        `switch_variant-${variant}`,
+        `switch_mode-${mode}`,
+        `switch_size-${size}`,
+        `switch_state-${isActive ? 'active' : 'normal'}`,
+        { switch_disabled: isDisabled },
       ]"
       role="switch"
       :aria-labelledby="`label-${id}`"
@@ -116,12 +116,12 @@ onMounted(() => {
       tabindex="0"
       @keydown="onKeyDown"
     >
-      <div class="toggle-switch__track">
-        <div class="toggle-switch__track-container">
-          <span ref="knob" class="toggle-switch__knob"></span>
+      <div class="switch__track">
+        <div class="switch__track-container">
+          <span ref="knob" class="switch__knob"></span>
         </div>
       </div>
-      <span v-if="label" class="toggle-switch__label">{{ label }}</span>
+      <span v-if="label" class="switch__label">{{ label }}</span>
     </div>
   </template>
   <template v-if="useNative">
@@ -129,12 +129,12 @@ onMounted(() => {
       ref="root"
       :for="id"
       :class="[
-        'toggle-switch',
-        `toggle-switch_variant-${variant}`,
-        `toggle-switch_mode-${mode}`,
-        `toggle-switch_size-${size}`,
-        `toggle-switch_state-${isActive ? 'active' : 'normal'}`,
-        { 'toggle-switch_disabled': isDisabled },
+        'switch',
+        `switch_variant-${variant}`,
+        `switch_mode-${mode}`,
+        `switch_size-${size}`,
+        `switch_state-${isActive ? 'active' : 'normal'}`,
+        { switch_disabled: isDisabled },
       ]"
       :aria-labelledby="`label-${id}`"
       tabindex="0"
@@ -146,12 +146,12 @@ onMounted(() => {
         :checked="isActive"
         @change="onChange"
       />
-      <div class="toggle-switch__track">
-        <div class="toggle-switch__track-container">
-          <span ref="knob" class="toggle-switch__knob"></span>
+      <div class="switch__track">
+        <div class="switch__track-container">
+          <span ref="knob" class="switch__knob"></span>
         </div>
       </div>
-      <span v-if="label" class="toggle-switch__label">{{ label }}</span>
+      <span v-if="label" class="switch__label">{{ label }}</span>
     </label>
   </template>
 </template>
@@ -159,11 +159,11 @@ onMounted(() => {
 <style lang="scss">
 @use "sass:map";
 
-@mixin defineSizes($map: get($atoms, "toggle-switch")) {
+@mixin defineSizes($map: get($atoms, "switch")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
       &_variant-#{$variant} {
-        &.toggle-switch_size-#{$size} {
+        &.switch_size-#{$size} {
           $gap: get($val, "self.gap");
           $width: px2rem(get($val, "self.width"));
           $height: px2rem(get($val, "self.height"));
@@ -173,18 +173,18 @@ onMounted(() => {
 
           gap: $gap;
 
-          .toggle-switch__track {
+          .switch__track {
             @include box($width, $height);
             border-radius: $height;
             padding: $track-padding;
           }
 
-          .toggle-switch__knob {
+          .switch__knob {
             @include box($height);
             border-radius: calc($height / 2);
           }
 
-          .toggle-switch__label {
+          .switch__label {
             @extend %t__#{$label-font-style};
           }
         }
@@ -193,107 +193,95 @@ onMounted(() => {
   }
 }
 
-@mixin defineThemes($map: get($themes, "light.atoms.toggle-switch")) {
+@mixin defineThemes($map: get($themes, "light.atoms.switch")) {
   @each $mode, $modes in $map {
     &_mode-#{$mode} {
-      &:not(.toggle-switch_disabled) {
-        &.toggle-switch_state {
+      &:not(.switch_disabled) {
+        &.switch_state {
           &-normal {
-            .toggle-switch__track {
+            .switch__track {
               @include themify($themes) {
-                background-color: themed(
-                  "atoms.toggle-switch.#{$mode}.track.normal"
-                );
+                background-color: themed("atoms.switch.#{$mode}.track.normal");
               }
             }
 
-            .toggle-switch__knob {
+            .switch__knob {
               @include themify($themes) {
-                background-color: themed(
-                  "atoms.toggle-switch.#{$mode}.knob.normal"
-                );
+                background-color: themed("atoms.switch.#{$mode}.knob.normal");
               }
             }
 
-            .toggle-switch__label {
+            .switch__label {
               @include themify($themes) {
-                color: themed("atoms.toggle-switch.#{$mode}.label.normal");
+                color: themed("atoms.switch.#{$mode}.label.normal");
               }
             }
           }
 
           &-active {
-            .toggle-switch__track {
+            .switch__track {
               @include themify($themes) {
-                background-color: themed(
-                  "atoms.toggle-switch.#{$mode}.track.active"
-                );
+                background-color: themed("atoms.switch.#{$mode}.track.active");
               }
             }
 
-            .toggle-switch__knob {
+            .switch__knob {
               @include themify($themes) {
-                background-color: themed(
-                  "atoms.toggle-switch.#{$mode}.knob.active"
-                );
+                background-color: themed("atoms.switch.#{$mode}.knob.active");
               }
             }
 
-            .toggle-switch__label {
+            .switch__label {
               @include themify($themes) {
-                color: themed("atoms.toggle-switch.#{$mode}.label.active");
+                color: themed("atoms.switch.#{$mode}.label.active");
               }
             }
           }
         }
       }
 
-      &.toggle-switch_disabled {
-        &.toggle-switch_state {
+      &.switch_disabled {
+        &.switch_state {
           &-normal {
-            .toggle-switch__track {
+            .switch__track {
               @include themify($themes) {
                 background-color: themed(
-                  "atoms.toggle-switch.#{$mode}.track.disabled"
+                  "atoms.switch.#{$mode}.track.disabled"
                 );
               }
             }
 
-            .toggle-switch__knob {
+            .switch__knob {
               @include themify($themes) {
-                background-color: themed(
-                  "atoms.toggle-switch.#{$mode}.knob.disabled"
-                );
+                background-color: themed("atoms.switch.#{$mode}.knob.disabled");
               }
             }
 
-            .toggle-switch__label {
+            .switch__label {
               @include themify($themes) {
-                color: themed("atoms.toggle-switch.#{$mode}.label.disabled");
+                color: themed("atoms.switch.#{$mode}.label.disabled");
               }
             }
           }
 
           &-active {
-            .toggle-switch__track {
+            .switch__track {
               @include themify($themes) {
                 background-color: themed(
-                  "atoms.toggle-switch.#{$mode}.track.disabled"
+                  "atoms.switch.#{$mode}.track.disabled"
                 );
               }
             }
 
-            .toggle-switch__knob {
+            .switch__knob {
               @include themify($themes) {
-                background-color: themed(
-                  "atoms.toggle-switch.#{$mode}.knob.disabled"
-                );
+                background-color: themed("atoms.switch.#{$mode}.knob.disabled");
               }
             }
 
-            .toggle-switch__label {
+            .switch__label {
               @include themify($themes) {
-                color: themed("atoms.toggle-switch.#{$mode}.label.disabled");
+                color: themed("atoms.switch.#{$mode}.label.disabled");
               }
             }
           }
@@ -303,7 +291,7 @@ onMounted(() => {
   }
 }
 
-.toggle-switch {
+.switch {
   box-sizing: border-box;
   display: flex;
   flex-direction: row-reverse;

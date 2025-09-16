@@ -1,4 +1,4 @@
-import tokens from "@/tokens";
+import type { CarousleStackSize } from "@/adapters";
 
 import type {
   UIElementAxisDirection,
@@ -6,8 +6,6 @@ import type {
   UIElementStretch,
   UIElementUnionProps,
 } from "@/typings";
-
-export type CarousleStackSize = keyof typeof tokens.atoms.carouselStack.default;
 
 export interface CarousleStackProps extends Partial<UIElementUnionProps> {
   selectedScreenId?: number;

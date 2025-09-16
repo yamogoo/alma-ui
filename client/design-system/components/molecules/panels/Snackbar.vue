@@ -2,6 +2,9 @@
 import type { SnackbarProps } from "./snackbar";
 import { ControlButton, Text } from "@/components/atoms";
 
+// import {Components} from '@/index';
+// Components.AnimatedWrapper
+
 withDefaults(defineProps<SnackbarProps>(), {
   variant: "default",
   tone: "neutral",

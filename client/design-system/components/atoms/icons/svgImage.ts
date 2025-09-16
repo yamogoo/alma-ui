@@ -1,4 +1,4 @@
-import type { IconMode, IconSize } from "./icon";
+import type { IconMode, IconSize } from "@/adapters";
 
 export interface SVGImageProps {
   name: string;

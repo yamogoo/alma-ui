@@ -1562,47 +1562,47 @@
     "unit": "hex",
     "description": "Active label color for step pagination tab"
   },
-  "themes.dark.atoms.toggleSwitch.primary.track.normal": {
+  "themes.dark.atoms.switch.primary.track.normal": {
     "value": "#3E4A53",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.toggleSwitch.primary.track.disabled": {
+  "themes.dark.atoms.switch.primary.track.disabled": {
     "value": "#495661",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.toggleSwitch.primary.track.active": {
+  "themes.dark.atoms.switch.primary.track.active": {
     "value": "#3E4A53",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.toggleSwitch.primary.knob.normal": {
+  "themes.dark.atoms.switch.primary.knob.normal": {
     "value": "#F8F9FA",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.toggleSwitch.primary.knob.disabled": {
+  "themes.dark.atoms.switch.primary.knob.disabled": {
     "value": "#637584",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.toggleSwitch.primary.knob.active": {
+  "themes.dark.atoms.switch.primary.knob.active": {
     "value": "#F8F9FA",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.toggleSwitch.primary.label.normal": {
+  "themes.dark.atoms.switch.primary.label.normal": {
     "value": "#DCE1E5",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.toggleSwitch.primary.label.disabled": {
+  "themes.dark.atoms.switch.primary.label.disabled": {
     "value": "#6D8292",
     "type": "color",
     "unit": "hex"
   },
-  "themes.dark.atoms.toggleSwitch.primary.label.active": {
+  "themes.dark.atoms.switch.primary.label.active": {
     "value": "#DCE1E5",
     "type": "color",
     "unit": "hex"
@@ -3540,47 +3540,47 @@
     "unit": "hex",
     "description": "Active label color for step pagination tab"
   },
-  "themes.light.atoms.toggleSwitch.primary.track.normal": {
+  "themes.light.atoms.switch.primary.track.normal": {
     "value": "#909FAC",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.toggleSwitch.primary.track.disabled": {
+  "themes.light.atoms.switch.primary.track.disabled": {
     "value": "#C0C9D0",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.toggleSwitch.primary.track.active": {
+  "themes.light.atoms.switch.primary.track.active": {
     "value": "#909FAC",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.toggleSwitch.primary.knob.normal": {
+  "themes.light.atoms.switch.primary.knob.normal": {
     "value": "#F8F9FA",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.toggleSwitch.primary.knob.disabled": {
+  "themes.light.atoms.switch.primary.knob.disabled": {
     "value": "#DCE1E5",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.toggleSwitch.primary.knob.active": {
+  "themes.light.atoms.switch.primary.knob.active": {
     "value": "#F8F9FA",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.toggleSwitch.primary.label.normal": {
+  "themes.light.atoms.switch.primary.label.normal": {
     "value": "#2F383F",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.toggleSwitch.primary.label.disabled": {
+  "themes.light.atoms.switch.primary.label.disabled": {
     "value": "#6D8292",
     "type": "color",
     "unit": "hex"
   },
-  "themes.light.atoms.toggleSwitch.primary.label.active": {
+  "themes.light.atoms.switch.primary.label.active": {
     "value": "#2F383F",
     "type": "color",
     "unit": "hex"

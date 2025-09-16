@@ -1,12 +1,6 @@
-import tokens from "@/tokens";
+import type { StepPaginationTabMode, StepPaginationTabSize } from "@/adapters";
 
 import type { UIElementUnionProps } from "@/typings";
-
-export type StepPaginationTabSize =
-  keyof typeof tokens.atoms.stepPaginationTabs.default;
-
-export type StepPaginationTabMode =
-  keyof typeof tokens.themes.light.atoms.stepPaginationTabs;
 
 export interface StepPaginationTabItem {
   id: number;

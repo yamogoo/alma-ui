@@ -1,6 +1,4 @@
-import tokens from "@/tokens";
-
-export type SkeletonMode = keyof typeof tokens.themes.light.atoms.skeleton;
+import type { SkeletonMode } from "@/adapters";
 
 export interface SkeletonProps {
   mode?: SkeletonMode;

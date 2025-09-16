@@ -19,7 +19,7 @@ describe("Text", () => {
     test("should have color class", () => {
       const wrapper = shallowMount(Text, {
         props: {
-          textColor: "primary",
+          mode: "primary",
         },
       });
 
