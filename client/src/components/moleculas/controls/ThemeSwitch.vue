@@ -6,7 +6,7 @@ import { useConfigStore } from "@@/stores";
 
 import themeIcon from "@/assets/animations/themeIcon.json";
 
-import { ControlWrapper, AnimatedIcon, ToggleSwitch } from "@/components/atoms";
+import { ControlWrapper, AnimatedIcon, Switch } from "@/components/atoms";
 
 const { currentTheme } = storeToRefs(useConfigStore());
 const { toggleTheme } = useConfigStore();
@@ -31,13 +31,13 @@ const onChangeTheme = () => toggleTheme();
       :size="'sm'"
       :mode="'disabled'"
     ></AnimatedIcon>
-    <ToggleSwitch
+    <Switch
       data-testid="theme-switch"
       :is-active="!isLightTheme"
       :is-disabled="false"
       :size="'sm'"
       aria-label="change-theme"
       @update:is-active="onChangeTheme"
-    ></ToggleSwitch>
+    ></Switch>
   </ControlWrapper>
 </template>

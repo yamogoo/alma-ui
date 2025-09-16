@@ -13,7 +13,8 @@ import tokens from "@/tokens";
 
 import { useHover } from "@/composables/local";
 
-import { Icon, type ButtonProps, type IconSize } from "@/components/atoms";
+import type { IconSize } from "@/adapters";
+import { Icon, type ButtonProps } from "@/components/atoms";
 
 const props = withDefaults(defineProps<ButtonProps>(), {
   variant: "default",

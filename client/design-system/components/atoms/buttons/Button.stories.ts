@@ -8,7 +8,7 @@ import {
   buttonSizes,
   buttonTones,
   buttonVariants,
-} from "./button";
+} from "@/adapters";
 
 import {
   iconNames,

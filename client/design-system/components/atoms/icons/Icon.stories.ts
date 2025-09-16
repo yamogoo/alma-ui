@@ -1,13 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/vue3-vite";
 
 import Icon from "./Icon.vue";
-import {
-  iconNames,
-  iconModes,
-  iconSizes,
-  iconStyles,
-  iconWeights,
-} from "./icon";
+import { iconNames, iconStyles, iconWeights } from "./icon";
+
+import { iconModes, iconSizes } from "@/adapters";
 
 const meta = {
   title: "Atoms/icons/Icon",

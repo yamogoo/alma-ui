@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/vue3-vite";
 
 import Input from "./Input.vue";
-import { inputModes, inputSizes } from "./input";
+import { inputModes, inputSizes } from "@/adapters";
 
 const meta = {
   title: "Atoms/inputs/Input",

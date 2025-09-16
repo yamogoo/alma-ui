@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/vue3-vite";
 import { fn } from "storybook/test";
 
 import ControlButton from "./ControlButton.vue";
-import { buttonModes, buttonSizes, buttonTones } from "./button";
+import { buttonModes, buttonSizes, buttonTones } from "@/adapters";
 
 import {
   iconNames,

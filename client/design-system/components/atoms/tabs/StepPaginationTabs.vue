@@ -4,7 +4,8 @@ import g from "gsap";
 
 import tokens from "@/tokens";
 
-import { Text, type TextVariant } from "@/components/atoms";
+import { Text } from "@/components/atoms";
+import { type TextVariant } from "@/adapters";
 
 import type {
   StepPaginationTabItem,

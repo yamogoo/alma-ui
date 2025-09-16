@@ -2,7 +2,7 @@ import { Vue3Lottie as LottieAnimation } from "vue3-lottie";
 
 import type { UIElementUnionProps } from "@/typings";
 
-import type { IconMode, IconSize } from "./icon";
+import type { IconMode, IconSize } from "@/adapters";
 
 export interface AnimatedIconProps extends Partial<UIElementUnionProps> {
   mode?: IconMode;
