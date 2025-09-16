@@ -1,0 +1,10 @@
+@use "sass:meta";
+@use "sass:map";
+
+@mixin safe-extend($ph, $fallback) {
+  @if map.get($available-placeholders, $ph) {
+    @extend %#{$ph};
+  } @else {
+    @extend %#{$fallback};
+  }
+}

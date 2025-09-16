@@ -10,9 +10,10 @@ import type {
   ButtonStretch,
   ButtonVariant,
   ButtonTone,
+  ButtonRequiredProps,
 } from "./button";
 
-export interface ControlButtonProps {
+export interface ControlButtonProps extends ButtonRequiredProps {
   variant?: ButtonVariant;
   size: ButtonSize;
   mode: ButtonMode;

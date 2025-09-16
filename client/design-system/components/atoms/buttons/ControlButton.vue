@@ -1,11 +1,7 @@
 <script setup lang="ts">
 import { Button, type ControlButtonProps } from "@/components/atoms";
 
-const props = withDefaults(defineProps<ControlButtonProps>(), {
-  variant: "rounded",
-  color: "primary",
-  size: "md",
-});
+const props = withDefaults(defineProps<ControlButtonProps>(), {});
 
 const emit = defineEmits<{
   (e: "press", ev: PointerEvent): void;

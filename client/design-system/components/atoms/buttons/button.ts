@@ -41,12 +41,17 @@ export type ButtonStretch = UIElementStretch;
 
 export type ButtonContentDirection = UIElementDirection;
 
-export interface ButtonProps
-  extends Partial<UIElementUnionProps<ButtonVariant>> {
-  as?: keyof HTMLElementTagNameMap;
+export interface ButtonRequiredProps {
   size: ButtonSize;
   mode: ButtonMode;
   tone: ButtonTone;
+}
+
+export interface ButtonProps
+  extends Partial<UIElementUnionProps<ButtonVariant>>,
+    ButtonRequiredProps {
+  as?: keyof HTMLElementTagNameMap;
+
   label?: string;
   contentDirection?: ButtonContentDirection;
   iconSize?: IconSize;

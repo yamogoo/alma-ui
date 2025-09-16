@@ -18,9 +18,6 @@ import { Icon, type ButtonProps, type IconSize } from "@/components/atoms";
 const props = withDefaults(defineProps<ButtonProps>(), {
   variant: "default",
   as: "button",
-  size: "md",
-  tone: "neutral",
-  mode: "primary",
   contentDirection: "ltr",
   prependIconStyle: "outline",
   prependIconWeight: "500",
@@ -134,34 +131,9 @@ watch(localIsPressed, (isPressed) => {
 @mixin defineButtonSizes($map: get($atoms, "button")) {
   @each $variant, $sizes in $map {
     @each $size, $val in $sizes {
-      $button-size: px2rem(get($val, "self.size"));
-      $gap: px2rem(get($val, "self.gap"));
-      $border-radius: get($val, "self.border-radius");
-      $padding: get($val, "self.padding");
-
-      $font-style: get($val, "label.font-style");
-      $icon-size: px2rem(get($val, "icon.size"));
-
       &_variant-#{$variant} {
         &.button_size-#{$size} {
-          gap: $gap;
-          height: $button-size;
-          min-height: $button-size;
-          border-radius: $border-radius;
-
-          &.button_variant-default {
-            padding: $padding;
-          }
-
-          &.button_variant-rounded,
-          &.button_variant-squared {
-            width: $button-size !important;
-          }
-
-          .button__label {
-            @extend %t__#{$font-style};
-            line-height: 1;
-          }
+          @extend %button_variant-#{$variant}_size-#{$size};
         }
       }
     }

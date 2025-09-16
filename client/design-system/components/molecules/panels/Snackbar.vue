@@ -88,6 +88,11 @@ withDefaults(defineProps<SnackbarProps>(), {
   @each $tone, $modes in $map {
     @each $mode, $val in $modes {
       &_tone-#{$tone} {
+        $close-button-tone: get($val, "close-button.tone");
+        $close-button-mode: get($val, "close-button.mode");
+
+        /* @debug $close-button-tone $close-button-mode; */
+
         &.snackbar_mode-#{$mode} {
           @include themify($themes) {
             background-color: themed(
@@ -110,6 +115,10 @@ withDefaults(defineProps<SnackbarProps>(), {
                   );
                 }
               }
+            }
+
+            &__close-button {
+              @extend %button_tone-#{$close-button-tone}_mode-#{$close-button-mode};
             }
           }
         }

@@ -1,11 +1,7 @@
 <script setup lang="ts">
 import { Button, type ActionButtonProps } from "@/components/atoms";
 
-const props = withDefaults(defineProps<ActionButtonProps>(), {
-  variant: "default",
-  color: "primary",
-  size: "md",
-});
+const props = withDefaults(defineProps<ActionButtonProps>(), {});
 
 const emit = defineEmits<{
   (e: "press", ev: PointerEvent): void;
