@@ -5,6 +5,7 @@ import type { TextProps } from "@/components/atoms";
 
 const props = withDefaults(defineProps<TextProps>(), {
   as: "span",
+  textColor: "primary",
 });
 
 const componentTag = props.as;

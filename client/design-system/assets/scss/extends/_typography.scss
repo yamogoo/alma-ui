@@ -27,3 +27,11 @@
 %t {
   @include generateStyles();
 }
+
+@mixin defineTypography($map: $display, $weight) {
+  $typo-verion: map.get($map, -#{$weight});
+
+  @each $key, $value in $typo-verion {
+    #{$key}: $value;
+  }
+}
