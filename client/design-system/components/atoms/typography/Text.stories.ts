@@ -1,32 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/vue3-vite";
 
-import type { TextColor, TextVariant } from "./text";
+import tokens from "@/tokens";
+
 import Text from "./Text.vue";
 
-const colors: Array<TextColor> = [
-  "primary",
-  "secondary",
-  "accent",
-  "accent",
-  "info",
-  "warning",
-  "error",
-];
+type Color = keyof typeof tokens.themes.light.abstracts.label;
+const colors = Object.keys(tokens.themes.light.abstracts.label) as Color[];
 
-const variants: Array<TextVariant> = [
-  "body-1",
-  "body-2",
-  "caption-1",
-  "caption-2",
-  "caption-3",
-  "display-1",
-  "display-2",
-  "display-3",
-  "display-4",
-  "label-1",
-  "label-2",
-  "label-3",
-];
+type Variant = keyof typeof tokens.typography.styles;
+const variants = Object.keys(tokens.typography.styles) as Variant[];
 
 const meta = {
   title: "Atoms/typography/Text",
@@ -65,14 +47,6 @@ export const Display3: Story = {
     variant: "display-3",
     textColor: "primary",
     value: "Display 3",
-  },
-};
-
-export const Display4: Story = {
-  args: {
-    variant: "display-4",
-    textColor: "primary",
-    value: "Display 4",
   },
 };
 
@@ -137,13 +111,5 @@ export const Caption2: Story = {
     variant: "caption-2",
     textColor: "primary",
     value: "Caption 2",
-  },
-};
-
-export const Caption3: Story = {
-  args: {
-    variant: "caption-3",
-    textColor: "primary",
-    value: "Caption 3",
   },
 };

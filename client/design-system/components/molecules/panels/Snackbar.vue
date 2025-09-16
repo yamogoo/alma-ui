@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import tokens from "@/tokens";
-
 import type { SnackbarProps } from "./snackbar";
 import { ControlButton, Text } from "@/components/atoms";
 

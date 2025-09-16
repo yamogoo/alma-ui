@@ -173,74 +173,7 @@ watch(localIsPressed, (isPressed) => {
     @each $mode, $val in $modes {
       &_tone-#{$tone} {
         &.button_mode-#{$mode} {
-          @include themify($themes) {
-            color: themed("atoms.button.#{$tone}.#{$mode}.label.normal");
-            fill: themed("atoms.button.#{$tone}.#{$mode}.label.normal");
-            background-color: themed(
-              "atoms.button.#{$tone}.#{$mode}.self.background.normal"
-            );
-            border: $outline solid
-              themed("atoms.button.#{$tone}.#{$mode}.self.border.normal");
-          }
-          @extend %base-transition;
-
-          &:focus {
-            @include themify($themes) {
-              outline: $outline solid
-                themed("atoms.button.#{$tone}.#{$mode}.self.border.outline");
-            }
-          }
-
-          &.button_hovered {
-            @include themify($themes) {
-              background-color: themed(
-                "atoms.button.#{$tone}.#{$mode}.self.background.hovered"
-              );
-              border: $outline solid
-                themed("atoms.button.#{$tone}.#{$mode}.self.border.hovered");
-            }
-
-            .button__label {
-              @include themify($themes) {
-                color: themed("atoms.button.#{$tone}.#{$mode}.label.hovered");
-                fill: themed("atoms.button.#{$tone}.#{$mode}.label.hovered");
-              }
-            }
-          }
-
-          &.button_pressed {
-            @include themify($themes) {
-              background-color: themed(
-                "atoms.button.#{$tone}.#{$mode}.self.background.pressed"
-              );
-              border: $outline solid
-                themed("atoms.button.#{$tone}.#{$mode}.self.border.pressed");
-            }
-
-            .button__label {
-              @include themify($themes) {
-                color: themed("atoms.button.#{$tone}.#{$mode}.label.pressed");
-                fill: themed("atoms.button.#{$tone}.#{$mode}.label.pressed");
-              }
-            }
-          }
-
-          &.button_disabled {
-            @include themify($themes) {
-              background-color: themed(
-                "atoms.button.#{$tone}.#{$mode}.self.background.disabled"
-              );
-              border: $outline solid
-                themed("atoms.button.#{$tone}.#{$mode}.self.border.disabled");
-            }
-
-            .button__label {
-              @include themify($themes) {
-                color: themed("atoms.button.#{$tone}.#{$mode}.label.disabled");
-                fill: themed("atoms.button.#{$tone}.#{$mode}.label.disabled");
-              }
-            }
-          }
+          @extend %button_tone-#{$tone}_mode-#{$mode};
         }
       }
     }

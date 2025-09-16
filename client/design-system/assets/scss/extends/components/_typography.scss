@@ -1,8 +1,7 @@
 @use "sass:map";
 
-@use "../core/utils/px2rem" as *;
-
-@use "../abstracts/typography" as *;
+@use "../../abstracts/typography" as *;
+@use "../../core/" as *;
 
 // Generate typography extends:
 
