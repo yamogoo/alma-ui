@@ -37,7 +37,12 @@
   "accent": {
     "value": "{colors.blue-500}",
     "type": "color",
-    "unit": "hex"
+    "unit": "hex",
+    "build": {
+      "web": {
+        "exportAsVar": true
+      }
+    }
   },
   "accept": {
     "value": "{colors.orange-400}",

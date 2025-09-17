@@ -110,6 +110,7 @@ export class SCSSParser extends Parser {
   }
 
   private normalizeValue(value: any, opts: ParseValueOptions): string {
+    // nested token reference like "{file.key}"
     if (_.isString(value) && value.startsWith("{")) {
       const nested = this.tokensParser.parseNestedValue(value, opts);
       return this.normalizeValue(nested, opts);
@@ -120,6 +121,7 @@ export class SCSSParser extends Parser {
     }
 
     if (typeof value === "string") {
+      // numeric string -> convert like number
       if (/^\d+(\.\d+)?$/.test(value)) {
         return this.tokensParser.convertNumberByKey(
           Number(value),
@@ -135,6 +137,7 @@ export class SCSSParser extends Parser {
     }
 
     if (_.isPlainObject(value)) {
+      // token object with { value, type, unit, meta ... }
       if ("value" in value) {
         const localOpts: ParseValueOptions = {
           ...opts,
@@ -150,6 +153,7 @@ export class SCSSParser extends Parser {
         };
         return this.normalizeValue((value as any).value, localOpts);
       }
+      // plain object -> parse as map
       return this.parseMap(value as IMap, opts);
     }
 
@@ -196,6 +200,7 @@ export class SCSSParser extends Parser {
     opts: ParseValueOptions,
     path: string[] = []
   ): string {
+    // whether to preserve original token structure when generating SCSS map
     const useReflect =
       this.tokensParser.opts.useReflectOriginalStructure ?? true;
 
@@ -526,6 +531,8 @@ export class SCSSParser extends Parser {
   }
 }
 
+/* * * TokensParser * * */
+
 export class TokensParser {
   parser: Parser;
   opts: TokensParserOptions;
@@ -556,6 +563,7 @@ export class TokensParser {
           opts.builder?.useTokensInSeparateFiles ?? true,
       },
     };
+
     this.parser = new SCSSParser(this);
 
     this.defaultParseOptions = {
@@ -715,7 +723,10 @@ export class TokensParser {
 
       const pathParts = pathStr.split(".");
       const fileName = pathParts.shift();
-      if (!fileName) continue;
+      if (!fileName) {
+        visited.delete(fullMatch);
+        continue;
+      }
 
       let json;
       if (this.fileCache[fileName]) {
@@ -735,7 +746,9 @@ export class TokensParser {
 
         if (!fileFound) {
           console.warn(
-            `⚠️ Token file "${fileName}.json" not found in paths: ${paths.join(", ")}`
+            `⚠️ Token file "${fileName}.json" not found in paths: ${paths.join(
+              ", "
+            )}`
           );
           visited.delete(fullMatch);
           continue;
@@ -851,9 +864,8 @@ export class TokensParser {
     themes: Record<string, any>,
     includeRequired: boolean
   ): string {
-    let css = "";
-
-    for (const [themeName, themeObj] of Object.entries(themes)) {
+    // helper: serialize a single theme object into array of css var lines
+    const collectVarsFromTheme = (themeObj: any, prefixPath: string[] = []) => {
       const vars: string[] = [];
 
       const walk = (obj: any, path: string[] = []) => {
@@ -861,9 +873,12 @@ export class TokensParser {
           const exportAsVar = obj.meta?.build?.web?.exportAsVar ?? false;
 
           if (!includeRequired || exportAsVar) {
-            const cssVarName = `--${path.join("-")}`;
+            const cssVarName = `--${[...prefixPath, ...path].join("-")}`;
             vars.push(
-              `${cssVarName}: ${this.parser.parseValue(obj.value, this.defaultVarsOptions)}`
+              `${cssVarName}: ${this.parser.parseValue(
+                obj.value,
+                this.defaultVarsOptions
+              )}`
             );
           }
           return;
@@ -877,6 +892,41 @@ export class TokensParser {
       };
 
       walk(themeObj);
+      return vars;
+    };
+
+    let css = "";
+
+    // If the root object is a wrapper (like { "themes": { "light": {...}, "dark": {...} } })
+    // detect that and "unwrap" one level so we generate proper selectors for inner keys.
+    const rootKeys = Object.keys(themes);
+    if (rootKeys.length === 1) {
+      const onlyKey = rootKeys[0];
+      const onlyVal = themes[onlyKey];
+      // if the only value is a plain object whose direct children look like theme objects (map of names -> objects),
+      // and those children do not themselves contain "value" directly, treat it as wrapper and unwrap.
+      if (
+        _.isPlainObject(onlyVal) &&
+        Object.keys(onlyVal).length > 0 &&
+        Object.values(onlyVal).every((v) => _.isPlainObject(v))
+      ) {
+        // unwrap
+        themes = onlyVal as Record<string, any>;
+      }
+    }
+
+    for (const [rawThemeName, themeObj] of Object.entries(themes)) {
+      if (!_.isPlainObject(themeObj)) continue;
+
+      const themeName = this.toKebabCase(rawThemeName);
+
+      // collect vars for this theme
+      const vars = collectVarsFromTheme(themeObj);
+
+      if (vars.length === 0) {
+        // skip empty theme
+        continue;
+      }
 
       css += `\n[data-theme="${themeName}"] {\n  ${vars.join("\n  ")}\n}\n`;
     }
@@ -966,7 +1016,11 @@ export class TokensParser {
                 ]
               : [];
 
-        const str = `${keyLine}${this.parser.parseMap(map, parseMapOptions, initialPath)};`;
+        const str = `${keyLine}${this.parser.parseMap(
+          map,
+          parseMapOptions,
+          initialPath
+        )};`;
         content += `${str}\n`;
       }
 
@@ -1004,12 +1058,17 @@ export class TokensParser {
     }
   }
 
+  // --- listDir (was missing previously) ---
   private async listDir(source: string, output: string) {
     try {
       const fileNames = await fs.readdir(source);
       for (const fileName of fileNames) {
         if (/^(?=.).*.json$/.test(fileName)) {
+          // resolve references and write resolved json into build dir
           await this.resolveAndSaveJson(`${source}/${fileName}`, fileName);
+
+          // generate SCSS from resolved json in build dir
+          if (!this.opts.build) continue;
           await this.JSONToSCSS(
             `${this.opts.build}/${fileName}`,
             `${output}`,
