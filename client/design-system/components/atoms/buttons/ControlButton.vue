@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { Button, type ControlButtonProps } from "@/components/atoms";
 
-const props = withDefaults(defineProps<ControlButtonProps>(), {});
+const props = withDefaults(defineProps<ControlButtonProps>(), {
+  variant: "rounded",
+});
 
 const emit = defineEmits<{
   (e: "press", ev: PointerEvent): void;
@@ -10,14 +12,12 @@ const emit = defineEmits<{
 
 const onPointerUp = (e: PointerEvent): void => {
   if (props.isDisabled) return;
-
-  emit("press", e);
+  emit("release", e);
 };
 
 const onPointerDown = (e: PointerEvent): void => {
   if (props.isDisabled) return;
-
-  emit("release", e);
+  emit("press", e);
 };
 </script>
 

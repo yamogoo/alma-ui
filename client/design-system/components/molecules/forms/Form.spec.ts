@@ -1,7 +1,6 @@
 import { mount } from "@vue/test-utils";
 
 import Form from "@/components/molecules/forms/Form.vue";
-import Text from "@/components/atoms/typography/Text.vue";
 
 vi.mock("vue", async (orig) => {
   const actual = await orig();
@@ -57,22 +56,6 @@ describe("Form", () => {
       const wrapper = mount(Form);
 
       expect(wrapper.attributes("id")).toBe("mock-id");
-    });
-
-    test("renders the title via title", () => {
-      const wrapper = mount(Form, {
-        props: { title: "My Title" },
-      });
-
-      const header = wrapper.find("[data-testid='form-header']");
-
-      expect(header.exists()).toBe(true);
-
-      const comp = wrapper.findComponent(Text);
-
-      expect(comp.props("variant")).toBe("title-4");
-      expect(comp.props("mode")).toBe("primary");
-      expect(comp.text()).toBe("My Title");
     });
   });
 

@@ -10,14 +10,12 @@ const emit = defineEmits<{
 
 const onPointerUp = (e: PointerEvent): void => {
   if (props.isDisabled) return;
-
-  emit("press", e);
+  emit("release", e);
 };
 
 const onPointerDown = (e: PointerEvent): void => {
   if (props.isDisabled) return;
-
-  emit("release", e);
+  emit("press", e);
 };
 </script>
 

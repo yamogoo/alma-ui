@@ -29,12 +29,12 @@ const meta = {
     docs: {
       description: {
         component:
-          "The primary action button. Supports tones, modes, sizes, and icons.",
+          "Button is the core interactive element of the design system. It serves as the foundation for specialized buttons like ControlButton (circular control actions) and ActionButton (emphasized primary actions). The base button provides consistent behavior, accessibility, and styling while supporting variations in size, tone, mode, and icon placement.",
       },
     },
   },
   argTypes: {
-    size: { control: "select", options: buttonSizes },
+    size: enumOptions(buttonSizes),
     mode: enumOptions(buttonModes),
     tone: enumOptions(buttonTones),
     variant: enumOptions(buttonVariants),

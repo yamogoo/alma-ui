@@ -3,7 +3,11 @@ import { mount, VueWrapper } from "@vue/test-utils";
 import ThemeSwitch from "./ThemeSwitch.vue";
 
 const getSwitch = <T>(wrapper: VueWrapper<T>) => {
-  return wrapper.findComponent({ name: "ToggleSwitch" });
+  return wrapper.findComponent({ name: "Switch" });
+};
+
+const getIcon = <T>(wrapper: VueWrapper<T>) => {
+  return wrapper.findComponent({ name: "AnimatedIcon" });
 };
 
 describe("ThemeSwitch", () => {
@@ -30,6 +34,15 @@ describe("ThemeSwitch", () => {
       const isSwitchExists = switchEl.exists();
 
       expect(isSwitchExists).toBeTruthy();
+    });
+
+    test("should render AnimatedIcon component", () => {
+      const wrapper = mount(ThemeSwitch);
+
+      const iconEl = getIcon(wrapper);
+      const isIconExists = iconEl.exists();
+
+      expect(isIconExists).toBeTruthy();
     });
   });
 });
