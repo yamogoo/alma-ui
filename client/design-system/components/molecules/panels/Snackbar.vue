@@ -37,7 +37,7 @@ withDefaults(defineProps<SnackbarProps>(), {
       :variant="'rounded'"
       :size="'xs'"
       :tone="'neutral'"
-      :mode="'inversed'"
+      :mode="'tertiary'"
       :icon-name="'cross'"
       :icon-style="'outline'"
       :icon-weight="'300'"

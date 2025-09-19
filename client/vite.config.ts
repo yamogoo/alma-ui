@@ -15,8 +15,8 @@ import vueJsx from "@vitejs/plugin-vue-jsx";
 import ColorsGeneratorPlugin from "./plugins/vite-plugin-colors-generator";
 import { TokensParserPlugin } from "./plugins/vite-plugin-tokens-parser";
 import { VitePluginTokenLinter } from "./plugins/vite-plugin-token-linter.ts";
-import { FlattenTokensParserPlugin } from "./plugins/vite-plugin-flatten-tokens-parser";
 import { JSONBuilderPlugin } from "./plugins/vite-plugin-json-builder";
+// import { FlattenTokensParserPlugin } from "./plugins/vite-plugin-flatten-tokens-parser";
 
 import VueRouterPlugin from "unplugin-vue-router/vite";
 
@@ -101,10 +101,10 @@ export default (opts: { mode: string }) => {
       VitePluginTokenLinter({
         source: "./design-system/tokens/src",
       }),
-      FlattenTokensParserPlugin({
-        source: "./design-system/tokens/build",
-        outDir: "./design-system/tokens/figma",
-      }),
+      // FlattenTokensParserPlugin({
+      //   source: "./design-system/tokens/build",
+      //   outDir: "./design-system/tokens/figma",
+      // }),
       // Application: Tokens and SCSS generation
       TokensParserPlugin({
         source: "./src/tokens/.cache",

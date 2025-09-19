@@ -19,7 +19,7 @@ import { Icon, type ButtonProps } from "@/components/atoms";
 const props = withDefaults(defineProps<ButtonProps>(), {
   variant: "default",
   as: "button",
-  contentDirection: "ltr",
+  contentDirection: "forward",
   prependIconStyle: "outline",
   prependIconWeight: "500",
   appendIconStyle: "outline",
@@ -167,6 +167,10 @@ watch(localIsPressed, (isPressed) => {
   @include defineButtonSizes();
   @include defineThemes();
 
+  &_direction {
+    @include useDirection();
+  }
+
   &__label {
     @extend %base-transition;
   }
@@ -175,24 +179,13 @@ watch(localIsPressed, (isPressed) => {
     position: absolute;
     inset: 0;
   }
-  /* * * Directions * * */
-
-  &_direction-ltr {
-    flex-direction: row;
-  }
-
-  &_direction-rtl {
-    flex-direction: row-reverse;
-  }
-
-  /* * * Sizes * * */
 
   &_variant-rounded {
     overflow: hidden;
   }
 
-  &_stretch-fill {
-    width: 100%;
+  &_stretch {
+    @include useHorizontalStretch();
   }
 }
 </style>

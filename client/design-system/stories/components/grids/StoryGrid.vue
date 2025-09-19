@@ -7,15 +7,15 @@ withDefaults(defineProps<StoryGridProps>(), {
 </script>
 
 <template>
-  <div class="story-grid" :style="{ '--story-grid-cols': columns }">
+  <div class="sb-story-grid" :style="{ '--story-grid-cols': columns }">
     <slot></slot>
   </div>
 </template>
 
 <style lang="scss">
-.story-grid {
+.sb-story-grid {
   display: grid;
   grid-template-columns: repeat(var(--story-grid-cols), 1fr);
-  gap: px2rem(get($spacing, "md"));
+  gap: px2rem(get($spacing, "xxl"));
 }
 </style>

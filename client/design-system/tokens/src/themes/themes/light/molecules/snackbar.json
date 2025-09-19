@@ -29,10 +29,14 @@
       },
       "closeButton": {
         "tone": {
-          "value": "neutral"
+          "value": "neutral",
+          "type": "alias",
+          "unit": ""
         },
         "mode": {
-          "value": "inversed"
+          "value": "secondary",
+          "type": "alias",
+          "unit": ""
         }
       }
     },
@@ -65,10 +69,14 @@
       },
       "closeButton": {
         "tone": {
-          "value": "neutral"
+          "value": "neutral",
+          "type": "alias",
+          "unit": ""
         },
         "mode": {
-          "value": "primary"
+          "value": "primary",
+          "type": "alias",
+          "unit": ""
         }
       }
     }
@@ -103,10 +111,14 @@
       },
       "closeButton": {
         "tone": {
-          "value": "neutral"
+          "value": "neutral",
+          "type": "alias",
+          "unit": ""
         },
         "mode": {
-          "value": "inversed"
+          "value": "secondary",
+          "type": "alias",
+          "unit": ""
         }
       }
     },
@@ -139,10 +151,14 @@
       },
       "closeButton": {
         "tone": {
-          "value": "neutral"
+          "value": "neutral",
+          "type": "alias",
+          "unit": ""
         },
         "mode": {
-          "value": "inversed"
+          "value": "secondary",
+          "type": "alias",
+          "unit": ""
         }
       }
     }

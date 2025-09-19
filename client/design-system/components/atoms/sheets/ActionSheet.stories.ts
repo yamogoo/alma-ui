@@ -1,7 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/vue3-vite";
 
-import { storyDecorator } from "@/stories/decorators";
-
 import ActionSheet from "./ActionSheet.vue";
 import { actionSheetModes, actionSheetSizes } from "@/adapters";
 
@@ -20,7 +18,7 @@ const meta = {
       defaultValue: "false",
     },
   },
-  decorators: () => [storyDecorator()],
+  decorators: () => [],
 } satisfies Meta<typeof ActionSheet>;
 
 export default meta;

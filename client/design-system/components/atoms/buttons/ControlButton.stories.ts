@@ -60,15 +60,6 @@ export const Primary: Story = {
   },
 };
 
-export const Inversed: Story = {
-  args: {
-    size: "md",
-    tone: "neutral",
-    mode: "inversed",
-    iconName: "check",
-  },
-};
-
 export const Secondary: Story = {
   args: {
     size: "md",
@@ -86,14 +77,6 @@ export const Tertiary: Story = {
     iconName: "check",
   },
 };
-
-// export const Error: Story = {
-//   args: {
-//     size: "md",
-//     color: "error",
-//     iconName: "check",
-//   },
-// };
 
 export const Large: Story = {
   args: {

@@ -11,7 +11,7 @@ import {
   buttonVariants,
 } from "@/adapters";
 
-import { StoryGrid } from "@/stories/components";
+import { StoryGrid, InfoBlock, PageHeader } from "@/stories/components";
 
 import {
   Button,
@@ -80,35 +80,46 @@ export const Variants: Story = {
   render: (args: ButtonProps) => ({
     setup() {
       return () => (
-        <StoryGrid columns={4}>
-          {buttonVariants.map((variant) =>
-            buttonSizes.map((size) =>
-              buttonModes.map((mode) =>
-                buttonTones.map((tone) => {
-                  const label =
-                    variant === "default"
-                      ? `${tone}-${mode}-${size}`
-                      : undefined;
-                  return (
-                    <Button
-                      key={`${variant}-${size}-${mode}-${tone}`}
-                      {...args}
-                      variant={variant}
-                      mode={mode}
-                      tone={tone}
-                      size={size}
-                      stretch="auto"
-                      label={label}
-                      prependIconName={"check"}
-                      prependIconStyle={"outline"}
-                      prependIconWeight={"400"}
-                    />
-                  );
-                })
+        <>
+          <PageHeader
+            title={"Button modifiers:"}
+            description={"variant /tone / mode / size"}
+          ></PageHeader>
+          <StoryGrid columns={4}>
+            {buttonVariants.map((variant) =>
+              buttonSizes.map((size) =>
+                buttonModes.map((mode) =>
+                  buttonTones.map((tone) => {
+                    const title = `${variant} / ${tone} / ${mode} / ${size}`;
+
+                    const label = variant === "default" ? `Button` : undefined;
+                    return (
+                      <InfoBlock
+                        key={`${variant}-${size}-${mode}-${tone}`}
+                        title={title}
+                        align={"center"}
+                        orientation={"vertical"}
+                      >
+                        <Button
+                          {...args}
+                          variant={variant}
+                          mode={mode}
+                          tone={tone}
+                          size={size}
+                          stretch="auto"
+                          label={label}
+                          prependIconName={"check"}
+                          prependIconStyle={"outline"}
+                          prependIconWeight={"400"}
+                        />
+                      </InfoBlock>
+                    );
+                  })
+                )
               )
-            )
-          )}
-        </StoryGrid>
+            )}
+          </StoryGrid>
+        </>
       );
     },
   }),

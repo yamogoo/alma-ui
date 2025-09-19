@@ -1,0 +1,9 @@
+@mixin useHorizontalStretch() {
+  &-auto {
+    width: min-content;
+  }
+
+  &-fill {
+    width: 100%;
+  }
+}

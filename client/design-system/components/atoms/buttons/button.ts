@@ -7,7 +7,7 @@ import type {
 } from "@/adapters";
 
 import type {
-  UIElementDirection,
+  UIElementAxisDirection,
   UIElementStretch,
   UIElementUnionProps,
 } from "@/typings";
@@ -16,7 +16,7 @@ import type { IconName, IconStyle, IconWeight } from "@/components/atoms";
 
 export type ButtonStretch = UIElementStretch;
 
-export type ButtonContentDirection = UIElementDirection;
+export type ButtonContentDirection = UIElementAxisDirection;
 
 export interface ButtonRequiredProps {
   size: ButtonSize;

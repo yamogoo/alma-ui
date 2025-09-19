@@ -14,7 +14,7 @@ import type {
   ButtonContentDirection,
   ButtonStretch,
   ButtonRequiredProps,
-} from "./button";
+} from "./Button";
 
 export interface ControlButtonProps extends ButtonRequiredProps {
   variant?: ButtonVariant;

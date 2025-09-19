@@ -32,7 +32,7 @@
           "value": "neutral"
         },
         "mode": {
-          "value": "inversed"
+          "value": "secondary"
         }
       }
     },
@@ -106,7 +106,7 @@
           "value": "neutral"
         },
         "mode": {
-          "value": "inversed"
+          "value": "secondary"
         }
       }
     },

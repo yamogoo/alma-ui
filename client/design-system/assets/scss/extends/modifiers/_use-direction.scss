@@ -1,0 +1,9 @@
+@mixin useDirection() {
+  &-forward {
+    direction: ltr;
+  }
+
+  &-backward {
+    direction: rtl;
+  }
+}
