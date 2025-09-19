@@ -12,6 +12,9 @@
 
     "moduleResolution": "Bundler",
 
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+
     "baseUrl": ".",
     "rootDir": "./",
     "outDir": "./dist/client",
@@ -45,7 +48,7 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "src/**/*.mdx",
+    "src/**/*.mdx"
   ],
   "exclude": ["design-system/**/__tests__/*"]
 }

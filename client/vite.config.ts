@@ -10,6 +10,7 @@ import svgLoader from "vite-svg-loader";
 import babel from "vite-plugin-babel";
 import packageJson from "./package.json";
 import vueRouter from "unplugin-vue-router/vite";
+import vueJsx from "@vitejs/plugin-vue-jsx";
 
 import ColorsGeneratorPlugin from "./plugins/vite-plugin-colors-generator";
 import { TokensParserPlugin } from "./plugins/vite-plugin-tokens-parser";
@@ -58,6 +59,10 @@ export default (opts: { mode: string }) => {
     plugins: [
       babel(),
       vue(),
+      vueJsx({
+        transformOn: true,
+        mergeProps: true,
+      }),
       vueRouter(),
       VueRouterPlugin({
         dts: true,

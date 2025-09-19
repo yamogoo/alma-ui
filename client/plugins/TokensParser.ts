@@ -1,7 +1,7 @@
 // Portions of this file were developed with the assistance of AI tools (ChatGPT).
 
 import fs from "node:fs/promises";
-import path from "node:path";
+import * as path from "node:path";
 import { readFileSync } from "node:fs";
 import * as _ from "lodash-es";
 

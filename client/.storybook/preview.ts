@@ -2,7 +2,7 @@ import { setup, type Preview } from "@storybook/vue3";
 import { type App, ref, watch } from "vue";
 import { createPinia } from "pinia";
 
-import { storyThemeDecorator } from "../src/stories/decorators";
+import { storyThemeDecorator } from "../design-system/stories/decorators";
 
 import "@/assets/scss/app.global.styles.scss";
 import "@/assets/fonts/_fonts.scss";

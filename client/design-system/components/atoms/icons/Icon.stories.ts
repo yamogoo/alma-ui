@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/vue3-vite";
 
 import Icon from "./Icon.vue";
-import { iconNames, iconStyles, iconWeights } from "./icon";
+import { iconNames, iconStyles, iconWeights } from "@/components/atoms/icons";
 
 import { iconModes, iconSizes } from "@/adapters";
 
