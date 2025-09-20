@@ -7,6 +7,7 @@ This document provides a **project structure overview**, **module descriptions**
 📂 Project Structure
 
 ```bash
+adapters/       — environment-specific wrappers for components
 assets/         — base resources (fonts, icons, animations, SCSS core)
 components/     — Vue components (atoms, molecules, organisms, templates)
 composables/    — Vue composables (global and local hooks)
@@ -24,111 +25,124 @@ MANIFEST.md     — human-readable documentation (this file)
 
 ## 📦 Modules Overview
 
+### 🔹 Adapters
+
+Adapters provide `bridges` between raw Vue components and specific environments/contexts.
+They contain minimal wrappers and mapping logic, while components/ keep the full UI and typing contracts.
+
+- **atoms/** — wrappers for atomic components (`button`, `input`, `icon`, etc.)
+
+- **molecules/** — wrappers for combined elements (`forms`, `dropdowns`, `snackbar`)
+
+- **organisms/** — environment-specific complex blocks
+
+- t**emplates/** — high-level layout wrappers
+
 ### 🔹 Assets
 
-- animations/ — JSON animations (e.g., spinner, themeIcon)
+- **animations/** — JSON animations (e.g., `spinner`, `themeIcon`)
 
-- fonts/ — Manrope font family (Cyrillic + Latin, weights 200–800)
+- **fonts/** — bundled fonts for offline-first usage (Manrope Cyrillic + Latin, weights 200–800)
 
-- icons/ — AlmaIcons entry point (index.ts)
+- **icons/** — AlmaIcons entry point (`index.ts`)
 
-- images/ — graphical assets
+- **images/** — static images
 
-- scss/ — style core:
-  - abstracts/ — SCSS tokens, base colors, breakpoints, themes
+- **scss/** — style core:
+  - abstracts/ — tokens, base colors, breakpoints, themes
 
-  - core/ — SCSS functions & mixins (px2rem, themify, map-get)
+  - core/ — functions & mixins (px2rem, themify, map-get)
 
   - extends/ — extensions (animations, containers, components)
 
   - mixins/ — reusable SCSS mixins
 
-  - app.\*.scss — global style entry points
+  - app.\*.scss — global entry points
 
 ### 🔹 Components
 
-Atomic design structure:
+Atomic design structure with Vue 3 + TypeScript.
+Each component has:
 
-- atoms/ — smallest units (buttons, icons, inputs, typography)
+- Implementation (`.vue + .ts`)
 
-- molecules/ — composed elements (dropdown, forms, snackbar)
+- Typings (e.g., `Button.ts` contains `ButtonProps`)
 
-- organisms/ — complex blocks (editor, navigation, forms)
+- Unit tests (`.spec.ts`)
 
-- templates/ — ready-to-use layouts (headers, footers, menus)
+- Stories (`.stories.ts[x]`)
 
-Each component is written in **Vue 3 + TypeScript**, with unit tests (`.spec.ts`) and Storybook docs (`.stories.ts`).
+- atoms/ — smallest units (`buttons`, `icons`, `inputs`, `typography`)
+
+- molecules/ — composed elements (`dropdown`, `forms`, `snackbar`)
+
+- organisms/ — complex blocks (`editor`, `navigation`, `forms`)
+
+- templates/ — ready-to-use layouts (`headers`, `footers`, `menus`)
 
 ### 🔹 Composables
 
-- global/ — global hooks (theme, meta, connection state)
+- **global/** — app-wide hooks (`theme`, `meta`, `connection` state)
 
-- local/ — local hooks (hover, clickOutside, drag-and-drop, seo, history, etc.)
+- **local/** — feature/local hooks (`hover`, `clickOutside`, `drag-and-drop`, `SEO`, `navigation`, etc.)
 
 ### 🔹 Tokens
 
-- src/ — source JSON tokens:
-  - abstracts/ — colors, background, borders, shadows
+- **src/** — source JSON tokens:
 
-  - atoms/, molecules/, templates/ — per-component tokens
+- **abstracts**/ — backgrounds, borders, shadows, base colors
 
-  - themes/ — light and dark variants
+- **atoms/**, **molecules/**, **templates/** — per-component tokens
 
-  - typography/ — text styles
+- **themes/** — light and dark variants
 
-  - tokens/ — spacing, stroke, roundness, etc.
+- **typography/** — text styles and type scale
 
-- build/ — compiled tokens for runtime (CSS vars, JSON)
+- **tokens/** — spacing, stroke, roundness, gaps, touch areas
 
-- figma/ — exported tokens for Figma integration
+- **build/** — compiled runtime tokens (CSS vars, JSON) — not committed, generated during build
 
-- structure.md — documentation of token architecture
+- **structure.md** — token architecture docs
 
 ### 🔹 Stories
 
-- decorators/ — Storybook decorators
+- **components/** — story examples for atomic/molecular UI
 
-- tokens/ — theming & token showcase
+- **decorators/** — Storybook global wrappers
+
+- **tokens/** — theme and token showcase
+
+- **utils/** — helpers for story organization
 
 ### 🔹 Utils
 
-- unit conversion (px2rem)
+- Unit conversion (`px2rem`)
 
-- path parsing
+- Path parsing (`getPathSegment`)
 
-- event helpers
+- Event helpers
 
-- unit testing setup
+- Unit testing helpers (Vitest setup)
 
 ### 🔹 Typings
 
 - API, routing, themes, localization, UI controls, elements
 
-- TypeScript declaration helpers
+- Declaration helpers (`.d.ts`)
 
-## Use components
+### ✅ Rules & Conventions
 
-```vue
-<script setup lang="ts">
-import { Button, Icon } from "@/components/atoms";
-</script>
+- `**/*.temp/` — draft components/composables (ignored via `.gitignore`, not part of repo)
 
-<template>
-  <Button variant="accent">
-    <Icon name="check" />
-    Click me
-  </Button>
-</template>
-```
+- `tokens/build/` — generated only, excluded from git
 
-## Use composables
+- Fonts included for **offline-first**; can be later replaced with CDN-hosted package
 
-```vue
-import { useTheme } from "@/composables/global"; const { theme, setTheme } =
-useTheme(); setTheme("dark");
-```
+- Each component must include at least: `.vue + .ts + .spec.ts`; stories optional but recommended
 
-## 📖 Summary
+- Adapters must remain **thin wrappers**; heavy UI logic belongs in components
+
+### 📖 Summary
 
 AlmaIconsProtoKit is not just a component library, but an **experimental design system platform** that brings together:
 
@@ -136,7 +150,7 @@ AlmaIconsProtoKit is not just a component library, but an **experimental design 
 
 - 🎨 Tokens (colors, typography, spacing, themes)
 
-- 🧩 Components (atomic design with Vue 3)
+- 🧩 Components & Adapters (atomic design + environment bindings)
 
 - ⚡ Composables & Utils (hooks and helpers)
 
