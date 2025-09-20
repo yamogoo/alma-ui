@@ -30,6 +30,7 @@ const symbol = computed(() => {
         [`icon_variant-${variant}`]: !!variant,
         [`icon_size-${size}`]: !!size,
         [`icon_mode-${mode}`]: !!mode,
+        [`icon_mode-${tone}`]: !!tone,
       },
     ]"
     data-testid="icon"
@@ -62,9 +63,13 @@ const symbol = computed(() => {
 
 @mixin defineThemes($map: get($themes, "light.abstracts.label")) {
   @each $mode, $modes in $map {
-    &_mode-#{$mode} {
-      @include themify($themes) {
-        fill: themed("abstracts.label.#{$mode}");
+    @each $tone, $val in $modes {
+      &_mode-#{$mode} {
+        &.icon_tone-#{$tone} {
+          @include themify($themes) {
+            fill: themed("abstracts.label.#{$mode}.#{$tone}");
+          }
+        }
       }
     }
   }

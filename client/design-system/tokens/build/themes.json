@@ -96,130 +96,134 @@
           }
         },
         "label": {
-          "primary": {
-            "value": "#DCE1E5",
-            "type": "color",
-            "unit": "hex",
-            "description": "Main color",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "primaryInversed": {
-            "value": "#2F383F",
-            "type": "color",
-            "unit": "hex",
-            "description": "Main inversed color",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "secondary": {
-            "value": "#A5B1BC",
-            "type": "color",
-            "unit": "hex",
-            "description": "Secondary color for 2 priority text elements",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "secondaryInversed": {
-            "value": "#43505A",
-            "type": "color",
-            "unit": "hex",
-            "description": "Secondary color for 2 priority text elements",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "tertiary": {
-            "value": "#8999A7",
-            "type": "color",
-            "unit": "hex",
-            "description": "Tertiary text color for less important content",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "tertiaryInversed": {
-            "value": "#586976",
-            "type": "color",
-            "unit": "hex",
-            "description": "Tertiary text color for less important content",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "disabled": {
-            "value": "#6D8292",
-            "type": "color",
-            "unit": "hex",
-            "description": "Disabled or inactive text color",
-            "meta": {
-              "category": "label"
+          "neutral": {
+            "primary": {
+              "value": "#DCE1E5",
+              "type": "color",
+              "unit": "hex"
+            },
+            "secondary": {
+              "value": "#A5B1BC",
+              "type": "color",
+              "unit": "hex"
+            },
+            "tertiary": {
+              "value": "#97A5B1",
+              "type": "color",
+              "unit": "hex"
+            },
+            "disabled": {
+              "value": "#6D8292",
+              "type": "color",
+              "unit": "hex"
+            },
+            "inversed": {
+              "value": "#1A1F23",
+              "type": "color",
+              "unit": "hex"
             }
           },
           "accent": {
-            "value": "#6286FE",
-            "type": "color",
-            "unit": "hex",
-            "description": "Accent color for highlighting important text",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "accentYellow": {
-            "value": "#FFF700",
-            "type": "color",
-            "unit": "hex",
-            "description": "Accent color (yellow) for positive highlights",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "accentGreen": {
-            "value": "#04FB23",
-            "type": "color",
-            "unit": "hex",
-            "description": "Accent color (green) for success state text",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "accentBlue": {
-            "value": "#013CFE",
-            "type": "color",
-            "unit": "hex",
-            "description": "Accent color (blue) for info text",
-            "meta": {
-              "category": "label"
+            "primary": {
+              "value": "#6286FE",
+              "type": "color",
+              "unit": "hex"
+            },
+            "secondary": {
+              "value": "#3161FE",
+              "type": "color",
+              "unit": "hex"
+            },
+            "tertiary": {
+              "value": "#013CFE",
+              "type": "color",
+              "unit": "hex"
+            },
+            "disabled": {
+              "value": "#013CFE",
+              "type": "color",
+              "unit": "hex"
+            },
+            "inversed": {
+              "value": "#01259D",
+              "type": "color",
+              "unit": "hex"
             }
           },
           "info": {
-            "value": "#3161FE",
-            "type": "color",
-            "unit": "hex",
-            "description": "Informational text color",
-            "meta": {
-              "category": "label"
+            "primary": {
+              "value": "#3161FE",
+              "type": "color",
+              "unit": "hex"
+            },
+            "secondary": {
+              "value": "#013CFE",
+              "type": "color",
+              "unit": "hex"
+            },
+            "tertiary": {
+              "value": "#6286FE",
+              "type": "color",
+              "unit": "hex"
+            },
+            "disabled": {
+              "value": "#013CFE",
+              "type": "color",
+              "unit": "hex"
             }
           },
           "warning": {
-            "value": "#FFB531",
-            "type": "color",
-            "unit": "hex",
-            "description": "Warning state text color",
-            "meta": {
-              "category": "label"
+            "primary": {
+              "value": "#FFB531",
+              "type": "color",
+              "unit": "hex"
+            },
+            "secondary": {
+              "value": "#FFA400",
+              "type": "color",
+              "unit": "hex"
+            },
+            "tertiary": {
+              "value": "#FFC761",
+              "type": "color",
+              "unit": "hex"
+            },
+            "disabled": {
+              "value": "#FFA400",
+              "type": "color",
+              "unit": "hex"
+            },
+            "inversed": {
+              "value": "#CE8500",
+              "type": "color",
+              "unit": "hex"
             }
           },
           "error": {
-            "value": "#E54B4B",
-            "type": "color",
-            "unit": "hex",
-            "description": "Error or destructive text color",
-            "meta": {
-              "category": "label"
+            "primary": {
+              "value": "#E96B6B",
+              "type": "color",
+              "unit": "hex"
+            },
+            "secondary": {
+              "value": "#DE2121",
+              "type": "color",
+              "unit": "hex"
+            },
+            "tertiary": {
+              "value": "#F1A0A0",
+              "type": "color",
+              "unit": "hex"
+            },
+            "disabled": {
+              "value": "#DE2121",
+              "type": "color",
+              "unit": "hex"
+            },
+            "inversed": {
+              "value": "#941616",
+              "type": "color",
+              "unit": "hex"
             }
           }
         },
@@ -1493,7 +1497,7 @@
             },
             "label": {
               "normal": {
-                "value": "#2F383F",
+                "value": "#1A1F23",
                 "type": "color",
                 "unit": "hex",
                 "meta": {
@@ -1503,7 +1507,7 @@
             },
             "icon": {
               "normal": {
-                "value": "#2F383F",
+                "value": "#1A1F23",
                 "type": "color",
                 "unit": "hex",
                 "meta": {
@@ -1654,7 +1658,7 @@
               },
               "error": {
                 "value": "#E86060",
-                "description": "placeholder = #E96B6B"
+                "description": "placeholder = {themes.themes.light.abstracts.label.error.value}"
               }
             }
           },
@@ -1698,7 +1702,7 @@
               },
               "error": {
                 "value": "#E86060",
-                "description": "placeholder = #E54B4B"
+                "description": "placeholder = {themes.themes.dark.abstracts.label.error.value}"
               }
             }
           }
@@ -1826,7 +1830,7 @@
           "default": {
             "splitter": {
               "normal": {
-                "value": "#01259D",
+                "value": "#0130CE",
                 "type": "color",
                 "unit": "hex",
                 "meta": {
@@ -1835,7 +1839,7 @@
                 }
               },
               "active": {
-                "value": "#01259D",
+                "value": "#0130CE",
                 "type": "color",
                 "unit": "hex",
                 "meta": {
@@ -2382,7 +2386,7 @@
                 }
               },
               "title": {
-                "value": "#2F383F",
+                "value": "#1A1F23",
                 "type": "color",
                 "unit": "",
                 "meta": {
@@ -2390,7 +2394,7 @@
                 }
               },
               "description": {
-                "value": "#43505A",
+                "value": "#1A1F23",
                 "type": "color",
                 "unit": "",
                 "meta": {
@@ -2420,7 +2424,7 @@
                 }
               },
               "title": {
-                "value": "#2F383F",
+                "value": "#1A1F23",
                 "type": "color",
                 "unit": "",
                 "meta": {
@@ -2428,7 +2432,7 @@
                 }
               },
               "description": {
-                "value": "#2F383F",
+                "value": "#1A1F23",
                 "type": "color",
                 "unit": "",
                 "meta": {
@@ -2456,7 +2460,7 @@
                 }
               },
               "title": {
-                "value": "#2F383F",
+                "value": "#1A1F23",
                 "type": "color",
                 "unit": "",
                 "meta": {
@@ -2464,7 +2468,7 @@
                 }
               },
               "description": {
-                "value": "#2F383F",
+                "value": "#1A1F23",
                 "type": "color",
                 "unit": "",
                 "meta": {
@@ -2690,130 +2694,134 @@
           }
         },
         "label": {
-          "primary": {
-            "value": "#2F383F",
-            "type": "color",
-            "unit": "hex",
-            "description": "Main color",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "primaryInversed": {
-            "value": "#DCE1E5",
-            "type": "color",
-            "unit": "hex",
-            "description": "Main inversed color",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "secondary": {
-            "value": "#586976",
-            "type": "color",
-            "unit": "hex",
-            "description": "Secondary color for 2 priority text elements",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "secondaryInversed": {
-            "value": "#8999A7",
-            "type": "color",
-            "unit": "hex",
-            "description": "Secondary color for 2 priority text elements",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "tertiary": {
-            "value": "#637584",
-            "type": "color",
-            "unit": "hex",
-            "description": "Tertiary text color for less important content",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "tertiaryInversed": {
-            "value": "#7B8E9C",
-            "type": "color",
-            "unit": "hex",
-            "description": "Tertiary text color for less important content",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "disabled": {
-            "value": "#6D8292",
-            "type": "color",
-            "unit": "hex",
-            "description": "Disabled or inactive text color",
-            "meta": {
-              "category": "label"
+          "neutral": {
+            "primary": {
+              "value": "#2F383F",
+              "type": "color",
+              "unit": "hex"
+            },
+            "secondary": {
+              "value": "#586976",
+              "type": "color",
+              "unit": "hex"
+            },
+            "tertiary": {
+              "value": "#637584",
+              "type": "color",
+              "unit": "hex"
+            },
+            "disabled": {
+              "value": "#6D8292",
+              "type": "color",
+              "unit": "hex"
+            },
+            "inversed": {
+              "value": "#DCE1E5",
+              "type": "color",
+              "unit": "hex"
             }
           },
           "accent": {
-            "value": "#01259D",
-            "type": "color",
-            "unit": "hex",
-            "description": "Accent color for highlighting important text",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "accentYellow": {
-            "value": "#FFF700",
-            "type": "color",
-            "unit": "hex",
-            "description": "Accent color (yellow) for positive highlights",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "accentGreen": {
-            "value": "#03CC1C",
-            "type": "color",
-            "unit": "hex",
-            "description": "Accent color (green) for success state text",
-            "meta": {
-              "category": "label"
-            }
-          },
-          "accentBlue": {
-            "value": "#0136E6",
-            "type": "color",
-            "unit": "hex",
-            "description": "Accent color (blue) for info text",
-            "meta": {
-              "category": "label"
+            "primary": {
+              "value": "#0130CE",
+              "type": "color",
+              "unit": "hex"
+            },
+            "secondary": {
+              "value": "#001A6D",
+              "type": "color",
+              "unit": "hex"
+            },
+            "tertiary": {
+              "value": "#3161FE",
+              "type": "color",
+              "unit": "hex"
+            },
+            "disabled": {
+              "value": "#013CFE",
+              "type": "color",
+              "unit": "hex"
+            },
+            "inversed": {
+              "value": "#C3D1FF",
+              "type": "color",
+              "unit": "hex"
             }
           },
           "info": {
-            "value": "#3161FE",
-            "type": "color",
-            "unit": "hex",
-            "description": "Informational text color",
-            "meta": {
-              "category": "label"
+            "primary": {
+              "value": "#3161FE",
+              "type": "color",
+              "unit": "hex"
+            },
+            "secondary": {
+              "value": "#013CFE",
+              "type": "color",
+              "unit": "hex"
+            },
+            "tertiary": {
+              "value": "#6286FE",
+              "type": "color",
+              "unit": "hex"
+            },
+            "disabled": {
+              "value": "#013CFE",
+              "type": "color",
+              "unit": "hex"
             }
           },
           "warning": {
-            "value": "#FFB531",
-            "type": "color",
-            "unit": "hex",
-            "description": "Warning state text color",
-            "meta": {
-              "category": "label"
+            "primary": {
+              "value": "#FFB531",
+              "type": "color",
+              "unit": "hex"
+            },
+            "secondary": {
+              "value": "#FFA400",
+              "type": "color",
+              "unit": "hex"
+            },
+            "tertiary": {
+              "value": "#FFC761",
+              "type": "color",
+              "unit": "hex"
+            },
+            "disabled": {
+              "value": "#FFA400",
+              "type": "color",
+              "unit": "hex"
+            },
+            "inversed": {
+              "value": "#CE8500",
+              "type": "color",
+              "unit": "hex"
             }
           },
           "error": {
-            "value": "#E96B6B",
-            "type": "color",
-            "unit": "hex",
-            "description": "Error or destructive text color",
-            "meta": {
-              "category": "label"
+            "primary": {
+              "value": "#E96B6B",
+              "type": "color",
+              "unit": "hex"
+            },
+            "secondary": {
+              "value": "#DE2121",
+              "type": "color",
+              "unit": "hex"
+            },
+            "tertiary": {
+              "value": "#F1A0A0",
+              "type": "color",
+              "unit": "hex"
+            },
+            "disabled": {
+              "value": "#DE2121",
+              "type": "color",
+              "unit": "hex"
+            },
+            "inversed": {
+              "value": "#941616",
+              "type": "color",
+              "unit": "hex"
             }
           }
         },
@@ -4280,7 +4288,7 @@
               },
               "error": {
                 "value": "#DE2121",
-                "description": "placeholder = #E96B6B"
+                "description": "placeholder = {themes.themes.light.abstracts.label.error.value}"
               }
             }
           },
@@ -4324,7 +4332,7 @@
               },
               "error": {
                 "value": "#DE2121",
-                "description": "placeholder = #E96B6B"
+                "description": "placeholder = {themes.themes.light.abstracts.label.error.value}"
               }
             }
           }
@@ -4462,7 +4470,7 @@
           "default": {
             "splitter": {
               "normal": {
-                "value": "#01259D",
+                "value": "#0130CE",
                 "type": "color",
                 "unit": "hex",
                 "meta": {
@@ -4471,7 +4479,7 @@
                 }
               },
               "active": {
-                "value": "#01259D",
+                "value": "#0130CE",
                 "type": "color",
                 "unit": "hex",
                 "meta": {
@@ -5066,7 +5074,7 @@
                 }
               },
               "description": {
-                "value": "#8999A7",
+                "value": "#DCE1E5",
                 "type": "color",
                 "unit": "",
                 "meta": {

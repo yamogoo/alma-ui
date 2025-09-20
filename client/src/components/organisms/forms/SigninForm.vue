@@ -102,7 +102,7 @@ export interface Props {
       :placeholder="$t.auth.signin.form.repeatPassword"
       :is-error="isError"
     ></PasswordInput>
-    <Text :variant="'caption-2'" :text-color="'secondary'">{{
+    <Text :variant="'caption-2'" :mode="'neutral'" :tone="'secondary'">{{
       $t.auth.login.form.description
     }}</Text>
     <Text
@@ -114,8 +114,8 @@ export interface Props {
     >
     <template #footer>
       <ActionButton
-        :tone="'accent'"
-        :mode="'primary'"
+        :mode="'accent'"
+        :tone="'primary'"
         :size="'md'"
         :stretch="'fill'"
         :label="$t.auth.signin.form.register"

@@ -3,7 +3,7 @@
     "item": {
       "label": {
         "normal": {
-          "value": "{themes.themes.dark.abstracts.label.primary.value}",
+          "value": "{themes.themes.dark.abstracts.label.neutral.primary.value}",
           "type": "color",
           "unit": "hex",
           "meta": {
@@ -12,7 +12,7 @@
           }
         },
         "active": {
-          "value": "{themes.themes.dark.abstracts.label.primary.value}",
+          "value": "{themes.themes.dark.abstracts.label.neutral.primary.value}",
           "type": "color",
           "unit": "hex",
           "meta": {

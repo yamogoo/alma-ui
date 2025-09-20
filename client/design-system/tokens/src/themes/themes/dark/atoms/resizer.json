@@ -2,7 +2,7 @@
   "default": {
     "splitter": {
       "normal": {
-        "value": "{themes.themes.light.abstracts.label.accent.value}",
+        "value": "{themes.themes.light.abstracts.label.accent.primary.value}",
         "type": "color",
         "unit": "hex",
         "meta": {
@@ -11,7 +11,7 @@
         }
       },
       "active": {
-        "value": "{themes.themes.light.abstracts.label.accent.value}",
+        "value": "{themes.themes.light.abstracts.label.accent.primary.value}",
         "type": "color",
         "unit": "hex",
         "meta": {

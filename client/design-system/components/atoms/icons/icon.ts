@@ -1,4 +1,4 @@
-import type { IconMode, IconSize } from "@/adapters";
+import type { IconSize, IconMode, IconTone } from "@/adapters";
 
 import { iconNames, iconStyles, iconWeights } from "alma-icons";
 
@@ -15,8 +15,9 @@ export interface IconProps {
   name: IconName;
   style: IconStyle;
   weight: IconWeight;
-  mode?: IconMode;
   size?: IconSize;
+  mode?: IconMode;
+  tone?: IconTone;
 }
 
 export * from "alma-icons";

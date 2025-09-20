@@ -12,7 +12,7 @@
         }
       },
       "title": {
-        "value": "{themes.themes.light.abstracts.label.primary.value}",
+        "value": "{themes.themes.light.abstracts.label.neutral.primary.value}",
         "type": "color",
         "unit": "",
         "meta": {
@@ -20,7 +20,7 @@
         }
       },
       "description": {
-        "value": "{themes.themes.light.abstracts.label.secondary.value}",
+        "value": "{themes.themes.light.abstracts.label.neutral.secondary.value}",
         "type": "color",
         "unit": "",
         "meta": {
@@ -52,7 +52,7 @@
         }
       },
       "title": {
-        "value": "{themes.themes.light.abstracts.label.primaryInversed.value}",
+        "value": "{themes.themes.light.abstracts.label.neutral.inversed.value}",
         "type": "color",
         "unit": "",
         "meta": {
@@ -60,7 +60,7 @@
         }
       },
       "description": {
-        "value": "{themes.themes.light.abstracts.label.secondaryInversed.value}",
+        "value": "{themes.themes.light.abstracts.label.neutral.inversed.value}",
         "type": "color",
         "unit": "",
         "meta": {
@@ -94,7 +94,7 @@
         }
       },
       "title": {
-        "value": "{themes.themes.light.abstracts.label.primaryInversed.value}",
+        "value": "{themes.themes.light.abstracts.label.neutral.inversed.value}",
         "type": "color",
         "unit": "",
         "meta": {
@@ -102,7 +102,7 @@
         }
       },
       "description": {
-        "value": "{themes.themes.light.abstracts.label.primaryInversed.value}",
+        "value": "{themes.themes.light.abstracts.label.neutral.inversed.value}",
         "type": "color",
         "unit": "",
         "meta": {
@@ -134,7 +134,7 @@
         }
       },
       "title": {
-        "value": "{themes.themes.light.abstracts.label.primaryInversed.value}",
+        "value": "{themes.themes.light.abstracts.label.neutral.inversed.value}",
         "type": "color",
         "unit": "",
         "meta": {
@@ -142,7 +142,7 @@
         }
       },
       "description": {
-        "value": "{themes.themes.light.abstracts.label.primaryInversed.value}",
+        "value": "{themes.themes.light.abstracts.label.neutral.inversed.value}",
         "type": "color",
         "unit": "",
         "meta": {

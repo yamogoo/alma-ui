@@ -4,7 +4,7 @@
   @include transition(
     color background background-color linear-gradient fill stroke border
       border-color opacity,
-    150ms,
+    100ms,
     ease-out
   );
 }

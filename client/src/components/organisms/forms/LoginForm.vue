@@ -119,15 +119,15 @@ export interface Props {
       :text-color="'error'"
       >{{ errorMessage }}</Text
     > -->
-    <Text :variant="'caption-2'" :text-color="'secondary'">{{
+    <Text :variant="'caption-2'" :mode="'neutral'" :tone="'secondary'">{{
       $t.auth.login.form.description
     }}</Text>
 
     <template #footer>
       <Group :orientation="'vertical'" :size="'sm'" :stretch="'fill'">
         <ActionButton
-          :tone="'accent'"
-          :mode="'primary'"
+          :mode="'accent'"
+          :tone="'primary'"
           :size="'md'"
           :stretch="'fill'"
           :label="$t.auth.login.form.login"
@@ -143,8 +143,8 @@ export interface Props {
         ></Divider>
         <Tooltip :label="'Button'"
           ><ActionButton
-            :tone="'neutral'"
-            :mode="'tertiary'"
+            :mode="'neutral'"
+            :tone="'tertiary'"
             :size="'md'"
             :stretch="'fill'"
             :label="$t.auth.login.form.skip"

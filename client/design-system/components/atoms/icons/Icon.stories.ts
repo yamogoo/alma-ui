@@ -39,46 +39,7 @@ export const SizeXxs: Story = {
     style: "outline",
     weight: "400",
     size: "xxs",
-    mode: "primary",
-  },
-};
-
-export const SizeXs: Story = {
-  args: {
-    name: "cross",
-    style: "outline",
-    weight: "400",
-    size: "xs",
-    mode: "primary",
-  },
-};
-
-export const SizeSm: Story = {
-  args: {
-    name: "cross",
-    style: "outline",
-    weight: "400",
-    size: "sm",
-    mode: "primary",
-  },
-};
-
-export const SizeMd: Story = {
-  args: {
-    name: "cross",
-    style: "outline",
-    weight: "400",
-    size: "md",
-    mode: "primary",
-  },
-};
-
-export const SizeLg: Story = {
-  args: {
-    name: "cross",
-    style: "outline",
-    weight: "400",
-    size: "lg",
-    mode: "primary",
+    mode: "neutral",
+    tone: "primary",
   },
 };

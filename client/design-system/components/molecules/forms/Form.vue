@@ -30,7 +30,9 @@ const id = useId();
         class="form__header"
         data-testid="form-header"
       >
-        <Text :variant="'title-2'" :text-color="'primary'">{{ title }}</Text>
+        <Text :variant="'title-2'" :mode="'neutral'" :tone="'primary'">{{
+          title
+        }}</Text>
         <slot name="header"></slot>
       </div>
       <div class="form__body">

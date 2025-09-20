@@ -14,7 +14,7 @@
     },
     "label": {
       "normal": {
-        "value": "{themes.themes.dark.abstracts.label.primaryInversed.value}",
+        "value": "{themes.themes.dark.abstracts.label.neutral.inversed.value}",
         "type": "color",
         "unit": "hex",
         "meta": {
@@ -24,7 +24,7 @@
     },
     "icon": {
       "normal": {
-        "value": "{themes.themes.dark.abstracts.label.primaryInversed.value}",
+        "value": "{themes.themes.dark.abstracts.label.neutral.inversed.value}",
         "type": "color",
         "unit": "hex",
         "meta": {

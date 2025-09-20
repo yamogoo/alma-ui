@@ -5,7 +5,8 @@ import type { TextProps } from "@/components/atoms";
 
 const props = withDefaults(defineProps<TextProps>(), {
   as: "span",
-  mode: "primary",
+  mode: "neutral",
+  tone: "primary",
 });
 
 const componentTag = props.as;
@@ -38,8 +39,9 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
     class="text"
     :class="[
       {
-        [`text_variant-${String(variant)}`]: !!variant,
-        [`text_color-${String(mode)}`]: !!mode,
+        [`text_variant-${variant}`]: !!variant,
+        [`text_mode-${mode}`]: !!mode,
+        [`text_tone-${tone}`]: !!tone,
       },
     ]"
     :style="computedStyle"
@@ -68,11 +70,15 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
   }
 }
 
-@mixin defineThemes($names) {
-  @each $name in $names {
-    &_color-#{$name} {
-      @include themify($themes) {
-        color: themed("abstracts.label.#{$name}");
+@mixin defineThemes($map: get($themes, "light.abstracts.label")) {
+  @each $mode, $modes in $map {
+    @each $tone, $val in $modes {
+      &_mode-#{$mode} {
+        &.text_tone-#{$tone} {
+          @include themify($themes) {
+            color: themed("abstracts.label.#{$mode}.#{$tone}");
+          }
+        }
       }
     }
   }
@@ -86,12 +92,12 @@ const computedStyle: ComputedRef<CSSProperties> = computed(() => {
   @extend %base-transition;
 
   @include defineVariants();
-  @include defineThemes(map.keys(get($themes, "light.abstracts.label")));
+  @include defineThemes();
 
   b {
     &.accent {
       @include themify($themes) {
-        color: themed("abstracts.label.accent");
+        color: themed("abstracts.label.accent.primary");
       }
     }
   }

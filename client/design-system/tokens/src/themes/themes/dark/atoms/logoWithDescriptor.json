@@ -3,7 +3,7 @@
     "primary": {
       "label": {
         "normal": {
-          "value": "{themes.themes.dark.abstracts.label.primary.value}",
+          "value": "{themes.themes.dark.abstracts.label.neutral.primary.value}",
           "type": "color",
           "unit": "hex",
           "meta": {
@@ -11,7 +11,7 @@
           }
         },
         "hovered": {
-          "value": "rgba({themes.themes.dark.abstracts.label.primary.value}, 0.8)",
+          "value": "rgba({themes.themes.dark.abstracts.label.neutral.primary.value}, 0.8)",
           "type": "color",
           "unit": "hex",
           "meta": {
@@ -19,7 +19,7 @@
           }
         },
         "pressed": {
-          "value": "rgba({themes.themes.dark.abstracts.label.primary.value}, 0.8)",
+          "value": "rgba({themes.themes.dark.abstracts.label.neutral.primary.value}, 0.8)",
           "type": "color",
           "unit": "hex",
           "meta": {

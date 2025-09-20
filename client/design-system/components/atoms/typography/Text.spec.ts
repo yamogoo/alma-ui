@@ -19,13 +19,13 @@ describe("Text", () => {
     test("should have color class", () => {
       const wrapper = shallowMount(Text, {
         props: {
-          mode: "primary",
+          mode: "neutral",
         },
       });
 
       const el = wrapper.find(".text");
 
-      expect(el.classes("text_color-primary")).toBeTruthy();
+      expect(el.classes("text_mode-neutral")).toBeTruthy();
     });
   });
 

@@ -143,11 +143,11 @@ watch(localIsPressed, (isPressed) => {
 }
 
 @mixin defineThemes($map: get($themes, "light.atoms.button")) {
-  @each $tone, $modes in $map {
-    @each $mode, $val in $modes {
-      &_tone-#{$tone} {
-        &.button_mode-#{$mode} {
-          @extend %button_tone-#{$tone}_mode-#{$mode};
+  @each $mode, $modes in $map {
+    @each $tone, $val in $modes {
+      &_mode-#{$mode} {
+        &.button_tone-#{$tone} {
+          @extend %button_mode-#{$mode}_tone-#{$tone};
         }
       }
     }

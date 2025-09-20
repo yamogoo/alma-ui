@@ -54,7 +54,7 @@
     },
     "label": {
       "normal": {
-        "value": "{themes.themes.light.abstracts.label.primary.value}",
+        "value": "{themes.themes.light.abstracts.label.neutral.primary.value}",
         "type": "color",
         "unit": "hex",
         "meta": {
@@ -62,7 +62,7 @@
         }
       },
       "disabled": {
-        "value": "{themes.themes.light.abstracts.label.disabled.value}",
+        "value": "{themes.themes.light.abstracts.label.neutral.disabled.value}",
         "type": "color",
         "unit": "hex",
         "meta": {
@@ -70,7 +70,7 @@
         }
       },
       "active": {
-        "value": "{themes.themes.light.abstracts.label.primary.value}",
+        "value": "{themes.themes.light.abstracts.label.neutral.primary.value}",
         "type": "color",
         "unit": "hex",
         "meta": {

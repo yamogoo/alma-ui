@@ -42,42 +42,42 @@
 }
 
 @mixin defineThemes($map: get($themes, "light.atoms.button")) {
-  @each $tone, $modes in $map {
-    @each $mode, $val in $modes {
-      &_tone-#{$tone} {
-        &_mode-#{$mode} {
-          // %button_tone-#{$tone}_mode-#{$mode}
+  @each $mode, $modes in $map {
+    @each $tone, $val in $modes {
+      &_mode-#{$mode} {
+        &_tone-#{$tone} {
+          // %button_mode-#{$tone}_tone-#{$mode}
           @include themify($themes) {
-            color: themed("atoms.button.#{$tone}.#{$mode}.label.normal");
-            fill: themed("atoms.button.#{$tone}.#{$mode}.label.normal");
+            color: themed("atoms.button.#{$mode}.#{$tone}.label.normal");
+            fill: themed("atoms.button.#{$mode}.#{$tone}.label.normal");
             background-color: themed(
-              "atoms.button.#{$tone}.#{$mode}.self.background.normal"
+              "atoms.button.#{$mode}.#{$tone}.self.background.normal"
             );
             border: $outline solid
-              themed("atoms.button.#{$tone}.#{$mode}.self.border.normal");
+              themed("atoms.button.#{$mode}.#{$tone}.self.border.normal");
           }
           @extend %base-transition;
 
           &:focus {
             @include themify($themes) {
               outline: $outline solid
-                themed("atoms.button.#{$tone}.#{$mode}.self.border.outline");
+                themed("atoms.button.#{$mode}.#{$tone}.self.border.outline");
             }
           }
 
           &.button_hovered {
             @include themify($themes) {
               background-color: themed(
-                "atoms.button.#{$tone}.#{$mode}.self.background.hovered"
+                "atoms.button.#{$mode}.#{$tone}.self.background.hovered"
               );
               border: $outline solid
-                themed("atoms.button.#{$tone}.#{$mode}.self.border.hovered");
+                themed("atoms.button.#{$mode}.#{$tone}.self.border.hovered");
             }
 
             .button__label {
               @include themify($themes) {
-                color: themed("atoms.button.#{$tone}.#{$mode}.label.hovered");
-                fill: themed("atoms.button.#{$tone}.#{$mode}.label.hovered");
+                color: themed("atoms.button.#{$mode}.#{$tone}.label.hovered");
+                fill: themed("atoms.button.#{$mode}.#{$tone}.label.hovered");
               }
             }
           }
@@ -85,16 +85,16 @@
           &.button_pressed {
             @include themify($themes) {
               background-color: themed(
-                "atoms.button.#{$tone}.#{$mode}.self.background.pressed"
+                "atoms.button.#{$mode}.#{$tone}.self.background.pressed"
               );
               border: $outline solid
-                themed("atoms.button.#{$tone}.#{$mode}.self.border.pressed");
+                themed("atoms.button.#{$mode}.#{$tone}.self.border.pressed");
             }
 
             .button__label {
               @include themify($themes) {
-                color: themed("atoms.button.#{$tone}.#{$mode}.label.pressed");
-                fill: themed("atoms.button.#{$tone}.#{$mode}.label.pressed");
+                color: themed("atoms.button.#{$mode}.#{$tone}.label.pressed");
+                fill: themed("atoms.button.#{$mode}.#{$tone}.label.pressed");
               }
             }
           }
@@ -102,16 +102,16 @@
           &.button_disabled {
             @include themify($themes) {
               background-color: themed(
-                "atoms.button.#{$tone}.#{$mode}.self.background.disabled"
+                "atoms.button.#{$mode}.#{$tone}.self.background.disabled"
               );
               border: $outline solid
-                themed("atoms.button.#{$tone}.#{$mode}.self.border.disabled");
+                themed("atoms.button.#{$mode}.#{$tone}.self.border.disabled");
             }
 
             .button__label {
               @include themify($themes) {
-                color: themed("atoms.button.#{$tone}.#{$mode}.label.disabled");
-                fill: themed("atoms.button.#{$tone}.#{$mode}.label.disabled");
+                color: themed("atoms.button.#{$mode}.#{$tone}.label.disabled");
+                fill: themed("atoms.button.#{$mode}.#{$tone}.label.disabled");
               }
             }
           }

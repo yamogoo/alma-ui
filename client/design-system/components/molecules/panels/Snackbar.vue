@@ -4,8 +4,8 @@ import { type SnackbarProps } from "@/components/molecules";
 
 withDefaults(defineProps<SnackbarProps>(), {
   variant: "default",
-  tone: "neutral",
   mode: "primary",
+  tone: "neutral",
   size: "md",
   isCloseButtonShown: false,
 });
@@ -17,8 +17,8 @@ withDefaults(defineProps<SnackbarProps>(), {
     :class="[
       `snackbar_variant-${variant}`,
       `snackbar_size-${size}`,
-      `snackbar_tone-${tone}`,
       `snackbar_mode-${mode}`,
+      `snackbar_tone-${tone}`,
     ]"
     :role="status === 'info' ? 'status' : 'alert'"
   >
@@ -33,8 +33,8 @@ withDefaults(defineProps<SnackbarProps>(), {
       class="snackbar__close-button"
       :variant="'rounded'"
       :size="'xs'"
-      :tone="'neutral'"
-      :mode="'tertiary'"
+      :mode="'neutral'"
+      :tone="'primary'"
       :icon-name="'cross'"
       :icon-style="'outline'"
       :icon-weight="'300'"
@@ -118,7 +118,7 @@ withDefaults(defineProps<SnackbarProps>(), {
             }
 
             &__close-button {
-              @extend %button_tone-#{$close-button-tone}_mode-#{$close-button-mode};
+              @extend %button_mode-#{$close-button-tone}_tone-#{$close-button-mode};
             }
           }
         }

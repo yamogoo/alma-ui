@@ -58,6 +58,7 @@ const onCompleted = (): void => {
         [`animated-icon_variant-${variant}`]: !!variant,
         [`animated-icon_size-${size}`]: !!size,
         [`animated-icon_mode-${mode}`]: !!mode,
+        [`animated-icon_tone-${tone}`]: !!tone,
       },
     ]"
     :animation-data
@@ -90,12 +91,16 @@ const onCompleted = (): void => {
 
 @mixin defineThemes($map: get($themes, "light.abstracts.label")) {
   @each $mode, $modes in $map {
-    &_mode-#{$mode} {
-      svg {
-        path {
-          @include themify($themes) {
-            fill: themed("abstracts.label.#{$mode}");
-            stroke: themed("abstracts.label.#{$mode}");
+    @each $tone, $val in $modes {
+      &_mode-#{$mode} {
+        &.animated-icon_tone-#{$tone} {
+          svg {
+            path {
+              @include themify($themes) {
+                fill: themed("abstracts.label.#{$mode}.#{$tone}");
+                stroke: themed("abstracts.label.#{$mode}.#{$tone}");
+              }
+            }
           }
         }
       }

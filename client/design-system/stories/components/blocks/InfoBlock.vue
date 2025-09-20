@@ -28,12 +28,20 @@ withDefaults(defineProps<InfoBlockProps>(), {
       `sb-info-block_align-${align}`,
     ]"
   >
-    <Text v-if="title" :variant="'caption-1'" :mode="'primary'">{{
-      title
-    }}</Text>
-    <Text v-if="description" :variant="'caption-2'" :mode="'secondary'">{{
-      description
-    }}</Text>
+    <Text
+      v-if="title"
+      :variant="'caption-1'"
+      :mode="'neutral'"
+      :tone="'primary'"
+      >{{ title }}</Text
+    >
+    <Text
+      v-if="description"
+      :variant="'caption-2'"
+      :mode="'neutral'"
+      :tone="'secondary'"
+      >{{ description }}</Text
+    >
     <slot></slot>
   </div>
 </template>

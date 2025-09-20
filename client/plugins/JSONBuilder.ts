@@ -116,7 +116,7 @@ export class JSONBuilder {
     if (!this.entryFilePath) return;
 
     const files = await fs.readdir(this.outDir);
-    const jsonFiles = files.filter((f) => f.endsWith(".json"));
+    const jsonFiles = files.filter((f: string) => f.endsWith(".json"));
 
     const imports: string[] = [];
     const spreads: string[] = [];

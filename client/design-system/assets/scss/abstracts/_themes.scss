@@ -25,20 +25,40 @@ $themes:(
   outline: #013CFE
 ),
   label: (
+  neutral: (
   primary: #DCE1E5,
-  primary-inversed: #2F383F,
   secondary: #A5B1BC,
-  secondary-inversed: #43505A,
-  tertiary: #8999A7,
-  tertiary-inversed: #586976,
+  tertiary: #97A5B1,
   disabled: #6D8292,
-  accent: #6286FE,
-  accent-yellow: #FFF700,
-  accent-green: #04FB23,
-  accent-blue: #013CFE,
-  info: #3161FE,
-  warning: #FFB531,
-  error: #E54B4B
+  inversed: #1A1F23
+),
+  accent: (
+  primary: #6286FE,
+  secondary: #3161FE,
+  tertiary: #013CFE,
+  disabled: #013CFE,
+  inversed: #01259D
+),
+  info: (
+  primary: #3161FE,
+  secondary: #013CFE,
+  tertiary: #6286FE,
+  disabled: #013CFE
+),
+  warning: (
+  primary: #FFB531,
+  secondary: #FFA400,
+  tertiary: #FFC761,
+  disabled: #FFA400,
+  inversed: #CE8500
+),
+  error: (
+  primary: #E96B6B,
+  secondary: #DE2121,
+  tertiary: #F1A0A0,
+  disabled: #DE2121,
+  inversed: #941616
+)
 ),
   selection: (
   default: (
@@ -471,10 +491,10 @@ $themes:(
 )
 ),
   label: (
-  normal: #2F383F
+  normal: #1A1F23
 ),
   icon: (
-  normal: #2F383F
+  normal: #1A1F23
 )
 ),
   inversed: (
@@ -607,8 +627,8 @@ $themes:(
   resizer: (
   default: (
   splitter: (
-  normal: #01259D,
-  active: #01259D
+  normal: #0130CE,
+  active: #0130CE
 ),
   knob: (
   normal: #39444C,
@@ -782,8 +802,8 @@ $themes:(
   self: (
   background: #EAEDEF
 ),
-  title: #2F383F,
-  description: #43505A,
+  title: #1A1F23,
+  description: #1A1F23,
   close-button: (
   tone: neutral,
   mode: primary
@@ -795,8 +815,8 @@ $themes:(
   self: (
   background: #013CFE
 ),
-  title: #2F383F,
-  description: #2F383F,
+  title: #1A1F23,
+  description: #1A1F23,
   close-button: (
   tone: neutral,
   mode: secondary
@@ -806,8 +826,8 @@ $themes:(
   self: (
   background: #013CFE
 ),
-  title: #2F383F,
-  description: #2F383F,
+  title: #1A1F23,
+  description: #1A1F23,
   close-button: (
   tone: neutral,
   mode: primary
@@ -894,20 +914,40 @@ $themes:(
   outline: #013CFE
 ),
   label: (
+  neutral: (
   primary: #2F383F,
-  primary-inversed: #DCE1E5,
   secondary: #586976,
-  secondary-inversed: #8999A7,
   tertiary: #637584,
-  tertiary-inversed: #7B8E9C,
   disabled: #6D8292,
-  accent: #01259D,
-  accent-yellow: #FFF700,
-  accent-green: #03CC1C,
-  accent-blue: #0136E6,
-  info: #3161FE,
-  warning: #FFB531,
-  error: #E96B6B
+  inversed: #DCE1E5
+),
+  accent: (
+  primary: #0130CE,
+  secondary: #001A6D,
+  tertiary: #3161FE,
+  disabled: #013CFE,
+  inversed: #C3D1FF
+),
+  info: (
+  primary: #3161FE,
+  secondary: #013CFE,
+  tertiary: #6286FE,
+  disabled: #013CFE
+),
+  warning: (
+  primary: #FFB531,
+  secondary: #FFA400,
+  tertiary: #FFC761,
+  disabled: #FFA400,
+  inversed: #CE8500
+),
+  error: (
+  primary: #E96B6B,
+  secondary: #DE2121,
+  tertiary: #F1A0A0,
+  disabled: #DE2121,
+  inversed: #941616
+)
 ),
   selection: (
   default: (
@@ -1476,8 +1516,8 @@ $themes:(
   resizer: (
   default: (
   splitter: (
-  normal: #01259D,
-  active: #01259D
+  normal: #0130CE,
+  active: #0130CE
 ),
   knob: (
   normal: #6D8292,
@@ -1652,7 +1692,7 @@ $themes:(
   background: #101315
 ),
   title: #DCE1E5,
-  description: #8999A7,
+  description: #DCE1E5,
   close-button: (
   tone: neutral,
   mode: primary

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/vue3-vite";
 
 import { fn } from "storybook/test";
 
-import { enumOptions } from "@/stories";
+import { enumOptions } from "@/stories/utils";
 
 import {
   buttonModes,
@@ -12,7 +12,6 @@ import {
 } from "@/adapters";
 
 import { StoryGrid, InfoBlock, PageHeader } from "@/stories/components";
-
 import {
   Button,
   type ButtonProps,

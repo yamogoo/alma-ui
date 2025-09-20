@@ -12,14 +12,12 @@ export const buttonSizes = Object.keys(
   tokens.atoms.button.default
 ) as Array<ButtonSize>;
 
-export const buttonTones = Object.keys(
-  tokens.themes.light.atoms.button
-) as Array<ButtonTone>;
-
-export type ButtonTone = keyof typeof tokens.themes.light.atoms.button;
-
+export type ButtonMode = keyof typeof tokens.themes.light.atoms.button;
 export const buttonModes = Object.keys(
-  tokens.themes.light.atoms.button.neutral
+  tokens.themes.light.atoms.button
 ) as Array<ButtonMode>;
 
-export type ButtonMode = keyof typeof tokens.themes.light.atoms.button.neutral;
+export type ButtonTone = keyof typeof tokens.themes.light.atoms.button.neutral;
+export const buttonTones = Object.keys(
+  tokens.themes.light.atoms.button.neutral
+) as Array<ButtonTone>;

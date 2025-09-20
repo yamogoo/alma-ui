@@ -30,6 +30,7 @@ const symbol = computed(() => {
       {
         [`svg-image_size-${size}`]: !!size,
         [`svg-image_mode-${mode}`]: !!mode,
+        [`svg-image_tone-${tone}`]: !!tone,
       },
     ]"
   >
@@ -61,9 +62,13 @@ const symbol = computed(() => {
 
 @mixin defineThemes($map: get($themes, "light.abstracts.label")) {
   @each $mode, $modes in $map {
-    &_mode-#{$mode} {
-      @include themify($themes) {
-        fill: themed("abstracts.label.#{$mode}");
+    @each $tone, $val in $modes {
+      &_mode-#{$mode} {
+        &.svg-image_tone-#{$tone} {
+          @include themify($themes) {
+            fill: themed("abstracts.label.#{$mode}.#{$tone}");
+          }
+        }
       }
     }
   }
