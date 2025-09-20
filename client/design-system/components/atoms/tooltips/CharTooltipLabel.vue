@@ -31,7 +31,7 @@ defineExpose({
     <Icon
       v-if="iconName"
       :name="iconName"
-      :style="iconStyle"
+      :appearance="iconStyle"
       :weight="iconWeight"
       data-testid="icon"
     ></Icon>

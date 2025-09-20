@@ -124,7 +124,7 @@ const onOptionClick = (): void => {
         <Icon
           class="dropdown__current-value-icon"
           :name="'down'"
-          :style="'outline'"
+          :appearance="'outline'"
           :weight="'500'"
         ></Icon>
       </div>

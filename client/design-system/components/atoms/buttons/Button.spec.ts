@@ -4,8 +4,8 @@ import g from "gsap";
 import { Button, type ButtonProps } from "@/components/atoms";
 
 const REQUIRED_PROPS: Pick<ButtonProps, "tone" | "mode"> = {
-  tone: "neutral",
-  mode: "primary",
+  mode: "neutral",
+  tone: "primary",
 };
 
 const getIcon = <T>(wrapper: VueWrapper<T>) => {
@@ -33,7 +33,8 @@ describe("Button.vue", () => {
 
       expect(btn.classes()).toContain("button");
       expect(btn.classes()).toContain("button_size-md");
-      expect(btn.classes()).toContain("button_mode-primary");
+      expect(btn.classes()).toContain("button_mode-neutral");
+      expect(btn.classes()).toContain("button_tone-primary");
     });
   });
 

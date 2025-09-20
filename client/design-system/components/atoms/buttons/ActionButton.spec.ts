@@ -6,8 +6,8 @@ import { ActionButton, type ActionButtonProps } from "@/components/atoms";
 
 const REQUIRED_PROPS: ActionButtonProps = {
   size: "sm",
-  mode: "secondary",
-  tone: "neutral",
+  tone: "secondary",
+  mode: "neutral",
 };
 
 describe("ActionButton", () => {

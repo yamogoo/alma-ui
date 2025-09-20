@@ -64,16 +64,16 @@ export const Playground: Story = {
   args: {
     label: "Button",
     size: "md",
-    tone: "neutral",
-    mode: "primary",
+    mode: "neutral",
+    tone: "primary",
   },
 };
 
-export const Variants: Story = {
+export const Sizes: Story = {
   args: {
     label: "Button",
-    mode: "primary",
-    tone: "neutral",
+    mode: "neutral",
+    tone: "primary",
     size: "md",
   },
   render: (args: ButtonProps) => ({
@@ -81,40 +81,145 @@ export const Variants: Story = {
       return () => (
         <>
           <PageHeader
-            title={"Button modifiers:"}
-            description={"variant /tone / mode / size"}
+            title={"Button sizes"}
+            description={
+              "Demonstrates size tokens from xxs to xl across available variants."
+            }
+          ></PageHeader>
+          <StoryGrid columns={2}>
+            {buttonVariants.map((variant) =>
+              buttonSizes.map((size) => {
+                const title = `${variant} / ${size}`;
+                const label = variant === "default" ? `Button` : undefined;
+                return (
+                  <InfoBlock
+                    key={`${variant}-${size}`}
+                    title={title}
+                    align={"center"}
+                    orientation={"vertical"}
+                  >
+                    <Button
+                      {...args}
+                      variant={variant}
+                      mode={"neutral"}
+                      tone={"primary"}
+                      size={size}
+                      stretch="auto"
+                      label={label}
+                      prependIconName={"check"}
+                      prependIconStyle={"outline"}
+                      prependIconWeight={"400"}
+                    />
+                  </InfoBlock>
+                );
+              })
+            )}
+          </StoryGrid>
+        </>
+      );
+    },
+  }),
+};
+
+export const Colors: Story = {
+  args: {
+    label: "Button",
+    mode: "neutral",
+    tone: "primary",
+    size: "md",
+  },
+  render: (args: ButtonProps) => ({
+    setup() {
+      return () => (
+        <>
+          <PageHeader
+            title={"Button colors"}
+            description={
+              "Shows how mode and tone combinations affect the button’s appearance for each variant."
+            }
           ></PageHeader>
           <StoryGrid columns={4}>
             {buttonVariants.map((variant) =>
-              buttonSizes.map((size) =>
-                buttonModes.map((mode) =>
-                  buttonTones.map((tone) => {
-                    const title = `${variant} / ${tone} / ${mode} / ${size}`;
+              buttonModes.map((mode) =>
+                buttonTones.map((tone) => {
+                  const title = `${variant} / ${tone} / ${mode}`;
+                  const label = variant === "default" ? `Button` : undefined;
+                  return (
+                    <InfoBlock
+                      key={`${variant}-${mode}-${tone}`}
+                      title={title}
+                      align={"center"}
+                      orientation={"vertical"}
+                    >
+                      <Button
+                        {...args}
+                        variant={variant}
+                        mode={mode}
+                        tone={tone}
+                        size={"md"}
+                        stretch="auto"
+                        label={label}
+                        prependIconName={"check"}
+                        prependIconStyle={"outline"}
+                        prependIconWeight={"400"}
+                      />
+                    </InfoBlock>
+                  );
+                })
+              )
+            )}
+          </StoryGrid>
+        </>
+      );
+    },
+  }),
+};
 
-                    const label = variant === "default" ? `Button` : undefined;
-                    return (
-                      <InfoBlock
-                        key={`${variant}-${size}-${mode}-${tone}`}
-                        title={title}
-                        align={"center"}
-                        orientation={"vertical"}
-                      >
-                        <Button
-                          {...args}
-                          variant={variant}
-                          mode={mode}
-                          tone={tone}
-                          size={size}
-                          stretch="auto"
-                          label={label}
-                          prependIconName={"check"}
-                          prependIconStyle={"outline"}
-                          prependIconWeight={"400"}
-                        />
-                      </InfoBlock>
-                    );
-                  })
-                )
+export const Variants: Story = {
+  args: {
+    label: "Button",
+    mode: "neutral",
+    tone: "primary",
+    size: "md",
+  },
+  render: (args: ButtonProps) => ({
+    setup() {
+      return () => (
+        <>
+          <PageHeader
+            title={"Button variants"}
+            description={
+              "Demonstrates default variant across modes, tones, and sizes."
+            }
+          ></PageHeader>
+          <StoryGrid columns={4}>
+            {buttonSizes.map((size) =>
+              buttonModes.map((mode) =>
+                buttonTones.map((tone) => {
+                  const title = `${tone} / ${mode} / ${size}`;
+                  const label = "Button";
+                  return (
+                    <InfoBlock
+                      key={`${size}-${mode}-${tone}`}
+                      title={title}
+                      align={"center"}
+                      orientation={"vertical"}
+                    >
+                      <Button
+                        {...args}
+                        variant={"default"}
+                        mode={mode}
+                        tone={tone}
+                        size={size}
+                        stretch="auto"
+                        label={label}
+                        prependIconName={"check"}
+                        prependIconStyle={"outline"}
+                        prependIconWeight={"400"}
+                      />
+                    </InfoBlock>
+                  );
+                })
               )
             )}
           </StoryGrid>

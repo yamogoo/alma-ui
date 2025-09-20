@@ -105,7 +105,7 @@ watch(localIsPressed, (isPressed) => {
       v-if="prependIconName"
       :data-testid="'button__icon'"
       :name="prependIconName"
-      :style="prependIconStyle"
+      :appearance="prependIconStyle"
       :weight="prependIconWeight"
       :size="iconSize ?? computedButtonSize"
     ></Icon>
@@ -120,7 +120,7 @@ watch(localIsPressed, (isPressed) => {
     <Icon
       v-if="appendIconName"
       :name="appendIconName"
-      :style="appendIconStyle"
+      :appearance="appendIconStyle"
       :weight="appendIconWeight"
       :size="iconSize ?? computedButtonSize"
     ></Icon>

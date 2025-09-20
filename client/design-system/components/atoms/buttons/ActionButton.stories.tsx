@@ -51,8 +51,8 @@ export const Playground: Story = {
   args: {
     label: "Button",
     size: "md",
-    tone: "neutral",
-    mode: "primary",
+    mode: "neutral",
+    tone: "primary",
     iconName: "check",
     iconStyle: "outline",
     iconWeight: "400",
@@ -62,8 +62,8 @@ export const Playground: Story = {
 export const Variants: Story = {
   args: {
     label: "Button",
-    mode: "primary",
-    tone: "neutral",
+    mode: "neutral",
+    tone: "primary",
     size: "md",
   },
   render: (args: ButtonProps) => ({

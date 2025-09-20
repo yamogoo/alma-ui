@@ -5,8 +5,11 @@ import type { ControlButtonProps } from "./ControlButton";
 
 const REQUIRED_PROPS: ControlButtonProps = {
   size: "sm",
-  mode: "secondary",
-  tone: "neutral",
+  mode: "neutral",
+  tone: "secondary",
+  iconName: "function",
+  iconStyle: "outline",
+  iconWeight: "100",
 };
 
 describe("ActionButton", () => {

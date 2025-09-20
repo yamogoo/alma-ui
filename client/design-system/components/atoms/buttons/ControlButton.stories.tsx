@@ -53,10 +53,9 @@ type Story = StoryObj<typeof meta>;
 
 export const Playground: Story = {
   args: {
-    label: "",
     size: "md",
-    tone: "neutral",
-    mode: "primary",
+    mode: "neutral",
+    tone: "primary",
     iconName: "check",
     iconStyle: "outline",
     iconWeight: "400",
@@ -65,9 +64,11 @@ export const Playground: Story = {
 
 export const Variants: Story = {
   args: {
-    label: "",
-    mode: "primary",
-    tone: "neutral",
+    mode: "neutral",
+    tone: "primary",
+    iconName: "check",
+    iconStyle: "outline",
+    iconWeight: "400",
     size: "md",
   },
   render: (args: ButtonProps) => ({

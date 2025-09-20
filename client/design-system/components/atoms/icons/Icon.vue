@@ -13,9 +13,9 @@ const props = withDefaults(defineProps<IconProps>(), {
 });
 
 const symbol = computed(() => {
-  const { name, style, weight } = props;
+  const { name, appearance, weight } = props;
 
-  const key = `${name}_${style}_${weight}`;
+  const key = `${name}_${appearance}_${weight}`;
 
   const loader = iconManifest[key as IconFullName];
   return loader ? markRaw(defineAsyncComponent(loader)) : null;
@@ -30,7 +30,7 @@ const symbol = computed(() => {
         [`icon_variant-${variant}`]: !!variant,
         [`icon_size-${size}`]: !!size,
         [`icon_mode-${mode}`]: !!mode,
-        [`icon_mode-${tone}`]: !!tone,
+        [`icon_tone-${tone}`]: !!tone,
       },
     ]"
     data-testid="icon"

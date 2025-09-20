@@ -6,24 +6,21 @@ import type {
 } from "@/adapters";
 
 import type {
-  IconName,
-  IconStyle,
-  IconWeight,
   ButtonContentDirection,
   ButtonStretch,
   ButtonRequiredProps,
+  IconComponentProps,
 } from "@/components/atoms";
 
-export interface ControlButtonProps extends ButtonRequiredProps {
+export interface ControlButtonProps
+  extends ButtonRequiredProps,
+    IconComponentProps {
   variant?: ButtonVariant;
   size: ButtonSize;
   mode: ButtonMode;
   tone: ButtonTone;
   label?: string;
   contentDirection?: ButtonContentDirection;
-  iconName?: IconName;
-  iconStyle?: IconStyle;
-  iconWeight?: IconWeight;
   isDisabled?: boolean;
   stretch?: ButtonStretch;
 }

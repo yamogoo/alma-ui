@@ -9,7 +9,12 @@ const getIcon = <T>(wrapper: VueWrapper<T>) => {
 describe("CharTooltipLabel", () => {
   test("renders with default props", () => {
     const wrapper = mount(CharTooltipLabel, {
-      props: { label: "Hello" },
+      props: {
+        label: "Hello",
+        variant: "default",
+        size: "lg",
+        mode: "primary",
+      },
     });
 
     expect(wrapper.classes()).toContain("char-tooltip-label");
@@ -25,13 +30,13 @@ describe("CharTooltipLabel", () => {
         label: "Custom",
         variant: "default",
         size: "lg",
-        mode: "inversed",
+        mode: "primary",
       },
     });
 
     expect(wrapper.classes()).toContain("char-tooltip-label_variant-default");
     expect(wrapper.classes()).toContain("char-tooltip-label_size-lg");
-    expect(wrapper.classes()).toContain("char-tooltip-label_mode-inversed");
+    expect(wrapper.classes()).toContain("char-tooltip-label_mode-primary");
   });
 
   test("renders the text label", () => {
@@ -77,7 +82,7 @@ describe("CharTooltipLabel", () => {
     });
 
     const icon = wrapper.findComponent({ name: "Icon" });
-    expect(icon.props("style")).toBe("outline");
+    expect(icon.props("appearance")).toBe("outline");
     expect(icon.props("weight")).toBe("300");
   });
 });

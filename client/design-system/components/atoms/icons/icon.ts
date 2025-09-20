@@ -10,11 +10,20 @@ export type IconStyle = (typeof iconStyles)[number];
 
 export type IconWeight = (typeof iconWeights)[number];
 
-export interface IconProps {
-  variant?: UIElementVariant;
+export interface IconStyleProps {
   name: IconName;
-  style: IconStyle;
+  appearance: IconStyle;
   weight: IconWeight;
+}
+
+export interface IconComponentProps {
+  iconName: IconName;
+  iconStyle: IconStyle;
+  iconWeight: IconWeight;
+}
+
+export interface IconProps extends IconStyleProps {
+  variant?: UIElementVariant;
   size?: IconSize;
   mode?: IconMode;
   tone?: IconTone;

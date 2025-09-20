@@ -19,7 +19,7 @@ describe("Icon", () => {
         props: {
           name: _name,
           weight: weight,
-          style: _style,
+          appearance: _style,
         },
       });
 
