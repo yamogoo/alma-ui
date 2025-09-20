@@ -1,4 +1,4 @@
-import type { InputMode, InputSize } from "@/adapters";
+import type { InputSize, InputMode, InputTone } from "@/adapters";
 
 import type { InputTypeHTMLAttribute } from "vue";
 
@@ -10,14 +10,14 @@ export interface InputProps extends Partial<UIElementUnionProps> {
   value: string;
   placeholder?: string;
   mode?: InputMode;
+  tone?: InputTone;
+  size?: InputSize;
   isError?: boolean;
   isFocused?: boolean;
   isDisabled?: boolean;
   isRestButtonEnabled?: boolean;
-  dataCy?: string;
   areaPlaceholder?: string;
   autocomplete?: string;
-  size?: InputSize;
   type?: InputTypeHTMLAttribute;
   errorMessage?: string | null;
 }

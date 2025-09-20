@@ -1,7 +1,12 @@
 <script setup lang="ts">
-import { Input, ControlButton, type InputProps } from "@/components/atoms";
+import {
+  Input,
+  ControlButton,
+  type PasswordInputProps,
+} from "@/components/atoms";
+import { ref, watch } from "vue";
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<PasswordInputProps>(), {
   isMaskIconShown: true,
   masked: true,
 });
@@ -13,9 +18,21 @@ const emit = defineEmits<{
   (e: "update:masked", isMasked: boolean): void;
 }>();
 
+const localMasked = ref(props.masked);
+
 const onMaskValue = (): void => {
-  emit("update:masked", !props.masked);
+  const newValue = !localMasked.value;
+  localMasked.value = newValue;
+
+  emit("update:masked", newValue);
 };
+
+watch(
+  () => props.masked,
+  (newValue) => {
+    localMasked.value = newValue;
+  }
+);
 
 const onFocus = (isFocused: boolean): void => {
   emit("focused", isFocused);
@@ -30,17 +47,10 @@ const onReset = (): void => {
 };
 </script>
 
-<script lang="ts">
-export interface Props extends InputProps {
-  isMaskIconShown?: boolean;
-  masked?: boolean;
-}
-</script>
-
 <template>
   <Input
     v-bind="props"
-    :type="masked ? 'password' : 'text'"
+    :type="localMasked ? 'password' : 'text'"
     @focused="onFocus"
     @reset:value="onReset"
     @update:value="onUpdateValue"
@@ -52,7 +62,7 @@ export interface Props extends InputProps {
         :icon-size="'xs'"
         :mode="!isError ? 'neutral' : 'negative'"
         :tone="'primary'"
-        :icon-name="!masked ? 'eye' : 'eyeDisabled'"
+        :icon-name="!localMasked ? 'eye' : 'eyeDisabled'"
         :icon-style="'outline'"
         :icon-weight="'400'"
         role="button"

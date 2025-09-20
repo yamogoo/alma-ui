@@ -2,7 +2,9 @@
   "primary": {
     "self": {
       "background": {
-        "value": "{themes.themes.light.abstracts.background.primary.value}"
+        "value": "{themes.themes.light.abstracts.background.primary.value}",
+        "type": "color",
+        "unit": "hex"
       },
       "divider": {
         "value": "{themes.themes.light.atoms.divider.primary.self.border.value}",
@@ -14,7 +16,9 @@
   "secondary": {
     "self": {
       "background": {
-        "value": "{themes.themes.light.abstracts.background.secondary.value}"
+        "value": "{themes.themes.light.abstracts.background.secondary.value}",
+        "type": "color",
+        "unit": "hex"
       },
       "divider": {
         "value": "{themes.themes.light.atoms.divider.secondary.self.border.value}",
@@ -26,7 +30,9 @@
   "ghost": {
     "self": {
       "background": {
-        "value": "rgba({colors.gray-0}, 0)"
+        "value": "rgba({colors.gray-0}, 0)",
+        "type": "color",
+        "unit": "hex"
       },
       "divider": {
         "value": "{themes.themes.light.atoms.divider.secondary.self.border.value}",

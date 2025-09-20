@@ -1315,7 +1315,7 @@
               }
             },
             "borderRadius": {
-              "value": 16,
+              "value": 8,
               "type": "radius",
               "unit": "px",
               "meta": {

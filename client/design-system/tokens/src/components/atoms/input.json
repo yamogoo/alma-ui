@@ -30,7 +30,7 @@
           }
         },
         "borderRadius": {
-          "value": "{tokens.roundness.md.value}",
+          "value": "{tokens.roundness.xs.value}",
           "type": "radius",
           "unit": "px",
           "meta": {

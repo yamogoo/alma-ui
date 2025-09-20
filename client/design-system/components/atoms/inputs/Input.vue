@@ -22,7 +22,8 @@ import {
 
 const props = withDefaults(defineProps<InputProps>(), {
   variant: "default",
-  mode: "primary",
+  mode: "neutral",
+  tone: "primary",
   size: "lg",
   type: "text",
   isError: false,
@@ -80,9 +81,7 @@ watch(localModelValue, (newValue) => {
   emit("update:value", newValue);
 });
 
-const onFocus = (e: PointerEvent): void => {
-  e.preventDefault();
-
+const onFocus = (): void => {
   isLocalFocused.value = true;
 };
 
@@ -91,9 +90,7 @@ const onChange = (e: Event): void => {
   emit("update:value", value);
 };
 
-const onReset = (e: MouseEvent | PointerEvent): void => {
-  e.preventDefault();
-
+const onReset = (): void => {
   emit("reset:value");
   emit("update:value", localModelValue.value);
   localModelValue.value = "";
@@ -201,9 +198,10 @@ onMounted(() => {
     data-testid="input"
     :class="[
       `input_variant-${variant}`,
-      `input_mode-${String(mode)}`,
+      `input_mode-${mode}`,
+      `input_tone-${tone}`,
       {
-        [`input_size-${String(size)}`]: size,
+        [`input_size-${size}`]: size,
         [`input_error`]: isError,
         [`input_disabled`]: isDisabled,
         [`input_focused`]: isLocalFocused,
@@ -229,7 +227,6 @@ onMounted(() => {
           :type
           class="input__field-value"
           data-testid="input-value"
-          :dataCy
           :areaPlaceholder="areaPlaceholder ?? placeholder"
           :disabled="isDisabled"
           :autocomplete
@@ -313,75 +310,81 @@ onMounted(() => {
 
 @mixin defineThemes($map: get($themes, "light.atoms.input")) {
   @each $mode, $modes in $map {
-    &_mode-#{$mode} {
-      &:focus {
-        .input__field {
-          @include themify($themes) {
-            outline: $outline solid
-              themed("atoms.input.#{$mode}.self.border.outline");
+    @each $tone, $val in $modes {
+      &_mode-#{$mode} {
+        &.input_tone-#{$tone} {
+          &:not(.input_disabled) {
+            .input__field {
+              @include themify($themes) {
+                color: themed("atoms.input.#{$mode}.#{$tone}.label.normal");
+                background-color: themed(
+                  "atoms.input.#{$mode}.#{$tone}.self.background.normal"
+                );
+                @extend %base-transition;
+              }
+            }
           }
-        }
-      }
 
-      &:not(.input_disabled) {
-        .input__field {
-          @include themify($themes) {
-            color: themed("atoms.input.#{$mode}.label.normal");
-            background-color: themed(
-              "atoms.input.#{$mode}.self.background.normal"
-            );
+          &:not(.input__focused) {
+            .input__field {
+              @include themify($themes) {
+                border: $outline solid
+                  themed("atoms.input.#{$mode}.#{$tone}.self.border.normal");
+              }
+            }
+          }
+
+          &.input_focused {
+            .input__field {
+              @include themify($themes) {
+                color: themed("atoms.input.#{$mode}.#{$tone}.label.focused");
+                background-color: themed(
+                  "atoms.input.#{$mode}.#{$tone}.self.background.focused"
+                );
+                border: $outline solid
+                  themed("atoms.input.#{$mode}.#{$tone}.self.border.outline");
+                @extend %base-transition;
+              }
+            }
+          }
+
+          &.input_disabled {
+            .input__field {
+              @include themify($themes) {
+                color: themed("atoms.input.#{$mode}.#{$tone}.label.disabled");
+                background-color: themed(
+                  "atoms.input.#{$mode}.#{$tone}.self.background.disabled"
+                );
+                @extend %base-transition;
+              }
+            }
+          }
+
+          &.input_error {
+            .input__field {
+              @include themify($themes) {
+                color: themed("atoms.input.#{$mode}.#{$tone}.label.error");
+                background-color: themed(
+                  "atoms.input.#{$mode}.#{$tone}.self.background.error"
+                );
+                @extend %base-transition;
+              }
+            }
+          }
+
+          .input__field-value,
+          .input__field-placeholder {
+            color: inherit;
             @extend %base-transition;
           }
-        }
-      }
 
-      &.input_focused {
-        .input__field {
-          @include themify($themes) {
-            color: themed("atoms.input.#{$mode}.label.focused");
-            background-color: themed(
-              "atoms.input.#{$mode}.self.background.focused"
-            );
-            @extend %base-transition;
-          }
-        }
-      }
-
-      &.input_disabled {
-        .input__field {
-          @include themify($themes) {
-            color: themed("atoms.input.#{$mode}.label.disabled");
-            background-color: themed(
-              "atoms.input.#{$mode}.self.background.disabled"
-            );
-            @extend %base-transition;
-          }
-        }
-      }
-
-      &.input_error {
-        .input__field {
-          @include themify($themes) {
-            color: themed("atoms.input.#{$mode}.label.error");
-            background-color: themed(
-              "atoms.input.#{$mode}.self.background.error"
-            );
-            @extend %base-transition;
-          }
-        }
-      }
-
-      .input__field-value,
-      .input__field-placeholder {
-        color: inherit;
-        @extend %base-transition;
-      }
-
-      .input__error {
-        &-message {
-          @include themify($themes) {
-            color: themed("atoms.input.#{$mode}.label.error");
-            @extend %base-transition;
+          .input__error {
+            &-message {
+              @include themify($themes) {
+                color: themed("atoms.input.#{$mode}.#{$tone}.label.error");
+                @extend %base-transition;
+              }
+            }
           }
         }
       }
