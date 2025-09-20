@@ -2,7 +2,7 @@
 
 ### R&D Playground for UI & System Design
 
-> AlmaProtoKit is my personal R&D project — an experimental design system platform where I explore new approaches to UI development, design tokens, iconography, and cross-framework integration.
+> AlmaProtoKit is my personal R&D project — an experimental design system platform (see [MANIFEST.md](./design-system/MANIFEST.md) and [MANIFEST.yaml](./design-system/MANIFEST.yaml)) where I explore new approaches to UI development, design tokens, iconography, and cross-framework integration.
 
 This is not a production-ready library, but rather a prototype environment where I test ideas that may later evolve into Alma-UI, Alma-Tokens, Alma-Icons, or other parts of the Alma ecosystem.
 
@@ -11,46 +11,39 @@ Think of AlmaProtoKit as a design-system R&D playground rather than a production
 ## 🚀 Goals of AlmaProtoKit
 
 - Experiment with design tokens pipelines (JSON → SCSS → CSS variables).
-
 - Prototype multi-weight icon systems.
-
 - Explore runtime vs compile-time theming strategies.
-
 - Validate component patterns for Vue 3 and React.
-
 - Research how to bridge design tools (Figma) with developer platforms.
 
 > Everything is optimized for my stack and workflow, without the bloat of prebuilt UI libraries.
 
 ## 🎯 Status
 
-🚧 Experimental & evolving. Expect breaking changes.
+🚧 Experimental & evolving. Expect breaking changes.  
+Components may have corresponding adapters; adapters are thin wrappers only.
+
+Fonts are included for offline-first usage and can be later replaced with CDN-hosted versions if desired.
 
 ## 🛠 Stack & Tech
 
 - Vue 3 + TypeScript
-
+- Adapters for environment-specific component bindings
 - GSAP for animations
-
 - Custom design tokens & themes
-
-- [Alma Icons](https://almaicons.netlify.app/icons)
-
 - SCSS core with mixins and utilities
-
 - Fully custom components and composables
-
-- MDX editor for rich content
-
+- [Alma Icons](https://almaicons.netlify.app/icons)
 - [Vue3ResizeBounding](https://resize-bounding.netlify.app/) for resizable UI
+- Project structure and module definitions specified in [MANIFEST.md](./design-system/MANIFEST.md) and [MANIFEST.yaml](./design-system/MANIFEST.yaml)
 
 **Modular Design Tokens System**
 
-> Developed a modular token system for the design system with support for JSON, YAML, and TypeScript. TokensParser and JSONBuilder were partially developed with AI assistance, but all architecture, integration, and other components were implemented independently. The AI-generated files are located in [`~/client/plugins`](https://github.com/yamogoo/alma-ui/tree/main/client/plugins).
+> AlmaProtoKit includes a structured token system with support for JSON, YAML, and TypeScript. Tokens are organized under `tokens/src` (source), `tokens/build` (runtime output), and `tokens/structure.md`.
 
 ## 💻 Demo
 
-_Currently no public demo available — project is intended for R&D and internal exploration._
+> For details on project structure and module definitions, see [MANIFEST.md](./design-system/MANIFEST.md) and [MANIFEST.yaml](./design-system/MANIFEST.yaml).
 
 ```bash
 # Clone repository
@@ -62,8 +55,11 @@ cd alma-proto-kit
 # Install dependencies
 pnpm install
 
-# Run dev server
-pnpm dev
+# Run development server (Vue app)
+pnpm client:dev
+
+# Run Storybook for component demos
+pnpm storybook:dev
 ```
 
 _Then open http://localhost:3000 to see AlmaProtoKit in action._
