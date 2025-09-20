@@ -1,8 +1,7 @@
 import { mount } from "@vue/test-utils";
 import { describe, test, expect } from "vitest";
 
-import { type AnimatedIconProps } from "./animatedIcon";
-import AnimatedIcon from "./AnimatedIcon.vue";
+import { AnimatedIcon, type AnimatedIconProps } from "@/components/atoms";
 
 import animationData from "@/assets/animations/spinner.json";
 

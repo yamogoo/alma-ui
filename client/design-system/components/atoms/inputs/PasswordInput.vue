@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import type { InputProps } from "./input";
-
-import { Input, ControlButton } from "@/components/atoms";
+import { Input, ControlButton, type InputProps } from "@/components/atoms";
 
 const props = withDefaults(defineProps<Props>(), {
   isMaskIconShown: true,

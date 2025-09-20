@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ToolbarBlockProps } from "./toolbarBlock";
+import type { ToolbarBlockProps } from "./ToolbarBlock";
 
 import { Group } from "@/components/atoms";
 

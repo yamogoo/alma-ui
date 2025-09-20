@@ -1,9 +1,6 @@
 <script setup lang="ts">
-import type { SnackbarProps } from "./snackbar";
 import { ControlButton, Text } from "@/components/atoms";
-
-// import {Components} from '@/index';
-// Components.AnimatedWrapper
+import { type SnackbarProps } from "@/components/molecules";
 
 withDefaults(defineProps<SnackbarProps>(), {
   variant: "default",

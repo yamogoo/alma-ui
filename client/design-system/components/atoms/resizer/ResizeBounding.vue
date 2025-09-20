@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import Resizer, { globalClassNames } from "vue3-resize-bounding";
-import { type ResizeBoundingProps } from "@/components/atoms";
 
 import tokens from "@/tokens";
+
+import { type ResizeBoundingProps } from "@/components/atoms";
 
 const PREFIX = "resizer",
   PREFIX_WITH_DIVIDER = `${PREFIX}__`;

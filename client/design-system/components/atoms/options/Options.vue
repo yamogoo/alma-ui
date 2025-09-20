@@ -1,6 +1,5 @@
 <script setup lang="ts" generic="T">
-import type { OptionsProps } from "./options";
-import { Text } from "@/components/atoms";
+import { Text, type OptionsProps } from "@/components/atoms";
 
 const props = withDefaults(defineProps<OptionsProps<T>>(), {
   variant: "default",

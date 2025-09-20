@@ -1,7 +1,6 @@
 import { mount } from "@vue/test-utils";
 
-import FormWrapper from "./FormWrapper.vue";
-import type { FormWrapperProps } from "./formWrapper";
+import { FormWrapper, type FormWrapperProps } from "@/components/molecules";
 
 const CLASS_NAME = "form-wrapper";
 

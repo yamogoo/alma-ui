@@ -1,5 +1,5 @@
 <script setup lang="ts" generic="T = string">
-import type { SideMainMenuProps } from "./sideMainMenu";
+import type { SideMainMenuProps } from "@/components/templates";
 import { type IMenuItem, SimpleMenu } from "@/components/atoms";
 
 withDefaults(defineProps<SideMainMenuProps<T>>(), {});

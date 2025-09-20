@@ -13,23 +13,19 @@ import {
 
 import { StoryGrid, InfoBlock, PageHeader } from "@/stories/components";
 
-import {
-  iconNames,
-  iconStyles,
-  iconWeights,
-} from "@/components/atoms/icons/icon";
+import { iconNames, iconStyles, iconWeights } from "@/components/atoms";
 
 import { ActionButton, type ButtonProps } from "@/components/atoms";
 
 const meta = {
-  title: "Atoms/buttons/ActionButton",
+  title: "Atoms/Buttons/ActionButton",
   component: ActionButton,
   tags: ["autodocs"],
   parameters: {
     docs: {
       description: {
         component:
-          "ActionButton is a standard button used for primary or secondary actions. It can display a text label, an icon, or a combination of both, and supports all core button sizes, tones, and modes.",
+          "ActionButton is a derivative of the base Button component, designed for primary or secondary actions. It can display a text label, an icon, or a combination of both, and supports all core button sizes, tones, and modes.",
       },
     },
   },
@@ -53,7 +49,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Playground: Story = {
   args: {
-    label: "",
+    label: "Button",
     size: "md",
     tone: "neutral",
     mode: "primary",
@@ -65,7 +61,7 @@ export const Playground: Story = {
 
 export const Variants: Story = {
   args: {
-    label: "",
+    label: "Button",
     mode: "primary",
     tone: "neutral",
     size: "md",
@@ -82,7 +78,7 @@ export const Variants: Story = {
             {buttonSizes.map((size) =>
               buttonModes.map((mode) =>
                 buttonTones.map((tone) => {
-                  const variant: ButtonVariant = "rounded";
+                  const variant: ButtonVariant = "default";
                   const title = `${variant} / ${tone} / ${mode} / ${size}`;
 
                   return (

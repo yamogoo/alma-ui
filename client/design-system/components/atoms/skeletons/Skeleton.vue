@@ -2,7 +2,7 @@
 import { onMounted, ref } from "vue";
 import g from "gsap";
 
-import type { SkeletonProps } from "./skeleton";
+import type { SkeletonProps } from "@/components/atoms";
 
 withDefaults(defineProps<SkeletonProps>(), {
   mode: "default",

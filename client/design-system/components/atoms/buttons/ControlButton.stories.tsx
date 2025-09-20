@@ -17,19 +17,19 @@ import {
   iconNames,
   iconStyles,
   iconWeights,
-} from "@/components/atoms/icons/icon";
-
-import { ControlButton, type ButtonProps } from "@/components/atoms";
+  ControlButton,
+  type ButtonProps,
+} from "@/components/atoms";
 
 const meta = {
-  title: "Atoms/buttons/ControlButton",
+  title: "Atoms/Buttons/ControlButton",
   component: ControlButton,
   tags: ["autodocs"],
   parameters: {
     docs: {
       description: {
         component:
-          "ControlButton is a circular action button designed for compact controls. It is typically used for secondary or contextual actions, such as opening menus, toggling options, or controlling media playback. Supports different sizes, tones, and icon variations to match the overall UI theme.",
+          "ControlButton is a derivative of the base Button component, styled as a circular action button for compact controls. It is typically used for secondary or contextual actions, such as opening menus, toggling options, or controlling media playback. It supports different sizes, tones, and icon variations to match the overall UI theme.",
       },
     },
   },

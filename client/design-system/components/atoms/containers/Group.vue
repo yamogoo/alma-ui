@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { GroupProps } from "./group";
+import type { GroupProps } from "@/components/atoms";
 
 const props = withDefaults(defineProps<GroupProps>(), {
   variant: "default",

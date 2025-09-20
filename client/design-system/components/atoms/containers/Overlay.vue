@@ -1,6 +1,6 @@
 <!-- is the base for components that float over the rest of the page -->
 <script setup lang="ts">
-import type { OverlayProps } from "./overlay";
+import type { OverlayProps } from "@/components/atoms";
 
 defineProps<OverlayProps>();
 </script>

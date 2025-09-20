@@ -1,5 +1,5 @@
-export * from "./charTooltipLabel";
+export * from "./CharTooltipLabel";
 export { default as CharTooltipLabel } from "./CharTooltipLabel.vue";
 
-export * from "./tooltip";
+export * from "./Tooltip";
 export { default as Tooltip } from "./Tooltip.vue";

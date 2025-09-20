@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import type { FormWrapperProps } from "./formWrapper";
-
-import AnimatedWrapper from "@/components/atoms/containers/AnimatedWrapper.vue";
+import { AnimatedWrapper } from "@/components/atoms";
+import type { FormWrapperProps } from "@/components/molecules";
 
 withDefaults(defineProps<FormWrapperProps>(), {
   variant: "default",

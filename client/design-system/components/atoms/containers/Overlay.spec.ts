@@ -1,7 +1,6 @@
 import { mount } from "@vue/test-utils";
 
-import type { OverlayProps } from "./overlay";
-import Overlay from "./Overlay.vue";
+import { Overlay, type OverlayProps } from "@/components/atoms";
 
 enum Classes {
   ROOT_CLASS = "overlay",

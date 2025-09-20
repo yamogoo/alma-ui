@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { MainHeaderProps } from "./mainHeader";
+import type { MainHeaderProps } from "@/components/templates";
 
 withDefaults(defineProps<MainHeaderProps>(), {
   as: "header",

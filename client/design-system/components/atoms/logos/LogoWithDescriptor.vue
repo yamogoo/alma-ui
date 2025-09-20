@@ -3,8 +3,7 @@ import { useTemplateRef } from "vue";
 
 import { useHover, usePressed } from "@/composables/local";
 
-import type { LogoWithDescriptorProps } from "./logoWithDescriptor";
-import { Logo, Text } from "@/components/atoms";
+import { Logo, Text, type LogoWithDescriptorProps } from "@/components/atoms";
 
 withDefaults(defineProps<LogoWithDescriptorProps>(), {
   variant: "default",

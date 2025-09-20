@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ControlWrapperProps } from "./controlWrapper";
+import type { ControlWrapperProps } from "@/components/atoms";
 
 withDefaults(defineProps<ControlWrapperProps>(), {
   variant: "default",

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { CarouselProps } from "./carousel";
+import type { CarouselProps } from "@/components/atoms";
 
 withDefaults(defineProps<CarouselProps>(), {});
 </script>

@@ -1,7 +1,7 @@
-export * from "./menu";
+export * from "./Menu";
 
-export * from "./menuItem";
+export * from "./MenuItem";
 export { default as MenuItem } from "./MenuItem.vue";
 
-export * from "./simpleMenu";
+export * from "./SimpleMenu";
 export { default as SimpleMenu } from "./SimpleMenu.vue";

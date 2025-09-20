@@ -2,7 +2,7 @@
 import { nextTick, ref, watch } from "vue";
 import g from "gsap";
 
-import type { AnimatedWrapperProps } from "./animatedWrapper";
+import type { AnimatedWrapperProps } from "@/components/atoms";
 
 const props = withDefaults(defineProps<AnimatedWrapperProps>(), {
   duration: 0.4,

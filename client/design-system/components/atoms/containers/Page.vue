@@ -6,7 +6,7 @@ import { createCustomEvent } from "@/utils";
 
 import { usePageTransition } from "@/composables/local";
 
-import type { PageProps } from "./page";
+import type { PageProps } from "@/components/atoms";
 
 const props = withDefaults(defineProps<PageProps>(), {
   isFooterShown: true,

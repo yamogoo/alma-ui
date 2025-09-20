@@ -10,7 +10,7 @@ import { type TextVariant } from "@/adapters";
 import type {
   StepPaginationTabItem,
   StepPaginationTabsProps,
-} from "./stepPaginationTabs";
+} from "./StepPaginationTabs";
 
 const props = withDefaults(defineProps<StepPaginationTabsProps>(), {
   variant: "default",

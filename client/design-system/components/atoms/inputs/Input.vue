@@ -13,9 +13,12 @@ import g from "gsap";
 
 import { sanitizeInput } from "@/utils";
 
-import type { InputProps } from "./input";
-
-import { Text, ControlButton, AnimatedWrapper } from "@/components/atoms";
+import {
+  Text,
+  ControlButton,
+  AnimatedWrapper,
+  type InputProps,
+} from "@/components/atoms";
 
 const props = withDefaults(defineProps<InputProps>(), {
   variant: "default",

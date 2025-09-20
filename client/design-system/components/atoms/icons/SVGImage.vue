@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { defineAsyncComponent, computed } from "vue";
 
-import { type SVGImageProps } from "./svgImage";
-import { Skeleton } from "@/components/atoms";
+import { Skeleton, type SVGImageProps } from "@/components/atoms";
 
 const props = defineProps<SVGImageProps>();
 

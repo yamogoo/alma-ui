@@ -1,5 +1,5 @@
-export * from "./form";
+export * from "./Form";
 export { default as Form } from "./Form.vue";
 
-export * from "./formWrapper";
+export * from "./FormWrapper";
 export { default as FormWrapper } from "./FormWrapper.vue";

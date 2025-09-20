@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { useTemplateRef } from "vue";
-import type { CharTooltipLabelProps } from "./charTooltipLabel";
 
-import { Icon, Text } from "@/components/atoms";
+import { Icon, Text, type CharTooltipLabelProps } from "@/components/atoms";
 
 withDefaults(defineProps<CharTooltipLabelProps>(), {
   variant: "default",

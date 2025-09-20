@@ -1,7 +1,7 @@
+import { nextTick } from "vue";
 import { mount, VueWrapper } from "@vue/test-utils";
 
-import Input from "@/components/atoms/inputs/Input.vue";
-import { nextTick } from "vue";
+import { Input } from "@/components/atoms";
 
 const getResetButton = <T>(wrapper: VueWrapper<T>) => {
   return wrapper.find('[data-testid="input__field-reset-button"]');

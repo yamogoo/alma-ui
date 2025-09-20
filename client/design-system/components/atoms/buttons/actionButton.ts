@@ -9,12 +9,10 @@ import type {
   IconName,
   IconStyle,
   IconWeight,
-} from "@/components/atoms/icons/icon";
-import type {
   ButtonContentDirection,
   ButtonStretch,
   ButtonRequiredProps,
-} from "./Button";
+} from "@/components/atoms";
 
 export interface ActionButtonProps extends ButtonRequiredProps {
   variant?: ButtonVariant;

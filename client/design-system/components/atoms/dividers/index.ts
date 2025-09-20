@@ -1,2 +1,2 @@
-export * from "./divider";
+export * from "./Divider";
 export { default as Divider } from "./Divider.vue";

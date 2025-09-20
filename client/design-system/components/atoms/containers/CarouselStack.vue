@@ -12,7 +12,7 @@ import g from "gsap";
 
 import { px2rem } from "@/utils";
 
-import type { CarousleStackProps } from "./carouselStack";
+import type { CarousleStackProps } from "@/components/atoms";
 
 const props = withDefaults(defineProps<CarousleStackProps>(), {
   variant: "default",

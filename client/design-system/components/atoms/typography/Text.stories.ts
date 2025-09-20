@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/vue3-vite";
 
 import tokens from "@/tokens";
 
-import Text from "./Text.vue";
+import { Text } from "@/components/atoms";
 
 type Color = keyof typeof tokens.themes.light.abstracts.label;
 const colors = Object.keys(tokens.themes.light.abstracts.label) as Color[];

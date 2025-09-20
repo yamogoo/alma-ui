@@ -1,6 +1,6 @@
 import { mount } from "@vue/test-utils";
 
-import AnimatedWrapper from "./AnimatedWrapper.vue";
+import { AnimatedWrapper } from "@/components/atoms";
 
 describe("AnimatedWrapper", () => {
   describe("slots", () => {

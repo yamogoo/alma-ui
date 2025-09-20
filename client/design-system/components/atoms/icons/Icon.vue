@@ -1,8 +1,12 @@
 <script setup lang="ts">
 import { defineAsyncComponent, computed, markRaw } from "vue";
 
-import { iconManifest, type IconFullName, type IconProps } from "./icon";
-import { Skeleton } from "@/components/atoms";
+import {
+  Skeleton,
+  iconManifest,
+  type IconFullName,
+  type IconProps,
+} from "@/components/atoms";
 
 const props = withDefaults(defineProps<IconProps>(), {
   variant: "default",

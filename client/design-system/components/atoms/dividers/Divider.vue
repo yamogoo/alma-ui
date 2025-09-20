@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { DividerProps } from "./divider";
+import type { DividerProps } from "@/components/atoms";
 
 withDefaults(defineProps<DividerProps>(), {
   as: "span",

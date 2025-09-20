@@ -4,9 +4,8 @@ import g from "gsap";
 
 import { useClickOutside } from "@/composables/local";
 
-import type { DropdownProps } from "./dropdown";
-
 import { Icon } from "@/components/atoms";
+import { type DropdownProps } from "@/components/molecules";
 
 const ARROW_ICON_ROTATION_EXPANDED = 0,
   ARROW_ICON_ROTATION_SHRINKED = 90;

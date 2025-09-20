@@ -3,8 +3,12 @@ import { useTemplateRef } from "vue";
 
 import { useMenuNavigation } from "@/composables/local";
 
-import type { SimpleMenuProps } from "./simpleMenu";
-import { MenuItem, type IMenuItem, Text } from "@/components/atoms";
+import {
+  MenuItem,
+  Text,
+  type IMenuItem,
+  type SimpleMenuProps,
+} from "@/components/atoms";
 
 const props = withDefaults(defineProps<SimpleMenuProps<T>>(), {
   variant: "default",

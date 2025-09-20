@@ -1,2 +1,2 @@
-export * from "./dropdown";
+export * from "./Dropdown";
 export { default as Dropdown } from "./Dropdown.vue";

@@ -2,7 +2,7 @@
 import { ref, toValue, watch } from "vue";
 import { Vue3Lottie as LottieAnimation } from "vue3-lottie";
 
-import type { AnimatedIconProps } from "./animatedIcon";
+import type { AnimatedIconProps } from "@/components/atoms";
 
 const props = withDefaults(defineProps<AnimatedIconProps>(), {
   variant: "default",

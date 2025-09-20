@@ -1,7 +1,6 @@
 import { mount } from "@vue/test-utils";
 
-import type { GroupProps } from "./group";
-import Group from "./Group.vue";
+import { Group, type GroupProps } from "@/components/atoms";
 
 enum Classes {
   ROOT_CLASS = "group",

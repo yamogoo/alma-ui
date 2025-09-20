@@ -14,6 +14,7 @@ import tokens from "@/tokens";
 import { useHover } from "@/composables/local";
 
 import type { IconSize } from "@/adapters";
+
 import { Icon, type ButtonProps } from "@/components/atoms";
 
 const props = withDefaults(defineProps<ButtonProps>(), {

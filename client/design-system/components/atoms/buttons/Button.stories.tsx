@@ -22,14 +22,14 @@ import {
 } from "@/components/atoms";
 
 const meta = {
-  title: "Atoms/buttons/Button",
+  title: "Atoms/Buttons/Button",
   component: Button,
   tags: ["autodocs"],
   parameters: {
     docs: {
       description: {
         component:
-          "Button is the core interactive element of the design system. It serves as the foundation for specialized buttons like ControlButton (circular control actions) and ActionButton (emphasized primary actions). The base button provides consistent behavior, accessibility, and styling while supporting variations in size, tone, mode, and icon placement.",
+          "Button is the core interactive element of the design system. It serves as the foundation for specialized buttons like ControlButton (circular control actions) and ActionButton (emphasized primary actions). The base button provides consistent behavior, accessibility, and styling, and includes key modifiers such as variant, tone, mode, and size, along with flexible icon placement options.",
       },
     },
   },

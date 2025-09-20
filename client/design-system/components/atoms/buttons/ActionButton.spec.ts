@@ -2,8 +2,7 @@ import { mount } from "@vue/test-utils";
 
 import { getButtonIconByClassName } from "@/utils";
 
-import ActionButton from "./ActionButton.vue";
-import type { ActionButtonProps } from "./ActionButton";
+import { ActionButton, type ActionButtonProps } from "@/components/atoms";
 
 const REQUIRED_PROPS: ActionButtonProps = {
   size: "sm",

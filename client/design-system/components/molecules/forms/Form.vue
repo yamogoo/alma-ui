@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { useId } from "vue";
 
-import Text from "@/components/atoms/typography/Text.vue";
-import type { FormProps } from "./form";
+import { Text } from "@/components/atoms";
+import type { FormProps } from "@/components/molecules";
 
 withDefaults(defineProps<FormProps>(), {
   variant: "default",

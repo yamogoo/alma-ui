@@ -7,8 +7,7 @@ import {
   useEditorLayout,
 } from "@@/stores/useEditorLayout";
 
-import ResizeBounding from "@/components/atoms/resizer/ResizeBounding.vue";
-import Text from "@/components/atoms/typography/Text.vue";
+import { ResizeBounding, Text } from "@/components/atoms";
 
 const { navigatorWidth, isNavigatorShown } = storeToRefs(useEditorLayout());
 const { setNavigatorWidth } = useEditorLayout();
