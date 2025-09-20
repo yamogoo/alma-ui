@@ -173,14 +173,10 @@ export default (opts: { mode: string }) => {
           api: "modern-compiler",
           additionalData: `
             /* * * Design System * * */
-            @use "@/assets/scss/app.colors" as colors;
-            @use "@/assets/scss/app.abstracts" as *;
-            @use "@/assets/scss/app.core" as *;
-            @use "@/assets/scss/app.mixins" as *;
-            @use "@/assets/scss/app.extends" as *;
+            @use "@/index" as *;
 
             /* * * App * * */
-            @use "@@/assets/scss/app.abstracts" as app;
+            @use "@@/index" as app;
           `,
         },
       },

@@ -153,22 +153,22 @@
     "self": {
       "background": {
         "normal": {
-          "value": "{colors.black-1000}",
+          "value": "rgba({colors.black-1000}, 0)",
           "type": "color",
           "unit": "hex"
         },
         "disabled": {
-          "value": "rgba({colors.black-1000}, .5)",
+          "value": "rgba({colors.black-1000}, 0)",
           "type": "color",
           "unit": "hex"
         },
         "hovered": {
-          "value": "{colors.gray-950}",
+          "value": "rgba({colors.gray-950}, 0)",
           "type": "color",
           "unit": "hex"
         },
         "pressed": {
-          "value": "{colors.gray-900}",
+          "value": "rgba({colors.gray-900}, 0)",
           "type": "color",
           "unit": "hex"
         }

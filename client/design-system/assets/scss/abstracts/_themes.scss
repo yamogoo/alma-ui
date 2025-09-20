@@ -344,16 +344,16 @@ $themes:(
   tertiary: (
   self: (
   background: (
-  normal: #060606,
-  disabled: rgba(#060606, .5),
-  hovered: #101315,
-  pressed: #1A1F23
+  normal: rgba(#060606, 0),
+  disabled: rgba(#060606, 0),
+  hovered: rgba(#101315, 0),
+  pressed: rgba(#1A1F23, 0)
 ),
   border: (
-  normal: #060606,
-  disabled: rgba(#060606, .5),
-  hovered: #101315,
-  pressed: #1A1F23,
+  normal: rgba(#060606, 0),
+  disabled: rgba(#060606, 0),
+  hovered: rgba(#101315, 0),
+  pressed: rgba(#1A1F23, 0),
   outline: #013CFE
 )
 ),

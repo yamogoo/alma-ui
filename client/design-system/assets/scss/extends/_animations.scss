@@ -1,10 +1,17 @@
+@use "sass:map";
+
+@use "../abstracts/config" as *;
 @use "../core/mixins/transition" as *;
 
+$IS_THEME_TRANSITIONS_ENABLED: map.get($config, is_theme_transitions_enabled);
+
 %base-transition {
-  @include transition(
-    color background background-color linear-gradient fill stroke border
-      border-color opacity,
-    100ms,
-    ease-out
-  );
+  @if ($IS_THEME_TRANSITIONS_ENABLED) {
+    @include transition(
+      color background background-color linear-gradient fill stroke border
+        border-color opacity,
+      100ms,
+      ease-out
+    );
+  }
 }

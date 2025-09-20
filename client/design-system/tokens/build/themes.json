@@ -1031,44 +1031,44 @@
               "self": {
                 "background": {
                   "normal": {
-                    "value": "#060606",
+                    "value": "rgba(#060606, 0)",
                     "type": "color",
                     "unit": "hex"
                   },
                   "disabled": {
-                    "value": "rgba(#060606, .5)",
+                    "value": "rgba(#060606, 0)",
                     "type": "color",
                     "unit": "hex"
                   },
                   "hovered": {
-                    "value": "#101315",
+                    "value": "rgba(#101315, 0)",
                     "type": "color",
                     "unit": "hex"
                   },
                   "pressed": {
-                    "value": "#1A1F23",
+                    "value": "rgba(#1A1F23, 0)",
                     "type": "color",
                     "unit": "hex"
                   }
                 },
                 "border": {
                   "normal": {
-                    "value": "#060606",
+                    "value": "rgba(#060606, 0)",
                     "type": "color",
                     "unit": "hex"
                   },
                   "disabled": {
-                    "value": "rgba(#060606, .5)",
+                    "value": "rgba(#060606, 0)",
                     "type": "color",
                     "unit": "hex"
                   },
                   "hovered": {
-                    "value": "#101315",
+                    "value": "rgba(#101315, 0)",
                     "type": "color",
                     "unit": "hex"
                   },
                   "pressed": {
-                    "value": "#1A1F23",
+                    "value": "rgba(#1A1F23, 0)",
                     "type": "color",
                     "unit": "hex"
                   },

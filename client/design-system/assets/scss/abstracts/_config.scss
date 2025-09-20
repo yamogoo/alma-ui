@@ -2,11 +2,11 @@
 
 
 $config:(
+  is_theme_transitions_enabled: true,
   is_full_runtime: true,
-  scale-factor: 1
+  scale_factor: 1
 );
 
 :root {
-  --IS-FULL-RUNTIME: true;
   --scale-factor: 1;
 }

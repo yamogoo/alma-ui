@@ -1213,7 +1213,7 @@ export class TokensParser {
 
     try {
       const files = await fs.readdir(build);
-      const jsonFiles = files.filter((f) => f.endsWith(".json"));
+      const jsonFiles = files.filter((f: string) => f.endsWith(".json"));
 
       const relativeImportPath = path.relative(
         path.dirname(entryFilePath),
@@ -1221,7 +1221,7 @@ export class TokensParser {
       );
 
       const imports = jsonFiles
-        .map((file) => {
+        .map((file: string) => {
           const name = file.replace(".json", "");
           let importPath = path
             .join(relativeImportPath, file)
@@ -1233,12 +1233,12 @@ export class TokensParser {
         .join("\n");
 
       const spreadList = jsonFiles
-        .map((file) => file.replace(".json", ""))
+        .map((file: string) => file.replace(".json", ""))
         .join(", ");
 
       const content = `${imports}\n\nconst module = {\n  ${spreadList
         .split(", ")
-        .map((name) => `...${name}`)
+        .map((name: string) => `...${name}`)
         .join(",\n  ")}\n};\n\nexport default module;\n`;
 
       const entryDir = path.dirname(entryFilePath);
